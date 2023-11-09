@@ -1,9 +1,9 @@
 import os, glob
 
-familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+familyName    = 'Amstelvar2'
+subFamilyName = ['Roman', 'Italic'][1]
 baseFolder    = os.path.dirname(os.getcwd())
-sourcesFolder = os.path.join(baseFolder, 'sources', subFamilyName)
+sourcesFolder = os.path.join(baseFolder, 'TechAlpha', subFamilyName)
 extremaFolder = os.path.join(sourcesFolder, 'extrema')
 
 # set feature in parametric sources

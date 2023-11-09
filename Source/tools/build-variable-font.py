@@ -1,19 +1,19 @@
 import os
 from defcon import Font
 from fontTools.designspaceLib import DesignSpaceDocument
-from fontmake.font_project import FontProject
 from ufo2ft import compileVariableTTF
-from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter
+# from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter
 
-familyName      = 'AmstelvarA2'
+familyName      = 'Amstelvar2'
 subFamilyName   = ['Roman', 'Italic'][1]
 baseFolder      = os.path.dirname(os.getcwd())
-sourcesFolder   = os.path.join(baseFolder, 'sources', subFamilyName)
+sourcesFolder   = os.path.join(baseFolder, 'TechAlpha', subFamilyName)
 designspacePath = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}0.designspace')
-fontsFolder     = os.path.join(baseFolder, 'fonts')
+fontsFolder     = os.path.join(os.path.dirname(baseFolder), 'fonts', 'Tech Alpha TTFs')
 varFontPath     = designspacePath.replace(sourcesFolder, fontsFolder).replace('.designspace', '.ttf')
 
 assert os.path.exists(designspacePath)
+assert os.path.exists(fontsFolder)
 
 print(f'generating variable font for {designspacePath}...')
 
@@ -24,10 +24,6 @@ for src in D.sources:
     src.font = Font(src.path)
 
 print('\tbuilding variable font...')
-
-### build variable font with fontmake
-# P = FontProject()
-# P.build_variable_fonts(D, output_path=varFontPath, verbose=True)
 
 ### build variable font with ufo2ft
 f = compileVariableTTF(D, featureWriters=[])

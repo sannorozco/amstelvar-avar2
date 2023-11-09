@@ -40,17 +40,17 @@ def permille(value, unitsPerEm):
 
 class AmstelvarDesignSpaceBuilder:
 
-    familyName           = 'AmstelvarA2'
+    familyName           = 'Amstelvar2'
     subFamilyName        = ['Roman', 'Italic'][1]
     baseFolder           = os.path.dirname(os.getcwd())
-    sourcesFolder        = os.path.join(baseFolder,    'sources', subFamilyName)
+    sourcesFolder        = os.path.join(baseFolder,    'TechAlpha', subFamilyName)
     extremaFolder        = os.path.join(sourcesFolder, 'extrema')
     instancesFolder      = os.path.join(sourcesFolder, 'instances')
     measurementsPath     = os.path.join(sourcesFolder, 'measurements.json')
     defaultUFO           = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_wght400.ufo')
     designspacePath      = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}0.designspace')
     blendedAxes          = 'opsz wght wdth'.split()
-    parametricAxes       = 'YOPQ YTAS YTDE YTUC YTLC YTFI'.split() # no XOPQ XTRA in italic ! XOPQ XTRA 
+    parametricAxes       = 'YOPQ YTAS YTDE YTUC YTLC YTFI'.split() # no XOPQ XTRA in italic! # XOPQ XTRA 
     parametricAxesHidden = False
 
     def __init__(self):
@@ -411,15 +411,15 @@ if __name__ == '__main__':
     D.save()
     D.buildInstances(clear=True, ttf=True)
 
-    # D1 = AmstelvarDesignSpaceBuilder1()
-    # D1.build()
-    # D1.save()
+    D1 = AmstelvarDesignSpaceBuilder1()
+    D1.build()
+    D1.save()
 
-    # D2 = AmstelvarDesignSpaceBuilder2()
-    # D2.build()
-    # D2.save()
+    D2 = AmstelvarDesignSpaceBuilder2()
+    D2.build()
+    D2.save()
 
-    # D3 = AmstelvarDesignSpaceBuilder3()
-    # D3.build()
-    # D3.save()
+    D3 = AmstelvarDesignSpaceBuilder3()
+    D3.build()
+    D3.save()
 

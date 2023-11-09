@@ -5,17 +5,17 @@ reload(variableValues.measurements)
 import os, glob, shutil
 from variableValues.measurements import FontMeasurements
 
-familyName       = 'AmstelvarA2'
+familyName       = 'Amstelvar2'
 subFamilyName    = ['Roman', 'Italic'][1]
 baseFolder       = os.path.dirname(os.getcwd())
-sourcesFolder    = os.path.join(baseFolder, 'sources', subFamilyName)
+sourcesFolder    = os.path.join(baseFolder, 'TechAlpha', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 ignoreTags = ['wght', 'GRAD', 'XTSP']
 
-preflight = True
+preflight = False
 
 for ufo in allUFOs:
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
@@ -26,7 +26,7 @@ for ufo in allUFOs:
     f = OpenFont(ufo, showInterface=False)
 
     # set family name
-    f.info.familyName = familyName
+    f.info.familyName = f'{familyName} {subFamilyName}'
 
     m = FontMeasurements()
     m.read(measurementsPath)
