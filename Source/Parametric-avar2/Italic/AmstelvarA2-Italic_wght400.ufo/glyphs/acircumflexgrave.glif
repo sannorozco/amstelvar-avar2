@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="acircumflexgrave" format="2">
   <advance width="1045"/>
+  <note>
+@topright
+</note>
   <outline>
     <component base="a"/>
-    <component base="circumflexgravecomb" xOffset="413.9999999999002"/>
+    <component base="circumflexcomb-stack" xOffset="499.9999999999119" yOffset="-53"/>
+    <component base="gravecomb-stack" xOffset="188.99999999991007" yOffset="215"/>
   </outline>
   <lib>
     <dict>
