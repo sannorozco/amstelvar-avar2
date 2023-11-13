@@ -1093,8 +1093,6 @@
           <string>four.tab</string>
           <string>guarani</string>
           <string>guarani.rvrn</string>
-          <string>guillemetleft</string>
-          <string>guillemetright</string>
           <string>hornU</string>
           <string>hornu</string>
           <string>iacute_j.loclNLD</string>
@@ -1532,6 +1530,8 @@
         </array>
         <key>smartSetName</key>
         <string>uppercase</string>
+        <key>uniqueKey</key>
+        <string>8277817328:7554693248</string>
       </dict>
       <dict>
         <key>group</key>
@@ -1911,6 +1911,8 @@
         </array>
         <key>smartSetName</key>
         <string>lowercase</string>
+        <key>uniqueKey</key>
+        <string>8277817328:4677841600</string>
       </dict>
       <dict>
         <key>group</key>
@@ -1990,6 +1992,8 @@
         </array>
         <key>smartSetName</key>
         <string>figures</string>
+        <key>uniqueKey</key>
+        <string>8277817328:7581119680</string>
       </dict>
       <dict>
         <key>group</key>
@@ -2070,6 +2074,8 @@
         </array>
         <key>smartSetName</key>
         <string>ascenders</string>
+        <key>uniqueKey</key>
+        <string>8277817328:7581123968</string>
       </dict>
       <dict>
         <key>group</key>
@@ -2176,6 +2182,8 @@
         </array>
         <key>smartSetName</key>
         <string>descenders</string>
+        <key>uniqueKey</key>
+        <string>8277817328:7542964160</string>
       </dict>
       <dict>
         <key>group</key>
@@ -2354,7 +2362,6 @@
           <dict>
             <key>glyphNames</key>
             <array>
-              <string>tildecombstack.case</string>
               <string>gravecomb-stack.case</string>
               <string>acutecomb-stack.case</string>
               <string>dieresiscomb-stack.case</string>
@@ -2376,6 +2383,8 @@
         </array>
         <key>smartSetName</key>
         <string>accents</string>
+        <key>uniqueKey</key>
+        <string>8277817328:5378253312</string>
       </dict>
     </array>
     <key>com.typemytype.robofont.smartSets.uniqueKey</key>
@@ -5678,34 +5687,14 @@
       <string>Iacute_J.loclNLD</string>
       <string>Oslash.rvrn</string>
       <string>acutecombstack</string>
-      <string>breveacutecomb</string>
-      <string>breveacutecomb.case</string>
-      <string>brevegravecomb</string>
-      <string>brevegravecomb.case</string>
-      <string>brevehookabovecomb</string>
-      <string>brevehookabovecomb.case</string>
-      <string>brevetildecomb</string>
-      <string>brevetildecomb.case</string>
       <string>cedi</string>
       <string>cedi.rvrn</string>
-      <string>circumflexacutecomb</string>
-      <string>circumflexacutecomb.case</string>
       <string>circumflexcombstack</string>
-      <string>circumflexgravecomb</string>
-      <string>circumflexgravecomb.case</string>
-      <string>circumflexhookabovecomb</string>
-      <string>circumflexhookabovecomb.case</string>
-      <string>circumflextildecomb</string>
-      <string>circumflextildecomb.case</string>
       <string>colonsign</string>
       <string>colonsign.rvrn</string>
       <string>dieresiscombstack</string>
-      <string>dieresismacroncomb</string>
-      <string>dieresismacroncomb.case</string>
       <string>dollar.rvrn2</string>
       <string>dotaccentcombstack</string>
-      <string>dotaccentmacroncomb</string>
-      <string>dotaccentmacroncomb.case</string>
       <string>eight.lc</string>
       <string>eight.lf</string>
       <string>eight.tab</string>
