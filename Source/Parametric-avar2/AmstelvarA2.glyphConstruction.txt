@@ -257,7 +257,7 @@ Ahookabove=A+hookabovecomb.case@top | 0x1ea2
 ahookabove=a+hookabovecomb@top | 0x1ea3
 Acircumflexacute=A+circumflexcomb-stack.case@top+acutecomb-stack.case@topright | 0x1ea4
 acircumflexacute=a+circumflexcomb-stack@top+acutecomb-stack@topright | 0x1ea5
-Acircumflexgrave=A+circumflexcomb-stack.case@top+gravecomb-stack.case@topleft  | 0x1ea6 # topright
+Acircumflexgrave=A+circumflexcomb-stack.case@top+gravecomb-stack.case@topright  | 0x1ea6 # @topleft
 acircumflexgrave=a+circumflexcomb-stack@top+gravecomb-stack@topright | 0x1ea7 # @topleft
 Acircumflexhookabove=A+circumflexcomb-stack.case@top+hookabovecomb-stack.case@topright | 0x1ea8
 acircumflexhookabove=a+circumflexcomb-stack@top+hookabovecomb-stack@topright | 0x1ea9
@@ -348,7 +348,7 @@ Jacute.loclNLD=J+acutecomb.case@top | None
 jacute.loclNLD=jdotless+acutecomb@top | None
 Iacute_J.loclNLD=I+acutecomb.case@top&J+acutecomb.case@top | None # Iacute=I+acutecomb.case@top | 0xcd
 
-#iacute_j.loclNLD=iacute+jacute.loclNLD|None
+iacute_j.loclNLD=idotless+acutecomb@top&jdotless+acutecomb@top | None
 
 f_f=f&f | FB00
 fi=f&idotless+idot@top | FB01
@@ -439,8 +439,9 @@ Ha = X | 0x425
 Shcha = Sha + cy-descendercomb.case@cy_descender | 0x429
 Yeru = Soft & I | 0x042B
 Yi = I + Yi-dieresiscomb.case@top | 0x407
-Yu= I + Yu-dash.case@yu_dash + O@yu_dash ^ I,O | 0x042E
-Ghestroke = Ghe + horizontalbar@center | 0x0492
+Yu = I + Yu-dash.case@yu_dash + O@yu_dash ^ I,O | 0x042E
+Ghe = Gamma | 0x413
+Ghestroke = Gamma + horizontalbar@center | 0x0492
 Zhedescender = Zhe + cy-descendercomb.case@cy_descender | 0x496
 Zedescendercyr = Ze + cedillacomb.case@bottom | 0x498
 Kadescender = Ka + cy-descendercomb.case@cy_descender  | 0x49a
@@ -456,7 +457,7 @@ Obarcyr = O + Obarcyr-stroke | 0x04E8
 Hastroke-cy = X + Hacyr-stroke | 0x04FE
 Ka.bgr = K
 El.bgr = Lambda
-
+Ef = Phi | 0x424
 
 acyr = a | 0x430
 abrevecyr = a + breve.cyrcomb@top | 0x4d1
@@ -616,4 +617,5 @@ caron-stack.case = caroncomb.case ^ 1048
 breveinverted-stack.case = breveinvertedcomb.case ^ 1048
 dblgrave-stack.case = dblgravecomb.case ^ 1048
 
-
+breve.cyr = breve.cyrcomb ^ 1048
+breve.cyr.case = breve.cyrcomb.case ^ 1048
