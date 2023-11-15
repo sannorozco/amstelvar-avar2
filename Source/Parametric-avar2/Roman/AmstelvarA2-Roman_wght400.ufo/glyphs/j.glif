@@ -2,15 +2,9 @@
 <glyph name="j" format="2">
   <advance width="556"/>
   <unicode hex="006A"/>
-  <guideline x="32" y="917" angle="0" identifier="hOcNLSgfdS"/>
-  <anchor x="278.0" y="-436" name="bottom"/>
-  <anchor x="278.0" y="1000" name="top"/>
-  <anchor x="320" y="0" name="bottom"/>
-  <anchor x="320" y="1000" name="top"/>
-  <anchor x="241" y="0" name="ogonek"/>
   <outline>
-    <component base="idot" xOffset="278"/>
     <component base="jdotless"/>
+    <component base="idot" xOffset="278"/>
   </outline>
   <lib>
     <dict>

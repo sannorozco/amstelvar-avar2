@@ -1,13 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="periodcentered.loclCAT" format="2">
-  <advance width="664"/>
+  <advance width="926"/>
+  <anchor x="148" y="634" name="_center"/>
   <outline>
-    <component base="periodcentered"/>
+    <contour>
+      <point x="148" y="633" type="qcurve" smooth="yes"/>
+      <point x="148" y="745"/>
+      <point x="325" y="910"/>
+      <point x="463" y="910" type="qcurve" smooth="yes"/>
+      <point x="601" y="910"/>
+      <point x="778" y="745"/>
+      <point x="778" y="633" type="qcurve" smooth="yes"/>
+      <point x="778" y="524"/>
+      <point x="601" y="358"/>
+      <point x="463" y="358" type="qcurve" smooth="yes"/>
+      <point x="325" y="358"/>
+      <point x="148" y="524"/>
+    </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>1,1,0,0.5</string>
-    </dict>
-  </lib>
 </glyph>
