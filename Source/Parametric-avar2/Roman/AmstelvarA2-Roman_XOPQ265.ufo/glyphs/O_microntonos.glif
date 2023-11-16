@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Omicrontonos" format="2">
-  <advance width="1874"/>
+  <advance width="2575"/>
   <unicode hex="038C"/>
+  <note>
+10,O
+</note>
   <outline>
-    <component base="Omicron" xOffset="210"/>
-    <component base="tonos.case" xOffset="-310"/>
+    <component base="O" xOffset="162"/>
+    <component base="tonoscomb" xOffset="302" yOffset="1500"/>
   </outline>
   <lib>
     <dict>
