@@ -749,24 +749,41 @@
 					<string>nine</string>
 				</array>
 				<key>smartSetName</key>
+				<string>figures proportional</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>eight.tab</string>
+					<string>five.tab</string>
+					<string>four.tab</string>
+					<string>nine.tab</string>
+					<string>one.tab</string>
+					<string>seven.tab</string>
+					<string>six.tab</string>
+					<string>three.tab</string>
+					<string>two.tab</string>
+					<string>zero.tab</string>
+				</array>
+				<key>smartSetName</key>
 				<string>figures tabular</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
 				<array>
-					<string>zero.prop</string>
-					<string>one.prop</string>
-					<string>two.prop</string>
-					<string>three.prop</string>
-					<string>four.prop</string>
-					<string>five.prop</string>
-					<string>six.prop</string>
-					<string>seven.prop</string>
-					<string>eight.prop</string>
-					<string>nine.prop</string>
+					<string>zero.lc</string>
+					<string>one.lc</string>
+					<string>two.lc</string>
+					<string>three.lc</string>
+					<string>four.lc</string>
+					<string>five.lc</string>
+					<string>six.lc</string>
+					<string>seven.lc</string>
+					<string>eight.lc</string>
+					<string>nine.lc</string>
 				</array>
 				<key>smartSetName</key>
-				<string>figures proportional</string>
+				<string>figures oldstyle</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
@@ -1057,6 +1074,8 @@
 					<string>commaaccentcomb.case</string>
 					<string>brevebelowcomb.case</string>
 					<string>macronbelowcomb.case</string>
+					<string>tonoscomb.case</string>
+					<string>dieresistonoscomb.case</string>
 				</array>
 				<key>smartSetName</key>
 				<string>accents comb case</string>
