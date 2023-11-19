@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="5.0">
   <axes>
-    <axis tag="XOPQ" name="XOPQ" minimum="90" maximum="265" default="90"/>
+    <axis tag="XOPQ" name="XOPQ" minimum="20" maximum="265" default="90"/>
   </axes>
   <sources>
     <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="Amstelvar2">
@@ -12,6 +12,11 @@
     <source filename="AmstelvarA2-Roman_XOPQ265.ufo" familyname="Amstelvar2">
       <location>
         <dimension name="XOPQ" xvalue="265"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOPQ20.ufo" familyname="Amstelvar2">
+      <location>
+        <dimension name="XOPQ" xvalue="20"/>
       </location>
     </source>
   </sources>
