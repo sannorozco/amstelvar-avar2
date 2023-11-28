@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="j" format="2">
-  <advance width="521"/>
+  <advance width="556"/>
   <unicode hex="006A"/>
   <outline>
+    <component base="jdotless"/>
+    <component base="idot" xOffset="278"/>
   </outline>
   <lib>
     <dict>
@@ -79,6 +81,8 @@
           <string>XLCS</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>0,0,1,0.5</string>
     </dict>
   </lib>
 </glyph>

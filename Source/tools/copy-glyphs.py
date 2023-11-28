@@ -2,23 +2,48 @@ import glob
 from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
 from hTools3.modules.accents import buildAccentedGlyphs
 
-sourcesFolder         = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman'
-glyphConstructionPath = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/AmstelvarA2.glyphConstruction'
+sourceFont   = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo'
+targetFolder = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman'
 
-glyphNames = ['i', 'j']
+targetStyles = [
+    # 'XOPQ20',
+    # 'XOPQ265',
+    # 'XTRA234',
+    # 'XTRA550',
+    # 'XTSP-100',
+    # 'XTSP100',
+    # 'YOPQ14',
+    # 'YOPQ132',
+    'YTAS617',
+    'YTAS1000',
+    'YTDE-138',
+    'YTDE-500',
+    'YTFI447',
+    'YTFI1022',
+    # 'YTLC430',
+    # 'YTLC581',
+    # 'YTUC500',
+    # 'YTUC1000',
+    # 'GRAD-300',
+    # 'GRAD500',
+]
 
-# get sources
-sources = glob.glob(f'{sourcesFolder}/*.ufo')
+glyphNames = ['E', 'Y']
 
-# get glyph constructions
-with open(glyphConstructionPath, 'r') as f:
-    glyphConstructions = f.read()
+targetFonts = glob.glob(f'{targetFolder}/*.ufo')
+targetFonts.remove(sourceFont)
 
-for srcPath in sources:
-    print(f'building glyphs in {srcPath}...')
-    font = OpenFont(srcPath, showInterface=False)
-    buildAccentedGlyphs(font, glyphNames, glyphConstructions, clear=True, verbose=True, indentLevel=1)
-    font.save()
-    font.close()
+font = OpenFont(sourceFont, showInterface=False)
+
+for dstPath in targetFonts:
+    dstFont = OpenFont(dstPath, showInterface=False)
+
+    print(f'copying glyphs to {dstPath}...')
+    for glyphName in glyphNames:
+        print(f'\tcopying {glyphName}...')
+        dstFont.insertGlyph(font[glyphName], name=glyphName)
+
+    dstFont.save()
+    dstFont.close()
     print()
 

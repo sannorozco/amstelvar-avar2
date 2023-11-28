@@ -2,7 +2,9 @@
 <glyph name="idotless" format="2">
   <advance width="639"/>
   <unicode hex="0131"/>
-  <anchor x="319.5" y="1000" name="top"/>
+  <anchor x="320" y="0" name="bottom"/>
+  <anchor x="320" y="1000" name="top"/>
+  <anchor x="513" y="0" name="ogonek"/>
   <outline>
     <contour>
       <point x="77" y="0" type="line"/>
@@ -21,4 +23,12 @@
       <point x="583" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>
