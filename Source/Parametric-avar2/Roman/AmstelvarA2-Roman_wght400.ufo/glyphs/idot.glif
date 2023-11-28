@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idot" format="2">
-  <anchor x="15" y="0" name="bottom"/>
   <anchor x="0" y="1000" name="top"/>
-  <anchor x="-64" y="0" name="ogonek"/>
   <outline>
     <contour>
       <point x="-126" y="1337" type="qcurve" smooth="yes"/>
@@ -108,6 +106,8 @@
           <string>XLCS</string>
         </dict>
       </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

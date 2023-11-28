@@ -2,21 +2,57 @@
 <designspace format="5.0">
   <axes>
     <axis tag="XOPQ" name="XOPQ" minimum="20" maximum="265" default="90"/>
+    <axis tag="XTRA" name="XTRA" minimum="234" maximum="550" default="400"/>
+    <axis tag="YOPQ" name="YOPQ" minimum="14" maximum="132" default="62"/>
   </axes>
   <sources>
-    <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="Amstelvar2">
+    <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="AmstelvarA2">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOPQ265.ufo" familyname="Amstelvar2">
+    <source filename="AmstelvarA2-Roman_XOPQ265.ufo" familyname="AmstelvarA2">
       <location>
         <dimension name="XOPQ" xvalue="265"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOPQ20.ufo" familyname="Amstelvar2">
+    <source filename="AmstelvarA2-Roman_XOPQ20.ufo" familyname="AmstelvarA2">
       <location>
         <dimension name="XOPQ" xvalue="20"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTRA234.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="234"/>
+        <dimension name="YOPQ" xvalue="62"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTRA550.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="550"/>
+        <dimension name="YOPQ" xvalue="62"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YOPQ14.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="14"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YOPQ132.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="132"/>
       </location>
     </source>
   </sources>

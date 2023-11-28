@@ -3,9 +3,10 @@
   <advance width="972"/>
   <unicode hex="006C"/>
   <anchor x="486.0" y="0" name="bottom"/>
-  <anchor x="906.0" y="750.0" name="center"/>
+  <anchor x="486.0" y="750.0" name="center"/>
   <anchor x="486.0" y="1534" name="top"/>
   <anchor x="906" y="1000" name="topright"/>
+  <anchor x="906.0" y="680.0" name="centerright"/>
   <outline>
     <contour>
       <point x="76" y="0" type="line"/>
@@ -24,4 +25,10 @@
       <point x="906" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XOPQ265.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

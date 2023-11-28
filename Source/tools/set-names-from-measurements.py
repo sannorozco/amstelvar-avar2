@@ -5,10 +5,10 @@ reload(variableValues.measurements)
 import os, glob, shutil
 from variableValues.measurements import FontMeasurements
 
-familyName       = 'Amstelvar2'
-subFamilyName    = ['Roman', 'Italic'][1]
+familyName       = 'AmstelvarA2'
+subFamilyName    = ['Roman', 'Italic'][0]
 baseFolder       = os.path.dirname(os.getcwd())
-sourcesFolder    = os.path.join(baseFolder, 'TechAlpha', subFamilyName)
+sourcesFolder    = os.path.join(baseFolder, 'Parametric-avar2', subFamilyName) # 'TechAlpha'
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')

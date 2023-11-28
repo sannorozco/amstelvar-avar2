@@ -1,9 +1,14 @@
-f1 = OpenFont('/Users/gferreira/hipertipo/fonts/roboto-flex-avar2/Source/Parametric-avar2/RobotoAvar2-wght400.ufo', showInterface=False)
-f2 = AllFonts().getFontsByStyleName('XOPQ20')[0]
+import glob
+from hTools3.modules.encoding import setGlyphOrder
 
-f2.templateGlyphOrder = f1.templateGlyphOrder
+encFilePath  = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/AmstelvarA2.enc'
+targetFolder = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman'
 
-# # import math
-# # f = CurrentFont()
-# # italicSlantOffset = math.tan(f.info.italicAngle * math.pi / 180) * (f.info.xHeight * 0.5)
-# # print(round(italicSlantOffset))
+ufoPaths = glob.glob(f'{targetFolder}/*.ufo')
+
+for ufoPath in ufoPaths:
+    font = OpenFont(ufoPath, showInterface=False)
+    print(f'setting glyph order in {ufoPath}…')
+    setGlyphOrder(font, encFilePath, verbose=False, createGlyphs=False)
+    font.save()
+    font.close()
