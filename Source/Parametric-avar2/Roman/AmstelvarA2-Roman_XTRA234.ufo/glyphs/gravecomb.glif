@@ -2,7 +2,7 @@
 <glyph name="gravecomb" format="2">
   <unicode hex="0300"/>
   <anchor x="0.0" y="1000" name="_top"/>
-  <anchor x="0.0" y="1566.0" name="top"/>
+  <anchor x="0.0" y="1497.0" name="top"/>
   <outline>
     <contour>
       <point x="-235" y="1440" type="qcurve" smooth="yes"/>
@@ -19,4 +19,12 @@
       <point x="-235" y="1393"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/sources/Roman/Amstelvar-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

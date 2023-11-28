@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="guillemotleft" format="2">
   <advance width="1295"/>
+  <unicode hex="00AB"/>
   <outline>
     <contour>
       <point x="25" y="625" type="line"/>
@@ -45,4 +46,10 @@
       <point x="525" y="594" type="qcurve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XOPQ265.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

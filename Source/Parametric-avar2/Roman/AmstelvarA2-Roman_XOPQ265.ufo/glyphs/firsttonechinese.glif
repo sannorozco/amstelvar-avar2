@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="firsttonechinese" format="2">
   <advance width="1024"/>
-  <unicode hex="02C9"/>
   <outline>
-    <component base="macron"/>
+    <component base="macroncomb" xOffset="524.0"/>
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XOPQ265.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>1,1,0,0.5</string>
     </dict>

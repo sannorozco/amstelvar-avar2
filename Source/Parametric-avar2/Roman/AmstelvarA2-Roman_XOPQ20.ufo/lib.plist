@@ -2244,7 +2244,6 @@
               <string>hookabovecomb-stack</string>
               <string>breveinvertedcomb-stack</string>
               <string>dblgravecomb-stack</string>
-              <string>breveinvertedcomb.stack</string>
             </array>
             <key>smartSetName</key>
             <string>accents comb stack</string>
@@ -2339,7 +2338,6 @@
           <dict>
             <key>glyphNames</key>
             <array>
-              <string>tildecombstack.case</string>
               <string>gravecomb-stack.case</string>
               <string>acutecomb-stack.case</string>
               <string>dieresiscomb-stack.case</string>
@@ -2351,7 +2349,7 @@
               <string>ringcomb-stack.case</string>
               <string>tildecomb-stack.case</string>
               <string>hungarumlautcomb-stack.case</string>
-              <string>hookcomb-stack.case</string>
+              <string>hookabovecomb-stack.case</string>
               <string>breveinvertedcomb-stack.case</string>
               <string>dblgravecomb-stack.case</string>
             </array>
@@ -3058,11 +3056,6 @@
       <string>liraTurkish</string>
       <string>manat</string>
       <string>ruble</string>
-      <string>kip</string>
-      <string>peso</string>
-      <string>cedi</string>
-      <string>colonsign</string>
-      <string>guarani</string>
       <string>numero</string>
       <string>commercialMinusSign</string>
       <string>florin</string>
@@ -3072,12 +3065,6 @@
       <string>cent.rvrn</string>
       <string>naira.rvrn</string>
       <string>won.rvrn</string>
-      <string>kip.rvrn</string>
-      <string>peso.rvrn</string>
-      <string>cedi.rvrn</string>
-      <string>colonsign.rvrn</string>
-      <string>dollar.rvrn2</string>
-      <string>guarani.rvrn</string>
       <string>zero</string>
       <string>one</string>
       <string>two</string>
@@ -3088,36 +3075,6 @@
       <string>seven</string>
       <string>eight</string>
       <string>nine</string>
-      <string>zero.lc</string>
-      <string>one.lc</string>
-      <string>two.lc</string>
-      <string>three.lc</string>
-      <string>four.lc</string>
-      <string>five.lc</string>
-      <string>six.lc</string>
-      <string>seven.lc</string>
-      <string>eight.lc</string>
-      <string>nine.lc</string>
-      <string>zero.tab</string>
-      <string>one.tab</string>
-      <string>two.tab</string>
-      <string>three.tab</string>
-      <string>four.tab</string>
-      <string>five.tab</string>
-      <string>six.tab</string>
-      <string>seven.tab</string>
-      <string>eight.tab</string>
-      <string>nine.tab</string>
-      <string>zero.lf</string>
-      <string>one.lf</string>
-      <string>two.lf</string>
-      <string>three.lf</string>
-      <string>four.lf</string>
-      <string>five.lf</string>
-      <string>six.lf</string>
-      <string>seven.lf</string>
-      <string>eight.lf</string>
-      <string>nine.lf</string>
       <string>percent</string>
       <string>perthousand</string>
       <string>cent</string>
@@ -3210,28 +3167,28 @@
       <string>micro</string>
       <string>grave</string>
       <string>acute</string>
-      <string>circumflex</string>
-      <string>tilde</string>
+      <string>dieresis</string>
       <string>macron</string>
+      <string>cedilla</string>
+      <string>circumflex</string>
+      <string>caron</string>
+      <string>firsttonechinese</string>
       <string>breve</string>
       <string>dotaccent</string>
-      <string>dieresis</string>
-      <string>hookabove</string>
       <string>ring</string>
+      <string>ogonek</string>
+      <string>tilde</string>
       <string>hungarumlaut</string>
-      <string>caron</string>
+      <string>hookabove</string>
       <string>breveinverted</string>
       <string>dblgrave</string>
       <string>horn</string>
       <string>dotbelow</string>
       <string>dieresisbelow</string>
       <string>commaaccent</string>
-      <string>cedilla</string>
-      <string>ogonek</string>
       <string>brevebelow</string>
       <string>macronbelow</string>
       <string>commaaccentturned</string>
-      <string>firsttonechinese</string>
       <string>gravecomb</string>
       <string>acutecomb</string>
       <string>circumflexcomb</string>
@@ -3257,17 +3214,17 @@
       <string>commaaccentturnedcomb</string>
       <string>gravecomb-stack</string>
       <string>acutecomb-stack</string>
-      <string>circumflexcomb-stack</string>
-      <string>tildecomb-stack</string>
+      <string>dieresiscomb-stack</string>
       <string>macroncomb-stack</string>
+      <string>circumflexcomb-stack</string>
+      <string>caroncomb-stack</string>
       <string>brevecomb-stack</string>
       <string>dotaccentcomb-stack</string>
-      <string>dieresiscomb-stack</string>
-      <string>hookabovecomb-stack</string>
       <string>ringcomb-stack</string>
+      <string>tildecomb-stack</string>
       <string>hungarumlautcomb-stack</string>
-      <string>caroncomb-stack</string>
-      <string>breveinvertedcomb-stack</string>
+      <string>hookabovecomb-stack</string>
+      <string>breveinvertedcomb.stack</string>
       <string>dblgravecomb-stack</string>
       <string>grave-stack</string>
       <string>acute-stack</string>
@@ -3327,6 +3284,15 @@
       <string>commaaccentcomb.case</string>
       <string>brevebelowcomb.case</string>
       <string>macronbelowcomb.case</string>
+      <string>gravecombstack.case</string>
+      <string>acutecombstack.case</string>
+      <string>dieresiscombstack.case</string>
+      <string>macroncombstack.case</string>
+      <string>circumflexcombstack.case</string>
+      <string>brevecombstack.case</string>
+      <string>dotaccentcombstack.case</string>
+      <string>tildecombstack.case</string>
+      <string>hookabovecombstack.case</string>
       <string>grave-stack.case</string>
       <string>acute-stack.case</string>
       <string>dieresis-stack.case</string>
@@ -3352,7 +3318,6 @@
       <string>ringcomb-stack.case</string>
       <string>tildecomb-stack.case</string>
       <string>hungarumlautcomb-stack.case</string>
-      <string>hookabovecomb-stack.case</string>
       <string>breveinvertedcomb-stack.case</string>
       <string>dblgravecomb-stack.case</string>
       <string>Agrave</string>
@@ -3556,8 +3521,6 @@
       <string>jcircumflex</string>
       <string>Jacute.loclNLD</string>
       <string>jacute.loclNLD</string>
-      <string>Iacute_J.loclNLD</string>
-      <string>iacute_j.loclNLD</string>
       <string>LJ</string>
       <string>Lj</string>
       <string>lj</string>
@@ -4009,13 +3972,77 @@
       <string>increment</string>
       <string>Yu-dash.case</string>
       <string>idot</string>
+      <string>Iacute_J.loclNLD</string>
       <string>Oslash.rvrn</string>
-      <string>oslash.rvrn</string>
+      <string>breveacutecomb</string>
+      <string>breveacutecomb.case</string>
+      <string>brevegravecomb</string>
+      <string>brevegravecomb.case</string>
+      <string>brevehookabovecomb</string>
+      <string>brevehookabovecomb.case</string>
+      <string>brevetildecomb</string>
+      <string>brevetildecomb.case</string>
+      <string>cedi</string>
+      <string>cedi.rvrn</string>
+      <string>circumflexacutecomb</string>
+      <string>circumflexacutecomb.case</string>
+      <string>circumflexgravecomb</string>
+      <string>circumflexgravecomb.case</string>
+      <string>circumflexhookabovecomb</string>
+      <string>circumflexhookabovecomb.case</string>
+      <string>circumflextildecomb</string>
+      <string>circumflextildecomb.case</string>
+      <string>colonsign</string>
+      <string>colonsign.rvrn</string>
+      <string>dollar.rvrn2</string>
+      <string>eight.lc</string>
+      <string>eight.lf</string>
+      <string>eight.tab</string>
       <string>engn</string>
-      <string>ha-stroke</string>
+      <string>euro</string>
+      <string>five.lc</string>
+      <string>five.lf</string>
+      <string>five.tab</string>
+      <string>four.lc</string>
+      <string>four.lf</string>
+      <string>four.tab</string>
+      <string>guarani</string>
+      <string>guarani.rvrn</string>
+      <string>guillemetleft</string>
+      <string>guillemetright</string>
       <string>hornU</string>
       <string>hornu</string>
+      <string>iacute_j.loclNLD</string>
       <string>kai-tail</string>
+      <string>kip</string>
+      <string>kip.rvrn</string>
+      <string>nine.lc</string>
+      <string>nine.lf</string>
+      <string>nine.tab</string>
+      <string>one.lc</string>
+      <string>one.lf</string>
+      <string>one.tab</string>
+      <string>oslash.rvrn</string>
+      <string>peso</string>
+      <string>peso.rvrn</string>
+      <string>seven.lc</string>
+      <string>seven.lf</string>
+      <string>seven.tab</string>
+      <string>six.lc</string>
+      <string>six.lf</string>
+      <string>six.tab</string>
+      <string>three.lc</string>
+      <string>three.lf</string>
+      <string>three.tab</string>
+      <string>two.lc</string>
+      <string>two.lf</string>
+      <string>two.tab</string>
+      <string>zero.lc</string>
+      <string>zero.lf</string>
+      <string>zero.tab</string>
+      <string>breveinvertedcomb-stack</string>
+      <string>hookabovecomb-stack.case</string>
+      <string>ha-stroke</string>
       <string>ustraight-stroke</string>
       <string>yu.bgr-stroke</string>
     </array>

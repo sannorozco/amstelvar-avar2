@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
+    <key>.notdef</key>
+    <string>_notdef.glif</string>
     <key>Abrevedotbelow</key>
     <string>A_brevedotbelow.glif</string>
     <key>D</key>
@@ -36,18 +38,52 @@
     <string>U_straightstroke.glif</string>
     <key>acutecomb</key>
     <string>acutecomb.glif</string>
+    <key>acutecomb-stack</key>
+    <string>acutecomb-stack.glif</string>
+    <key>acutecomb-stack.case</key>
+    <string>acutecomb-stack.case.glif</string>
     <key>ae</key>
     <string>ae.glif</string>
     <key>b</key>
     <string>b.glif</string>
+    <key>brevecomb-stack</key>
+    <string>brevecomb-stack.glif</string>
+    <key>brevecomb-stack.case</key>
+    <string>brevecomb-stack.case.glif</string>
+    <key>breveinvertedcomb-stack</key>
+    <string>breveinvertedcomb-stack.glif</string>
+    <key>breveinvertedcomb-stack.case</key>
+    <string>breveinvertedcomb-stack.case.glif</string>
+    <key>caroncomb-stack</key>
+    <string>caroncomb-stack.glif</string>
+    <key>caroncomb-stack.case</key>
+    <string>caroncomb-stack.case.glif</string>
     <key>chi</key>
     <string>chi.glif</string>
+    <key>circumflexcomb-stack</key>
+    <string>circumflexcomb-stack.glif</string>
+    <key>circumflexcomb-stack.case</key>
+    <string>circumflexcomb-stack.case.glif</string>
+    <key>commaaccentturnedcomb</key>
+    <string>commaaccentturnedcomb.glif</string>
     <key>dagger</key>
     <string>dagger.glif</string>
+    <key>dblgravecomb-stack</key>
+    <string>dblgravecomb-stack.glif</string>
+    <key>dblgravecomb-stack.case</key>
+    <string>dblgravecomb-stack.case.glif</string>
     <key>dieresisbelowcomb</key>
     <string>dieresisbelowcomb.glif</string>
     <key>dieresisbelowcomb.case</key>
     <string>dieresisbelowcomb.case.glif</string>
+    <key>dieresiscomb-stack</key>
+    <string>dieresiscomb-stack.glif</string>
+    <key>dieresiscomb-stack.case</key>
+    <string>dieresiscomb-stack.case.glif</string>
+    <key>dotaccentcomb-stack</key>
+    <string>dotaccentcomb-stack.glif</string>
+    <key>dotaccentcomb-stack.case</key>
+    <string>dotaccentcomb-stack.case.glif</string>
     <key>e</key>
     <string>e.glif</string>
     <key>ecircumflexacute</key>
@@ -72,10 +108,18 @@
     <string>foursuperior.glif</string>
     <key>germandbls</key>
     <string>germandbls.glif</string>
+    <key>gravecomb-stack</key>
+    <string>gravecomb-stack.glif</string>
+    <key>gravecomb-stack.case</key>
+    <string>gravecomb-stack.case.glif</string>
     <key>greater</key>
     <string>greater.glif</string>
     <key>greaterequal</key>
     <string>greaterequal.glif</string>
+    <key>hookabovecomb-stack.case</key>
+    <string>hookabovecomb-stack.case.glif</string>
+    <key>hungarumlautcomb-stack.case</key>
+    <string>hungarumlautcomb-stack.case.glif</string>
     <key>i</key>
     <string>i.glif</string>
     <key>ijacute</key>
@@ -90,6 +134,10 @@
     <string>kgreenlandic.glif</string>
     <key>l</key>
     <string>l.glif</string>
+    <key>macroncomb-stack</key>
+    <string>macroncomb-stack.glif</string>
+    <key>macroncomb-stack.case</key>
+    <string>macroncomb-stack.case.glif</string>
     <key>n</key>
     <string>n.glif</string>
     <key>nine.lc</key>
@@ -106,12 +154,18 @@
     <string>oslash.glif</string>
     <key>parenleft</key>
     <string>parenleft.glif</string>
+    <key>percent</key>
+    <string>percent.glif</string>
     <key>periodcentered.loclCAT</key>
     <string>periodcentered.loclC_A_T_.glif</string>
+    <key>perthousand</key>
+    <string>perthousand.glif</string>
     <key>peso</key>
     <string>peso.glif</string>
     <key>question</key>
     <string>question.glif</string>
+    <key>ringcomb-stack</key>
+    <string>ringcomb-stack.glif</string>
     <key>ruble</key>
     <string>ruble.glif</string>
     <key>seven.lc</key>
@@ -124,6 +178,8 @@
     <string>thorn.glif</string>
     <key>three.lc</key>
     <string>three.lc.glif</string>
+    <key>tildecomb-stack</key>
+    <string>tildecomb-stack.glif</string>
     <key>zero.lc</key>
     <string>zero.lc.glif</string>
   </dict>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Euro" format="2">
   <advance width="1099"/>
+  <unicode hex="20AC"/>
   <outline>
     <contour>
       <point x="204" y="746" type="qcurve" smooth="yes"/>
@@ -43,4 +44,10 @@
       <point x="903" y="582" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_YOPQ14.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

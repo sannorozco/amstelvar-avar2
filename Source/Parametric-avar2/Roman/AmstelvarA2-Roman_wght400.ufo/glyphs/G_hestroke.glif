@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ghestroke" format="2">
-  <advance width="1156"/>
-  <unicode hex="0492"/>
+  <advance width="1136"/>
   <outline>
-    <component base="Ghe"/>
+    <component base="Gamma"/>
     <component base="horizontalbar" xOffset="142" yOffset="41"/>
   </outline>
   <lib>
@@ -11,7 +10,7 @@
       <key>com.fontBureau.measurements</key>
       <dict/>
       <key>public.markColor</key>
-      <string>1,0,0,0.5</string>
+      <string>0,0,1,0.5</string>
     </dict>
   </lib>
 </glyph>

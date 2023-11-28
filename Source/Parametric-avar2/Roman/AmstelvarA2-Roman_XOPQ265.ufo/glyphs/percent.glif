@@ -4,11 +4,13 @@
   <unicode hex="0025"/>
   <outline>
     <component base="zerosuperior"/>
-    <component base="fraction" xOffset="1432"/>
-    <component base="zerosuperior" xOffset="1730" yOffset="-673"/>
+    <component base="fraction" xOffset="1432.0"/>
+    <component base="zerosuperior" xOffset="1730.0" yOffset="-673.0"/>
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XOPQ265.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>0,0,1,0.5</string>
     </dict>
