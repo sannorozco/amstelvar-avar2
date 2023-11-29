@@ -11,26 +11,17 @@ def permille(value, unitsPerEm):
 class AmstelvarDesignSpaceBuilder:
 
     familyName       = 'AmstelvarA2'
-    subFamilyName    = ['Roman', 'Italic'][1]
+    subFamilyName    = ['Roman', 'Italic'][0]
     baseFolder       = os.path.dirname(os.getcwd())
     sourcesFolder    = os.path.join(baseFolder,    'Parametric-avar2', subFamilyName) # 'TechAlpha'
     measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
     defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_wght400.ufo')
     designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}.designspace')
-    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XTSP YTOS GRAD XTTW YTTL'.split()
+    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XTSP YTOS XTTW YTTL'.split()
     minValue         = -100
     maxValue         = 100
 
-
     def __init__(self):
-        # self.sourcesParametric = glob.glob(f'{self.sourcesFolder}/*.ufo')
-        # get measurements for default source
-        # f = OpenFont(self.defaultUFO, showInterface=False)
-        # self.unitsPerEm = f.info.unitsPerEm
-        # self.measurementsDefault = FontMeasurements()
-        # self.measurementsDefault.read(self.measurementsPath)
-        # self.measurementsDefault.measure(f)
-        # f.close()
         pass
 
     @property
@@ -100,5 +91,5 @@ class AmstelvarDesignSpaceBuilder:
 if __name__ == '__main__':
 
     D = AmstelvarDesignSpaceBuilder()
-    D.build(sources=True)
+    D.build(sources=False)
     D.save()
