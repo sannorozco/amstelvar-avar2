@@ -1,18 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ijacute" format="2">
-  <advance width="1595"/>
+  <advance width="1195"/>
   <outline>
     <component base="idotless"/>
-    <component base="idot" xOffset="420"/>
-    <component base="jdotless" xOffset="839"/>
-    <component base="acutecomb" xOffset="605"/>
+    <component base="idot" xOffset="305"/>
+    <component base="jdotless" xOffset="639"/>
+    <component base="acutecomb" xOffset="917"/>
   </outline>
   <lib>
     <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
       <key>public.markColor</key>
-      <string>0.8337,1,0.1931,1</string>
+      <string>0,0,1,0.5</string>
     </dict>
   </lib>
 </glyph>

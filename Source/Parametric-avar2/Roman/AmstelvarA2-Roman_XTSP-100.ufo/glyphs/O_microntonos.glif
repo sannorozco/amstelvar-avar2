@@ -3,13 +3,15 @@
   <advance width="1874"/>
   <unicode hex="038C"/>
   <outline>
-    <component base="Omicron" xOffset="210"/>
-    <component base="tonos.case" xOffset="-310"/>
+    <component base="O" xOffset="210"/>
+    <component base="tonoscomb.case" xOffset="155"/>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0,1,0.5</string>
     </dict>
   </lib>
 </glyph>

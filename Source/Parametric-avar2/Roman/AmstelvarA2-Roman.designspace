@@ -1,310 +1,922 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="5.0">
   <axes>
-    <axis tag="GRAD" name="GRAD" minimum="-300" maximum="500" default="0"/>
+    <axis tag="XOPQ" name="XOPQ" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XOUC" name="XOUC" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XOLC" name="XOLC" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XOFI" name="XOFI" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XTRA" name="XTRA" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XTUC" name="XTUC" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XTLC" name="XTLC" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XTFI" name="XTFI" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YOPQ" name="YOPQ" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YTUC" name="YTUC" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YTLC" name="YTLC" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YTAS" name="YTAS" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YTDE" name="YTDE" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YTFI" name="YTFI" minimum="-100" maximum="100" default="0"/>
     <axis tag="XTSP" name="XTSP" minimum="-100" maximum="100" default="0"/>
-    <axis tag="XOPQ" name="XOPQ" minimum="20" maximum="265" default="90"/>
-    <axis tag="XTRA" name="XTRA" minimum="234" maximum="550" default="400"/>
-    <axis tag="YOPQ" name="YOPQ" minimum="14" maximum="132" default="62"/>
-    <axis tag="YTUC" name="YTUC" minimum="500" maximum="1000" default="750"/>
-    <axis tag="YTLC" name="YTLC" minimum="430" maximum="581" default="511"/>
-    <axis tag="YTAS" name="YTAS" minimum="617" maximum="1000" default="767"/>
-    <axis tag="YTDE" name="YTDE" minimum="-500" maximum="-138" default="-240"/>
-    <axis tag="YTFI" name="YTFI" minimum="447" maximum="1022" default="771"/>
+    <axis tag="YTOS" name="YTOS" minimum="-100" maximum="100" default="0"/>
+    <axis tag="GRAD" name="GRAD" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XTTW" name="XTTW" minimum="-100" maximum="100" default="0"/>
+    <axis tag="YTTL" name="YTTL" minimum="-100" maximum="100" default="0"/>
   </axes>
   <sources>
     <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="AmstelvarA2">
       <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
         <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_GRAD-300.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOPQ-100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="-300"/>
+        <dimension name="XOPQ" xvalue="-100"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_GRAD500.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOPQ100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="500"/>
+        <dimension name="XOPQ" xvalue="100"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOUC-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="-100"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOUC100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="100"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOLC100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="100"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOLC-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="-100"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOFI100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="100"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XOFI-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="-100"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTRA-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="-100"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTRA100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="100"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUC100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="100"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUC-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="-100"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTLC-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="-100"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTLC100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="100"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTFI-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="-100"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTFI100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="100"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YOPQ100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="100"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YOPQ-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="-100"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTUC-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="-100"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTUC100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="100"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTLC-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="-100"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTLC100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="100"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTAS100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="100"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTAS-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="-100"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTDE-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="-100"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTDE100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="100"/>
+        <dimension name="YTFI" xvalue="0"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTFI-100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="-100"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTFI100.ufo" familyname="AmstelvarA2">
+      <location>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="100"/>
+        <dimension name="XTSP" xvalue="0"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTSP-100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="-100"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTSP100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="100"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOPQ265.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTOS-100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="265"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="-100"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOPQ20.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTOS100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="20"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="100"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTRA234.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_GRAD-100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="234"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="-100"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTRA550.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_GRAD100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="550"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="100"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YOPQ14.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTTW100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="14"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="100"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YOPQ132.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTTW-100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="132"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="-100"/>
+        <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTUC1000.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTTL-100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="1000"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="YTOS" xvalue="0"/>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="-100"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTUC500.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTTL100.ufo" familyname="AmstelvarA2">
       <location>
-        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="0"/>
+        <dimension name="XOUC" xvalue="0"/>
+        <dimension name="XOLC" xvalue="0"/>
+        <dimension name="XOFI" xvalue="0"/>
+        <dimension name="XTRA" xvalue="0"/>
+        <dimension name="XTUC" xvalue="0"/>
+        <dimension name="XTLC" xvalue="0"/>
+        <dimension name="XTFI" xvalue="0"/>
+        <dimension name="YOPQ" xvalue="0"/>
+        <dimension name="YTUC" xvalue="0"/>
+        <dimension name="YTLC" xvalue="0"/>
+        <dimension name="YTAS" xvalue="0"/>
+        <dimension name="YTDE" xvalue="0"/>
+        <dimension name="YTFI" xvalue="0"/>
         <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="500"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTLC581.ufo" familyname="AmstelvarA2">
-      <location>
+        <dimension name="YTOS" xvalue="0"/>
         <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="581"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTLC430.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="430"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTAS617.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="617"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTAS1000.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="1000"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTDE-500.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-500"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTDE-138.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-138"/>
-        <dimension name="YTFI" xvalue="771"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTFI447.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="447"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_YTFI1022.ufo" familyname="AmstelvarA2">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XTSP" xvalue="0"/>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="1022"/>
+        <dimension name="XTTW" xvalue="0"/>
+        <dimension name="YTTL" xvalue="100"/>
       </location>
     </source>
   </sources>
