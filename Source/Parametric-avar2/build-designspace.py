@@ -15,14 +15,21 @@ class AmstelvarDesignSpaceBuilder:
     baseFolder       = os.path.dirname(os.getcwd())
     sourcesFolder    = os.path.join(baseFolder,    'Parametric-avar2', subFamilyName) # 'TechAlpha'
     measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
-    defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_wght400.ufo')
+    defaultName      = 'wght400'
+    defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
     designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}.designspace')
-    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XTSP YTOS XTTW YTTL'.split()
+    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI YTOS XTTW YTTL'.split()
     minValue         = -100
     maxValue         = 100
 
     def __init__(self):
-        pass
+        # get measurements for default source
+        f = OpenFont(self.defaultUFO, showInterface=False)
+        self.unitsPerEm = f.info.unitsPerEm
+        self.measurementsDefault = FontMeasurements()
+        self.measurementsDefault.read(self.measurementsPath)
+        self.measurementsDefault.measure(f)
+        f.close()
 
     @property
     def parametricSources(self):
@@ -30,35 +37,62 @@ class AmstelvarDesignSpaceBuilder:
 
     @property
     def defaultLocation(self):
-        L = { axis: 0 for axis in self.parametricAxes }
+        L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+        L['XTSP'] = 0
         return L
 
     def addParametricAxes(self):
+
+        # add spacing axis
+        a = AxisDescriptor()
+        a.name    = 'XTSP'
+        a.tag     = 'XTSP'
+        a.minimum = -100
+        a.maximum = 100
+        a.default = 0
+        self.designspace.addAxis(a)
+
+        # add parametric axes
         for name in self.parametricAxes:
+            # get min/max values from file names
+            values = []
+            for ufo in self.parametricSources:
+                if name in ufo:
+                    value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                    values.append(value)
+            assert len(values)
+            values.sort()
+            # create axis
             a = AxisDescriptor()
             a.name    = name
             a.tag     = name
-            a.minimum = -100
-            a.maximum = 100
-            a.default = 0
+            a.minimum = values[0]
+            a.maximum = values[1]
+            a.default = permille(self.measurementsDefault.values[name], self.unitsPerEm)
             self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
         src.path       = self.defaultUFO
         src.familyName = self.familyName
-        src.styleName  = 'wght400'
+        src.styleName  = self.defaultName
         src.location   = self.defaultLocation.copy()
         self.designspace.addSource(src)
 
-    def buildParametricSources(self):
-        for name in self.parametricAxes:
-            for value in [-100, 100]:
-                fontName = f'{self.familyName}-{self.subFamilyName}_{name}{value}'
-                sourcePath = os.path.join(self.sourcesFolder, f'{fontName}.ufo')
-                shutil.copytree(self.defaultUFO, sourcePath)
-
     def addParametricSources(self):
+
+        # add XTSP sources
+        for spacingValue in [-100, 100]:
+            L = self.defaultLocation.copy()
+            L['XTSP'] = spacingValue
+            src = SourceDescriptor()
+            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_XTSP{spacingValue}.ufo')
+            src.familyName = self.familyName
+            src.styleName  = f'XTSP{spacingValue}'
+            src.location   = L
+            self.designspace.addSource(src)
+
+        # add parametric sources
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
                 if name in ufo:
@@ -67,14 +101,12 @@ class AmstelvarDesignSpaceBuilder:
                     src.familyName = self.familyName
                     L = self.defaultLocation.copy()
                     value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                    L[name] = value
                     src.styleName  = f'{name}{value}'
+                    L[name] = value
                     src.location = L
                     self.designspace.addSource(src)
 
-    def build(self, sources=False):
-        if sources:
-            self.buildParametricSources()
+    def build(self):
         self.designspace = DesignSpaceDocument()
         self.addParametricAxes()
         self.addDefaultSource()
@@ -86,6 +118,8 @@ class AmstelvarDesignSpaceBuilder:
         self.designspace.write(self.designspacePath)
 
 
+
+
 # -----
 # build
 # -----
@@ -93,5 +127,5 @@ class AmstelvarDesignSpaceBuilder:
 if __name__ == '__main__':
 
     D = AmstelvarDesignSpaceBuilder()
-    D.build(sources=False)
+    D.build()
     D.save()

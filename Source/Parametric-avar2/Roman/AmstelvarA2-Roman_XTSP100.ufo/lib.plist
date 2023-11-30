@@ -1710,6 +1710,36 @@
           <integer>90</integer>
         </array>
         <array>
+          <string>Euro</string>
+          <string>five.lf</string>
+          <integer>30</integer>
+        </array>
+        <array>
+          <string>Euro</string>
+          <string>four.lf</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>Euro</string>
+          <string>nine.lf</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>Euro</string>
+          <string>six.lf</string>
+          <integer>-50</integer>
+        </array>
+        <array>
+          <string>Euro</string>
+          <string>three.lf</string>
+          <integer>40</integer>
+        </array>
+        <array>
+          <string>Euro</string>
+          <string>two.lf</string>
+          <integer>50</integer>
+        </array>
+        <array>
           <string>F</string>
           <string>V</string>
           <integer>60</integer>
@@ -6190,36 +6220,6 @@
           <integer>30</integer>
         </array>
         <array>
-          <string>euro</string>
-          <string>five.lf</string>
-          <integer>30</integer>
-        </array>
-        <array>
-          <string>euro</string>
-          <string>four.lf</string>
-          <integer>-70</integer>
-        </array>
-        <array>
-          <string>euro</string>
-          <string>nine.lf</string>
-          <integer>-20</integer>
-        </array>
-        <array>
-          <string>euro</string>
-          <string>six.lf</string>
-          <integer>-50</integer>
-        </array>
-        <array>
-          <string>euro</string>
-          <string>three.lf</string>
-          <integer>40</integer>
-        </array>
-        <array>
-          <string>euro</string>
-          <string>two.lf</string>
-          <integer>50</integer>
-        </array>
-        <array>
           <string>exclam</string>
           <string>De</string>
           <integer>-10</integer>
@@ -6351,6 +6351,11 @@
         </array>
         <array>
           <string>five.lf</string>
+          <string>Euro</string>
+          <integer>10</integer>
+        </array>
+        <array>
+          <string>five.lf</string>
           <string>asterisk</string>
           <integer>-40</integer>
         </array>
@@ -6378,11 +6383,6 @@
           <string>five.lf</string>
           <string>eight.lf</string>
           <integer>20</integer>
-        </array>
-        <array>
-          <string>five.lf</string>
-          <string>euro</string>
-          <integer>10</integer>
         </array>
         <array>
           <string>five.lf</string>
@@ -7616,6 +7616,11 @@
         </array>
         <array>
           <string>one.lf</string>
+          <string>Euro</string>
+          <integer>-130</integer>
+        </array>
+        <array>
+          <string>one.lf</string>
           <string>asterisk</string>
           <integer>-110</integer>
         </array>
@@ -7648,11 +7653,6 @@
           <string>one.lf</string>
           <string>dong</string>
           <integer>-50</integer>
-        </array>
-        <array>
-          <string>one.lf</string>
-          <string>euro</string>
-          <integer>-130</integer>
         </array>
         <array>
           <string>one.lf</string>
@@ -35141,6 +35141,11 @@
         </array>
         <array>
           <string>seven.lf</string>
+          <string>Euro</string>
+          <integer>-70</integer>
+        </array>
+        <array>
+          <string>seven.lf</string>
           <string>asterisk</string>
           <integer>50</integer>
         </array>
@@ -35183,11 +35188,6 @@
           <string>seven.lf</string>
           <string>dong</string>
           <integer>-100</integer>
-        </array>
-        <array>
-          <string>seven.lf</string>
-          <string>euro</string>
-          <integer>-70</integer>
         </array>
         <array>
           <string>seven.lf</string>
@@ -36171,6 +36171,11 @@
         </array>
         <array>
           <string>two.lf</string>
+          <string>Euro</string>
+          <integer>-20</integer>
+        </array>
+        <array>
+          <string>two.lf</string>
           <string>asterisk</string>
           <integer>50</integer>
         </array>
@@ -36203,11 +36208,6 @@
           <string>two.lf</string>
           <string>eight.lf</string>
           <integer>30</integer>
-        </array>
-        <array>
-          <string>two.lf</string>
-          <string>euro</string>
-          <integer>-20</integer>
         </array>
         <array>
           <string>two.lf</string>
@@ -107001,6 +107001,18 @@
     <dict>
       <key>default</key>
       <dict>
+        <key>.notdef</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>100</integer>
+          <key>width</key>
+          <integer>908</integer>
+        </dict>
+        <key>.null</key>
+        <dict>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
         <key>A</key>
         <dict>
           <key>leftMargin</key>
@@ -107263,7 +107275,7 @@
         <key>CR</key>
         <dict>
           <key>width</key>
-          <integer>0</integer>
+          <integer>508</integer>
         </dict>
         <key>Cacute</key>
         <dict>
@@ -107492,7 +107504,7 @@
         <key>Edblgrave</key>
         <dict>
           <key>leftMargin</key>
-          <integer>82</integer>
+          <integer>28</integer>
           <key>width</key>
           <integer>1288</integer>
         </dict>
@@ -107620,7 +107632,7 @@
           <key>leftMargin</key>
           <integer>50</integer>
           <key>width</key>
-          <integer>1638</integer>
+          <integer>1637</integer>
         </dict>
         <key>Er</key>
         <dict>
@@ -107670,6 +107682,13 @@
           <integer>82</integer>
           <key>width</key>
           <integer>1288</integer>
+        </dict>
+        <key>Euro</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>49</integer>
+          <key>width</key>
+          <integer>1099</integer>
         </dict>
         <key>F</key>
         <dict>
@@ -107739,14 +107758,14 @@
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>1156</integer>
+          <integer>1136</integer>
         </dict>
         <key>Ghestroke</key>
         <dict>
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>1156</integer>
+          <integer>1136</integer>
         </dict>
         <key>Gheup</key>
         <dict>
@@ -107760,7 +107779,7 @@
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>1156</integer>
+          <integer>1136</integer>
         </dict>
         <key>H</key>
         <dict>
@@ -107844,7 +107863,7 @@
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>1402</integer>
+          <integer>1532</integer>
         </dict>
         <key>Ibreve</key>
         <dict>
@@ -107870,7 +107889,7 @@
         <key>Idblgrave</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-120</integer>
+          <integer>-236</integer>
           <key>width</key>
           <integer>780</integer>
         </dict>
@@ -107968,7 +107987,7 @@
         <key>Iogonek</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-106</integer>
+          <integer>82</integer>
           <key>width</key>
           <integer>780</integer>
         </dict>
@@ -108110,7 +108129,7 @@
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>1441</integer>
+          <integer>1440</integer>
         </dict>
         <key>L</key>
         <dict>
@@ -108178,7 +108197,7 @@
         <key>Lslash</key>
         <dict>
           <key>leftMargin</key>
-          <integer>82</integer>
+          <integer>68</integer>
           <key>width</key>
           <integer>1264</integer>
         </dict>
@@ -108488,7 +108507,7 @@
           <key>leftMargin</key>
           <integer>10</integer>
           <key>width</key>
-          <integer>1770</integer>
+          <integer>1850</integer>
         </dict>
         <key>Omicron</key>
         <dict>
@@ -108626,7 +108645,7 @@
         <key>Rdblgrave</key>
         <dict>
           <key>leftMargin</key>
-          <integer>82</integer>
+          <integer>4</integer>
           <key>width</key>
           <integer>1350</integer>
         </dict>
@@ -109176,6 +109195,13 @@
           <key>width</key>
           <integer>780</integer>
         </dict>
+        <key>Yi-dieresiscomb.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-346</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
         <key>Ymacron</key>
         <dict>
           <key>leftMargin</key>
@@ -109195,14 +109221,21 @@
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>2304</integer>
+          <integer>2344</integer>
+        </dict>
+        <key>Yu-dash.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>380</integer>
+          <key>width</key>
+          <integer>1235</integer>
         </dict>
         <key>Yumacron</key>
         <dict>
           <key>leftMargin</key>
           <integer>82</integer>
           <key>width</key>
-          <integer>2304</integer>
+          <integer>2344</integer>
         </dict>
         <key>Z</key>
         <dict>
@@ -109396,30 +109429,58 @@
         <key>acute</key>
         <dict>
           <key>leftMargin</key>
-          <integer>320</integer>
+          <integer>311</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>acute-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>311</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>acute-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>295</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>acute.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>295</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>acutecomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>320</integer>
+          <integer>-192</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>acutecomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-125</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>acutecomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-169</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>acutecomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>283</integer>
+          <integer>-169</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>acutecombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>368</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>acyr</key>
         <dict>
@@ -109431,7 +109492,7 @@
         <key>adblgrave</key>
         <dict>
           <key>leftMargin</key>
-          <real>-5.0</real>
+          <integer>-5</integer>
           <key>width</key>
           <integer>1096</integer>
         </dict>
@@ -109676,9 +109737,30 @@
         <key>breve</key>
         <dict>
           <key>leftMargin</key>
-          <integer>158</integer>
+          <integer>170</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>breve-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>170</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>breve-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>141</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>breve.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>141</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>breve.cyr</key>
         <dict>
@@ -109690,114 +109772,135 @@
         <key>breve.cyr.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>120</integer>
+          <integer>132</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
-        <key>breveacutecomb</key>
+        <key>breve.cyrcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>157</integer>
+          <integer>-354</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
-        <key>breveacutecomb.case</key>
+        <key>breve.cyrcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>130</integer>
+          <integer>-392</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>brevebelow</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>141</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>brevebelow.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>141</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>brevebelowcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>129</integer>
+          <integer>-383</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>brevebelowcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>128</integer>
+          <integer>-383</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>brevecomb</key>
         <dict>
           <key>leftMargin</key>
-          <real>158.0</real>
+          <integer>-354</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>brevecomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-355</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>brevecomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-383</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>brevecomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>129</integer>
+          <integer>-383</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
-        <key>brevecombstack.case</key>
+        <key>breveinverted</key>
         <dict>
           <key>leftMargin</key>
-          <integer>129</integer>
+          <integer>172</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
-        <key>brevegravecomb</key>
+        <key>breveinverted-stack</key>
         <dict>
           <key>leftMargin</key>
-          <integer>157</integer>
+          <integer>172</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
-        <key>brevegravecomb.case</key>
+        <key>breveinverted-stack.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>130</integer>
+          <integer>141</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
-        <key>brevehookabovecomb</key>
+        <key>breveinverted.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>157</integer>
+          <integer>141</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>brevehookabovecomb.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>130</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
         <key>breveinvertedcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>160</integer>
+          <integer>-352</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>breveinvertedcomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-352</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>breveinvertedcomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-383</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>breveinvertedcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>129</integer>
+          <integer>-383</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>brevetildecomb</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>116</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>brevetildecomb.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>130</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>brokenbar</key>
         <dict>
@@ -109837,30 +109940,65 @@
         <key>caron</key>
         <dict>
           <key>leftMargin</key>
-          <integer>199</integer>
+          <integer>211</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>caron-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>211</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>caron-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>191</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>caron.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>191</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>caroncomb</key>
         <dict>
           <key>leftMargin</key>
-          <real>199.0</real>
+          <integer>-313</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>caroncomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-313</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>caroncomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-333</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>caroncomb.alt</key>
         <dict>
           <key>leftMargin</key>
-          <integer>373</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>caroncomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>179</integer>
+          <integer>-333</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>ccaron</key>
         <dict>
@@ -109907,23 +110045,30 @@
         <key>cedilla</key>
         <dict>
           <key>leftMargin</key>
-          <integer>267</integer>
+          <integer>259</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>cedilla.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>249</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>cedillacomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>267</integer>
+          <integer>-263</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>cedillacomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>237</integer>
+          <integer>-280</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>cent</key>
         <dict>
@@ -109977,86 +110122,58 @@
         <key>circumflex</key>
         <dict>
           <key>leftMargin</key>
-          <integer>199</integer>
+          <integer>211</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
-        <key>circumflexacutecomb</key>
+        <key>circumflex-stack</key>
         <dict>
           <key>leftMargin</key>
-          <integer>199</integer>
+          <integer>211</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
-        <key>circumflexacutecomb.case</key>
+        <key>circumflex-stack.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>180</integer>
+          <integer>191</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>circumflex.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>191</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>circumflexcomb</key>
         <dict>
           <key>leftMargin</key>
-          <real>199.0</real>
+          <integer>-313</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>circumflexcomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-313</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>circumflexcomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-333</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>circumflexcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>179</integer>
+          <integer>-333</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflexcombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>179</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflexgravecomb</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>199</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflexgravecomb.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>180</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflexhookabovecomb</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>199</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflexhookabovecomb.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>180</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflextildecomb</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>132</integer>
-          <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>circumflextildecomb.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>163</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>colon</key>
         <dict>
@@ -110086,19 +110203,47 @@
           <key>width</key>
           <integer>584</integer>
         </dict>
+        <key>commaaccent</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>374</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>commaaccent.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>374</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
         <key>commaaccentcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>362</integer>
+          <integer>-150</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>commaaccentcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>345</integer>
+          <integer>-150</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>commaaccentturned</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>374</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>commaaccentturnedcomb</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-138</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>commercialMinusSign</key>
         <dict>
@@ -110142,19 +110287,61 @@
           <key>width</key>
           <integer>996</integer>
         </dict>
+        <key>dblgrave</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>122</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dblgrave-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>122</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dblgrave-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>14</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dblgrave.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>14</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
         <key>dblgravecomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-7</integer>
+          <integer>-519</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>dblgravecomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-519</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>dblgravecomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-464</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>dblgravecomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>2</integer>
+          <integer>-510</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>dcaron</key>
         <dict>
@@ -110243,44 +110430,86 @@
         <key>dieresis</key>
         <dict>
           <key>leftMargin</key>
-          <integer>166</integer>
+          <integer>178</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>dieresis-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>178</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dieresis-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>178</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dieresis.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>178</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dieresisbelow</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>178</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dieresisbelow.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>178</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>dieresisbelowcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>166</integer>
+          <integer>-346</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>dieresisbelowcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>166</integer>
+          <integer>-346</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>dieresiscomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>166</integer>
+          <integer>-346</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>dieresiscomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-346</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>dieresiscomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-346</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>dieresiscomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>166</integer>
+          <integer>-346</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>dieresiscombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>166</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>dieresistonos</key>
         <dict>
@@ -110289,12 +110518,26 @@
           <key>width</key>
           <integer>1144</integer>
         </dict>
+        <key>dieresistonos.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>118</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
         <key>dieresistonoscomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>166</integer>
+          <integer>-388</integer>
           <key>width</key>
-          <integer>1144</integer>
+          <integer>0</integer>
+        </dict>
+        <key>dieresistonoscomb.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-388</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>divide</key>
         <dict>
@@ -110348,44 +110591,86 @@
         <key>dotaccent</key>
         <dict>
           <key>leftMargin</key>
-          <integer>391</integer>
+          <integer>403</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>dotaccent-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>403</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dotaccent-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>403</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>dotaccent.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>403</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>dotaccentcomb</key>
         <dict>
           <key>leftMargin</key>
-          <real>391.0</real>
+          <integer>-121</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>dotaccentcomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-121</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>dotaccentcomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-121</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>dotaccentcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>391</integer>
+          <integer>-121</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
-        <key>dotaccentcombstack.case</key>
+        <key>dotbelow</key>
         <dict>
           <key>leftMargin</key>
-          <integer>391</integer>
+          <integer>406</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>dotbelow.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>401</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>dotbelowcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>394</integer>
+          <integer>-118</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>dotbelowcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>389</integer>
+          <integer>-123</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>doubleprimemod</key>
         <dict>
@@ -110502,7 +110787,7 @@
         <key>edblgrave</key>
         <dict>
           <key>leftMargin</key>
-          <real>20.0</real>
+          <integer>20</integer>
           <key>width</key>
           <integer>1051</integer>
         </dict>
@@ -110758,13 +111043,6 @@
           <key>width</key>
           <integer>1051</integer>
         </dict>
-        <key>euro</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>49</integer>
-          <key>width</key>
-          <integer>1099</integer>
-        </dict>
         <key>exclam</key>
         <dict>
           <key>leftMargin</key>
@@ -110824,9 +111102,9 @@
         <key>firsttonechinese</key>
         <dict>
           <key>leftMargin</key>
-          <integer>215</integer>
+          <integer>228</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
         </dict>
         <key>five</key>
         <dict>
@@ -111027,30 +111305,58 @@
         <key>grave</key>
         <dict>
           <key>leftMargin</key>
-          <integer>277</integer>
+          <integer>312</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>grave-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>312</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>grave-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>295</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>grave.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>295</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>gravecomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>277</integer>
+          <integer>-235</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>gravecomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-302</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>gravecomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-229</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>gravecomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>283</integer>
+          <integer>-229</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>gravecombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>322</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>greater</key>
         <dict>
@@ -111080,14 +111386,14 @@
           <key>width</key>
           <integer>1463</integer>
         </dict>
-        <key>guillemetleft</key>
+        <key>guillemotleft</key>
         <dict>
           <key>leftMargin</key>
           <integer>25</integer>
           <key>width</key>
           <integer>1295</integer>
         </dict>
-        <key>guillemetright</key>
+        <key>guillemotright</key>
         <dict>
           <key>leftMargin</key>
           <real>16.21761658031088</real>
@@ -111119,6 +111425,13 @@
         <dict>
           <key>leftMargin</key>
           <integer>16</integer>
+          <key>width</key>
+          <integer>1043</integer>
+        </dict>
+        <key>ha-stroke</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>201</integer>
           <key>width</key>
           <integer>1043</integer>
         </dict>
@@ -111164,26 +111477,61 @@
           <key>width</key>
           <integer>1258</integer>
         </dict>
+        <key>hook-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>285</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>hookabove</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>289</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>hookabove-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>289</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>hookabove.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>285</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
         <key>hookabovecomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>302</integer>
+          <integer>-210</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>hookabovecomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-162</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>hookabovecomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-215</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>hookabovecomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>263</integer>
+          <integer>-215</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>hookabovecombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>237</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>horizontalbar</key>
         <dict>
@@ -111206,6 +111554,20 @@
           <key>width</key>
           <integer>636</integer>
         </dict>
+        <key>horn</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>356</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>horn.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>317</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
         <key>hornU</key>
         <dict>
           <key>leftMargin</key>
@@ -111216,16 +111578,16 @@
         <key>horncomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-1</integer>
+          <integer>0</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>horncomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>320</integer>
+          <integer>-207</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>hornu</key>
         <dict>
@@ -111244,23 +111606,58 @@
         <key>hungarumlaut</key>
         <dict>
           <key>leftMargin</key>
-          <integer>189</integer>
+          <integer>130</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>hungarumlaut-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>130</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>hungarumlaut-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>130</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>hungarumlaut.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>130</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>hungarumlautcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>189</integer>
+          <integer>-394</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>hungarumlautcomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-394</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>hungarumlautcomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-394</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>hungarumlautcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>118</integer>
+          <integer>-394</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>hyphen</key>
         <dict>
@@ -111302,7 +111699,7 @@
           <key>leftMargin</key>
           <integer>72</integer>
           <key>width</key>
-          <integer>1186</integer>
+          <integer>1195</integer>
         </dict>
         <key>ibreve</key>
         <dict>
@@ -111338,6 +111735,13 @@
           <integer>-26</integer>
           <key>width</key>
           <integer>639</integer>
+        </dict>
+        <key>idot</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-126</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>idotaccent</key>
         <dict>
@@ -111461,7 +111865,7 @@
         <key>iogonek</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-69</integer>
+          <integer>72</integer>
           <key>width</key>
           <integer>639</integer>
         </dict>
@@ -111475,14 +111879,14 @@
         <key>iotadieresis</key>
         <dict>
           <key>leftMargin</key>
-          <real>-58.0</real>
+          <integer>-59</integer>
           <key>width</key>
           <integer>627</integer>
         </dict>
         <key>iotadieresistonos</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-101</integer>
+          <integer>-83</integer>
           <key>width</key>
           <integer>627</integer>
         </dict>
@@ -111510,7 +111914,7 @@
         <key>itilde</key>
         <dict>
           <key>leftMargin</key>
-          <integer>-62</integer>
+          <integer>-67</integer>
           <key>width</key>
           <integer>639</integer>
         </dict>
@@ -111694,7 +112098,7 @@
           <key>leftMargin</key>
           <integer>52</integer>
           <key>width</key>
-          <integer>1056</integer>
+          <integer>956</integer>
         </dict>
         <key>leftanglebracket</key>
         <dict>
@@ -111776,44 +112180,86 @@
         <key>macron</key>
         <dict>
           <key>leftMargin</key>
-          <integer>215</integer>
+          <integer>228</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>macron-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>228</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>macron-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>228</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>macron.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>228</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>macronbelow</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>228</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>macronbelow.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>228</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>macronbelowcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>216</integer>
+          <integer>-296</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>macronbelowcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>216</integer>
+          <integer>-296</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>macroncomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>215</integer>
+          <integer>-296</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>macroncomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-296</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>macroncomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-296</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>macroncomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>216</integer>
+          <integer>-296</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>macroncombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>216</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>manat</key>
         <dict>
@@ -111890,7 +112336,7 @@
           <key>leftMargin</key>
           <integer>76</integer>
           <key>width</key>
-          <integer>1864</integer>
+          <integer>1754</integer>
         </dict>
         <key>nbspace</key>
         <dict>
@@ -112131,23 +112577,30 @@
         <key>ogonek</key>
         <dict>
           <key>leftMargin</key>
-          <integer>277</integer>
+          <integer>257</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>ogonek.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>233</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>ogonekcomb</key>
         <dict>
           <key>leftMargin</key>
-          <real>277.0</real>
+          <integer>-267</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>ogonekcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>221</integer>
+          <integer>-299</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>ograve</key>
         <dict>
@@ -112457,13 +112910,6 @@
           <key>width</key>
           <integer>424</integer>
         </dict>
-        <key>periodcentered.loclCAT.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>68</integer>
-          <key>width</key>
-          <integer>424</integer>
-        </dict>
         <key>perthousand</key>
         <dict>
           <key>leftMargin</key>
@@ -112642,7 +113088,7 @@
         <key>rdblgrave</key>
         <dict>
           <key>leftMargin</key>
-          <real>-33.0</real>
+          <integer>-33</integer>
           <key>width</key>
           <integer>864</integer>
         </dict>
@@ -112670,23 +113116,58 @@
         <key>ring</key>
         <dict>
           <key>leftMargin</key>
-          <integer>285</integer>
+          <integer>297</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>ring-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>297</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>ring-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>307</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>ring.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>307</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>ringcomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>285</integer>
+          <integer>-227</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>ringcomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-227</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>ringcomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-217</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>ringcomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>295</integer>
+          <integer>-217</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>rinvertedbreve</key>
         <dict>
@@ -112907,8 +113388,10 @@
         </dict>
         <key>softhyphen</key>
         <dict>
+          <key>leftMargin</key>
+          <integer>80</integer>
           <key>width</key>
-          <integer>0</integer>
+          <integer>739</integer>
         </dict>
         <key>space</key>
         <dict>
@@ -112939,7 +113422,7 @@
         <key>tbar</key>
         <dict>
           <key>leftMargin</key>
-          <integer>24</integer>
+          <real>23.5</real>
           <key>width</key>
           <integer>643</integer>
         </dict>
@@ -112948,7 +113431,7 @@
           <key>leftMargin</key>
           <integer>26</integer>
           <key>width</key>
-          <integer>1068</integer>
+          <integer>1065</integer>
         </dict>
         <key>tcedilla</key>
         <dict>
@@ -113058,30 +113541,58 @@
         <key>tilde</key>
         <dict>
           <key>leftMargin</key>
-          <integer>130</integer>
+          <integer>137</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>1048</integer>
+        </dict>
+        <key>tilde-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>137</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>tilde-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>107</integer>
+          <key>width</key>
+          <integer>1048</integer>
+        </dict>
+        <key>tilde.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>107</integer>
+          <key>width</key>
+          <integer>1048</integer>
         </dict>
         <key>tildecomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>130</integer>
+          <integer>-387</integer>
           <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
+        </dict>
+        <key>tildecomb-stack</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-387</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
+        <key>tildecomb-stack.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-365</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>tildecomb.case</key>
         <dict>
           <key>leftMargin</key>
-          <integer>105</integer>
+          <integer>-417</integer>
           <key>width</key>
-          <integer>1024</integer>
-        </dict>
-        <key>tildecombstack.case</key>
-        <dict>
-          <key>leftMargin</key>
-          <integer>147</integer>
-          <key>width</key>
-          <integer>1024</integer>
+          <integer>0</integer>
         </dict>
         <key>tonos</key>
         <dict>
@@ -113100,9 +113611,16 @@
         <key>tonoscomb</key>
         <dict>
           <key>leftMargin</key>
-          <integer>320</integer>
+          <integer>-72</integer>
           <key>width</key>
-          <integer>888</integer>
+          <integer>0</integer>
+        </dict>
+        <key>tonoscomb.case</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-145</integer>
+          <key>width</key>
+          <integer>0</integer>
         </dict>
         <key>trademark</key>
         <dict>
@@ -113384,6 +113902,13 @@
           <key>width</key>
           <integer>1026</integer>
         </dict>
+        <key>ustraight-stroke</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>198</integer>
+          <key>width</key>
+          <integer>1026</integer>
+        </dict>
         <key>ustraightstroke</key>
         <dict>
           <key>leftMargin</key>
@@ -113566,6 +114091,20 @@
           <key>width</key>
           <integer>639</integer>
         </dict>
+        <key>yi-dieresis</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>29</integer>
+          <key>width</key>
+          <integer>639</integer>
+        </dict>
+        <key>yi-dieresiscomb</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>-291</integer>
+          <key>width</key>
+          <integer>0</integer>
+        </dict>
         <key>ymacron</key>
         <dict>
           <key>leftMargin</key>
@@ -113591,6 +114130,13 @@
         <dict>
           <key>leftMargin</key>
           <integer>52</integer>
+          <key>width</key>
+          <integer>1705</integer>
+        </dict>
+        <key>yu.bgr-stroke</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>323</integer>
           <key>width</key>
           <integer>1705</integer>
         </dict>
@@ -113677,6 +114223,13 @@
           <integer>52</integer>
           <key>width</key>
           <integer>1000</integer>
+        </dict>
+        <key>zerosuperior</key>
+        <dict>
+          <key>leftMargin</key>
+          <integer>74</integer>
+          <key>width</key>
+          <integer>938</integer>
         </dict>
         <key>zeta</key>
         <dict>
