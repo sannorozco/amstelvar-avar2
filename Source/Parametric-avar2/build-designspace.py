@@ -47,6 +47,7 @@ class AmstelvarDesignSpaceBuilder:
         src = SourceDescriptor()
         src.path       = self.defaultUFO
         src.familyName = self.familyName
+        src.styleName  = 'wght400'
         src.location   = self.defaultLocation.copy()
         self.designspace.addSource(src)
 
@@ -67,6 +68,7 @@ class AmstelvarDesignSpaceBuilder:
                     L = self.defaultLocation.copy()
                     value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
                     L[name] = value
+                    src.styleName  = f'{name}{value}'
                     src.location = L
                     self.designspace.addSource(src)
 

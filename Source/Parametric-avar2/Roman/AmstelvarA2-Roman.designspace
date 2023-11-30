@@ -21,7 +21,7 @@
     <axis tag="YTTL" name="YTTL" minimum="-100" maximum="100" default="0"/>
   </axes>
   <sources>
-    <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="AmstelvarA2" stylename="wght400">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -43,7 +43,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOPQ-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOPQ-100.ufo" familyname="AmstelvarA2" stylename="XOPQ-100">
       <location>
         <dimension name="XOPQ" xvalue="-100"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -65,7 +65,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOPQ100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOPQ100.ufo" familyname="AmstelvarA2" stylename="XOPQ100">
       <location>
         <dimension name="XOPQ" xvalue="100"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -87,7 +87,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOUC-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOUC-100.ufo" familyname="AmstelvarA2" stylename="XOUC-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="-100"/>
@@ -109,7 +109,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOUC100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOUC100.ufo" familyname="AmstelvarA2" stylename="XOUC100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="100"/>
@@ -131,7 +131,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOLC100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOLC100.ufo" familyname="AmstelvarA2" stylename="XOLC100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -153,7 +153,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOLC-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOLC-100.ufo" familyname="AmstelvarA2" stylename="XOLC-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -175,7 +175,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOFI100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOFI100.ufo" familyname="AmstelvarA2" stylename="XOFI100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -197,7 +197,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XOFI-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XOFI-100.ufo" familyname="AmstelvarA2" stylename="XOFI-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -219,7 +219,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTRA-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTRA-100.ufo" familyname="AmstelvarA2" stylename="XTRA-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -241,7 +241,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTRA100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTRA100.ufo" familyname="AmstelvarA2" stylename="XTRA100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -263,7 +263,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTUC100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTUC100.ufo" familyname="AmstelvarA2" stylename="XTUC100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -285,7 +285,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTUC-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTUC-100.ufo" familyname="AmstelvarA2" stylename="XTUC-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -307,7 +307,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTLC-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTLC-100.ufo" familyname="AmstelvarA2" stylename="XTLC-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -329,7 +329,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTLC100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTLC100.ufo" familyname="AmstelvarA2" stylename="XTLC100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -351,7 +351,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTFI-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTFI-100.ufo" familyname="AmstelvarA2" stylename="XTFI-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -373,7 +373,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTFI100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTFI100.ufo" familyname="AmstelvarA2" stylename="XTFI100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -395,7 +395,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YOPQ100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YOPQ100.ufo" familyname="AmstelvarA2" stylename="YOPQ100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -417,7 +417,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YOPQ-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YOPQ-100.ufo" familyname="AmstelvarA2" stylename="YOPQ-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -439,7 +439,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTUC-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTUC-100.ufo" familyname="AmstelvarA2" stylename="YTUC-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -461,7 +461,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTUC100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTUC100.ufo" familyname="AmstelvarA2" stylename="YTUC100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -483,7 +483,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTLC-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTLC-100.ufo" familyname="AmstelvarA2" stylename="YTLC-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -505,7 +505,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTLC100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTLC100.ufo" familyname="AmstelvarA2" stylename="YTLC100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -527,7 +527,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTAS100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTAS100.ufo" familyname="AmstelvarA2" stylename="YTAS100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -549,7 +549,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTAS-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTAS-100.ufo" familyname="AmstelvarA2" stylename="YTAS-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -571,7 +571,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTDE-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTDE-100.ufo" familyname="AmstelvarA2" stylename="YTDE-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -593,7 +593,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTDE100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTDE100.ufo" familyname="AmstelvarA2" stylename="YTDE100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -615,7 +615,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTFI-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTFI-100.ufo" familyname="AmstelvarA2" stylename="YTFI-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -637,7 +637,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTFI100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTFI100.ufo" familyname="AmstelvarA2" stylename="YTFI100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -659,7 +659,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTSP-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTSP-100.ufo" familyname="AmstelvarA2" stylename="XTSP-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -681,7 +681,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTSP100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTSP100.ufo" familyname="AmstelvarA2" stylename="XTSP100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -703,7 +703,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTOS-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTOS-100.ufo" familyname="AmstelvarA2" stylename="YTOS-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -725,7 +725,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTOS100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTOS100.ufo" familyname="AmstelvarA2" stylename="YTOS100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -747,7 +747,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTTW100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTTW100.ufo" familyname="AmstelvarA2" stylename="XTTW100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -769,7 +769,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTTW-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_XTTW-100.ufo" familyname="AmstelvarA2" stylename="XTTW-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -791,7 +791,7 @@
         <dimension name="YTTL" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTTL-100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTTL-100.ufo" familyname="AmstelvarA2" stylename="YTTL-100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
@@ -813,7 +813,7 @@
         <dimension name="YTTL" xvalue="-100"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTTL100.ufo" familyname="AmstelvarA2">
+    <source filename="AmstelvarA2-Roman_YTTL100.ufo" familyname="AmstelvarA2" stylename="YTTL100">
       <location>
         <dimension name="XOPQ" xvalue="0"/>
         <dimension name="XOUC" xvalue="0"/>
