@@ -18,7 +18,7 @@ class AmstelvarDesignSpaceBuilder:
     defaultName      = 'wght400'
     defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
     designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}.designspace')
-    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI YTOS XTTW YTTL XSHU XSHL YSHU YSHL'.split()
+    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI YTOS XTTW YTTL XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL'.split()
     minValue         = -100
     maxValue         = 100
 
