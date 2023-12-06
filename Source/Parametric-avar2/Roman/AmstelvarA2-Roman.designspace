@@ -10,8 +10,8 @@
     <axis tag="XTUC" name="XTUC" minimum="208" maximum="508" default="400"/>
     <axis tag="XTLC" name="XTLC" minimum="141" maximum="328" default="243"/>
     <axis tag="XTFI" name="XTFI" minimum="229" maximum="429" default="329"/>
-    <axis tag="YOPQ" name="YOPQ" minimum="4" maximum="276" default="62"/>
-    <axis tag="YTUC" name="YTUC" minimum="541" maximum="778" default="750"/>
+    <axis tag="YOPQ" name="YOPQ" minimum="4" maximum="311" default="62"/>
+    <axis tag="YTUC" name="YTUC" minimum="541" maximum="875" default="750"/>
     <axis tag="YTLC" name="YTLC" minimum="436" maximum="594" default="511"/>
     <axis tag="YTAS" name="YTAS" minimum="665" maximum="875" default="767"/>
     <axis tag="YTDE" name="YTDE" minimum="-310" maximum="-100" default="-240"/>
@@ -599,7 +599,7 @@
         <dimension name="YSVL" xvalue="176"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YOPQ276.ufo" familyname="AmstelvarA2" stylename="YOPQ276">
+    <source filename="AmstelvarA2-Roman_YOPQ311.ufo" familyname="AmstelvarA2" stylename="YOPQ311">
       <location>
         <dimension name="XTSP" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
@@ -610,7 +610,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTFI" xvalue="329"/>
-        <dimension name="YOPQ" xvalue="276"/>
+        <dimension name="YOPQ" xvalue="311"/>
         <dimension name="YTUC" xvalue="750"/>
         <dimension name="YTLC" xvalue="511"/>
         <dimension name="YTAS" xvalue="767"/>
@@ -659,7 +659,7 @@
         <dimension name="YSVL" xvalue="176"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YTUC778.ufo" familyname="AmstelvarA2" stylename="YTUC778">
+    <source filename="AmstelvarA2-Roman_YTUC875.ufo" familyname="AmstelvarA2" stylename="YTUC875">
       <location>
         <dimension name="XTSP" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
@@ -671,7 +671,7 @@
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTFI" xvalue="329"/>
         <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="778"/>
+        <dimension name="YTUC" xvalue="875"/>
         <dimension name="YTLC" xvalue="511"/>
         <dimension name="YTAS" xvalue="767"/>
         <dimension name="YTDE" xvalue="-240"/>
