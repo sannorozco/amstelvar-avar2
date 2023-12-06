@@ -118,8 +118,6 @@ class AmstelvarDesignSpaceBuilder:
         self.designspace.write(self.designspacePath)
 
 
-
-
 # -----
 # build
 # -----
