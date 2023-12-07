@@ -15,7 +15,7 @@ allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 ignoreTags = ['wght', 'GRAD', 'XTSP']
 
-preflight = False
+preflight = True
 
 for ufo in allUFOs:
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
