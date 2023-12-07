@@ -8,10 +8,10 @@
   <anchor x="1590.0" y="1500" name="topright"/>
   <outline>
     <contour>
-      <point x="64" y="1386" type="line"/>
-      <point x="64" y="1500" type="line"/>
-      <point x="650" y="1500" type="line"/>
-      <point x="650" y="1386" type="line"/>
+      <point x="262" y="1386" type="line"/>
+      <point x="262" y="1500" type="line"/>
+      <point x="443" y="1500" type="line"/>
+      <point x="443" y="1386" type="line"/>
       <point x="443" y="1352" type="line"/>
       <point x="438" y="794" type="line"/>
       <point x="442" y="474" type="line" smooth="yes"/>
@@ -23,10 +23,10 @@
       <point x="1242" y="494" type="qcurve" smooth="yes"/>
       <point x="1244" y="794" type="line"/>
       <point x="1242" y="1352" type="line"/>
-      <point x="1024" y="1386" type="line"/>
-      <point x="1024" y="1500" type="line"/>
-      <point x="1590" y="1500" type="line"/>
-      <point x="1590" y="1386" type="line"/>
+      <point x="1242" y="1386" type="line"/>
+      <point x="1242" y="1500" type="line"/>
+      <point x="1382" y="1500" type="line"/>
+      <point x="1382" y="1386" type="line"/>
       <point x="1382" y="1352" type="line"/>
       <point x="1380" y="794" type="line"/>
       <point x="1383" y="493" type="line" smooth="yes"/>
@@ -150,6 +150,8 @@
           <string>XUCS</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>1,0.57811,0,0.25476</string>
     </dict>
   </lib>
 </glyph>
