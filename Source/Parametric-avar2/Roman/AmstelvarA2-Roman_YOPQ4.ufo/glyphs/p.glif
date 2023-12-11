@@ -16,9 +16,9 @@
       <point x="324" y="1000" type="line"/>
       <point x="359" y="973" type="line"/>
       <point x="374" y="862" type="line"/>
-      <point x="424" y="932"/>
+      <point x="424" y="931"/>
       <point x="593" y="1020"/>
-      <point x="711" y="1020" type="qcurve" smooth="yes"/>
+      <point x="694" y="1020" type="qcurve" smooth="yes"/>
       <point x="893" y="1020"/>
       <point x="1130" y="754"/>
       <point x="1130" y="530" type="qcurve" smooth="yes"/>
@@ -40,11 +40,11 @@
       <point x="790" y="0"/>
       <point x="946" y="313"/>
       <point x="946" y="505" type="qcurve" smooth="yes"/>
-      <point x="946" y="688"/>
-      <point x="791" y="997"/>
-      <point x="659" y="997" type="qcurve" smooth="yes"/>
-      <point x="560" y="997"/>
-      <point x="416" y="912"/>
+      <point x="946" y="690"/>
+      <point x="791" y="1003"/>
+      <point x="638" y="1003" type="qcurve" smooth="yes"/>
+      <point x="570" y="1003"/>
+      <point x="417" y="914"/>
       <point x="373" y="846" type="qcurve"/>
       <point x="370" y="427" type="line"/>
     </contour>
@@ -159,6 +159,8 @@
           <string>XLCR</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>1,0.57811,0,0.25476</string>
     </dict>
   </lib>
 </glyph>
