@@ -30,20 +30,20 @@
       <point x="238" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="313" y="498" type="line"/>
-      <point x="323" y="236" type="line"/>
-      <point x="357" y="177"/>
-      <point x="504" y="91"/>
-      <point x="603" y="91" type="qcurve" smooth="yes"/>
-      <point x="739" y="91"/>
-      <point x="894" y="313"/>
-      <point x="894" y="505" type="qcurve" smooth="yes"/>
-      <point x="894" y="688"/>
-      <point x="740" y="894"/>
-      <point x="608" y="894" type="qcurve" smooth="yes"/>
-      <point x="507" y="894"/>
-      <point x="365" y="810"/>
-      <point x="323" y="744" type="qcurve"/>
+      <point x="318" y="522" type="line"/>
+      <point x="320" y="481" type="line"/>
+      <point x="354" y="471"/>
+      <point x="502" y="457"/>
+      <point x="602" y="457" type="qcurve" smooth="yes"/>
+      <point x="738" y="457"/>
+      <point x="894" y="492"/>
+      <point x="894" y="523" type="qcurve" smooth="yes"/>
+      <point x="894" y="552"/>
+      <point x="739" y="585"/>
+      <point x="607" y="585" type="qcurve" smooth="yes"/>
+      <point x="508" y="585"/>
+      <point x="364" y="572"/>
+      <point x="321" y="561" type="qcurve"/>
     </contour>
   </outline>
   <lib>
@@ -128,6 +128,8 @@
           <string>XLCR</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>1,0.57811,0,0.25476</string>
     </dict>
   </lib>
 </glyph>
