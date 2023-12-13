@@ -471,53 +471,45 @@
     },
     "four": {
       "10 5": {
-        "direction": "x",
-        "name": "XOFI"
+        "name": "XOFI",
+        "direction": "x"
       },
       "17 14": {
-        "direction": "y",
-        "name": "YOFI"
+        "name": "YOFI",
+        "direction": "y"
       },
       "8 1": {
-        "direction": "y",
-        "name": "YTFI"
+        "name": "YTFI",
+        "direction": "y"
       }
     },
     "five": {
       "12 19": {
-        "direction": "x",
-        "name": "XOFI"
-      },
-      "14 26": {
-        "direction": "y",
-        "name": "YTFI"
-      },
-      "16 15": {
-        "direction": "y",
-        "name": "YOFI"
-      },
-      "4 26": {
-        "direction": "y",
-        "name": "YOFI"
+        "name": "XOFI",
+        "direction": "x"
       },
       "7 23": {
-        "direction": "x",
-        "name": "XOFI"
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "16 15": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "4 26": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "14 26": {
+        "name": "YTFI",
+        "direction": "y"
       },
       "99 23": {
-        "direction": "x",
-        "name": "XFIR"
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "six": {
-      "0 -1": {
-        "name": "XFIR",
-        "direction": "x"
-      },
-      "99 26": {
-        "name": "XFIR",
-        "direction": "x"
-      },
       "0 7": {
         "name": "XOFI",
         "direction": "x"
@@ -526,21 +518,41 @@
         "name": "XOFI",
         "direction": "x"
       },
-      "10 29": {
+      "7 13": {
+        "name": "XTFI",
+        "direction": "x"
+      },
+      "29 10": {
         "name": "YOFI",
         "direction": "y"
       },
-      "23 16": {
+      "16 23": {
         "name": "YOFI",
         "direction": "y"
       },
-      "3 29": {
+      "19 20": {
+        "name": "YOFI",
+        "direction": "a"
+      },
+      "4 3": {
+        "name": "YOFI",
+        "direction": "a"
+      },
+      "29 3": {
         "name": "YTFI",
         "direction": "y"
+      },
+      "-1 0": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "26 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "seven": {
-      "1 11": {
+      "11 1": {
         "name": "YOFI",
         "direction": "y"
       },
@@ -550,14 +562,6 @@
       }
     },
     "eight": {
-      "0 -1": {
-        "name": "XFIR",
-        "direction": "x"
-      },
-      "99 44": {
-        "name": "XFIR",
-        "direction": "x"
-      },
       "0 7": {
         "name": "XOFI",
         "direction": "x"
@@ -589,36 +593,52 @@
       "22 47": {
         "name": "YTFI",
         "direction": "y"
-      }
-    },
-    "nine": {
+      },
       "0 -1": {
         "name": "XFIR",
         "direction": "x"
       },
-      "99 6": {
+      "99 44": {
         "name": "XFIR",
         "direction": "x"
-      },
+      }
+    },
+    "nine": {
       "0 19": {
         "name": "XOFI",
         "direction": "x"
       },
-      "6 13": {
+      "13 6": {
         "name": "XOFI",
         "direction": "x"
       },
-      "22 29": {
+      "19 13": {
+        "name": "XTFI",
+        "direction": "x"
+      },
+      "25 26": {
+        "name": "YOFI",
+        "direction": "a"
+      },
+      "16 3": {
         "name": "YOFI",
         "direction": "y"
       },
-      "3 16": {
+      "9 10": {
         "name": "YOFI",
-        "direction": "y"
+        "direction": "a"
       },
-      "3 9": {
+      "9 3": {
         "name": "YTFI",
         "direction": "y"
+      },
+      "-1 0": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "6 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "colon": {
@@ -2206,6 +2226,10 @@
         "name": "XOLC",
         "direction": "x"
       },
+      "7 12": {
+        "name": "XOLC",
+        "direction": "x"
+      },
       "25 19": {
         "name": "XTLC",
         "direction": "x"
@@ -2909,6 +2933,10 @@
         "direction": "x"
       },
       "17 12": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "31 10": {
         "name": "XOLC",
         "direction": "x"
       },
@@ -5611,6 +5639,11 @@
     "dollar": {},
     "kip": {},
     "coloncurrency": {},
-    "kip.rvrn": {}
+    "kip.rvrn": {},
+    "two.lc": {},
+    "dollar.rvrn2": {},
+    "three.lc": {},
+    "florin": {},
+    "four.lc": {}
   }
 }
