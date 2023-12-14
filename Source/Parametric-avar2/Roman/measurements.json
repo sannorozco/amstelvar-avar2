@@ -153,13 +153,22 @@
       "parent": "",
       "description": "Y transparent figures"
     },
-    "XSHU": {
+    "XSHA": {
       "direction": "x",
       "glyph 1": "H",
       "point 1": "1",
       "glyph 2": "H",
       "point 2": "2",
       "parent": "",
+      "description": "General x horizontal serif"
+    },
+    "XSHU": {
+      "direction": "x",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "XSHA",
       "description": "X horizontal serif uppercase"
     },
     "XSHL": {
@@ -168,7 +177,7 @@
       "point 1": "1",
       "glyph 2": "n",
       "point 2": "2",
-      "parent": "",
+      "parent": "XSHA",
       "description": "X horizontal serif lowercase"
     },
     "XSHF": {
@@ -177,8 +186,8 @@
       "point 1": "1",
       "glyph 2": "one",
       "point 2": "2",
-      "parent": "",
-      "description": ""
+      "parent": "XSHA",
+      "description": "X horizontal serif figures"
     },
     "XSVU": {
       "direction": "x",
@@ -198,13 +207,22 @@
       "parent": "",
       "description": "X vertical serif lowercase"
     },
-    "YSHU": {
+    "YSHA": {
       "direction": "y",
       "glyph 1": "H",
       "point 1": "0",
       "glyph 2": "H",
       "point 2": "1",
       "parent": "",
+      "description": "General y horizontal serif"
+    },
+    "YSHU": {
+      "direction": "y",
+      "glyph 1": "H",
+      "point 1": "0",
+      "glyph 2": "H",
+      "point 2": "1",
+      "parent": "YSHA",
       "description": "Y horizontal serif uppercase"
     },
     "YSHL": {
@@ -213,7 +231,7 @@
       "point 1": "0",
       "glyph 2": "n",
       "point 2": "1",
-      "parent": "",
+      "parent": "YSHA",
       "description": "Y horizontal serif lowercase"
     },
     "YSHF": {
@@ -222,8 +240,8 @@
       "point 1": "0",
       "glyph 2": "one",
       "point 2": "1",
-      "parent": "",
-      "description": ""
+      "parent": "YSHA",
+      "description": "Y horizontal serif figures"
     },
     "YSVU": {
       "direction": "y",
@@ -430,18 +448,6 @@
         "name": "YTFI",
         "direction": "y"
       },
-      "0 1": {
-        "name": "YSHF",
-        "direction": "y"
-      },
-      "12 11": {
-        "name": "YSHF",
-        "direction": "y"
-      },
-      "5 6": {
-        "name": "YSHF",
-        "direction": "y"
-      },
       "1 2": {
         "name": "XSHF",
         "direction": "x"
@@ -453,6 +459,18 @@
       "5 4": {
         "name": "XSHF",
         "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHF",
+        "direction": "y"
+      },
+      "12 11": {
+        "name": "YSHF",
+        "direction": "y"
+      },
+      "5 6": {
+        "name": "YSHF",
+        "direction": "y"
       }
     },
     "two": {
@@ -5688,6 +5706,7 @@
     "florin": {},
     "four.lc": {},
     "naira.rvrn": {},
-    "colonsign.rvrn": {}
+    "colonsign.rvrn": {},
+    "naira": {}
   }
 }
