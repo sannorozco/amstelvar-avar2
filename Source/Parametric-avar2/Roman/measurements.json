@@ -171,6 +171,15 @@
       "parent": "",
       "description": "X horizontal serif lowercase"
     },
+    "XSHF": {
+      "direction": "x",
+      "glyph 1": "one",
+      "point 1": "1",
+      "glyph 2": "one",
+      "point 2": "2",
+      "parent": "",
+      "description": ""
+    },
     "XSVU": {
       "direction": "x",
       "glyph 1": "E",
@@ -206,6 +215,15 @@
       "point 2": "1",
       "parent": "",
       "description": "Y horizontal serif lowercase"
+    },
+    "YSHF": {
+      "direction": "y",
+      "glyph 1": "one",
+      "point 1": "0",
+      "glyph 2": "one",
+      "point 2": "1",
+      "parent": "",
+      "description": ""
     },
     "YSVU": {
       "direction": "y",
@@ -411,6 +429,30 @@
       "0 7": {
         "name": "YTFI",
         "direction": "y"
+      },
+      "0 1": {
+        "name": "YSHF",
+        "direction": "y"
+      },
+      "12 11": {
+        "name": "YSHF",
+        "direction": "y"
+      },
+      "5 6": {
+        "name": "YSHF",
+        "direction": "y"
+      },
+      "1 2": {
+        "name": "XSHF",
+        "direction": "x"
+      },
+      "10 11": {
+        "name": "XSHF",
+        "direction": "x"
+      },
+      "5 4": {
+        "name": "XSHF",
+        "direction": "x"
       }
     },
     "two": {
@@ -5644,6 +5686,8 @@
     "dollar.rvrn2": {},
     "three.lc": {},
     "florin": {},
-    "four.lc": {}
+    "four.lc": {},
+    "naira.rvrn": {},
+    "colonsign.rvrn": {}
   }
 }
