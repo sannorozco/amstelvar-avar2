@@ -4764,6 +4764,10 @@
         "name": "XOLC",
         "direction": "x"
       },
+      "0 7": {
+        "name": "YTLC",
+        "direction": "y"
+      },
       "1 2": {
         "name": "XSHL",
         "direction": "x"
@@ -4787,10 +4791,6 @@
       "5 6": {
         "name": "YSHL",
         "direction": "y"
-      },
-      "0 7": {
-        "name": "YTLC",
-        "direction": "y"
       }
     },
     "jdotless": {
@@ -4798,20 +4798,24 @@
         "name": "XOLC",
         "direction": "x"
       },
-      "6 7": {
+      "0 1": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "-1 9": {
+        "name": "YTLC",
+        "direction": "y"
+      },
+      "-1 0": {
+        "name": "YTDE",
+        "direction": "y"
+      },
+      "7 6": {
         "name": "XSHL",
         "direction": "x"
       },
       "7 8": {
         "name": "YSHL",
-        "direction": "y"
-      },
-      "-1 1": {
-        "name": "YTDE",
-        "direction": "y"
-      },
-      "-1 9": {
-        "name": "YTLC",
         "direction": "y"
       }
     },
