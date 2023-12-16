@@ -7,13 +7,20 @@
   <anchor x="-100.0" y="1500" name="tonos"/>
   <outline>
     <contour>
+      <point x="324" y="0" type="line"/>
+      <point x="324" y="100" type="line"/>
+      <point x="545" y="135" type="line"/>
+      <point x="547" y="647" type="line"/>
+      <point x="359" y="976" type="line"/>
+      <point x="132" y="1360" type="line"/>
       <point x="-30" y="1386" type="line"/>
       <point x="-30" y="1500" type="line"/>
       <point x="497" y="1500" type="line"/>
       <point x="497" y="1386" type="line"/>
       <point x="340" y="1351" type="line"/>
       <point x="498" y="1055" type="line"/>
-      <point x="664" y="783" type="line"/>
+      <point x="659" y="783" type="line"/>
+      <point x="669" y="783" type="line"/>
       <point x="827" y="1078" type="line"/>
       <point x="974" y="1358" type="line"/>
       <point x="787" y="1386" type="line"/>
@@ -26,12 +33,6 @@
       <point x="725" y="135" type="line"/>
       <point x="943" y="100" type="line"/>
       <point x="943" y="0" type="line"/>
-      <point x="324" y="0" type="line"/>
-      <point x="324" y="100" type="line"/>
-      <point x="545" y="135" type="line"/>
-      <point x="547" y="647" type="line"/>
-      <point x="359" y="976" type="line"/>
-      <point x="132" y="1360" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -54,7 +55,7 @@
         </dict>
       </dict>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
-      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XSHF0.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>
