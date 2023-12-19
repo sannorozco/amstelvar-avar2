@@ -2,8 +2,8 @@
 <glyph name="v" format="2">
   <advance width="819"/>
   <unicode hex="0076"/>
-  <anchor x="513.0" y="0" name="bottom"/>
-  <anchor x="513.0" y="1000" name="top"/>
+  <anchor x="424.0" y="0" name="bottom"/>
+  <anchor x="424.0" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="-10" y="910" type="line"/>
@@ -12,7 +12,10 @@
       <point x="414" y="910" type="line"/>
       <point x="281" y="873" type="line"/>
       <point x="351" y="538" type="line"/>
-      <point x="425" y="227" type="line"/>
+      <point x="395" y="341" type="line"/>
+      <point x="420" y="227" type="line"/>
+      <point x="430" y="227" type="line"/>
+      <point x="455" y="341" type="line"/>
       <point x="500" y="543" type="line"/>
       <point x="570" y="880" type="line"/>
       <point x="433" y="910" type="line"/>
@@ -95,6 +98,8 @@
           <string>YSLC</string>
         </dict>
       </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XTRA208.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

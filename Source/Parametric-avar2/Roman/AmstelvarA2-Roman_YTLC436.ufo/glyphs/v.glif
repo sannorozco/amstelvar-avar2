@@ -12,9 +12,12 @@
       <point x="414" y="762" type="line"/>
       <point x="281" y="725" type="line"/>
       <point x="403" y="450" type="line"/>
-      <point x="528" y="187" type="line"/>
+      <point x="486" y="276" type="line"/>
+      <point x="523" y="187" type="line"/>
+      <point x="533" y="187" type="line"/>
+      <point x="571" y="276" type="line"/>
       <point x="656" y="453" type="line"/>
-      <point x="777" y="732" type="line"/>
+      <point x="777" y="731" type="line"/>
       <point x="640" y="762" type="line"/>
       <point x="640" y="852" type="line"/>
       <point x="1056" y="852" type="line"/>
@@ -29,72 +32,8 @@
   </outline>
   <lib>
     <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict>
-        <key>0 1</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSLC</string>
-        </dict>
-        <key>0 18</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSLC</string>
-        </dict>
-        <key>10 16</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YTLC</string>
-        </dict>
-        <key>11 12</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSLC</string>
-        </dict>
-        <key>12 13</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSLC</string>
-        </dict>
-        <key>2 3</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSLC</string>
-        </dict>
-        <key>3 4</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSLC</string>
-        </dict>
-        <key>8 9</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSLC</string>
-        </dict>
-        <key>9 10</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSLC</string>
-        </dict>
-      </dict>
+      <key>public.markColor</key>
+      <string>1,0.57811,0,0.25476</string>
     </dict>
   </lib>
 </glyph>
