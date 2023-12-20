@@ -6,22 +6,22 @@
   <anchor x="522" y="1000" name="top"/>
   <outline>
     <contour>
-      <point x="16" y="0" type="line"/>
-      <point x="16" y="80" type="line"/>
-      <point x="174" y="115" type="line"/>
-      <point x="490" y="541" type="line"/>
-      <point x="490" y="541" type="line"/>
-      <point x="727" y="880" type="line"/>
-      <point x="590" y="910" type="line"/>
-      <point x="590" y="1000" type="line"/>
-      <point x="1006" y="1000" type="line"/>
-      <point x="1006" y="910" type="line"/>
-      <point x="858" y="875" type="line"/>
-      <point x="554" y="471" type="line"/>
-      <point x="554" y="471" type="line"/>
-      <point x="305" y="110" type="line"/>
-      <point x="432" y="80" type="line"/>
-      <point x="432" y="0" type="line"/>
+      <point x="56" y="0" type="line"/>
+      <point x="56" y="80" type="line"/>
+      <point x="214" y="115" type="line"/>
+      <point x="530" y="541" type="line"/>
+      <point x="533" y="512" type="line"/>
+      <point x="810" y="880" type="line"/>
+      <point x="673" y="910" type="line"/>
+      <point x="673" y="1000" type="line"/>
+      <point x="966" y="1000" type="line"/>
+      <point x="966" y="910" type="line"/>
+      <point x="818" y="875" type="line"/>
+      <point x="514" y="471" type="line"/>
+      <point x="511" y="501" type="line"/>
+      <point x="222" y="110" type="line"/>
+      <point x="349" y="80" type="line"/>
+      <point x="349" y="0" type="line"/>
     </contour>
     <contour>
       <point x="20" y="910" type="line"/>
@@ -52,6 +52,8 @@
           <string>YTLC</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>1,0.57811,0,0.25476</string>
     </dict>
   </lib>
 </glyph>
