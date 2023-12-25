@@ -3,7 +3,7 @@
   <advance width="628"/>
   <unicode hex="0066"/>
   <anchor x="314.0" y="0" name="bottom"/>
-  <anchor x="314.0" y="1750" name="top"/>
+  <anchor x="314.0" y="1536" name="top"/>
   <outline>
     <contour>
       <point x="54" y="0" type="line"/>
@@ -14,41 +14,22 @@
       <point x="63" y="873" type="line"/>
       <point x="63" y="966" type="line"/>
       <point x="223" y="984" type="line"/>
-<<<<<<< HEAD
-      <point x="227" y="1529" type="line" smooth="yes"/>
-      <point x="228" y="1638"/>
-      <point x="360" y="1773"/>
-      <point x="460" y="1773" type="qcurve" smooth="yes"/>
-      <point x="502" y="1773"/>
-      <point x="571" y="1762"/>
-      <point x="600" y="1754" type="qcurve" smooth="yes"/>
-      <point x="619" y="1748" type="line"/>
-      <point x="603" y="1652" type="line"/>
-      <point x="584" y="1656" type="line" smooth="yes"/>
-      <point x="572" y="1659"/>
-      <point x="543" y="1661"/>
-      <point x="524" y="1661" type="qcurve" smooth="yes"/>
-      <point x="455" y="1661"/>
-      <point x="383" y="1567"/>
-      <point x="383" y="1494" type="qcurve" smooth="yes"/>
-=======
-      <point x="227" y="1506" type="line" smooth="yes"/>
-      <point x="228" y="1615"/>
-      <point x="360" y="1750"/>
-      <point x="460" y="1750" type="qcurve" smooth="yes"/>
-      <point x="502" y="1750"/>
-      <point x="569" y="1740"/>
-      <point x="599" y="1731" type="qcurve" smooth="yes"/>
-      <point x="619" y="1725" type="line"/>
-      <point x="603" y="1629" type="line"/>
-      <point x="584" y="1633" type="line" smooth="yes"/>
-      <point x="572" y="1636"/>
-      <point x="543" y="1638"/>
-      <point x="524" y="1638" type="qcurve" smooth="yes"/>
-      <point x="455" y="1638"/>
-      <point x="383" y="1544"/>
-      <point x="383" y="1471" type="qcurve" smooth="yes"/>
->>>>>>> b94783471af6cd9ac0810be764e10f3383ea4bbb
+      <point x="227" y="1526" type="line" smooth="yes"/>
+      <point x="228" y="1635"/>
+      <point x="360" y="1770"/>
+      <point x="460" y="1770" type="qcurve" smooth="yes"/>
+      <point x="502" y="1770"/>
+      <point x="571" y="1759"/>
+      <point x="600" y="1751" type="qcurve" smooth="yes"/>
+      <point x="619" y="1745" type="line"/>
+      <point x="603" y="1649" type="line"/>
+      <point x="584" y="1653" type="line" smooth="yes"/>
+      <point x="572" y="1656"/>
+      <point x="543" y="1658"/>
+      <point x="524" y="1658" type="qcurve" smooth="yes"/>
+      <point x="455" y="1658"/>
+      <point x="383" y="1564"/>
+      <point x="383" y="1491" type="qcurve" smooth="yes"/>
       <point x="385" y="985" type="line"/>
       <point x="602" y="985" type="line"/>
       <point x="602" y="874" type="line"/>
@@ -59,69 +40,4 @@
       <point x="584" y="0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict>
-        <key>0 1</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSLC</string>
-        </dict>
-        <key>0 11</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YTAS</string>
-        </dict>
-        <key>1 2</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSLC</string>
-        </dict>
-        <key>11 20</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YOLC</string>
-        </dict>
-        <key>2 29</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XOLC</string>
-        </dict>
-        <key>29 30</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSLC</string>
-        </dict>
-        <key>30 31</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSLC</string>
-        </dict>
-        <key>4 7</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YOLC</string>
-        </dict>
-      </dict>
-      <key>public.markColor</key>
-      <string>1,0.57811,0,0.25476</string>
-    </dict>
-  </lib>
 </glyph>
