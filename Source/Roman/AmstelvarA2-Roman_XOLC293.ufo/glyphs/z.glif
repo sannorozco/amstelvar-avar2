@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="z" format="2">
-  <advance width="885"/>
+  <advance width="1322"/>
   <unicode hex="007A"/>
-  <anchor x="443" y="0" name="bottom"/>
-  <anchor x="443" y="1000" name="top"/>
+  <anchor x="653" y="0" name="bottom"/>
+  <anchor x="653" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="32" y="0" type="line"/>
@@ -13,13 +13,13 @@
       <point x="168" y="740" type="line"/>
       <point x="60" y="740" type="line"/>
       <point x="60" y="1000" type="line"/>
-      <point x="835" y="1000" type="line"/>
-      <point x="835" y="911" type="line"/>
-      <point x="227" y="116" type="line"/>
-      <point x="716" y="116" type="line"/>
-      <point x="743" y="260" type="line"/>
-      <point x="851" y="260" type="line"/>
-      <point x="851" y="0" type="line"/>
+      <point x="1272" y="1000" type="line"/>
+      <point x="1272" y="911" type="line"/>
+      <point x="664" y="116" type="line"/>
+      <point x="1153" y="116" type="line"/>
+      <point x="1180" y="260" type="line"/>
+      <point x="1288" y="260" type="line"/>
+      <point x="1288" y="0" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -76,6 +76,8 @@
           <string>XSVL</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>1,0.57811,0,0.25476</string>
     </dict>
   </lib>
 </glyph>
