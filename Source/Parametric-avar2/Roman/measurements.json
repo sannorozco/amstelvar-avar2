@@ -252,6 +252,15 @@
       "parent": "XSVA",
       "description": "X vertical serif lowercase"
     },
+    "XSVF": {
+      "direction": "x",
+      "glyph 1": "seven",
+      "point 1": "0",
+      "glyph 2": "seven",
+      "point 2": "12",
+      "parent": "XSVA",
+      "description": "X vertical serif figures"
+    },
     "YSVA": {
       "direction": "y",
       "glyph 1": "E",
@@ -278,6 +287,15 @@
       "point 2": "8",
       "parent": "YSVA",
       "description": "Y vertical serif lowercase"
+    },
+    "YSVF": {
+      "direction": "y",
+      "glyph 1": "seven",
+      "point 1": "12",
+      "glyph 2": "seven",
+      "point 2": "11",
+      "parent": "YSVA",
+      "description": "Y vertical serif figures"
     },
     "XTSP": {
       "direction": "x",
@@ -354,16 +372,16 @@
     "XTTW": {
       "direction": "x",
       "glyph 1": "V",
-      "point 1": "9",
+      "point 1": "7",
       "glyph 2": "V",
-      "point 2": "10",
+      "point 2": "8",
       "parent": "",
       "description": "trap width"
     },
     "YTTL": {
       "direction": "y",
       "glyph 1": "V",
-      "point 1": "9",
+      "point 1": "7",
       "glyph 2": "V",
       "point 2": "6",
       "parent": "",
@@ -739,20 +757,20 @@
     },
     "semicolon": {
       "16 22": {
-        "direction": "x",
-        "name": "XDOT"
-      },
-      "19 25": {
-        "direction": "y",
-        "name": "YDOT"
-      },
-      "3 9": {
-        "direction": "y",
-        "name": "YDOT"
+        "name": "XDOT",
+        "direction": "x"
       },
       "6 12": {
-        "direction": "x",
-        "name": "XDOT"
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "19 25": {
+        "name": "YDOT",
+        "direction": "y"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
       }
     },
     "question": {
@@ -6307,6 +6325,14 @@
     "ve.bgr": {},
     "braceright": {},
     "bar": {},
-    "guarani": {}
+    "guarani": {},
+    "less": {},
+    "hyphen": {},
+    "brokenbar": {},
+    "seven.tab": {},
+    "bracketleft": {},
+    "nine.lc": {},
+    "franc": {},
+    "numero": {}
   }
 }
