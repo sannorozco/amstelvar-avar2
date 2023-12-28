@@ -9,29 +9,11 @@ def permille(value, unitsPerEm):
     return round(value * 1000 / unitsPerEm)
 
 class AmstelvarDesignSpaceBuilder:
-    '''
-    targeted alpha build by Dec 31:
-    - ascii only
-    - default size only (opsz14)
-    - wght 200-800
-    - wdth 85-125
 
-    two versions:
-    - one instantiates the extreme to build an avar1
-    - one that is the same design space but using avar2
-
-    '''
-    familyName       = 'AmstelvarA2'
-    subFamilyName    = ['Roman', 'Italic'][0]
-    baseFolder       = os.path.dirname(os.getcwd())
-    sourcesFolder    = os.path.join(baseFolder,    'Parametric-avar2', subFamilyName)
-    measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
-    defaultName      = 'wght400'
-    defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
-    designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}.designspace')
-    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split() # XSHA YSHA XSVA YSVA 
-    minValue         = -100
-    maxValue         = 100
+    familyName     = 'AmstelvarA2'
+    subFamilyName  = ['Roman', 'Italic'][0]
+    defaultName    = 'wght400'
+    parametricAxes = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split()
 
     def __init__(self):
         # get measurements for default source
@@ -41,6 +23,26 @@ class AmstelvarDesignSpaceBuilder:
         self.measurementsDefault.read(self.measurementsPath)
         self.measurementsDefault.measure(f)
         f.close()
+
+    @property
+    def baseFolder(self):
+        return os.path.dirname(os.getcwd())
+
+    @property
+    def sourcesFolder(self):
+        return os.path.join(self.baseFolder, 'Parametric-avar2', self.subFamilyName)
+
+    @property
+    def measurementsPath(self):
+        return os.path.join(self.sourcesFolder, 'measurements.json')
+
+    @property
+    def defaultUFO(self):
+        return os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{self.defaultName}.ufo')
+
+    @property
+    def designspacePath(self):
+        return os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}.designspace')
 
     @property
     def parametricSources(self):
@@ -118,12 +120,119 @@ class AmstelvarDesignSpaceBuilder:
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
-        # self.addInstances()
 
     def save(self):
         if not self.designspace:
             return
         self.designspace.write(self.designspacePath)
+
+
+
+class AmstelvarDesignSpaceBuilder1:
+
+    '''
+    targeted alpha build by Dec 31:
+    - ascii only
+    - default size only (opsz14)
+    - wght 200-800
+    - wdth 85-125
+
+    two versions:
+    - one instantiates the extreme to build an avar1
+    - one that is the same design space but using avar2
+
+    '''
+
+    blendedAxes    = {
+        # 'opsz' : {
+        #     'name'    : 'Optical size',
+        #     'default' : 14,
+        # },
+        'wght' : {
+            'name'    : 'Weight',
+            'default' : 400,
+        },
+        'wdth' : {
+            'name'    : 'Width',
+            'default' : 100,
+        },
+    }
+
+    designspacePath = AmstelvarDesignSpaceBuilder.designspacePath.replace('.designspace', '_1.designspace')
+
+    @property
+    def extremaFolder(self):
+        return os.path.join(self.baseFolder, 'TechAlpha', self.subFamilyName, 'extrema')
+
+    @property
+    def extremaSources(self):
+        return glob.glob(f'{self.extremaFolder}/*.ufo')
+
+    @property
+    def defaultLocation(self):
+        L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+        L['XTSP'] = 0
+        for tag in self.blendedAxes.keys():
+            name    = self.blendedAxes[tag]['name']
+            default = self.blendedAxes[tag]['default']
+            L[name] = default
+        return L
+
+    def addBlendedAxes(self):
+        # load measurement definitions
+        M = FontMeasurements()
+        M.read(self.measurementsPath)
+
+        for tag in self.blendedAxes.keys():
+            # get min/max values from file names
+            values = []
+            for ufo in self.extremaSources:
+                if tag in ufo:
+                    value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                    values.append(value)
+            assert len(values)
+            values.sort()
+            # create axis
+            a = AxisDescriptor()
+            a.name    = self.blendedAxes[tag]['name']
+            a.tag     = tag
+            a.minimum = values[0]
+            a.maximum = values[1]
+            a.default = self.blendedAxes[tag]['default']
+            self.designspace.addAxis(a)
+
+    def addInstances(self):
+        # prepare to measure fonts
+        M = FontMeasurements()
+        M.read(self.measurementsPath)
+
+        for tag in self.blendedAxes.keys():
+            for ufoPath in self.extremaSources:
+                if tag in ufoPath:
+                    # get measurements
+                    f = OpenFont(ufoPath, showInterface=False)
+                    M.measure(f)
+
+                    # create instance location from default + measurements
+                    L = self.defaultLocation.copy()
+                    value = int(os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1][4:])
+                    valuePermill = permille(value, f.info.unitsPerEm)
+                    L[tag] = valuePermill
+                    for measurementName in self.parametricAxes:
+                        valuePermill = permille(int(M.values[measurementName]), f.info.unitsPerEm)
+                        L[measurementName] = valuePermill
+
+                    # add instance to designspace
+                    I = InstanceDescriptor()
+                    I.familyName     = self.familyName
+                    I.styleName      = f.info.styleName.replace(' ', '')
+                    I.name           = f.info.styleName.replace(' ', '')
+                    I.designLocation = L
+                    I.filename       = os.path.join('instances', f"{self.familyName}-{self.subFamilyName}_{os.path.split(ufoPath)[-1].split('_')[-1]}")
+                    self.designspace.addInstance(I)
+
+
+
 
 
 # -----
@@ -133,5 +242,9 @@ class AmstelvarDesignSpaceBuilder:
 if __name__ == '__main__':
 
     D = AmstelvarDesignSpaceBuilder()
+    D.build()
+    D.save()
+
+    D = AmstelvarDesignSpaceBuilder1()
     D.build()
     D.save()
