@@ -739,20 +739,20 @@
     },
     "colon": {
       "0 6": {
-        "direction": "x",
-        "name": "XDOT"
+        "name": "XDOT",
+        "direction": "x"
       },
       "12 18": {
-        "direction": "x",
-        "name": "XDOT"
+        "name": "XDOT",
+        "direction": "x"
       },
       "15 21": {
-        "direction": "y",
-        "name": "YDOT"
+        "name": "YDOT",
+        "direction": "y"
       },
       "3 9": {
-        "direction": "y",
-        "name": "YDOT"
+        "name": "YDOT",
+        "direction": "y"
       }
     },
     "semicolon": {
@@ -774,20 +774,20 @@
       }
     },
     "question": {
-      "0 6": {
-        "name": "XDOT",
-        "direction": "x"
-      },
       "18 33": {
         "name": "XOPQ",
         "direction": "x"
       },
-      "3 9": {
-        "name": "YDOT",
-        "direction": "y"
-      },
       "15 36": {
         "name": "YOPQ",
+        "direction": "y"
+      },
+      "0 6": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "3 9": {
+        "name": "YDOT",
         "direction": "y"
       }
     },
@@ -2180,99 +2180,99 @@
       }
     },
     "W": {
-      "21 14": {
+      "20 27": {
         "name": "XTUC",
         "direction": "x"
       },
-      "26 34": {
+      "7 15": {
         "name": "XTUC",
         "direction": "x"
       },
-      "0 37": {
+      "0 4": {
         "name": "YTUC",
         "direction": "y"
       },
-      "13 14": {
+      "3 2": {
         "name": "XSHU",
         "direction": "x"
       },
-      "25 26": {
+      "7 6": {
         "name": "XSHU",
         "direction": "x"
       },
-      "34 35": {
+      "16 15": {
         "name": "XSHU",
         "direction": "x"
       },
-      "38 39": {
+      "20 19": {
         "name": "XSHU",
         "direction": "x"
       },
-      "9 10": {
+      "28 27": {
         "name": "XSHU",
         "direction": "x"
       },
-      "21 22": {
+      "32 31": {
         "name": "XSHU",
         "direction": "x"
       },
-      "22 23": {
+      "3 4": {
         "name": "YSHU",
         "direction": "y"
       },
-      "10 11": {
+      "6 5": {
         "name": "YSHU",
         "direction": "y"
       },
-      "13 12": {
+      "16 17": {
         "name": "YSHU",
         "direction": "y"
       },
-      "25 24": {
+      "19 18": {
         "name": "YSHU",
         "direction": "y"
       },
-      "38 37": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "35 36": {
+      "28 29": {
         "name": "YSHU",
         "direction": "y"
       },
       "31 30": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "10 11": {
         "name": "XTTW",
         "direction": "x"
       },
-      "18 17": {
+      "23 24": {
         "name": "XTTW",
         "direction": "x"
       },
-      "3 4": {
+      "38 37": {
         "name": "XTTW",
         "direction": "x"
       },
-      "32 31": {
+      "9 10": {
         "name": "YTTL",
         "direction": "a"
       },
-      "19 18": {
+      "11 12": {
         "name": "YTTL",
         "direction": "a"
       },
-      "16 17": {
+      "22 23": {
         "name": "YTTL",
         "direction": "a"
       },
-      "29 30": {
+      "24 25": {
         "name": "YTTL",
         "direction": "a"
       },
-      "2 3": {
+      "38 39": {
         "name": "YTTL",
         "direction": "a"
       },
-      "4 5": {
+      "36 37": {
         "name": "YTTL",
         "direction": "a"
       }
@@ -3648,99 +3648,103 @@
       }
     },
     "w": {
-      "5 20": {
+      "2 7": {
         "name": "XOLC",
-        "direction": "a"
+        "direction": "x"
       },
-      "40 33": {
+      "15 20": {
         "name": "XOLC",
-        "direction": "a"
+        "direction": "x"
       },
-      "28 2": {
+      "26 33": {
         "name": "YOLC",
         "direction": "a"
       },
-      "15 8": {
-        "name": "YOLC",
-        "direction": "a"
-      },
-      "0 37": {
+      "0 4": {
         "name": "YTLC",
         "direction": "y"
       },
-      "38 39": {
+      "3 2": {
         "name": "XSHL",
         "direction": "x"
       },
-      "34 35": {
+      "7 6": {
         "name": "XSHL",
         "direction": "x"
       },
-      "25 26": {
+      "16 15": {
         "name": "XSHL",
         "direction": "x"
       },
-      "21 22": {
+      "20 19": {
         "name": "XSHL",
         "direction": "x"
       },
-      "13 14": {
+      "28 27": {
         "name": "XSHL",
         "direction": "x"
       },
-      "9 10": {
+      "32 31": {
         "name": "XSHL",
         "direction": "x"
       },
-      "38 37": {
+      "3 4": {
         "name": "YSHL",
         "direction": "y"
       },
-      "35 36": {
+      "6 5": {
         "name": "YSHL",
         "direction": "y"
       },
-      "25 24": {
+      "16 17": {
         "name": "YSHL",
         "direction": "y"
       },
-      "13 12": {
+      "19 18": {
         "name": "YSHL",
         "direction": "y"
       },
-      "22 23": {
+      "28 29": {
+        "name": "YSHL",
+        "direction": "y"
+      },
+      "31 30": {
         "name": "YSHL",
         "direction": "y"
       },
       "10 11": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "18 17": {
         "name": "XTTW",
         "direction": "x"
       },
-      "31 30": {
+      "23 24": {
         "name": "XTTW",
         "direction": "x"
       },
-      "3 4": {
+      "38 37": {
         "name": "XTTW",
         "direction": "x"
       },
-      "19 18": {
+      "9 10": {
         "name": "YTTL",
         "direction": "a"
       },
-      "16 17": {
+      "22 23": {
         "name": "YTTL",
         "direction": "a"
       },
-      "32 31": {
+      "11 12": {
         "name": "YTTL",
         "direction": "a"
       },
-      "29 30": {
+      "24 25": {
+        "name": "YTTL",
+        "direction": "a"
+      },
+      "38 39": {
+        "name": "YTTL",
+        "direction": "a"
+      },
+      "36 37": {
         "name": "YTTL",
         "direction": "a"
       }
@@ -3953,22 +3957,22 @@
     },
     "exclamdown": {
       "0 6": {
-        "direction": "x",
-        "name": "XDOT"
+        "name": "XDOT",
+        "direction": "x"
       },
       "3 9": {
-        "direction": "y",
-        "name": "YDOT"
+        "name": "YDOT",
+        "direction": "y"
       }
     },
     "periodcentered": {
       "0 6": {
-        "direction": "x",
-        "name": "XDOT"
+        "name": "XDOT",
+        "direction": "x"
       },
       "3 9": {
-        "direction": "y",
-        "name": "YDOT"
+        "name": "YDOT",
+        "direction": "y"
       }
     },
     "percent": {},
@@ -6333,6 +6337,28 @@
     "bracketleft": {},
     "nine.lc": {},
     "franc": {},
-    "numero": {}
+    "numero": {},
+    "colonsign": {},
+    "six.lc": {},
+    "backslash": {},
+    "doubleprimemod": {},
+    "Yu-dash.case": {},
+    "Ustraightstroke": {},
+    "yu.bgr-stroke": {},
+    "braceleft": {},
+    "eight.tab": {},
+    "eight.lf": {},
+    "cent.rvrn": {},
+    "hornU": {},
+    "quotesingle": {},
+    "at": {},
+    "sterling": {},
+    "section": {},
+    "copyright": {},
+    "guillemotleft": {},
+    "logicalnot": {},
+    "registered": {},
+    "guillemotright": {},
+    "divisionslash": {}
   }
 }
