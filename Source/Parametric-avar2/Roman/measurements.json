@@ -3507,6 +3507,14 @@
       "25 24": {
         "name": "XSVL",
         "direction": "x"
+      },
+      "24 23": {
+        "name": "YSVL",
+        "direction": "y"
+      },
+      "0 1": {
+        "name": "YSVL",
+        "direction": "y"
       }
     },
     "t": {
@@ -6351,7 +6359,44 @@
     "cent.rvrn": {},
     "hornU": {},
     "quotesingle": {},
-    "at": {},
+    "at": {
+      "60 6": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "0 66": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "18 25": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "32 53": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "63 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "35 50": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "15 28": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "76 69": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "21 22": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
     "sterling": {},
     "section": {},
     "copyright": {},

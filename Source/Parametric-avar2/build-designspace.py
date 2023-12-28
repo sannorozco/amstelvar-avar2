@@ -8,19 +8,31 @@ from ufo2ft import compileTTF
 def permille(value, unitsPerEm):
     return round(value * 1000 / unitsPerEm)
 
+'''
+targeted alpha build by Dec 31:
+- ascii only
+- default size only (opsz14)
+- wght 200-800
+- wdth 85-125
+
+two versions:
+- one instantiates the extreme to build an avar1
+- one that is the same design space but using avar2
+
+'''
+
+
 class AmstelvarDesignSpaceBuilder:
-    '''
-    targeted alpha build by Dec 31:
-    - ascii only
-    - default size only (opsz14)
-    - wght 200-800
-    - wdth 85-125
-
-    two versions:
-    - one instantiates the extreme to build an avar1
-    - one that is the same design space but using avar2
 
     '''
+    Basic designspace used during design in "RoboFontra".
+
+    - parametric axes
+    - XTSP
+    -
+
+    '''
+
     familyName       = 'AmstelvarA2'
     subFamilyName    = ['Roman', 'Italic'][0]
     baseFolder       = os.path.dirname(os.getcwd())
@@ -29,7 +41,7 @@ class AmstelvarDesignSpaceBuilder:
     defaultName      = 'wght400'
     defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
     designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}.designspace')
-    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split() # XSHA YSHA XSVA YSVA 
+    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split() # XSHA YSHA XSVA YSVA
     minValue         = -100
     maxValue         = 100
 
@@ -118,12 +130,45 @@ class AmstelvarDesignSpaceBuilder:
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
-        # self.addInstances()
 
     def save(self):
         if not self.designspace:
             return
         self.designspace.write(self.designspacePath)
+
+
+class AmstelvarDesignSpaceBuilder0:
+    '''
+    - parametric axes
+    - XTSP
+    - 4 instances for 2 axes extrema
+    - avar 1
+
+    '''
+
+    @property
+    def extremaFolder(self):
+        return os.path.join(baseFolder, 'TechAlpha', subFamilyName, 'extrema')
+
+
+class AmstelvarDesignSpaceBuilder1:
+    '''
+    - parametric axes
+    - XTSP
+    - blended axes
+    - avar 2
+
+    '''
+    pass
+
+
+class AmstelvarDesignSpaceBuilder2:
+    '''
+    3. default
+    6 sources for 3 axes extrema
+
+    '''
+    pass
 
 
 # -----
