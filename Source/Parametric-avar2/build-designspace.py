@@ -9,16 +9,27 @@ def permille(value, unitsPerEm):
     return round(value * 1000 / unitsPerEm)
 
 class AmstelvarDesignSpaceBuilder:
+    '''
+    targeted alpha build by Dec 31:
+    - ascii only
+    - default size only (opsz14)
+    - wght 200-800
+    - wdth 85-125
 
+    two versions:
+    - one instantiates the extreme to build an avar1
+    - one that is the same design space but using avar2
+
+    '''
     familyName       = 'AmstelvarA2'
     subFamilyName    = ['Roman', 'Italic'][0]
     baseFolder       = os.path.dirname(os.getcwd())
-    sourcesFolder    = os.path.join(baseFolder,    'Parametric-avar2', subFamilyName) # 'TechAlpha'
+    sourcesFolder    = os.path.join(baseFolder,    'Parametric-avar2', subFamilyName)
     measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
     defaultName      = 'wght400'
     defaultUFO       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
     designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}.designspace')
-    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHA XSHU XSHL XSHF YSHA YSHU YSHL YSHF XSVA XSVU XSVL XSVF YSVA YSVU YSVL YSVF XTTW YTTL YTOS'.split()
+    parametricAxes   = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split() # XSHA YSHA XSVA YSVA 
     minValue         = -100
     maxValue         = 100
 
@@ -42,7 +53,6 @@ class AmstelvarDesignSpaceBuilder:
         return L
 
     def addParametricAxes(self):
-
         # add spacing axis
         a = AxisDescriptor()
         a.name    = 'XTSP'
@@ -51,7 +61,6 @@ class AmstelvarDesignSpaceBuilder:
         a.maximum = 100
         a.default = 0
         self.designspace.addAxis(a)
-
         # add parametric axes
         for name in self.parametricAxes:
             # get min/max values from file names
@@ -80,7 +89,6 @@ class AmstelvarDesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
-
         # add XTSP sources
         for spacingValue in [-100, 100]:
             L = self.defaultLocation.copy()
@@ -91,7 +99,6 @@ class AmstelvarDesignSpaceBuilder:
             src.styleName  = f'XTSP{spacingValue}'
             src.location   = L
             self.designspace.addSource(src)
-
         # add parametric sources
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
@@ -111,6 +118,7 @@ class AmstelvarDesignSpaceBuilder:
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
+        # self.addInstances()
 
     def save(self):
         if not self.designspace:
