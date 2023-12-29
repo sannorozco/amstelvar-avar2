@@ -10,7 +10,7 @@ familyName      = 'AmstelvarA2'
 subFamilyName   = ['Roman', 'Italic'][0]
 baseFolder      = os.path.dirname(os.getcwd())
 sourcesFolder   = os.path.join(baseFolder, 'Parametric-avar2', subFamilyName)
-designspacePath = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_2.designspace')
+designspacePath = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_0.designspace')
 fontsFolder     = os.path.join(os.path.dirname(baseFolder), 'fonts', 'Parametric avar2 TTFs')
 varFontPath     = designspacePath.replace(sourcesFolder, fontsFolder).replace('.designspace', '.ttf')
 

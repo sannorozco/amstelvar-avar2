@@ -363,8 +363,25 @@ class AmstelvarDesignSpaceBuilder1(AmstelvarDesignSpaceBuilder0):
                 I.styleName      = styleName
                 I.name           = styleName
                 I.designLocation = L
-                I.filename       = os.path.join('instances', f"{self.familyName}-{self.subFamilyName}_{styleName}.ufo")
+                I.filename       = os.path.join('instances', '2', f"{self.familyName}-{self.subFamilyName}_{styleName}.ufo")
                 self.designspace.addInstance(I)
+
+    def buildInstances(self):
+
+        ufoProcessor.build(self.designspacePath)
+        ufos = glob.glob(f'{self.instancesFolder}/2/*.ufo')
+
+        # copy glyph order from default
+        f = OpenFont(self.defaultUFO, showInterface=False)
+        glyphOrder = f.glyphOrder
+        f.close()
+
+        for ufo in ufos:
+            f = OpenFont(ufo, showInterface=False)
+            f.glyphOrder = glyphOrder
+            f.save()
+            f.close()
+
 
     def build(self):
         self.designspace = DesignSpaceDocument()
@@ -406,7 +423,7 @@ class AmstelvarDesignSpaceBuilder2(AmstelvarDesignSpaceBuilder1):
             valueMin = self.blendedAxes[tag]['min']
             valueMax = self.blendedAxes[tag]['max']
             for value in [valueMin, valueMax]:
-                ufoPath = os.path.join(self.instancesFolder, f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
+                ufoPath = os.path.join(self.instancesFolder, '2', f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
                 assert os.path.exists(ufoPath)
                 L = self.defaultLocation.copy()
                 L[axisName] = value
@@ -432,10 +449,10 @@ if __name__ == '__main__':
     # D.save()
     # D.buildInstances()
 
-    D = AmstelvarDesignSpaceBuilder1()
-    D.build()
-    D.save()
-    # D.buildInstances(clear=False)
+    # D = AmstelvarDesignSpaceBuilder1()
+    # D.build()
+    # D.save()
+    # D.buildInstances()
 
     D = AmstelvarDesignSpaceBuilder2()
     D.build()
