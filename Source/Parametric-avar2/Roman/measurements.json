@@ -3474,14 +3474,6 @@
       "25 24": {
         "name": "XSVL",
         "direction": "x"
-      },
-      "24 23": {
-        "name": "YSVL",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YSVL",
-        "direction": "y"
       }
     },
     "t": {
@@ -3951,9 +3943,23 @@
       }
     },
     "percent": {},
-    "equal": {},
+    "equal": {
+      "8 11": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "2 5": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "hryvnia": {},
-    "bracketright": {},
+    "bracketright": {
+      "3 10": {
+        "name": "XOPQ",
+        "direction": "x"
+      }
+    },
     "quotedbl": {
       "1 7": {
         "name": "XOPQ",
@@ -3990,7 +3996,20 @@
         "direction": "y"
       }
     },
-    "greater": {},
+    "greater": {
+      "3 12": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "6 9": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "0 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "germandbls": {
       "55 47": {
         "name": "XOLC",
@@ -5083,7 +5102,24 @@
     "en.bgr": {},
     "hungarumlautcomb-stack": {},
     "yen": {},
-    "zerosuperior": {},
+    "zerosuperior": {
+      "0 12": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "6 18": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "3 21": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "9 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "threesuperior": {},
     "asterisk": {
       "25 29": {
@@ -5118,12 +5154,26 @@
     "ordfeminine": {},
     "won.rvrn": {},
     "degree": {},
-    "fraction": {},
+    "fraction": {
+      "0 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "1 2": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "quotesinglbase": {},
     "bullet": {},
     "guilsinglright": {},
     "quoteright": {},
-    "underscore": {},
+    "underscore": {
+      "2 5": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "dotaccentcomb": {},
     "soft": {
       "4 13": {
@@ -6316,7 +6366,12 @@
     },
     "kabashkircyr": {},
     ".notdef": {},
-    "slash": {},
+    "slash": {
+      "0 3": {
+        "name": "yopq",
+        "direction": ""
+      }
+    },
     "grave": {},
     "plus": {
       "4 7": {
@@ -6328,7 +6383,20 @@
         "direction": ""
       }
     },
-    "asciitilde": {},
+    "asciitilde": {
+      "4 11": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "7 8": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "0 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "cedi.rvrn": {},
     "five.lc": {},
     "zero.lc": {},
@@ -6336,7 +6404,24 @@
     "peso.rvrn": {},
     "dong": {},
     "won": {},
-    "dollar": {},
+    "dollar": {
+      "10 29": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "16 23": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "4 35": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "41 42": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "kip": {},
     "coloncurrency": {},
     "kip.rvrn": {},
@@ -6391,7 +6476,20 @@
         "direction": "y"
       }
     },
-    "asciicircum": {},
+    "asciicircum": {
+      "3 10": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "0 13": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "6 7": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "Euro": {},
     "ampersand": {},
     "Sha": {},
@@ -6406,9 +6504,27 @@
         "direction": "x"
       }
     },
-    "bar": {},
+    "bar": {
+      "3 8": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "guarani": {},
-    "less": {},
+    "less": {
+      "0 9": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "3 6": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "12 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "hyphen": {
       "2 5": {
         "name": "YOPQ",
@@ -6417,13 +6533,23 @@
     },
     "brokenbar": {},
     "seven.tab": {},
-    "bracketleft": {},
+    "bracketleft": {
+      "0 7": {
+        "name": "XOPQ",
+        "direction": "x"
+      }
+    },
     "nine.lc": {},
     "franc": {},
     "numero": {},
     "colonsign": {},
     "six.lc": {},
-    "backslash": {},
+    "backslash": {
+      "2 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "doubleprimemod": {},
     "Yu-dash.case": {},
     "Ustraightstroke": {},
@@ -6442,8 +6568,66 @@
     "eight.lf": {},
     "cent.rvrn": {},
     "hornU": {},
-    "quotesingle": {},
-    "at": {},
+    "quotesingle": {
+      "1 7": {
+        "name": "XOPQ",
+        "direction": "x"
+      }
+    },
+    "at": {
+      "18 25": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "31 54": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "3 63": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "0 66": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "35 50": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "9 57": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "15 28": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "21 22": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "41 47": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "53 60": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "18 66": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "25 31": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "6 60": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "sterling": {},
     "section": {},
     "copyright": {},
@@ -6451,6 +6635,8 @@
     "logicalnot": {},
     "registered": {},
     "guillemotright": {},
-    "divisionslash": {}
+    "divisionslash": {},
+    "gravecomb": {},
+    "acutecomb": {}
   }
 }
