@@ -1,59 +1,5 @@
 {
   "font": {
-    "XDOT": {
-      "direction": "x",
-      "glyph 1": "period",
-      "point 1": "0",
-      "glyph 2": "period",
-      "point 2": "6",
-      "parent": "",
-      "description": ""
-    },
-    "XFIR": {
-      "direction": "x",
-      "glyph 1": "zero",
-      "point 1": "-1",
-      "glyph 2": "zero",
-      "point 2": "0",
-      "parent": "",
-      "description": ""
-    },
-    "XLCR": {
-      "direction": "x",
-      "glyph 1": "o",
-      "point 1": "-1",
-      "glyph 2": "o",
-      "point 2": "0",
-      "parent": "",
-      "description": ""
-    },
-    "XLCS": {
-      "direction": "x",
-      "glyph 1": "n",
-      "point 1": "-1",
-      "glyph 2": "n",
-      "point 2": "2",
-      "parent": "",
-      "description": ""
-    },
-    "XOFI": {
-      "direction": "x",
-      "glyph 1": "one",
-      "point 1": "2",
-      "glyph 2": "one",
-      "point 2": "10",
-      "parent": "XOPQ",
-      "description": ""
-    },
-    "XOLC": {
-      "direction": "x",
-      "glyph 1": "n",
-      "point 1": "2",
-      "glyph 2": "n",
-      "point 2": "34",
-      "parent": "XOPQ",
-      "description": ""
-    },
     "XOPQ": {
       "direction": "x",
       "glyph 1": "H",
@@ -72,58 +18,22 @@
       "parent": "XOPQ",
       "description": ""
     },
-    "XSLC": {
+    "XOLC": {
       "direction": "x",
       "glyph 1": "n",
-      "point 1": "1",
+      "point 1": "2",
       "glyph 2": "n",
-      "point 2": "2",
-      "parent": "",
+      "point 2": "34",
+      "parent": "XOPQ",
       "description": ""
     },
-    "XSUC": {
+    "XOFI": {
       "direction": "x",
-      "glyph 1": "H",
-      "point 1": "1",
-      "glyph 2": "H",
-      "point 2": "2",
-      "parent": "",
-      "description": ""
-    },
-    "XSVU": {
-      "direction": "x",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "8",
-      "parent": "",
-      "description": ""
-    },
-    "XTAB": {
-      "direction": "x",
-      "glyph 1": "zero",
-      "point 1": "0",
-      "glyph 2": "zero",
-      "point 2": "6",
-      "parent": "",
-      "description": ""
-    },
-    "XTFI": {
-      "direction": "x",
-      "glyph 1": "zero",
-      "point 1": "12",
-      "glyph 2": "zero",
-      "point 2": "18",
-      "parent": "",
-      "description": ""
-    },
-    "XTLC": {
-      "direction": "x",
-      "glyph 1": "n",
-      "point 1": "34",
-      "glyph 2": "n",
-      "point 2": "24",
-      "parent": "XTRA",
+      "glyph 1": "one",
+      "point 1": "2",
+      "glyph 2": "one",
+      "point 2": "10",
+      "parent": "XOPQ",
       "description": ""
     },
     "XTRA": {
@@ -132,15 +42,6 @@
       "point 1": "11",
       "glyph 2": "H",
       "point 2": "22",
-      "parent": "",
-      "description": ""
-    },
-    "XTSB": {
-      "direction": "x",
-      "glyph 1": "H",
-      "point 1": "-1",
-      "glyph 2": "H",
-      "point 2": "2",
       "parent": "",
       "description": ""
     },
@@ -153,49 +54,31 @@
       "parent": "XTRA",
       "description": ""
     },
-    "XUCR": {
+    "XTLC": {
       "direction": "x",
-      "glyph 1": "O",
-      "point 1": "-1",
-      "glyph 2": "O",
-      "point 2": "0",
-      "parent": "",
+      "glyph 1": "n",
+      "point 1": "34",
+      "glyph 2": "n",
+      "point 2": "24",
+      "parent": "XTRA",
       "description": ""
     },
-    "XUCS": {
+    "XTFI": {
       "direction": "x",
-      "glyph 1": "H",
-      "point 1": "-1",
-      "glyph 2": "H",
-      "point 2": "2",
-      "parent": "",
-      "description": ""
-    },
-    "YDOT": {
-      "direction": "y",
-      "glyph 1": "period",
-      "point 1": "9",
-      "glyph 2": "period",
-      "point 2": "3",
-      "parent": "",
-      "description": ""
-    },
-    "YOFI": {
-      "direction": "y",
       "glyph 1": "zero",
-      "point 1": "9",
+      "point 1": "12",
       "glyph 2": "zero",
-      "point 2": "15",
-      "parent": "YOPQ",
+      "point 2": "18",
+      "parent": "XTRA",
       "description": ""
     },
-    "YOLC": {
-      "direction": "y",
-      "glyph 1": "f",
-      "point 1": "20",
-      "glyph 2": "f",
-      "point 2": "11",
-      "parent": "YOPQ",
+    "XTAB": {
+      "direction": "x",
+      "glyph 1": "zero",
+      "point 1": "0",
+      "glyph 2": "zero",
+      "point 2": "6",
+      "parent": "",
       "description": ""
     },
     "YOPQ": {
@@ -216,30 +99,39 @@
       "parent": "YOPQ",
       "description": ""
     },
-    "YSLC": {
+    "YOLC": {
       "direction": "y",
-      "glyph 1": "n",
-      "point 1": "0",
-      "glyph 2": "n",
-      "point 2": "1",
-      "parent": "",
+      "glyph 1": "f",
+      "point 1": "4",
+      "glyph 2": "f",
+      "point 2": "7",
+      "parent": "YOPQ",
       "description": ""
     },
-    "YSUC": {
+    "YOFI": {
+      "direction": "y",
+      "glyph 1": "zero",
+      "point 1": "9",
+      "glyph 2": "zero",
+      "point 2": "15",
+      "parent": "YOPQ",
+      "description": ""
+    },
+    "YTUC": {
       "direction": "y",
       "glyph 1": "H",
       "point 1": "0",
       "glyph 2": "H",
-      "point 2": "1",
+      "point 2": "6",
       "parent": "",
       "description": ""
     },
-    "YSVU": {
+    "YTLC": {
       "direction": "y",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "10",
+      "glyph 1": "h",
+      "point 1": "0",
+      "glyph 2": "h",
+      "point 2": "13",
       "parent": "",
       "description": ""
     },
@@ -270,22 +162,220 @@
       "parent": "",
       "description": ""
     },
-    "YTLC": {
-      "direction": "y",
-      "glyph 1": "h",
-      "point 1": "0",
-      "glyph 2": "h",
-      "point 2": "13",
+    "XSHA": {
+      "direction": "x",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
       "parent": "",
       "description": ""
     },
-    "YTUC": {
+    "XSHU": {
+      "direction": "x",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "XSHA",
+      "description": ""
+    },
+    "XSHL": {
+      "direction": "x",
+      "glyph 1": "n",
+      "point 1": "1",
+      "glyph 2": "n",
+      "point 2": "2",
+      "parent": "XSHA",
+      "description": ""
+    },
+    "XSHF": {
+      "direction": "x",
+      "glyph 1": "one",
+      "point 1": "1",
+      "glyph 2": "one",
+      "point 2": "2",
+      "parent": "XSHA",
+      "description": ""
+    },
+    "YSHA": {
       "direction": "y",
       "glyph 1": "H",
       "point 1": "0",
       "glyph 2": "H",
+      "point 2": "1",
+      "parent": "",
+      "description": ""
+    },
+    "YSHU": {
+      "direction": "y",
+      "glyph 1": "H",
+      "point 1": "0",
+      "glyph 2": "H",
+      "point 2": "1",
+      "parent": "YSHA",
+      "description": ""
+    },
+    "YSHL": {
+      "direction": "y",
+      "glyph 1": "n",
+      "point 1": "0",
+      "glyph 2": "n",
+      "point 2": "1",
+      "parent": "YSHA",
+      "description": ""
+    },
+    "YSHF": {
+      "direction": "y",
+      "glyph 1": "one",
+      "point 1": "0",
+      "glyph 2": "one",
+      "point 2": "1",
+      "parent": "YSHA",
+      "description": ""
+    },
+    "XSVA": {
+      "direction": "x",
+      "glyph 1": "E",
+      "point 1": "9",
+      "glyph 2": "E",
+      "point 2": "8",
+      "parent": "",
+      "description": ""
+    },
+    "XSVU": {
+      "direction": "x",
+      "glyph 1": "E",
+      "point 1": "9",
+      "glyph 2": "E",
+      "point 2": "8",
+      "parent": "XSVA",
+      "description": ""
+    },
+    "XSVL": {
+      "direction": "x",
+      "glyph 1": "c",
+      "point 1": "10",
+      "glyph 2": "c",
+      "point 2": "9",
+      "parent": "XSVA",
+      "description": ""
+    },
+    "XSVF": {
+      "direction": "x",
+      "glyph 1": "seven",
+      "point 1": "0",
+      "glyph 2": "seven",
+      "point 2": "12",
+      "parent": "XSVA",
+      "description": ""
+    },
+    "YSVA": {
+      "direction": "y",
+      "glyph 1": "E",
+      "point 1": "9",
+      "glyph 2": "E",
+      "point 2": "10",
+      "parent": "",
+      "description": ""
+    },
+    "YSVU": {
+      "direction": "y",
+      "glyph 1": "E",
+      "point 1": "9",
+      "glyph 2": "E",
+      "point 2": "10",
+      "parent": "YSVA",
+      "description": ""
+    },
+    "YSVL": {
+      "direction": "y",
+      "glyph 1": "c",
+      "point 1": "9",
+      "glyph 2": "c",
+      "point 2": "8",
+      "parent": "YSVA",
+      "description": ""
+    },
+    "YSVF": {
+      "direction": "y",
+      "glyph 1": "seven",
+      "point 1": "0",
+      "glyph 2": "seven",
+      "point 2": "1",
+      "parent": "YSVA",
+      "description": ""
+    },
+    "XTSP": {
+      "direction": "x",
+      "glyph 1": "H",
+      "point 1": "-1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "",
+      "description": ""
+    },
+    "XUCR": {
+      "direction": "x",
+      "glyph 1": "O",
+      "point 1": "-1",
+      "glyph 2": "O",
+      "point 2": "0",
+      "parent": "",
+      "description": ""
+    },
+    "XUCS": {
+      "direction": "x",
+      "glyph 1": "H",
+      "point 1": "-1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "",
+      "description": ""
+    },
+    "XLCR": {
+      "direction": "x",
+      "glyph 1": "o",
+      "point 1": "-1",
+      "glyph 2": "o",
+      "point 2": "0",
+      "parent": "XUCR",
+      "description": ""
+    },
+    "XLCS": {
+      "direction": "x",
+      "glyph 1": "n",
+      "point 1": "-1",
+      "glyph 2": "n",
+      "point 2": "2",
+      "parent": "XUCS",
+      "description": ""
+    },
+    "XFIR": {
+      "direction": "x",
+      "glyph 1": "zero",
+      "point 1": "-1",
+      "glyph 2": "zero",
+      "point 2": "0",
+      "parent": "",
+      "description": ""
+    },
+    "XDOT": {
+      "direction": "x",
+      "glyph 1": "period",
+      "point 1": "0",
+      "glyph 2": "period",
       "point 2": "6",
       "parent": "",
+      "description": ""
+    },
+    "YDOT": {
+      "direction": "y",
+      "glyph 1": "period",
+      "point 1": "9",
+      "glyph 2": "period",
+      "point 2": "3",
+      "parent": "XDOT",
       "description": ""
     }
   },
@@ -366,6 +456,10 @@
       "0 7": {
         "name": "YTFI",
         "direction": "y"
+      },
+      "1 2": {
+        "name": "XSHF",
+        "direction": "x"
       }
     },
     "two": {
@@ -440,28 +534,28 @@
     },
     "five": {
       "12 19": {
-        "direction": "x",
-        "name": "XOFI"
-      },
-      "14 26": {
-        "direction": "y",
-        "name": "YTFI"
-      },
-      "16 15": {
-        "direction": "y",
-        "name": "YOFI"
-      },
-      "4 26": {
-        "direction": "y",
-        "name": "YOFI"
+        "name": "XOFI",
+        "direction": "x"
       },
       "7 23": {
-        "direction": "x",
-        "name": "XOFI"
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "16 15": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "4 26": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "14 26": {
+        "name": "YTFI",
+        "direction": "y"
       },
       "99 23": {
-        "direction": "x",
-        "name": "XFIR"
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "six": {
@@ -496,12 +590,12 @@
     },
     "seven": {
       "1 11": {
-        "direction": "y",
-        "name": "YOFI"
+        "name": "YOFI",
+        "direction": "y"
       },
       "6 1": {
-        "direction": "y",
-        "name": "YTFI"
+        "name": "YTFI",
+        "direction": "y"
       }
     },
     "eight": {
@@ -596,20 +690,20 @@
     },
     "semicolon": {
       "16 22": {
-        "direction": "x",
-        "name": "XDOT"
-      },
-      "19 25": {
-        "direction": "y",
-        "name": "YDOT"
-      },
-      "3 9": {
-        "direction": "y",
-        "name": "YDOT"
+        "name": "XDOT",
+        "direction": "x"
       },
       "6 12": {
-        "direction": "x",
-        "name": "XDOT"
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "19 25": {
+        "name": "YDOT",
+        "direction": "y"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
       }
     },
     "question": {
@@ -631,51 +725,51 @@
       }
     },
     "A": {
-      "0 1": {
-        "direction": "y",
-        "name": "YSUC"
-      },
-      "1 2": {
-        "direction": "x",
-        "name": "XSUC"
-      },
-      "10 11": {
-        "direction": "y",
-        "name": "YSUC"
-      },
-      "11 12": {
-        "direction": "x",
-        "name": "XSUC"
-      },
-      "16 17": {
-        "direction": "x",
-        "name": "XSUC"
-      },
-      "17 18": {
-        "direction": "y",
-        "name": "YSUC"
+      "24 23": {
+        "name": "YOUC",
+        "direction": "y"
       },
       "18 4": {
-        "direction": "y",
-        "name": "YTUC"
+        "name": "YTUC",
+        "direction": "y"
       },
-      "24 23": {
-        "direction": "y",
-        "name": "YOUC"
+      "1 2": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "11 12": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "16 17": {
+        "name": "XSHU",
+        "direction": "x"
       },
       "7 8": {
-        "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "10 11": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "17 18": {
+        "name": "YSHU",
+        "direction": "y"
       },
       "8 9": {
-        "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU",
+        "direction": "y"
       }
     },
     "B": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "0 6": {
         "direction": "y",
@@ -683,7 +777,7 @@
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "2 21": {
         "direction": "x",
@@ -719,7 +813,7 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "40 7": {
         "direction": "y",
@@ -727,7 +821,7 @@
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       }
     },
     "C": {
@@ -767,11 +861,11 @@
     "D": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "13 7": {
         "direction": "y",
@@ -799,11 +893,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "7 23": {
         "direction": "y",
@@ -817,7 +911,7 @@
     "E": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "0 15": {
         "direction": "y",
@@ -825,7 +919,7 @@
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "16 17": {
         "direction": "y",
@@ -869,11 +963,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "6 11": {
         "direction": "y",
@@ -895,19 +989,19 @@
     "F": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "14 15": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "15 16": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "16 7": {
         "direction": "y",
@@ -943,11 +1037,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "6 11": {
         "direction": "y",
@@ -985,7 +1079,7 @@
       },
       "24 25": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "24 29": {
         "direction": "x",
@@ -993,15 +1087,15 @@
       },
       "25 26": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "27 28": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "28 29": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "3 14": {
         "direction": "y",
@@ -1025,41 +1119,81 @@
         "name": "XOUC",
         "direction": "x"
       },
-      "1 2": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "11 12": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "21 22": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "24 25": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "28 29": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "31 32": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "4 5": {
-        "name": "XSUC",
-        "direction": "x"
-      },
-      "8 9": {
-        "name": "XSUC",
-        "direction": "x"
-      },
       "11 22": {
         "name": "XTUC",
         "direction": "x"
+      },
+      "15 14": {
+        "name": "YOUC",
+        "direction": "y"
+      },
+      "13 26": {
+        "name": "YTUC",
+        "direction": "y"
+      },
+      "1 2": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "11 12": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "21 22": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "24 25": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "28 29": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "31 32": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "4 5": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "8 9": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "12 13": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "20 21": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "25 26": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "27 28": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "32 33": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "5 6": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "7 8": {
+        "name": "YSHU",
+        "direction": "y"
       },
       "31 99": {
         "name": "XUCS",
@@ -1068,46 +1202,6 @@
       "4 -1": {
         "name": "XUCS",
         "direction": "x"
-      },
-      "15 14": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "12 13": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "20 21": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "25 26": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "27 28": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "32 33": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "5 6": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "7 8": {
-        "name": "YSUC",
-        "direction": "y"
-      },
-      "13 26": {
-        "name": "YTUC",
-        "direction": "y"
       }
     },
     "I": {
@@ -1116,19 +1210,19 @@
         "direction": "x"
       },
       "1 2": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "11 12": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "4 5": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "8 9": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "4 -1": {
@@ -1140,19 +1234,19 @@
         "direction": "x"
       },
       "0 1": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "12 13": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "5 6": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "7 8": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "0 7": {
@@ -1171,15 +1265,15 @@
       },
       "10 11": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "12 13": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "13 14": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "4 19": {
         "direction": "y",
@@ -1191,7 +1285,7 @@
       },
       "9 10": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "9 14": {
         "direction": "x",
@@ -1205,19 +1299,19 @@
     "K": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "11 12": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "12 13": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "13 18": {
         "direction": "y",
@@ -1225,15 +1319,15 @@
       },
       "16 17": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "17 18": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "19 20": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "2 11": {
         "direction": "x",
@@ -1241,23 +1335,23 @@
       },
       "20 21": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "26 27": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "27 28": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "29 30": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "30 31": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "4 -1": {
         "direction": "x",
@@ -1265,25 +1359,25 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "7 8": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "8 9": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       }
     },
     "L": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "0 12": {
         "direction": "y",
@@ -1295,7 +1389,7 @@
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "13 14": {
         "direction": "y",
@@ -1315,19 +1409,19 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "7 8": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "8 9": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       }
     },
     "M": {
@@ -1340,27 +1434,27 @@
         "direction": "x"
       },
       "1 2": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "13 14": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "16 17": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "20 21": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "30 31": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "4 5": {
-        "name": "XSUC",
+        "name": "XSHU",
         "direction": "x"
       },
       "4 -1": {
@@ -1372,27 +1466,27 @@
         "direction": "x"
       },
       "0 1": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "12 13": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "17 18": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "19 20": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "31 32": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "5 6": {
-        "name": "YSUC",
+        "name": "YSHU",
         "direction": "y"
       },
       "0 7": {
@@ -1403,7 +1497,7 @@
     "N": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "0 7": {
         "direction": "y",
@@ -1411,11 +1505,11 @@
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "11 12": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "11 16": {
         "direction": "x",
@@ -1423,15 +1517,15 @@
       },
       "12 13": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "14 15": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "15 16": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "2 23": {
         "direction": "x",
@@ -1439,11 +1533,11 @@
       },
       "23 24": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "24 25": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "4 -1": {
         "direction": "x",
@@ -1451,11 +1545,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "99 16": {
         "direction": "x",
@@ -1499,7 +1593,7 @@
     "P": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "0 7": {
         "direction": "y",
@@ -1507,7 +1601,7 @@
       },
       "1 2": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "10 23": {
         "direction": "x",
@@ -1527,11 +1621,11 @@
       },
       "30 31": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "31 32": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "4 -1": {
         "direction": "x",
@@ -1539,11 +1633,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "7 26": {
         "direction": "y",
@@ -1593,61 +1687,61 @@
       }
     },
     "R": {
-      "0 1": {
-        "direction": "y",
-        "name": "YSUC"
-      },
-      "0 7": {
-        "direction": "y",
-        "name": "YTUC"
-      },
-      "1 2": {
-        "direction": "y",
-        "name": "XSUC"
-      },
-      "13 18": {
-        "direction": "y",
-        "name": "YOUC"
-      },
       "2 28": {
-        "direction": "x",
-        "name": "XOUC"
+        "name": "XOUC",
+        "direction": "x"
       },
       "21 10": {
-        "direction": "x",
-        "name": "XOUC"
+        "name": "XOUC",
+        "direction": "x"
       },
       "26 21": {
-        "direction": "x",
-        "name": "XTUC"
+        "name": "XTUC",
+        "direction": "x"
       },
-      "28 29": {
-        "direction": "x",
-        "name": "XSUC"
-      },
-      "29 30": {
-        "direction": "y",
-        "name": "YSUC"
-      },
-      "36 37": {
-        "direction": "y",
-        "name": "YSUC"
-      },
-      "4 -1": {
-        "direction": "x",
-        "name": "XUCS"
-      },
-      "4 5": {
-        "direction": "x",
-        "name": "XSUC"
-      },
-      "5 6": {
-        "direction": "y",
-        "name": "YSUC"
+      "13 18": {
+        "name": "YOUC",
+        "direction": "y"
       },
       "7 24": {
-        "direction": "y",
-        "name": "YOUC"
+        "name": "YOUC",
+        "direction": "y"
+      },
+      "0 7": {
+        "name": "YTUC",
+        "direction": "y"
+      },
+      "1 2": {
+        "name": "XSHU",
+        "direction": "y"
+      },
+      "28 29": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "4 5": {
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "29 30": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "36 37": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "5 6": {
+        "name": "YSHU",
+        "direction": "y"
+      },
+      "4 -1": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "S": {
@@ -1673,59 +1767,59 @@
       }
     },
     "T": {
-      "0 19": {
-        "direction": "x",
-        "name": "XSVU"
+      "14 9": {
+        "name": "XOUC",
+        "direction": "x"
       },
       "1 18": {
-        "direction": "y",
-        "name": "YOUC"
-      },
-      "10 11": {
-        "direction": "y",
-        "name": "YSVU"
-      },
-      "12 13": {
-        "direction": "y",
-        "name": "YSVU"
+        "name": "YOUC",
+        "direction": "y"
       },
       "12 2": {
-        "direction": "y",
-        "name": "YTUC"
+        "name": "YTUC",
+        "direction": "y"
       },
       "13 14": {
-        "direction": "x",
-        "name": "XSUC"
-      },
-      "14 9": {
-        "direction": "x",
-        "name": "XOUC"
-      },
-      "18 19": {
-        "direction": "y",
-        "name": "YSVU"
-      },
-      "3 4": {
-        "direction": "x",
-        "name": "XSVU"
-      },
-      "5 4": {
-        "direction": "y",
-        "name": "YSVU"
+        "name": "XSHU",
+        "direction": "x"
       },
       "9 10": {
-        "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU",
+        "direction": "x"
+      },
+      "0 19": {
+        "name": "XSVU",
+        "direction": "x"
+      },
+      "3 4": {
+        "name": "XSVU",
+        "direction": "x"
+      },
+      "10 11": {
+        "name": "YSVU",
+        "direction": "y"
+      },
+      "12 13": {
+        "name": "YSVU",
+        "direction": "y"
+      },
+      "18 19": {
+        "name": "YSVU",
+        "direction": "y"
+      },
+      "5 4": {
+        "name": "YSVU",
+        "direction": "y"
       }
     },
     "U": {
       "0 1": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "0 29": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "1 24": {
         "direction": "y",
@@ -1733,7 +1827,7 @@
       },
       "14 15": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "14 19": {
         "direction": "x",
@@ -1741,19 +1835,19 @@
       },
       "15 16": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "17 18": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "18 19": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "2 3": {
         "direction": "y",
-        "name": "YSUC"
+        "name": "YSHU"
       },
       "29 -1": {
         "direction": "x",
@@ -1765,7 +1859,7 @@
       },
       "3 4": {
         "direction": "x",
-        "name": "XSUC"
+        "name": "XSHU"
       },
       "5 13": {
         "direction": "x",
@@ -1782,8 +1876,8 @@
     },
     "V": {
       "1 16": {
-        "direction": "y",
-        "name": "YTUC"
+        "name": "YTUC",
+        "direction": "y"
       }
     },
     "W": {
@@ -1844,7 +1938,7 @@
         "direction": "x"
       },
       "36 37": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "7 13": {
@@ -1860,7 +1954,7 @@
         "direction": "y"
       },
       "38 37": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "44 32": {
@@ -1886,7 +1980,7 @@
         "direction": "x"
       },
       "3 2": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "23 29": {
@@ -1902,7 +1996,7 @@
         "direction": "y"
       },
       "3 4": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "0 5": {
@@ -1970,11 +2064,11 @@
         "direction": "x"
       },
       "14 15": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "8 7": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "25 19": {
@@ -1990,11 +2084,11 @@
         "direction": "y"
       },
       "16 15": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "8 9": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "17 10": {
@@ -2049,14 +2143,6 @@
         "name": "XOLC",
         "direction": "x"
       },
-      "1 2": {
-        "name": "XSLC",
-        "direction": "x"
-      },
-      "29 30": {
-        "name": "XSLC",
-        "direction": "x"
-      },
       "20 11": {
         "name": "YOLC",
         "direction": "y"
@@ -2065,16 +2151,24 @@
         "name": "YOLC",
         "direction": "y"
       },
+      "0 11": {
+        "name": "YTAS",
+        "direction": "y"
+      },
+      "1 2": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "29 30": {
+        "name": "XSHL",
+        "direction": "x"
+      },
       "0 1": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "31 30": {
-        "name": "YSLC",
-        "direction": "y"
-      },
-      "0 11": {
-        "name": "YTAS",
+        "name": "YSHL",
         "direction": "y"
       }
     },
@@ -2146,23 +2240,23 @@
         "direction": "x"
       },
       "1 2": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "20 21": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "24 25": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "35 36": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "5 4": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "35 25": {
@@ -2174,23 +2268,23 @@
         "direction": "y"
       },
       "0 1": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "22 21": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "23 24": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "37 36": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "5 6": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "0 7": {
@@ -2220,15 +2314,15 @@
         "direction": "x"
       },
       "1 2": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "11 12": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "5 4": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "23 17": {
@@ -2236,15 +2330,15 @@
         "direction": "y"
       },
       "0 1": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "13 12": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "5 6": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "0 7": {
@@ -2283,11 +2377,11 @@
       },
       "6 7": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "7 8": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "99 12": {
         "direction": "x",
@@ -2297,7 +2391,7 @@
     "k": {
       "0 1": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "0 7": {
         "direction": "y",
@@ -2305,27 +2399,27 @@
       },
       "1 2": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "11 12": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "12 13": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "16 17": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "17 18": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "19 20": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "2 11": {
         "direction": "x",
@@ -2333,15 +2427,15 @@
       },
       "20 21": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "24 25": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "25 26": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "4 -1": {
         "direction": "x",
@@ -2349,11 +2443,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       }
     },
     "l": {
@@ -2370,23 +2464,23 @@
         "direction": "x"
       },
       "1 2": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "11 12": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "12 13": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "4 5": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "5 6": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "0 7": {
@@ -2397,11 +2491,11 @@
     "m": {
       "0 1": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "1 2": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "12 52": {
         "direction": "y",
@@ -2417,7 +2511,7 @@
       },
       "25 26": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "25 30": {
         "direction": "x",
@@ -2425,15 +2519,15 @@
       },
       "26 27": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "28 29": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "29 30": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "4 -1": {
         "direction": "x",
@@ -2441,7 +2535,7 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "42 30": {
         "direction": "x",
@@ -2449,19 +2543,19 @@
       },
       "42 43": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "43 44": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "45 46": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "46 47": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "47 42": {
         "direction": "x",
@@ -2469,7 +2563,7 @@
       },
       "5 6": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "57 47": {
         "direction": "x",
@@ -2477,11 +2571,11 @@
       },
       "57 58": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "58 59": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "59 12": {
         "direction": "y",
@@ -2495,11 +2589,11 @@
     "n": {
       "0 1": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "1 2": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "12 29": {
         "direction": "y",
@@ -2507,7 +2601,7 @@
       },
       "19 20": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "19 99": {
         "direction": "x",
@@ -2523,11 +2617,11 @@
       },
       "20 21": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "23 24": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "24 19": {
         "direction": "x",
@@ -2539,11 +2633,11 @@
       },
       "34 35": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "35 36": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "36 12": {
         "direction": "y",
@@ -2551,11 +2645,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       }
     },
     "o": {
@@ -2599,11 +2693,11 @@
       },
       "0 1": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "1 2": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "12 18": {
         "direction": "y",
@@ -2627,11 +2721,11 @@
       },
       "22 23": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "23 24": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "25 31": {
         "direction": "x",
@@ -2643,11 +2737,11 @@
       },
       "4 5": {
         "direction": "x",
-        "name": "XSLC"
+        "name": "XSHL"
       },
       "5 6": {
         "direction": "y",
-        "name": "YSLC"
+        "name": "YSHL"
       },
       "99 15": {
         "direction": "x",
@@ -2672,15 +2766,15 @@
         "direction": "x"
       },
       "12 13": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "16 17": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "9 10": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "24 30": {
@@ -2696,15 +2790,15 @@
         "direction": "y"
       },
       "13 14": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "15 16": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "8 9": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "15 -1": {
@@ -2726,15 +2820,15 @@
         "direction": "x"
       },
       "1 2": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "21 22": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "4 5": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "12 16": {
@@ -2742,15 +2836,15 @@
         "direction": "y"
       },
       "0 1": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "22 23": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "5 6": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "0 7": {
@@ -2836,15 +2930,15 @@
         "direction": "x"
       },
       "0 36": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "14 15": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "21 22": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "6 12": {
@@ -2856,15 +2950,15 @@
         "direction": "y"
       },
       "0 1": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "15 16": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "22 23": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "2 29": {
@@ -2874,35 +2968,35 @@
     },
     "v": {
       "0 18": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "12 13": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "3 4": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "8 9": {
-        "name": "XSLC",
+        "name": "XSHL",
         "direction": "x"
       },
       "0 1": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "11 12": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "2 3": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "9 10": {
-        "name": "YSLC",
+        "name": "YSHL",
         "direction": "y"
       },
       "10 16": {

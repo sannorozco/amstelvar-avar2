@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="t" format="2">
+  <advance width="672"/>
+  <unicode hex="0074"/>
+  <anchor x="250" y="0" name="bottom"/>
+  <anchor x="240" y="622" name="center"/>
+  <anchor x="250" y="1179" name="top"/>
+  <anchor x="441" y="1000" name="topright"/>
+  <outline>
+    <contour>
+      <point x="26" y="923" type="line"/>
+      <point x="26" y="956" type="line"/>
+      <point x="120" y="977"/>
+      <point x="283" y="1113"/>
+      <point x="297" y="1180" type="qcurve"/>
+      <point x="322" y="1180" type="line"/>
+      <point x="336" y="1163" type="line"/>
+      <point x="331" y="968" type="line"/>
+      <point x="609" y="968" type="line"/>
+      <point x="609" y="923" type="line"/>
+      <point x="330" y="923" type="line"/>
+      <point x="326" y="525" type="line"/>
+      <point x="327" y="172" type="line" smooth="yes"/>
+      <point x="328" y="107"/>
+      <point x="402" y="64"/>
+      <point x="512" y="65" type="qcurve" smooth="yes"/>
+      <point x="606" y="65" type="line"/>
+      <point x="606" y="29" type="line"/>
+      <point x="412" y="-8" type="line"/>
+      <point x="335" y="-8"/>
+      <point x="251" y="86"/>
+      <point x="251" y="176" type="qcurve" smooth="yes"/>
+      <point x="251" y="525" type="line"/>
+      <point x="251" y="918" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>15 18</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YOLC</string>
+        </dict>
+        <key>21 12</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XOLC</string>
+        </dict>
+        <key>8 18</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YTLC</string>
+        </dict>
+        <key>8 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YOLC</string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
