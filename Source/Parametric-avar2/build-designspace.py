@@ -23,7 +23,13 @@ two versions:
 
 
 class AmstelvarDesignSpaceBuilder:
+    '''
+    Simple parametric designspace for use while designing glyphs in "RoboFontra".
 
+    - parametric axes
+    - XTSP
+
+    '''
     familyName      = 'AmstelvarA2'
     subFamilyName   = ['Roman', 'Italic'][0]
     defaultName     = 'wght400'
@@ -147,7 +153,7 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
     - parametric axes
     - XTSP
     - 4 instances for 2 axes extrema
-    - avar 1
+    - build instances as UFO
 
     '''
     blendedAxes    = {
@@ -158,10 +164,14 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
         'wght' : {
             'name'    : 'Weight',
             'default' : 400,
+            'min'     : 200,
+            'max'     : 800,
         },
         'wdth' : {
             'name'    : 'Width',
             'default' : 100,
+            'min'     : 85,
+            'max'     : 125,
         },
     }
 
@@ -185,45 +195,13 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
     def instancesFolder(self):
         return os.path.join(self.sourcesFolder, 'instances')
 
-    # @property
-    # def defaultLocation(self):
-    #     L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
-    #     L['XTSP'] = 0
-    #     for tag in self.blendedAxes.keys():
-    #         name    = self.blendedAxes[tag]['name']
-    #         default = self.blendedAxes[tag]['default']
-    #         L[name] = default
-    #     return L
-
-    # def addBlendedAxes(self):
-    #     # load measurement definitions
-    #     M = FontMeasurements()
-    #     M.read(self.measurementsPath)
-
-    #     for tag in self.blendedAxes.keys():
-    #         # get min/max values from file names
-    #         values = []
-    #         for ufo in self.extremaSources:
-    #             if tag in ufo:
-    #                 value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-    #                 values.append(value)
-    #         assert len(values)
-    #         values.sort()
-    #         # create axis
-    #         a = AxisDescriptor()
-    #         a.name    = self.blendedAxes[tag]['name']
-    #         a.tag     = tag
-    #         a.minimum = values[0]
-    #         a.maximum = values[1]
-    #         a.default = self.blendedAxes[tag]['default']
-    #         self.designspace.addAxis(a)
-
     def addInstances(self):
         # prepare to measure extrema sources
         M = FontMeasurements()
         M.read(self.extremaMeasurementsPath)
 
         for tag in self.blendedAxes.keys():
+            # axisName = self.blendedAxes[tag]['name']
             for ufoPath in self.extremaSources:
                 if tag in ufoPath:
                     # get extrema source measurements
@@ -232,9 +210,6 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
 
                     # create instance location from default + measurements
                     L = self.defaultLocation.copy()
-                    value = int(os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1][4:])
-                    valuePermill = permille(value, f.info.unitsPerEm)
-                    L[tag] = valuePermill
                     for measurementName in self.parametricAxes:
                         if measurementName not in M.values:
                             continue
@@ -246,10 +221,11 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
                         L[measurementName] = valuePermill
 
                     # add instance to designspace
+                    styleName = f'{tag}{valuePermill}'
                     I = InstanceDescriptor()
                     I.familyName     = self.familyName
-                    I.styleName      = f.info.styleName.replace(' ', '')
-                    I.name           = f.info.styleName.replace(' ', '')
+                    I.styleName      = styleName # f.info.styleName.replace(' ', '')
+                    I.name           = styleName # f.info.styleName.replace(' ', '')
                     I.designLocation = L
                     I.filename       = os.path.join('instances', f"{self.familyName}-{self.subFamilyName}_{os.path.split(ufoPath)[-1].split('_')[-1]}")
                     self.designspace.addInstance(I)
@@ -259,6 +235,7 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
             instances = glob.glob(f'{self.instancesFolder}/*.ufo')
             for instance in instances:
                 shutil.rmtree(instance)
+
         ufoProcessor.build(self.designspacePath)
         ufos = glob.glob(f'{self.instancesFolder}/*.ufo')
 
@@ -281,13 +258,6 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
                 ttfPath = ufoPath.replace('.ufo', '.ttf')
                 ttf.save(ttfPath)
 
-    # def addLibs(self):
-    #     asciiGlyphs = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'.split()
-    #     f = OpenFont(self.defaultUFO, showInterface=False)
-    #     allGlyphs = f.glyphOrder
-    #     skipExportGlyphs = [g for g in allGlyphs if g not in asciiGlyphs]
-    #     self.designspace.lib['public.skipExportGlyphs'] = skipExportGlyphs
-
     def build(self):
         self.designspace = DesignSpaceDocument()
         self.addParametricAxes()
@@ -296,26 +266,173 @@ class AmstelvarDesignSpaceBuilder0(AmstelvarDesignSpaceBuilder):
         self.addInstances()
 
 
-class AmstelvarDesignSpaceBuilder1:
+class AmstelvarDesignSpaceBuilder1(AmstelvarDesignSpaceBuilder0):
     '''
     - parametric axes
     - XTSP
     - blended axes
-    - avar 2
+    - use parametric instances as sources for blended axes (instead of the old extrema)
+    - build instances at min/max output of each axis
 
     '''
-    pass
+
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_1.designspace')
+
+    @property
+    def defaultLocation(self):
+        L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+        L['XTSP'] = 0
+        for tag in self.blendedAxes.keys():
+            name    = self.blendedAxes[tag]['name']
+            default = self.blendedAxes[tag]['default']
+            L[name] = default
+        return L
+
+    @property
+    def instances(self):
+        return glob.glob(f'{self.instancesFolder}/*.ufo')
+
+    def addBlendedAxes(self):
+        # load measurement definitions
+        M = FontMeasurements()
+        M.read(self.measurementsPath)
+
+        for tag in self.blendedAxes.keys():
+            # get min/max values from file names
+            values = []
+            for ufoPath in self.instances:
+                if tag in ufoPath:
+                    value = int(os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1][4:])
+                    values.append(value)
+            assert len(values)
+            values.sort()
+
+            # create axis
+            a = AxisDescriptor()
+            a.name    = self.blendedAxes[tag]['name']
+            a.tag     = tag
+            a.minimum = values[0]
+            a.maximum = values[1]
+            a.default = self.blendedAxes[tag]['default']
+            self.designspace.addAxis(a)
+
+    def addBlendedSources(self):
+
+        # use generated instances for extrema
+
+        M = FontMeasurements()
+        M.read(self.measurementsPath)
+
+        for tag in self.blendedAxes.keys():
+            for ufoPath in self.instances:
+                if tag in ufoPath:
+                    axisName = self.blendedAxes[tag]['name']
+                    # get measurements
+                    f = OpenFont(ufoPath, showInterface=False)
+                    M.measure(f)
+
+                    # create source location from default + measurements
+                    L = self.defaultLocation.copy()
+                    value = int(os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1][4:])
+                    L[axisName] = value # valuePermill
+
+                    # add source to designspace
+                    src = SourceDescriptor()
+                    src.path       = ufoPath
+                    src.familyName = self.familyName
+                    src.styleName  = f'{tag}{value}'
+                    src.location   = L
+                    self.designspace.addSource(src)
+
+    def addInstances(self):
+        # prepare to measure extrema sources
+        M = FontMeasurements()
+        M.read(self.extremaMeasurementsPath)
+
+        for tag in self.blendedAxes.keys():
+            axisName = self.blendedAxes[tag]['name']
+            valueMin = self.blendedAxes[tag]['min']
+            valueMax = self.blendedAxes[tag]['max']
+            for value in [valueMin, valueMax]:
+                L = self.defaultLocation.copy()
+                L[axisName] = value
+                styleName = f'{tag}{value}'
+                # add instance to designspace
+                I = InstanceDescriptor()
+                I.familyName     = self.familyName
+                I.styleName      = styleName
+                I.name           = styleName
+                I.designLocation = L
+                I.filename       = os.path.join('instances', '2', f"{self.familyName}-{self.subFamilyName}_{styleName}.ufo")
+                self.designspace.addInstance(I)
+
+    def buildInstances(self):
+
+        ufoProcessor.build(self.designspacePath)
+        ufos = glob.glob(f'{self.instancesFolder}/2/*.ufo')
+
+        # copy glyph order from default
+        f = OpenFont(self.defaultUFO, showInterface=False)
+        glyphOrder = f.glyphOrder
+        f.close()
+
+        for ufo in ufos:
+            f = OpenFont(ufo, showInterface=False)
+            f.glyphOrder = glyphOrder
+            f.save()
+            f.close()
 
 
-class AmstelvarDesignSpaceBuilder2:
+    def build(self):
+        self.designspace = DesignSpaceDocument()
+        self.addBlendedAxes()
+        self.addParametricAxes()
+        self.addDefaultSource()
+        self.addBlendedSources()
+        self.addParametricSources()
+        self.addInstances()
+
+
+class AmstelvarDesignSpaceBuilder2(AmstelvarDesignSpaceBuilder1):
     '''
-    3. default
-    6 sources for 3 axes extrema
+    - parametric axes
+    - XTSP
+    - blended axes
+    - use blended instances as sources for blended axes (instead of parametric instances)
 
     '''
-    pass
 
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_2.designspace')
 
+    def addBlendedAxes(self):
+        for tag in self.blendedAxes.keys():
+            a = AxisDescriptor()
+            a.name    = self.blendedAxes[tag]['name']
+            a.tag     = tag
+            a.minimum = self.blendedAxes[tag]['min']
+            a.maximum = self.blendedAxes[tag]['max']
+            a.default = self.blendedAxes[tag]['default']
+            self.designspace.addAxis(a)
+
+    def addBlendedSources(self):
+
+        # use blended instances for extrema
+
+        for tag in self.blendedAxes.keys():
+            axisName = self.blendedAxes[tag]['name']
+            valueMin = self.blendedAxes[tag]['min']
+            valueMax = self.blendedAxes[tag]['max']
+            for value in [valueMin, valueMax]:
+                ufoPath = os.path.join(self.instancesFolder, '2', f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
+                assert os.path.exists(ufoPath)
+                L = self.defaultLocation.copy()
+                L[axisName] = value
+                src = SourceDescriptor()
+                src.path       = ufoPath
+                src.familyName = self.familyName
+                src.styleName  = f'{tag}{value}'
+                src.location   = L
+                self.designspace.addSource(src)
 
 # -----
 # build
@@ -323,11 +440,20 @@ class AmstelvarDesignSpaceBuilder2:
 
 if __name__ == '__main__':
 
-    D = AmstelvarDesignSpaceBuilder()
-    D.build()
-    D.save()
+    # D = AmstelvarDesignSpaceBuilder()
+    # D.build()
+    # D.save()
 
-    D = AmstelvarDesignSpaceBuilder0()
+    # D = AmstelvarDesignSpaceBuilder0()
+    # D.build()
+    # D.save()
+    # D.buildInstances()
+
+    # D = AmstelvarDesignSpaceBuilder1()
+    # D.build()
+    # D.save()
+    # D.buildInstances()
+
+    D = AmstelvarDesignSpaceBuilder2()
     D.build()
     D.save()
-    D.buildInstances()
