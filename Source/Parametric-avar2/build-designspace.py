@@ -452,25 +452,27 @@ class AmstelvarDesignSpaceBuilder2(AmstelvarDesignSpaceBuilder1):
             a.default = self.blendedAxes[tag]['default']
             self.designspace.addAxis(a)
 
+    def buildBlendedSources(self):
+        # build blended instances for extrema
+        pass
+
     def addBlendedSources(self):
-
-        # use blended instances for extrema
-
-        for tag in self.blendedAxes.keys():
-            axisName = self.blendedAxes[tag]['name']
-            valueMin = self.blendedAxes[tag]['min']
-            valueMax = self.blendedAxes[tag]['max']
-            for value in [valueMin, valueMax]:
-                ufoPath = os.path.join(self.instancesFolder, '2', f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
-                assert os.path.exists(ufoPath)
-                L = self.defaultLocation.copy()
-                L[axisName] = value
-                src = SourceDescriptor()
-                src.path       = ufoPath
-                src.familyName = self.familyName
-                src.styleName  = f'{tag}{value}'
-                src.location   = L
-                self.designspace.addSource(src)
+        # for tag in self.blendedAxes.keys():
+        #     axisName = self.blendedAxes[tag]['name']
+        #     valueMin = self.blendedAxes[tag]['min']
+        #     valueMax = self.blendedAxes[tag]['max']
+        #     for value in [valueMin, valueMax]:
+        #         ufoPath = os.path.join(self.instancesFolder, '2', f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
+        #         assert os.path.exists(ufoPath)
+        #         L = self.defaultLocation.copy()
+        #         L[axisName] = value
+        #         src = SourceDescriptor()
+        #         src.path       = ufoPath
+        #         src.familyName = self.familyName
+        #         src.styleName  = f'{tag}{value}'
+        #         src.location   = L
+        #         self.designspace.addSource(src)
+        pass
 
 # -----
 # build
@@ -478,22 +480,22 @@ class AmstelvarDesignSpaceBuilder2(AmstelvarDesignSpaceBuilder1):
 
 if __name__ == '__main__':
 
-    # D = AmstelvarDesignSpaceBuilder()
-    # D.build()
-    # D.save()
-    # D.buildVariableFont()
+    D = AmstelvarDesignSpaceBuilder()
+    D.build()
+    D.save()
+    D.buildVariableFont()
 
-    # D = AmstelvarDesignSpaceBuilder0()
-    # D.build()
-    # D.save()
-    # D.buildInstances()
-    # D.buildVariableFont()
+    D = AmstelvarDesignSpaceBuilder0()
+    D.build()
+    D.save()
+    D.buildInstances()
+    D.buildVariableFont()
 
-    # D = AmstelvarDesignSpaceBuilder1()
-    # D.build()
-    # D.save()
-    # D.buildInstances()
-    # D.buildVariableFont()
+    D = AmstelvarDesignSpaceBuilder1()
+    D.build()
+    D.save()
+    D.buildInstances()
+    D.buildVariableFont()
 
     D = AmstelvarDesignSpaceBuilder2()
     D.build()
