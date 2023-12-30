@@ -3,7 +3,11 @@ import ufoProcessor # upgrade to UFOOperator!
 from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, SourceDescriptor, InstanceDescriptor, AxisMappingDescriptor
 from variableValues.measurements import FontMeasurements
 from defcon import Font
-from ufo2ft import compileTTF
+from ufo2ft import compileTTF, compileVariableTTF
+# from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter
+from fontTools.subset import Subsetter
+from fontTools.ttLib import TTFont
+
 
 def permille(value, unitsPerEm):
     return round(value * 1000 / unitsPerEm)
@@ -52,6 +56,14 @@ class AmstelvarDesignSpaceBuilder:
     @property
     def sourcesFolder(self):
         return os.path.join(self.baseFolder, 'Parametric-avar2', self.subFamilyName)
+
+    @property
+    def varFontsFolder(self):
+        return os.path.join(os.path.dirname(self.baseFolder), 'fonts', 'Parametric avar2 TTFs')
+
+    @property
+    def varFontPath(self):
+        return os.path.join(self.varFontsFolder, self.designspaceName.replace('.designspace', '.ttf'))
 
     @property
     def measurementsPath(self):
@@ -141,6 +153,33 @@ class AmstelvarDesignSpaceBuilder:
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
+
+    def buildVariableFont(self):
+
+        print(f'generating variable font for {self.designspaceName}...')
+
+        D = DesignSpaceDocument()
+        D.read(self.designspacePath)
+        print(f'\tloading sources...')
+        for src in D.sources:
+            src.font = Font(src.path)
+
+        print(f'\tcompiling variable font...')
+        f = compileVariableTTF(D, featureWriters=[])
+        f.save(self.varFontPath)
+
+        assert os.path.exists(self.varFontPath)
+
+        # subset ascii variable font with pyftsubset
+        print('\tsubsetting variable font...')
+        font = TTFont(self.varFontPath)
+        asciiGlyphs = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'.split()
+        subsetter = Subsetter()
+        subsetter.populate(glyphs=asciiGlyphs)
+        subsetter.subset(font)
+        font.save(self.varFontPath)
+
+        print('...done.\n')
 
     def save(self):
         if not self.designspace:
@@ -382,7 +421,6 @@ class AmstelvarDesignSpaceBuilder1(AmstelvarDesignSpaceBuilder0):
             f.save()
             f.close()
 
-
     def build(self):
         self.designspace = DesignSpaceDocument()
         self.addBlendedAxes()
@@ -443,17 +481,21 @@ if __name__ == '__main__':
     # D = AmstelvarDesignSpaceBuilder()
     # D.build()
     # D.save()
+    # D.buildVariableFont()
 
     # D = AmstelvarDesignSpaceBuilder0()
     # D.build()
     # D.save()
     # D.buildInstances()
+    # D.buildVariableFont()
 
     # D = AmstelvarDesignSpaceBuilder1()
     # D.build()
     # D.save()
     # D.buildInstances()
+    # D.buildVariableFont()
 
     D = AmstelvarDesignSpaceBuilder2()
     D.build()
     D.save()
+    D.buildVariableFont()

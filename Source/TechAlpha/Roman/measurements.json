@@ -520,16 +520,16 @@
     },
     "four": {
       "10 5": {
-        "direction": "x",
-        "name": "XOFI"
+        "name": "XOFI",
+        "direction": "x"
       },
       "17 14": {
-        "direction": "y",
-        "name": "YOFI"
+        "name": "YOFI",
+        "direction": "y"
       },
       "8 1": {
-        "direction": "y",
-        "name": "YTFI"
+        "name": "YTFI",
+        "direction": "y"
       }
     },
     "five": {
@@ -589,12 +589,20 @@
       }
     },
     "seven": {
-      "1 11": {
+      "11 1": {
         "name": "YOFI",
         "direction": "y"
       },
       "6 1": {
         "name": "YTFI",
+        "direction": "y"
+      },
+      "0 12": {
+        "name": "XSVF",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSVF",
         "direction": "y"
       }
     },
