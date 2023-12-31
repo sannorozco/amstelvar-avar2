@@ -14,12 +14,12 @@ def permille(value, unitsPerEm):
 
 
 class AmstelvarDesignSpaceBuilder:
-
     '''
     Simple parametric designspace for use while designing in "RoboFontra".
 
     - parametric axes
     - XTSP
+    - build instances (blends)
 
     '''
 
@@ -28,25 +28,6 @@ class AmstelvarDesignSpaceBuilder:
     defaultName     = 'wght400'
     parametricAxes  = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
-
-    blendedAxes     = {
-        # 'opsz' : {
-        #     'name'    : 'Optical size',
-        #     'default' : 14,
-        # },
-        'wght' : {
-            'name'    : 'Weight',
-            'default' : 400,
-            'min'     : 200,
-            'max'     : 800,
-        },
-        'wdth' : {
-            'name'    : 'Width',
-            'default' : 100,
-            'min'     : 85,
-            'max'     : 125,
-        },
-    }
 
     def __init__(self):
         # get measurements for default source
@@ -104,6 +85,7 @@ class AmstelvarDesignSpaceBuilder:
         return os.path.join(self.sourcesFolder, 'blends.json')
 
     def addParametricAxes(self):
+
         # add spacing axis
         a = AxisDescriptor()
         a.name    = 'XTSP'
@@ -112,6 +94,7 @@ class AmstelvarDesignSpaceBuilder:
         a.maximum = 100
         a.default = 0
         self.designspace.addAxis(a)
+
         # add parametric axes
         for name in self.parametricAxes:
             # get min/max values from file names
@@ -140,6 +123,7 @@ class AmstelvarDesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
+
         # add XTSP sources
         for spacingValue in [-100, 100]:
             L = self.defaultLocation.copy()
@@ -150,6 +134,7 @@ class AmstelvarDesignSpaceBuilder:
             src.styleName  = f'XTSP{spacingValue}'
             src.location   = L
             self.designspace.addSource(src)
+
         # add parametric sources
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
@@ -165,8 +150,6 @@ class AmstelvarDesignSpaceBuilder:
                     self.designspace.addSource(src)
 
     def addInstances(self):
-
-        '''Blends extrema for wght wdth axes from parametric axes.'''
 
         with open(self.blendsPath, 'r', encoding='utf-8') as f:
             blends = json.load(f)
@@ -217,12 +200,44 @@ class AmstelvarDesignSpaceBuilder:
         self.addParametricSources()
         self.addInstances()
 
-
-
     def save(self):
         if not self.designspace:
             return
         self.designspace.write(self.designspacePath)
+
+
+class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
+    '''
+    Designspace for building an avar1 variable font.
+
+    - parametric axes
+    - XTSP
+    - blended axes: wght wdth
+    - uses blended instances as extrema sources
+    - build avar1 variable font
+
+    '''
+
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar1.designspace')
+
+    blendedAxes     = {
+        # 'opsz' : {
+        #     'name'    : 'Optical size',
+        #     'default' : 14,
+        # },
+        'wght' : {
+            'name'    : 'Weight',
+            'default' : 400,
+            'min'     : 200,
+            'max'     : 800,
+        },
+        'wdth' : {
+            'name'    : 'Width',
+            'default' : 100,
+            'min'     : 85,
+            'max'     : 125,
+        },
+    }
 
     def addBlendedAxes(self):
         for tag in self.blendedAxes.keys():
@@ -250,11 +265,6 @@ class AmstelvarDesignSpaceBuilder:
                 src.styleName  = f'{tag}{value}'
                 src.location   = L
                 self.designspace.addSource(src)
-
-
-class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
-
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar1.designspace')
 
     def build(self):
         self.designspace = DesignSpaceDocument()
