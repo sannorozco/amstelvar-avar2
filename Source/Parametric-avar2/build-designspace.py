@@ -29,6 +29,25 @@ class AmstelvarDesignSpaceBuilder:
     parametricAxes  = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
+    blendedAxes     = {
+        # 'opsz' : {
+        #     'name'    : 'Optical size',
+        #     'default' : 14,
+        # },
+        'wght' : {
+            'name'    : 'Weight',
+            'default' : 400,
+            'min'     : 200,
+            'max'     : 800,
+        },
+        'wdth' : {
+            'name'    : 'Width',
+            'default' : 100,
+            'min'     : 85,
+            'max'     : 125,
+        },
+    }
+
     def __init__(self):
         # get measurements for default source
         f = OpenFont(self.defaultUFO, showInterface=False)
@@ -193,6 +212,16 @@ class AmstelvarDesignSpaceBuilder:
             f.save()
             f.close()
 
+    def addBlendedAxes(self):
+        for tag in self.blendedAxes.keys():
+            a = AxisDescriptor()
+            a.name    = self.blendedAxes[tag]['name']
+            a.tag     = tag
+            a.minimum = self.blendedAxes[tag]['min']
+            a.maximum = self.blendedAxes[tag]['max']
+            a.default = self.blendedAxes[tag]['default']
+            self.designspace.addAxis(a)
+
     def build(self):
         self.designspace = DesignSpaceDocument()
         self.addParametricAxes()
@@ -204,75 +233,6 @@ class AmstelvarDesignSpaceBuilder:
         if not self.designspace:
             return
         self.designspace.write(self.designspacePath)
-
-
-class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
-    '''
-    Designspace for building an avar1 variable font.
-
-    - parametric axes
-    - XTSP
-    - blended axes: wght wdth
-    - uses blended instances as extrema sources
-    - build avar1 variable font
-
-    '''
-
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar1.designspace')
-
-    blendedAxes     = {
-        # 'opsz' : {
-        #     'name'    : 'Optical size',
-        #     'default' : 14,
-        # },
-        'wght' : {
-            'name'    : 'Weight',
-            'default' : 400,
-            'min'     : 200,
-            'max'     : 800,
-        },
-        'wdth' : {
-            'name'    : 'Width',
-            'default' : 100,
-            'min'     : 85,
-            'max'     : 125,
-        },
-    }
-
-    def addBlendedAxes(self):
-        for tag in self.blendedAxes.keys():
-            a = AxisDescriptor()
-            a.name    = self.blendedAxes[tag]['name']
-            a.tag     = tag
-            a.minimum = self.blendedAxes[tag]['min']
-            a.maximum = self.blendedAxes[tag]['max']
-            a.default = self.blendedAxes[tag]['default']
-            self.designspace.addAxis(a)
-
-    def addBlendedSources(self):
-        for tag in self.blendedAxes.keys():
-            axisName = self.blendedAxes[tag]['name']
-            valueMin = self.blendedAxes[tag]['min']
-            valueMax = self.blendedAxes[tag]['max']
-            for value in [valueMin, valueMax]:
-                ufoPath = os.path.join(self.instancesFolder, f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
-                assert os.path.exists(ufoPath)
-                L = self.defaultLocation.copy()
-                L[axisName] = value
-                src = SourceDescriptor()
-                src.path       = ufoPath
-                src.familyName = self.familyName
-                src.styleName  = f'{tag}{value}'
-                src.location   = L
-                self.designspace.addSource(src)
-
-    def build(self):
-        self.designspace = DesignSpaceDocument()
-        self.addBlendedAxes()
-        self.addParametricAxes()
-        self.addDefaultSource()
-        self.addParametricSources()
-        self.addBlendedSources()
 
     def buildVariableFont(self):
 
@@ -302,18 +262,102 @@ class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
         print('...done.\n')
 
 
+class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
+    '''
+    Designspace for building an avar1 variable font.
+
+    - parametric axes
+    - XTSP
+    - blended axes: wght wdth
+    - uses blended instances as extrema sources
+    - build avar1 variable font
+
+    '''
+
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar1.designspace')
+
+    def addBlendedSources(self):
+        for tag in self.blendedAxes.keys():
+            axisName = self.blendedAxes[tag]['name']
+            valueMin = self.blendedAxes[tag]['min']
+            valueMax = self.blendedAxes[tag]['max']
+            for value in [valueMin, valueMax]:
+                ufoPath = os.path.join(self.instancesFolder, f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
+                assert os.path.exists(ufoPath)
+                L = self.defaultLocation.copy()
+                L[axisName] = value
+                src = SourceDescriptor()
+                src.path       = ufoPath
+                src.familyName = self.familyName
+                src.styleName  = f'{tag}{value}'
+                src.location   = L
+                self.designspace.addSource(src)
+
+    def build(self):
+        self.designspace = DesignSpaceDocument()
+        self.addBlendedAxes()
+        self.addParametricAxes()
+        self.addDefaultSource()
+        self.addParametricSources()
+        self.addBlendedSources()
+
+
+class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
+
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
+
+    def addMappings(self):
+
+        with open(self.blendsPath, 'r', encoding='utf-8') as f:
+            blends = json.load(f)
+
+        for tag in self.blendedAxes:
+            for styleName in blends.keys():
+                if tag in styleName:
+                    m = AxisMappingDescriptor()
+
+                    # get input value from style name
+                    inputLocation = {}
+                    axisName = self.blendedAxes[tag]['name']
+                    value = int(styleName[4:])
+                    inputLocation[axisName] = value
+
+                    # get output value from blends.json file
+                    outputLocation = {}
+                    for axisName in blends[styleName]:
+                        outputLocation[axisName] = int(blends[styleName][axisName])
+
+                    m.inputLocation  = inputLocation
+                    m.outputLocation = outputLocation
+
+                    self.designspace.addAxisMapping(m)
+
+    def build(self):
+        self.designspace = DesignSpaceDocument()
+        self.addBlendedAxes()
+        self.addParametricAxes()
+        self.addMappings()
+        self.addDefaultSource()
+        self.addParametricSources()
+
+
 # -----
 # build
 # -----
 
 if __name__ == '__main__':
 
-    D = AmstelvarDesignSpaceBuilder()
-    D.build()
-    D.save()
+    # D = AmstelvarDesignSpaceBuilder()
+    # D.build()
+    # D.save()
     # D.buildInstances()
 
-    D2 = AmstelvarDesignSpaceBuilder_avar1()
+    # D1 = AmstelvarDesignSpaceBuilder_avar1()
+    # D1.build()
+    # D1.save()
+    # D1.buildVariableFont()
+
+    D2 = AmstelvarDesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
     D2.buildVariableFont()
