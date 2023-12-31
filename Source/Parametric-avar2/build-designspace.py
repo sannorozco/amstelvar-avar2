@@ -71,7 +71,7 @@ class AmstelvarDesignSpaceBuilder:
 
     @property
     def varFontsFolder(self):
-        return os.path.join(os.path.dirname(self.baseFolder), 'fonts', 'Parametric avar2 TTFs')
+        return os.path.join(os.path.dirname(self.baseFolder), 'fonts', 'AsciiAlpha')
 
     @property
     def varFontPath(self):
@@ -347,15 +347,15 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
 if __name__ == '__main__':
 
-    # D = AmstelvarDesignSpaceBuilder()
-    # D.build()
-    # D.save()
-    # D.buildInstances()
+    D = AmstelvarDesignSpaceBuilder()
+    D.build()
+    D.save()
+    D.buildInstances()
 
-    # D1 = AmstelvarDesignSpaceBuilder_avar1()
-    # D1.build()
-    # D1.save()
-    # D1.buildVariableFont()
+    D1 = AmstelvarDesignSpaceBuilder_avar1()
+    D1.build()
+    D1.save()
+    D1.buildVariableFont()
 
     D2 = AmstelvarDesignSpaceBuilder_avar2()
     D2.build()

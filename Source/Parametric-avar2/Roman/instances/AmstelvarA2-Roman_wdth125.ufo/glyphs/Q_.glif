@@ -1,61 +1,61 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Q" format="2">
-  <advance width="2099"/>
+  <advance width="1912"/>
   <unicode hex="0051"/>
-  <anchor x="1049" y="0" name="bottom"/>
-  <anchor x="1066" y="1496" name="top"/>
+  <anchor x="956" y="0" name="bottom"/>
+  <anchor x="966" y="1498" name="top"/>
   <outline>
     <contour>
       <point x="80" y="746" type="qcurve" smooth="yes"/>
       <point x="80" y="1068"/>
-      <point x="611" y="1520"/>
-      <point x="1049" y="1520" type="qcurve" smooth="yes"/>
-      <point x="1512" y="1520"/>
-      <point x="2019" y="1097"/>
-      <point x="2019" y="754" type="qcurve" smooth="yes"/>
-      <point x="2019" y="404"/>
-      <point x="1492" y="-20"/>
-      <point x="1049" y="-20" type="qcurve" smooth="yes"/>
-      <point x="595" y="-20"/>
+      <point x="569" y="1520"/>
+      <point x="956" y="1520" type="qcurve" smooth="yes"/>
+      <point x="1357" y="1520"/>
+      <point x="1832" y="1097"/>
+      <point x="1832" y="754" type="qcurve" smooth="yes"/>
+      <point x="1832" y="404"/>
+      <point x="1338" y="-20"/>
+      <point x="956" y="-20" type="qcurve" smooth="yes"/>
+      <point x="555" y="-20"/>
       <point x="80" y="419"/>
     </contour>
     <contour>
       <point x="275" y="772" type="qcurve" smooth="yes"/>
       <point x="277" y="486"/>
-      <point x="701" y="96"/>
-      <point x="1047" y="96" type="qcurve" smooth="yes"/>
-      <point x="1420" y="96"/>
-      <point x="1822" y="453"/>
-      <point x="1824" y="747" type="qcurve" smooth="yes"/>
-      <point x="1826" y="1023"/>
-      <point x="1400" y="1380"/>
-      <point x="1051" y="1380" type="qcurve" smooth="yes"/>
-      <point x="675" y="1380"/>
+      <point x="650" y="96"/>
+      <point x="954" y="96" type="qcurve" smooth="yes"/>
+      <point x="1281" y="96"/>
+      <point x="1635" y="453"/>
+      <point x="1637" y="747" type="qcurve" smooth="yes"/>
+      <point x="1639" y="1023"/>
+      <point x="1265" y="1380"/>
+      <point x="958" y="1380" type="qcurve" smooth="yes"/>
+      <point x="627" y="1380"/>
       <point x="273" y="1056"/>
     </contour>
     <contour>
-      <point x="632" y="-37" type="qcurve" identifier="jWZBD98qkQ"/>
-      <point x="1706" y="-273" type="line" identifier="7ZXZEQkAbx"/>
-      <point x="1766" y="-273"/>
-      <point x="1858" y="-185"/>
-      <point x="1891" y="-131" type="qcurve"/>
-      <point x="1981" y="-183" type="line"/>
-      <point x="1931" y="-288"/>
-      <point x="1786" y="-430"/>
-      <point x="1654" y="-430" type="qcurve" identifier="bSft9tBggp"/>
-      <point x="597" y="-195" type="line" identifier="aDYWDNvZlZ"/>
-      <point x="536" y="-195"/>
-      <point x="420" y="-237"/>
-      <point x="363" y="-289" type="qcurve"/>
-      <point x="295" y="-224" type="line"/>
-      <point x="357" y="-131"/>
-      <point x="535" y="-37"/>
+      <point x="607" y="-37" type="qcurve" identifier="jWZBD98qkQ"/>
+      <point x="1527" y="-273" type="line" identifier="7ZXZEQkAbx"/>
+      <point x="1587" y="-273"/>
+      <point x="1679" y="-185"/>
+      <point x="1712" y="-131" type="qcurve"/>
+      <point x="1803" y="-183" type="line"/>
+      <point x="1752" y="-288"/>
+      <point x="1607" y="-430"/>
+      <point x="1475" y="-430" type="qcurve" identifier="bSft9tBggp"/>
+      <point x="572" y="-195" type="line" identifier="aDYWDNvZlZ"/>
+      <point x="511" y="-195"/>
+      <point x="395" y="-237"/>
+      <point x="338" y="-289" type="qcurve"/>
+      <point x="270" y="-224" type="line"/>
+      <point x="332" y="-131"/>
+      <point x="510" y="-37"/>
     </contour>
     <contour>
-      <point x="664" y="-96" type="line"/>
-      <point x="914" y="326" type="line"/>
-      <point x="1034" y="281" type="line"/>
-      <point x="780" y="-133" type="line"/>
+      <point x="602" y="-96" type="line"/>
+      <point x="820" y="326" type="line"/>
+      <point x="940" y="281" type="line"/>
+      <point x="718" y="-133" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -133,10 +133,19 @@
           <string>XUCR</string>
         </dict>
       </dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>7ZXZEQkAbx</string>
+          <string>bSft9tBggp</string>
+        </array>
+        <array>
+          <string>jWZBD98qkQ</string>
+          <string>aDYWDNvZlZ</string>
+        </array>
+      </array>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
-      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XTRA508.ufo/glyphs</string>
-      <key>public.markColor</key>
-      <string>1,0.57811,0,0.25476</string>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>
