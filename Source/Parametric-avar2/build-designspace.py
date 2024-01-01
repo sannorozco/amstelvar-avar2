@@ -1,39 +1,39 @@
 import os, glob, shutil, json
-import ufoProcessor # upgrade to UFOOperator!
+import ufoProcessor # upgrade to UFOOperator
 from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, SourceDescriptor, InstanceDescriptor, AxisMappingDescriptor
 from variableValues.measurements import FontMeasurements
 from defcon import Font
 from ufo2ft import compileTTF, compileVariableTTF
-# from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter
 from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
 
 
 def permille(value, unitsPerEm):
+    '''Converts a value in font units to a permille value (thousands of em).'''
     return round(value * 1000 / unitsPerEm)
 
 
 class AmstelvarDesignSpaceBuilder:
     '''
-    Simple parametric designspace for use while designing in "RoboFontra".
+    Simple parametric designspace for use while designing.
+
+    Specialized designspaces for output are created by subclassing this object.
 
     - parametric axes
     - XTSP
-    - build instances (blends)
+
+    + builds instances from blends.json file
+    + builds variable font
 
     '''
-
     familyName      = 'AmstelvarA2'
     subFamilyName   = ['Roman', 'Italic'][0]
     defaultName     = 'wght400'
     parametricAxes  = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
+    ### move definitions of blended axes to blends.json file?
     blendedAxes     = {
-        # 'opsz' : {
-        #     'name'    : 'Optical size',
-        #     'default' : 14,
-        # },
         'wght' : {
             'name'    : 'Weight',
             'default' : 400,
@@ -124,6 +124,7 @@ class AmstelvarDesignSpaceBuilder:
                     values.append(value)
             assert len(values)
             values.sort()
+
             # create axis
             a = AxisDescriptor()
             a.name    = name
@@ -134,23 +135,24 @@ class AmstelvarDesignSpaceBuilder:
             self.designspace.addAxis(a)
 
     def addDefaultSource(self):
+
         src = SourceDescriptor()
         src.path       = self.defaultUFO
         src.familyName = self.familyName
         src.styleName  = self.defaultName
-        src.location   = self.defaultLocation.copy()
+        src.location   = self.defaultLocation
         self.designspace.addSource(src)
 
     def addParametricSources(self):
 
-        # add XTSP sources
-        for spacingValue in [-100, 100]:
+        # add spacing sources
+        for value in [-100, 100]:
             L = self.defaultLocation.copy()
-            L['XTSP'] = spacingValue
+            L['XTSP'] = value
             src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_XTSP{spacingValue}.ufo')
+            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_XTSP{value}.ufo')
             src.familyName = self.familyName
-            src.styleName  = f'XTSP{spacingValue}'
+            src.styleName  = f'XTSP{value}'
             src.location   = L
             self.designspace.addSource(src)
 
@@ -170,13 +172,11 @@ class AmstelvarDesignSpaceBuilder:
 
     def addInstances(self):
 
+        # load instance data from blends.json file
         with open(self.blendsPath, 'r', encoding='utf-8') as f:
             blends = json.load(f)
 
-        default = OpenFont(self.defaultUFO, showInterface=False)
-        unitsPerEm = default.info.unitsPerEm
-        default.close()
-
+        # add instances to designspace
         for styleName in blends.keys():
             L = self.defaultLocation.copy()
             for axis, value in blends[styleName].items():
@@ -269,8 +269,7 @@ class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
     - parametric axes
     - XTSP
     - blended axes: wght wdth
-    - uses blended instances as extrema sources
-    - build avar1 variable font
+    - wght/wdth extrema defined by instances
 
     '''
 
@@ -303,6 +302,15 @@ class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
 
 
 class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
+    '''
+    Designspace for building an avar2 variable font.
+
+    - parametric axes
+    - XTSP
+    - blended axes: wght wdth
+    - wght/wdth extrema defined by avar2 <mappings>
+
+    '''
 
     designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
 
