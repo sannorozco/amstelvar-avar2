@@ -859,6 +859,14 @@
 					<string>f_f_l</string>
 					<string>f_f_ij</string>
 					<string>f_ij</string>
+					<string>germandbls</string>
+				</array>
+				<key>smartSetName</key>
+				<string>ascenders latin</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
 					<string>beta</string>
 					<string>delta</string>
 					<string>zeta</string>
@@ -866,6 +874,14 @@
 					<string>xi</string>
 					<string>phi</string>
 					<string>psi</string>
+					<string>theta</string>
+				</array>
+				<key>smartSetName</key>
+				<string>ascenders greek</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
 					<string>be</string>
 					<string>ef</string>
 					<string>dje</string>
@@ -877,11 +893,9 @@
 					<string>ka.bgr</string>
 					<string>yu.bgr</string>
 					<string>be.locl</string>
-					<string>theta</string>
-					<string>germandbls</string>
 				</array>
 				<key>smartSetName</key>
-				<string>ascenders</string>
+				<string>ascenders cyrillic</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
@@ -967,7 +981,7 @@
 					<string>mu</string>
 				</array>
 				<key>smartSetName</key>
-				<string>descenders</string>
+				<string>descenders latin</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
@@ -1228,7 +1242,7 @@
 			<string>y</string>
 		</array>
 		<key>smartSetName</key>
-		<string>traps lowercase</string>
+		<string>traps lowercase latin</string>
 	</dict>
 	<dict>
 		<key>glyphNames</key>
@@ -1241,7 +1255,7 @@
 			<string>Y</string>
 		</array>
 		<key>smartSetName</key>
-		<string>traps uppercase</string>
+		<string>traps uppercase latin</string>
 	</dict>
 </array>
 </plist>
