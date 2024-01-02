@@ -5,10 +5,6 @@ from mojo.smartSet import readSmartSets
 from variableValues.linkPoints import readMeasurements
 
 
-def copyGlyphs(glyphNames, srcFont, dstFont):
-    pass
-
-
 class AmstelvarSubSourceUpdater:
 
     baseFolder       = os.getcwd()
