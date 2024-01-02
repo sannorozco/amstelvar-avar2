@@ -2,6 +2,8 @@
 <glyph name="n" format="2">
   <advance width="1264"/>
   <unicode hex="006E"/>
+  <anchor x="632.0" y="0" name="bottom"/>
+  <anchor x="632.0" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="76" y="0" type="line"/>
@@ -45,6 +47,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_YSHL140.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>1,0.57811,0,0.25476</string>
     </dict>
