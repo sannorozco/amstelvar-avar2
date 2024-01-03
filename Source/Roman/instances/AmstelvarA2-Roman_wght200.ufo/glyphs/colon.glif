@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colon" format="2">
+  <advance width="714"/>
+  <unicode hex="003A"/>
+  <outline>
+    <contour>
+      <point x="260" y="82" type="qcurve" smooth="yes"/>
+      <point x="260" y="121"/>
+      <point x="314" y="178"/>
+      <point x="356" y="178" type="qcurve" smooth="yes"/>
+      <point x="398" y="178"/>
+      <point x="452" y="121"/>
+      <point x="452" y="82" type="qcurve" smooth="yes"/>
+      <point x="452" y="44"/>
+      <point x="398" y="-13"/>
+      <point x="356" y="-13" type="qcurve" smooth="yes"/>
+      <point x="314" y="-13"/>
+      <point x="260" y="44"/>
+    </contour>
+    <contour>
+      <point x="261" y="929" type="qcurve" smooth="yes"/>
+      <point x="261" y="968"/>
+      <point x="315" y="1025"/>
+      <point x="357" y="1025" type="qcurve" smooth="yes"/>
+      <point x="399" y="1025"/>
+      <point x="453" y="968"/>
+      <point x="453" y="929" type="qcurve" smooth="yes"/>
+      <point x="453" y="891"/>
+      <point x="399" y="834"/>
+      <point x="357" y="834" type="qcurve" smooth="yes"/>
+      <point x="315" y="834"/>
+      <point x="261" y="891"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>0 6</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+        <key>12 18</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+        <key>15 21</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+        <key>3 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
