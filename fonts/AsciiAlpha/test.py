@@ -6,7 +6,7 @@ from random import randint
 folder  = os.getcwd()
 ttfPath = os.path.join(folder, 'AmstelvarA2-Roman_avar2.ttf')
 
-newPage('A4')
+newPage('A4Landscape')
 font(ttfPath)
 
 parameters = listFontVariations(ttfPath)
@@ -23,7 +23,9 @@ for parameter in parameters.keys():
         )
     sliders.append(slider)
 
+lineHeightSlider = dict(name='lineheight', ui="Slider", args=dict(value=1.25, minValue=1.0, maxValue=1.5))
 fontSizeSlider = dict(name='fontsize', ui="Slider", args=dict(value=18, minValue=9, maxValue=72))
+sliders.insert(0, lineHeightSlider)
 sliders.insert(0, fontSizeSlider)
 
 Variable([slider for slider in sliders], globals())
@@ -42,4 +44,5 @@ cmd += ')'
 exec(cmd)
 
 fontSize(fontsize)
+lineHeight(fontsize*lineheight)
 textBox(txt, (x, y, w, h))
