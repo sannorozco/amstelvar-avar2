@@ -29,24 +29,8 @@ class AmstelvarDesignSpaceBuilder:
     familyName      = 'AmstelvarA2'
     subFamilyName   = ['Roman', 'Italic'][0]
     defaultName     = 'wght400'
-    parametricAxes  = 'XOPQ XOUC XOLC XOFI XTRA XTUC XTLC XTFI YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split()
+    parametricAxes  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split() # XOUC XOLC XOFI XTUC XTLC XTFI
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
-
-    ### move definitions of blended axes to blends.json file?
-    blendedAxes     = {
-        'wght' : {
-            'name'    : 'Weight',
-            'default' : 400,
-            'min'     : 200,
-            'max'     : 800,
-        },
-        'wdth' : {
-            'name'    : 'Width',
-            'default' : 100,
-            'min'     : 85,
-            'max'     : 125,
-        },
-    }
 
     def __init__(self):
         # get measurements for default source
@@ -102,6 +86,18 @@ class AmstelvarDesignSpaceBuilder:
     @property
     def blendsPath(self):
         return os.path.join(self.sourcesFolder, 'blends.json')
+
+    @property
+    def blendedAxes(self):
+        with open(self.blendsPath, 'r', encoding='utf-8') as f:
+            blendsData = json.load(f)
+        return blendsData['axes']
+
+    @property
+    def blendedSources(self):
+        with open(self.blendsPath, 'r', encoding='utf-8') as f:
+            blendsData = json.load(f)
+        return blendsData['sources']
 
     def addParametricAxes(self):
 
@@ -172,14 +168,10 @@ class AmstelvarDesignSpaceBuilder:
 
     def addInstances(self):
 
-        # load instance data from blends.json file
-        with open(self.blendsPath, 'r', encoding='utf-8') as f:
-            blends = json.load(f)
-
         # add instances to designspace
-        for styleName in blends.keys():
+        for styleName in self.blendedSources.keys():
             L = self.defaultLocation.copy()
-            for axis, value in blends[styleName].items():
+            for axis, value in self.blendedSources[styleName].items():
                 L[axis] = value
 
             I = InstanceDescriptor()
@@ -312,39 +304,90 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
     '''
 
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_.designspace')
+
+
+    @property
+    def fencesPath(self):
+        return os.path.join(self.sourcesFolder, 'fences.json')
+
+    @property
+    def fences(self):
+        with open(self.fencesPath, 'r', encoding='utf-8') as f:
+            fences = json.load(f)
+        return fences
 
     def addMappings(self):
 
-        with open(self.blendsPath, 'r', encoding='utf-8') as f:
-            blends = json.load(f)
+        blendedAxes    = self.blendedAxes
+        blendedSources = self.blendedSources
 
-        for tag in self.blendedAxes:
-            for styleName in blends.keys():
+        for tag in blendedAxes:
+            for styleName in blendedSources.keys():
                 if tag in styleName:
                     m = AxisMappingDescriptor()
 
                     # get input value from style name
                     inputLocation = {}
-                    axisName = self.blendedAxes[tag]['name']
+                    axisName = blendedAxes[tag]['name']
                     value = int(styleName[4:])
                     inputLocation[axisName] = value
 
                     # get output value from blends.json file
                     outputLocation = {}
-                    for axisName in blends[styleName]:
-                        outputLocation[axisName] = int(blends[styleName][axisName])
+                    for axisName in blendedSources[styleName]:
+                        outputLocation[axisName] = int(blendedSources[styleName][axisName])
 
                     m.inputLocation  = inputLocation
                     m.outputLocation = outputLocation
 
                     self.designspace.addAxisMapping(m)
 
+    def addMappingsFences(self):
+
+        for styleName in self.fences.keys():
+            blendTag   = styleName[:4]
+            blendName  = self.blendedAxes[blendTag]['name']
+            blendValue = int(styleName[4:])
+            for tag in self.fences[styleName]:
+                valuesFence = [
+                    self.fences[styleName][tag]['min'],
+                    self.fences[styleName][tag]['max'],
+                ]
+                # get min/max parametric axis value
+
+                # get min/max values from file names
+                valuesAxis = []
+                for ufo in self.parametricSources:
+                    if tag in ufo:
+                        value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                        valuesAxis.append(value)
+                assert len(valuesAxis)
+                valuesAxis.sort()
+
+                for i, valueFence in enumerate(valuesFence):
+                    valueAxis  = valuesAxis[i]
+                    m = AxisMappingDescriptor()
+
+                    inputLocation = {}
+                    inputLocation[blendName] = blendValue
+                    inputLocation[tag] = valueFence
+
+                    outputLocation = {}
+                    outputLocation[tag] = valueAxis
+
+                    m.inputLocation  = inputLocation
+                    m.outputLocation = outputLocation
+
+                    self.designspace.addAxisMapping(m)
+
+
     def build(self):
         self.designspace = DesignSpaceDocument()
         self.addBlendedAxes()
         self.addParametricAxes()
         self.addMappings()
+        self.addMappingsFences()
         self.addDefaultSource()
         self.addParametricSources()
 
@@ -355,15 +398,15 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
 if __name__ == '__main__':
 
-    D = AmstelvarDesignSpaceBuilder()
-    D.build()
-    D.save()
-    D.buildInstances()
+    # D = AmstelvarDesignSpaceBuilder()
+    # D.build()
+    # D.save()
+    # D.buildInstances()
 
-    D1 = AmstelvarDesignSpaceBuilder_avar1()
-    D1.build()
-    D1.save()
-    D1.buildVariableFont()
+    # D1 = AmstelvarDesignSpaceBuilder_avar1()
+    # D1.build()
+    # D1.save()
+    # D1.buildVariableFont()
 
     D2 = AmstelvarDesignSpaceBuilder_avar2()
     D2.build()
