@@ -388,7 +388,7 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
         self.addBlendedAxes()
         self.addParametricAxes()
         self.addMappings()
-        self.addMappingsFences()
+        # self.addMappingsFences()
         self.addDefaultSource()
         self.addParametricSources()
 

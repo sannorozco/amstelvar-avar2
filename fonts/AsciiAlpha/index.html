@@ -69,7 +69,7 @@
           }
         }
 
-        function fontsize_slider_changed() {  
+        function fontsize_slider_changed() {
           document.getElementById('fontsize_value').value = fontsize_slider.value;
           for (var i = 0; i < font_samples.length; i++) {
             font_samples[i].style.fontSize = fontsize_slider.value + "pt"
