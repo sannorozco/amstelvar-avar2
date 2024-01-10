@@ -304,8 +304,9 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
     '''
 
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_.designspace')
-
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
+    # designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences.designspace')
+    # designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences-wght200.designspace')
 
     @property
     def fencesPath(self):
