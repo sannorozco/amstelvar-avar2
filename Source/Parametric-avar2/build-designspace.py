@@ -305,18 +305,6 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
     '''
 
     designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
-    # designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences.designspace')
-    # designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences-wght200.designspace')
-
-    @property
-    def fencesPath(self):
-        return os.path.join(self.sourcesFolder, 'fences.json')
-
-    @property
-    def fences(self):
-        with open(self.fencesPath, 'r', encoding='utf-8') as f:
-            fences = json.load(f)
-        return fences
 
     def addMappings(self):
 
@@ -344,6 +332,39 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
                     self.designspace.addAxisMapping(m)
 
+    def build(self):
+        self.designspace = DesignSpaceDocument()
+        self.addBlendedAxes()
+        self.addParametricAxes()
+        self.addMappings()
+        self.addDefaultSource()
+        self.addParametricSources()
+
+
+class AmstelvarDesignSpaceBuilder_avar2_fences(AmstelvarDesignSpaceBuilder_avar2):
+    '''
+    Designspace which adds fences to the avar2 variable font.
+
+    same as the avar2 build plus:
+
+    - fences for the default (wght400)
+    - fences for blended extrema (wght200 wght800 wdth85 wdth125)
+    - limit min/max values for XOPQ YOPQ XTRA XTSP only
+
+    '''
+
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences.designspace')
+
+    @property
+    def fencesPath(self):
+        return os.path.join(self.sourcesFolder, 'fences.json')
+
+    @property
+    def fences(self):
+        with open(self.fencesPath, 'r', encoding='utf-8') as f:
+            fences = json.load(f)
+        return fences
+
     def addMappingsFences(self):
 
         for styleName in self.fences.keys():
@@ -351,13 +372,12 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
             blendName  = self.blendedAxes[blendTag]['name']
             blendValue = int(styleName[4:])
             for tag in self.fences[styleName]:
+                # get min/max fences values
                 valuesFence = [
                     self.fences[styleName][tag]['min'],
                     self.fences[styleName][tag]['max'],
                 ]
-                # get min/max parametric axis value
-
-                # get min/max values from file names
+                # get min/max parametric axis value from file names
                 valuesAxis = []
                 for ufo in self.parametricSources:
                     if tag in ufo:
@@ -372,25 +392,67 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
                     inputLocation = {}
                     inputLocation[blendName] = blendValue
-                    inputLocation[tag] = valueFence
+                    inputLocation[tag] = valueAxis
 
                     outputLocation = {}
-                    outputLocation[tag] = valueAxis
+                    outputLocation[tag] = valueFence
 
                     m.inputLocation  = inputLocation
                     m.outputLocation = outputLocation
 
                     self.designspace.addAxisMapping(m)
 
-
     def build(self):
         self.designspace = DesignSpaceDocument()
         self.addBlendedAxes()
         self.addParametricAxes()
         self.addMappings()
-        # self.addMappingsFences()
+        self.addMappingsFences()
         self.addDefaultSource()
         self.addParametricSources()
+
+
+class AmstelvarDesignSpaceBuilder_avar2_fences_wght200(AmstelvarDesignSpaceBuilder_avar2_fences):
+
+    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences-wght200.designspace')
+
+    def addMappingsFences(self):
+
+        for styleName in self.fences.keys():
+            if styleName == 'wght200':
+                blendTag   = styleName[:4]
+                blendName  = self.blendedAxes[blendTag]['name']
+                blendValue = int(styleName[4:])
+                for tag in self.fences[styleName]:
+                    # get min/max fences values
+                    valuesFence = [
+                        self.fences[styleName][tag]['min'],
+                        self.fences[styleName][tag]['max'],
+                    ]
+                    # get min/max parametric axis value from file names
+                    valuesAxis = []
+                    for ufo in self.parametricSources:
+                        if tag in ufo:
+                            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                            valuesAxis.append(value)
+                    assert len(valuesAxis)
+                    valuesAxis.sort()
+
+                    for i, valueFence in enumerate(valuesFence):
+                        valueAxis  = valuesAxis[i]
+                        m = AxisMappingDescriptor()
+
+                        inputLocation = {}
+                        inputLocation[blendName] = blendValue
+                        inputLocation[tag] = valueAxis
+
+                        outputLocation = {}
+                        outputLocation[tag] = valueFence
+
+                        m.inputLocation  = inputLocation
+                        m.outputLocation = outputLocation
+
+                        self.designspace.addAxisMapping(m)
 
 
 # -----
@@ -409,7 +471,17 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    D2 = AmstelvarDesignSpaceBuilder_avar2()
-    D2.build()
-    D2.save()
-    D2.buildVariableFont()
+    # D2 = AmstelvarDesignSpaceBuilder_avar2()
+    # D2.build()
+    # D2.save()
+    # D2.buildVariableFont()
+
+    # D3 = AmstelvarDesignSpaceBuilder_avar2_fences()
+    # D3.build()
+    # D3.save()
+    # D3.buildVariableFont()
+
+    D4 = AmstelvarDesignSpaceBuilder_avar2_fences_wght200()
+    D4.build()
+    D4.save()
+    D4.buildVariableFont()
