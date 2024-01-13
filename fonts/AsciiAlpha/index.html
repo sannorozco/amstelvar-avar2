@@ -50,9 +50,9 @@
 
         fontsize_slider   = document.getElementById("fontsize");
         lineheight_slider = document.getElementById("lineheight");
-        // opsz_slider       = document.getElementById("opsz");
+        opsz_slider       = document.getElementById("opsz");
         XTSP_slider       = document.getElementById("XTSP");
-        // link_fontsize     = document.getElementById("synchFontSize");
+        link_fontsize     = document.getElementById("synchFontSize");
         font_samples      = document.querySelectorAll(".sample");
         axis_sliders      = document.querySelectorAll('.axis')
         sample_1          = document.getElementById('sample_1')
@@ -74,10 +74,10 @@
           for (var i = 0; i < font_samples.length; i++) {
             font_samples[i].style.fontSize = fontsize_slider.value + "pt"
             font_samples[i].style.lineHeight = (fontsize_slider.value * lineheight_slider.value) + "pt"
-            // if (link_fontsize.checked) {
-            //   opsz_slider.value = fontsize_slider.value;
-            //   axis_sliders_changed();
-            // }
+            if (link_fontsize.checked) {
+              opsz_slider.value = fontsize_slider.value;
+              axis_sliders_changed();
+            }
           }
         }
 
@@ -88,22 +88,22 @@
           }
         }
 
-        // function opsz_slider_changed() {
-        //   if (link_fontsize.checked == true) {
-        //     fontsize_slider.value = opsz_slider.value;
-        //     fontsize_slider_changed();
-        //   }
-        // }
+        function opsz_slider_changed() {
+          if (link_fontsize.checked == true) {
+            fontsize_slider.value = opsz_slider.value;
+            fontsize_slider_changed();
+          }
+        }
 
-        // function link_fontsize_changed (checkbox) {
-        //   fontsize_slider_changed()
-        // }
+        function link_fontsize_changed (checkbox) {
+          fontsize_slider_changed()
+        }
 
         fontsize_slider.addEventListener('input', fontsize_slider_changed)
         lineheight_slider.addEventListener('input', lineheight_slider_changed)
-        // opsz_slider.addEventListener('input', opsz_slider_changed)
+        opsz_slider.addEventListener('input', opsz_slider_changed)
 
-        // link_fontsize.addEventListener('input', link_fontsize_changed)
+        link_fontsize.addEventListener('input', link_fontsize_changed)
 
         axis_sliders.forEach(function(slider) {
           slider.addEventListener('input', axis_sliders_changed)
@@ -159,7 +159,6 @@
             </div>
           </div>
 
-          <!--
           <div class="row">
             <div class='col-12'>
               <div class="form-check">
@@ -170,13 +169,11 @@
               </div>
             </div>
           </div>
-          -->
 
           <hr/>
 
           <h3 class='h6'>blended axes</h3>
 
-          <!--
           <div class="row">
             <div class="col-4">
               <label for="opsz" class="form-label"><small>optical size</small></label>
@@ -188,7 +185,6 @@
               <output class="form-control text-light border-0 bg-transparent" id='opsz_value'>18</output>
             </div>
           </div>
-          -->
 
           <div class="row">
             <div class="col-4">
