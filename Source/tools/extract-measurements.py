@@ -3,14 +3,25 @@
 import os, glob, json
 from variableValues.measurements import FontMeasurements
 
-ufosFolder       = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/instances/2'
-measurementsPath = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/measurements.json'
+familyName       = 'Amstelvar2'
+subFamilyName    = ['Roman', 'Italic'][0]
+baseFolder       = os.path.dirname(os.getcwd())
+sourcesFolder    = os.path.join(baseFolder, 'TechAlpha', subFamilyName)
+extremaFolder    = os.path.join(sourcesFolder, 'extrema')
+measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
-ufos = glob.glob(f'{ufosFolder}/*.ufo')
+assert os.path.exists(measurementsPath)
+
+ufos = [
+    'Amstelvar-Roman_opsz8.ufo', 
+    'Amstelvar-Roman_opsz144.ufo',
+]
 
 measurements = {}
 
-for ufoPath in ufos:
+for ufo in ufos:
+    ufoPath = os.path.join(extremaFolder, ufo)
+    assert os.path.exists(ufoPath)
 
     fontName = os.path.splitext(os.path.split(ufoPath)[-1])[0]
     styleName = fontName.split('_')[-1]
@@ -23,9 +34,13 @@ for ufoPath in ufos:
 
     measurements[styleName] = M.values
 
-# save blends in JSON format
 
-jsonPath = os.path.join(ufosFolder, 'blends.json')
+print(measurements)
 
-with open(jsonPath, 'w', encoding='utf-8') as f:
-    json.dump(measurements, f, indent=2)
+
+# # save blends in JSON format
+
+# jsonPath = os.path.join(ufosFolder, 'blends.json')
+
+# with open(jsonPath, 'w', encoding='utf-8') as f:
+#     json.dump(measurements, f, indent=2)

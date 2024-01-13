@@ -1,16 +1,11 @@
 import os, glob, shutil, json
-import ufoProcessor # upgrade to UFOOperator
 from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, SourceDescriptor, InstanceDescriptor, AxisMappingDescriptor
-from variableValues.measurements import FontMeasurements
-from defcon import Font
-from ufo2ft import compileTTF, compileVariableTTF
 from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
-
-
-def permille(value, unitsPerEm):
-    '''Converts a value in font units to a permille value (thousands of em).'''
-    return round(value * 1000 / unitsPerEm)
+from defcon import Font
+from ufo2ft import compileTTF, compileVariableTTF
+import ufoProcessor # upgrade to UFOOperator
+from variableValues.measurements import FontMeasurements, permille
 
 
 class AmstelvarDesignSpaceBuilder:
@@ -367,16 +362,50 @@ class AmstelvarDesignSpaceBuilder_avar2_fences(AmstelvarDesignSpaceBuilder_avar2
 
     def addMappingsFences(self):
 
+        defaultName = 'wght400'
+
+        # add fences for default (monovar)
+
+        blendTag    = defaultName[:4]
+        blendValue  = int(defaultName[4:])
+        blendName   = self.blendedAxes[blendTag]['name']
+        for tag in self.fences[defaultName]:
+            # get min/max fences values
+            valuesFence = [
+                self.fences[defaultName][tag]['min'],
+                self.fences[defaultName][tag]['max'],
+            ]
+            # get min/max parametric axis value from file names
+            valuesAxis = []
+            for ufo in self.parametricSources:
+                if tag in ufo:
+                    value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                    valuesAxis.append(value)
+            assert len(valuesAxis)
+            valuesAxis.sort()
+            # create mapping elements
+            for i, valueFence in enumerate(valuesFence):
+                valueAxis  = valuesAxis[i]
+                m = AxisMappingDescriptor()
+                m.inputLocation = {
+                    blendName : blendValue,
+                    tag       : valueAxis,
+                }
+                m.outputLocation = {
+                    blendName : blendValue,
+                    tag       : valueFence,
+                }
+                self.designspace.addAxisMapping(m)
+
+        # pin blended extrema (duovars)
+
         for styleName in self.fences.keys():
-            blendTag   = styleName[:4]
-            blendName  = self.blendedAxes[blendTag]['name']
-            blendValue = int(styleName[4:])
+            if styleName == defaultName:
+                continue
+            blendTag    = styleName[:4]
+            blendValue  = int(styleName[4:])
+            blendName   = self.blendedAxes[blendTag]['name']
             for tag in self.fences[styleName]:
-                # get min/max fences values
-                valuesFence = [
-                    self.fences[styleName][tag]['min'],
-                    self.fences[styleName][tag]['max'],
-                ]
                 # get min/max parametric axis value from file names
                 valuesAxis = []
                 for ufo in self.parametricSources:
@@ -385,21 +414,17 @@ class AmstelvarDesignSpaceBuilder_avar2_fences(AmstelvarDesignSpaceBuilder_avar2
                         valuesAxis.append(value)
                 assert len(valuesAxis)
                 valuesAxis.sort()
-
-                for i, valueFence in enumerate(valuesFence):
-                    valueAxis  = valuesAxis[i]
+                # create null mappings
+                for valueAxis in valuesAxis:
                     m = AxisMappingDescriptor()
-
-                    inputLocation = {}
-                    inputLocation[blendName] = blendValue
-                    inputLocation[tag] = valueAxis
-
-                    outputLocation = {}
-                    outputLocation[tag] = valueFence
-
-                    m.inputLocation  = inputLocation
-                    m.outputLocation = outputLocation
-
+                    m.inputLocation = {
+                        blendName : blendValue,
+                        tag       : valueAxis,
+                    }
+                    m.outputLocation = {
+                        blendName : blendValue,
+                        tag       : valueAxis,
+                    }
                     self.designspace.addAxisMapping(m)
 
     def build(self):
@@ -447,6 +472,7 @@ class AmstelvarDesignSpaceBuilder_avar2_fences_wght200(AmstelvarDesignSpaceBuild
                         inputLocation[tag] = valueAxis
 
                         outputLocation = {}
+                        outputLocation[blendName] = blendValue
                         outputLocation[tag] = valueFence
 
                         m.inputLocation  = inputLocation
@@ -471,17 +497,17 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    # D2 = AmstelvarDesignSpaceBuilder_avar2()
-    # D2.build()
-    # D2.save()
-    # D2.buildVariableFont()
+    D2 = AmstelvarDesignSpaceBuilder_avar2()
+    D2.build()
+    D2.save()
+    D2.buildVariableFont()
 
     # D3 = AmstelvarDesignSpaceBuilder_avar2_fences()
     # D3.build()
     # D3.save()
     # D3.buildVariableFont()
 
-    D4 = AmstelvarDesignSpaceBuilder_avar2_fences_wght200()
-    D4.build()
-    D4.save()
-    D4.buildVariableFont()
+    # D4 = AmstelvarDesignSpaceBuilder_avar2_fences_wght200()
+    # D4.build()
+    # D4.save()
+    # D4.buildVariableFont()

@@ -1,5 +1,11 @@
 {
   "axes": {
+    "opsz": {
+      "name": "Optical size",
+      "default": 14,
+      "min": 8,
+      "max": 144
+    },
     "wght": {
       "name": "Weight",
       "default": 400,
@@ -117,6 +123,58 @@
       "YTTL": 57,
       "YTOS": 10,
       "XTSP": -60
+    },
+    "opsz8": {
+      "XOPQ": 112,
+      "XTRA": 400,
+      "YOPQ": 87,
+      "YTUC": 750,
+      "YTLC": 536,
+      "YTAS": 767,
+      "YTDE": -240,
+      "YTFI": 775,
+      "XSHU": 104,
+      "YSHU": 75,
+      "XSVU": 76,
+      "YSVU": 100,
+      "XSHL": 74,
+      "YSHL": 68,
+      "XSVL": 66,
+      "YSVL": 200,
+      "XSHF": 139,
+      "YSHF": 72,
+      "XSVF": 80,
+      "YSVF": 230,
+      "XTTW": 5,
+      "YTTL": 57,
+      "YTOS": 10,
+      "XTSP": 45
+    },
+    "opsz144": {
+      "XOPQ": 84,
+      "XTRA": 348,
+      "YOPQ": 14,
+      "YTUC": 750,
+      "YTLC": 471,
+      "YTAS": 756,
+      "YTDE": -230,
+      "YTFI": 773,
+      "XSHU": 82,
+      "YSHU": 12,
+      "XSVU": 12,
+      "YSVU": 145,
+      "XSHL": 61,
+      "YSHL": 10,
+      "XSVL": 12,
+      "YSVL": 157,
+      "XSHF": 109,
+      "YSHF": 12,
+      "XSVF": 14,
+      "YSVF": 176,
+      "XTTW": 5,
+      "YTTL": 57,
+      "YTOS": 10,
+      "XTSP": -30
     }
   }
 }

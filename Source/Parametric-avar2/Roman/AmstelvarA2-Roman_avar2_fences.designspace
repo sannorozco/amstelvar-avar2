@@ -158,6 +158,7 @@
           <dimension name="XTRA" xvalue="208"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="XTRA" xvalue="300"/>
         </output>
       </mapping>
@@ -167,6 +168,7 @@
           <dimension name="XTRA" xvalue="508"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="XTRA" xvalue="450"/>
         </output>
       </mapping>
@@ -176,6 +178,7 @@
           <dimension name="XOPQ" xvalue="4"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="XOPQ" xvalue="72"/>
         </output>
       </mapping>
@@ -185,6 +188,7 @@
           <dimension name="XOPQ" xvalue="310"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="XOPQ" xvalue="110"/>
         </output>
       </mapping>
@@ -194,6 +198,7 @@
           <dimension name="YOPQ" xvalue="4"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="YOPQ" xvalue="50"/>
         </output>
       </mapping>
@@ -203,6 +208,7 @@
           <dimension name="YOPQ" xvalue="311"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="YOPQ" xvalue="75"/>
         </output>
       </mapping>
@@ -212,6 +218,7 @@
           <dimension name="XTSP" xvalue="-100"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="XTSP" xvalue="-60"/>
         </output>
       </mapping>
@@ -221,6 +228,7 @@
           <dimension name="XTSP" xvalue="100"/>
         </input>
         <output>
+          <dimension name="Weight" xvalue="400"/>
           <dimension name="XTSP" xvalue="50"/>
         </output>
       </mapping>
@@ -230,7 +238,8 @@
           <dimension name="XTRA" xvalue="208"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="300"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="XTRA" xvalue="208"/>
         </output>
       </mapping>
       <mapping>
@@ -239,7 +248,8 @@
           <dimension name="XTRA" xvalue="508"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="430"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="XTRA" xvalue="508"/>
         </output>
       </mapping>
       <mapping>
@@ -248,7 +258,8 @@
           <dimension name="XOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="75"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="XOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -257,7 +268,8 @@
           <dimension name="XOPQ" xvalue="310"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="115"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="XOPQ" xvalue="310"/>
         </output>
       </mapping>
       <mapping>
@@ -266,7 +278,8 @@
           <dimension name="YOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="48"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="YOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -275,7 +288,8 @@
           <dimension name="YOPQ" xvalue="311"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="120"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="YOPQ" xvalue="311"/>
         </output>
       </mapping>
       <mapping>
@@ -284,7 +298,8 @@
           <dimension name="XTSP" xvalue="-100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="-40"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="XTSP" xvalue="-100"/>
         </output>
       </mapping>
       <mapping>
@@ -293,7 +308,8 @@
           <dimension name="XTSP" xvalue="100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="30"/>
+          <dimension name="Weight" xvalue="200"/>
+          <dimension name="XTSP" xvalue="100"/>
         </output>
       </mapping>
       <mapping>
@@ -302,7 +318,8 @@
           <dimension name="XTRA" xvalue="208"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="325"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="XTRA" xvalue="208"/>
         </output>
       </mapping>
       <mapping>
@@ -311,7 +328,8 @@
           <dimension name="XTRA" xvalue="508"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="420"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="XTRA" xvalue="508"/>
         </output>
       </mapping>
       <mapping>
@@ -320,7 +338,8 @@
           <dimension name="XOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="85"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="XOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -329,7 +348,8 @@
           <dimension name="XOPQ" xvalue="310"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="130"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="XOPQ" xvalue="310"/>
         </output>
       </mapping>
       <mapping>
@@ -338,7 +358,8 @@
           <dimension name="YOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="50"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="YOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -347,7 +368,8 @@
           <dimension name="YOPQ" xvalue="311"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="100"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="YOPQ" xvalue="311"/>
         </output>
       </mapping>
       <mapping>
@@ -356,7 +378,8 @@
           <dimension name="XTSP" xvalue="-100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="-36"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="XTSP" xvalue="-100"/>
         </output>
       </mapping>
       <mapping>
@@ -365,7 +388,8 @@
           <dimension name="XTSP" xvalue="100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="45"/>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="XTSP" xvalue="100"/>
         </output>
       </mapping>
       <mapping>
@@ -374,7 +398,8 @@
           <dimension name="XTRA" xvalue="208"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="375"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="XTRA" xvalue="208"/>
         </output>
       </mapping>
       <mapping>
@@ -383,7 +408,8 @@
           <dimension name="XTRA" xvalue="508"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="420"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="XTRA" xvalue="508"/>
         </output>
       </mapping>
       <mapping>
@@ -392,7 +418,8 @@
           <dimension name="XOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="70"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="XOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -401,7 +428,8 @@
           <dimension name="XOPQ" xvalue="310"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="108"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="XOPQ" xvalue="310"/>
         </output>
       </mapping>
       <mapping>
@@ -410,7 +438,8 @@
           <dimension name="YOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="48"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="YOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -419,7 +448,8 @@
           <dimension name="YOPQ" xvalue="311"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="73"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="YOPQ" xvalue="311"/>
         </output>
       </mapping>
       <mapping>
@@ -428,7 +458,8 @@
           <dimension name="XTSP" xvalue="-100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="-42"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="XTSP" xvalue="-100"/>
         </output>
       </mapping>
       <mapping>
@@ -437,7 +468,8 @@
           <dimension name="XTSP" xvalue="100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="30"/>
+          <dimension name="Width" xvalue="85"/>
+          <dimension name="XTSP" xvalue="100"/>
         </output>
       </mapping>
       <mapping>
@@ -446,7 +478,8 @@
           <dimension name="XTRA" xvalue="208"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="300"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="XTRA" xvalue="208"/>
         </output>
       </mapping>
       <mapping>
@@ -455,7 +488,8 @@
           <dimension name="XTRA" xvalue="508"/>
         </input>
         <output>
-          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="XTRA" xvalue="508"/>
         </output>
       </mapping>
       <mapping>
@@ -464,7 +498,8 @@
           <dimension name="XOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="78"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="XOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -473,7 +508,8 @@
           <dimension name="XOPQ" xvalue="310"/>
         </input>
         <output>
-          <dimension name="XOPQ" xvalue="116"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="XOPQ" xvalue="310"/>
         </output>
       </mapping>
       <mapping>
@@ -482,7 +518,8 @@
           <dimension name="YOPQ" xvalue="4"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="54"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="YOPQ" xvalue="4"/>
         </output>
       </mapping>
       <mapping>
@@ -491,7 +528,8 @@
           <dimension name="YOPQ" xvalue="311"/>
         </input>
         <output>
-          <dimension name="YOPQ" xvalue="80"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="YOPQ" xvalue="311"/>
         </output>
       </mapping>
       <mapping>
@@ -500,7 +538,8 @@
           <dimension name="XTSP" xvalue="-100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="-40"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="XTSP" xvalue="-100"/>
         </output>
       </mapping>
       <mapping>
@@ -509,7 +548,8 @@
           <dimension name="XTSP" xvalue="100"/>
         </input>
         <output>
-          <dimension name="XTSP" xvalue="40"/>
+          <dimension name="Width" xvalue="125"/>
+          <dimension name="XTSP" xvalue="100"/>
         </output>
       </mapping>
     </mappings>
