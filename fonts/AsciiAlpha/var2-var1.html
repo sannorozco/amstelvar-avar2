@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>AmstelvarA2 Roman avar2 test</title>
+    <title>AmstelvarA2 Roman avar2 × avar1</title>
     <style>
       body {
         color: white;
@@ -17,7 +17,6 @@
         font-weight: regular;
         font-display: auto;
       }
-
       @font-face {
         font-family: "AmstelvarA2 Roman avar2";
         src: url('AmstelvarA2-Roman_avar2.ttf') format('truetype');
@@ -32,7 +31,7 @@
         font-family: "AmstelvarA2 Roman avar2";
       }
       .sample {
-        font-size: 18pt;
+        font-size: 14pt;
         line-height: 1.2em;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -55,8 +54,8 @@
         link_fontsize     = document.getElementById("synchFontSize");
         font_samples      = document.querySelectorAll(".sample");
         axis_sliders      = document.querySelectorAll('.axis')
-        sample_1          = document.getElementById('sample_1')
-        sample_2          = document.getElementById('sample_2')
+        sample_avar1      = document.getElementById('sample_avar1')
+        sample_avar2      = document.getElementById('sample_avar2')
 
         function axis_sliders_changed() {
           variations = []
@@ -109,8 +108,8 @@
           slider.addEventListener('input', axis_sliders_changed)
         })
 
-        sample_1.addEventListener("input", function() {
-            sample_2.innerHTML = sample_1.innerHTML;
+        sample_avar1.addEventListener("input", function() {
+            sample_avar2.innerHTML = sample_avar1.innerHTML;
         }, false);
 
       })
@@ -128,10 +127,10 @@
               <label for="fontsize" class="form-label"><small>font size</small></label>
             </div>
             <div class="col-6">
-              <input type="range" class="form-range" min="8" max="144" value='18' id="fontsize">
+              <input type="range" class="form-range" min="8" max="144" value='14' id="fontsize">
             </div>
             <div class="col-2">
-              <output class="form-control text-light border-0 bg-transparent" id='fontsize_value'>18</output>
+              <output class="form-control text-light border-0 bg-transparent" id='fontsize_value'>14</output>
             </div>
           </div>
 
@@ -531,17 +530,16 @@
         <div class="col-8 col-lg-9 vh-100 position-relative">
           <div class="w-100 pe-3 position-absolute top-0 start-0 vh-100 ms-3 overflow-hidden">
             <span class="badge bg-primary float-end me-1">avar2</span>
-            <p id='sample_1' class='sample w-100 Amstelvar-Roman-avar2' contenteditable="true">
+            <p id='sample_avar2' class='sample w-100 Amstelvar-Roman-avar2' contenteditable="true">
               OpenType variable fonts are an adaptation of Apple's TrueType GX font variations to OpenType, with integration into key aspects of the OpenType format including OpenType Layout tables and both TrueType and CFF glyph outline formats. It also surpasses TrueType GX by providing better interoperability, both between different fonts, and between variable fonts and font-formatting specifications such as those found in Cascading Style Sheets. The technology allows software to access any design instance for a continuous range of designs defined within the font. When a specific design instance has been selected, the glyph outlines or other data values for that design instance are computed as font data is being processed during text layout and rasterization. The technology uses interpolation and extrapolation mechanisms that have been supported in font-development tools and used by font designers for many years. In that paradigm, the font designer creates a variable design, but then chooses specific instances to generate as static, non-variable fonts that get distributed to customers. With variable fonts, however, the font produced and distributed by the font designer can have built-in variability, and the interpolation mechanisms can now be built into operating systems and Web browsers or other applications, with specific design instances selected at time of use. One of the key benefits of the technology is that it can significantly reduce the combined size of font data whenever multiple styles are in use. On the Web, this may allow a site to use more font styles while at the same time reducing page load times. A further benefit is that it gives access to a continuous range of style variations, which can provide benefits for responsive design.
             </p>
           </div>
           <div class="w-100 pe-3 position-absolute top-50 start-0 vh-50 pt-3 ms-3 border-top border-secondary overflow-hidden" id='avar1_container'>
             <span class="badge bg-primary float-end me-2">avar1</span>
-            <p id='sample_2' class='sample w-100 Amstelvar-Roman-avar1'>
+            <p id='sample_avar1' class='sample w-100 Amstelvar-Roman-avar1'>
               OpenType variable fonts are an adaptation of Apple's TrueType GX font variations to OpenType, with integration into key aspects of the OpenType format including OpenType Layout tables and both TrueType and CFF glyph outline formats. It also surpasses TrueType GX by providing better interoperability, both between different fonts, and between variable fonts and font-formatting specifications such as those found in Cascading Style Sheets. The technology allows software to access any design instance for a continuous range of designs defined within the font. When a specific design instance has been selected, the glyph outlines or other data values for that design instance are computed as font data is being processed during text layout and rasterization. The technology uses interpolation and extrapolation mechanisms that have been supported in font-development tools and used by font designers for many years. In that paradigm, the font designer creates a variable design, but then chooses specific instances to generate as static, non-variable fonts that get distributed to customers. With variable fonts, however, the font produced and distributed by the font designer can have built-in variability, and the interpolation mechanisms can now be built into operating systems and Web browsers or other applications, with specific design instances selected at time of use. One of the key benefits of the technology is that it can significantly reduce the combined size of font data whenever multiple styles are in use. On the Web, this may allow a site to use more font styles while at the same time reducing page load times. A further benefit is that it gives access to a continuous range of style variations, which can provide benefits for responsive design.
             </p>
           </div>
-
         </div>
 
       </div>
