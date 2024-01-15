@@ -2,7 +2,7 @@
 <glyph name="Chedescender-cy" format="2">
   <advance width="1678"/>
   <unicode hex="04B6"/>
-  <guideline x="1330" y="777" angle="90" identifier="9CLqHZNG04"/>
+  <guideline x="1330" y="777" angle="90.0" identifier="9CLqHZNG04"/>
   <outline>
     <contour>
       <point x="50" y="1386" type="line"/>
@@ -43,12 +43,15 @@
       <point x="1596" y="1386" type="line"/>
       <point x="1388" y="1352" type="line"/>
       <point x="1386" y="754" type="line"/>
+      <point x="1388" y="108" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_YTOS0.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>
