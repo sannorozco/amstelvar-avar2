@@ -2,7 +2,9 @@
 <glyph name="Yumacron" format="2">
   <advance width="1976"/>
   <outline>
-    <component base="Yu"/>
+    <component base="I"/>
+    <component base="Yu-dash.case" xOffset="-79"/>
+    <component base="O" xOffset="680"/>
     <component base="macroncomb.case" xOffset="1044"/>
   </outline>
   <lib>
