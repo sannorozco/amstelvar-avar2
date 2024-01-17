@@ -2,47 +2,70 @@
 
 import os
 from random import randint 
+from fontTools.ttLib import TTFont
+from fontTools.varLib import instancer
+from variableValues.measurements import FontMeasurements
 
 folder  = os.getcwd()
-ttfPath = os.path.join(folder, 'AmstelvarA2-Roman_avar2.ttf')
+ttfPath = os.path.join(folder, 'AmstelvarA2-Roman_avar1.ttf')
 
-newPage('A4')
+newPage('A4Landscape')
 font(ttfPath)
 
-parameters = listFontVariations(ttfPath)
-defaults = fontVariations()
+fontsize   = 18
+lineheight = 1.35
 
-sliders = []
-for parameter in parameters.keys():
-    slider = dict(name=parameter, ui="Slider", 
-            args=dict(
-                value=defaults[parameter],
-                minValue=parameters[parameter]['minValue'],
-                maxValue=parameters[parameter]['maxValue']
-            )
-        )
-    sliders.append(slider)
+parameters = {
+    'opsz': 22,
+    'wght': 530,
+    'wdth': 97,
+}
 
-lineHeightSlider = dict(name='lineheight', ui="Slider", args=dict(value=1.25, minValue=1.0, maxValue=1.5))
-fontSizeSlider = dict(name='fontsize', ui="Slider", args=dict(value=18, minValue=9, maxValue=72))
-sliders.insert(0, lineHeightSlider)
-sliders.insert(0, fontSizeSlider)
-
-Variable([slider for slider in sliders], globals())
+parameters_all = fontVariations()
+for param, value in parameters.items():
+    parameters_all[param] = value
 
 p = 20
 x = y = p
-w = width() - p*2
 h = height() - p*2
+w = h # width() - p*2
 
 txt = '''OpenType variable fonts are an adaptation of Apple's TrueType GX font variations to OpenType, with integration into key aspects of the OpenType format including OpenType Layout tables and both TrueType and CFF glyph outline formats. It also surpasses TrueType GX by providing better interoperability, both between different fonts, and between variable fonts and font-formatting specifications such as those found in Cascading Style Sheets. The technology allows software to access any design instance for a continuous range of designs defined within the font. When a specific design instance has been selected, the glyph outlines or other data values for that design instance are computed as font data is being processed during text layout and rasterization. The technology uses interpolation and extrapolation mechanisms that have been supported in font-development tools and used by font designers for many years. In that paradigm, the font designer creates a variable design, but then chooses specific instances to generate as static, non-variable fonts that get distributed to customers. With variable fonts, however, the font produced and distributed by the font designer can have built-in variability, and the interpolation mechanisms can now be built into operating systems and Web browsers or other applications, with specific design instances selected at time of use. One of the key benefits of the technology is that it can significantly reduce the combined size of font data whenever multiple styles are in use. On the Web, this may allow a site to use more font styles while at the same time reducing page load times. A further benefit is that it gives access to a continuous range of style variations, which can provide benefits for responsive design.'''
 
-cmd = 'fontVariations('
-for parameter in parameters:
-    cmd += f'{parameter}={parameter}, '
-cmd += ')'
-exec(cmd)
+fontVariations(**parameters)
 
 fontSize(fontsize)
 lineHeight(fontsize*lineheight)
 textBox(txt, (x, y, w, h))
+
+varfont = TTFont(ttfPath)
+partial = instancer.instantiateVariableFont(varfont, parameters_all)
+
+partialPath = ttfPath.replace('.ttf', '_current.ttf')
+partial.save(partialPath)
+
+baseFolder = os.path.dirname(os.path.dirname(folder))
+measurementsPath = os.path.join(baseFolder, 'Source', 'Parametric-avar2', 'Roman', 'measurements.json')
+
+assert os.path.exists(measurementsPath)
+
+f = OpenFont(partialPath, showInterface=False)
+
+measurements = FontMeasurements()
+measurements.read(measurementsPath)
+measurements.measure(f)
+
+x, y = w+80, w
+
+fontsize   = 12
+lineheight = 1.5
+
+fontVariations(resetVariations=True)
+font('Menlo')
+fontSize(fontsize)
+
+for tag, value in measurements.values.items():
+    if tag not in parameters_all:
+        continue
+    text(f'{tag} {value}', (x, y))
+    y -= fontsize * lineheight
