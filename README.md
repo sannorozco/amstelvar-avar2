@@ -7,15 +7,15 @@ Alpha version of Amstelvar with avar2 data. (work in progress)
 Table of contents
 -----------------
 
-- [Current folder structure](#)
-- [The Fonts folder](#)
-  - [ASCII Alpha](#)
-- [The Source folder](#)
-  - [Parametric avar2](#)
-  - [Measurements file](#)
-  - [Blends file](#)
-  - [Fences file](#)
-- [The designspace and variable font builder](#)
+- [Current folder structure](#current-folder-structure)
+- [The Fonts folder](#the-fonts-folder)
+  - [ASCII Alpha](#ascii-alpha)
+- [The Source folder](#the-source-folder)
+  - [Parametric avar2](#parametric-avar2)
+  - [Measurements file](#measurements-file)
+  - [Blends file](#blends-file)
+  - [Fences file](#fences-file)
+- [The designspace and variable font builder](#the-designspace-and-variable-font-builder)
 
 
 Current folder structure
