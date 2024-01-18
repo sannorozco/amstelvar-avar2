@@ -60,7 +60,7 @@ Fonts
   <dd>Our second (successful) attempt at building an avar2 font, and current development stage. This subfolder contains the current working files (more details below).</dd>
 </dl>
 
-At the root of the Fonts folder are also the original “Amstelvar1” Roman and Italic fonts, which are used in proofs and comparisons.
+At the root of the `Fonts` folder are also the original “Amstelvar1” Roman and Italic fonts, which are used in proofs and comparisons.
 
 ### ASCII Alpha 
 
@@ -81,17 +81,17 @@ AsciiAlpha
   <dt>AmstelvarA2-Roman_avar2.ttf</dt>
   <dd>Variable font in avar2 format. Blended axes are created by defining mappings from parametric axes to extrema input values.</dd>
   <dt>AmstelvarA2-Roman_avar2_fences.ttf</dt>
-  <dd>Attempt to build an avar2 font with “fences” to restrict the limits of parametric values at blended extrema locations. The added fences work at the default location, but not at the blended extrema.*</dd>
+  <dd>Attempt to build an avar2 font with “fences” to restrict the limits of parametric values at blended extrema locations. ⚠️ <em>The added fences work at the default location, but not at the blended extrema.</em>*</dd>
   <dt>AmstelvarA2-Roman_avar2_fences-wght200.ttf</dt>
-  <dd>An attempt to implement fences at one blended extreme only, for testing purposes. The fences added for location <code>wght200</code> do not work as intended.*</dd></dd>
+  <dd>An attempt to implement fences at one blended extreme only, for testing purposes. ⚠️ <em>The fences added for location <code>wght200</code> do not work as intended.</em>*</dd></dd>
   <dt>var2-original.html</dt>
-  <dd>Interactive HTML page for comparison between the ASCII Alpha avar2 font (parametric axes) and the original Amstelvar1 font (blended axes). Useful when defining and checking parametric locations of blended extrema.</dd>
+  <dd>Interactive HTML page for comparison between the ASCII Alpha avar2 font (parametric axes) and the original Amstelvar1 font (blended axes). Useful when defining and checking parametric locations of blended extrema against their avar2 blends.</dd>
   <dt>var2-var1.html</dt>
   <dd>Interactive HTML page for comparison between avar2 and avar1 versions of the ASCII Alpha font. Useful as a reference when testing the avar2 implementation.</dd>
   <dt>test.py</dt>
   <dd>Interactive DrawBot script for testing the avar2 variable font using the native macOS text engine. Produces a PDF document.</dd>
   <dt>test2.py </dt>
-  <dd>An attempt to create a visualization of parametric values for changes in blended axes. <em>Not working because point indexes in the variable font are different from point indexes in the source UFOs. (double check)</em></dd>
+  <dd>An attempt to create a visualization of parametric values for changes in blended axes. ⚠️ <em>Not working because point indexes in the variable font are different from point indexes in the source UFOs. <strong>(double check)</strong></em></dd>
 </dl>
 
 \* see [Implementing fences](https://github.com/googlefonts/amstelvar-avar2/issues/4)
@@ -120,7 +120,7 @@ Source
 
 ### Tools folder
 
-A selelction of production scripts which are worth mentioning:
+A selection of production scripts which are worth mentioning:
 
 <dl>
   <dt>extract-measurements.py</dt>
@@ -131,11 +131,11 @@ A selelction of production scripts which are worth mentioning:
   <dd>Check if any source location is outside of the min/max bounds of its axis. This was helpful when debugging the first avar2 font builds.</dd>
 </dl>
 
-see also:
+see also (on the RobotoFlex AVAR2 repository):
 
 <dl>
-  <dt><a href='#'>mark-components.py</a></dt>
-  <dd>Mark current font glyphs containing components with different colors depending on their nesting level.</dd>
+  <dt><a href='http://github.com/googlefonts/roboto-flex-avar2/blob/main/Source/tools/mark-components.py'>mark-components.py</a></dt>
+  <dd>Mark glyphs in the current font containing components with different colors depending on their components' nesting level.</dd>
 </dl>
 
 ### Parametric avar2
