@@ -55,7 +55,7 @@ Fonts
 ```
 <dl>
   <dt>TechAlpha</dt>
-  <dd>Our first (failed) attempt at building an avar2 font. ⚠️ *These files are no longer useful and can probably be archived in a branch.*</dd>
+  <dd>Our first (failed) attempt at building an avar2 font. ⚠️ <em>These files are no longer useful and can probably be archived in a branch.</em></dd>
   <dt>AsciiAlpha</dt>
   <dd>Our second (successful) attempt at building an avar2 font, and current development stage. This subfolder contains the current working files (more details below).</dd>
 </dl>
