@@ -6,8 +6,8 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 from variableValues.measurements import FontMeasurements
 
-folder  = os.getcwd()
-ttfPath = os.path.join(folder, 'AmstelvarA2-Roman_avar1.ttf')
+folder  = os.path.dirname(os.getcwd())
+ttfPath = os.path.join(folder, 'Fonts', 'AmstelvarA2-Roman_avar2.ttf')
 
 newPage('A4Landscape')
 font(ttfPath)
@@ -44,8 +44,7 @@ partial = instancer.instantiateVariableFont(varfont, parameters_all)
 partialPath = ttfPath.replace('.ttf', '_current.ttf')
 partial.save(partialPath)
 
-baseFolder = os.path.dirname(os.path.dirname(folder))
-measurementsPath = os.path.join(baseFolder, 'Source', 'Parametric-avar2', 'Roman', 'measurements.json')
+measurementsPath = os.path.join(folder, 'Sources', 'Roman', 'measurements.json')
 
 assert os.path.exists(measurementsPath)
 

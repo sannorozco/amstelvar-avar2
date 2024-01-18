@@ -3,8 +3,8 @@
 import os
 from random import randint 
 
-folder  = os.getcwd()
-ttfPath = os.path.join(folder, 'AmstelvarA2-Roman_avar2.ttf')
+folder  = os.path.dirname(os.getcwd())
+ttfPath = os.path.join(folder, 'Fonts', 'AmstelvarA2-Roman_avar2.ttf')
 
 newPage('A4')
 font(ttfPath)
