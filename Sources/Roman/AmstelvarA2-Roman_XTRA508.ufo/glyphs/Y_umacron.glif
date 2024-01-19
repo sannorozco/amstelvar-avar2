@@ -1,13 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Yumacron" format="2">
-  <advance width="2584"/>
-  <note>
-I + Yu-dash.case@yu_dash + O@yu_dash + macroncomb.case@I:110%, top ^ I,O | 0xf52c
-</note>
+  <advance width="2344"/>
+  <unicode hex="F52C"/>
   <outline>
-    <component base="I"/>
-    <component base="Yu-dash.case"/>
-    <component base="O" xOffset="680"/>
+    <component base="Yu"/>
     <component base="macroncomb.case" xOffset="1044"/>
   </outline>
   <lib>
