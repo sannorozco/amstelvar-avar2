@@ -34,9 +34,7 @@ for ufo in ufos:
 
     measurements[styleName] = M.values
 
-
 print(measurements)
-
 
 # # save blends in JSON format
 

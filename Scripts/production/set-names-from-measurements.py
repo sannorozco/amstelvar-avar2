@@ -7,15 +7,15 @@ from variableValues.measurements import FontMeasurements
 
 familyName       = 'AmstelvarA2'
 subFamilyName    = ['Roman', 'Italic'][0]
-baseFolder       = os.path.dirname(os.getcwd())
-sourcesFolder    = os.path.join(baseFolder, 'Parametric-avar2', subFamilyName) # 'TechAlpha'
+baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 ignoreTags = ['wght', 'GRAD', 'XTSP']
 
-preflight = False
+preflight = True
 
 for ufo in allUFOs:
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
@@ -33,8 +33,8 @@ for ufo in allUFOs:
     m.measure(f)
     newValue = m.values[tag]
     newValue1000 = round(newValue * 1000 / f.info.unitsPerEm)
-    print(f'\tactual value: {newValue}')
-    print(f'\tpermil value: {newValue1000}')
+    print(f'\tunits  = {newValue}')
+    print(f'\tpermil = {newValue1000}')
 
     # set style name
     newStyleName = f'{tag}{newValue1000}'
