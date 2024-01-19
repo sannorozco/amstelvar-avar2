@@ -74,27 +74,31 @@ Proofs
   <dt>compare-1.pdf</dt>
   <dd>Screen grabs of comparison of Amstelvar 1.0 (avar) vs. Amstelvar2 (avar2) ASCII Prototype, at the same designspace locations.</dd>
   <dt>avar2-original.html</dt>
-  <dd>Interactive HTML page for comparison between the ASCII Alpha avar2 font (parametric axes) and the original Amstelvar1 font (blended axes). Useful when defining and checking parametric locations of blended extrema against their avar2 blends.</dd>
+  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 (parametric axes) and Amstelvar 1.0 (blended axes).<br/>
+    Useful when defining and checking parametric locations of blended extrema against their avar2 blends.</dd>
   <dt>avar2-var1.html</dt>
-  <dd>Interactive HTML page for comparison between avar2 and avar1 versions of the ASCII Alpha font. Useful as a reference when testing the avar2 implementation.</dd>
+  <dd>Interactive HTML page for comparison between avar2 and avar1 versions of AmstelvarA2.<br/>
+    Useful as a reference when testing the avar2 implementation.</dd>
   <dt>avar2-test.py</dt>
-  <dd>Interactive DrawBot script for testing the avar2 variable font using the native macOS text engine. Produces a PDF document.</dd>
+  <dd>Interactive DrawBot script for testing the avar2 variable font using the native macOS text engine.<br/>
+    Produces a PDF document.</dd>
   <dt>avar2-test-parameters.py</dt>
-  <dd>An attempt to create a visualization of parametric values for changes in blended axes. ⚠️ <em>Not working because point indexes in the variable font are different from point indexes in the source UFOs. <strong>(double check!)</strong></em></dd>
+  <dd>An attempt to create a visualization of parametric values for changes in blended axes.<br/>
+    ⚠️ <em>Not working because point indexes in the variable font are different from point indexes in the source UFOs. <strong>(double check!)</strong></em></dd>
 </dl>
 
 
 Sources
 -------
 
-The Sources folder contains two subfolders with separate files for Roman and Italic sources, and project-level files which are used by both styles.
+This folder contains two subfolders with separate files for Roman and Italic, and project-level files which are used by both styles.
 
 ```
 Sources
-├── AmstelvarA2.roboFontSets
-├── AmstelvarA2.glyphConstruction
+├── Italic/
 ├── Roman/
-└── Italic/
+├── AmstelvarA2.roboFontSets
+└── AmstelvarA2.glyphConstruction
 ```
 
 <dl>
