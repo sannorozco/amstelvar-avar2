@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ocircumflexacute" format="2">
-  <advance width="1081"/>
+  <advance width="1049"/>
+  <unicode hex="1ED1"/>
   <outline>
-    <component base="o" xOffset="27"/>
-    <component base="circumflexcomb-stack" xOffset="551" yOffset="-55"/>
-    <component base="acutecomb-stack" xOffset="863" yOffset="193"/>
+    <component base="o"/>
+    <component base="circumflexcomb-stack" xOffset="524" yOffset="-55"/>
+    <component base="acutecomb-stack" xOffset="836" yOffset="193"/>
   </outline>
   <lib>
     <dict>
