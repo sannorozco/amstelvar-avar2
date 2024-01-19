@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="odotaccentmacron" format="2">
-  <advance width="1068"/>
+  <advance width="1035"/>
+  <unicode hex="0231"/>
   <outline>
-    <component base="o" xOffset="27"/>
-    <component base="dotaccentcomb-stack" xOffset="545" yOffset="-131"/>
-    <component base="macroncomb-stack" xOffset="545" yOffset="188"/>
+    <component base="o"/>
+    <component base="dotaccentcomb-stack" xOffset="518" yOffset="-131"/>
+    <component base="macroncomb-stack" xOffset="518" yOffset="188"/>
   </outline>
   <lib>
     <dict>
