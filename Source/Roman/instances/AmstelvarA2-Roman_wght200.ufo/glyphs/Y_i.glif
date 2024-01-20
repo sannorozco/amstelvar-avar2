@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Yi" format="2">
-  <advance width="830"/>
+  <advance width="762"/>
+  <unicode hex="0407"/>
+  <note>
+Yi-dieresiscomb
+</note>
   <outline>
     <component base="I"/>
-    <component base="Yi-dieresiscomb.case" xOffset="415"/>
+    <component base="dieresiscomb.case" xOffset="228"/>
   </outline>
   <lib>
     <dict>

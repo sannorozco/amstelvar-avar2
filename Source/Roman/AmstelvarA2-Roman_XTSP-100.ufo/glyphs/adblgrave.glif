@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="adblgrave" format="2">
-  <advance width="1096"/>
+  <advance width="968"/>
+  <unicode hex="0201"/>
   <outline>
-    <component base="a" xOffset="72"/>
-    <component base="dblgravecomb" xOffset="2"/>
+    <component base="a"/>
+    <component base="dblgravecomb" xOffset="-70"/>
   </outline>
   <lib>
     <dict>

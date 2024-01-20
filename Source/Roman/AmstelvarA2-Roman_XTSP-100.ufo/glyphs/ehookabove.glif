@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ehookabove" format="2">
-  <advance width="1051"/>
+  <advance width="935"/>
+  <unicode hex="1EBB"/>
   <outline>
-    <component base="e" xOffset="86"/>
-    <component base="hookabovecomb" xOffset="60"/>
+    <component base="e"/>
+    <component base="hookabovecomb" xOffset="-26"/>
   </outline>
   <lib>
     <dict>
