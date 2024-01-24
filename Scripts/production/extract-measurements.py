@@ -1,7 +1,7 @@
 # menuTitle: extract parametric blends from Amstelvar1 extrema
 
 import os, glob, json
-from variableValues.measurements import FontMeasurements
+from variableValues.measurements import FontMeasurements, permille
 
 subfamilyName    = ['Roman', 'Italic'][0]
 baseFolder1      = '/Users/gferreira/hipertipo/fonts/amstelvar' # path to Amstelvar1 sources for measuring - see http://github.com/gferreira/amstelvar
@@ -9,7 +9,7 @@ sourcesFolder1   = os.path.join(baseFolder1, subfamilyName)
 measurementsPath = os.path.join(sourcesFolder1, 'measurements.json')
 baseFolder2      = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder2   = os.path.join(baseFolder2, 'Sources', subfamilyName)
-blendsPath       = os.path.join(sourcesFolder2, 'blends_full.json')
+blendsPath       = os.path.join(sourcesFolder2, 'blends.json')
 parametricAxes   = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS'.split()
 
 # define blended axes
@@ -24,13 +24,13 @@ blendedAxes = {
     "wght": {
       "name"    : "Weight",
       "default" : 400,
-      "min"     : 200,
-      "max"     : 800,
+      "min"     : 100,
+      "max"     : 1000,
     },
     "wdth": {
       "name"    : "Width",
       "default" : 100,
-      "min"     : 85,
+      "min"     : 50,
       "max"     : 125,
     }
 }
@@ -55,7 +55,7 @@ for ufoPath in sorted(ufos):
     M = FontMeasurements()
     M.read(measurementsPath)
     M.measure(f)
-    blendedSources[styleName] = { k: v for k, v in M.values.items() if k in parametricAxes }
+    blendedSources[styleName] = { k: permille(v, 2000) for k, v in M.values.items() if k in parametricAxes }
 
 # save measurements to JSON blends file
 

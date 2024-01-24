@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tau" format="2">
+  <advance width="937"/>
+  <unicode hex="03C4"/>
+  <outline>
+    <contour>
+      <point x="885" y="826" type="line"/>
+      <point x="40" y="848" type="line"/>
+      <point x="40" y="869" type="line"/>
+      <point x="186" y="968" type="line"/>
+      <point x="874" y="1010" type="line"/>
+      <point x="901" y="976" type="line"/>
+    </contour>
+    <contour>
+      <point x="537" y="-8" type="line"/>
+      <point x="461" y="-8"/>
+      <point x="341" y="107"/>
+      <point x="371" y="273" type="qcurve" smooth="yes"/>
+      <point x="470" y="917" type="line"/>
+      <point x="491" y="917" type="line"/>
+      <point x="523" y="285" type="line" smooth="yes"/>
+      <point x="529" y="168"/>
+      <point x="586" y="109"/>
+      <point x="663" y="109" type="qcurve" smooth="yes"/>
+      <point x="787" y="109" type="line"/>
+      <point x="787" y="29" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>

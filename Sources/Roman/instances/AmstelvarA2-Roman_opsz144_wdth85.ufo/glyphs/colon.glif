@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colon" format="2">
+  <advance width="199"/>
+  <unicode hex="003A"/>
+  <outline>
+    <contour>
+      <point x="-33" y="112" type="qcurve" smooth="yes"/>
+      <point x="-33" y="165"/>
+      <point x="41" y="245"/>
+      <point x="99" y="245" type="qcurve" smooth="yes"/>
+      <point x="157" y="245"/>
+      <point x="232" y="165"/>
+      <point x="232" y="112" type="qcurve" smooth="yes"/>
+      <point x="232" y="59"/>
+      <point x="157" y="-20"/>
+      <point x="99" y="-20" type="qcurve" smooth="yes"/>
+      <point x="41" y="-20"/>
+      <point x="-33" y="59"/>
+    </contour>
+    <contour>
+      <point x="-33" y="902" type="qcurve" smooth="yes"/>
+      <point x="-33" y="956"/>
+      <point x="42" y="1035"/>
+      <point x="100" y="1035" type="qcurve" smooth="yes"/>
+      <point x="158" y="1035"/>
+      <point x="232" y="956"/>
+      <point x="232" y="902" type="qcurve" smooth="yes"/>
+      <point x="232" y="850"/>
+      <point x="158" y="770"/>
+      <point x="100" y="770" type="qcurve" smooth="yes"/>
+      <point x="42" y="770"/>
+      <point x="-33" y="850"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>0 6</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+        <key>12 18</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+        <key>15 21</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+        <key>3 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

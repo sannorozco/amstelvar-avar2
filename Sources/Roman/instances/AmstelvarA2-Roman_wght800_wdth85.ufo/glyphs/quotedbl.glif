@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quotedbl" format="2">
+  <advance width="674"/>
+  <unicode hex="0022"/>
+  <outline>
+    <contour>
+      <point x="50" y="964" type="line"/>
+      <point x="-88" y="1369" type="line"/>
+      <point x="-88" y="1436"/>
+      <point x="6" y="1558"/>
+      <point x="103" y="1558" type="qcurve" smooth="yes"/>
+      <point x="200" y="1558"/>
+      <point x="293" y="1436"/>
+      <point x="293" y="1369" type="qcurve"/>
+      <point x="154" y="964" type="line"/>
+    </contour>
+    <contour>
+      <point x="519" y="964" type="line"/>
+      <point x="381" y="1369" type="line"/>
+      <point x="381" y="1436"/>
+      <point x="475" y="1558"/>
+      <point x="572" y="1558" type="qcurve" smooth="yes"/>
+      <point x="668" y="1558"/>
+      <point x="762" y="1436"/>
+      <point x="762" y="1369" type="qcurve"/>
+      <point x="623" y="964" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>

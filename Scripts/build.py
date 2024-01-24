@@ -8,7 +8,7 @@ import ufoProcessor # upgrade to UFOOperator
 from variableValues.measurements import FontMeasurements, permille
 
 
-class AmstelvarDesignSpaceBuilder:
+class AmstelvarA2DesignSpaceBuilder:
     '''
     Simple parametric designspace for use while designing.
 
@@ -24,7 +24,7 @@ class AmstelvarDesignSpaceBuilder:
     familyName      = 'AmstelvarA2'
     subFamilyName   = ['Roman', 'Italic'][0]
     defaultName     = 'wght400'
-    parametricAxes  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split() # XOUC XOLC XOFI XTUC XTLC XTFI
+    parametricAxes  = 'XOPQ XTRA XUCS YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
     def __init__(self):
@@ -75,7 +75,7 @@ class AmstelvarDesignSpaceBuilder:
     @property
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
-        L['XTSP'] = 0
+        # L['XTSP'] = 0
         return L
 
     @property
@@ -97,13 +97,13 @@ class AmstelvarDesignSpaceBuilder:
     def addParametricAxes(self):
 
         # add spacing axis
-        a = AxisDescriptor()
-        a.name    = 'XTSP'
-        a.tag     = 'XTSP'
-        a.minimum = -100
-        a.maximum = 100
-        a.default = 0
-        self.designspace.addAxis(a)
+        # a = AxisDescriptor()
+        # a.name    = 'XTSP'
+        # a.tag     = 'XTSP'
+        # a.minimum = -100
+        # a.maximum = 100
+        # a.default = 0
+        # self.designspace.addAxis(a)
 
         # add parametric axes
         for name in self.parametricAxes:
@@ -137,15 +137,15 @@ class AmstelvarDesignSpaceBuilder:
     def addParametricSources(self):
 
         # add spacing sources
-        for value in [-100, 100]:
-            L = self.defaultLocation.copy()
-            L['XTSP'] = value
-            src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_XTSP{value}.ufo')
-            src.familyName = self.familyName
-            src.styleName  = f'XTSP{value}'
-            src.location   = L
-            self.designspace.addSource(src)
+        # for value in [-100, 100]:
+        #     L = self.defaultLocation.copy()
+        #     L['XTSP'] = value
+        #     src = SourceDescriptor()
+        #     src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_XTSP{value}.ufo')
+        #     src.familyName = self.familyName
+        #     src.styleName  = f'XTSP{value}'
+        #     src.location   = L
+        #     self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:
@@ -249,7 +249,7 @@ class AmstelvarDesignSpaceBuilder:
         print('...done.\n')
 
 
-class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
+class AmstelvarA2DesignSpaceBuilder_avar1(AmstelvarA2DesignSpaceBuilder):
     '''
     Designspace for building an avar1 variable font.
 
@@ -260,7 +260,7 @@ class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
 
     '''
 
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar1.designspace')
+    designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar1.designspace')
 
     def addBlendedSources(self):
         for tag in self.blendedAxes.keys():
@@ -269,7 +269,8 @@ class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
             valueMax = self.blendedAxes[tag]['max']
             for value in [valueMin, valueMax]:
                 ufoPath = os.path.join(self.instancesFolder, f'{self.familyName}-{self.subFamilyName}_{tag}{value}.ufo')
-                assert os.path.exists(ufoPath)
+                if not os.path.exists(ufoPath):
+                    print(f'font {ufoPath} does not exist')
                 L = self.defaultLocation.copy()
                 L[axisName] = value
                 src = SourceDescriptor()
@@ -288,7 +289,7 @@ class AmstelvarDesignSpaceBuilder_avar1(AmstelvarDesignSpaceBuilder):
         self.addBlendedSources()
 
 
-class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
+class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
     '''
     Designspace for building an avar2 variable font.
 
@@ -299,33 +300,33 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
 
     '''
 
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
+    designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2.designspace')
 
     def addMappings(self):
 
         blendedAxes    = self.blendedAxes
         blendedSources = self.blendedSources
 
-        for tag in blendedAxes:
-            for styleName in blendedSources.keys():
-                if tag in styleName:
-                    m = AxisMappingDescriptor()
+        for styleName in blendedSources.keys():
+            m = AxisMappingDescriptor()
 
-                    # get input value from style name
-                    inputLocation = {}
-                    axisName = blendedAxes[tag]['name']
-                    value = int(styleName[4:])
-                    inputLocation[axisName] = value
+            # get input value from style name
+            inputLocation = {}
+            for param in styleName.split('_'):
+                tag   = param[:4]
+                value = int(param[4:])
+                axisName  = blendedAxes[tag]['name']
+                inputLocation[axisName] = value
 
-                    # get output value from blends.json file
-                    outputLocation = {}
-                    for axisName in blendedSources[styleName]:
-                        outputLocation[axisName] = int(blendedSources[styleName][axisName])
+            # get output value from blends.json file
+            outputLocation = {}
+            for axisName in blendedSources[styleName]:
+                outputLocation[axisName] = int(blendedSources[styleName][axisName])
 
-                    m.inputLocation  = inputLocation
-                    m.outputLocation = outputLocation
+            m.inputLocation  = inputLocation
+            m.outputLocation = outputLocation
 
-                    self.designspace.addAxisMapping(m)
+            self.designspace.addAxisMapping(m)
 
     def build(self):
         self.designspace = DesignSpaceDocument()
@@ -336,7 +337,7 @@ class AmstelvarDesignSpaceBuilder_avar2(AmstelvarDesignSpaceBuilder):
         self.addParametricSources()
 
 
-class AmstelvarDesignSpaceBuilder_avar2_fences(AmstelvarDesignSpaceBuilder_avar2):
+class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_avar2):
     '''
     Designspace which adds fences to the avar2 variable font.
 
@@ -348,7 +349,7 @@ class AmstelvarDesignSpaceBuilder_avar2_fences(AmstelvarDesignSpaceBuilder_avar2
 
     '''
 
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences.designspace')
+    designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences.designspace')
 
     @property
     def fencesPath(self):
@@ -437,9 +438,9 @@ class AmstelvarDesignSpaceBuilder_avar2_fences(AmstelvarDesignSpaceBuilder_avar2
         self.addParametricSources()
 
 
-class AmstelvarDesignSpaceBuilder_avar2_fences_wght200(AmstelvarDesignSpaceBuilder_avar2_fences):
+class AmstelvarA2DesignSpaceBuilder_avar2_fences_wght200(AmstelvarA2DesignSpaceBuilder_avar2_fences):
 
-    designspaceName = AmstelvarDesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences-wght200.designspace')
+    designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences-wght200.designspace')
 
     def addMappingsFences(self):
 
@@ -487,27 +488,27 @@ class AmstelvarDesignSpaceBuilder_avar2_fences_wght200(AmstelvarDesignSpaceBuild
 
 if __name__ == '__main__':
 
-    # D = AmstelvarDesignSpaceBuilder()
+    # D = AmstelvarA2DesignSpaceBuilder()
     # D.build()
     # D.save()
     # D.buildInstances()
 
-    # D1 = AmstelvarDesignSpaceBuilder_avar1()
+    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
     # D1.build()
     # D1.save()
     # D1.buildVariableFont()
 
-    # D2 = AmstelvarDesignSpaceBuilder_avar2()
-    # D2.build()
-    # D2.save()
-    # D2.buildVariableFont()
+    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    D2.build()
+    D2.save()
+    D2.buildVariableFont()
 
-    D3 = AmstelvarDesignSpaceBuilder_avar2_fences()
-    D3.build()
-    D3.save()
-    D3.buildVariableFont()
+    # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
+    # D3.build()
+    # D3.save()
+    # D3.buildVariableFont()
 
-    D4 = AmstelvarDesignSpaceBuilder_avar2_fences_wght200()
-    D4.build()
-    D4.save()
-    D4.buildVariableFont()
+    # D4 = AmstelvarA2DesignSpaceBuilder_avar2_fences_wght200()
+    # D4.build()
+    # D4.save()
+    # D4.buildVariableFont()
