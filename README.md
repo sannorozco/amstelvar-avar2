@@ -64,7 +64,8 @@ Proofs
 ```
 Proofs
 ├── avar2-avar1.html
-├── avar2-original.html
+├── avar2-original_blends.html
+├── avar2-original_compare.html
 ├── compare-1.pdf
 ├── avar2-test.py
 └── avar2-test-parameters.py
@@ -73,10 +74,13 @@ Proofs
 <dl>
   <dt>compare-1.pdf</dt>
   <dd>Screen grabs of comparison of Amstelvar 1.0 (avar) vs. Amstelvar2 (avar2) ASCII Prototype, at the same designspace locations.</dd>
-  <dt>avar2-original.html</dt>
-  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 (parametric axes) and Amstelvar 1.0 (blended axes).<br/>
+  <dt>avar2-original_blends.html</dt>
+  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 (parametric axes) and the original Amstelvar (opsz wght wdth).<br/>
     Useful when defining and checking parametric locations of blended extrema against their avar2 blends.</dd>
-  <dt>avar2-var1.html</dt>
+  <dt>avar2-original_compare.html</dt>
+  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 and the original Amstelvar at the same location (opsz wght wdth).<br/>
+    Useful to compare the new avar2 blends to the original avar font.</dd>
+  <dt>avar2-avar1.html</dt>
   <dd>Interactive HTML page for comparison between avar2 and avar1 versions of AmstelvarA2.<br/>
     Useful as a reference when testing the avar2 implementation.</dd>
   <dt>avar2-test.py</dt>
@@ -193,16 +197,20 @@ More specific designspaces inherit from this core object, and add their own spec
 A subfolder containing various scripts used during development. The most relevant ones are listed below.
 
 <dl>
+  <dt>set-names-from-measurements.py</dt>
+  <dd>Set file name and style name from measurements in all UFOs in a given folder.<br/>
+    Includes a preflight mode which only prints the new names without changing the files.</dd>
   <dt>copy-glyphs.py</dt>
   <dd>Copy glyphs from the default font to selected sources.</dd>
   <dt>build-glyphs.py</dt>
   <dd>Build glyphs from glyph constructions in the selected sources.</dd>
-  <dt>set-names-from-measurements.py</dt>
-  <dd>Set file name and style name from measurements in all UFOs in a given folder. Includes a preflight mode which only prints the new names without changing the files.</dd>
+  <!-- moved to Amstelvar1 repository: http://github.com/gferreira/amstelvar
   <dt>extract-measurements.py</dt>
   <dd>Extract measurements from one or more UFO sources into a dictionary. Optionally, save it into a JSON file.</dd>
+  -->
   <dt>validate-locations.py</dt>
-  <dd>Check if any source location is outside of the min/max bounds of its axis. This was helpful when debugging the first avar2 font builds.</dd>
+  <dd>Check if source locations are within the allowed min/max bounds for each axis.<br/>
+    Helpful when debugging calculated blend values in relation to the current parametric axes.</dd>
 </dl>
 
 see also (on the RobotoFlex AVAR2 repository):
