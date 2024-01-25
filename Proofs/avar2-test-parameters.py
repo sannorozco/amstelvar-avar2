@@ -17,8 +17,8 @@ lineheight = 1.35
 
 parameters = {
     'opsz': 22,
-    'wght': 530,
-    'wdth': 97,
+    'wght': 700,
+    'wdth': 120,
 }
 
 parameters_all = fontVariations()
@@ -37,6 +37,8 @@ fontVariations(**parameters)
 fontSize(fontsize)
 lineHeight(fontsize*lineheight)
 textBox(txt, (x, y, w, h))
+
+print(parameters_all)
 
 varfont = TTFont(ttfPath)
 partial = instancer.instantiateVariableFont(varfont, parameters_all)

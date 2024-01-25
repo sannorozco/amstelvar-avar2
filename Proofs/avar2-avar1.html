@@ -50,7 +50,7 @@
         fontsize_slider   = document.getElementById("fontsize");
         lineheight_slider = document.getElementById("lineheight");
         opsz_slider       = document.getElementById("opsz");
-        // XTSP_slider       = document.getElementById("XTSP");
+        XTSP_slider       = document.getElementById("XTSP");
         link_fontsize     = document.getElementById("synchFontSize");
         font_samples      = document.querySelectorAll(".sample");
         axis_sliders      = document.querySelectorAll('.axis')
@@ -146,20 +146,6 @@
             </div>
           </div>
 
-          <!--
-          <div class="row">
-            <div class="col-4">
-              <label for="XTSP" class="form-label"><small>XTSP</small></label>
-            </div>
-            <div class="col-6">
-              <input type="range" class="form-range axis" min="-100" max="100" value='0' id="XTSP">
-            </div>
-            <div class="col-2">
-              <output class="form-control text-light border-0 bg-transparent" id='XTSP_value'>0</output>
-            </div>
-          </div>
-          -->
-
           <div class="row">
             <div class='col-12'>
               <div class="form-check">
@@ -211,6 +197,18 @@
             </div>
           </div>
 
+          <div class="row">
+            <div class="col-4">
+              <label for="XTSP" class="form-label"><small>XTSP</small></label>
+            </div>
+            <div class="col-6">
+              <input type="range" class="form-range axis" min="-100" max="100" value='0' id="XTSP">
+            </div>
+            <div class="col-2">
+              <output class="form-control text-light border-0 bg-transparent" id='XTSP_value'>0</output>
+            </div>
+          </div>
+
           <!--
           <div class="row">
             <div class="col-4">
@@ -250,18 +248,6 @@
             </div>
             <div class="col-2">
               <output class="form-control text-light border-0 bg-transparent" id='XTRA_value'>400</output>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-4">
-              <label for="XUCS" class="form-label"><small>XUCS</small></label>
-            </div>
-            <div class="col-6">
-              <input type="range" class="form-range axis" min="109" max="195" value='145' id="XUCS">
-            </div>
-            <div class="col-2">
-              <output class="form-control text-light border-0 bg-transparent" id='XUCS_value'>145</output>
             </div>
           </div>
 
@@ -518,6 +504,18 @@
             </div>
             <div class="col-2">
               <output type="form-control text-light border-0 bg-transparent" id='YTOS_value'>10</output>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <label for="XUCS" class="form-label"><small>XUCS</small></label>
+            </div>
+            <div class="col-6">
+              <input type="range" class="form-range axis" min="109" max="195" value='145' id="XUCS">
+            </div>
+            <div class="col-2">
+              <output class="form-control text-light border-0 bg-transparent" id='XUCS_value'>145</output>
             </div>
           </div>
 
