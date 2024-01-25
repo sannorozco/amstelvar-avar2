@@ -1,6 +1,11 @@
-from fontTools.designspaceLib import DesignSpaceDocument #, AxisDescriptor, SourceDescriptor, InstanceDescriptor, AxisMappingDescriptor
+import os
+from fontTools.designspaceLib import DesignSpaceDocument
 
-designspacePath = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman.designspace'
+folder = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder = os.path.join(folder, 'Sources', 'Roman')
+designspacePath = os.path.join(sourcesFolder, 'AmstelvarA2-Roman.designspace')
+
+assert os.path.exists(designspacePath)
 
 doc = DesignSpaceDocument()
 doc.read(designspacePath)
@@ -12,5 +17,5 @@ for instance in doc.instances:
     for axisName, value in instance.designLocation.items():
         axis = axes[axisName]
         if not axis.minimum <= value <= axis.maximum:
-            print(axisName, value, axis.minimum, axis.maximum)
+            print(f"!! {axisName} {value} ({axis.minimum} {axis.maximum}) {'-' if value < axis.minimum else '+' if value > axis.maximum else ''} ")
     print()
