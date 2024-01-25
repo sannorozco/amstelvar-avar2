@@ -15,7 +15,6 @@ class AmstelvarA2DesignSpaceBuilder:
     Specialized designspaces for output are created by subclassing this object.
 
     - parametric axes
-    - XTSP
 
     + builds instances from blends.json file
     + builds variable font
@@ -74,9 +73,16 @@ class AmstelvarA2DesignSpaceBuilder:
 
     @property
     def defaultLocation(self):
-        L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
-        # L['XTSP'] = 0
-        return L
+        return { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+
+    @property
+    def amstelvarFolder(self):
+        # path to a local copy of http://github.com/gferreira/amstelvar
+        return os.path.join(os.path.dirname(self.baseFolder), 'amstelvar')
+
+    @property
+    def amstelvarBlendsPath(self):
+        return os.path.join(self.amstelvarFolder, self.subFamilyName, 'blends.json')
 
     @property
     def blendsPath(self):
@@ -94,18 +100,40 @@ class AmstelvarA2DesignSpaceBuilder:
             blendsData = json.load(f)
         return blendsData['sources']
 
+    def buildBlendsFile(self):
+        # import blends data from the original Amstelvar
+        with open(self.amstelvarBlendsPath, 'r', encoding='utf-8') as f:
+            blendsDict = json.load(f)
+        # redefine wght wdth extrema
+        blendsDict['axes']['wght']['min'] = 200
+        blendsDict['axes']['wght']['max'] = 800
+        blendsDict['axes']['wdth']['min'] = 85
+        # add XTSP axis
+        blendsDict['axes']['XTSP'] = {
+            "name"    : "XTSP",
+            "default" : 0,
+            "min"     : -100,
+            "max"     : 100,
+        }
+        # get min/max values from file names
+        values = []
+        for ufo in self.parametricSources:
+            if 'XUCS' in ufo:
+                value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                values.append(value)
+        assert len(values)
+        values.sort()
+        # add XTSP min source
+        blendsDict['sources']['XTSP-100'] = self.defaultLocation.copy()
+        blendsDict['sources']['XTSP-100']['XUCS'] = values[0]
+        # add XTSP max source
+        blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
+        blendsDict['sources']['XTSP100']['XUCS'] = values[1]
+        # save modified data to AmstelvarA2 blends.json
+        with open(self.blendsPath, 'w', encoding='utf-8') as f:
+            json.dump(blendsDict, f, indent=2)
+
     def addParametricAxes(self):
-
-        # add spacing axis
-        # a = AxisDescriptor()
-        # a.name    = 'XTSP'
-        # a.tag     = 'XTSP'
-        # a.minimum = -100
-        # a.maximum = 100
-        # a.default = 0
-        # self.designspace.addAxis(a)
-
-        # add parametric axes
         for name in self.parametricAxes:
             # get min/max values from file names
             values = []
@@ -123,10 +151,10 @@ class AmstelvarA2DesignSpaceBuilder:
             a.minimum = values[0]
             a.maximum = values[1]
             a.default = permille(self.measurementsDefault.values[name], self.unitsPerEm)
+
             self.designspace.addAxis(a)
 
     def addDefaultSource(self):
-
         src = SourceDescriptor()
         src.path       = self.defaultUFO
         src.familyName = self.familyName
@@ -135,19 +163,6 @@ class AmstelvarA2DesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
-
-        # add spacing sources
-        # for value in [-100, 100]:
-        #     L = self.defaultLocation.copy()
-        #     L['XTSP'] = value
-        #     src = SourceDescriptor()
-        #     src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_XTSP{value}.ufo')
-        #     src.familyName = self.familyName
-        #     src.styleName  = f'XTSP{value}'
-        #     src.location   = L
-        #     self.designspace.addSource(src)
-
-        # add parametric sources
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
                 if name in ufo:
@@ -162,8 +177,6 @@ class AmstelvarA2DesignSpaceBuilder:
                     self.designspace.addSource(src)
 
     def addInstances(self):
-
-        # add instances to designspace
         for styleName in self.blendedSources.keys():
             L = self.defaultLocation.copy()
             for axis, value in self.blendedSources[styleName].items():
@@ -211,12 +224,14 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def build(self):
         self.designspace = DesignSpaceDocument()
+        self.buildBlendsFile()
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
         self.addInstances()
 
     def save(self):
+
         if not self.designspace:
             return
         self.designspace.write(self.designspacePath)
@@ -254,8 +269,7 @@ class AmstelvarA2DesignSpaceBuilder_avar1(AmstelvarA2DesignSpaceBuilder):
     Designspace for building an avar1 variable font.
 
     - parametric axes
-    - XTSP
-    - blended axes: wght wdth
+    - blended axes: opsz wght wdth (XTSP)
     - wght/wdth extrema defined by instances
 
     '''
@@ -493,10 +507,10 @@ if __name__ == '__main__':
     # D.save()
     # D.buildInstances()
 
-    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
-    # D1.build()
-    # D1.save()
-    # D1.buildVariableFont()
+    D1 = AmstelvarA2DesignSpaceBuilder_avar1()
+    D1.build()
+    D1.save()
+    D1.buildVariableFont()
 
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()

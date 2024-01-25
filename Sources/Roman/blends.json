@@ -17,6 +17,12 @@
       "default": 100,
       "min": 85,
       "max": 125
+    },
+    "XTSP": {
+      "name": "XTSP",
+      "default": 0,
+      "min": -100,
+      "max": 100
     }
   },
   "sources": {
@@ -640,6 +646,58 @@
       "YSVL": 190,
       "YSVF": 237,
       "XUCS": 102
+    },
+    "XTSP-100": {
+      "XOPQ": 90,
+      "XTRA": 400,
+      "XUCS": 109,
+      "YOPQ": 62,
+      "YTUC": 750,
+      "YTLC": 511,
+      "YTAS": 767,
+      "YTDE": -240,
+      "YTFI": 771,
+      "XSHU": 104,
+      "YSHU": 50,
+      "XSVU": 55,
+      "YSVU": 115,
+      "XSHL": 74,
+      "YSHL": 40,
+      "XSVL": 48,
+      "YSVL": 176,
+      "XSHF": 129,
+      "YSHF": 47,
+      "XSVF": 61,
+      "YSVF": 201,
+      "XTTW": 5,
+      "YTTL": 57,
+      "YTOS": 10
+    },
+    "XTSP100": {
+      "XOPQ": 90,
+      "XTRA": 400,
+      "XUCS": 195,
+      "YOPQ": 62,
+      "YTUC": 750,
+      "YTLC": 511,
+      "YTAS": 767,
+      "YTDE": -240,
+      "YTFI": 771,
+      "XSHU": 104,
+      "YSHU": 50,
+      "XSVU": 55,
+      "YSVU": 115,
+      "XSHL": 74,
+      "YSHL": 40,
+      "XSVL": 48,
+      "YSVL": 176,
+      "XSHF": 129,
+      "YSHF": 47,
+      "XSVF": 61,
+      "YSVF": 201,
+      "XTTW": 5,
+      "YTTL": 57,
+      "YTOS": 10
     }
   }
 }

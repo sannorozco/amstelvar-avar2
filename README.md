@@ -219,3 +219,34 @@ see also (on the RobotoFlex AVAR2 repository):
   <dt><a href='http://github.com/googlefonts/roboto-flex-avar2/blob/main/Source/tools/mark-components.py'>mark-components.py</a></dt>
   <dd>Mark glyphs in the current font containing components with different colors depending on their components' nesting level.</dd>
 </dl>
+
+
+Blending
+--------
+
+The appropriate values for blending `opsz` `wght` `wdth` from parametric axes are calculated on a [separate repository](#) which contains the relevant data from the original Amstelvar1 source. The naming of UFO files was adjusted for easier parameter parsing (using underscores to separate parameters instead of hyphens), and all unnecessary files were deleted.
+
+### Adding a measurements file
+
+A separate measurement file was added for Amstelvar, with the same parameters used for measuring AmstelvarA2. This file is necessary because the contour structures of the two versions are different, and in most cases different point indexes must be used.
+
+### Reducing the designspace
+
+The intended designspace for AmstelvarA2 is smaller than the original Amstelvar designspace:
+
+|-------------|-------------|-------------|-------------|
+|             | opsz |      | wght |      | wdth |      |
+|-------------|-------------|-------------|-------------|
+| project     | min  | max  | min  | max  | min  | max  |
+|-------------|-------------|-------------|-------------|
+| Amstelvar   | 8    | 144  | 100  | 1000 | 50   | 125  |
+| AmstelvarA2 | 8    | 144  | 200  | 800  | 85   | 125  |
+|-------------|-------------|-------------|-------------|
+
+### Generating extrema instances for measuring
+
+In a simplified Amstelvar designspace containing only `opsz` `wght` `wdth` axes, we define a set of instances at the extreme locations of the AmstelvarA2 designspace, and build these instances as UFOs (see the `instances` subfolder).
+
+### Extracting measurements from instances
+
+We then use the script `extract-measurements.py` to go through all instances, collecting various measurements from each source. The result is stored in the file `blends.json` in the same folder as the sources. This file is used by the [AmstelvarA2 designspace builder](#) to create the final blend values for AmstelvarA2.
