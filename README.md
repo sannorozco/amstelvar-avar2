@@ -219,3 +219,50 @@ see also (on the RobotoFlex AVAR2 repository):
   <dt><a href='http://github.com/googlefonts/roboto-flex-avar2/blob/main/Source/tools/mark-components.py'>mark-components.py</a></dt>
   <dd>Mark glyphs in the current font containing components with different colors depending on their components' nesting level.</dd>
 </dl>
+
+
+Blending
+--------
+
+The appropriate values for blending `opsz` `wght` `wdth` from parametric axes are produced on a [separate repository](http://github.com/gferreira/amstelvar) which is a fork of the original Amstelvar source. [The naming of UFO files was adjusted for easier parameter parsing (using underscores to separate parameters instead of hyphens), and all unnecessary files were deleted.]
+
+A separate measurements file was added for Amstelvar, with the same parameters used for measuring AmstelvarA2. This file is needed because the contour structures of the two versions are different, and in most measurements different point indexes must be used.
+
+### Designspace reduction
+
+The intended designspace for AmstelvarA2 is smaller than the original Amstelvar designspace:
+
+<table>
+<tr>
+<th></th>
+<th colspan=2>Amstelvar</th>
+<th colspan=2>AmstelvarA2</th>
+</tr>
+<tr>
+<th>opsz</th>
+<td>8</td>
+<td>144</td>
+<td>8</td>
+<td>144</td>
+</tr>
+<tr>
+<th>wght</th>
+<td>100</td>
+<td>1000</td>
+<td>200</td>
+<td>800</td>
+</tr>
+<tr>
+<th>wdth</th>
+<td>50</td>
+<td>125</td>
+<td>85</td>
+<td>125</td>
+</tr>
+</table>
+
+We create a basic Amstelvar designspace with `opsz` `wght` `wdth` axes, and use it to produce the corner locations of the AmstelvarA2 designspace as instances.
+
+### Extracting measurements
+
+These instances are then measured to produce the `blends.json` file which is used by the AmstelvarA2 designspace builder.
