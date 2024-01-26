@@ -385,7 +385,7 @@ class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_a
         blendValue  = int(defaultName[4:])
         blendName   = self.blendedAxes[blendTag]['name']
         for tag in self.fences[defaultName]:
-            # get min/max fences values
+            # get min/max fence values
             valuesFence = [
                 self.fences[defaultName][tag]['min'],
                 self.fences[defaultName][tag]['max'],
@@ -412,35 +412,52 @@ class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_a
                 }
                 self.designspace.addAxisMapping(m)
 
-        # pin blended extrema (duovars)
+        # add fences for extrema
 
-        for styleName in self.fences.keys():
-            if styleName == defaultName:
-                continue
-            blendTag    = styleName[:4]
-            blendValue  = int(styleName[4:])
-            blendName   = self.blendedAxes[blendTag]['name']
-            for tag in self.fences[styleName]:
-                # get min/max parametric axis value from file names
-                valuesAxis = []
-                for ufo in self.parametricSources:
-                    if tag in ufo:
-                        value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                        valuesAxis.append(value)
-                assert len(valuesAxis)
-                valuesAxis.sort()
-                # create null mappings
-                for valueAxis in valuesAxis:
-                    m = AxisMappingDescriptor()
-                    m.inputLocation = {
-                        blendName : blendValue,
-                        tag       : valueAxis,
-                    }
-                    m.outputLocation = {
-                        blendName : blendValue,
-                        tag       : valueAxis,
-                    }
-                    self.designspace.addAxisMapping(m)
+        # for styleName in self.fences.keys():
+        #     if styleName == defaultName:
+        #         continue
+        #     blendTag    = styleName[:4]
+        #     blendValue  = int(styleName[4:])
+        #     blendName   = self.blendedAxes[blendTag]['name']
+        #     for tag in self.fences[styleName]:
+        #         # get min/max fence values
+        #         valuesFence = [
+        #             self.fences[defaultName][tag]['min'],
+        #             self.fences[defaultName][tag]['max'],
+        #         ]
+        #         # get min/max parametric axis value from file names
+        #         valuesAxis = []
+        #         for ufo in self.parametricSources:
+        #             if tag in ufo:
+        #                 value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+        #                 valuesAxis.append(value)
+        #         assert len(valuesAxis)
+        #         valuesAxis.sort()
+        #         # create null mappings
+        #         for i, valueFence in enumerate(valuesFence):
+        #             valueAxis  = valuesAxis[i]
+        #             m = AxisMappingDescriptor()
+        #             m.inputLocation = {
+        #                 blendName : blendValue,
+        #                 tag       : valueAxis,
+        #             }
+        #             m.outputLocation = {
+        #                 blendName : blendValue,
+        #                 tag       : valueFence,
+        #             }
+        #             self.designspace.addAxisMapping(m)
+
+        #             m = AxisMappingDescriptor()
+        #             m.inputLocation = {
+        #                 blendName : blendValue,
+        #                 tag       : valueAxis,
+        #             }
+        #             m.outputLocation = {
+        #                 blendName : blendValue,
+        #                 tag       : valueAxis,
+        #             }
+        #             self.designspace.addAxisMapping(m)
 
     def build(self):
         self.designspace = DesignSpaceDocument()
@@ -505,7 +522,7 @@ if __name__ == '__main__':
     D = AmstelvarA2DesignSpaceBuilder()
     D.build()
     D.save()
-    # D.buildInstances()
+    D.buildInstances()
 
     D1 = AmstelvarA2DesignSpaceBuilder_avar1()
     D1.build()
