@@ -224,29 +224,45 @@ see also (on the RobotoFlex AVAR2 repository):
 Blending
 --------
 
-The appropriate values for blending `opsz` `wght` `wdth` from parametric axes are calculated on a [separate repository](#) which contains the relevant data from the original Amstelvar1 source. The naming of UFO files was adjusted for easier parameter parsing (using underscores to separate parameters instead of hyphens), and all unnecessary files were deleted.
+The appropriate values for blending `opsz` `wght` `wdth` from parametric axes are produced on a [separate repository](http://github.com/gferreira/amstelvar) which is a fork of the original Amstelvar source. [The naming of UFO files was adjusted for easier parameter parsing (using underscores to separate parameters instead of hyphens), and all unnecessary files were deleted.]
 
-### Adding a measurements file
+A separate measurements file was added for Amstelvar, with the same parameters used for measuring AmstelvarA2. This file is needed because the contour structures of the two versions are different, and in most measurements different point indexes must be used.
 
-A separate measurement file was added for Amstelvar, with the same parameters used for measuring AmstelvarA2. This file is necessary because the contour structures of the two versions are different, and in most cases different point indexes must be used.
-
-### Reducing the designspace
+### Designspace reduction
 
 The intended designspace for AmstelvarA2 is smaller than the original Amstelvar designspace:
 
-|-------------|-------------|-------------|-------------|
-|             | opsz |      | wght |      | wdth |      |
-|-------------|-------------|-------------|-------------|
-| project     | min  | max  | min  | max  | min  | max  |
-|-------------|-------------|-------------|-------------|
-| Amstelvar   | 8    | 144  | 100  | 1000 | 50   | 125  |
-| AmstelvarA2 | 8    | 144  | 200  | 800  | 85   | 125  |
-|-------------|-------------|-------------|-------------|
+<table>
+<tr>
+<th></th>
+<th colspan=2>Amstelvar</th>
+<th colspan=2>AmstelvarA2</th>
+</tr>
+<tr>
+<th>opsz</th>
+<td>8</td>
+<td>144</td>
+<td>8</td>
+<td>144</td>
+</tr>
+<tr>
+<th>wght</th>
+<td>100</td>
+<td>1000</td>
+<td>200</td>
+<td>800</td>
+</tr>
+<tr>
+<th>wdth</th>
+<td>50</td>
+<td>125</td>
+<td>85</td>
+<td>125</td>
+</tr>
+</table>
 
-### Generating extrema instances for measuring
+We create a basic Amstelvar designspace with `opsz` `wght` `wdth` axes, and use it to produce the corner locations of the AmstelvarA2 designspace as instances.
 
-In a simplified Amstelvar designspace containing only `opsz` `wght` `wdth` axes, we define a set of instances at the extreme locations of the AmstelvarA2 designspace, and build these instances as UFOs (see the `instances` subfolder).
+### Extracting measurements
 
-### Extracting measurements from instances
-
-We then use the script `extract-measurements.py` to go through all instances, collecting various measurements from each source. The result is stored in the file `blends.json` in the same folder as the sources. This file is used by the [AmstelvarA2 designspace builder](#) to create the final blend values for AmstelvarA2.
+These instances are then measured to produce the `blends.json` file which is used by the AmstelvarA2 designspace builder.
