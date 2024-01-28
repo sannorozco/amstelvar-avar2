@@ -20,11 +20,11 @@
       <point x="459" y="-20"/>
       <point x="176" y="194"/>
       <point x="187" y="419" type="qcurve" smooth="yes"/>
-      <point x="200" y="683" type="line"/>
-      <point x="203" y="788"/>
-      <point x="169" y="856"/>
-      <point x="122" y="866" type="qcurve" smooth="yes"/>
-      <point x="56" y="880" type="line"/>
+      <point x="200" y="683" type="line" smooth="yes"/>
+      <point x="208" y="841"/>
+      <point x="170" y="950"/>
+      <point x="112" y="962" type="qcurve" smooth="yes"/>
+      <point x="56" y="974" type="line"/>
       <point x="56" y="974" type="line"/>
       <point x="238" y="1008" type="line"/>
       <point x="297" y="1008"/>
@@ -52,6 +52,8 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>1,0.18574,0.57340,0.50332</string>
     </dict>
   </lib>
 </glyph>
