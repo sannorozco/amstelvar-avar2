@@ -1,68 +1,71 @@
 # menuTitle: extract parametric blends from Amstelvar1 extrema
 
-import os, glob, json
-from variableValues.measurements import FontMeasurements, permille
+import os
+print(os)
 
-subfamilyName    = ['Roman', 'Italic'][0]
-baseFolder1      = '/Users/gferreira/hipertipo/fonts/amstelvar' # path to Amstelvar1 sources for measuring - see http://github.com/gferreira/amstelvar
-sourcesFolder1   = os.path.join(baseFolder1, subfamilyName)
-measurementsPath = os.path.join(sourcesFolder1, 'measurements.json')
-baseFolder2      = os.path.dirname(os.path.dirname(os.getcwd()))
-sourcesFolder2   = os.path.join(baseFolder2, 'Sources', subfamilyName)
-blendsPath       = os.path.join(sourcesFolder2, 'blends.json')
-parametricAxes   = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS'.split()
+# import os, glob, json
+# from variableValues.measurements import FontMeasurements, permille
 
-# define blended axes
+# subfamilyName    = ['Roman', 'Italic'][0]
+# baseFolder1      = '/Users/gferreira/hipertipo/fonts/amstelvar' # path to Amstelvar1 sources for measuring - see http://github.com/gferreira/amstelvar
+# sourcesFolder1   = os.path.join(baseFolder1, subfamilyName)
+# measurementsPath = os.path.join(sourcesFolder1, 'measurements.json')
+# baseFolder2      = os.path.dirname(os.path.dirname(os.getcwd()))
+# sourcesFolder2   = os.path.join(baseFolder2, 'Sources', subfamilyName)
+# blendsPath       = os.path.join(sourcesFolder2, 'blends.json')
+# parametricAxes   = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS'.split()
 
-blendedAxes = {
-    "opsz": {
-      "name"    : "Optical size",
-      "default" : 14,
-      "min"     : 8,
-      "max"     : 144,
-    },
-    "wght": {
-      "name"    : "Weight",
-      "default" : 400,
-      "min"     : 100,
-      "max"     : 1000,
-    },
-    "wdth": {
-      "name"    : "Width",
-      "default" : 100,
-      "min"     : 50,
-      "max"     : 125,
-    }
-}
+# # define blended axes
 
-# extract measurements from Amstelvar1
+# blendedAxes = {
+#     "opsz": {
+#       "name"    : "Optical size",
+#       "default" : 14,
+#       "min"     : 8,
+#       "max"     : 144,
+#     },
+#     "wght": {
+#       "name"    : "Weight",
+#       "default" : 400,
+#       "min"     : 100,
+#       "max"     : 1000,
+#     },
+#     "wdth": {
+#       "name"    : "Width",
+#       "default" : 100,
+#       "min"     : 50,
+#       "max"     : 125,
+#     }
+# }
 
-assert os.path.exists(measurementsPath)
-ufos = glob.glob(f'{sourcesFolder1}/*.ufo')
+# # extract measurements from Amstelvar1
 
-blendedSources = {}
-for ufoPath in sorted(ufos):
-    assert os.path.exists(ufoPath)
-    fontName = os.path.splitext(os.path.split(ufoPath)[-1])[0]
-    styleName = '_'.join(fontName.split('_')[1:])
-    # don't include the default
-    if styleName == 'wght400':
-        continue
-    # ignore GRAD sources
-    if 'GRAD' in styleName:
-        continue
-    f = OpenFont(ufoPath, showInterface=False)
-    M = FontMeasurements()
-    M.read(measurementsPath)
-    M.measure(f)
-    blendedSources[styleName] = { k: permille(v, 2000) for k, v in M.values.items() if k in parametricAxes }
+# assert os.path.exists(measurementsPath)
+# ufos = glob.glob(f'{sourcesFolder1}/*.ufo')
 
-# save measurements to JSON blends file
+# blendedSources = {}
+# for ufoPath in sorted(ufos):
+#     assert os.path.exists(ufoPath)
+#     fontName = os.path.splitext(os.path.split(ufoPath)[-1])[0]
+#     styleName = '_'.join(fontName.split('_')[1:])
+#     # don't include the default
+#     if styleName == 'wght400':
+#         continue
+#     # ignore GRAD sources
+#     if 'GRAD' in styleName:
+#         continue
+#     f = OpenFont(ufoPath, showInterface=False)
+#     M = FontMeasurements()
+#     M.read(measurementsPath)
+#     M.measure(f)
+#     blendedSources[styleName] = { k: permille(v, 2000) for k, v in M.values.items() if k in parametricAxes }
 
-blendsDict = {
-    'axes'    : blendedAxes,
-    'sources' : blendedSources,
-}
+# # save measurements to JSON blends file
 
-with open(blendsPath, 'w', encoding='utf-8') as f:
-    json.dump(blendsDict, f, indent=2)
+# blendsDict = {
+#     'axes'    : blendedAxes,
+#     'sources' : blendedSources,
+# }
+
+# with open(blendsPath, 'w', encoding='utf-8') as f:
+#     json.dump(blendsDict, f, indent=2)

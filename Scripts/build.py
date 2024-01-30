@@ -519,10 +519,10 @@ class AmstelvarA2DesignSpaceBuilder_avar2_fences_wght200(AmstelvarA2DesignSpaceB
 
 if __name__ == '__main__':
 
-    D = AmstelvarA2DesignSpaceBuilder()
-    D.build()
-    D.save()
-    D.buildInstances()
+    # D = AmstelvarA2DesignSpaceBuilder()
+    # D.build()
+    # D.save()
+    # D.buildInstances()
 
     D1 = AmstelvarA2DesignSpaceBuilder_avar1()
     D1.build()
