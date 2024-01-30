@@ -236,7 +236,7 @@ class AmstelvarA2DesignSpaceBuilder:
             return
         self.designspace.write(self.designspacePath)
 
-    def buildVariableFont(self):
+    def buildVariableFont(self, subset=False):
 
         print(f'generating variable font for {self.designspaceName}...')
 
@@ -253,13 +253,14 @@ class AmstelvarA2DesignSpaceBuilder:
         assert os.path.exists(self.varFontPath)
 
         # subset ascii variable font with pyftsubset
-        print('\tsubsetting variable font...')
-        font = TTFont(self.varFontPath)
-        asciiGlyphs = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'.split()
-        subsetter = Subsetter()
-        subsetter.populate(glyphs=asciiGlyphs)
-        subsetter.subset(font)
-        font.save(self.varFontPath)
+        if subset:
+            print('\tsubsetting variable font...')
+            asciiGlyphs = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'.split()
+            font = TTFont(self.varFontPath)
+            subsetter = Subsetter()
+            subsetter.populate(glyphs=asciiGlyphs)
+            subsetter.subset(font)
+            font.save(self.varFontPath)
 
         print('...done.\n')
 
