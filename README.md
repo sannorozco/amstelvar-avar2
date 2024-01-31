@@ -35,9 +35,7 @@ Fonts
 ```
 Fonts
 ├── AmstelvarA2-Roman_avar1.ttf
-├── AmstelvarA2-Roman_avar2.ttf
-├── AmstelvarA2-Roman_avar2_fences.ttf
-└── AmstelvarA2-Roman_avar2_fences-wght200.ttf
+└── AmstelvarA2-Roman_avar2.ttf
 ```
 
 <dl>
@@ -47,12 +45,14 @@ Fonts
   <dt>AmstelvarA2-Roman_avar2.ttf</dt>
   <dd>Variable font in avar2 format.<br/>
     Blended axes are created by defining mappings from parametric axes to extrema input values.</dd>
+  <!--
   <dt>AmstelvarA2-Roman_avar2_fences.ttf</dt>
   <dd>Attempt to build an avar2 font with “fences” to restrict the limits of parametric values at blended extrema locations.<br/>
     ⚠️ <em>The added fences work at the default location, but not at the blended extrema.</em>*</dd>
   <dt>AmstelvarA2-Roman_avar2_fences-wght200.ttf</dt>
   <dd>Attempt to implement fences at one blended extreme only, for testing purposes.<br/>
     ⚠️ <em>The fences added for location <code>wght200</code> do not work as intended.</em>*</dd></dd>
+  -->
 </dl>
 
 \* see [Implementing fences](https://github.com/googlefonts/amstelvar-avar2/issues/4)
@@ -132,9 +132,7 @@ Roman
 │   └── AmstelvarA2-Roman_wght800.ufo
 ├── AmstelvarA2-Roman.designspace
 ├── AmstelvarA2-Roman_avar1.designspace
-├── AmstelvarA2-Roman_avar2.designspace
-├── AmstelvarA2-Roman_avar2_fences.designspace
-└── AmstelvarA2-Roman_avar2_fences-wght200.designspace
+└── AmstelvarA2-Roman_avar2.designspace
 ```
 
 <dl>
@@ -150,7 +148,7 @@ Roman
   This data is used to build the avar2 designspace.</dd>
 <dt>fences.json</dt>
 <dd>Standalone JSON file containing definitions of min/max fence values for parametric values at blended sources.<br/>
-  This data is used to add mappings for fences to the avar2 designspace (experimental).</dd>
+  This data is used to add mappings for fences to the avar2 designspace. (experimental)</dd>
 <dt>features</dt>
 <dd>Subfolder with files containing OpenType code which can be linked to the source fonts.<br/>
   <em>Currently not used when building the variable fonts.</em></dd>
@@ -166,12 +164,14 @@ Roman
 <dt>AmstelvarA2-Roman_avar2.designspace
 <dd>Designspace for building avar2 variable font.<br/>
   Includes avar2 mappings which define blended sources from parametric values.</dd>
+<!--
 <dt>AmstelvarA2-Roman_avar2_fences.designspace
 <dd>Experimental designspace containing avar2 mappings for fences.<br/>
   Includes avar2 mappings of fences for the default and blended extrema.</dd>
 <dt>AmstelvarA2-Roman_avar2_fences-wght200.designspace
 <dd>Experimental designspace containing avar2 fence mappings for one blended extreme only (wght200).<br/>
   Used while debugging avar2 implementation of fences.</dd>
+-->
 </dl>
 
 
