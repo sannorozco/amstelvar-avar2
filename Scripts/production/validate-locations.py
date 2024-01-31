@@ -5,8 +5,8 @@ folder = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(folder, 'Sources', 'Roman')
 designspacePath = os.path.join(sourcesFolder, 'AmstelvarA2-Roman.designspace')
 
-_instances = False
-_sources   = True
+_instances = True
+_sources   = False
 
 assert os.path.exists(designspacePath)
 

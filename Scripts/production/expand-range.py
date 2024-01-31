@@ -33,9 +33,9 @@ designspacePath  = os.path.join(sourcesFolder, 'expand-range.designspace')
 
 sources = glob.glob(f'{sourcesFolder}/*.ufo')
 
-axisName1 = 'XTRA'
-factor    = 0.1
-direction = 1
+axisName1 = 'YSVF'
+factor    = 0.5
+direction = 0
 
 # make new designspace document
 D = DesignSpaceDocument()
@@ -110,7 +110,7 @@ for source in D.sources:
 
 # add instance1 as source at max scale
 src3 = SourceDescriptor()
-src3.path       = axisSource
+src3.path       = instancePath1
 src3.familyName = familyName
 src3.location = { axisName1 : 0.0 , axisName2 : 1.0 }
 D.addSource(src3)
@@ -119,25 +119,34 @@ D.addSource(src3)
 D.instances = []
 
 # add instance2 as new source at max scale
-styleName2 = 'instance2'
+styleName2 = f"{axisName1}{['min', 'max'][direction]}"
 i2 = InstanceDescriptor()
-i2.familyName     = familyName
-i2.styleName      = styleName2
-i2.name           = styleName2
-i2.designLocation = { axisName1 : 1.0 , axisName2 : 1.0 }
-i2.filename       = os.path.join('instances', f'{styleName2}.ufo')
+i2.familyName = familyName
+i2.styleName  = styleName2
+i2.name       = styleName2
+i2.location   = { axisName1 : 1.0 , axisName2 : 1.0 }
+i2.filename   = os.path.join('instances', f'{familyName}-{subFamilyName}_{styleName2}.ufo')
 D.addInstance(i2)
 
 # save the designspace again
 D.write(designspacePath)
 
 ufoProcessor.build(designspacePath)
-instancePath2 = os.path.join(sourcesFolder, 'instances', f'{styleName2}.ufo')
+instancePath2 = os.path.join(sourcesFolder, 'instances', f'{familyName}-{subFamilyName}_{styleName2}.ufo')
 
 assert os.path.exists(instancePath2)
 
-# get measurements from genereted font
+# get glyph order from default font
+defaultFont = OpenFont(defaultPath, showInterface=False)
+glyphOrder = defaultFont.glyphOrder
+defaultFont.close()
+
+# open generated font and set glyph order
 f = OpenFont(instancePath2, showInterface=False)
+f.glyphOrder = glyphOrder
+f.save()
+
+# get measurements from generated font
 measurements = FontMeasurements()
 measurements.read(measurementsPath)
 measurements.measure(f)
@@ -149,4 +158,6 @@ print()
 # remove all generated files 
 os.remove(designspacePath)
 shutil.rmtree(instancePath1)
-shutil.rmtree(instancePath2)
+# shutil.rmtree(instancePath2)
+
+# f.openInterface()
