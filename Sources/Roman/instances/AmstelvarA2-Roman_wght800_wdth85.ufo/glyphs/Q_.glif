@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Q" format="2">
-  <advance width="1669"/>
+  <advance width="1668"/>
   <unicode hex="0051"/>
   <anchor x="834" y="0" name="bottom"/>
   <anchor x="869" y="1492" name="top"/>
@@ -11,9 +11,9 @@
       <point x="513" y="1524"/>
       <point x="834" y="1524" type="qcurve" smooth="yes"/>
       <point x="1156" y="1524"/>
-      <point x="1589" y="1116"/>
-      <point x="1589" y="754" type="qcurve" smooth="yes"/>
-      <point x="1589" y="388"/>
+      <point x="1588" y="1116"/>
+      <point x="1588" y="754" type="qcurve" smooth="yes"/>
+      <point x="1588" y="388"/>
       <point x="1138" y="-20"/>
       <point x="834" y="-20" type="qcurve" smooth="yes"/>
       <point x="503" y="-20"/>
@@ -26,7 +26,7 @@
       <point x="832" y="116" type="qcurve" smooth="yes"/>
       <point x="999" y="116"/>
       <point x="1181" y="462"/>
-      <point x="1183" y="747" type="qcurve" smooth="yes"/>
+      <point x="1182" y="747" type="qcurve" smooth="yes"/>
       <point x="1184" y="1017"/>
       <point x="993" y="1365"/>
       <point x="836" y="1365" type="qcurve" smooth="yes"/>
@@ -35,17 +35,17 @@
     </contour>
     <contour>
       <point x="530" y="74" type="qcurve" identifier="jWZBD98qkQ"/>
-      <point x="1329" y="-195" type="line" identifier="7ZXZEQkAbx"/>
+      <point x="1328" y="-195" type="line" identifier="7ZXZEQkAbx"/>
       <point x="1364" y="-195"/>
-      <point x="1417" y="-97"/>
+      <point x="1416" y="-97"/>
       <point x="1437" y="-42" type="qcurve"/>
-      <point x="1545" y="-109" type="line"/>
+      <point x="1544" y="-109" type="line"/>
       <point x="1464" y="-320"/>
-      <point x="1322" y="-497"/>
-      <point x="1216" y="-497" type="qcurve" identifier="bSft9tBggp"/>
-      <point x="430" y="-229" type="line" identifier="aDYWDNvZlZ"/>
-      <point x="385" y="-229"/>
-      <point x="318" y="-276"/>
+      <point x="1321" y="-497"/>
+      <point x="1215" y="-497" type="qcurve" identifier="bSft9tBggp"/>
+      <point x="429" y="-229" type="line" identifier="aDYWDNvZlZ"/>
+      <point x="384" y="-229"/>
+      <point x="318" y="-275"/>
       <point x="280" y="-326" type="qcurve"/>
       <point x="193" y="-239" type="line"/>
       <point x="264" y="-88"/>
@@ -54,7 +54,7 @@
     <contour>
       <point x="592" y="-96" type="line"/>
       <point x="686" y="250" type="line"/>
-      <point x="816" y="201" type="line"/>
+      <point x="815" y="201" type="line"/>
       <point x="717" y="-137" type="line"/>
     </contour>
   </outline>
@@ -133,8 +133,19 @@
           <string>XUCR</string>
         </dict>
       </dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>7ZXZEQkAbx</string>
+          <string>bSft9tBggp</string>
+        </array>
+        <array>
+          <string>jWZBD98qkQ</string>
+          <string>aDYWDNvZlZ</string>
+        </array>
+      </array>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
-      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XTSP-100.ufo/glyphs</string>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

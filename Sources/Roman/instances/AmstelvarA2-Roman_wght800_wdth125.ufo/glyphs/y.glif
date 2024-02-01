@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="y" format="2">
-  <advance width="1492"/>
+  <advance width="1491"/>
   <unicode hex="0079"/>
-  <anchor x="943" y="0" name="bottom"/>
+  <anchor x="944" y="0" name="bottom"/>
   <anchor x="810" y="1032" name="top"/>
   <outline>
     <contour>
@@ -15,13 +15,13 @@
       <point x="807" y="323" type="line"/>
       <point x="857" y="210" type="line"/>
       <point x="867" y="210" type="line"/>
-      <point x="914" y="323" type="line"/>
-      <point x="1016" y="561" type="line"/>
-      <point x="1169" y="880" type="line"/>
+      <point x="913" y="323" type="line"/>
+      <point x="1015" y="561" type="line"/>
+      <point x="1168" y="880" type="line"/>
       <point x="941" y="910" type="line"/>
       <point x="941" y="1032" type="line"/>
-      <point x="1530" y="1032" type="line"/>
-      <point x="1530" y="910" type="line"/>
+      <point x="1529" y="1032" type="line"/>
+      <point x="1529" y="910" type="line"/>
       <point x="1318" y="875" type="line"/>
       <point x="1134" y="515" type="line"/>
       <point x="753" y="-287" type="line" smooth="yes"/>
@@ -32,7 +32,7 @@
       <point x="285" y="-357" type="line"/>
       <point x="376" y="-357" type="line" smooth="yes"/>
       <point x="445" y="-357"/>
-      <point x="813" y="-416"/>
+      <point x="605" y="-295"/>
       <point x="658" y="-187" type="qcurve" smooth="yes"/>
       <point x="771" y="44" type="line"/>
       <point x="559" y="44" type="line"/>
@@ -66,6 +66,8 @@
           <string>YOLC</string>
         </dict>
       </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

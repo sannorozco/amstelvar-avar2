@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Q" format="2">
-  <advance width="1320"/>
+  <advance width="1319"/>
   <unicode hex="0051"/>
   <anchor x="672" y="0" name="bottom"/>
-  <anchor x="735" y="1486" name="top"/>
+  <anchor x="734" y="1486" name="top"/>
   <outline>
     <contour>
       <point x="93" y="746" type="qcurve" smooth="yes"/>
@@ -35,20 +35,20 @@
     </contour>
     <contour>
       <point x="424" y="-67" type="qcurve" identifier="jWZBD98qkQ"/>
-      <point x="982" y="-278" type="line" identifier="7ZXZEQkAbx"/>
+      <point x="981" y="-278" type="line" identifier="7ZXZEQkAbx"/>
       <point x="1030" y="-301"/>
-      <point x="1169" y="-226"/>
+      <point x="1169" y="-227"/>
       <point x="1206" y="-131" type="qcurve"/>
-      <point x="1225" y="-145" type="line"/>
+      <point x="1224" y="-145" type="line"/>
       <point x="1199" y="-255"/>
       <point x="1052" y="-377"/>
       <point x="951" y="-360" type="qcurve" identifier="bSft9tBggp"/>
-      <point x="405" y="-151" type="line" identifier="aDYWDNvZlZ"/>
+      <point x="404" y="-151" type="line" identifier="aDYWDNvZlZ"/>
       <point x="343" y="-135"/>
-      <point x="221" y="-189"/>
+      <point x="221" y="-188"/>
       <point x="178" y="-260" type="qcurve"/>
       <point x="160" y="-243" type="line"/>
-      <point x="208" y="-152"/>
+      <point x="208" y="-153"/>
       <point x="327" y="-67"/>
     </contour>
     <contour>
@@ -133,8 +133,19 @@
           <string>XUCR</string>
         </dict>
       </dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>7ZXZEQkAbx</string>
+          <string>bSft9tBggp</string>
+        </array>
+        <array>
+          <string>jWZBD98qkQ</string>
+          <string>aDYWDNvZlZ</string>
+        </array>
+      </array>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
-      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XTSP-100.ufo/glyphs</string>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

@@ -6,7 +6,7 @@
     <axis tag="wdth" name="Width" minimum="85" maximum="125" default="100"/>
     <axis tag="XTSP" name="XTSP" minimum="-100" maximum="100" default="0"/>
     <axis tag="XOPQ" name="XOPQ" minimum="4" maximum="310" default="90"/>
-    <axis tag="XTRA" name="XTRA" minimum="208" maximum="508" default="400"/>
+    <axis tag="XTRA" name="XTRA" minimum="189" maximum="606" default="400"/>
     <axis tag="YOPQ" name="YOPQ" minimum="4" maximum="311" default="62"/>
     <axis tag="YTUC" name="YTUC" minimum="541" maximum="875" default="750"/>
     <axis tag="YTLC" name="YTLC" minimum="436" maximum="594" default="511"/>
@@ -21,14 +21,14 @@
     <axis tag="YSHL" name="YSHL" minimum="0" maximum="140" default="40"/>
     <axis tag="XSVL" name="XSVL" minimum="0" maximum="98" default="48"/>
     <axis tag="YSVL" name="YSVL" minimum="146" maximum="251" default="176"/>
-    <axis tag="XSHF" name="XSHF" minimum="0" maximum="179" default="129"/>
+    <axis tag="XSHF" name="XSHF" minimum="0" maximum="204" default="129"/>
     <axis tag="YSHF" name="YSHF" minimum="0" maximum="147" default="47"/>
     <axis tag="XSVF" name="XSVF" minimum="0" maximum="131" default="61"/>
-    <axis tag="YSVF" name="YSVF" minimum="84" maximum="251" default="201"/>
+    <axis tag="YSVF" name="YSVF" minimum="84" maximum="276" default="201"/>
     <axis tag="XTTW" name="XTTW" minimum="0" maximum="30" default="5"/>
     <axis tag="YTTL" name="YTTL" minimum="0" maximum="104" default="57"/>
     <axis tag="YTOS" name="YTOS" minimum="0" maximum="25" default="10"/>
-    <axis tag="XUCS" name="XUCS" minimum="109" maximum="195" default="145"/>
+    <axis tag="XUCS" name="XUCS" minimum="76" maximum="205" default="145"/>
     <mappings>
       <mapping>
         <input>
@@ -869,7 +869,7 @@
           <dimension name="XTTW" xvalue="5"/>
           <dimension name="YTTL" xvalue="57"/>
           <dimension name="YTOS" xvalue="10"/>
-          <dimension name="XUCS" xvalue="109"/>
+          <dimension name="XUCS" xvalue="76"/>
         </output>
       </mapping>
       <mapping>
@@ -900,7 +900,7 @@
           <dimension name="XTTW" xvalue="5"/>
           <dimension name="YTTL" xvalue="57"/>
           <dimension name="YTOS" xvalue="10"/>
-          <dimension name="XUCS" xvalue="195"/>
+          <dimension name="XUCS" xvalue="205"/>
         </output>
       </mapping>
     </mappings>
@@ -990,10 +990,10 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTRA208.ufo" familyname="AmstelvarA2" stylename="XTRA208">
+    <source filename="AmstelvarA2-Roman_XTRA189.ufo" familyname="AmstelvarA2" stylename="XTRA189">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="208"/>
+        <dimension name="XTRA" xvalue="189"/>
         <dimension name="YOPQ" xvalue="62"/>
         <dimension name="YTUC" xvalue="750"/>
         <dimension name="YTLC" xvalue="511"/>
@@ -1018,10 +1018,10 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTRA508.ufo" familyname="AmstelvarA2" stylename="XTRA508">
+    <source filename="AmstelvarA2-Roman_XTRA606.ufo" familyname="AmstelvarA2" stylename="XTRA606">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="508"/>
+        <dimension name="XTRA" xvalue="606"/>
         <dimension name="YOPQ" xvalue="62"/>
         <dimension name="YTUC" xvalue="750"/>
         <dimension name="YTLC" xvalue="511"/>
@@ -1830,34 +1830,6 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XSHF179.ufo" familyname="AmstelvarA2" stylename="XSHF179">
-      <location>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="400"/>
-        <dimension name="YOPQ" xvalue="62"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-        <dimension name="XSHU" xvalue="104"/>
-        <dimension name="YSHU" xvalue="50"/>
-        <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="174"/>
-        <dimension name="XSHL" xvalue="74"/>
-        <dimension name="YSHL" xvalue="40"/>
-        <dimension name="XSVL" xvalue="48"/>
-        <dimension name="YSVL" xvalue="176"/>
-        <dimension name="XSHF" xvalue="179"/>
-        <dimension name="YSHF" xvalue="47"/>
-        <dimension name="XSVF" xvalue="61"/>
-        <dimension name="YSVF" xvalue="201"/>
-        <dimension name="XTTW" xvalue="5"/>
-        <dimension name="YTTL" xvalue="57"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="145"/>
-      </location>
-    </source>
     <source filename="AmstelvarA2-Roman_XSHF0.ufo" familyname="AmstelvarA2" stylename="XSHF0">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
@@ -1877,6 +1849,34 @@
         <dimension name="XSVL" xvalue="48"/>
         <dimension name="YSVL" xvalue="176"/>
         <dimension name="XSHF" xvalue="0"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XSHF204.ufo" familyname="AmstelvarA2" stylename="XSHF204">
+      <location>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="204"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
         <dimension name="YSVF" xvalue="201"/>
@@ -2026,7 +2026,7 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YSVF251.ufo" familyname="AmstelvarA2" stylename="YSVF251">
+    <source filename="AmstelvarA2-Roman_YSVF276.ufo" familyname="AmstelvarA2" stylename="YSVF276">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
@@ -2047,7 +2047,7 @@
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
-        <dimension name="YSVF" xvalue="251"/>
+        <dimension name="YSVF" xvalue="276"/>
         <dimension name="XTTW" xvalue="5"/>
         <dimension name="YTTL" xvalue="57"/>
         <dimension name="YTOS" xvalue="10"/>
@@ -2222,7 +2222,7 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XUCS195.ufo" familyname="AmstelvarA2" stylename="XUCS195">
+    <source filename="AmstelvarA2-Roman_XUCS76.ufo" familyname="AmstelvarA2" stylename="XUCS76">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
@@ -2247,10 +2247,10 @@
         <dimension name="XTTW" xvalue="5"/>
         <dimension name="YTTL" xvalue="57"/>
         <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="195"/>
+        <dimension name="XUCS" xvalue="76"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XUCS109.ufo" familyname="AmstelvarA2" stylename="XUCS109">
+    <source filename="AmstelvarA2-Roman_XUCS205.ufo" familyname="AmstelvarA2" stylename="XUCS205">
       <location>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
@@ -2275,7 +2275,7 @@
         <dimension name="XTTW" xvalue="5"/>
         <dimension name="YTTL" xvalue="57"/>
         <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="109"/>
+        <dimension name="XUCS" xvalue="205"/>
       </location>
     </source>
   </sources>
