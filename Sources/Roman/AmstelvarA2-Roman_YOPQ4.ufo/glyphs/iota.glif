@@ -5,27 +5,29 @@
   <anchor x="287" y="1000" name="GRKtop"/>
   <outline>
     <contour>
-      <point x="379" y="-8" type="line"/>
-      <point x="283" y="-8"/>
-      <point x="183" y="87"/>
-      <point x="184" y="206" type="qcurve" smooth="yes"/>
-      <point x="186" y="470" type="line"/>
+      <point x="320" y="-8" type="line"/>
+      <point x="238" y="-8"/>
+      <point x="184" y="78"/>
+      <point x="184" y="163" type="qcurve"/>
+      <point x="184" y="470" type="line"/>
       <point x="176" y="979" type="line"/>
-      <point x="337" y="1000" type="line"/>
-      <point x="372" y="973" type="line"/>
-      <point x="352" y="440" type="line"/>
-      <point x="352" y="146" type="line" smooth="yes"/>
-      <point x="352" y="81"/>
-      <point x="414" y="39"/>
-      <point x="468" y="39" type="qcurve" smooth="yes"/>
-      <point x="572" y="39" type="line"/>
-      <point x="572" y="32" type="line"/>
+      <point x="345" y="1000" type="line"/>
+      <point x="373" y="968" type="line"/>
+      <point x="352" y="530" type="line"/>
+      <point x="352" y="143" type="line" smooth="yes"/>
+      <point x="352" y="78"/>
+      <point x="414" y="36"/>
+      <point x="497" y="36" type="qcurve"/>
+      <point x="572" y="36" type="line"/>
+      <point x="572" y="29" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0.9855,0.0093,0.9992,1</string>
     </dict>
   </lib>
 </glyph>
