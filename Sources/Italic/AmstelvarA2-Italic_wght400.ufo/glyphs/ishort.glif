@@ -2,17 +2,14 @@
 <glyph name="ishort" format="2">
   <advance width="1171"/>
   <unicode hex="0439"/>
-  <note>
-u
-</note>
   <outline>
-    <component base="icyr"/>
-    <component base="breve.cyrcomb" xOffset="4.462295629594223" yOffset="21"/>
+    <component base="u"/>
+    <component base="breve.cyrcomb" xOffset="377.9999999999733"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>0,0.5,1,0.8</string>
     </dict>
   </lib>
 </glyph>

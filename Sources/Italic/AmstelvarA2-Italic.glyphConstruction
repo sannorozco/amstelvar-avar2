@@ -489,7 +489,6 @@ upsilondieresis        = upsilon + dieresiscomb@GRKtop                          
 upsilondieresistonos   = upsilon + dieresistonoscomb@GRKtop                                       | 0x03B0
 upsilontonos           = upsilon + tonoscomb@GRKtop                                               | 0x03CD
 
-
 # -------------------------------------
 #  C Y R I L L I C   L O W E R C A S E 
 # -------------------------------------
@@ -515,12 +514,13 @@ gje                    = ghe + acutecomb@top                                    
 ha                     = x                                                                        | 0x445
 hadescender            = x + cy-descendercomb@cy_descender                                        | 0x4b3
 hastroke-cy            = x + hacyr-stroke                                                         | 0x04FF
-igravecyr              = icyr + gravecomb@top                                                     | 0x45d
+icyr                   = u                                                                        | 0x0438
+ishort                 = u + breve.cyrcomb@top                                                 | 0x439
+igravecyr              = u + gravecomb@top                                                     | 0x45d
 ie                     = e                                                                        | 0x435
 iebrevecyr             = e + breve.cyrcomb@top                                                    | 0x4d7
 iemacroncyr            = e + macroncomb@top                                                       | 0xf511
 io                     = e + dieresiscomb@top                                                     | 0x451
-ishort                 = icyr + breve.cyrcomb@top                                                 | 0x439
 iukran                 = idotless + idot@top                                                      | 0x456
 je                     = jdotless + idot@top                                                      | 0x458
 kadescender            = ka + cy-descendercomb@cy_descender                                       | 0x49b
@@ -702,8 +702,8 @@ tilde.case                    = tildecomb.case ^ 1048
 tilde-stack                   = tildecomb ^ 1048
 tilde-stack.case              = tildecomb.case ^ 1048
 
-tonos                         = tonoscomb ^ 1048
-dieresistonos                 = dieresistonoscomb ^ 1048
+tonos                         = tonoscomb ^ 1048 | 0x0384 
+dieresistonos                 = dieresistonoscomb ^ 1048 | 0x0385 
 
 breve.cyr                     = breve.cyrcomb ^ 1048
 breve.cyr.case                = breve.cyrcomb.case ^ 1048

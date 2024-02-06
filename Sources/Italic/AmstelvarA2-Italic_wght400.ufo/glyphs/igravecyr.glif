@@ -2,17 +2,14 @@
 <glyph name="igravecyr" format="2">
   <advance width="1171"/>
   <unicode hex="045D"/>
-  <note>
-u
-</note>
   <outline>
-    <component base="icyr"/>
-    <component base="gravecomb" xOffset="101.4622956296108" yOffset="21"/>
+    <component base="u"/>
+    <component base="gravecomb" xOffset="474.9999999999899"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>0,0.5,1,0.8</string>
     </dict>
   </lib>
 </glyph>
