@@ -1,35 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="tau" format="2">
-  <advance width="889"/>
+  <advance width="759"/>
   <unicode hex="03C4"/>
   <outline>
     <contour>
-      <point x="861" y="826" type="line"/>
-      <point x="16" y="848" type="line"/>
-      <point x="16" y="942" type="line"/>
-      <point x="162" y="990" type="line"/>
-      <point x="850" y="1010" type="line"/>
-      <point x="877" y="976" type="line"/>
+      <point x="15" y="846" type="line"/>
+      <point x="15" y="920" type="line"/>
+      <point x="161" y="1000" type="line"/>
+      <point x="724" y="1000" type="line"/>
+      <point x="749" y="964" type="line"/>
+      <point x="735" y="846" type="line"/>
     </contour>
     <contour>
-      <point x="580" y="-8" type="line"/>
-      <point x="504" y="-8"/>
-      <point x="412" y="106"/>
-      <point x="418" y="273" type="qcurve" smooth="yes"/>
-      <point x="441" y="917" type="line"/>
-      <point x="448" y="917" type="line"/>
-      <point x="426" y="275" type="line" smooth="yes"/>
-      <point x="422" y="158"/>
-      <point x="562" y="109"/>
-      <point x="639" y="109" type="qcurve" smooth="yes"/>
-      <point x="763" y="109" type="line"/>
-      <point x="763" y="29" type="line"/>
+      <point x="503" y="-8" type="line"/>
+      <point x="425" y="-8"/>
+      <point x="370" y="77"/>
+      <point x="370" y="170" type="qcurve" smooth="yes"/>
+      <point x="370" y="917" type="line"/>
+      <point x="376" y="917" type="line"/>
+      <point x="376" y="218" type="line" smooth="yes"/>
+      <point x="376" y="150"/>
+      <point x="441" y="109"/>
+      <point x="512" y="109" type="qcurve" smooth="yes"/>
+      <point x="636" y="109" type="line"/>
+      <point x="636" y="29" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0.9855,0.0093,0.9992,1</string>
     </dict>
   </lib>
 </glyph>
