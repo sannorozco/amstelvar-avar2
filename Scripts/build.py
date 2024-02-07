@@ -8,6 +8,9 @@ import ufoProcessor # upgrade to UFOOperator
 from variableValues.measurements import FontMeasurements, permille
 
 
+SUBFAMILY = ['Roman', 'Italic'][1]
+
+
 class AmstelvarA2DesignSpaceBuilder:
     '''
     Simple parametric designspace for use while designing.
@@ -21,7 +24,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
     '''
     familyName      = 'AmstelvarA2'
-    subFamilyName   = ['Roman', 'Italic'][0]
+    subFamilyName   = SUBFAMILY
     defaultName     = 'wght400'
     parametricAxes  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
@@ -470,48 +473,51 @@ class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_a
         self.addParametricSources()
 
 
-class AmstelvarA2DesignSpaceBuilder_avar2_fences_wght200(AmstelvarA2DesignSpaceBuilder_avar2_fences):
+class AmstelvarA2DesignSpaceInitializer(AmstelvarA2DesignSpaceBuilder):
 
-    designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_fences-wght200.designspace')
+    # designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_init.designspace')
 
-    def addMappingsFences(self):
+    @property
+    def defaultLocation(self):
+        return { name: 0 for name in self.parametricAxes }
 
-        for styleName in self.fences.keys():
-            if styleName == 'wght200':
-                blendTag   = styleName[:4]
-                blendName  = self.blendedAxes[blendTag]['name']
-                blendValue = int(styleName[4:])
-                for tag in self.fences[styleName]:
-                    # get min/max fences values
-                    valuesFence = [
-                        self.fences[styleName][tag]['min'],
-                        self.fences[styleName][tag]['max'],
-                    ]
-                    # get min/max parametric axis value from file names
-                    valuesAxis = []
-                    for ufo in self.parametricSources:
-                        if tag in ufo:
-                            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                            valuesAxis.append(value)
-                    assert len(valuesAxis)
-                    valuesAxis.sort()
+    def addParametricAxes(self):
+        for name in self.parametricAxes:
+            a = AxisDescriptor()
+            a.name    = name
+            a.tag     = name
+            a.minimum = -1.0
+            a.maximum = 1.0
+            a.default = 0
+            self.designspace.addAxis(a)
 
-                    for i, valueFence in enumerate(valuesFence):
-                        valueAxis  = valuesAxis[i]
-                        m = AxisMappingDescriptor()
+    def addParametricSources(self):
+        for name in self.parametricAxes:
+            for value in ['min', 'max']:
+                ufoPath = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{name}{value}.ufo')
+                src = SourceDescriptor()
+                src.path       = ufoPath
+                src.familyName = self.familyName
+                L = self.defaultLocation.copy()
+                src.styleName  = f'{name}{value}'
+                L[name] = -1.0 if value == 'min' else 1.0
+                src.location = L
+                self.designspace.addSource(src)
 
-                        inputLocation = {}
-                        inputLocation[blendName] = blendValue
-                        inputLocation[tag] = valueAxis
+    def buildParametricSources(self):
+        for name in self.parametricAxes:
+            for value in ['min', 'max']:
+                ufoPath = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{name}{value}.ufo')
+                if os.path.exists(ufoPath):
+                    shutil.rmtree(ufoPath)
+                shutil.copytree(self.defaultUFO, ufoPath)
 
-                        outputLocation = {}
-                        outputLocation[blendName] = blendValue
-                        outputLocation[tag] = valueFence
-
-                        m.inputLocation  = inputLocation
-                        m.outputLocation = outputLocation
-
-                        self.designspace.addAxisMapping(m)
+    def build(self):
+        self.designspace = DesignSpaceDocument()
+        self.addParametricAxes()
+        self.addDefaultSource()
+        self.addParametricSources()
+        self.buildParametricSources()
 
 
 # -----
@@ -525,22 +531,21 @@ if __name__ == '__main__':
     # D.save()
     # D.buildInstances()
 
-    D1 = AmstelvarA2DesignSpaceBuilder_avar1()
-    D1.build()
-    D1.save()
-    D1.buildVariableFont()
+    D0 = AmstelvarA2DesignSpaceInitializer()
+    D0.build()
+    D0.save()
 
-    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    D2.build()
-    D2.save()
-    D2.buildVariableFont()
+    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
+    # D1.build()
+    # D1.save()
+    # D1.buildVariableFont()
+
+    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    # D2.build()
+    # D2.save()
+    # D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
     # D3.save()
     # D3.buildVariableFont()
-
-    # D4 = AmstelvarA2DesignSpaceBuilder_avar2_fences_wght200()
-    # D4.build()
-    # D4.save()
-    # D4.buildVariableFont()
