@@ -5,7 +5,7 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 from hTools3.modules.accents import buildAccentedGlyphs
 
 familyName    = 'AmstelvarA2'
-subFamilyName = 'Roman'
+subFamilyName = ['Roman', 'Italic'][1]
 sourceName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
