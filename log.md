@@ -4,6 +4,7 @@ AmstelvarA2 Log
 Phase III
 ---------
 
+- created `asciialpha` branch to synch with Google repository
 - disabled ASCII subsetting; variable fonts now contain the full glyph set
 - expanded range for parametric axes XTRA XUCS XSHF YSVF (some issues with XTRA max)
 - fixed vertical serifs XSV* YSV* min (parameters must remain independent)

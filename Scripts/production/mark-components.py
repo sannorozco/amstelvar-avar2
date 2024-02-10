@@ -7,7 +7,7 @@ yellow : one component only
 
 '''
 
-alpha = 0.8
+alpha = 0.5
 
 f = CurrentFont()
 
@@ -27,12 +27,12 @@ for g in f:
     if not(g.components):
         continue
     if len(g.components) == 1:
-        g.markColor = 1, 1, 0, alpha
+        g.markColor = 1, 0.8, 0, alpha
     else:
         levels = getNestingLevels(g)
         if levels > 1:
             g.markColor = 1, 0, 0, alpha
         else:
-            g.markColor = 0, 0.5, 1, alpha
+            g.markColor = 0, 0.6, 1, alpha
 
 f.changed()
