@@ -12,60 +12,11 @@ familyName    = 'AmstelvarA2'
 subFamilyName = 'Roman'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
-glyphConstructionPath = os.path.join(baseFolder, 'Sources', 'AmstelvarA2.glyphConstruction')
+glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = 'Adieresiscyr Abrevecyr'.split()
+glyphNames = 'Kje'.split()
     
-targetStyles = [
-    'XOPQ4',
-    'XOPQ310',
-    'XSHF0',
-    'XSHF179',
-    'XSHL0',
-    'XSHL124',
-    'XSHU0',
-    'XSHU154',
-    'XSVF0',
-    'XSVF131',
-    'XSVL0',
-    'XSVL98',
-    'XSVU0',
-    'XSVU130',
-    'XTRA208',
-    'XTRA508',
-    'XTSP-100',
-    'XTSP100',
-    'XTTW0',
-    'XTTW30',
-    'YOPQ4',
-    'YOPQ311',
-    'YSHF0',
-    'YSHF147',
-    'YSHL0',
-    'YSHL140',
-    'YSHU0',
-    'YSHU150',
-    'YSVF84',
-    'YSVF251',
-    'YSVL146',
-    'YSVL251',
-    'YSVU0',
-    'YSVU165',
-    'YTAS665',
-    'YTAS875',
-    'YTDE-100',
-    'YTDE-310',
-    'YTFI281',
-    'YTFI896',
-    'YTLC436',
-    'YTLC594',
-    'YTOS0',
-    'YTOS25',
-    'YTTL0',
-    'YTTL104',
-    'YTUC541',
-    'YTUC875',
-]
+targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f in glob.glob(f'{sourcesFolder}/*.ufo')]
 
 # get glyph constructions
 with open(glyphConstructionPath, 'r') as f:
