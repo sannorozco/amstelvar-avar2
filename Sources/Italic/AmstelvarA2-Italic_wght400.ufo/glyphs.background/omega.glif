@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="omega" format="2">
-  <advance width="1417"/>
+  <advance width="500"/>
   <unicode hex="03C9"/>
   <anchor x="762" y="1000" name="GRKtop"/>
   <outline>
     <contour>
+      <point x="711" y="343"/>
+      <point x="468" y="-18"/>
       <point x="292" y="-17" type="qcurve"/>
       <point x="141" y="-16"/>
       <point x="-18" y="180"/>
@@ -20,20 +22,10 @@
       <point x="233" y="127"/>
       <point x="315" y="127" type="qcurve"/>
       <point x="406" y="127"/>
-      <point x="562" y="256"/>
-      <point x="721" y="692" type="qcurve"/>
-      <point x="768" y="603" type="line"/>
-      <point x="711" y="343"/>
-      <point x="468" y="-18"/>
-    </contour>
-    <contour>
-      <point x="844" y="-17" type="qcurve"/>
-      <point x="653" y="-17"/>
-      <point x="537" y="355"/>
-      <point x="584" y="667" type="qcurve"/>
-      <point x="675" y="692" type="line"/>
-      <point x="721" y="692" type="line"/>
-      <point x="672" y="300"/>
+      <point x="546" y="256"/>
+      <point x="614" y="420" type="qcurve"/>
+      <point x="697" y="420" type="line"/>
+      <point x="684" y="275"/>
       <point x="752" y="127"/>
       <point x="851" y="127" type="qcurve" smooth="yes"/>
       <point x="972" y="127"/>
@@ -48,6 +40,13 @@
       <point x="1290" y="596" type="qcurve" smooth="yes"/>
       <point x="1290" y="332"/>
       <point x="1048" y="-17"/>
+      <point x="844" y="-17" type="qcurve"/>
+      <point x="653" y="-17"/>
+      <point x="537" y="355"/>
+      <point x="584" y="667" type="qcurve"/>
+      <point x="675" y="692" type="line"/>
+      <point x="721" y="692" type="line"/>
+      <point x="768" y="603" type="line"/>
     </contour>
   </outline>
 </glyph>
