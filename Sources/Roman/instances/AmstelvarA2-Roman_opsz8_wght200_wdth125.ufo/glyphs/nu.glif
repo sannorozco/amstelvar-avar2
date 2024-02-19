@@ -1,35 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="nu" format="2">
-  <advance width="1223"/>
+  <advance width="988"/>
   <unicode hex="03BD"/>
   <outline>
     <contour>
-      <point x="576" y="0" type="line"/>
-      <point x="398" y="484" type="line"/>
-      <point x="292" y="771" type="line" smooth="yes"/>
-      <point x="281" y="800"/>
-      <point x="250" y="819"/>
-      <point x="215" y="826" type="qcurve" smooth="yes"/>
-      <point x="116" y="846" type="line"/>
-      <point x="116" y="974" type="line"/>
-      <point x="295" y="1008" type="line"/>
-      <point x="336" y="1008"/>
-      <point x="385" y="961"/>
-      <point x="410" y="881" type="qcurve" smooth="yes"/>
-      <point x="531" y="532" type="line"/>
-      <point x="646" y="182" type="line"/>
-      <point x="769" y="538" type="line"/>
-      <point x="901" y="980" type="line"/>
-      <point x="1062" y="1000" type="line"/>
-      <point x="1097" y="973" type="line"/>
-      <point x="901" y="497" type="line"/>
-      <point x="718" y="0" type="line"/>
+      <point x="453" y="-8" type="line"/>
+      <point x="267" y="481" type="line"/>
+      <point x="141" y="808" type="line" smooth="yes"/>
+      <point x="136" y="818"/>
+      <point x="105" y="873"/>
+      <point x="73" y="879" type="qcurve" smooth="yes"/>
+      <point x="10" y="891" type="line"/>
+      <point x="10" y="971" type="line"/>
+      <point x="165" y="1008" type="line"/>
+      <point x="201" y="1008"/>
+      <point x="256" y="959"/>
+      <point x="277" y="894" type="qcurve" smooth="yes"/>
+      <point x="388" y="535" type="line"/>
+      <point x="473" y="298" type="line"/>
+      <point x="511" y="183" type="line"/>
+      <point x="521" y="183" type="line"/>
+      <point x="558" y="298" type="line"/>
+      <point x="645" y="539" type="line"/>
+      <point x="782" y="979" type="line"/>
+      <point x="943" y="1000" type="line"/>
+      <point x="968" y="964" type="line"/>
+      <point x="750" y="498" type="line"/>
+      <point x="563" y="-8" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0.9855,0.0093,0.9992,1</string>
     </dict>
   </lib>
 </glyph>

@@ -4,34 +4,6 @@
   <unicode hex="049D"/>
   <outline>
     <contour>
-      <point x="591" y="227" type="line"/>
-      <point x="518" y="227" type="line"/>
-      <point x="518" y="792" type="line"/>
-      <point x="591" y="792" type="line"/>
-    </contour>
-    <contour>
-      <point x="663" y="498" type="line"/>
-      <point x="723" y="567" type="line"/>
-      <point x="1107" y="87" type="line"/>
-      <point x="1215" y="52" type="line"/>
-      <point x="1215" y="0" type="line"/>
-      <point x="955" y="0" type="line"/>
-      <point x="948" y="51" type="line"/>
-      <point x="991" y="83" type="line"/>
-    </contour>
-    <contour>
-      <point x="554" y="530" type="line"/>
-      <point x="649" y="529" type="line"/>
-      <point x="953" y="908" type="line"/>
-      <point x="770" y="948" type="line"/>
-      <point x="770" y="1000" type="line"/>
-      <point x="1188" y="1000" type="line"/>
-      <point x="1188" y="948" type="line"/>
-      <point x="1043" y="903" type="line"/>
-      <point x="665" y="466" type="line"/>
-      <point x="554" y="464" type="line"/>
-    </contour>
-    <contour>
       <point x="248" y="500" type="line"/>
       <point x="246" y="913" type="line"/>
       <point x="86" y="948" type="line"/>
@@ -47,11 +19,42 @@
       <point x="86" y="52" type="line"/>
       <point x="246" y="87" type="line"/>
     </contour>
+    <contour>
+      <point x="554" y="530" type="line"/>
+      <point x="649" y="529" type="line"/>
+      <point x="948" y="908" type="line"/>
+      <point x="770" y="948" type="line"/>
+      <point x="770" y="1000" type="line"/>
+      <point x="1188" y="1000" type="line"/>
+      <point x="1188" y="948" type="line"/>
+      <point x="1043" y="903" type="line"/>
+      <point x="673" y="475" type="line"/>
+      <point x="665" y="466" type="line"/>
+      <point x="554" y="464" type="line"/>
+    </contour>
+    <contour>
+      <point x="662" y="497" type="line"/>
+      <point x="723" y="567" type="line"/>
+      <point x="1107" y="87" type="line"/>
+      <point x="1215" y="52" type="line"/>
+      <point x="1215" y="0" type="line"/>
+      <point x="955" y="0" type="line"/>
+      <point x="948" y="51" type="line"/>
+      <point x="991" y="83" type="line"/>
+    </contour>
+    <contour>
+      <point x="591" y="227" type="line"/>
+      <point x="518" y="227" type="line"/>
+      <point x="518" y="792" type="line"/>
+      <point x="591" y="792" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>
