@@ -2,7 +2,7 @@
 <glyph name="epsilon" format="2">
   <advance width="1020"/>
   <unicode hex="03B5"/>
-  <anchor x="570" y="1000" name="GRKtop"/>
+  <anchor x="528" y="1000" name="GRKtop"/>
   <outline>
     <contour>
       <point x="513" y="-22" type="qcurve"/>
@@ -17,18 +17,18 @@
       <point x="101" y="649"/>
       <point x="101" y="732" type="qcurve"/>
       <point x="101" y="864"/>
-      <point x="356" y="1022"/>
-      <point x="563" y="1022" type="qcurve" smooth="yes"/>
-      <point x="683" y="1022"/>
-      <point x="892" y="964"/>
-      <point x="929" y="928" type="qcurve"/>
-      <point x="929" y="654" type="line"/>
-      <point x="732" y="654" type="line"/>
-      <point x="683" y="862" type="line"/>
-      <point x="659" y="883"/>
-      <point x="560" y="911"/>
-      <point x="509" y="911" type="qcurve" smooth="yes"/>
-      <point x="393" y="911"/>
+      <point x="347" y="1022"/>
+      <point x="546" y="1022" type="qcurve"/>
+      <point x="662" y="1022"/>
+      <point x="864" y="964"/>
+      <point x="899" y="928" type="qcurve"/>
+      <point x="899" y="654" type="line"/>
+      <point x="802" y="654" type="line"/>
+      <point x="744" y="862" type="line"/>
+      <point x="717" y="883"/>
+      <point x="603" y="911"/>
+      <point x="545" y="911" type="qcurve" smooth="yes"/>
+      <point x="411" y="911"/>
       <point x="268" y="818"/>
       <point x="268" y="732" type="qcurve"/>
       <point x="268" y="677"/>
@@ -56,6 +56,8 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>1,0.18574,0.57340,0.29823</string>
     </dict>
   </lib>
 </glyph>
