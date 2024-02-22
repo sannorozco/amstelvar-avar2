@@ -10,8 +10,8 @@ measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 defaultPath      = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_wght400.ufo')
 measurementsDict = readMeasurements(measurementsPath)
 
-def makeMeasurementArgs(glyphName, i=0):
-    args = [[v['name'], v['direction']] + k.split() for k, v in measurementsDict['glyphs'][glyphName].items() if v['name'] == 'XTUC'][i]
+def makeMeasurementArgs(glyphName, i=0, measurement='XTUC'):
+    args = [[v['name'], v['direction']] + k.split() for k, v in measurementsDict['glyphs'][glyphName].items() if v['name'] == measurement][i]
     args.insert(2, glyphName)
     args.insert(4, glyphName)
     return args
@@ -20,9 +20,10 @@ g = CurrentGlyph()
 
 assert g is not None
 
+m = 'XTUC'
 i = 0
 
-srcFont  = OpenFont(defaultPath, showInterface=False)
+srcFont  = AllFonts().getFontsByStyleName('Roman')[0] # OpenFont(defaultPath, showInterface=False)
 dstFont  = CurrentFont()
 srcGlyph = 'H'
 dstGlyph = g.name
@@ -33,7 +34,7 @@ M1 = Measurement(*makeMeasurementArgs(srcGlyph))
 srcReference = M1.measure(srcFont)
 dstReference = M1.measure(dstFont)
 
-M2 = Measurement(*makeMeasurementArgs(dstGlyph, i))
+M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement=m))
 srcValue = M2.measure(srcFont)
 dstValue = srcValue * dstReference / srcReference
 
