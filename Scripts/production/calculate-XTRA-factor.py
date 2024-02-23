@@ -20,8 +20,7 @@ g = CurrentGlyph()
 
 assert g is not None
 
-m = 'XTUC'
-i = 0
+i = 1
 
 srcFont  = AllFonts().getFontsByStyleName('Roman')[0] # OpenFont(defaultPath, showInterface=False)
 dstFont  = CurrentFont()
@@ -34,7 +33,11 @@ M1 = Measurement(*makeMeasurementArgs(srcGlyph))
 srcReference = M1.measure(srcFont)
 dstReference = M1.measure(dstFont)
 
-M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement=m))
+try:
+    M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement='XTUC'))
+except:
+    M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement='XTLC'))
+
 srcValue = M2.measure(srcFont)
 dstValue = srcValue * dstReference / srcReference
 
