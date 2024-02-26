@@ -1,14 +1,28 @@
-import glob
-from hTools3.modules.encoding import setGlyphOrder
+# menuTitle: copy glyph order from default to all other sources
 
-encFilePath  = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/AmstelvarA2.enc'
-targetFolder = '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman'
+import os, glob
 
-ufoPaths = glob.glob(f'{targetFolder}/*.ufo')
+familyName    = 'AmstelvarA2'
+subFamilyName = ['Roman', 'Italic'][1]
+baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
+defaultName   = 'wght400'
+defaultPath   = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
+
+assert os.path.exists(sourcesFolder)
+assert os.path.exists(defaultPath)
+
+srcFont = OpenFont(defaultPath, showInterface=False)
+glyphOrder = srcFont.glyphOrder
+
+ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
 for ufoPath in ufoPaths:
+    if ufoPath == defaultPath:
+        continue
     font = OpenFont(ufoPath, showInterface=False)
     print(f'setting glyph order in {ufoPath}…')
-    setGlyphOrder(font, encFilePath, verbose=False, createGlyphs=False)
+    font.glyphOrder = glyphOrder
     font.save()
     font.close()
+    
