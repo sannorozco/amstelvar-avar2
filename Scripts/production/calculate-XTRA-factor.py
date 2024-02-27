@@ -20,7 +20,7 @@ g = CurrentGlyph()
 
 assert g is not None
 
-i = 1
+i = 0
 
 srcFont  = AllFonts().getFontsByStyleName('Roman')[0] # OpenFont(defaultPath, showInterface=False)
 dstFont  = CurrentFont()
