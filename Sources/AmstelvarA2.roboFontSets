@@ -40,6 +40,9 @@
 					<string>Atilde</string>
 					<string>Adieresis</string>
 					<string>Aring</string>
+					<string>Amacron</string>
+					<string>Abreve</string>
+					<string>Aogonek</string>
 					<string>AE</string>
 					<string>Ccedilla</string>
 					<string>Egrave</string>
@@ -64,9 +67,6 @@
 					<string>Udieresis</string>
 					<string>Yacute</string>
 					<string>Thorn</string>
-					<string>Amacron</string>
-					<string>Abreve</string>
-					<string>Aogonek</string>
 					<string>Cacute</string>
 					<string>Ccircumflex</string>
 					<string>Cdotaccent</string>
@@ -954,13 +954,33 @@
 					<string>jcircumflex</string>
 					<string>jacute.loclNLD</string>
 					<string>f_f_ij</string>
-					<string>f_ij</string>
+					<string>f_ijthorn</string>
+					<string>eng</string>
+					<string>gcaron</string>
+				</array>
+				<key>smartSetName</key>
+				<string>descenders latin</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>eta</string>
+					<string>mu</string>
+					<string>beta</string>
+					<string>gamma</string>
 					<string>etatonos</string>
 					<string>rho</string>
 					<string>phi</string>
 					<string>chi</string>
 					<string>psi</string>
 					<string>kaisymbol</string>
+				</array>
+				<key>smartSetName</key>
+				<string>descenders greek</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
 					<string>er</string>
 					<string>ucyr</string>
 					<string>ushort</string>
@@ -974,15 +994,9 @@
 					<string>ustraightstroke</string>
 					<string>de.bgr</string>
 					<string>ze.bgr</string>
-					<string>thorn</string>
-					<string>eng</string>
-					<string>gcaron</string>
-					<string>beta</string>
-					<string>gamma</string>
-					<string>mu</string>
 				</array>
 				<key>smartSetName</key>
-				<string>descenders latin</string>
+				<string>desceders cyrillic</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
