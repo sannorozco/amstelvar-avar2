@@ -9,13 +9,15 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 from hTools3.modules.accents import buildAccentedGlyphs
 
 familyName    = 'AmstelvarA2'
-subFamilyName = 'Roman'
+subFamilyName = ['Roman', 'Italic'][0]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = ['esdescendercyr']
-    
+# glyphs to (re)build
+glyphNames = [ 'ustraightstroke' ]
+
+# get all sources
 targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f in glob.glob(f'{sourcesFolder}/*.ufo')]
 
 # get glyph constructions
