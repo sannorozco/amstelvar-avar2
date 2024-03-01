@@ -2,12 +2,12 @@
 <glyph name="o" format="2">
   <advance width="1560"/>
   <unicode hex="006F"/>
-  <anchor x="781" y="0" name="bottom"/>
-  <anchor x="781" y="499" name="center"/>
-  <anchor x="1010" y="0" name="ogonek"/>
-  <anchor x="781" y="998" name="top"/>
-  <anchor x="1014" y="998" name="topright"/>
-  <anchor x="781" y="998" name="GRKtop"/>
+  <anchor x="782" y="0" name="bottom"/>
+  <anchor x="782" y="499" name="center"/>
+  <anchor x="987" y="0" name="ogonek"/>
+  <anchor x="782" y="998" name="top"/>
+  <anchor x="991" y="998" name="topright"/>
+  <anchor x="782" y="998" name="GRKtop"/>
   <outline>
     <contour>
       <point x="170" y="499" type="qcurve" smooth="yes"/>
@@ -40,67 +40,8 @@
   </outline>
   <lib>
     <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict>
-        <key>0 -1</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XLCR</string>
-        </dict>
-        <key>0 12</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XOLC</string>
-        </dict>
-        <key>12 18</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XTLC</string>
-        </dict>
-        <key>3 21</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YOLC</string>
-        </dict>
-        <key>6 18</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XOLC</string>
-        </dict>
-        <key>9 15</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YOLC</string>
-        </dict>
-        <key>9 3</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YTLC</string>
-        </dict>
-        <key>99 6</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XLCR</string>
-        </dict>
-      </dict>
-      <key>com.hipertipo.tempEdit.glyphSetPath</key>
-      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>

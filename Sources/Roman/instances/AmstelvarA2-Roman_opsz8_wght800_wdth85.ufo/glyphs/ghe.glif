@@ -1,33 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ghe" format="2">
-  <advance width="1168"/>
+  <advance width="1019"/>
   <unicode hex="0433"/>
-  <anchor x="698" y="1000" name="top"/>
-  <anchor x="121" y="498" name="center"/>
+  <anchor x="618" y="1083" name="top"/>
+  <anchor x="483" y="540" name="center"/>
   <outline>
     <contour>
-      <point x="982" y="844" type="line"/>
-      <point x="640" y="844" type="line"/>
-      <point x="638" y="500" type="line"/>
+      <point x="833" y="927" type="line"/>
+      <point x="640" y="927" type="line"/>
+      <point x="638" y="542" type="line"/>
       <point x="640" y="199" type="line"/>
       <point x="790" y="164" type="line"/>
       <point x="790" y="0" type="line"/>
       <point x="96" y="0" type="line"/>
       <point x="96" y="164" type="line"/>
       <point x="228" y="199" type="line"/>
-      <point x="230" y="500" type="line"/>
-      <point x="228" y="801" type="line"/>
-      <point x="96" y="836" type="line"/>
-      <point x="96" y="1000" type="line"/>
-      <point x="1128" y="1000" type="line"/>
-      <point x="1128" y="560" type="line"/>
-      <point x="1028" y="560" type="line"/>
+      <point x="230" y="542" type="line"/>
+      <point x="228" y="884" type="line"/>
+      <point x="96" y="919" type="line"/>
+      <point x="96" y="1083" type="line"/>
+      <point x="979" y="1083" type="line"/>
+      <point x="979" y="643" type="line"/>
+      <point x="879" y="643" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

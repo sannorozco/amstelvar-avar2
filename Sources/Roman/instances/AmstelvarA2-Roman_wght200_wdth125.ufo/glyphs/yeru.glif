@@ -1,59 +1,61 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="yeru" format="2">
-  <advance width="1609"/>
+  <advance width="1855"/>
   <unicode hex="044B"/>
   <outline>
     <contour>
       <point x="447" y="66" type="line"/>
-      <point x="635" y="66" type="line" smooth="yes"/>
-      <point x="760" y="66"/>
-      <point x="861" y="208"/>
-      <point x="861" y="315" type="qcurve" smooth="yes"/>
-      <point x="861" y="419"/>
-      <point x="760" y="555"/>
-      <point x="635" y="555" type="qcurve" smooth="yes"/>
-      <point x="390" y="555" type="line"/>
-      <point x="390" y="621" type="line"/>
-      <point x="620" y="621" type="line" smooth="yes"/>
-      <point x="794" y="621"/>
-      <point x="982" y="455"/>
-      <point x="982" y="314" type="qcurve" smooth="yes"/>
-      <point x="982" y="172"/>
-      <point x="794" y="0"/>
-      <point x="620" y="0" type="qcurve" smooth="yes"/>
+      <point x="770" y="66" type="line" smooth="yes"/>
+      <point x="956" y="66"/>
+      <point x="1107" y="207"/>
+      <point x="1107" y="314" type="qcurve" smooth="yes"/>
+      <point x="1107" y="419"/>
+      <point x="956" y="554"/>
+      <point x="770" y="554" type="qcurve" smooth="yes"/>
+      <point x="390" y="554" type="line"/>
+      <point x="390" y="620" type="line"/>
+      <point x="755" y="620" type="line" smooth="yes"/>
+      <point x="983" y="620"/>
+      <point x="1228" y="454"/>
+      <point x="1228" y="313" type="qcurve" smooth="yes"/>
+      <point x="1228" y="172"/>
+      <point x="983" y="0"/>
+      <point x="755" y="0" type="qcurve" smooth="yes"/>
       <point x="122" y="0" type="line"/>
       <point x="122" y="56" type="line"/>
       <point x="334" y="91" type="line"/>
-      <point x="336" y="500" type="line"/>
-      <point x="334" y="909" type="line"/>
-      <point x="122" y="944" type="line"/>
-      <point x="122" y="1000" type="line"/>
-      <point x="659" y="1000" type="line"/>
-      <point x="659" y="944" type="line"/>
-      <point x="447" y="909" type="line"/>
-      <point x="445" y="500" type="line"/>
+      <point x="336" y="499" type="line"/>
+      <point x="334" y="907" type="line"/>
+      <point x="122" y="942" type="line"/>
+      <point x="122" y="998" type="line"/>
+      <point x="659" y="998" type="line"/>
+      <point x="659" y="942" type="line"/>
+      <point x="447" y="907" type="line"/>
+      <point x="445" y="499" type="line"/>
     </contour>
     <contour>
-      <point x="1273" y="500" type="line"/>
-      <point x="1275" y="91" type="line"/>
-      <point x="1487" y="56" type="line"/>
-      <point x="1487" y="0" type="line"/>
-      <point x="950" y="0" type="line"/>
-      <point x="950" y="56" type="line"/>
-      <point x="1162" y="91" type="line"/>
-      <point x="1164" y="500" type="line"/>
-      <point x="1162" y="909" type="line"/>
-      <point x="950" y="944" type="line"/>
-      <point x="950" y="1000" type="line"/>
-      <point x="1487" y="1000" type="line"/>
-      <point x="1487" y="944" type="line"/>
-      <point x="1275" y="909" type="line"/>
+      <point x="1519" y="500" type="line"/>
+      <point x="1521" y="91" type="line"/>
+      <point x="1733" y="56" type="line"/>
+      <point x="1733" y="0" type="line"/>
+      <point x="1196" y="0" type="line"/>
+      <point x="1196" y="56" type="line"/>
+      <point x="1408" y="91" type="line"/>
+      <point x="1410" y="500" type="line"/>
+      <point x="1408" y="907" type="line"/>
+      <point x="1196" y="942" type="line"/>
+      <point x="1196" y="998" type="line"/>
+      <point x="1733" y="998" type="line"/>
+      <point x="1733" y="942" type="line"/>
+      <point x="1521" y="907" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>

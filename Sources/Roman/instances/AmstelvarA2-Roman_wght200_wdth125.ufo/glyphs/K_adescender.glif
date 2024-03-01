@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Kadescender" format="2">
-  <advance width="1573"/>
+  <advance width="1955"/>
   <unicode hex="049A"/>
   <outline>
     <contour>
@@ -22,38 +22,40 @@
     <contour>
       <point x="456" y="726" type="line"/>
       <point x="456" y="809" type="line"/>
-      <point x="678" y="806" type="line"/>
-      <point x="1136" y="1379" type="line"/>
-      <point x="881" y="1427" type="line"/>
-      <point x="881" y="1500" type="line"/>
-      <point x="1465" y="1500" type="line"/>
-      <point x="1465" y="1427" type="line"/>
-      <point x="1243" y="1379" type="line"/>
-      <point x="736" y="757" type="line"/>
-      <point x="699" y="726" type="line"/>
+      <point x="820" y="806" type="line"/>
+      <point x="1475" y="1379" type="line"/>
+      <point x="1220" y="1427" type="line"/>
+      <point x="1220" y="1500" type="line"/>
+      <point x="1804" y="1500" type="line"/>
+      <point x="1804" y="1427" type="line"/>
+      <point x="1583" y="1379" type="line"/>
+      <point x="866" y="757" type="line"/>
+      <point x="830" y="726" type="line"/>
     </contour>
     <contour>
-      <point x="695" y="776" type="line"/>
-      <point x="766" y="858" type="line"/>
-      <point x="1358" y="108" type="line"/>
-      <point x="1358" y="0" type="line"/>
-      <point x="979" y="0" type="line"/>
-      <point x="979" y="64" type="line"/>
-      <point x="1228" y="99" type="line"/>
+      <point x="805" y="779" type="line"/>
+      <point x="907" y="833" type="line"/>
+      <point x="1748" y="108" type="line"/>
+      <point x="1748" y="0" type="line"/>
+      <point x="1351" y="0" type="line"/>
+      <point x="1351" y="64" type="line"/>
+      <point x="1600" y="99" type="line"/>
     </contour>
     <contour>
-      <point x="1284" y="108" type="line"/>
-      <point x="1532" y="108" type="line"/>
-      <point x="1541" y="-332" type="line"/>
-      <point x="1449" y="-332" type="line"/>
-      <point x="1382" y="0" type="line"/>
-      <point x="1284" y="0" type="line"/>
+      <point x="1656" y="108" type="line"/>
+      <point x="1913" y="108" type="line"/>
+      <point x="1923" y="-332" type="line"/>
+      <point x="1831" y="-332" type="line"/>
+      <point x="1763" y="0" type="line"/>
+      <point x="1656" y="0" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>
