@@ -2,8 +2,6 @@
 <glyph name="x" format="2">
   <advance width="1043"/>
   <unicode hex="0078"/>
-  <anchor x="522" y="0" name="bottom"/>
-  <anchor x="522" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="56" y="0" type="line"/>
@@ -40,20 +38,4 @@
       <point x="138" y="875" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict>
-        <key>0 17</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YTLC</string>
-        </dict>
-      </dict>
-      <key>public.markColor</key>
-      <string>1,0.57811,0,0.25476</string>
-    </dict>
-  </lib>
 </glyph>
