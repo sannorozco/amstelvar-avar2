@@ -33,10 +33,11 @@ M1 = Measurement(*makeMeasurementArgs(srcGlyph))
 srcReference = M1.measure(srcFont)
 dstReference = M1.measure(dstFont)
 
-try:
-    M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement='XTUC'))
-except:
-    M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement='XTLC'))
+for m in ['XTUC', 'XTLC', 'XTRA']:
+    try:
+        M2 = Measurement(*makeMeasurementArgs(dstGlyph, i, measurement=m))
+    except:
+        pass
 
 srcValue = M2.measure(srcFont)
 dstValue = srcValue * dstReference / srcReference

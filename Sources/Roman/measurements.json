@@ -4445,6 +4445,10 @@
       "9 17": {
         "name": "YOPQ",
         "direction": "x"
+      },
+      "7 10": {
+        "name": "XTRA",
+        "direction": "x"
       }
     },
     "numbersign": {
@@ -8587,10 +8591,28 @@
         "direction": "y"
       }
     },
-    "quotesinglbase": {},
+    "quotesinglbase": {
+      "6 12": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
+      }
+    },
     "bullet": {},
     "guilsinglright": {},
-    "quoteright": {},
+    "quoteright": {
+      "6 12": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
+      }
+    },
     "underscore": {
       "2 5": {
         "name": "YOPQ",
@@ -8805,7 +8827,7 @@
         "name": "YOLC",
         "direction": "a"
       },
-      "34 38": {
+      "38 34": {
         "name": "XTLC",
         "direction": "x"
       },
@@ -8875,8 +8897,8 @@
         "name": "YOLC",
         "direction": "y"
       },
-      "25 38": {
-        "name": "XTUC",
+      "38 25": {
+        "name": "XTLC",
         "direction": "x"
       },
       "B 11": {
@@ -10951,8 +10973,26 @@
     "ringcomb": {},
     "horizontalbarH": {},
     "onesuperior": {},
-    "daggerdbl": {},
-    "dagger": {},
+    "daggerdbl": {
+      "1 10": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "1 12": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
+    "dagger": {
+      "1 10": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "1 12": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
     "plusminus": {},
     "ordmasculine": {},
     "breveinvertedcomb": {},
@@ -11710,6 +11750,10 @@
       "0 15": {
         "name": "YOPQ",
         "direction": "a"
+      },
+      "15 7": {
+        "name": "XTRA",
+        "direction": "x"
       }
     },
     "cedi.rvrn": {},
@@ -12027,6 +12071,10 @@
       "5 2": {
         "name": "YOPQ",
         "direction": "y"
+      },
+      "1 3": {
+        "name": "XTRA",
+        "direction": "x"
       }
     },
     "brokenbar": {},
@@ -14051,11 +14099,53 @@
         "direction": "y"
       }
     },
-    "quoteleft": {},
+    "quoteleft": {
+      "0 15": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "12 6": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "9 3": {
+        "name": "YDOT",
+        "direction": "y"
+      }
+    },
     "macroncomb-stack": {},
     "acutecomb-stack": {},
     "dotaccentcomb-stack": {},
-    "quotedblleft": {},
+    "quotedblleft": {
+      "0 15": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "16 31": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "6 28": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "12 6": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "28 22": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "9 3": {
+        "name": "YDOT",
+        "direction": "y"
+      },
+      "25 19": {
+        "name": "YDOT",
+        "direction": "y"
+      }
+    },
     "approxequal": {},
     "horizontalbar": {},
     "ha-stroke": {
@@ -14096,6 +14186,108 @@
     "tenge": {},
     "ustraight-stroke": {},
     "dieresiscomb-stack": {},
-    "yu.bgr": {}
+    "yu.bgr": {},
+    "emdash": {
+      "0 1": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "1 3": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
+    "endash": {
+      "0 1": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "1 3": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
+    "minus": {},
+    "dieresiscomb.case": {},
+    "multiply": {},
+    "lessequal": {},
+    "notequal": {},
+    "bulletoperator": {},
+    "brevebelowcomb": {},
+    "macroncomb": {},
+    "hungarumlautcomb": {},
+    "dieresisbelowcomb": {},
+    "quotedblright": {
+      "15 0": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "31 16": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "12 22": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "6 12": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "22 28": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
+      },
+      "19 25": {
+        "name": "YDOT",
+        "direction": "y"
+      }
+    },
+    "quotedblbase": {
+      "0 15": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "16 31": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "12 22": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "6 12": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "22 28": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
+      },
+      "19 25": {
+        "name": "YDOT",
+        "direction": "y"
+      }
+    },
+    "gravecomb.case": {},
+    "acutecomb.case": {},
+    "brevebelowcomb.case": {},
+    "circumflexcomb.case": {},
+    "hookabovecomb.case": {},
+    "breveinvertedcomb.case": {},
+    "macroncomb.case": {},
+    "tildecomb.case": {},
+    "hungarumlautcomb.case": {},
+    "cedillacomb.case": {},
+    "caroncomb.case": {},
+    "commaaccentcomb.case": {}
   }
 }
