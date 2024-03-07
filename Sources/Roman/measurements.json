@@ -8547,7 +8547,28 @@
         "direction": "y"
       }
     },
-    "threesuperior": {},
+    "threesuperior": {
+      "7 36": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "16 29": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "4 39": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "19 26": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "1 7": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
     "asterisk": {
       "25 29": {
         "name": "XOPQ",
@@ -11022,7 +11043,20 @@
     },
     "ringcomb": {},
     "horizontalbarH": {},
-    "onesuperior": {},
+    "onesuperior": {
+      "2 10": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "1 2": {
+        "name": "XTRA",
+        "direction": "x"
+      },
+      "10 11": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
     "daggerdbl": {
       "1 10": {
         "name": "XOPQ",
@@ -11895,7 +11929,28 @@
     "two.lf": {},
     "three.lf": {},
     "paragraph": {},
-    "twosuperior": {},
+    "twosuperior": {
+      "7 20": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "29 28": {
+        "name": "XOPQ",
+        "direction": "y"
+      },
+      "10 17": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "1 27": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "13 28": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
     "parenright": {
       "7 0": {
         "name": "XOPQ",
@@ -11911,7 +11966,7 @@
       }
     },
     "asciicircum": {
-      "3 10": {
+      "10 3": {
         "name": "XOPQ",
         "direction": "y"
       },
@@ -11922,6 +11977,10 @@
       "6 7": {
         "name": "YOPQ",
         "direction": "a"
+      },
+      "13 7": {
+        "name": "XTRA",
+        "direction": "x"
       }
     },
     "Euro": {
@@ -14484,6 +14543,21 @@
     "micro": {},
     "ogonekcomb.case": {},
     "Oslash": {},
-    "peseta": {}
+    "peseta": {},
+    "foursuperior": {
+      "10 5": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "16 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "14 10": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
+    "fivesuperior": {}
   }
 }
