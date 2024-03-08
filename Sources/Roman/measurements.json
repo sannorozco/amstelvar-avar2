@@ -690,10 +690,6 @@
         "name": "XOFI",
         "direction": "x"
       },
-      "7 13": {
-        "name": "XTFI",
-        "direction": "x"
-      },
       "29 10": {
         "name": "YOFI",
         "direction": "y"
@@ -709,6 +705,10 @@
       "4 3": {
         "name": "YOFI",
         "direction": "a"
+      },
+      "7 13": {
+        "name": "XTFI",
+        "direction": "x"
       },
       "29 3": {
         "name": "YTFI",
@@ -8534,11 +8534,11 @@
         "name": "XOPQ",
         "direction": "x"
       },
-      "6 18": {
+      "18 6": {
         "name": "XOPQ",
         "direction": "x"
       },
-      "3 21": {
+      "21 3": {
         "name": "YOPQ",
         "direction": "y"
       },
@@ -11087,7 +11087,7 @@
         "name": "XOPQ",
         "direction": "x"
       },
-      "6 18": {
+      "18 6": {
         "name": "XOPQ",
         "direction": "x"
       },
@@ -11095,7 +11095,7 @@
         "name": "YOPQ",
         "direction": "y"
       },
-      "3 21": {
+      "21 3": {
         "name": "YOPQ",
         "direction": "y"
       },
@@ -11901,7 +11901,7 @@
         "name": "XOPQ",
         "direction": "x"
       },
-      "23 32": {
+      "32 23": {
         "name": "YOPQ",
         "direction": "y"
       },
@@ -14649,6 +14649,8 @@
         "direction": "x"
       }
     },
-    "fivesuperior": {}
+    "fivesuperior": {},
+    "ninesuperior": {},
+    "eightsuperior": {}
   }
 }
