@@ -2842,7 +2842,7 @@
     "c": {
       "0 17": {
         "name": "XOLC",
-        "direction": "a"
+        "direction": "x"
       },
       "27 20": {
         "name": "YOLC",
@@ -8600,7 +8600,7 @@
     "questiondown": {},
     "cent": {
       "0 17": {
-        "name": "XOPQ",
+        "name": "XOLC",
         "direction": "x"
       },
       "14 3": {
@@ -8634,6 +8634,10 @@
         "direction": "x"
       },
       "0 7": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "14 35": {
         "name": "XOPQ",
         "direction": "x"
       },
@@ -11022,8 +11026,16 @@
     },
     "cedillacomb": {
       "20 7": {
-        "name": "XOLC",
+        "name": "XOPQ",
         "direction": "x"
+      },
+      "10 17": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "23 4": {
+        "name": "YOPQ",
+        "direction": "y"
       }
     },
     "tildecomb": {
@@ -11032,7 +11044,20 @@
         "direction": "a"
       }
     },
-    "circumflexcomb": {},
+    "circumflexcomb": {
+      "6 0": {
+        "name": "XOPQ",
+        "direction": "y"
+      },
+      "8 7": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "5 4": {
+        "name": "YOPQ",
+        "direction": "x"
+      }
+    },
     "dotbelowcomb": {},
     "caroncomb": {},
     "brevecomb": {
@@ -11071,6 +11096,18 @@
       "1 10": {
         "name": "XOPQ",
         "direction": "x"
+      },
+      "4 7": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "2 9": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "17 14": {
+        "name": "YOPQ",
+        "direction": "y"
       },
       "12 1": {
         "name": "XTRA",
@@ -11901,6 +11938,10 @@
         "name": "XOPQ",
         "direction": "x"
       },
+      "19 36": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
       "32 23": {
         "name": "YOPQ",
         "direction": "y"
@@ -12513,6 +12554,10 @@
       "14 0": {
         "name": "XOPQ",
         "direction": "x"
+      },
+      "17 36": {
+        "name": "XOPQ",
+        "direction": "a"
       },
       "30 23": {
         "name": "YOPQ",
@@ -14651,6 +14696,57 @@
     },
     "fivesuperior": {},
     "ninesuperior": {},
-    "eightsuperior": {}
+    "eightsuperior": {},
+    "guilsinglleft": {
+      "18 9": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "3 6": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "12 15": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
+    "trademark": {
+      "14 9": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "27 44": {
+        "name": "XOPQ",
+        "direction": "a"
+      },
+      "39 34": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "22 46": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "29 41": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "18 1": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
+    "dieresisbelowcomb.case": {},
+    "dotaccentcomb.case": {},
+    "manat": {},
+    "lira": {},
+    "liraTurkish": {},
+    "rupeeIndian": {},
+    "dollar.rvrn": {},
+    "caroncomb.alt": {},
+    "commaaccentturnedcomb": {},
+    "brevecomb.case": {},
+    "ringcomb.case": {}
   }
 }
