@@ -1,27 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="bulletoperator" format="2">
-  <advance width="1236"/>
+  <advance width="1807"/>
   <unicode hex="2219"/>
   <outline>
     <contour>
-      <point x="474" y="644" type="qcurve" smooth="yes"/>
-      <point x="474" y="702"/>
-      <point x="555" y="788"/>
-      <point x="618" y="788" type="qcurve" smooth="yes"/>
-      <point x="681" y="788"/>
-      <point x="762" y="702"/>
-      <point x="762" y="644" type="qcurve" smooth="yes"/>
-      <point x="762" y="587"/>
-      <point x="681" y="501"/>
-      <point x="618" y="501" type="qcurve" smooth="yes"/>
-      <point x="555" y="501"/>
-      <point x="474" y="587"/>
+      <point x="803" y="644" type="qcurve" smooth="yes"/>
+      <point x="803" y="684"/>
+      <point x="859" y="744"/>
+      <point x="903" y="744" type="qcurve" smooth="yes"/>
+      <point x="947" y="744"/>
+      <point x="1004" y="684"/>
+      <point x="1004" y="644" type="qcurve" smooth="yes"/>
+      <point x="1004" y="604"/>
+      <point x="947" y="544"/>
+      <point x="903" y="544" type="qcurve" smooth="yes"/>
+      <point x="859" y="544"/>
+      <point x="803" y="604"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.50364</string>
     </dict>
   </lib>
 </glyph>
