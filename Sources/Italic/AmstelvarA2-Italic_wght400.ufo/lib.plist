@@ -764,14 +764,10 @@
           <string>Euro</string>
           <string>florin</string>
           <string>kip</string>
-          <string>uni20AD</string>
           <string>peso</string>
-          <string>uni20B1</string>
           <string>guarani</string>
-          <string>uni20B2</string>
           <string>hryvnia</string>
           <string>cedi</string>
-          <string>uni20B5</string>
           <string>tenge</string>
           <string>rupeeIndian</string>
           <string>liraTurkish</string>
@@ -802,48 +798,48 @@
           <string>CR</string>
           <string>softhyphen</string>
           <string>Amacroncyr</string>
+          <string>amacroncyr</string>
           <string>Iemacroncyr</string>
+          <string>iemacroncyr</string>
           <string>Omacroncyr</string>
+          <string>omacroncyr</string>
           <string>Obrevecyr</string>
+          <string>obrevecyr</string>
           <string>Emacroncyr</string>
+          <string>emacroncyr</string>
           <string>Ebrevecyr</string>
+          <string>ebrevecyr</string>
           <string>Yamacron</string>
+          <string>yamacron</string>
           <string>Yumacron</string>
+          <string>yumacron</string>
           <string>.null</string>
           <string>Dzcaron</string>
-          <string>Ha-stroke</string>
           <string>IJacute</string>
           <string>Lj</string>
           <string>Nj</string>
-          <string>Obarcyr-stroke</string>
-          <string>U-stroke</string>
           <string>acute-stack</string>
           <string>acutecomb-stack</string>
-          <string>acutecombstack</string>
-          <string>amacroncyr</string>
           <string>breve-stack</string>
           <string>brevebelow</string>
           <string>brevecomb-stack</string>
           <string>breveinverted</string>
           <string>breveinverted-stack</string>
+          <string>breveinvertedcomb-stack.case</string>
           <string>caron-stack</string>
           <string>caroncomb-stack</string>
           <string>circumflex-stack</string>
           <string>circumflexcomb-stack</string>
-          <string>circumflexcombstack</string>
-          <string>coloncurrency</string>
           <string>commaaccent</string>
           <string>commaaccentturned</string>
           <string>commaaccentturnedcomb</string>
-          <string>cy-descender</string>
-          <string>cy-descendercomb</string>
           <string>dblgrave</string>
           <string>dblgrave-stack</string>
           <string>dblgravecomb-stack</string>
+          <string>diagonalbarO</string>
           <string>descender-cy</string>
           <string>descenderinverted-cy</string>
           <string>diagonalbarL</string>
-          <string>diagonalbarO</string>
           <string>diagonalbarl</string>
           <string>diagonalbaro</string>
           <string>dieresis-stack</string>
@@ -855,9 +851,7 @@
           <string>dotaccentcomb-stack</string>
           <string>dotaccentcombstack</string>
           <string>dotbelow</string>
-          <string>ebrevecyr</string>
           <string>eightsuperior</string>
-          <string>emacroncyr</string>
           <string>engn</string>
           <string>engtail</string>
           <string>firsttonechinese</string>
@@ -877,7 +871,6 @@
           <string>hungarumlautcomb-stack</string>
           <string>idot</string>
           <string>idotaccent</string>
-          <string>iemacroncyr</string>
           <string>ijacute</string>
           <string>jdotless</string>
           <string>ka-swash</string>
@@ -887,8 +880,6 @@
           <string>macroncombstack</string>
           <string>ninesuperior</string>
           <string>obarcyr-stroke</string>
-          <string>obrevecyr</string>
-          <string>omacroncyr</string>
           <string>ring-stack</string>
           <string>ringcomb-stack</string>
           <string>sevensuperior</string>
@@ -899,12 +890,10 @@
           <string>tildemacroncomb</string>
           <string>tonoscomb</string>
           <string>u-stroke</string>
-          <string>yamacron</string>
           <string>yi-dieresis</string>
           <string>yi-dieresiscomb</string>
           <string>yu-dash</string>
           <string>yu-i</string>
-          <string>yumacron</string>
           <string>zerosuperior</string>
           <string>f_f</string>
           <string>fi</string>
@@ -973,7 +962,6 @@
           <string>brevecombstack.case</string>
           <string>breveinverted-stack.case</string>
           <string>breveinverted.case</string>
-          <string>breveinvertedcomb-stack.case</string>
           <string>caron-stack.case</string>
           <string>caroncomb-stack.case</string>
           <string>circumflex-stack.case</string>
@@ -1013,6 +1001,10 @@
           <string>tildecombstack.case</string>
           <string>tildemacroncomb.case</string>
           <string>tonoscomb.case</string>
+          <string>acutecombstack</string>
+          <string>circumflexcombstack</string>
+          <string>cy-descender</string>
+          <string>cy-descendercomb</string>
           <string>zero.lc</string>
           <string>one.lc</string>
           <string>two.lc</string>
@@ -1105,9 +1097,14 @@
           <string>coloncurrency.rvrn</string>
           <string>diagonalbarO.rvrn</string>
           <string>diagonalbaro.rvrn</string>
+          <string>Ha-stroke</string>
+          <string>Obarcyr-stroke</string>
+          <string>U-stroke</string>
           <string>enspace</string>
           <string>thinspace</string>
           <string>.notdef</string>
+          <string>uni20B1.copy_1</string>
+          <string>uni20B2.copy_1</string>
         </array>
         <key>type</key>
         <string>glyphList</string>
@@ -5373,14 +5370,10 @@
       <string>Euro</string>
       <string>florin</string>
       <string>kip</string>
-      <string>uni20AD</string>
       <string>peso</string>
-      <string>uni20B1</string>
       <string>guarani</string>
-      <string>uni20B2</string>
       <string>hryvnia</string>
       <string>cedi</string>
-      <string>uni20B5</string>
       <string>tenge</string>
       <string>rupeeIndian</string>
       <string>liraTurkish</string>
@@ -5411,48 +5404,48 @@
       <string>CR</string>
       <string>softhyphen</string>
       <string>Amacroncyr</string>
+      <string>amacroncyr</string>
       <string>Iemacroncyr</string>
+      <string>iemacroncyr</string>
       <string>Omacroncyr</string>
+      <string>omacroncyr</string>
       <string>Obrevecyr</string>
+      <string>obrevecyr</string>
       <string>Emacroncyr</string>
+      <string>emacroncyr</string>
       <string>Ebrevecyr</string>
+      <string>ebrevecyr</string>
       <string>Yamacron</string>
+      <string>yamacron</string>
       <string>Yumacron</string>
+      <string>yumacron</string>
       <string>.null</string>
       <string>Dzcaron</string>
-      <string>Ha-stroke</string>
       <string>IJacute</string>
       <string>Lj</string>
       <string>Nj</string>
-      <string>Obarcyr-stroke</string>
-      <string>U-stroke</string>
       <string>acute-stack</string>
       <string>acutecomb-stack</string>
-      <string>acutecombstack</string>
-      <string>amacroncyr</string>
       <string>breve-stack</string>
       <string>brevebelow</string>
       <string>brevecomb-stack</string>
       <string>breveinverted</string>
       <string>breveinverted-stack</string>
+      <string>breveinvertedcomb-stack.case</string>
       <string>caron-stack</string>
       <string>caroncomb-stack</string>
       <string>circumflex-stack</string>
       <string>circumflexcomb-stack</string>
-      <string>circumflexcombstack</string>
-      <string>coloncurrency</string>
       <string>commaaccent</string>
       <string>commaaccentturned</string>
       <string>commaaccentturnedcomb</string>
-      <string>cy-descender</string>
-      <string>cy-descendercomb</string>
       <string>dblgrave</string>
       <string>dblgrave-stack</string>
       <string>dblgravecomb-stack</string>
+      <string>diagonalbarO</string>
       <string>descender-cy</string>
       <string>descenderinverted-cy</string>
       <string>diagonalbarL</string>
-      <string>diagonalbarO</string>
       <string>diagonalbarl</string>
       <string>diagonalbaro</string>
       <string>dieresis-stack</string>
@@ -5464,9 +5457,7 @@
       <string>dotaccentcomb-stack</string>
       <string>dotaccentcombstack</string>
       <string>dotbelow</string>
-      <string>ebrevecyr</string>
       <string>eightsuperior</string>
-      <string>emacroncyr</string>
       <string>engn</string>
       <string>engtail</string>
       <string>firsttonechinese</string>
@@ -5486,7 +5477,6 @@
       <string>hungarumlautcomb-stack</string>
       <string>idot</string>
       <string>idotaccent</string>
-      <string>iemacroncyr</string>
       <string>ijacute</string>
       <string>jdotless</string>
       <string>ka-swash</string>
@@ -5496,8 +5486,6 @@
       <string>macroncombstack</string>
       <string>ninesuperior</string>
       <string>obarcyr-stroke</string>
-      <string>obrevecyr</string>
-      <string>omacroncyr</string>
       <string>ring-stack</string>
       <string>ringcomb-stack</string>
       <string>sevensuperior</string>
@@ -5508,12 +5496,10 @@
       <string>tildemacroncomb</string>
       <string>tonoscomb</string>
       <string>u-stroke</string>
-      <string>yamacron</string>
       <string>yi-dieresis</string>
       <string>yi-dieresiscomb</string>
       <string>yu-dash</string>
       <string>yu-i</string>
-      <string>yumacron</string>
       <string>zerosuperior</string>
       <string>f_f</string>
       <string>fi</string>
@@ -5582,7 +5568,6 @@
       <string>brevecombstack.case</string>
       <string>breveinverted-stack.case</string>
       <string>breveinverted.case</string>
-      <string>breveinvertedcomb-stack.case</string>
       <string>caron-stack.case</string>
       <string>caroncomb-stack.case</string>
       <string>circumflex-stack.case</string>
@@ -5622,6 +5607,10 @@
       <string>tildecombstack.case</string>
       <string>tildemacroncomb.case</string>
       <string>tonoscomb.case</string>
+      <string>acutecombstack</string>
+      <string>circumflexcombstack</string>
+      <string>cy-descender</string>
+      <string>cy-descendercomb</string>
       <string>zero.lc</string>
       <string>one.lc</string>
       <string>two.lc</string>
@@ -5714,9 +5703,14 @@
       <string>coloncurrency.rvrn</string>
       <string>diagonalbarO.rvrn</string>
       <string>diagonalbaro.rvrn</string>
+      <string>Ha-stroke</string>
+      <string>Obarcyr-stroke</string>
+      <string>U-stroke</string>
       <string>enspace</string>
       <string>thinspace</string>
       <string>.notdef</string>
+      <string>uni20B1.copy_1</string>
+      <string>uni20B2.copy_1</string>
     </array>
     <key>tnCurvePalet</key>
     <dict>
