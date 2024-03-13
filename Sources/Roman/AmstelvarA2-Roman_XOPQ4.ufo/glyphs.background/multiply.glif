@@ -3,11 +3,17 @@
   <advance width="1024"/>
   <unicode hex="00D7"/>
   <outline>
+    <contour>
+      <point x="209" y="324" type="line"/>
+      <point x="204" y="329" type="line"/>
+      <point x="815" y="940" type="line"/>
+      <point x="820" y="935" type="line"/>
+    </contour>
+    <contour>
+      <point x="815" y="324" type="line"/>
+      <point x="204" y="935" type="line"/>
+      <point x="209" y="940" type="line"/>
+      <point x="820" y="329" type="line"/>
+    </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
-    </dict>
-  </lib>
 </glyph>
