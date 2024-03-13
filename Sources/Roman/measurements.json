@@ -8528,7 +8528,16 @@
       }
     },
     "hungarumlautcomb-stack": {},
-    "yen": {},
+    "yen": {
+      "0 1": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "29 30": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "zerosuperior": {
       "0 12": {
         "name": "XOPQ",
@@ -8556,11 +8565,15 @@
         "name": "XOPQ",
         "direction": "x"
       },
-      "4 39": {
+      "39 4": {
         "name": "YOPQ",
         "direction": "y"
       },
       "19 26": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "11 12": {
         "name": "YOPQ",
         "direction": "y"
       },
@@ -8614,6 +8627,10 @@
       "30 37": {
         "name": "YOPQ",
         "direction": "x"
+      },
+      "23 24": {
+        "name": "YOPQ",
+        "direction": "a"
       },
       "17 23": {
         "name": "XTRA",
@@ -9275,6 +9292,10 @@
       "29 16": {
         "name": "YOLC",
         "direction": "y"
+      },
+      "33 34": {
+        "name": "YOLC",
+        "direction": "a"
       },
       "13 19": {
         "name": "XTLC",
@@ -11051,11 +11072,11 @@
       },
       "8 7": {
         "name": "YOPQ",
-        "direction": "x"
+        "direction": "a"
       },
       "5 4": {
         "name": "YOPQ",
-        "direction": "x"
+        "direction": "a"
       }
     },
     "dotbelowcomb": {},
@@ -11066,12 +11087,33 @@
         "direction": "y"
       }
     },
-    "ringcomb": {},
+    "ringcomb": {
+      "0 12": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "18 6": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "21 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "9 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "horizontalbarH": {},
     "onesuperior": {
       "2 10": {
         "name": "XOPQ",
         "direction": "x"
+      },
+      "5 6": {
+        "name": "YOPQ",
+        "direction": "y"
       },
       "1 2": {
         "name": "XTRA",
@@ -11950,6 +11992,10 @@
         "name": "YOPQ",
         "direction": "y"
       },
+      "16 19": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
       "18 19": {
         "name": "XTRA",
         "direction": "x"
@@ -11991,6 +12037,14 @@
     "two.lf": {},
     "three.lf": {},
     "paragraph": {
+      "21 20": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "4 19": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
       "11 21": {
         "name": "XTRA",
         "direction": "x"
@@ -12571,6 +12625,10 @@
         "name": "YOPQ",
         "direction": "y"
       },
+      "26 27": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
       "33 27": {
         "name": "XTRA",
         "direction": "x"
@@ -12642,23 +12700,98 @@
         "direction": "y"
       }
     },
-    "copyright": {},
+    "copyright": {
+      "0 17": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "51 33": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "39 45": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "48 36": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "30 42": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "14 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "27 20": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "23 24": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
     "guillemotleft": {},
     "logicalnot": {},
-    "registered": {},
+    "registered": {
+      "26 52": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "55 56": {
+        "name": "XOPQ",
+        "direction": "a"
+      },
+      "21 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "18 6": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "9 15": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "0 12": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "48 31": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "37 42": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "guillemotright": {},
     "divisionslash": {},
     "gravecomb": {
       "11 4": {
         "name": "XOPQ",
-        "direction": "x"
+        "direction": "a"
       },
       "8 7": {
         "name": "YOPQ",
-        "direction": "y"
+        "direction": "a"
       }
     },
-    "acutecomb": {},
+    "acutecomb": {
+      "1 8": {
+        "name": "XOPQ",
+        "direction": "a"
+      },
+      "4 5": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
     "macronbelowcomb": {},
     "Shcha": {
       "3 12": {
@@ -14491,7 +14624,12 @@
       }
     },
     "approxequal": {},
-    "horizontalbar": {},
+    "horizontalbar": {
+      "5 4": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "ha-stroke": {
       "0 5": {
         "name": "_new",
@@ -14689,6 +14827,14 @@
         "name": "YOPQ",
         "direction": "y"
       },
+      "0 13": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "17 14": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
       "14 10": {
         "name": "XTRA",
         "direction": "x"
@@ -14747,6 +14893,13 @@
     "caroncomb.alt": {},
     "commaaccentturnedcomb": {},
     "brevecomb.case": {},
-    "ringcomb.case": {}
+    "ringcomb.case": {},
+    "diagonalbarl": {
+      "4 5": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
+    "sevensuperior": {}
   }
 }
