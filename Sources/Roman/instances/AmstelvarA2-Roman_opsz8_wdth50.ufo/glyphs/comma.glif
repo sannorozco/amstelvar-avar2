@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="comma" format="2">
+  <advance width="259"/>
+  <unicode hex="002C"/>
+  <outline>
+    <contour>
+      <point x="-27" y="-212" type="line"/>
+      <point x="10" y="-184"/>
+      <point x="111" y="-79"/>
+      <point x="129" y="-11" type="qcurve"/>
+      <point x="59" y="-6"/>
+      <point x="-16" y="69"/>
+      <point x="-16" y="131" type="qcurve" smooth="yes"/>
+      <point x="-16" y="193"/>
+      <point x="71" y="285"/>
+      <point x="138" y="285" type="qcurve" smooth="yes"/>
+      <point x="202" y="285"/>
+      <point x="293" y="204"/>
+      <point x="293" y="121" type="qcurve" smooth="yes"/>
+      <point x="293" y="-8"/>
+      <point x="127" y="-219"/>
+      <point x="29" y="-277" type="qcurve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>3 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+        <key>6 12</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

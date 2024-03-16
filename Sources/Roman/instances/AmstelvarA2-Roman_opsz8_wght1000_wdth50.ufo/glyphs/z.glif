@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="z" format="2">
+  <advance width="750"/>
+  <unicode hex="007A"/>
+  <anchor x="523" y="0" name="bottom"/>
+  <anchor x="523" y="1095" name="top"/>
+  <outline>
+    <contour>
+      <point x="-17" y="0" type="line"/>
+      <point x="-17" y="90" type="line"/>
+      <point x="206" y="933" type="line"/>
+      <point x="222" y="933" type="line"/>
+      <point x="195" y="697" type="line"/>
+      <point x="11" y="697" type="line"/>
+      <point x="11" y="1095" type="line"/>
+      <point x="753" y="1095" type="line"/>
+      <point x="753" y="1006" type="line"/>
+      <point x="519" y="162" type="line"/>
+      <point x="558" y="162" type="line"/>
+      <point x="585" y="398" type="line"/>
+      <point x="769" y="398" type="line"/>
+      <point x="769" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>0 6</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YTLC</string>
+        </dict>
+        <key>0 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YOLC</string>
+        </dict>
+        <key>10 11</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YSVL</string>
+        </dict>
+        <key>11 12</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XSVL</string>
+        </dict>
+        <key>3 4</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YSVL</string>
+        </dict>
+        <key>3 6</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YOLC</string>
+        </dict>
+        <key>4 5</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XSVL</string>
+        </dict>
+      </dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
+    </dict>
+  </lib>
+</glyph>

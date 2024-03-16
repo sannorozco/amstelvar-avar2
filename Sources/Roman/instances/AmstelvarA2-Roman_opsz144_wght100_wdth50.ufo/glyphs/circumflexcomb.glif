@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="circumflexcomb" format="2">
+  <advance width="1890"/>
+  <unicode hex="0302"/>
+  <anchor x="945" y="1000" name="_top"/>
+  <anchor x="945" y="1539" name="top"/>
+  <outline>
+    <contour>
+      <point x="945" y="1539" type="qcurve" smooth="yes"/>
+      <point x="979" y="1539"/>
+      <point x="1019" y="1511"/>
+      <point x="1047" y="1466" type="qcurve" smooth="yes"/>
+      <point x="1205" y="1188" type="line"/>
+      <point x="1191" y="1183" type="line"/>
+      <point x="945" y="1485" type="line"/>
+      <point x="698" y="1183" type="line"/>
+      <point x="684" y="1188" type="line"/>
+      <point x="837" y="1458" type="line" smooth="yes"/>
+      <point x="867" y="1510"/>
+      <point x="911" y="1539"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/sources/Roman/Amstelvar-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

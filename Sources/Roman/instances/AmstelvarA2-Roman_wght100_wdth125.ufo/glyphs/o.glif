@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="o" format="2">
+  <advance width="1537"/>
+  <unicode hex="006F"/>
+  <anchor x="771" y="0" name="bottom"/>
+  <anchor x="771" y="499" name="center"/>
+  <anchor x="980" y="0" name="ogonek"/>
+  <anchor x="771" y="998" name="top"/>
+  <anchor x="984" y="998" name="topright"/>
+  <anchor x="771" y="998" name="GRKtop"/>
+  <outline>
+    <contour>
+      <point x="178" y="499" type="qcurve" smooth="yes"/>
+      <point x="178" y="716"/>
+      <point x="502" y="1020"/>
+      <point x="768" y="1020" type="qcurve" smooth="yes"/>
+      <point x="1033" y="1020"/>
+      <point x="1359" y="736"/>
+      <point x="1359" y="505" type="qcurve" smooth="yes"/>
+      <point x="1359" y="289"/>
+      <point x="1038" y="-22"/>
+      <point x="774" y="-22" type="qcurve" smooth="yes"/>
+      <point x="509" y="-22"/>
+      <point x="178" y="266"/>
+    </contour>
+    <contour>
+      <point x="269" y="519" type="qcurve" smooth="yes"/>
+      <point x="270" y="312"/>
+      <point x="545" y="26"/>
+      <point x="774" y="26" type="qcurve" smooth="yes"/>
+      <point x="1014" y="26"/>
+      <point x="1280" y="289"/>
+      <point x="1280" y="505" type="qcurve" smooth="yes"/>
+      <point x="1280" y="707"/>
+      <point x="1002" y="970"/>
+      <point x="776" y="970" type="qcurve" smooth="yes"/>
+      <point x="529" y="970"/>
+      <point x="268" y="730"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
+    </dict>
+  </lib>
+</glyph>

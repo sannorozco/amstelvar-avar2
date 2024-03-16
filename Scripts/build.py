@@ -107,10 +107,10 @@ class AmstelvarA2DesignSpaceBuilder:
         # import blends data from the original Amstelvar
         with open(self.amstelvarBlendsPath, 'r', encoding='utf-8') as f:
             blendsDict = json.load(f)
-        # redefine wght wdth extrema
-        blendsDict['axes']['wght']['min'] = 200
-        blendsDict['axes']['wght']['max'] = 800
-        blendsDict['axes']['wdth']['min'] = 85
+        # redefine wght wdth extrema # turned ON for ASCII / OFF for Latin-1
+        # blendsDict['axes']['wght']['min'] = 200
+        # blendsDict['axes']['wght']['max'] = 800
+        # blendsDict['axes']['wdth']['min'] = 85
         # add XTSP axis
         blendsDict['axes']['XTSP'] = {
             "name"    : "XTSP",
@@ -347,6 +347,7 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
             self.designspace.addAxisMapping(m)
 
     def build(self):
+        self.buildBlendsFile()
         self.designspace = DesignSpaceDocument()
         self.addBlendedAxes()
         self.addParametricAxes()
@@ -535,15 +536,15 @@ if __name__ == '__main__':
     # D.save()
     # D.buildInstances()
 
-    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
-    # D1.build()
-    # D1.save()
-    # D1.buildVariableFont()
+    D1 = AmstelvarA2DesignSpaceBuilder_avar1()
+    D1.build()
+    D1.save()
+    D1.buildVariableFont()
 
-    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    D2.build()
-    D2.save()
-    D2.buildVariableFont()
+    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    # D2.build()
+    # D2.save()
+    # D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()

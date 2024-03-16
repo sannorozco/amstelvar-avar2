@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="semicolon" format="2">
+  <advance width="545"/>
+  <unicode hex="003B"/>
+  <outline>
+    <contour>
+      <point x="103" y="-205" type="line"/>
+      <point x="144" y="-174"/>
+      <point x="226" y="-95"/>
+      <point x="257" y="-9" type="qcurve"/>
+      <point x="140" y="-1"/>
+      <point x="18" y="127"/>
+      <point x="18" y="221" type="qcurve" smooth="yes"/>
+      <point x="18" y="323"/>
+      <point x="161" y="473"/>
+      <point x="273" y="473" type="qcurve" smooth="yes"/>
+      <point x="379" y="473"/>
+      <point x="529" y="340"/>
+      <point x="529" y="205" type="qcurve" smooth="yes"/>
+      <point x="529" y="9"/>
+      <point x="261" y="-226"/>
+      <point x="165" y="-277" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="32" y="797" type="qcurve" smooth="yes"/>
+      <point x="32" y="895"/>
+      <point x="167" y="1040"/>
+      <point x="273" y="1040" type="qcurve" smooth="yes"/>
+      <point x="379" y="1040"/>
+      <point x="516" y="895"/>
+      <point x="516" y="797" type="qcurve" smooth="yes"/>
+      <point x="516" y="701"/>
+      <point x="379" y="557"/>
+      <point x="273" y="557" type="qcurve" smooth="yes"/>
+      <point x="167" y="557"/>
+      <point x="32" y="701"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>16 22</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+        <key>19 25</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+        <key>3 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+        <key>6 12</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

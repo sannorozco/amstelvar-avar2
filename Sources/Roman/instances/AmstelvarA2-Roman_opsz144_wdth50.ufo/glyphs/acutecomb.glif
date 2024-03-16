@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acutecomb" format="2">
+  <advance width="2256"/>
+  <unicode hex="0301"/>
+  <anchor x="1128" y="1000" name="_top"/>
+  <anchor x="1128" y="1524" name="top"/>
+  <outline>
+    <contour>
+      <point x="1363" y="1454" type="qcurve" smooth="yes"/>
+      <point x="1363" y="1410"/>
+      <point x="1309" y="1366"/>
+      <point x="1277" y="1348" type="qcurve" smooth="yes"/>
+      <point x="983" y="1177" type="line"/>
+      <point x="960" y="1201" type="line"/>
+      <point x="1158" y="1433" type="line" smooth="yes"/>
+      <point x="1186" y="1469"/>
+      <point x="1245" y="1523"/>
+      <point x="1278" y="1523" type="qcurve" smooth="yes"/>
+      <point x="1312" y="1523"/>
+      <point x="1363" y="1485"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/sources/Roman/Amstelvar-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>
