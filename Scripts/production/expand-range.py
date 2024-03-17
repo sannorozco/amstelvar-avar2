@@ -34,8 +34,8 @@ designspacePath  = os.path.join(sourcesFolder, 'expand-range.designspace')
 sources = glob.glob(f'{sourcesFolder}/*.ufo')
 
 axisName1 = 'XTRA'
-factor    = 0.9
-direction = 1
+factor    = 0.55
+direction = 0
 
 # make new designspace document
 D = DesignSpaceDocument()
