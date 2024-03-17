@@ -2,8 +2,8 @@
 <designspace format="5.0">
   <axes>
     <axis tag="opsz" name="Optical size" minimum="8" maximum="144" default="14"/>
-    <axis tag="wght" name="Weight" minimum="200" maximum="800" default="400"/>
-    <axis tag="wdth" name="Width" minimum="85" maximum="125" default="100"/>
+    <axis tag="wght" name="Weight" minimum="100" maximum="1000" default="400"/>
+    <axis tag="wdth" name="Width" minimum="50" maximum="125" default="100"/>
     <axis tag="XTSP" name="XTSP" minimum="-100" maximum="100" default="0"/>
     <axis tag="XOPQ" name="XOPQ" minimum="4" maximum="310" default="90"/>
     <axis tag="XTRA" name="XTRA" minimum="189" maximum="606" default="400"/>
@@ -1461,9 +1461,9 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="instances/AmstelvarA2-Roman_wght200.ufo" familyname="AmstelvarA2" stylename="wght200">
+    <source filename="instances/AmstelvarA2-Roman_wght100.ufo" familyname="AmstelvarA2" stylename="wght100">
       <location>
-        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Weight" xvalue="100"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1490,9 +1490,9 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="instances/AmstelvarA2-Roman_wght800.ufo" familyname="AmstelvarA2" stylename="wght800">
+    <source filename="instances/AmstelvarA2-Roman_wght1000.ufo" familyname="AmstelvarA2" stylename="wght1000">
       <location>
-        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Weight" xvalue="1000"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1519,9 +1519,9 @@
         <dimension name="XUCS" xvalue="145"/>
       </location>
     </source>
-    <source filename="instances/AmstelvarA2-Roman_wdth85.ufo" familyname="AmstelvarA2" stylename="wdth85">
+    <source filename="instances/AmstelvarA2-Roman_wdth50.ufo" familyname="AmstelvarA2" stylename="wdth50">
       <location>
-        <dimension name="Width" xvalue="85"/>
+        <dimension name="Width" xvalue="50"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>

@@ -93,9 +93,9 @@
     "XTLC": {
       "direction": "x",
       "glyph 1": "n",
-      "point 1": "10",
+      "point 1": "34",
       "glyph 2": "n",
-      "point 2": "13",
+      "point 2": "24",
       "parent": "XTRA",
       "description": "X transparent lowercase"
     },
@@ -14692,7 +14692,12 @@
     "horizontalbarlc": {},
     "greaterequal": {},
     "horncomb": {},
-    "diagonalbarO": {},
+    "diagonalbarO": {
+      "0 7": {
+        "name": "YOPQ",
+        "direction": "x"
+      }
+    },
     "tenge": {},
     "ustraight-stroke": {},
     "dieresiscomb-stack": {},
@@ -14800,7 +14805,12 @@
     "caroncomb.case": {},
     "commaaccentcomb.case": {},
     "oslash": {},
-    "diagonalbaro": {},
+    "diagonalbaro": {
+      "0 7": {
+        "name": "YOPQ",
+        "direction": "x"
+      }
+    },
     "micro": {
       "4 11": {
         "name": "XOLC",
@@ -14923,7 +14933,7 @@
     "brevecomb.case": {},
     "ringcomb.case": {},
     "diagonalbarl": {
-      "4 5": {
+      "0 3": {
         "name": "YOPQ",
         "direction": "a"
       }
@@ -14933,6 +14943,7 @@
     "macronbelowcomb.case": {},
     "dotbelowcomb.case": {},
     "dblgravecomb.case": {},
-    "commaaccentcomb": {}
+    "commaaccentcomb": {},
+    "dieresistonoscomb": {}
   }
 }
