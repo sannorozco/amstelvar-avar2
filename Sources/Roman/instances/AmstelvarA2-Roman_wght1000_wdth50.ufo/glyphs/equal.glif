@@ -1,31 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="equal" format="2">
-  <advance width="101"/>
+  <advance width="685"/>
   <unicode hex="003D"/>
   <outline>
     <contour>
-      <point x="-182" y="329" type="line"/>
-      <point x="-182" y="511" type="line"/>
-      <point x="49" y="507" type="line"/>
-      <point x="283" y="511" type="line"/>
-      <point x="283" y="329" type="line"/>
-      <point x="49" y="333" type="line"/>
+      <point x="110" y="329" type="line"/>
+      <point x="110" y="511" type="line"/>
+      <point x="341" y="507" type="line"/>
+      <point x="575" y="511" type="line"/>
+      <point x="575" y="329" type="line"/>
+      <point x="341" y="333" type="line"/>
     </contour>
     <contour>
-      <point x="-182" y="731" type="line"/>
-      <point x="-182" y="913" type="line"/>
-      <point x="49" y="909" type="line"/>
-      <point x="283" y="913" type="line"/>
-      <point x="283" y="731" type="line"/>
-      <point x="49" y="735" type="line"/>
+      <point x="110" y="731" type="line"/>
+      <point x="110" y="913" type="line"/>
+      <point x="341" y="909" type="line"/>
+      <point x="575" y="913" type="line"/>
+      <point x="575" y="731" type="line"/>
+      <point x="341" y="735" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
-      <key>public.markColor</key>
-      <string>0,0.98107,0.57369,0.50364</string>
     </dict>
   </lib>
 </glyph>

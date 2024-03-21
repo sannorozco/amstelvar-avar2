@@ -3,13 +3,13 @@
   <advance width="983"/>
   <unicode hex="1EC9"/>
   <outline>
-    <component base="idotless"/>
-    <component base="hookabovecomb" xOffset="6" yOffset="101"/>
+    <component base="idotless" xOffset="-2"/>
+    <component base="hookabovecomb" xOffset="444" yOffset="101"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>0,0.6,1,0.5</string>
     </dict>
   </lib>
 </glyph>

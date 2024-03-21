@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ubreve" format="2">
-  <advance width="724"/>
+  <advance width="949"/>
   <unicode hex="016D"/>
   <outline>
-    <component base="u"/>
-    <component base="brevecomb" xOffset="-800" yOffset="-86"/>
+    <component base="u" xOffset="98"/>
+    <component base="brevecomb" xOffset="429" yOffset="-86"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>0,0.6,1,0.5</string>
     </dict>
   </lib>
 </glyph>

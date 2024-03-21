@@ -2,15 +2,15 @@
 <glyph name="ijacute" format="2">
   <advance width="1758"/>
   <outline>
-    <component base="idotless"/>
-    <component base="idot" xOffset="355" yOffset="-34"/>
-    <component base="jdotless" xOffset="921"/>
-    <component base="acutecomb" xOffset="-205" yOffset="-34"/>
+    <component base="idotless" xOffset="-5"/>
+    <component base="idot" xOffset="187" yOffset="-34"/>
+    <component base="jdotless" xOffset="596"/>
+    <component base="acutecomb" xOffset="878" yOffset="-34"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>0,0.6,1,0.5</string>
     </dict>
   </lib>
 </glyph>

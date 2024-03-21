@@ -19,14 +19,14 @@
       <point x="549" y="563" type="line"/>
       <point x="662" y="465" type="line"/>
       <point x="672" y="465" type="line"/>
-      <point x="772" y="563" type="line"/>
+      <point x="773" y="563" type="line"/>
       <point x="1058" y="873" type="line"/>
-      <point x="823" y="903" type="line"/>
-      <point x="823" y="921" type="line"/>
-      <point x="1228" y="921" type="line"/>
-      <point x="1228" y="903" type="line"/>
-      <point x="1086" y="868" type="line"/>
-      <point x="704" y="448" type="line"/>
+      <point x="822" y="903" type="line"/>
+      <point x="822" y="921" type="line"/>
+      <point x="1227" y="921" type="line"/>
+      <point x="1227" y="903" type="line"/>
+      <point x="1085" y="868" type="line"/>
+      <point x="705" y="448" type="line"/>
       <point x="1176" y="51" type="line"/>
       <point x="1302" y="16" type="line"/>
       <point x="1302" y="0" type="line"/>
@@ -44,8 +44,18 @@
   </outline>
   <lib>
     <dict>
-      <key>public.markColor</key>
-      <string>0,0.98107,0.57369,0.5</string>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>0 17</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YTLC</string>
+        </dict>
+      </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>

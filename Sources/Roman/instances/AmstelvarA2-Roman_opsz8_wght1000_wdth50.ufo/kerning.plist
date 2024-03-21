@@ -85,17 +85,17 @@
     <key>Euro</key>
     <dict>
       <key>five.lf</key>
-      <real>-36.913043478260875</real>
+      <integer>30</integer>
       <key>four.lf</key>
-      <real>86.13043478260872</real>
+      <integer>-70</integer>
       <key>nine.lf</key>
-      <real>24.608695652173914</real>
+      <integer>-20</integer>
       <key>six.lf</key>
-      <real>61.521739130434796</real>
+      <integer>-50</integer>
       <key>three.lf</key>
-      <real>-49.21739130434783</real>
+      <integer>40</integer>
       <key>two.lf</key>
-      <real>-61.521739130434796</real>
+      <integer>50</integer>
     </dict>
     <key>F</key>
     <dict>
@@ -1986,21 +1986,6 @@
       <key>x</key>
       <integer>30</integer>
     </dict>
-    <key>euro</key>
-    <dict>
-      <key>five.lf</key>
-      <real>66.91304347826087</real>
-      <key>four.lf</key>
-      <real>-156.13043478260872</real>
-      <key>nine.lf</key>
-      <real>-44.608695652173914</real>
-      <key>six.lf</key>
-      <real>-111.5217391304348</real>
-      <key>three.lf</key>
-      <real>89.21739130434783</real>
-      <key>two.lf</key>
-      <real>111.5217391304348</real>
-    </dict>
     <key>exclam</key>
     <dict>
       <key>De</key>
@@ -2065,7 +2050,7 @@
     <key>five.lf</key>
     <dict>
       <key>Euro</key>
-      <real>-12.304347826086957</real>
+      <integer>10</integer>
       <key>asterisk</key>
       <integer>-40</integer>
       <key>backslash</key>
@@ -2078,8 +2063,6 @@
       <integer>-70</integer>
       <key>eight.lf</key>
       <integer>20</integer>
-      <key>euro</key>
-      <real>22.304347826086957</real>
       <key>fraction</key>
       <integer>280</integer>
       <key>greater</key>
@@ -2653,7 +2636,7 @@
     <key>one.lf</key>
     <dict>
       <key>Euro</key>
-      <real>159.95652173913044</real>
+      <integer>-130</integer>
       <key>asterisk</key>
       <integer>-110</integer>
       <key>backslash</key>
@@ -2668,8 +2651,6 @@
       <integer>-180</integer>
       <key>dong</key>
       <integer>-50</integer>
-      <key>euro</key>
-      <real>-289.95652173913044</real>
       <key>five.lf</key>
       <integer>20</integer>
       <key>four.lf</key>
@@ -14091,7 +14072,7 @@
     <key>seven.lf</key>
     <dict>
       <key>Euro</key>
-      <real>86.13043478260872</real>
+      <integer>-70</integer>
       <key>asterisk</key>
       <integer>50</integer>
       <key>backslash</key>
@@ -14110,8 +14091,6 @@
       <integer>40</integer>
       <key>dong</key>
       <integer>-100</integer>
-      <key>euro</key>
-      <real>-156.13043478260872</real>
       <key>four.lf</key>
       <integer>-70</integer>
       <key>fraction</key>
@@ -14530,7 +14509,7 @@
     <key>two.lf</key>
     <dict>
       <key>Euro</key>
-      <real>24.608695652173914</real>
+      <integer>-20</integer>
       <key>asterisk</key>
       <integer>50</integer>
       <key>backslash</key>
@@ -14545,8 +14524,6 @@
       <integer>100</integer>
       <key>eight.lf</key>
       <integer>30</integer>
-      <key>euro</key>
-      <real>-44.608695652173914</real>
       <key>five.lf</key>
       <integer>90</integer>
       <key>four.lf</key>

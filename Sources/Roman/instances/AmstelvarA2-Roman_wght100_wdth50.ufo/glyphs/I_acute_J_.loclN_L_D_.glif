@@ -1,14 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Iacute_J.loclNLD" format="2">
-  <advance width="1019"/>
-  <note>
-Iacute = I + acutecomb.case@top | 0xcd
-</note>
+  <advance width="1030"/>
   <outline>
     <component base="I"/>
-    <component base="acutecomb.case" xOffset="-170"/>
-    <component base="J" xOffset="530"/>
-    <component base="acutecomb.case" xOffset="342"/>
+    <component base="acutecomb.case" xOffset="262"/>
+    <component base="J" xOffset="523"/>
+    <component base="acutecomb.case" xOffset="781"/>
   </outline>
   <lib>
     <dict>

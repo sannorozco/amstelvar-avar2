@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Uhorngrave" format="2">
-  <advance width="1215"/>
+  <advance width="824"/>
   <unicode hex="1EEA"/>
   <outline>
     <component base="hornU"/>
-    <component base="horncomb.case" xOffset="-63"/>
-    <component base="gravecomb.case" xOffset="-666"/>
+    <component base="horncomb.case" xOffset="959"/>
+    <component base="gravecomb.case" xOffset="441"/>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>0,0.6,1,0.5</string>
     </dict>
   </lib>
 </glyph>

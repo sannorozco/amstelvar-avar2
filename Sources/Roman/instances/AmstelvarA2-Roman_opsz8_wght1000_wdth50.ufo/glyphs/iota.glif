@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="iota" format="2">
-  <advance width="439"/>
+  <advance width="438"/>
   <unicode hex="03B9"/>
   <anchor x="251" y="1000" name="GRKtop"/>
   <outline>
@@ -15,8 +15,8 @@
       <point x="344" y="964" type="line"/>
       <point x="322" y="266" type="line"/>
       <point x="322" y="170"/>
-      <point x="324" y="109"/>
-      <point x="367" y="109" type="qcurve"/>
+      <point x="323" y="109"/>
+      <point x="366" y="109" type="qcurve"/>
       <point x="359" y="109" type="line"/>
       <point x="359" y="29" type="line"/>
     </contour>
@@ -25,8 +25,6 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
-      <key>public.markColor</key>
-      <string>0.6,0.8,0,0.5</string>
     </dict>
   </lib>
 </glyph>
