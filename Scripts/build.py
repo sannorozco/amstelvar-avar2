@@ -536,10 +536,10 @@ if __name__ == '__main__':
     # D.save()
     # D.buildInstances()
 
-    D1 = AmstelvarA2DesignSpaceBuilder_avar1()
-    D1.build()
-    D1.save()
-    D1.buildVariableFont()
+    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
+    # D1.build()
+    # D1.save()
+    # D1.buildVariableFont()
 
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
