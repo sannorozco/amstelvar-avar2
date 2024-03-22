@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="periodcentered" format="2">
+  <advance width="760"/>
+  <unicode hex="00B7"/>
+  <outline>
+    <contour>
+      <point x="148" y="675" type="qcurve" smooth="yes"/>
+      <point x="148" y="769"/>
+      <point x="278" y="907"/>
+      <point x="380" y="907" type="qcurve" smooth="yes"/>
+      <point x="482" y="907"/>
+      <point x="612" y="769"/>
+      <point x="612" y="675" type="qcurve" smooth="yes"/>
+      <point x="612" y="583"/>
+      <point x="482" y="444"/>
+      <point x="380" y="444" type="qcurve" smooth="yes"/>
+      <point x="278" y="444"/>
+      <point x="148" y="583"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>0 6</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XDOT</string>
+        </dict>
+        <key>3 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YDOT</string>
+        </dict>
+      </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/sources/Roman/Amstelvar-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

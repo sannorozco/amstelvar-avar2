@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccentcomb" format="2">
+  <unicode hex="0307"/>
+  <anchor x="0" y="1000" name="_top"/>
+  <anchor x="0" y="1465" name="top"/>
+  <outline>
+    <contour>
+      <point x="-237" y="1254" type="qcurve" smooth="yes"/>
+      <point x="-237" y="1364"/>
+      <point x="-114" y="1485"/>
+      <point x="0" y="1485" type="qcurve" smooth="yes"/>
+      <point x="107" y="1485"/>
+      <point x="237" y="1358"/>
+      <point x="237" y="1254" type="qcurve" smooth="yes"/>
+      <point x="237" y="1143"/>
+      <point x="115" y="1024"/>
+      <point x="0" y="1024" type="qcurve" smooth="yes"/>
+      <point x="-108" y="1024"/>
+      <point x="-237" y="1151"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>

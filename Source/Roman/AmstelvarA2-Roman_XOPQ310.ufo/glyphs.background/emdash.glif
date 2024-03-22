@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="emdash" format="2">
+  <advance width="2048"/>
+  <unicode hex="2014"/>
+  <outline>
+    <contour>
+      <point x="256" y="480" type="line"/>
+      <point x="256" y="788" type="line"/>
+      <point x="1024" y="790" type="line"/>
+      <point x="1792" y="788" type="line"/>
+      <point x="1792" y="480" type="line"/>
+      <point x="1024" y="474" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.50364</string>
+    </dict>
+  </lib>
+</glyph>
