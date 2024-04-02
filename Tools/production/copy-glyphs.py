@@ -1,8 +1,6 @@
 # menuTitle: copy default glyphs to other sources
 
 import os, glob
-from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
-from hTools3.modules.accents import buildAccentedGlyphs
 
 familyName    = 'AmstelvarA2'
 subFamilyName = ['Roman', 'Italic'][0]
@@ -36,4 +34,3 @@ for ufoPath in ufoPaths:
     dstFont.save()
     dstFont.close()
     print()
-
