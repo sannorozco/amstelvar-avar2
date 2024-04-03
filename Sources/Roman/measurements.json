@@ -1530,14 +1530,6 @@
         "name": "XOUC",
         "direction": "x"
       },
-      "19 4": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YOUC",
-        "direction": "y"
-      },
       "1 7": {
         "name": "XTUC",
         "direction": "x"
@@ -1553,6 +1545,10 @@
       "10 9": {
         "name": "XSHU",
         "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHU",
+        "direction": "y"
       },
       "10 11": {
         "name": "YSHU",
@@ -6104,7 +6100,16 @@
         "direction": "y"
       }
     },
-    "horncomb.case": {},
+    "horncomb.case": {
+      "6 13": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "16 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "breve.cyrcomb.case": {},
     "breve.cyr": {},
     "breve.cyrcomb": {},
@@ -9453,10 +9458,6 @@
         "name": "XOLC",
         "direction": "x"
       },
-      "0 1": {
-        "name": "YOLC",
-        "direction": "y"
-      },
       "1 4": {
         "name": "XTLC",
         "direction": "x"
@@ -9472,6 +9473,10 @@
       "7 6": {
         "name": "XSHL",
         "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHL",
+        "direction": "y"
       },
       "7 8": {
         "name": "YSHL",
