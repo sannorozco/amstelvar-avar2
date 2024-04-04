@@ -1,25 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="plus" format="2">
-  <advance width="683"/>
+  <advance width="804"/>
   <unicode hex="002B"/>
   <outline>
     <contour>
       <point x="80" y="556" type="line"/>
       <point x="80" y="708" type="line"/>
-      <point x="603" y="708" type="line"/>
-      <point x="603" y="556" type="line"/>
+      <point x="724" y="708" type="line"/>
+      <point x="724" y="556" type="line"/>
     </contour>
     <contour>
-      <point x="262" y="371" type="line"/>
-      <point x="262" y="894" type="line"/>
-      <point x="422" y="894" type="line"/>
-      <point x="422" y="371" type="line"/>
+      <point x="322" y="310" type="line"/>
+      <point x="322" y="954" type="line"/>
+      <point x="482" y="954" type="line"/>
+      <point x="482" y="310" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.50364</string>
     </dict>
   </lib>
 </glyph>
