@@ -1,31 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="asciitilde" format="2">
-  <advance width="1666"/>
+  <advance width="1518"/>
   <unicode hex="007E"/>
   <outline>
     <contour>
-      <point x="35" y="601" type="line"/>
-      <point x="97" y="694"/>
-      <point x="445" y="806"/>
-      <point x="574" y="806" type="qcurve"/>
-      <point x="1167" y="671" type="line"/>
-      <point x="1227" y="671"/>
-      <point x="1446" y="698"/>
-      <point x="1541" y="813" type="qcurve"/>
-      <point x="1631" y="761" type="line"/>
-      <point x="1571" y="636"/>
-      <point x="1248" y="516"/>
-      <point x="1116" y="516" type="qcurve"/>
-      <point x="546" y="643" type="line"/>
-      <point x="438" y="646"/>
-      <point x="160" y="589"/>
-      <point x="103" y="537" type="qcurve"/>
+      <point x="31" y="601" type="line"/>
+      <point x="93" y="694"/>
+      <point x="402" y="806"/>
+      <point x="522" y="806" type="qcurve"/>
+      <point x="1066" y="671" type="line"/>
+      <point x="1126" y="671"/>
+      <point x="1316" y="712"/>
+      <point x="1397" y="813" type="qcurve"/>
+      <point x="1487" y="761" type="line"/>
+      <point x="1429" y="641"/>
+      <point x="1147" y="516"/>
+      <point x="1015" y="516" type="qcurve"/>
+      <point x="494" y="643" type="line"/>
+      <point x="397" y="645"/>
+      <point x="156" y="589"/>
+      <point x="99" y="537" type="qcurve"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.50364</string>
     </dict>
   </lib>
 </glyph>
