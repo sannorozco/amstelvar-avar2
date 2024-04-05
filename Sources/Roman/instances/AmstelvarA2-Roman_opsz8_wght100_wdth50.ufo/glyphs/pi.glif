@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="pi" format="2">
+  <advance width="975"/>
+  <unicode hex="03C0"/>
+  <outline>
+    <contour>
+      <point x="-48" y="880" type="line"/>
+      <point x="-48" y="944" type="line"/>
+      <point x="98" y="1000" type="line"/>
+      <point x="956" y="1010" type="line"/>
+      <point x="973" y="987" type="line"/>
+      <point x="963" y="898" type="line"/>
+    </contour>
+    <contour>
+      <point x="178" y="0" type="line"/>
+      <point x="162" y="23" type="line"/>
+      <point x="196" y="470" type="line"/>
+      <point x="231" y="942" type="line"/>
+      <point x="329" y="942" type="line"/>
+      <point x="300" y="470" type="line"/>
+      <point x="276" y="13" type="line"/>
+    </contour>
+    <contour>
+      <point x="759" y="-8" type="line"/>
+      <point x="690" y="-7"/>
+      <point x="614" y="98"/>
+      <point x="617" y="232" type="qcurve" smooth="yes"/>
+      <point x="638" y="945" type="line"/>
+      <point x="734" y="945" type="line"/>
+      <point x="725" y="265" type="line" smooth="yes"/>
+      <point x="722" y="176"/>
+      <point x="784" y="101"/>
+      <point x="834" y="101" type="qcurve"/>
+      <point x="902" y="101" type="line"/>
+      <point x="902" y="21" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>
