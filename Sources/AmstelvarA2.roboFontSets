@@ -1288,6 +1288,17 @@
 				<key>smartSetName</key>
 				<string>reference</string>
 			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>guilsinglleft</string>
+					<string>guilsinglright</string>
+					<string>guillemotleft</string>
+					<string>guillemotright</string>
+				</array>
+				<key>smartSetName</key>
+				<string>guillemets</string>
+			</dict>
 		</array>
 		<key>smartSetName</key>
 		<string>symbols</string>
@@ -1539,6 +1550,8 @@
 					<string>dieresistonoscomb</string>
 					<string>tonoscomb</string>
 					<string>commaaccentturnedcomb</string>
+					<string>breve.cyrcomb</string>
+					<string>yi-dieresiscomb</string>
 				</array>
 				<key>smartSetName</key>
 				<string>accents comb</string>
@@ -1570,6 +1583,7 @@
 					<string>macronbelowcomb.case</string>
 					<string>tonoscomb.case</string>
 					<string>dieresistonoscomb.case</string>
+					<string>breve.cyrcomb.case</string>
 				</array>
 				<key>smartSetName</key>
 				<string>accents comb case</string>
@@ -1626,6 +1640,7 @@
 					<string>brevebelow</string>
 					<string>macronbelow</string>
 					<string>commaaccentturned</string>
+					<string>yi-dieresis</string>
 				</array>
 				<key>smartSetName</key>
 				<string>accents spacing</string>
