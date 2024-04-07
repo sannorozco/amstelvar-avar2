@@ -10,12 +10,20 @@
     <string>B_.glif</string>
     <key>C</key>
     <string>C_.glif</string>
+    <key>Chedescender-cy</key>
+    <string>C_hedescender-cy.glif</string>
     <key>D</key>
     <string>D_.glif</string>
+    <key>De.bgr</key>
+    <string>D_e.bgr.glif</string>
     <key>Delta</key>
     <string>D_elta.glif</string>
     <key>E</key>
     <string>E_.glif</string>
+    <key>Ef</key>
+    <string>E_f.glif</string>
+    <key>El.bgr</key>
+    <string>E_l.bgr.glif</string>
     <key>Epsilontonos</key>
     <string>E_psilontonos.glif</string>
     <key>Etatonos</key>
@@ -28,6 +36,10 @@
     <string>G_amma.glif</string>
     <key>H</key>
     <string>H_.glif</string>
+    <key>Hadescender</key>
+    <string>H_adescender.glif</string>
+    <key>Hastroke-cy</key>
+    <string>H_astroke-cy.glif</string>
     <key>I</key>
     <string>I_.glif</string>
     <key>Iotatonos</key>
@@ -36,6 +48,8 @@
     <string>J_.glif</string>
     <key>K</key>
     <string>K_.glif</string>
+    <key>Kaisymbol</key>
+    <string>K_aisymbol.glif</string>
     <key>L</key>
     <string>L_.glif</string>
     <key>Lambda</key>
@@ -52,6 +66,8 @@
     <string>O_megatonos.glif</string>
     <key>Omicrontonos</key>
     <string>O_microntonos.glif</string>
+    <key>Oslash.rvrn</key>
+    <string>O_slash.rvrn.glif</string>
     <key>P</key>
     <string>P_.glif</string>
     <key>Phi</key>
@@ -66,14 +82,20 @@
     <string>R_.glif</string>
     <key>S</key>
     <string>S_.glif</string>
+    <key>Schwacyr</key>
+    <string>S_chwacyr.glif</string>
     <key>Sigma</key>
     <string>S_igma.glif</string>
     <key>T</key>
     <string>T_.glif</string>
     <key>U</key>
     <string>U_.glif</string>
+    <key>Ucyr</key>
+    <string>U_cyr.glif</string>
     <key>Upsilontonos</key>
     <string>U_psilontonos.glif</string>
+    <key>Ustraightstroke</key>
+    <string>U_straightstroke.glif</string>
     <key>V</key>
     <string>V_.glif</string>
     <key>W</key>
@@ -84,6 +106,14 @@
     <string>X_i.glif</string>
     <key>Y</key>
     <string>Y_.glif</string>
+    <key>Yi-dieresiscomb.case</key>
+    <string>Y_i-dieresiscomb.case.glif</string>
+    <key>Yu</key>
+    <string>Y_u.glif</string>
+    <key>Yu-dash.case</key>
+    <string>Y_u-dash.case.glif</string>
+    <key>Yumacron</key>
+    <string>Y_umacron.glif</string>
     <key>Z</key>
     <string>Z_.glif</string>
     <key>Ze</key>
@@ -94,12 +124,20 @@
     <string>acutecomb.glif</string>
     <key>alpha</key>
     <string>alpha.glif</string>
+    <key>beta</key>
+    <string>beta.glif</string>
+    <key>breve.cyr</key>
+    <string>breve.cyr.glif</string>
+    <key>breve.cyr.case</key>
+    <string>breve.cyr.case.glif</string>
     <key>breve.cyrcomb</key>
     <string>breve.cyrcomb.glif</string>
     <key>breve.cyrcomb.case</key>
     <string>breve.cyrcomb.case.glif</string>
     <key>brevecomb</key>
     <string>brevecomb.glif</string>
+    <key>chi</key>
+    <string>chi.glif</string>
     <key>circumflexcomb</key>
     <string>circumflexcomb.glif</string>
     <key>commaaccentcomb</key>
@@ -108,8 +146,14 @@
     <string>commaaccentturnedcomb.glif</string>
     <key>dblgravecomb</key>
     <string>dblgravecomb.glif</string>
+    <key>delta</key>
+    <string>delta.glif</string>
     <key>dieresiscomb</key>
     <string>dieresiscomb.glif</string>
+    <key>dieresistonos</key>
+    <string>dieresistonos.glif</string>
+    <key>dieresistonos.case</key>
+    <string>dieresistonos.case.glif</string>
     <key>dieresistonoscomb</key>
     <string>dieresistonoscomb.glif</string>
     <key>dieresistonoscomb.case</key>
@@ -122,10 +166,22 @@
     <string>eight.tab.glif</string>
     <key>el.bgr</key>
     <string>el.bgr.glif</string>
+    <key>epsilon</key>
+    <string>epsilon.glif</string>
+    <key>epsilontonos</key>
+    <string>epsilontonos.glif</string>
+    <key>eta</key>
+    <string>eta.glif</string>
+    <key>etatonos</key>
+    <string>etatonos.glif</string>
     <key>exclamdown</key>
     <string>exclamdown.glif</string>
+    <key>finalsigma</key>
+    <string>finalsigma.glif</string>
     <key>five.tab</key>
     <string>five.tab.glif</string>
+    <key>gamma</key>
+    <string>gamma.glif</string>
     <key>ghe</key>
     <string>ghe.glif</string>
     <key>ghe.bgr</key>
@@ -134,12 +190,22 @@
     <string>gravecomb.glif</string>
     <key>ha-stroke</key>
     <string>ha-stroke.glif</string>
+    <key>hadescender</key>
+    <string>hadescender.glif</string>
     <key>hastroke-cy</key>
     <string>hastroke-cy.glif</string>
     <key>idot</key>
     <string>idot.glif</string>
     <key>idotless</key>
     <string>idotless.glif</string>
+    <key>iota</key>
+    <string>iota.glif</string>
+    <key>iotadieresis</key>
+    <string>iotadieresis.glif</string>
+    <key>iotadieresistonos</key>
+    <string>iotadieresistonos.glif</string>
+    <key>iotatonos</key>
+    <string>iotatonos.glif</string>
     <key>k</key>
     <string>k.glif</string>
     <key>ka</key>
@@ -150,8 +216,14 @@
     <string>kadescender.glif</string>
     <key>kai-tail</key>
     <string>kai-tail.glif</string>
+    <key>kaisymbol</key>
+    <string>kaisymbol.glif</string>
+    <key>kappa</key>
+    <string>kappa.glif</string>
     <key>kaverticalstrokecyr</key>
     <string>kaverticalstrokecyr.glif</string>
+    <key>lambda</key>
+    <string>lambda.glif</string>
     <key>ldot</key>
     <string>ldot.glif</string>
     <key>macroncomb</key>
@@ -160,24 +232,64 @@
     <string>mu.glif</string>
     <key>nine.tab</key>
     <string>nine.tab.glif</string>
+    <key>nu</key>
+    <string>nu.glif</string>
+    <key>omega</key>
+    <string>omega.glif</string>
+    <key>omegatonos</key>
+    <string>omegatonos.glif</string>
+    <key>omicron</key>
+    <string>omicron.glif</string>
+    <key>omicrontonos</key>
+    <string>omicrontonos.glif</string>
     <key>one.tab</key>
     <string>one.tab.glif</string>
+    <key>oslash.rvrn</key>
+    <string>oslash.rvrn.glif</string>
     <key>percent</key>
     <string>percent.glif</string>
     <key>periodcentered.loclCAT</key>
     <string>periodcentered.loclC_A_T_.glif</string>
+    <key>periodcentered.loclCAT.case</key>
+    <string>periodcentered.loclC_A_T_.case.glif</string>
+    <key>phi</key>
+    <string>phi.glif</string>
+    <key>pi</key>
+    <string>pi.glif</string>
+    <key>psi</key>
+    <string>psi.glif</string>
+    <key>rho</key>
+    <string>rho.glif</string>
     <key>sha.bgr</key>
     <string>sha.bgr.glif</string>
+    <key>sigma</key>
+    <string>sigma.glif</string>
+    <key>tau</key>
+    <string>tau.glif</string>
+    <key>theta</key>
+    <string>theta.glif</string>
     <key>three.tab</key>
     <string>three.tab.glif</string>
     <key>tildecomb</key>
     <string>tildecomb.glif</string>
+    <key>tonos</key>
+    <string>tonos.glif</string>
+    <key>tonos.case</key>
+    <string>tonos.case.glif</string>
     <key>tonoscomb</key>
     <string>tonoscomb.glif</string>
     <key>tonoscomb.case</key>
     <string>tonoscomb.case.glif</string>
     <key>two.tab</key>
     <string>two.tab.glif</string>
+    <key>upsilon</key>
+    <string>upsilon.glif</string>
+    <key>upsilondieresis</key>
+    <string>upsilondieresis.glif</string>
+    <key>upsilondieresistonos</key>
+    <string>upsilondieresistonos.glif</string>
+    <key>upsilontonos</key>
+    <string>upsilontonos.glif</string>
     <key>ustraight</key>
     <string>ustraight.glif</string>
     <key>ustraight-stroke</key>
@@ -190,6 +302,8 @@
     <string>w.glif</string>
     <key>x</key>
     <string>x.glif</string>
+    <key>xi</key>
+    <string>xi.glif</string>
     <key>y</key>
     <string>y.glif</string>
     <key>yu.bgr</key>
@@ -200,6 +314,10 @@
     <string>ze.glif</string>
     <key>zero.tab</key>
     <string>zero.tab.glif</string>
+    <key>zerosuperior</key>
+    <string>zerosuperior.glif</string>
+    <key>zeta</key>
+    <string>zeta.glif</string>
     <key>zhe</key>
     <string>zhe.glif</string>
     <key>zhedescender</key>
