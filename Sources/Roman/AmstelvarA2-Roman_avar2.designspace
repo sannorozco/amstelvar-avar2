@@ -5,6 +5,7 @@
     <axis tag="wght" name="Weight" minimum="100" maximum="1000" default="400"/>
     <axis tag="wdth" name="Width" minimum="50" maximum="125" default="100"/>
     <axis tag="XTSP" name="XTSP" minimum="-100" maximum="100" default="0"/>
+    <axis tag="GRAD" name="GRAD" minimum="0" maximum="500" default="0"/>
     <axis tag="XOPQ" name="XOPQ" minimum="4" maximum="310" default="90"/>
     <axis tag="XTRA" name="XTRA" minimum="73" maximum="668" default="400"/>
     <axis tag="YOPQ" name="YOPQ" minimum="4" maximum="311" default="62"/>
@@ -870,6 +871,7 @@
           <dimension name="YTTL" xvalue="57"/>
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="32"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -901,6 +903,7 @@
           <dimension name="YTTL" xvalue="57"/>
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="205"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
     </mappings>
@@ -908,6 +911,36 @@
   <sources>
     <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="AmstelvarA2" stylename="wght400">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_GRAD500.ufo" familyname="AmstelvarA2" stylename="GRAD500">
+      <location>
+        <dimension name="GRAD" xvalue="500"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -936,6 +969,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XOPQ310.ufo" familyname="AmstelvarA2" stylename="XOPQ310">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="310"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -964,6 +998,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XOPQ4.ufo" familyname="AmstelvarA2" stylename="XOPQ4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="4"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -992,6 +1027,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XTRA668.ufo" familyname="AmstelvarA2" stylename="XTRA668">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="668"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1020,6 +1056,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XTRA73.ufo" familyname="AmstelvarA2" stylename="XTRA73">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="73"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1048,6 +1085,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YOPQ311.ufo" familyname="AmstelvarA2" stylename="YOPQ311">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="311"/>
@@ -1076,6 +1114,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YOPQ4.ufo" familyname="AmstelvarA2" stylename="YOPQ4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="4"/>
@@ -1104,6 +1143,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTUC875.ufo" familyname="AmstelvarA2" stylename="YTUC875">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1132,6 +1172,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTUC541.ufo" familyname="AmstelvarA2" stylename="YTUC541">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1160,6 +1201,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTLC594.ufo" familyname="AmstelvarA2" stylename="YTLC594">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1188,6 +1230,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTLC436.ufo" familyname="AmstelvarA2" stylename="YTLC436">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1216,6 +1259,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTAS665.ufo" familyname="AmstelvarA2" stylename="YTAS665">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1244,6 +1288,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTAS875.ufo" familyname="AmstelvarA2" stylename="YTAS875">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1272,6 +1317,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTDE-310.ufo" familyname="AmstelvarA2" stylename="YTDE-310">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1300,6 +1346,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTDE-100.ufo" familyname="AmstelvarA2" stylename="YTDE-100">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1328,6 +1375,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTFI281.ufo" familyname="AmstelvarA2" stylename="YTFI281">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1356,6 +1404,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTFI896.ufo" familyname="AmstelvarA2" stylename="YTFI896">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1384,6 +1433,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSHU0.ufo" familyname="AmstelvarA2" stylename="XSHU0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1412,6 +1462,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSHU154.ufo" familyname="AmstelvarA2" stylename="XSHU154">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1440,6 +1491,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSHU0.ufo" familyname="AmstelvarA2" stylename="YSHU0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1468,6 +1520,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSHU150.ufo" familyname="AmstelvarA2" stylename="YSHU150">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1496,6 +1549,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSVU0.ufo" familyname="AmstelvarA2" stylename="XSVU0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1524,6 +1578,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSVU130.ufo" familyname="AmstelvarA2" stylename="XSVU130">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1552,6 +1607,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSVU59.ufo" familyname="AmstelvarA2" stylename="YSVU59">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1580,6 +1636,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSVU224.ufo" familyname="AmstelvarA2" stylename="YSVU224">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1608,6 +1665,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSHL124.ufo" familyname="AmstelvarA2" stylename="XSHL124">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1636,6 +1694,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSHL0.ufo" familyname="AmstelvarA2" stylename="XSHL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1664,6 +1723,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSHL0.ufo" familyname="AmstelvarA2" stylename="YSHL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1692,6 +1752,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSHL140.ufo" familyname="AmstelvarA2" stylename="YSHL140">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1720,6 +1781,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSVL0.ufo" familyname="AmstelvarA2" stylename="XSVL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1748,6 +1810,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSVL114.ufo" familyname="AmstelvarA2" stylename="XSVL114">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1776,6 +1839,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSVL251.ufo" familyname="AmstelvarA2" stylename="YSVL251">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1804,6 +1868,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSVL146.ufo" familyname="AmstelvarA2" stylename="YSVL146">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1832,6 +1897,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSHF0.ufo" familyname="AmstelvarA2" stylename="XSHF0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1860,6 +1926,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSHF239.ufo" familyname="AmstelvarA2" stylename="XSHF239">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1888,6 +1955,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSHF0.ufo" familyname="AmstelvarA2" stylename="YSHF0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1916,6 +1984,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSHF147.ufo" familyname="AmstelvarA2" stylename="YSHF147">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1944,6 +2013,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSVF0.ufo" familyname="AmstelvarA2" stylename="XSVF0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -1972,6 +2042,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XSVF131.ufo" familyname="AmstelvarA2" stylename="XSVF131">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2000,6 +2071,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSVF84.ufo" familyname="AmstelvarA2" stylename="YSVF84">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2028,6 +2100,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YSVF306.ufo" familyname="AmstelvarA2" stylename="YSVF306">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2056,6 +2129,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XTTW30.ufo" familyname="AmstelvarA2" stylename="XTTW30">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2084,6 +2158,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XTTW0.ufo" familyname="AmstelvarA2" stylename="XTTW0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2112,6 +2187,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTTL0.ufo" familyname="AmstelvarA2" stylename="YTTL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2140,6 +2216,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTTL104.ufo" familyname="AmstelvarA2" stylename="YTTL104">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2168,6 +2245,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTOS25.ufo" familyname="AmstelvarA2" stylename="YTOS25">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2196,6 +2274,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_YTOS0.ufo" familyname="AmstelvarA2" stylename="YTOS0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2224,6 +2303,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XUCS205.ufo" familyname="AmstelvarA2" stylename="XUCS205">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
@@ -2252,6 +2332,7 @@
     </source>
     <source filename="AmstelvarA2-Roman_XUCS32.ufo" familyname="AmstelvarA2" stylename="XUCS32">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
         <dimension name="XTRA" xvalue="400"/>
         <dimension name="YOPQ" xvalue="62"/>
