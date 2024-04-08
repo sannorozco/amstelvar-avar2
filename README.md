@@ -197,3 +197,42 @@ A separate measurements file was added for Amstelvar, with the same parameters u
 ### Extracting measurements
 
 Using this separate measurements file, the original Amstelvar sources are then measured to produce the `blends.json` file which is used by the AmstelvarA2 designspace builder.
+
+
+Variation axes in AmstelvarA2
+-----------------------------
+
+### Blended axes
+
+- `opsz` Optical size
+- `wght` Weight
+- `wdth` Width
+- `XTSP` Proportional spacing
+
+### Parametric axes
+
+- `GRAD` Grades
+- `XOPQ` General x opaque
+- `XTRA` General x transparent
+- `YOPQ` General y opaque
+- `YTUC` Y transparent uppercase
+- `YTLC` Y transparent lowercase
+- `YTAS` Y transparent ascender
+- `YTDE` Y transparent descender
+- `YTFI` Y transparent figures
+- `XSHU` X horizontal serif uppercase
+- `YSHU` Y horizontal serif uppercase
+- `XSVU` X vertical serif uppercase
+- `YSVU` Y vertical serif uppercase
+- `XSHL` X horizontal serif lowercase
+- `YSHL` Y horizontal serif lowercase
+- `XSVL` X vertical serif lowercase
+- `YSVL` Y vertical serif lowercase
+- `XSHF` X horizontal serif figures
+- `YSHF` Y horizontal serif figures
+- `XSVF` X vertical serif figures
+- `YSVF` Y vertical serif figures
+- `XTTW` Trap width
+- `YTTL` Trap length
+- `YTOS` General y overshoot
+- `XUCS` X sidebearing uppercase H
