@@ -76,7 +76,9 @@ class AmstelvarA2DesignSpaceBuilder:
 
     @property
     def defaultLocation(self):
-        return { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+        L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+        L['GRAD'] = 0
+        return L
 
     @property
     def amstelvarFolder(self):
@@ -137,6 +139,16 @@ class AmstelvarA2DesignSpaceBuilder:
             json.dump(blendsDict, f, indent=2)
 
     def addParametricAxes(self):
+        # add GRAD axis separately
+        a = AxisDescriptor()
+        a.name    = 'GRAD'
+        a.tag     = 'GRAD'
+        a.minimum = -300
+        a.maximum = 500
+        a.default = 0
+        self.designspace.addAxis(a)
+
+        # add parametric axes
         for name in self.parametricAxes:
             # get min/max values from file names
             values = []
@@ -166,6 +178,27 @@ class AmstelvarA2DesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
+
+        # add GRAD sources separately
+        src = SourceDescriptor()
+        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_GRAD-300.ufo')
+        src.familyName = self.familyName
+        src.styleName  = 'GRAD-300'
+        L = self.defaultLocation.copy()
+        L['GRAD'] = -300
+        src.location = L
+        self.designspace.addSource(src)
+
+        src = SourceDescriptor()
+        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_GRAD500.ufo')
+        src.familyName = self.familyName
+        src.styleName  = 'GRAD500'
+        L = self.defaultLocation.copy()
+        L['GRAD'] = 500
+        src.location = L
+        self.designspace.addSource(src)
+
+        # add parametric sources
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
                 if name in ufo:
@@ -531,9 +564,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build()
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build()
+    D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()

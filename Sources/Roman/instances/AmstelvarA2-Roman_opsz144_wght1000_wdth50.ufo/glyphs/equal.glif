@@ -1,29 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="equal" format="2">
-  <advance width="468"/>
+  <advance width="589"/>
   <unicode hex="003D"/>
   <outline>
     <contour>
       <point x="3" y="382" type="line"/>
       <point x="3" y="457" type="line"/>
-      <point x="232" y="456" type="line"/>
-      <point x="465" y="457" type="line"/>
-      <point x="465" y="382" type="line"/>
-      <point x="232" y="384" type="line"/>
+      <point x="293" y="456" type="line"/>
+      <point x="586" y="457" type="line"/>
+      <point x="586" y="382" type="line"/>
+      <point x="293" y="384" type="line"/>
     </contour>
     <contour>
       <point x="3" y="784" type="line"/>
       <point x="3" y="859" type="line"/>
-      <point x="232" y="858" type="line"/>
-      <point x="465" y="859" type="line"/>
-      <point x="465" y="784" type="line"/>
-      <point x="232" y="786" type="line"/>
+      <point x="293" y="858" type="line"/>
+      <point x="586" y="859" type="line"/>
+      <point x="586" y="784" type="line"/>
+      <point x="293" y="786" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.50364</string>
     </dict>
   </lib>
 </glyph>
