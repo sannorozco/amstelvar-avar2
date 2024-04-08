@@ -18,13 +18,13 @@ AmstelvarA2
 ```
 
 <dl>
-  <dt>Fonts</dt>
+  <dt><a href='#fonts'>Fonts</a></dt>
   <dd>font binaries for testing</dd>
-  <dt>Proofs</dt>
+  <dt><a href='#proofs'>Proofs</a></dt>
   <dd>proofs of the variable fonts</dd>
-  <dt>Tools</dt>
-  <dd>Python scripts used during production</dd>
-  <dt>Sources</dt>
+  <dt><a href='#tools'>Tools</a></dt>
+  <dd>scripts used during production</dd>
+  <dt><a href='#sources'>Sources</a></dt>
   <dd>various source files used to design and build the variable fonts</dd>
 </dl>
 
