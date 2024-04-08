@@ -61,8 +61,6 @@ Proofs
 ```
 
 <dl>
-  <dt>compare-1.pdf</dt>
-  <dd>Screen grabs of comparison of Amstelvar 1.0 (avar) vs. Amstelvar2 (avar2) ASCII Prototype, at the same designspace locations.</dd>
   <dt>avar2-original_blends.html</dt>
   <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 (parametric axes) and the original Amstelvar (opsz wght wdth).<br/>
     Useful when defining and checking parametric locations of blended extrema against their avar2 blends.</dd>
@@ -75,11 +73,6 @@ Proofs
   <dt>avar2-test.py</dt>
   <dd>DrawBot script for testing the avar2 variable font interactively using the native macOS text engine.<br/>
     Produces a PDF document.</dd>
-  <!--
-  <dt>avar2-test-parameters.py</dt>
-  <dd>An attempt to create a visualization of parametric values for changes in blended axes.<br/>
-    ⚠️ <em>Not working because point indexes in the variable font are different from point indexes in the source UFOs. <strong>(double check!)</strong></em></dd>
-  -->
 </dl>
 
 
