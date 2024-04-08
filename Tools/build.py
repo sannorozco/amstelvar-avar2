@@ -143,7 +143,7 @@ class AmstelvarA2DesignSpaceBuilder:
         a = AxisDescriptor()
         a.name    = 'GRAD'
         a.tag     = 'GRAD'
-        a.minimum = 0
+        a.minimum = -300
         a.maximum = 500
         a.default = 0
         self.designspace.addAxis(a)
@@ -178,7 +178,17 @@ class AmstelvarA2DesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
+
         # add GRAD sources separately
+        src = SourceDescriptor()
+        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_GRAD-300.ufo')
+        src.familyName = self.familyName
+        src.styleName  = 'GRAD-300'
+        L = self.defaultLocation.copy()
+        L['GRAD'] = -300
+        src.location = L
+        self.designspace.addSource(src)
+
         src = SourceDescriptor()
         src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_GRAD500.ufo')
         src.familyName = self.familyName
@@ -554,9 +564,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build()
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build()
+    D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
