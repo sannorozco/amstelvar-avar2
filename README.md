@@ -56,8 +56,8 @@ Proofs
 ├── avar2-avar1.html
 ├── avar2-original_blends.html
 ├── avar2-original_compare.html
-├── compare-1.pdf
-└── avar2-test.py
+├── avar2-test.py
+└── fontra-test-strings.txt
 ```
 
 <dl>
@@ -73,6 +73,8 @@ Proofs
   <dt>avar2-test.py</dt>
   <dd>DrawBot script for testing the avar2 variable font interactively using the native macOS text engine.<br/>
     Produces a PDF document.</dd>
+  <dt>fontra-test-strings.txt</dt>
+  <dd>A collection of test text strings for previewing glyph sets in Fontra.</dd>
 </dl>
 
 
