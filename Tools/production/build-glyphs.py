@@ -15,7 +15,7 @@ sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
 # glyphs to (re)build
-glyphNames = ['Dzcaron', 'Lj', 'Nj']
+glyphNames = "Adotbelow Ahookabove Acircumflexacute Acircumflexgrave Acircumflexhookabove Acircumflextilde Acircumflexdotbelow Abreveacute Abrevegrave Abrevehookabove Abrevetilde Abrevedotbelow Edotbelow Ehookabove Etilde Ecircumflexacute Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Ecircumflexdotbelow Ihookabove Idotbelow Odotbelow Ohookabove Ocircumflexacute Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Ocircumflexdotbelow Ohornacute Ohorngrave Ohornhookabove Ohorntilde Ohorndotbelow Udotbelow Uhookabove Uhornacute Uhorngrave Uhornhookabove Uhorntilde Uhorndotbelow Ygrave Ydotbelow Yhookabove Ytilde Wgrave Wacute Wdieresis".split()
 
 # get all sources
 targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f in glob.glob(f'{sourcesFolder}/*.ufo')]
@@ -24,6 +24,8 @@ targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f i
 with open(glyphConstructionPath, 'r') as f:
     glyphConstructions = f.read()
 
+verbose = False
+
 for styleName in targetStyles:
     dstPath = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{styleName}.ufo')
     if not os.path.exists(dstPath):
@@ -31,7 +33,7 @@ for styleName in targetStyles:
     dstFont = OpenFont(dstPath, showInterface=False)
 
     print(f'building glyphs in {dstPath}...')
-    buildAccentedGlyphs(dstFont, glyphNames, glyphConstructions, clear=True, verbose=True, autoUnicodes=False, indentLevel=1)
+    buildAccentedGlyphs(dstFont, glyphNames, glyphConstructions, clear=True, verbose=verbose, autoUnicodes=False, indentLevel=1)
 
     print(f'\tsaving font...')
     dstFont.save()

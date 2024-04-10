@@ -19,30 +19,36 @@ preflight = False
 
 for ufo in allUFOs:
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
-    if tag in ignoreTags:
-        continue
-
-    print(f'measuring {tag} in {os.path.split(ufo)[-1]}...')
-    f = OpenFont(ufo, showInterface=False)
 
     # set family name
-    f.info.familyName = f'{familyName} {subFamilyName}'
+    f = OpenFont(ufo, showInterface=False)
+    if f.info.familyName != f'{familyName} {subFamilyName}':
+        print(f'family name: {f.info.familyName} --> {familyName}' )
+        if not preflight:
+            f.info.familyName = f'{familyName} {subFamilyName}'
 
-    m = FontMeasurements()
-    m.read(measurementsPath)
-    m.measure(f)
-    newValue = m.values[tag]
-    newValue1000 = round(newValue * 1000 / f.info.unitsPerEm)
-    print(f'\tunits  = {newValue}')
-    print(f'\tpermil = {newValue1000}')
+    if tag in ignoreTags:
+        print(f'getting {tag} value from file name: {os.path.split(ufo)[-1]}...')
+        newValue = newValue1000 = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])    
+        print(f'\t{newValue}')
+    else:
+        print(f'measuring {tag} in {os.path.split(ufo)[-1]}...')
+        m = FontMeasurements()
+        m.read(measurementsPath)
+        m.measure(f)
+        newValue = m.values[tag]
+        newValue1000 = round(newValue * 1000 / f.info.unitsPerEm)
+        print(f'\tunits  = {newValue}')
+        print(f'\tpermil = {newValue1000}')
 
     # set style name
     newStyleName = f'{tag}{newValue1000}'
     if newStyleName != f.info.styleName:
-        print(f'\tstyle name: {f.info.styleName} --> {newStyleName}' )
-        f.info.styleName = newStyleName
+        print(f'style name: {f.info.styleName} --> {newStyleName}' )
+        if not preflight:
+            f.info.styleName = newStyleName
 
-    # rename file name
+    # rename UFO file
     newFileName = f'{familyName}-{subFamilyName}_{newStyleName}.ufo'
     newFilePath = os.path.join(sourcesFolder, newFileName)
     if not preflight:

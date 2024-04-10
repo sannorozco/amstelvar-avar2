@@ -3,7 +3,7 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 sourceName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
@@ -11,9 +11,9 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = [
-    'fivesuperior', 'sixsuperior', 'sevensuperior', 'eightsuperior', 'ninesuperior',
-]
+preflight = False
+
+glyphNames = 'Che ghe.bgr ghe ze Ecyr Y Yacute eng napostrophe Ycircumflex Ygrave Ydotbelow Ytilde engtail Upsilon Upsilontonos Upsilondieresis alpha Ka'.split()
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 
@@ -28,9 +28,12 @@ for ufoPath in ufoPaths:
     print(f'copying glyphs to {ufoPath}...')
     for glyphName in glyphNames:
         print(f'\tcopying {glyphName}...')
-        dstFont.insertGlyph(sourceFont[glyphName], name=glyphName)
+        if not preflight:
+            dstFont.insertGlyph(sourceFont[glyphName], name=glyphName)
 
-    print(f'\tsaving font...')
-    dstFont.save()
+    if not preflight:
+        print(f'\tsaving font...')
+        dstFont.save()
+
     dstFont.close()
     print()

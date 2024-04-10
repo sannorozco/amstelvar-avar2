@@ -30,3 +30,34 @@ The fonts are developed in “RoboFontra” with assistance from additional tool
 - [RoboFont 4.5b (latest beta)](http://robofont.com/)
 - [Fontra (latest build)](http://fontra.xyz/)
 - [VariableValues](http://github.com/gferreira/fb-variable-values)
+
+
+- - -
+
+### An introduction to the Measurements tool: what it does and how it works
+
+The starting point is David's system of parametric axes: [http://variationsguide.typenetwork.com/]()
+
+Starting from the default, each parametric axis modifies one 'root element' of the design – for example the vertical stem width (XOPQ), the width of the counters (XTRA), the height of lowercase (YTLC), the height of horizontal uppercase serifs (YSHU), etc.
+
+The central idea is that typical typographic axes like *weight*, *width* and *optical size* are created by mixing these 'primary colors' by different amounts.
+
+Each of these root elements can be measured. The values in each parametric axis correspond to actual distances measured in the fonts, in values expressed as thousands of em.
+
+There are font-level measurements (taken from specific glyphs) which are representative of the whole font; these values are used to name the fonts and place them in the designspace.
+
+There are also glyph-level measurements, which are local and reference the parent font-level ones. These are useful for interactive visualization during glyph design.
+
+Measurements are defined in a JSON file, for example: [http://github.com/gferreira/amstelvar-avar2/blob/main/Sources/Roman/measurements.json]()
+
+The data format is documented here: [http://gferreira.github.io/fb-variable-values/reference/measurements-format/]()
+
+There is a RoboFont tool to create and edit measurements, and visualize them while working in the Glyph Editor: [http://gferreira.github.io/fb-variable-values/reference/measurements/]()
+
+The measuring code* is also used in production scripts, for example to automatically name the fonts: [http://github.com/gferreira/amstelvar-avar2/blob/main/Scripts/production/set-names-from-measurements.py#L31]()
+
+\* the actual measuring code is here, but it was written on top of something else and is currently not very pretty:
+
+[http://github.com/gferreira/fb-variable-values/blob/master/code/Lib/variableValues/measurements.py]()
+[http://github.com/gferreira/fb-variable-values/blob/master/code/Lib/variableValues/linkPoints.py]()
+ 

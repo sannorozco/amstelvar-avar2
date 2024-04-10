@@ -109,10 +109,6 @@ class AmstelvarA2DesignSpaceBuilder:
         # import blends data from the original Amstelvar
         with open(self.amstelvarBlendsPath, 'r', encoding='utf-8') as f:
             blendsDict = json.load(f)
-        # redefine wght wdth extrema # turned ON for ASCII / OFF for Latin-1
-        # blendsDict['axes']['wght']['min'] = 200
-        # blendsDict['axes']['wght']['max'] = 800
-        # blendsDict['axes']['wdth']['min'] = 85
         # add XTSP axis
         blendsDict['axes']['XTSP'] = {
             "name"    : "XTSP",
@@ -139,7 +135,8 @@ class AmstelvarA2DesignSpaceBuilder:
             json.dump(blendsDict, f, indent=2)
 
     def addParametricAxes(self):
-        # add GRAD axis separately
+
+        # add custom parametric axes
         a = AxisDescriptor()
         a.name    = 'GRAD'
         a.tag     = 'GRAD'
@@ -179,24 +176,17 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def addParametricSources(self):
 
-        # add GRAD sources separately
-        src = SourceDescriptor()
-        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_GRAD-300.ufo')
-        src.familyName = self.familyName
-        src.styleName  = 'GRAD-300'
-        L = self.defaultLocation.copy()
-        L['GRAD'] = -300
-        src.location = L
-        self.designspace.addSource(src)
-
-        src = SourceDescriptor()
-        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_GRAD500.ufo')
-        src.familyName = self.familyName
-        src.styleName  = 'GRAD500'
-        L = self.defaultLocation.copy()
-        L['GRAD'] = 500
-        src.location = L
-        self.designspace.addSource(src)
+        # add custom parametric sources
+        axis = 'GRAD'        
+        for value in [-300, 500]:
+            src = SourceDescriptor()
+            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+            src.familyName = self.familyName
+            src.styleName  = f'{axis}{value}'
+            L = self.defaultLocation.copy()
+            L[axis] = value
+            src.location = L
+            self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:
@@ -387,6 +377,7 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
         self.addMappings()
         self.addDefaultSource()
         self.addParametricSources()
+        self.addInstances()
 
 
 class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_avar2):
@@ -564,9 +555,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    D = AmstelvarA2DesignSpaceBuilder()
-    D.build()
-    D.save()
+    # D = AmstelvarA2DesignSpaceBuilder()
+    # D.build()
+    # D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
