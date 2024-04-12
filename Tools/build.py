@@ -26,7 +26,7 @@ class AmstelvarA2DesignSpaceBuilder:
     familyName      = 'AmstelvarA2'
     subFamilyName   = SUBFAMILY
     defaultName     = 'wght400'
-    parametricAxes  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS'.split()
+    parametricAxes  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
     def __init__(self):
@@ -555,9 +555,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build()
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build()
+    D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
@@ -565,10 +565,10 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    D2.build()
-    D2.save()
-    D2.buildVariableFont()
+    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    # D2.build()
+    # D2.save()
+    # D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()

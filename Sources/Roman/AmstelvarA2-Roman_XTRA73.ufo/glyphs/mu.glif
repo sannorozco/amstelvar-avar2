@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="mu" format="2">
-  <advance width="854"/>
+  <advance width="878"/>
   <unicode hex="03BC"/>
   <outline>
     <contour>
@@ -23,7 +23,7 @@
       <point x="628" y="1000" type="line"/>
       <point x="653" y="964" type="line"/>
       <point x="630" y="265" type="line"/>
-      <point x="630" y="174"/>
+      <point x="630" y="176"/>
       <point x="690" y="109"/>
       <point x="739" y="109" type="qcurve" smooth="yes"/>
       <point x="808" y="109" type="line"/>
@@ -45,6 +45,8 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
     </dict>
   </lib>
 </glyph>
