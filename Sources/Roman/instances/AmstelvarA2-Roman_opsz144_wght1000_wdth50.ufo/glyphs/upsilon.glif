@@ -1,46 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="upsilon" format="2">
-  <advance width="568"/>
+  <advance width="625"/>
   <unicode hex="03C5"/>
-  <anchor x="265" y="1000" name="GRKtop"/>
+  <anchor x="301" y="1000" name="GRKtop"/>
   <outline>
     <contour>
-      <point x="304" y="-21" type="qcurve"/>
-      <point x="193" y="-21"/>
-      <point x="74" y="169"/>
-      <point x="74" y="369" type="qcurve" smooth="yes"/>
-      <point x="74" y="760" type="line" smooth="yes"/>
-      <point x="74" y="828"/>
-      <point x="44" y="869"/>
-      <point x="1" y="878" type="qcurve" smooth="yes"/>
-      <point x="-58" y="890" type="line"/>
-      <point x="-58" y="970" type="line"/>
-      <point x="118" y="1008" type="line"/>
-      <point x="175" y="1008"/>
-      <point x="240" y="908"/>
-      <point x="240" y="831" type="qcurve" smooth="yes"/>
-      <point x="240" y="367" type="line" smooth="yes"/>
-      <point x="240" y="198"/>
-      <point x="275" y="39"/>
-      <point x="307" y="39" type="qcurve" smooth="yes"/>
-      <point x="340" y="39"/>
-      <point x="385" y="249"/>
-      <point x="385" y="520" type="qcurve"/>
-      <point x="385" y="677"/>
-      <point x="318" y="931"/>
-      <point x="249" y="998" type="qcurve"/>
-      <point x="304" y="1029" type="line"/>
-      <point x="444" y="927"/>
-      <point x="566" y="676"/>
-      <point x="566" y="520" type="qcurve"/>
-      <point x="566" y="245"/>
-      <point x="415" y="-21"/>
+      <point x="358" y="-21" type="qcurve"/>
+      <point x="237" y="-21"/>
+      <point x="125" y="169"/>
+      <point x="125" y="369" type="qcurve" smooth="yes"/>
+      <point x="125" y="760" type="line" smooth="yes"/>
+      <point x="125" y="828"/>
+      <point x="95" y="869"/>
+      <point x="52" y="878" type="qcurve" smooth="yes"/>
+      <point x="-7" y="890" type="line"/>
+      <point x="-7" y="970" type="line"/>
+      <point x="169" y="1008" type="line"/>
+      <point x="226" y="1008"/>
+      <point x="291" y="908"/>
+      <point x="291" y="831" type="qcurve" smooth="yes"/>
+      <point x="291" y="367" type="line" smooth="yes"/>
+      <point x="291" y="198"/>
+      <point x="325" y="39"/>
+      <point x="361" y="39" type="qcurve" smooth="yes"/>
+      <point x="400" y="39"/>
+      <point x="438" y="263"/>
+      <point x="438" y="520" type="qcurve"/>
+      <point x="438" y="664"/>
+      <point x="379" y="936"/>
+      <point x="330" y="998" type="qcurve"/>
+      <point x="385" y="1029" type="line"/>
+      <point x="501" y="931"/>
+      <point x="619" y="676"/>
+      <point x="619" y="520" type="qcurve"/>
+      <point x="619" y="261"/>
+      <point x="480" y="-21"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
     </dict>
   </lib>
 </glyph>
