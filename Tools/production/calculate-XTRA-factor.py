@@ -20,9 +20,9 @@ g = CurrentGlyph()
 
 assert g is not None
 
-i = 0
+i = 2
 
-srcFont  = AllFonts().getFontsByStyleName('Roman')[0] # OpenFont(defaultPath, showInterface=False)
+srcFont  = AllFonts().getFontsByStyleName('wght400')[0] # OpenFont(defaultPath, showInterface=False)
 dstFont  = CurrentFont()
 srcGlyph = 'H'
 dstGlyph = g.name
