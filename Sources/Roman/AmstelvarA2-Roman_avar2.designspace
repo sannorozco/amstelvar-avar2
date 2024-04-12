@@ -30,7 +30,7 @@
     <axis tag="YTTL" name="YTTL" minimum="0" maximum="104" default="57"/>
     <axis tag="YTOS" name="YTOS" minimum="0" maximum="25" default="10"/>
     <axis tag="XUCS" name="XUCS" minimum="32" maximum="205" default="145"/>
-    <axis tag="WDSP" name="WDSP" minimum="0" maximum="1500" default="320"/>
+    <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <mappings>
       <mapping>
         <input>
@@ -2499,7 +2499,7 @@
         <dimension name="WDSP" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_WDSP1500.ufo" familyname="AmstelvarA2" stylename="WDSP1500">
+    <source filename="AmstelvarA2-Roman_WDSP1000.ufo" familyname="AmstelvarA2" stylename="WDSP1000">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOPQ" xvalue="90"/>
@@ -2526,7 +2526,7 @@
         <dimension name="YTTL" xvalue="57"/>
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
-        <dimension name="WDSP" xvalue="1500"/>
+        <dimension name="WDSP" xvalue="1000"/>
       </location>
     </source>
   </sources>
