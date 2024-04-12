@@ -565,10 +565,10 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    # D2.build()
-    # D2.save()
-    # D2.buildVariableFont()
+    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    D2.build()
+    D2.save()
+    D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
