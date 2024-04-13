@@ -1,4 +1,5 @@
-import os, glob, shutil, json
+import os, glob, shutil, json, time
+from xml.etree.ElementTree import parse
 from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, SourceDescriptor, InstanceDescriptor, AxisMappingDescriptor
 from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
@@ -262,7 +263,7 @@ class AmstelvarA2DesignSpaceBuilder:
             return
         self.designspace.write(self.designspacePath)
 
-    def buildVariableFont(self, subset=False):
+    def buildVariableFont(self, subset=False, setVersionInfo=True):
 
         print(f'generating variable font for {self.designspaceName}...')
 
@@ -287,6 +288,34 @@ class AmstelvarA2DesignSpaceBuilder:
             subsetter.populate(glyphs=asciiGlyphs)
             subsetter.subset(font)
             font.save(self.varFontPath)
+
+        # set version info in the font's unique name
+        if setVersionInfo:
+            print('\tsetting version info...')
+            # convert ttf to ttx
+            ttxPath = self.varFontPath.replace('.ttf', '.ttx')
+            tt = TTFont(self.varFontPath)
+            tt.verbose = False
+            tt.saveXML(ttxPath)
+            tt.close()
+            # make unique name with timestamp
+            timestamp = time.strftime("%Y%m%d%H%M", time.localtime())
+            uniqueName = f'{self.familyName} {self.subFamilyName} {timestamp}'
+            # add version info to unique name -- nameID 3
+            tree = parse(ttxPath)
+            root = tree.getroot()
+            for child in root.find('name'):
+                if child.attrib['nameID'] == '3':
+                    child.text = uniqueName
+            tree.write(ttxPath)
+            # convert ttx back to ttf
+            tt = TTFont()
+            tt.verbose = False
+            tt.importXML(ttxPath)
+            tt.save(self.varFontPath)
+            tt.close()
+            # clear ttx file
+            os.remove(ttxPath)
 
         print('...done.\n')
 
@@ -560,15 +589,15 @@ if __name__ == '__main__':
     # D.save()
     # D.buildInstances()
 
-    D1 = AmstelvarA2DesignSpaceBuilder_avar1()
-    D1.build()
-    D1.save()
-    D1.buildVariableFont()
+    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
+    # D1.build()
+    # D1.save()
+    # D1.buildVariableFont()
 
-    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    # D2.build()
-    # D2.save()
-    # D2.buildVariableFont()
+    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    D2.build()
+    D2.save()
+    D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
