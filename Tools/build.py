@@ -147,15 +147,6 @@ class AmstelvarA2DesignSpaceBuilder:
         a.default = 0
         self.designspace.addAxis(a)
 
-        # add custom parametric axes
-        a = AxisDescriptor()
-        a.name    = 'BARS'
-        a.tag     = 'BARS'
-        a.minimum = 0
-        a.maximum = 100
-        a.default = 100
-        self.designspace.addAxis(a)
-
         # add parametric axes
         for name in self.parametricAxes:
             # get min/max values from file names
@@ -176,6 +167,15 @@ class AmstelvarA2DesignSpaceBuilder:
             a.default = permille(self.measurementsDefault.values[name], self.unitsPerEm)
 
             self.designspace.addAxis(a)
+
+        # add custom BARS axis
+        a = AxisDescriptor()
+        a.name    = 'BARS'
+        a.tag     = 'BARS'
+        a.minimum = 0
+        a.maximum = 100
+        a.default = 100
+        self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
@@ -606,9 +606,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    D = AmstelvarA2DesignSpaceBuilder()
-    D.build()
-    D.save()
+    # D = AmstelvarA2DesignSpaceBuilder()
+    # D.build()
+    # D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
@@ -616,10 +616,10 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    # D2.build()
-    # D2.save()
-    # D2.buildVariableFont()
+    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    D2.build()
+    D2.save()
+    D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
