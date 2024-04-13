@@ -79,6 +79,7 @@ class AmstelvarA2DesignSpaceBuilder:
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
+        L['BARS'] = 100
         return L
 
     @property
@@ -146,6 +147,15 @@ class AmstelvarA2DesignSpaceBuilder:
         a.default = 0
         self.designspace.addAxis(a)
 
+        # add custom parametric axes
+        a = AxisDescriptor()
+        a.name    = 'BARS'
+        a.tag     = 'BARS'
+        a.minimum = 0
+        a.maximum = 100
+        a.default = 100
+        self.designspace.addAxis(a)
+
         # add parametric axes
         for name in self.parametricAxes:
             # get min/max values from file names
@@ -178,7 +188,8 @@ class AmstelvarA2DesignSpaceBuilder:
     def addParametricSources(self):
 
         # add custom parametric sources
-        axis = 'GRAD'        
+
+        axis = 'GRAD'
         for value in [-300, 500]:
             src = SourceDescriptor()
             src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
@@ -188,6 +199,17 @@ class AmstelvarA2DesignSpaceBuilder:
             L[axis] = value
             src.location = L
             self.designspace.addSource(src)
+
+        axis  = 'BARS'
+        value = 0
+        src = SourceDescriptor()
+        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+        src.familyName = self.familyName
+        src.styleName  = f'{axis}{value}'
+        L = self.defaultLocation.copy()
+        L[axis] = value
+        src.location = L
+        self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:
@@ -584,9 +606,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build()
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build()
+    D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
@@ -594,10 +616,10 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    D2.build()
-    D2.save()
-    D2.buildVariableFont()
+    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    # D2.build()
+    # D2.save()
+    # D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
