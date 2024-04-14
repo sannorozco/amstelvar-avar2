@@ -13,9 +13,9 @@ measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
-ignoreTags = ['wght', 'GRAD', 'XTSP']
+ignoreTags = ['wght', 'GRAD', 'BARS']
 
-preflight = True
+preflight = False
 
 for ufo in allUFOs:
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
