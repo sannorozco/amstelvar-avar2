@@ -175,6 +175,7 @@ class AmstelvarA2DesignSpaceBuilder:
         a.minimum = 0
         a.maximum = 100
         a.default = 100
+        # a.map     = [(50, 0), (51, 100)]
         self.designspace.addAxis(a)
 
     def addDefaultSource(self):
@@ -419,6 +420,26 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
             m.outputLocation = outputLocation
 
             self.designspace.addAxisMapping(m)
+
+        # retract BARS
+        # m = AxisMappingDescriptor()
+        # m.inputLocation = {
+        #     "BARS"   : 100,
+        #     "Weight" : 700,
+        # }
+        # m.outputLocation = {
+        #     "BARS" : 0,
+        # }
+        # self.designspace.addAxisMapping(m)
+        # m = AxisMappingDescriptor()
+        # m.inputLocation = {
+        #     "BARS"   : 100,
+        #     "Weight" : 1000,
+        # }
+        # m.outputLocation = {
+        #     "BARS" : 0,
+        # }
+        # self.designspace.addAxisMapping(m)
 
     def build(self):
         self.buildBlendsFile()
