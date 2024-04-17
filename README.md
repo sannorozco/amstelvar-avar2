@@ -18,14 +18,14 @@ AmstelvarA2
 ```
 
 <dl>
-  <dt>Fonts</dt>
-  <dd>contains font binaries for testing</dd>
-  <dt>Proofs</dt>
-  <dd>contains proofs of the variable fonts</dd>
-  <dt>Tools</dt>
-  <dd>contains Python scripts used during production</dd>
-  <dt>Sources</dt>
-  <dd>contains various source files used to design and build the variable fonts</dd>
+  <dt><a href='#fonts'>Fonts</a></dt>
+  <dd>font binaries for testing</dd>
+  <dt><a href='#proofs'>Proofs</a></dt>
+  <dd>proofs of the variable fonts</dd>
+  <dt><a href='#tools'>Tools</a></dt>
+  <dd>scripts used during production</dd>
+  <dt><a href='#sources'>Sources</a></dt>
+  <dd>various source files used to design and build the variable fonts</dd>
 </dl>
 
 
@@ -35,9 +35,7 @@ Fonts
 ```
 Fonts
 ├── AmstelvarA2-Roman_avar1.ttf
-├── AmstelvarA2-Roman_avar2.ttf
-├── AmstelvarA2-Roman_avar2_fences.ttf
-└── AmstelvarA2-Roman_avar2_fences-wght200.ttf
+└── AmstelvarA2-Roman_avar2.ttf
 ```
 
 <dl>
@@ -47,15 +45,7 @@ Fonts
   <dt>AmstelvarA2-Roman_avar2.ttf</dt>
   <dd>Variable font in avar2 format.<br/>
     Blended axes are created by defining mappings from parametric axes to extrema input values.</dd>
-  <dt>AmstelvarA2-Roman_avar2_fences.ttf</dt>
-  <dd>Attempt to build an avar2 font with “fences” to restrict the limits of parametric values at blended extrema locations.<br/>
-    ⚠️ <em>The added fences work at the default location, but not at the blended extrema.</em>*</dd>
-  <dt>AmstelvarA2-Roman_avar2_fences-wght200.ttf</dt>
-  <dd>Attempt to implement fences at one blended extreme only, for testing purposes.<br/>
-    ⚠️ <em>The fences added for location <code>wght200</code> do not work as intended.</em>*</dd></dd>
 </dl>
-
-\* see [Implementing fences](https://github.com/googlefonts/amstelvar-avar2/issues/4)
 
 
 Proofs
@@ -64,27 +54,27 @@ Proofs
 ```
 Proofs
 ├── avar2-avar1.html
-├── avar2-original.html
-├── compare-1.pdf
+├── avar2-original_blends.html
+├── avar2-original_compare.html
 ├── avar2-test.py
-└── avar2-test-parameters.py
+└── fontra-test-strings.txt
 ```
 
 <dl>
-  <dt>compare-1.pdf</dt>
-  <dd>Screen grabs of comparison of Amstelvar 1.0 (avar) vs. Amstelvar2 (avar2) ASCII Prototype, at the same designspace locations.</dd>
-  <dt>avar2-original.html</dt>
-  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 (parametric axes) and Amstelvar 1.0 (blended axes).<br/>
+  <dt>avar2-original_blends.html</dt>
+  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 (parametric axes) and the original Amstelvar (opsz wght wdth).<br/>
     Useful when defining and checking parametric locations of blended extrema against their avar2 blends.</dd>
-  <dt>avar2-var1.html</dt>
+  <dt>avar2-original_compare.html</dt>
+  <dd>Interactive HTML page for comparison between AmstelvarA2 avar2 and the original Amstelvar at the same location (opsz wght wdth).<br/>
+    Useful to compare the new avar2 blends to the original avar font.</dd>
+  <dt>avar2-avar1.html</dt>
   <dd>Interactive HTML page for comparison between avar2 and avar1 versions of AmstelvarA2.<br/>
     Useful as a reference when testing the avar2 implementation.</dd>
   <dt>avar2-test.py</dt>
-  <dd>Interactive DrawBot script for testing the avar2 variable font using the native macOS text engine.<br/>
+  <dd>DrawBot script for testing the avar2 variable font interactively using the native macOS text engine.<br/>
     Produces a PDF document.</dd>
-  <dt>avar2-test-parameters.py</dt>
-  <dd>An attempt to create a visualization of parametric values for changes in blended axes.<br/>
-    ⚠️ <em>Not working because point indexes in the variable font are different from point indexes in the source UFOs. <strong>(double check!)</strong></em></dd>
+  <dt>fontra-test-strings.txt</dt>
+  <dd>A collection of test text strings for previewing glyph sets in Fontra.</dd>
 </dl>
 
 
@@ -97,19 +87,16 @@ This folder contains two subfolders with separate files for Roman and Italic, an
 Sources
 ├── Italic/
 ├── Roman/
-├── AmstelvarA2.roboFontSets
-└── AmstelvarA2.glyphConstruction
+└── AmstelvarA2.roboFontSets
 ```
 
 <dl>
   <dt>AmstelvarA2.roboFontSets</dt>
   <dd><a href='http://robofont.com/documentation/topics/smartsets/'>SmartSets</a> file containing various sets of glyphs.<br/>
     Useful as UI feature when browsing complete fonts, and as a data format when writing scripts that apply only to certain sets of glyphs.</dd>
-  <dt>AmstelvarA2.glyphConstruction</dt>
-  <dd><a href='https://github.com/typemytype/GlyphConstruction'>GlyphConstruction</a> file containing instructions for building glyphs from components.</dd>
 </dl>
 
-### Roman
+### Roman (+ same structure for Italic)
 
 ```
 Roman
@@ -117,20 +104,12 @@ Roman
 ├── measurements.json
 ├── blends.json
 ├── fences.json
-├── features
-│   └── *.fea
-├── instances
-│   ├── AmstelvarA2-Roman_opsz8.ufo
-│   ├── AmstelvarA2-Roman_opsz144.ufo
-│   ├── AmstelvarA2-Roman_wdth85.ufo
-│   ├── AmstelvarA2-Roman_wdth125.ufo
-│   ├── AmstelvarA2-Roman_wght200.ufo
-│   └── AmstelvarA2-Roman_wght800.ufo
+├── features/*.fea
+├── instances/*.ufo
+├── AmstelvarA2-Roman.glyphConstruction
 ├── AmstelvarA2-Roman.designspace
 ├── AmstelvarA2-Roman_avar1.designspace
-├── AmstelvarA2-Roman_avar2.designspace
-├── AmstelvarA2-Roman_avar2_fences.designspace
-└── AmstelvarA2-Roman_avar2_fences-wght200.designspace
+└── AmstelvarA2-Roman_avar2.designspace
 ```
 
 <dl>
@@ -146,13 +125,15 @@ Roman
   This data is used to build the avar2 designspace.</dd>
 <dt>fences.json</dt>
 <dd>Standalone JSON file containing definitions of min/max fence values for parametric values at blended sources.<br/>
-  This data is used to add mappings for fences to the avar2 designspace (experimental).</dd>
+  This data is used to add mappings for fences to the avar2 designspace. (experimental)</dd>
 <dt>features</dt>
 <dd>Subfolder with files containing OpenType code which can be linked to the source fonts.<br/>
   <em>Currently not used when building the variable fonts.</em></dd>
 <dt>instances</dt>
 <dd>Subfolder containing instances generated from the parametric sources, used to add blended axes to the avar1 designspace.<br/>
   Also useful for comparison with the original Amstelvar1 sources for blended extrema.</dd>
+<dt>AmstelvarA2-Roman.glyphConstruction</dt>
+<dd><a href='https://github.com/typemytype/GlyphConstruction'>GlyphConstruction</a> file containing instructions for building glyphs from components.</dd>
 <dt>AmstelvarA2-Roman.designspace</dt>
 <dd>Basic parametric designspace for use during design and development.<br/>
   Also used to build instances for the avar1 designspace.</dd>
@@ -162,17 +143,17 @@ Roman
 <dt>AmstelvarA2-Roman_avar2.designspace
 <dd>Designspace for building avar2 variable font.<br/>
   Includes avar2 mappings which define blended sources from parametric values.</dd>
-<dt>AmstelvarA2-Roman_avar2_fences.designspace
-<dd>Experimental designspace containing avar2 mappings for fences.<br/>
-  Includes avar2 mappings of fences for the default and blended extrema.</dd>
-<dt>AmstelvarA2-Roman_avar2_fences-wght200.designspace
-<dd>Experimental designspace containing avar2 fence mappings for one blended extreme only (wght200).<br/>
-  Used while debugging avar2 implementation of fences.</dd>
 </dl>
 
 
 Tools
 -----
+
+```
+Tools
+├── production/*.py
+└── build.py
+```
 
 ### Build script
 
@@ -193,21 +174,67 @@ More specific designspaces inherit from this core object, and add their own spec
 A subfolder containing various scripts used during development. The most relevant ones are listed below.
 
 <dl>
+  <dt>set-names-from-measurements.py</dt>
+  <dd>Set file name and style name from measurements in all UFOs in a given folder.<br/>
+    Includes a preflight mode which only prints the new names without changing the files.</dd>
   <dt>copy-glyphs.py</dt>
   <dd>Copy glyphs from the default font to selected sources.</dd>
   <dt>build-glyphs.py</dt>
   <dd>Build glyphs from glyph constructions in the selected sources.</dd>
-  <dt>set-names-from-measurements.py</dt>
-  <dd>Set file name and style name from measurements in all UFOs in a given folder. Includes a preflight mode which only prints the new names without changing the files.</dd>
-  <dt>extract-measurements.py</dt>
-  <dd>Extract measurements from one or more UFO sources into a dictionary. Optionally, save it into a JSON file.</dd>
   <dt>validate-locations.py</dt>
-  <dd>Check if any source location is outside of the min/max bounds of its axis. This was helpful when debugging the first avar2 font builds.</dd>
-</dl>
-
-see also (on the RobotoFlex AVAR2 repository):
-
-<dl>
-  <dt><a href='http://github.com/googlefonts/roboto-flex-avar2/blob/main/Source/tools/mark-components.py'>mark-components.py</a></dt>
+  <dd>Check if source locations are within the allowed min/max bounds for each axis.<br/>
+    Helpful when debugging calculated blend values in relation to the current parametric axes.</dd>
+  <dt>mark-components.py</dt>
   <dd>Mark glyphs in the current font containing components with different colors depending on their components' nesting level.</dd>
 </dl>
+
+
+Blending
+--------
+
+The appropriate values for blending `opsz` `wght` `wdth` from parametric axes are produced on a [separate repository](http://github.com/gferreira/amstelvar) which is a fork of the original Amstelvar source. [The naming of UFO files was adjusted for easier parameter parsing (using underscores to separate parameters instead of hyphens), and all unnecessary files were deleted.]
+
+A separate measurements file was added for Amstelvar, with the same parameters used for measuring AmstelvarA2. This file is needed because the contour structures of the two versions are different, and in most measurements different point indexes must be used.
+
+### Extracting measurements
+
+Using this separate measurements file, the original Amstelvar sources are then measured to produce the `blends.json` file which is used by the AmstelvarA2 designspace builder.
+
+
+Variation axes in AmstelvarA2
+-----------------------------
+
+### Blended axes
+
+- `opsz` Optical size
+- `wght` Weight
+- `wdth` Width
+- `XTSP` Proportional spacing
+
+### Parametric axes
+
+- `GRAD` Grades
+- `XOPQ` General x opaque
+- `XTRA` General x transparent
+- `YOPQ` General y opaque
+- `YTUC` Y transparent uppercase
+- `YTLC` Y transparent lowercase
+- `YTAS` Y transparent ascender
+- `YTDE` Y transparent descender
+- `YTFI` Y transparent figures
+- `XSHU` X horizontal serif uppercase
+- `YSHU` Y horizontal serif uppercase
+- `XSVU` X vertical serif uppercase
+- `YSVU` Y vertical serif uppercase
+- `XSHL` X horizontal serif lowercase
+- `YSHL` Y horizontal serif lowercase
+- `XSVL` X vertical serif lowercase
+- `YSVL` Y vertical serif lowercase
+- `XSHF` X horizontal serif figures
+- `YSHF` Y horizontal serif figures
+- `XSVF` X vertical serif figures
+- `YSVF` Y vertical serif figures
+- `XTTW` Trap width
+- `YTTL` Trap length
+- `YTOS` General y overshoot
+- `XUCS` X sidebearing uppercase H

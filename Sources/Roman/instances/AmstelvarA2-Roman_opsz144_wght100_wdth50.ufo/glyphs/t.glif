@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="t" format="2">
+  <advance width="347"/>
+  <unicode hex="0074"/>
+  <anchor x="154" y="0" name="bottom"/>
+  <anchor x="144" y="622" name="center"/>
+  <anchor x="154" y="1179" name="top"/>
+  <anchor x="339" y="1000" name="topright"/>
+  <outline>
+    <contour>
+      <point x="-13" y="879" type="line"/>
+      <point x="-13" y="894" type="line"/>
+      <point x="66" y="915"/>
+      <point x="115" y="997"/>
+      <point x="139" y="1180" type="qcurve"/>
+      <point x="158" y="1180" type="line"/>
+      <point x="168" y="1169" type="line"/>
+      <point x="161" y="897" type="line"/>
+      <point x="322" y="898" type="line"/>
+      <point x="322" y="875" type="line"/>
+      <point x="162" y="879" type="line"/>
+      <point x="159" y="457" type="line"/>
+      <point x="160" y="152" type="line" smooth="yes"/>
+      <point x="161" y="85"/>
+      <point x="203" y="44"/>
+      <point x="265" y="45" type="qcurve" smooth="yes"/>
+      <point x="319" y="45" type="line"/>
+      <point x="319" y="29" type="line"/>
+      <point x="242" y="-8" type="line"/>
+      <point x="165" y="-8"/>
+      <point x="107" y="73"/>
+      <point x="107" y="163" type="qcurve" smooth="yes"/>
+      <point x="107" y="457" type="line"/>
+      <point x="107" y="877" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict>
+        <key>15 18</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YOLC</string>
+        </dict>
+        <key>21 12</key>
+        <dict>
+          <key>direction</key>
+          <string>x</string>
+          <key>name</key>
+          <string>XOLC</string>
+        </dict>
+        <key>8 18</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YTLC</string>
+        </dict>
+        <key>8 9</key>
+        <dict>
+          <key>direction</key>
+          <string>y</string>
+          <key>name</key>
+          <string>YOLC</string>
+        </dict>
+      </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_wght400.ufo/glyphs</string>
+    </dict>
+  </lib>
+</glyph>
