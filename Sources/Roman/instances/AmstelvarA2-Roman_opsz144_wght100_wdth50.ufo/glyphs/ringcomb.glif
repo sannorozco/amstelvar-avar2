@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ringcomb" format="2">
+  <unicode hex="030A"/>
+  <anchor x="0" y="1000" name="_top"/>
+  <anchor x="0" y="1565" name="top"/>
+  <outline>
+    <contour>
+      <point x="-192" y="1347" type="qcurve" smooth="yes"/>
+      <point x="-192" y="1427"/>
+      <point x="-80" y="1530"/>
+      <point x="0" y="1530" type="qcurve" smooth="yes"/>
+      <point x="79" y="1530"/>
+      <point x="192" y="1421"/>
+      <point x="192" y="1347" type="qcurve" smooth="yes"/>
+      <point x="192" y="1268"/>
+      <point x="80" y="1164"/>
+      <point x="0" y="1164" type="qcurve" smooth="yes"/>
+      <point x="-80" y="1164"/>
+      <point x="-192" y="1270"/>
+    </contour>
+    <contour>
+      <point x="-171" y="1347" type="qcurve" smooth="yes"/>
+      <point x="-171" y="1279"/>
+      <point x="-72" y="1184"/>
+      <point x="0" y="1184" type="qcurve" smooth="yes"/>
+      <point x="74" y="1184"/>
+      <point x="171" y="1278"/>
+      <point x="171" y="1347" type="qcurve" smooth="yes"/>
+      <point x="171" y="1411"/>
+      <point x="72" y="1510"/>
+      <point x="0" y="1510" type="qcurve" smooth="yes"/>
+      <point x="-74" y="1510"/>
+      <point x="-171" y="1418"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+    </dict>
+  </lib>
+</glyph>
