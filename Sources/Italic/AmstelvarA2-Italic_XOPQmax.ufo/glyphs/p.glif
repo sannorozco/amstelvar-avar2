@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="p" format="2">
-  <advance width="1454"/>
+  <advance width="1882"/>
   <unicode hex="0070"/>
   <anchor x="1027.0" y="0" name="bottom"/>
   <anchor x="1027.0" y="1000" name="top"/>
@@ -12,15 +12,15 @@
       <point x="140" y="970" type="line"/>
       <point x="686" y="1026" type="line"/>
       <point x="729" y="1026" type="line"/>
-      <point x="754" y="830" type="line"/>
-      <point x="841" y="901"/>
-      <point x="1057" y="1006"/>
-      <point x="1139" y="1006" type="qcurve" smooth="yes"/>
-      <point x="1256" y="1006"/>
-      <point x="1360" y="877"/>
-      <point x="1360" y="768" type="qcurve" smooth="yes"/>
-      <point x="1360" y="427"/>
-      <point x="923" y="30"/>
+      <point x="754" y="810" type="line"/>
+      <point x="910" y="917"/>
+      <point x="1193" y="1006"/>
+      <point x="1389" y="1006" type="qcurve" smooth="yes"/>
+      <point x="1568" y="1006"/>
+      <point x="1795" y="877"/>
+      <point x="1795" y="768" type="qcurve" smooth="yes"/>
+      <point x="1795" y="427"/>
+      <point x="1064" y="30"/>
       <point x="713" y="30" type="qcurve" smooth="yes"/>
       <point x="682" y="30"/>
       <point x="630" y="41"/>
@@ -47,10 +47,4 @@
       <point x="683" y="448" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0.98107,0.57369,0.5</string>
-    </dict>
-  </lib>
 </glyph>

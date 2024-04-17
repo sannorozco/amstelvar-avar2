@@ -12,8 +12,8 @@
       <point x="199" y="822" type="line"/>
       <point x="47" y="818" type="line"/>
       <point x="49" y="915" type="line"/>
-      <point x="188" y="1001" type="line"/>
-      <point x="243" y="1001" type="line"/>
+      <point x="232" y="1001" type="line" identifier="ISBSSa225k"/>
+      <point x="243" y="1001" type="line" identifier="SAB0kvNE5W"/>
       <point x="188" y="736" type="line"/>
       <point x="156" y="588" type="line"/>
       <point x="51" y="87" type="line"/>
@@ -40,8 +40,8 @@
       <point x="521" y="-9" type="line"/>
     </contour>
     <contour>
-      <point x="964" y="-25" type="line"/>
-      <point x="923" y="64" type="line"/>
+      <point x="914" y="-12" type="line"/>
+      <point x="910" y="-6" type="line"/>
       <point x="1049" y="702" type="line" smooth="yes"/>
       <point x="1065" y="785"/>
       <point x="1028" y="877"/>
@@ -63,6 +63,13 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>ISBSSa225k</string>
+          <string>SAB0kvNE5W</string>
+        </array>
+      </array>
       <key>public.markColor</key>
       <string>0,0.98107,0.57369,0.5</string>
     </dict>

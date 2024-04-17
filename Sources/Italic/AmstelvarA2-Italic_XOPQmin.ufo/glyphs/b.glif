@@ -8,14 +8,14 @@
     <contour>
       <point x="42.508379888268166" y="241" type="qcurve" smooth="yes"/>
       <point x="121.50837988826817" y="633" type="line"/>
-      <point x="268.50837988826817" y="1410" type="line"/>
+      <point x="268" y="1410" type="line"/>
       <point x="134" y="1502" type="line"/>
       <point x="162" y="1574" type="line"/>
-      <point x="245" y="1587" type="line"/>
-      <point x="306.50837988826817" y="1538" type="line"/>
-      <point x="129.50837988826817" y="601" type="line"/>
-      <point x="52.508379888268166" y="227" type="line" smooth="yes"/>
-      <point x="39.508379888268166" y="165"/>
+      <point x="306" y="1598" type="line" identifier="AX7LdnoNFj"/>
+      <point x="312" y="1593" type="line" identifier="Khcmkqdpda"/>
+      <point x="125" y="601" type="line"/>
+      <point x="48" y="227" type="line" smooth="yes"/>
+      <point x="35" y="165"/>
       <point x="74.50837988826817" y="116"/>
       <point x="121.50837988826817" y="116" type="qcurve" smooth="yes"/>
       <point x="341.50837988826817" y="116"/>
@@ -43,6 +43,13 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>AX7LdnoNFj</string>
+          <string>Khcmkqdpda</string>
+        </array>
+      </array>
       <key>public.markColor</key>
       <string>0,0.98107,0.57369,0.5</string>
     </dict>

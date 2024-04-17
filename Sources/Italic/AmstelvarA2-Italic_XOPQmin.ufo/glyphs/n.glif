@@ -12,16 +12,16 @@
       <point x="188" y="822" type="line"/>
       <point x="39" y="818" type="line"/>
       <point x="41" y="915" type="line"/>
-      <point x="223" y="1000" type="line"/>
-      <point x="234" y="1000" type="line"/>
+      <point x="223" y="1000" type="line" identifier="BzhzOx7RMJ"/>
+      <point x="234" y="1000" type="line" identifier="4TWcvHRk7a"/>
       <point x="179" y="736" type="line"/>
       <point x="147" y="588" type="line"/>
       <point x="42" y="83" type="line"/>
       <point x="73" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="545" y="-14" type="line"/>
-      <point x="504" y="75" type="line"/>
+      <point x="491" y="-12" type="line"/>
+      <point x="487" y="-6" type="line"/>
       <point x="627" y="702" type="line" smooth="yes"/>
       <point x="643" y="785"/>
       <point x="600" y="877"/>
@@ -43,6 +43,13 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>BzhzOx7RMJ</string>
+          <string>4TWcvHRk7a</string>
+        </array>
+      </array>
       <key>public.markColor</key>
       <string>0,0.98107,0.57369,0.5</string>
     </dict>
