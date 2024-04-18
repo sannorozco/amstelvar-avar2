@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="P" format="2">
-  <advance width="1609"/>
+  <advance width="2024"/>
   <unicode hex="0050"/>
   <anchor x="1092.0" y="0" name="bottom"/>
   <anchor x="1092.0" y="1500" name="top"/>
@@ -14,11 +14,11 @@
       <point x="183" y="1386" type="line"/>
       <point x="196" y="1500" type="line"/>
       <point x="1226" y="1500" type="line" smooth="yes"/>
-      <point x="1443" y="1500"/>
-      <point x="1646" y="1263"/>
-      <point x="1609" y="1051" type="qcurve" smooth="yes"/>
-      <point x="1571" y="831"/>
-      <point x="1265" y="599"/>
+      <point x="1678" y="1500"/>
+      <point x="2063" y="1275"/>
+      <point x="2024" y="1051" type="qcurve" smooth="yes"/>
+      <point x="1985" y="824"/>
+      <point x="1420" y="599"/>
       <point x="1061" y="599" type="qcurve" smooth="yes"/>
       <point x="962" y="599"/>
       <point x="814" y="620"/>
@@ -41,4 +41,10 @@
       <point x="951" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
+    </dict>
+  </lib>
 </glyph>
