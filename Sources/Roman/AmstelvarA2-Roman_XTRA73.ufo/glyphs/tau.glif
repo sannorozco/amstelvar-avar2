@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="tau" format="2">
-  <advance width="619"/>
+  <advance width="600"/>
   <unicode hex="03C4"/>
   <outline>
     <contour>
       <point x="26" y="850" type="line"/>
       <point x="26" y="930" type="line"/>
       <point x="172" y="1000" type="line"/>
-      <point x="531" y="1010" type="line"/>
-      <point x="556" y="974" type="line"/>
-      <point x="542" y="832" type="line"/>
+      <point x="512" y="1010" type="line"/>
+      <point x="537" y="974" type="line"/>
+      <point x="523" y="832" type="line"/>
     </contour>
     <contour>
       <point x="366" y="-8" type="line"/>
@@ -22,8 +22,8 @@
       <point x="366" y="176"/>
       <point x="410" y="109"/>
       <point x="474" y="109" type="qcurve" smooth="yes"/>
-      <point x="493" y="109" type="line"/>
-      <point x="493" y="29" type="line"/>
+      <point x="474" y="109" type="line"/>
+      <point x="474" y="29" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -31,7 +31,7 @@
       <key>com.fontBureau.measurements</key>
       <dict/>
       <key>public.markColor</key>
-      <string>0.6,0.8,0,0.5</string>
+      <string>0.6,0.8,0,1</string>
     </dict>
   </lib>
 </glyph>
