@@ -10,9 +10,9 @@
       <point x="-47" y="100" type="line"/>
       <point x="149" y="126" type="line"/>
       <point x="277" y="784" type="line"/>
-      <point x="366" y="1362" type="line"/>
-      <point x="183" y="1386" type="line"/>
-      <point x="196" y="1500" type="line"/>
+      <point x="386" y="1362" type="line"/>
+      <point x="193" y="1386" type="line"/>
+      <point x="206" y="1500" type="line"/>
       <point x="754" y="1500" type="line" smooth="yes"/>
       <point x="946" y="1500"/>
       <point x="1112" y="1308"/>
@@ -29,30 +29,36 @@
       <point x="526" y="0" type="qcurve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="313" y="125" type="line"/>
-      <point x="348" y="105" type="line"/>
-      <point x="498" y="105" type="line" smooth="yes"/>
-      <point x="666" y="105"/>
-      <point x="868" y="251"/>
-      <point x="893" y="420" type="qcurve" smooth="yes"/>
-      <point x="914" y="565"/>
-      <point x="789" y="743"/>
-      <point x="649" y="743" type="qcurve" smooth="yes"/>
-      <point x="428" y="743" type="line"/>
-      <point x="426" y="729" type="line"/>
+      <point x="349" y="313" type="line"/>
+      <point x="364" y="285" type="line"/>
+      <point x="530" y="285" type="line" smooth="yes"/>
+      <point x="698" y="285"/>
+      <point x="890" y="361"/>
+      <point x="897" y="452" type="qcurve" smooth="yes"/>
+      <point x="909" y="528"/>
+      <point x="766" y="622"/>
+      <point x="627" y="622" type="qcurve" smooth="yes"/>
+      <point x="406" y="622" type="line"/>
+      <point x="404" y="614" type="line"/>
     </contour>
     <contour>
-      <point x="455" y="880" type="line"/>
-      <point x="450" y="857" type="line"/>
-      <point x="602" y="857" type="line" smooth="yes"/>
-      <point x="731" y="857"/>
-      <point x="899" y="991"/>
-      <point x="912" y="1129" type="qcurve" smooth="yes"/>
-      <point x="924" y="1257"/>
-      <point x="814" y="1380"/>
-      <point x="691" y="1380" type="qcurve" smooth="yes"/>
-      <point x="561" y="1380" type="line"/>
-      <point x="532" y="1362" type="line"/>
+      <point x="460" y="912" type="line"/>
+      <point x="457" y="898" type="line"/>
+      <point x="607" y="898" type="line" smooth="yes"/>
+      <point x="733" y="898"/>
+      <point x="891" y="978"/>
+      <point x="888" y="1061" type="qcurve" smooth="yes"/>
+      <point x="892" y="1138"/>
+      <point x="779" y="1211"/>
+      <point x="660" y="1211" type="qcurve" smooth="yes"/>
+      <point x="551" y="1211" type="line"/>
+      <point x="516" y="1191" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
+    </dict>
+  </lib>
 </glyph>

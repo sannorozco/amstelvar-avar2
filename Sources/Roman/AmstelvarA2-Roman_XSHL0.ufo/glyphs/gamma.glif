@@ -13,8 +13,8 @@
       <point x="154" y="836"/>
       <point x="105" y="871"/>
       <point x="60" y="880" type="qcurve" smooth="yes"/>
-      <point x="10" y="890" type="line"/>
-      <point x="10" y="970" type="line"/>
+      <point x="60" y="890" type="line"/>
+      <point x="60" y="970" type="line"/>
       <point x="186" y="1008" type="line"/>
       <point x="225" y="1008"/>
       <point x="279" y="962"/>
@@ -37,6 +37,8 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
     </dict>
   </lib>
 </glyph>

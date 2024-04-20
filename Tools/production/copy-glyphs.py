@@ -13,7 +13,7 @@ assert os.path.exists(sourcePath)
 
 preflight = False
 
-glyphNames = 'Che ghe.bgr ghe ze Ecyr Y Yacute eng napostrophe Ycircumflex Ygrave Ydotbelow Ytilde engtail Upsilon Upsilontonos Upsilondieresis alpha Ka'.split()
+glyphNames = 'n u'.split()
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="J" format="2">
-  <advance width="733"/>
+  <advance width="1190"/>
   <unicode hex="004A"/>
-  <anchor x="376.0" y="-208" name="bottom"/>
-  <anchor x="533.0" y="1500" name="top"/>
+  <anchor x="441.0" y="-208" name="bottom"/>
+  <anchor x="772.0" y="1500" name="top"/>
   <outline>
     <contour>
       <point x="-195" y="-225" type="qcurve"/>
@@ -18,16 +18,22 @@
       <point x="432" y="1362" type="line"/>
       <point x="222" y="1386" type="line"/>
       <point x="235" y="1500" type="line"/>
-      <point x="797" y="1500" type="line"/>
-      <point x="784" y="1386" type="line"/>
-      <point x="596" y="1362" type="line"/>
-      <point x="478" y="754" type="line"/>
-      <point x="360" y="204" type="line" smooth="yes"/>
-      <point x="308" y="-37"/>
-      <point x="142" y="-260"/>
-      <point x="18" y="-260" type="qcurve" smooth="yes"/>
-      <point x="-54" y="-260"/>
-      <point x="-175" y="-237"/>
+      <point x="1254" y="1500" type="line"/>
+      <point x="1241" y="1386" type="line"/>
+      <point x="1053" y="1362" type="line"/>
+      <point x="935" y="754" type="line"/>
+      <point x="817" y="204" type="line" smooth="yes"/>
+      <point x="773" y="0"/>
+      <point x="418" y="-260"/>
+      <point x="193" y="-260" type="qcurve" smooth="yes"/>
+      <point x="62" y="-260"/>
+      <point x="-159" y="-237"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
+    </dict>
+  </lib>
 </glyph>

@@ -238,3 +238,5 @@ Variation axes in AmstelvarA2
 - `YTTL` Trap length
 - `YTOS` General y overshoot
 - `XUCS` X sidebearing uppercase H
+- `WDSP` Word space width
+- `BARS` Bars
