@@ -3,7 +3,7 @@ from variableValues.measurements import FontMeasurements, Measurement, permille
 from variableValues.linkPoints import readMeasurements
 
 familyName       = 'AmstelvarA2'
-subFamilyName    = ['Roman', 'Italic'][0]
+subFamilyName    = ['Roman', 'Italic'][1]
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
@@ -16,11 +16,12 @@ def makeMeasurementArgs(glyphName, i=0, measurement='XTUC'):
     args.insert(4, glyphName)
     return args
 
+
 g = CurrentGlyph()
 
 assert g is not None
 
-i = 2
+i = 0
 
 srcFont  = AllFonts().getFontsByStyleName('wght400')[0] # OpenFont(defaultPath, showInterface=False)
 dstFont  = CurrentFont()
