@@ -6,7 +6,7 @@ import os, glob, shutil
 from variableValues.measurements import FontMeasurements
 
 familyName       = 'AmstelvarA2'
-subFamilyName    = ['Roman', 'Italic'][0]
+subFamilyName    = ['Roman', 'Italic'][1]
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
@@ -15,9 +15,9 @@ allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 ignoreTags = ['wght', 'GRAD', 'BARS']
 
-preflight = False
+preflight = True
 
-for ufo in allUFOs:
+for ufo in sorted(allUFOs):
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
 
     # set family name

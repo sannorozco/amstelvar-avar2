@@ -27,8 +27,10 @@ class AmstelvarA2DesignSpaceBuilder:
     familyName      = 'AmstelvarA2'
     subFamilyName   = SUBFAMILY
     defaultName     = 'wght400'
-    parametricAxes  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
+
+    parametricAxesRoman  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS'.split()
 
     def __init__(self):
         # get measurements for default source
@@ -106,6 +108,13 @@ class AmstelvarA2DesignSpaceBuilder:
         with open(self.blendsPath, 'r', encoding='utf-8') as f:
             blendsData = json.load(f)
         return blendsData['sources']
+
+    @property
+    def parametricAxes(self):
+        if self.subFamilyName == 'Italic':
+            return self.parametricAxesItalic
+        else:
+            return self.parametricAxesRoman
 
     def buildBlendsFile(self):
         # import blends data from the original Amstelvar
@@ -281,9 +290,9 @@ class AmstelvarA2DesignSpaceBuilder:
         self.addInstances()
 
     def save(self):
-
         if not self.designspace:
             return
+        print(f'saving {self.designspacePath}...')
         self.designspace.write(self.designspacePath)
 
     def buildVariableFont(self, subset=False, setVersionInfo=True):
@@ -579,6 +588,7 @@ class AmstelvarA2DesignSpaceInitializer(AmstelvarA2DesignSpaceBuilder):
         return { name: 0 for name in self.parametricAxes }
 
     def addParametricAxes(self):
+        print('adding parametric axes...')
         for name in self.parametricAxes:
             a = AxisDescriptor()
             a.name    = name
@@ -589,6 +599,7 @@ class AmstelvarA2DesignSpaceInitializer(AmstelvarA2DesignSpaceBuilder):
             self.designspace.addAxis(a)
 
     def addParametricSources(self):
+        print('adding parametric sources...')
         for name in self.parametricAxes:
             for value in ['min', 'max']:
                 ufoPath = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{name}{value}.ufo')
@@ -614,7 +625,7 @@ class AmstelvarA2DesignSpaceInitializer(AmstelvarA2DesignSpaceBuilder):
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
-        self.buildParametricSources()
+        # self.buildParametricSources()
 
 
 # -----
@@ -640,7 +651,7 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
-    D2.buildVariableFont()
+    # D2.buildVariableFont()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
