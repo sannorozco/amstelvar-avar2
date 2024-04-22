@@ -120,9 +120,9 @@
     "YTLC": {
       "direction": "y",
       "glyph 1": "h",
-      "point 1": "0",
+      "point 1": "B",
       "glyph 2": "h",
-      "point 2": "13",
+      "point 2": "23",
       "parent": "",
       "description": "Y transparent lowercase"
     },
@@ -174,9 +174,9 @@
     "XSHL": {
       "direction": "x",
       "glyph 1": "n",
-      "point 1": "1",
+      "point 1": "4",
       "glyph 2": "n",
-      "point 2": "2",
+      "point 2": "3",
       "parent": "XSHA",
       "description": "X horizontal serif lowercase"
     },
@@ -210,9 +210,9 @@
     "YSHL": {
       "direction": "y",
       "glyph 1": "n",
-      "point 1": "0",
+      "point 1": "30",
       "glyph 2": "n",
-      "point 2": "1",
+      "point 2": "29",
       "parent": "YSHA",
       "description": "Y horizontal serif lowercase"
     },
@@ -245,10 +245,10 @@
     },
     "XSVL": {
       "direction": "x",
-      "glyph 1": "c",
-      "point 1": "10",
-      "glyph 2": "c",
-      "point 2": "9",
+      "glyph 1": "z",
+      "point 1": "22",
+      "glyph 2": "z",
+      "point 2": "23",
       "parent": "XSVA",
       "description": "X vertical serif lowercase"
     },
@@ -281,10 +281,10 @@
     },
     "YSVL": {
       "direction": "y",
-      "glyph 1": "c",
-      "point 1": "9",
-      "glyph 2": "c",
-      "point 2": "8",
+      "glyph 1": "z",
+      "point 1": "10",
+      "glyph 2": "z",
+      "point 2": "11",
       "parent": "YSVA",
       "description": "Y vertical serif lowercase"
     },
@@ -2917,7 +2917,7 @@
         "name": "XTLC",
         "direction": "x"
       },
-      "0 23": {
+      "B 23": {
         "name": "YTLC",
         "direction": "y"
       },
@@ -3859,7 +3859,7 @@
       },
       "24 23": {
         "name": "YSVL",
-        "direction": "y"
+        "direction": "a"
       },
       "B 25": {
         "name": "YTOS",
