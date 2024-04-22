@@ -16,10 +16,9 @@ allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 ignoreTags = ['wght', 'GRAD', 'BARS']
 
-preflight = True
+preflight = False
 
 allNames = []
-
 for ufo in sorted(allUFOs):
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
 
@@ -68,5 +67,5 @@ for ufo in sorted(allUFOs):
 
 # find duplicate styles
 duplicates = [k for k,v in Counter(allNames).items() if v > 1]
-print('duplicated style names:\n')
+print('duplicate style names:')
 print(duplicates)

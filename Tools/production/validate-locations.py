@@ -1,12 +1,13 @@
 import os
 from fontTools.designspaceLib import DesignSpaceDocument
 
+subFamilyName = ['Roman', 'Italic'][1]
 folder = os.path.dirname(os.path.dirname(os.getcwd()))
-sourcesFolder = os.path.join(folder, 'Sources', 'Roman')
-designspacePath = os.path.join(sourcesFolder, 'AmstelvarA2-Roman.designspace')
+sourcesFolder = os.path.join(folder, 'Sources', subFamilyName)
+designspacePath = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}.designspace')
 
 _sources   = True
-_instances = True
+_instances = False
 
 assert os.path.exists(designspacePath)
 
