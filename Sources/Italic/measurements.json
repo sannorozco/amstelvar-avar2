@@ -120,9 +120,9 @@
     "YTLC": {
       "direction": "y",
       "glyph 1": "h",
-      "point 1": "0",
+      "point 1": "B",
       "glyph 2": "h",
-      "point 2": "13",
+      "point 2": "23",
       "parent": "",
       "description": "Y transparent lowercase"
     },
@@ -174,9 +174,9 @@
     "XSHL": {
       "direction": "x",
       "glyph 1": "n",
-      "point 1": "1",
+      "point 1": "4",
       "glyph 2": "n",
-      "point 2": "2",
+      "point 2": "3",
       "parent": "XSHA",
       "description": "X horizontal serif lowercase"
     },
@@ -210,9 +210,9 @@
     "YSHL": {
       "direction": "y",
       "glyph 1": "n",
-      "point 1": "0",
+      "point 1": "30",
       "glyph 2": "n",
-      "point 2": "1",
+      "point 2": "29",
       "parent": "YSHA",
       "description": "Y horizontal serif lowercase"
     },
@@ -245,10 +245,10 @@
     },
     "XSVL": {
       "direction": "x",
-      "glyph 1": "c",
-      "point 1": "10",
-      "glyph 2": "c",
-      "point 2": "9",
+      "glyph 1": "z",
+      "point 1": "22",
+      "glyph 2": "z",
+      "point 2": "23",
       "parent": "XSVA",
       "description": "X vertical serif lowercase"
     },
@@ -281,10 +281,10 @@
     },
     "YSVL": {
       "direction": "y",
-      "glyph 1": "c",
-      "point 1": "9",
-      "glyph 2": "c",
-      "point 2": "8",
+      "glyph 1": "z",
+      "point 1": "10",
+      "glyph 2": "z",
+      "point 2": "11",
       "parent": "YSVA",
       "description": "Y vertical serif lowercase"
     },
@@ -1031,13 +1031,13 @@
         "name": "XOUC",
         "direction": "x"
       },
-      "27 20": {
+      "28 20": {
         "name": "YOUC",
-        "direction": "y"
+        "direction": "a"
       },
       "14 3": {
         "name": "YOUC",
-        "direction": "y"
+        "direction": "a"
       },
       "23 24": {
         "name": "YOUC",
@@ -1131,7 +1131,7 @@
         "name": "YOUC",
         "direction": "y"
       },
-      "13 18": {
+      "14 17": {
         "name": "XTUC",
         "direction": "x"
       },
@@ -1837,11 +1837,11 @@
       },
       "9 15": {
         "name": "YOUC",
-        "direction": "y"
+        "direction": "a"
       },
       "21 3": {
         "name": "YOUC",
-        "direction": "y"
+        "direction": "a"
       },
       "12 18": {
         "name": "XTUC",
@@ -1937,11 +1937,11 @@
       },
       "9 15": {
         "name": "YOUC",
-        "direction": "y"
+        "direction": "a"
       },
       "21 3": {
         "name": "YOUC",
-        "direction": "y"
+        "direction": "a"
       },
       "37 36": {
         "name": "YOUC",
@@ -1997,6 +1997,10 @@
         "name": "YOUC",
         "direction": "y"
       },
+      "38 37": {
+        "name": "YOUC",
+        "direction": "y"
+      },
       "29 22": {
         "name": "XTUC",
         "direction": "x"
@@ -2022,10 +2026,6 @@
         "direction": "y"
       },
       "31 30": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "38 37": {
         "name": "YSHU",
         "direction": "y"
       },
@@ -2101,11 +2101,11 @@
         "name": "YOUC",
         "direction": "y"
       },
-      "19 14": {
+      "19 16": {
         "name": "XTUC",
         "direction": "x"
       },
-      "9 4": {
+      "7 4": {
         "name": "XTUC",
         "direction": "x"
       },
@@ -2152,8 +2152,8 @@
         "direction": "x"
       },
       "26 11": {
-        "name": "XOUC",
-        "direction": "a"
+        "name": "YOUC",
+        "direction": "y"
       },
       "16 21": {
         "name": "YOUC",
@@ -2825,6 +2825,14 @@
         "name": "YOLC",
         "direction": "y"
       },
+      "1 5": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "26 20": {
+        "name": "XTLC",
+        "direction": "x"
+      },
       "B 11": {
         "name": "YTAS",
         "direction": "y"
@@ -2909,7 +2917,7 @@
         "name": "XTLC",
         "direction": "x"
       },
-      "0 23": {
+      "B 23": {
         "name": "YTLC",
         "direction": "y"
       },
@@ -3058,6 +3066,14 @@
       "2 1": {
         "name": "YOLC",
         "direction": "a"
+      },
+      "9 3": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "11 37": {
+        "name": "XTLC",
+        "direction": "x"
       },
       "13 24": {
         "name": "YTLC",
@@ -3377,6 +3393,10 @@
         "name": "YOLC",
         "direction": "y"
       },
+      "10 13": {
+        "name": "XTLC",
+        "direction": "x"
+      },
       "0 21": {
         "name": "YTLC",
         "direction": "y"
@@ -3488,6 +3508,14 @@
       "4 5": {
         "name": "YOLC",
         "direction": "y"
+      },
+      "10 17": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "4 3": {
+        "name": "XTLC",
+        "direction": "x"
       },
       "0 17": {
         "name": "YTLC",
@@ -3831,7 +3859,7 @@
       },
       "24 23": {
         "name": "YSVL",
-        "direction": "y"
+        "direction": "a"
       },
       "B 25": {
         "name": "YTOS",
@@ -7393,31 +7421,31 @@
       }
     },
     "jdotless": {
-      "4 13": {
+      "0 6": {
         "name": "XOLC",
         "direction": "x"
       },
-      "0 1": {
+      "10 13": {
         "name": "YOLC",
         "direction": "y"
       },
-      "1 4": {
+      "12 16": {
         "name": "XTLC",
         "direction": "x"
       },
-      "-1 9": {
+      "B 3": {
         "name": "YTLC",
         "direction": "y"
       },
-      "-1 0": {
+      "B 10": {
         "name": "YTDE",
         "direction": "y"
       },
-      "7 6": {
+      "1 0": {
         "name": "XSHL",
         "direction": "x"
       },
-      "7 8": {
+      "1 2": {
         "name": "YSHL",
         "direction": "y"
       }
@@ -10395,6 +10423,7 @@
     "ringcomb-stack.case": {},
     "diagonalbarl": {},
     "guilsinglleft": {},
-    "diagonalbarL": {}
+    "diagonalbarL": {},
+    "diagonalbarO.rvrn": {}
   }
 }

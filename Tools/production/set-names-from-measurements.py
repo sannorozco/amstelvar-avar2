@@ -3,10 +3,11 @@ import variableValues.measurements
 reload(variableValues.measurements)
 
 import os, glob, shutil
+from collections import Counter
 from variableValues.measurements import FontMeasurements
 
 familyName       = 'AmstelvarA2'
-subFamilyName    = ['Roman', 'Italic'][0]
+subFamilyName    = ['Roman', 'Italic'][1]
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
@@ -17,7 +18,8 @@ ignoreTags = ['wght', 'GRAD', 'BARS']
 
 preflight = False
 
-for ufo in allUFOs:
+allNames = []
+for ufo in sorted(allUFOs):
     tag = os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][:4]
 
     # set family name
@@ -43,6 +45,7 @@ for ufo in allUFOs:
 
     # set style name
     newStyleName = f'{tag}{newValue1000}'
+    allNames.append(newStyleName)
     if newStyleName != f.info.styleName:
         print(f'style name: {f.info.styleName} --> {newStyleName}' )
         if not preflight:
@@ -61,3 +64,8 @@ for ufo in allUFOs:
             shutil.move(ufo, newFilePath)   
 
     print()
+
+# find duplicate styles
+duplicates = [k for k,v in Counter(allNames).items() if v > 1]
+print('duplicate style names:')
+print(duplicates)
