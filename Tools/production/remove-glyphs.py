@@ -7,7 +7,10 @@ subFamilyName = ['Roman', 'Italic'][1]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
-glyphNames    = 'dieresistonoscomb.case dieresistonos.case'.split()
+glyphNames    = [
+    'dieresistonoscomb.case',
+    'dieresistonos.case',
+]
 
 for ufoPath in ufoPaths:
     f = OpenFont(ufoPath, showInterface=False)
