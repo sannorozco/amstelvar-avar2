@@ -22,7 +22,7 @@
       <point x="388" y="697" type="qcurve"/>
       <point x="447" y="674"/>
       <point x="673" y="501"/>
-      <point x="787" y="393" type="qcurve"/>
+      <point x="787" y="393" type="qcurve" smooth="yes"/>
       <point x="845" y="340"/>
       <point x="764" y="250"/>
       <point x="697" y="298" type="qcurve" smooth="yes"/>
@@ -30,10 +30,4 @@
       <point x="162" y="700"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
-    </dict>
-  </lib>
 </glyph>
