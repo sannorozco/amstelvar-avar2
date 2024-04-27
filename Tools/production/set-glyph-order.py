@@ -3,7 +3,7 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 defaultName   = 'wght400'
@@ -13,7 +13,8 @@ assert os.path.exists(sourcesFolder)
 assert os.path.exists(defaultPath)
 
 srcFont = OpenFont(defaultPath, showInterface=False)
-glyphOrder = srcFont.glyphOrder
+# glyphOrder = srcFont.glyphOrder
+glyphOrder = srcFont.templateGlyphOrder
 
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
@@ -22,7 +23,6 @@ for ufoPath in ufoPaths:
         continue
     font = OpenFont(ufoPath, showInterface=False)
     print(f'setting glyph order in {ufoPath}…')
-    font.glyphOrder = glyphOrder
+    font.templateGlyphOrder = glyphOrder
     font.save()
-    font.close()
-    
+    # font.close()
