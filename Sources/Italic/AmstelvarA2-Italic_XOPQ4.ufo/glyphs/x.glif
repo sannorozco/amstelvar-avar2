@@ -10,9 +10,11 @@
       <point x="-171" y="44" type="line"/>
       <point x="-158" y="139" type="line"/>
       <point x="12" y="137" type="line" smooth="yes"/>
-      <point x="83" y="136"/>
-      <point x="227" y="306" type="qcurve" smooth="yes"/>
-      <point x="327" y="423"/>
+      <point x="51" y="137"/>
+      <point x="140" y="203"/>
+      <point x="189" y="256" type="qcurve" smooth="yes"/>
+      <point x="232" y="303"/>
+      <point x="369" y="484"/>
       <point x="414" y="549" type="qcurve"/>
       <point x="318" y="839" type="line"/>
       <point x="127" y="818" type="line"/>
@@ -22,10 +24,12 @@
       <point x="358" y="737" type="line"/>
       <point x="416" y="564" type="line"/>
       <point x="426" y="564" type="line"/>
-      <point x="483" y="650" type="line" smooth="yes"/>
-      <point x="527" y="716"/>
-      <point x="627" y="861" type="qcurve"/>
-      <point x="734" y="1002"/>
+      <point x="483" y="650" type="line"/>
+      <point x="518" y="703"/>
+      <point x="595" y="825"/>
+      <point x="624" y="862" type="qcurve" smooth="yes"/>
+      <point x="668" y="917"/>
+      <point x="776" y="1002"/>
       <point x="836" y="1002" type="qcurve" smooth="yes"/>
       <point x="892" y="1002"/>
       <point x="942" y="955"/>
@@ -37,10 +41,12 @@
       <point x="829" y="837" type="line" smooth="yes"/>
       <point x="829" y="853"/>
       <point x="814" y="870"/>
-      <point x="799" y="870" type="qcurve" smooth="yes"/>
-      <point x="760" y="870"/>
-      <point x="669" y="751" type="qcurve" smooth="yes"/>
-      <point x="544" y="582"/>
+      <point x="799" y="870" type="qcurve"/>
+      <point x="779" y="870"/>
+      <point x="708" y="806"/>
+      <point x="669" y="752" type="qcurve" smooth="yes"/>
+      <point x="633" y="703"/>
+      <point x="547" y="583"/>
       <point x="456" y="451" type="qcurve"/>
       <point x="573" y="134" type="line"/>
       <point x="722" y="134" type="line"/>
@@ -50,10 +56,18 @@
       <point x="518" y="266" type="line"/>
       <point x="450" y="446" type="line"/>
       <point x="440" y="446" type="line"/>
-      <point x="361" y="317" type="line" smooth="yes"/>
-      <point x="300" y="217"/>
-      <point x="237" y="140" type="qcurve"/>
-      <point x="119" y="-14"/>
+      <point x="361" y="317" type="line"/>
+      <point x="321" y="251"/>
+      <point x="272" y="179"/>
+      <point x="242" y="142" type="qcurve" smooth="yes"/>
+      <point x="196" y="85"/>
+      <point x="75" y="-12"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XOPQ4.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>
