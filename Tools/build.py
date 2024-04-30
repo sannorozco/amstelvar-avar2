@@ -9,7 +9,7 @@ import ufoProcessor # upgrade to UFOOperator
 from variableValues.measurements import FontMeasurements, permille
 
 
-SUBFAMILY = ['Roman', 'Italic'][0]
+SUBFAMILY = ['Roman', 'Italic'][1]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -33,7 +33,7 @@ class AmstelvarA2DesignSpaceBuilder:
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
     parametricAxesRoman  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
-    parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS'.split()
+    parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
 
     def __init__(self):
         # get measurements for default source
@@ -651,15 +651,15 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build(blends=True, instances=True)
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build(blends=False, instances=False)
+    D.save()
     # D.buildInstances()
 
-    D1 = AmstelvarA2DesignSpaceBuilder_avar1()
-    D1.build()
-    D1.save()
-    D1.buildVariableFont()
+    # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
+    # D1.build()
+    # D1.save()
+    # D1.buildVariableFont()
 
     # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     # D2.build()
