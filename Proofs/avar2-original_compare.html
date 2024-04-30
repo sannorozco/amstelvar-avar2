@@ -8,24 +8,34 @@
     <title>AmstelvarA2 Roman avar2 × Amstelvar Roman (compare)</title>
     <style>
       @font-face {
-        font-family: "Amstelvar Roman";
+        font-family: "Amstelvar";
         src: url('Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf') format('truetype');
         font-style: normal;
         font-weight: normal;
-        font-display: auto;
       }
       @font-face {
-        font-family: "AmstelvarA2 Roman avar2";
+        font-family: "Amstelvar";
+        src: url('Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf') format('truetype');
+        font-style: italic;
+        font-weight: normal;
+      }
+      @font-face {
+        font-family: "AmstelvarA2";
         src: url('../Fonts/AmstelvarA2-Roman_avar2.ttf') format('truetype');
         font-style: normal;
         font-weight: normal;
-        font-display: auto;
       }
-      .Amstelvar-Roman-original {
-        font-family: "Amstelvar Roman";
+      @font-face {
+        font-family: "AmstelvarA2";
+        src: url('../Fonts/AmstelvarA2-Italic_avar2.ttf') format('truetype');
+        font-style: italic;
+        font-weight: normal;
       }
-      .Amstelvar-Roman-avar2 {
-        font-family: "AmstelvarA2 Roman avar2";
+      .Amstelvar {
+        font-family: "Amstelvar";
+      }
+      .AmstelvarA2 {
+        font-family: "AmstelvarA2";
       }
       .sample {
         font-size: 14pt;
@@ -36,6 +46,12 @@
       }
       ._hide {
         display: none;
+      }
+      ._roman {
+        font-style: normal;
+      }
+      ._italic {
+        font-style: italic;
       }
       output.form-control {
         font-size: 0.85em !important;
@@ -71,19 +87,17 @@
             </div>
           </div>
 
-          <!--
           <div class="row">
             <div class="col-4">
-              <label for="fontsize" class="form-label"><small>font style</small></label>
+              <label for="fontstyle" class="form-label"><small>font style</small></label>
             </div>
             <div class="col-8">
-              <select class="form-select-sm w-100" aria-label="select style">
+              <select id="fontstyle" class="form-select-sm w-100" aria-label="select style">
                 <option value="roman" selected>Roman</option>
                 <option value="italic">Italic</option>
               </select>
             </div>
           </div>
-          -->
 
           <div class="row">
             <div class="col-4">
@@ -211,7 +225,7 @@
         <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xxl-10 vh-100 position-relative">
           <div class="w-100 pe-3 position-absolute top-0 start-0 vh-50 pt-3 ms-3 overflow-hidden">
             <span class="badge bg-primary float-end me-1">avar2</span>
-            <p id='sample_avar2' class='sample w-100 Amstelvar-Roman-avar2' contenteditable="true">
+            <p id='sample_avar2' class='sample w-100 AmstelvarA2' contenteditable="true">
               <span class='_english'>OpenType variable fonts are an adaptation of Apple's TrueType GX font variations to OpenType, with integration into key aspects of the OpenType format including OpenType Layout tables and both TrueType and CFF glyph outline formats. It also surpasses TrueType GX by providing better interoperability, both between different fonts, and between variable fonts and font-formatting specifications such as those found in Cascading Style Sheets. The technology allows software to access any design instance for a continuous range of designs defined within the font. When a specific design instance has been selected, the glyph outlines or other data values for that design instance are computed as font data is being processed during text layout and rasterization. The technology uses interpolation and extrapolation mechanisms that have been supported in font-development tools and used by font designers for many years. In that paradigm, the font designer creates a variable design, but then chooses specific instances to generate as static, non-variable fonts that get distributed to customers. With variable fonts, however, the font produced and distributed by the font designer can have built-in variability, and the interpolation mechanisms can now be built into operating systems and Web browsers or other applications, with specific design instances selected at time of use. One of the key benefits of the technology is that it can significantly reduce the combined size of font data whenever multiple styles are in use. On the Web, this may allow a site to use more font styles while at the same time reducing page load times. A further benefit is that it gives access to a continuous range of style variations, which can provide benefits for responsive design.</span>
               <span class='_french _hide'>Les polices variables OpenType sont une adaptation des variantes de polices TrueType GX d'Apple à OpenType, avec intégration dans des aspects clés du format OpenType, notamment les tableaux de mise en page OpenType et les formats de contour de glyphes TrueType et CFF. Il surpasse également TrueType GX en offrant une meilleure interopérabilité, à la fois entre les différentes polices et entre les polices variables et les spécifications de formatage des polices telles que celles trouvées dans les feuilles de style en cascade. La technologie permet au logiciel d'accéder à n'importe quelle instance de conception pour une gamme continue de conceptions définies dans la police. Lorsqu'une instance de conception spécifique a été sélectionnée, les contours des glyphes ou d'autres valeurs de données pour cette instance de conception sont calculés au fur et à mesure que les données de police sont traitées lors de la mise en page et de la rastérisation du texte. La technologie utilise des mécanismes d'interpolation et d'extrapolation pris en charge dans les outils de développement de polices et utilisés par les concepteurs de polices depuis de nombreuses années. Dans ce paradigme, le concepteur de polices crée une conception variable, mais choisit ensuite des instances spécifiques à générer sous forme de polices statiques et non variables qui sont distribuées aux clients. Cependant, avec les polices variables, la police produite et distribuée par le concepteur de polices peut avoir une variabilité intégrée, et les mécanismes d'interpolation peuvent désormais être intégrés aux systèmes d'exploitation et aux navigateurs Web ou à d'autres applications, avec des instances de conception spécifiques sélectionnées au moment de l'utilisation. L’un des principaux avantages de cette technologie est qu’elle peut réduire considérablement la taille combinée des données de police lorsque plusieurs styles sont utilisés. Sur le Web, cela peut permettre à un site d'utiliser davantage de styles de police tout en réduisant les temps de chargement des pages. Un autre avantage est qu’il donne accès à une gamme continue de variations de style, ce qui peut offrir des avantages pour une conception réactive.</span>
               <span class='_german _hide'>Variable OpenType-Schriftarten sind eine Adaption der TrueType GX-Schriftartenvarianten von Apple an OpenType mit Integration in wichtige Aspekte des OpenType-Formats, einschließlich OpenType-Layouttabellen und sowohl TrueType- als auch CFF-Glyphenumrissformate. Es übertrifft TrueType GX außerdem durch eine bessere Interoperabilität, sowohl zwischen verschiedenen Schriftarten als auch zwischen variablen Schriftarten und Schriftartformatierungsspezifikationen, wie sie beispielsweise in Cascading Style Sheets zu finden sind. Die Technologie ermöglicht der Software den Zugriff auf jede Designinstanz für eine kontinuierliche Reihe von Designs, die in der Schriftart definiert sind. Wenn eine bestimmte Designinstanz ausgewählt wurde, werden die Glyphenumrisse oder andere Datenwerte für diese Designinstanz berechnet, während Schriftdaten während des Textlayouts und der Rasterung verarbeitet werden. Die Technologie nutzt Interpolations- und Extrapolationsmechanismen, die seit vielen Jahren in Tools zur Schriftartenentwicklung unterstützt und von Schriftartendesignern verwendet werden. In diesem Paradigma erstellt der Schriftdesigner einen variablen Entwurf, wählt dann aber bestimmte Instanzen aus, um sie als statische, nicht variable Schriften zu generieren, die an Kunden verteilt werden. Bei variablen Schriftarten kann die vom Schriftartendesigner erstellte und vertriebene Schriftart jedoch über eine integrierte Variabilität verfügen, und die Interpolationsmechanismen können jetzt in Betriebssysteme, Webbrowser oder andere Anwendungen integriert werden, wobei bestimmte Designinstanzen zum Zeitpunkt der Verwendung ausgewählt werden. Einer der Hauptvorteile der Technologie besteht darin, dass sie die Gesamtgröße der Schriftdaten erheblich reduzieren kann, wenn mehrere Stile verwendet werden. Im Web kann dies einer Website möglicherweise die Verwendung weiterer Schriftarten ermöglichen und gleichzeitig die Seitenladezeiten verkürzen. Ein weiterer Vorteil besteht darin, dass eine kontinuierliche Auswahl an Stilvarianten zur Verfügung steht, was Vorteile für das responsive Design bieten kann.</span>
@@ -223,7 +237,7 @@
           </div>
           <div class="w-100 pe-3 position-absolute top-50 start-0 vh-50 pt-3 ms-3 border-top border-secondary overflow-hidden bg-body" id='avar1_container'>
             <span class="badge bg-primary float-end me-2">original</span>
-            <p id='sample_original' class='sample w-100 Amstelvar-Roman-original'>
+            <p id='sample_original' class='sample w-100 Amstelvar'>
               <span class='_english'>OpenType variable fonts are an adaptation of Apple's TrueType GX font variations to OpenType, with integration into key aspects of the OpenType format including OpenType Layout tables and both TrueType and CFF glyph outline formats. It also surpasses TrueType GX by providing better interoperability, both between different fonts, and between variable fonts and font-formatting specifications such as those found in Cascading Style Sheets. The technology allows software to access any design instance for a continuous range of designs defined within the font. When a specific design instance has been selected, the glyph outlines or other data values for that design instance are computed as font data is being processed during text layout and rasterization. The technology uses interpolation and extrapolation mechanisms that have been supported in font-development tools and used by font designers for many years. In that paradigm, the font designer creates a variable design, but then chooses specific instances to generate as static, non-variable fonts that get distributed to customers. With variable fonts, however, the font produced and distributed by the font designer can have built-in variability, and the interpolation mechanisms can now be built into operating systems and Web browsers or other applications, with specific design instances selected at time of use. One of the key benefits of the technology is that it can significantly reduce the combined size of font data whenever multiple styles are in use. On the Web, this may allow a site to use more font styles while at the same time reducing page load times. A further benefit is that it gives access to a continuous range of style variations, which can provide benefits for responsive design.</span>
               <span class='_french _hide'>Les polices variables OpenType sont une adaptation des variantes de polices TrueType GX d'Apple à OpenType, avec intégration dans des aspects clés du format OpenType, notamment les tableaux de mise en page OpenType et les formats de contour de glyphes TrueType et CFF. Il surpasse également TrueType GX en offrant une meilleure interopérabilité, à la fois entre les différentes polices et entre les polices variables et les spécifications de formatage des polices telles que celles trouvées dans les feuilles de style en cascade. La technologie permet au logiciel d'accéder à n'importe quelle instance de conception pour une gamme continue de conceptions définies dans la police. Lorsqu'une instance de conception spécifique a été sélectionnée, les contours des glyphes ou d'autres valeurs de données pour cette instance de conception sont calculés au fur et à mesure que les données de police sont traitées lors de la mise en page et de la rastérisation du texte. La technologie utilise des mécanismes d'interpolation et d'extrapolation pris en charge dans les outils de développement de polices et utilisés par les concepteurs de polices depuis de nombreuses années. Dans ce paradigme, le concepteur de polices crée une conception variable, mais choisit ensuite des instances spécifiques à générer sous forme de polices statiques et non variables qui sont distribuées aux clients. Cependant, avec les polices variables, la police produite et distribuée par le concepteur de polices peut avoir une variabilité intégrée, et les mécanismes d'interpolation peuvent désormais être intégrés aux systèmes d'exploitation et aux navigateurs Web ou à d'autres applications, avec des instances de conception spécifiques sélectionnées au moment de l'utilisation. L’un des principaux avantages de cette technologie est qu’elle peut réduire considérablement la taille combinée des données de police lorsque plusieurs styles sont utilisés. Sur le Web, cela peut permettre à un site d'utiliser davantage de styles de police tout en réduisant les temps de chargement des pages. Un autre avantage est qu’il donne accès à une gamme continue de variations de style, ce qui peut offrir des avantages pour une conception réactive.</span>
               <span class='_german _hide'>Variable OpenType-Schriftarten sind eine Adaption der TrueType GX-Schriftartenvarianten von Apple an OpenType mit Integration in wichtige Aspekte des OpenType-Formats, einschließlich OpenType-Layouttabellen und sowohl TrueType- als auch CFF-Glyphenumrissformate. Es übertrifft TrueType GX außerdem durch eine bessere Interoperabilität, sowohl zwischen verschiedenen Schriftarten als auch zwischen variablen Schriftarten und Schriftartformatierungsspezifikationen, wie sie beispielsweise in Cascading Style Sheets zu finden sind. Die Technologie ermöglicht der Software den Zugriff auf jede Designinstanz für eine kontinuierliche Reihe von Designs, die in der Schriftart definiert sind. Wenn eine bestimmte Designinstanz ausgewählt wurde, werden die Glyphenumrisse oder andere Datenwerte für diese Designinstanz berechnet, während Schriftdaten während des Textlayouts und der Rasterung verarbeitet werden. Die Technologie nutzt Interpolations- und Extrapolationsmechanismen, die seit vielen Jahren in Tools zur Schriftartenentwicklung unterstützt und von Schriftartendesignern verwendet werden. In diesem Paradigma erstellt der Schriftdesigner einen variablen Entwurf, wählt dann aber bestimmte Instanzen aus, um sie als statische, nicht variable Schriften zu generieren, die an Kunden verteilt werden. Bei variablen Schriftarten kann die vom Schriftartendesigner erstellte und vertriebene Schriftart jedoch über eine integrierte Variabilität verfügen, und die Interpolationsmechanismen können jetzt in Betriebssysteme, Webbrowser oder andere Anwendungen integriert werden, wobei bestimmte Designinstanzen zum Zeitpunkt der Verwendung ausgewählt werden. Einer der Hauptvorteile der Technologie besteht darin, dass sie die Gesamtgröße der Schriftdaten erheblich reduzieren kann, wenn mehrere Stile verwendet werden. Im Web kann dies einer Website möglicherweise die Verwendung weiterer Schriftarten ermöglichen und gleichzeitig die Seitenladezeiten verkürzen. Ein weiterer Vorteil besteht darin, dass eine kontinuierliche Auswahl an Stilvarianten zur Verfügung steht, was Vorteile für das responsive Design bieten kann.</span>
@@ -252,6 +266,7 @@
         link_fontsize      = document.getElementById("synchFontSize");
         language_selector  = document.getElementById("language");
         colormode_selector = document.getElementById("colormode");
+        fontstyle_selector = document.getElementById("fontstyle");
         font_samples       = document.querySelectorAll(".sample");
         axis_sliders       = document.querySelectorAll('.axis')
         sample_original    = document.getElementById('sample_original')
@@ -306,12 +321,23 @@
           $('._' + lang).removeClass('_hide');
         }
 
+        function fontstyle_changed() {
+          var fontstyle = fontstyle_selector.value;
+          console.log(fontstyle);
+          if (fontstyle == 'italic') {
+            $('.sample').removeClass('_roman');
+            $('.sample').addClass('_italic');
+          } else {
+            $('.sample').removeClass('_italic');
+            $('.sample').addClass('_roman');
+          }
+        }
+
         function colormode_changed() {
           var colormode = colormode_selector.value;
           if (colormode == 'dark') {
               document.documentElement.setAttribute('data-bs-theme','dark')
-          }
-          else {
+          } else {
               document.documentElement.setAttribute('data-bs-theme','light')
           }
         }
@@ -324,6 +350,7 @@
         link_fontsize.addEventListener('input', link_fontsize_changed)
         language_selector.addEventListener('input', language_changed)
         colormode_selector.addEventListener('input', colormode_changed)
+        fontstyle_selector.addEventListener('input', fontstyle_changed)
 
         axis_sliders.forEach(function(slider) {
           slider.addEventListener('input', axis_sliders_changed)
