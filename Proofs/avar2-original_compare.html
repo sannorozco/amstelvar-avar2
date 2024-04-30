@@ -41,84 +41,6 @@
         font-size: 0.85em !important;
       }
     </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-
-        fontsize_slider   = document.getElementById("fontsize");
-        lineheight_slider = document.getElementById("lineheight");
-        opsz_slider       = document.getElementById("opsz");
-        link_fontsize     = document.getElementById("synchFontSize");
-        language_selector = document.getElementById("language");
-        font_samples      = document.querySelectorAll(".sample");
-        axis_sliders      = document.querySelectorAll('.axis')
-        sample_original   = document.getElementById('sample_original')
-        sample_avar2      = document.getElementById('sample_avar2')
-
-        function axis_sliders_changed() {
-          variations = []
-          axis_sliders.forEach(function(slider) {
-            variations.push('"' + slider.id + '" ' + slider.value);
-            document.getElementById(slider.id + '_value').value = slider.value;
-          })
-          for (var i = 0; i < font_samples.length; i++) {
-            font_samples[i].style.fontVariationSettings = variations.join(", ")
-          }
-        }
-
-        function fontsize_slider_changed() {
-          document.getElementById('fontsize_value').value = fontsize_slider.value;
-          for (var i = 0; i < font_samples.length; i++) {
-            font_samples[i].style.fontSize = fontsize_slider.value + "pt"
-            font_samples[i].style.lineHeight = (fontsize_slider.value * lineheight_slider.value) + "pt"
-            if (link_fontsize.checked) {
-              opsz_slider.value = fontsize_slider.value;
-              axis_sliders_changed();
-            }
-          }
-        }
-
-        function lineheight_slider_changed() {
-          document.getElementById('lineheight_value').value = lineheight_slider.value;
-          for (var i = 0; i < font_samples.length; i++) {
-            font_samples[i].style.lineHeight = (fontsize_slider.value * lineheight_slider.value) + "pt"
-          }
-        }
-
-        function opsz_slider_changed() {
-          if (link_fontsize.checked == true) {
-            fontsize_slider.value = opsz_slider.value;
-            fontsize_slider_changed();
-          }
-        }
-
-        function link_fontsize_changed (checkbox) {
-          fontsize_slider_changed()
-        }
-
-        function language_changed() {
-          var lang = language_selector.value;
-          $('.sample').children().addClass('_hide');
-          $('._' + lang).removeClass('_hide');
-        }
-
-        fontsize_slider.addEventListener('input', fontsize_slider_changed)
-        lineheight_slider.addEventListener('input', lineheight_slider_changed)
-        opsz_slider.addEventListener('input', opsz_slider_changed)
-
-        link_fontsize.addEventListener('input', link_fontsize_changed)
-
-        axis_sliders.forEach(function(slider) {
-          slider.addEventListener('input', axis_sliders_changed)
-        })
-
-        sample_avar2.addEventListener("input", function() {
-            sample_original.innerHTML = sample_avar2.innerHTML;
-        }, false);
-
-        language_selector.addEventListener('input', language_changed)
-
-      })
-    </script>
   </head>
   <body class='h-100 overflow-hidden'>
     <div class='container-fluid p-3'>
@@ -139,10 +61,10 @@
 
           <div class="row">
             <div class="col-4">
-              <label for="mode" class="form-label"><small>color mode</small></label>
+              <label for="colormode" class="form-label"><small>color mode</small></label>
             </div>
             <div class="col-8">
-              <select class="form-select-sm w-100" aria-label="select mode">
+              <select id='colormode' class="form-select-sm w-100" aria-label="select mode">
                 <option value="light">light</option>
                 <option value="dark" selected>dark</option>
               </select>
@@ -318,5 +240,101 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+
+        // get UI elements
+
+        fontsize_slider    = document.getElementById("fontsize");
+        lineheight_slider  = document.getElementById("lineheight");
+        opsz_slider        = document.getElementById("opsz");
+        link_fontsize      = document.getElementById("synchFontSize");
+        language_selector  = document.getElementById("language");
+        colormode_selector = document.getElementById("colormode");
+        font_samples       = document.querySelectorAll(".sample");
+        axis_sliders       = document.querySelectorAll('.axis')
+        sample_original    = document.getElementById('sample_original')
+        sample_avar2       = document.getElementById('sample_avar2')
+
+        // define UI behavior
+
+        function axis_sliders_changed() {
+          var variations = [];
+          axis_sliders.forEach(function(slider) {
+            variations.push('"' + slider.id + '" ' + slider.value);
+            document.getElementById(slider.id + '_value').value = slider.value;
+          })
+          for (var i = 0; i < font_samples.length; i++) {
+            font_samples[i].style.fontVariationSettings = variations.join(", ")
+          }
+        }
+
+        function fontsize_slider_changed() {
+          document.getElementById('fontsize_value').value = fontsize_slider.value;
+          for (var i = 0; i < font_samples.length; i++) {
+            font_samples[i].style.fontSize = fontsize_slider.value + "pt"
+            font_samples[i].style.lineHeight = (fontsize_slider.value * lineheight_slider.value) + "pt"
+            if (link_fontsize.checked) {
+              opsz_slider.value = fontsize_slider.value;
+              axis_sliders_changed();
+            }
+          }
+        }
+
+        function lineheight_slider_changed() {
+          document.getElementById('lineheight_value').value = lineheight_slider.value;
+          for (var i = 0; i < font_samples.length; i++) {
+            font_samples[i].style.lineHeight = (fontsize_slider.value * lineheight_slider.value) + "pt"
+          }
+        }
+
+        function opsz_slider_changed() {
+          if (link_fontsize.checked == true) {
+            fontsize_slider.value = opsz_slider.value;
+            fontsize_slider_changed();
+          }
+        }
+
+        function link_fontsize_changed (checkbox) {
+          fontsize_slider_changed()
+        }
+
+        function language_changed() {
+          var lang = language_selector.value;
+          $('.sample').children().addClass('_hide');
+          $('._' + lang).removeClass('_hide');
+        }
+
+        function colormode_changed() {
+          var colormode = colormode_selector.value;
+          if (colormode == 'dark') {
+              document.documentElement.setAttribute('data-bs-theme','dark')
+          }
+          else {
+              document.documentElement.setAttribute('data-bs-theme','light')
+          }
+        }
+
+        // bind event listeners
+
+        fontsize_slider.addEventListener('input', fontsize_slider_changed)
+        lineheight_slider.addEventListener('input', lineheight_slider_changed)
+        opsz_slider.addEventListener('input', opsz_slider_changed)
+        link_fontsize.addEventListener('input', link_fontsize_changed)
+        language_selector.addEventListener('input', language_changed)
+        colormode_selector.addEventListener('input', colormode_changed)
+
+        axis_sliders.forEach(function(slider) {
+          slider.addEventListener('input', axis_sliders_changed)
+        })
+
+        sample_avar2.addEventListener("input", function() {
+            sample_original.innerHTML = sample_avar2.innerHTML;
+        }, false);
+
+      })
+    </script>
+
   </body>
 </html>
