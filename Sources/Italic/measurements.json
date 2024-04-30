@@ -395,6 +395,15 @@
       "point 2": "3",
       "parent": "",
       "description": "dot height"
+    },
+    "WDSP": {
+      "direction": "x",
+      "glyph 1": "space",
+      "point 1": "-1",
+      "glyph 2": "space",
+      "point 2": "99",
+      "parent": "",
+      "description": ""
     }
   },
   "glyphs": {
@@ -3713,19 +3722,19 @@
       }
     },
     "x": {
-      "8 12": {
+      "10 14": {
         "name": "XOLC",
         "direction": "a"
       },
-      "40 36": {
+      "42 46": {
         "name": "XOLC",
         "direction": "a"
       },
-      "5 46": {
+      "5 53": {
         "name": "YOLC",
         "direction": "a"
       },
-      "18 33": {
+      "21 37": {
         "name": "YOLC",
         "direction": "a"
       },
@@ -3733,35 +3742,31 @@
         "name": "YOLC",
         "direction": "y"
       },
-      "31 20": {
+      "35 24": {
         "name": "YOLC",
         "direction": "y"
       },
-      "0 11": {
+      "0 13": {
         "name": "YTLC",
         "direction": "y"
       },
-      "9 8": {
+      "11 10": {
         "name": "XSHL",
         "direction": "x"
       },
-      "36 37": {
+      "42 43": {
         "name": "XSHL",
         "direction": "x"
       },
-      "38 37": {
+      "11 12": {
         "name": "YSHL",
         "direction": "y"
       },
-      "9 10": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "28 23": {
+      "32 27": {
         "name": "XSVL",
         "direction": "x"
       },
-      "26 20": {
+      "30 24": {
         "name": "YSVL",
         "direction": "y"
       },
@@ -3769,19 +3774,23 @@
         "name": "YTOS",
         "direction": "y"
       },
-      "X 11": {
+      "X 24": {
         "name": "YTOS",
         "direction": "y"
       },
-      "43 42": {
+      "49 48": {
         "name": "XTTW",
         "direction": "x"
       },
-      "14 15": {
+      "16 17": {
         "name": "XTTW",
         "direction": "x"
       },
-      "13 14": {
+      "47 48": {
+        "name": "YTTL",
+        "direction": "a"
+      },
+      "49 50": {
         "name": "YTTL",
         "direction": "a"
       },
@@ -3789,11 +3798,7 @@
         "name": "YTTL",
         "direction": "a"
       },
-      "41 42": {
-        "name": "YTTL",
-        "direction": "a"
-      },
-      "44 43": {
+      "17 18": {
         "name": "YTTL",
         "direction": "a"
       }
@@ -10444,6 +10449,14 @@
     "diagonalbarl": {},
     "guilsinglleft": {},
     "diagonalbarL": {},
-    "diagonalbarO.rvrn": {}
+    "diagonalbarO.rvrn": {},
+    "quotedblright": {},
+    "quotedblleft": {},
+    "space": {
+      "-1 99": {
+        "name": "WDSP",
+        "direction": "x"
+      }
+    }
   }
 }
