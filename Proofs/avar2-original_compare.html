@@ -323,7 +323,6 @@
 
         function fontstyle_changed() {
           var fontstyle = fontstyle_selector.value;
-          console.log(fontstyle);
           if (fontstyle == 'italic') {
             $('.sample').removeClass('_roman');
             $('.sample').addClass('_italic');
@@ -342,7 +341,7 @@
           }
         }
 
-        // bind event listeners
+        // bind behavior to elements
 
         fontsize_slider.addEventListener('input', fontsize_slider_changed)
         lineheight_slider.addEventListener('input', lineheight_slider_changed)
