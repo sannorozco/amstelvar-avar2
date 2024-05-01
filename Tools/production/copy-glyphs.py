@@ -11,29 +11,37 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-preflight = False
+glyphNames = [
+    'K',
+]
+dstFonts = [
+    'XSVU124',
+    'YSVU224',
+]
 
-glyphNames = 'n u'.split()
+preflight = True
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
-
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
 for ufoPath in ufoPaths:
     if ufoPath == sourcePath:
         continue
 
-    dstFont = OpenFont(ufoPath, showInterface=False)
+    name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
+    if name in dstFonts or not dstFonts:
 
-    print(f'copying glyphs to {ufoPath}...')
-    for glyphName in glyphNames:
-        print(f'\tcopying {glyphName}...')
+        dstFont = OpenFont(ufoPath, showInterface=False)
+
+        print(f'copying glyphs to {ufoPath}...')
+        for glyphName in glyphNames:
+            print(f'\tcopying {glyphName}...')
+            if not preflight:
+                dstFont.insertGlyph(sourceFont[glyphName], name=glyphName)
+
         if not preflight:
-            dstFont.insertGlyph(sourceFont[glyphName], name=glyphName)
+            print(f'\tsaving font...')
+            dstFont.save()
 
-    if not preflight:
-        print(f'\tsaving font...')
-        dstFont.save()
-
-    dstFont.close()
-    print()
+        dstFont.close()
+        print()
