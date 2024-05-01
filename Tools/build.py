@@ -651,9 +651,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build(blends=True, instances=True)
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build(blends=True, instances=True)
+    D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()

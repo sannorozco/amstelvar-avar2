@@ -19,7 +19,7 @@ dstFonts = [
     'YSVU224',
 ]
 
-preflight = True
+preflight = False
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')

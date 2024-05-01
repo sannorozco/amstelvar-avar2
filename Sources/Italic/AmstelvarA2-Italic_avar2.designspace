@@ -2,7 +2,7 @@
 <designspace format="5.1">
   <axes>
     <axis tag="opsz" name="Optical size" minimum="8" maximum="144" default="14"/>
-    <axis tag="wght" name="Weight" minimum="100" maximum="1000" default="400"/>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="400"/>
     <axis tag="wdth" name="Width" minimum="50" maximum="125" default="100"/>
     <axis tag="XTSP" name="XTSP" minimum="-100" maximum="100" default="0"/>
     <axis tag="XOPQ" name="XOPQ" minimum="4" maximum="310" default="84"/>
@@ -21,7 +21,7 @@
     <axis tag="YSHL" name="YSHL" minimum="0" maximum="144" default="44"/>
     <axis tag="XSVL" name="XSVL" minimum="0" maximum="120" default="44"/>
     <axis tag="YSVL" name="YSVL" minimum="64" maximum="202" default="126"/>
-    <axis tag="XSVF" name="XSVF" minimum="372" maximum="422" default="396"/>
+    <axis tag="XSVF" name="XSVF" minimum="0" maximum="126" default="51"/>
     <axis tag="YSVF" name="YSVF" minimum="84" maximum="286" default="186"/>
     <axis tag="XTTW" name="XTTW" minimum="0" maximum="30" default="9"/>
     <axis tag="YTTL" name="YTTL" minimum="0" maximum="104" default="64"/>
@@ -44,28 +44,81 @@
           <dimension name="YTFI" xvalue="763"/>
           <dimension name="XSHU" xvalue="80"/>
           <dimension name="XSHL" xvalue="64"/>
-          <dimension name="XSHF" xvalue="13"/>
           <dimension name="YSHU" xvalue="12"/>
           <dimension name="YSHL" xvalue="10"/>
-          <dimension name="YSHF" xvalue="17"/>
           <dimension name="XSVU" xvalue="14"/>
           <dimension name="XSVL" xvalue="8"/>
-          <dimension name="XSVF" xvalue="377"/>
+          <dimension name="XSVF" xvalue="10"/>
           <dimension name="YSVU" xvalue="160"/>
           <dimension name="YSVL" xvalue="116"/>
           <dimension name="YSVF" xvalue="158"/>
           <dimension name="YTOS" xvalue="8"/>
           <dimension name="XUCS" xvalue="181"/>
-          <dimension name="XTTW" xvalue="160"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="234"/>
         </output>
       </mapping>
       <mapping>
         <input>
           <dimension name="Optical size" xvalue="144"/>
+          <dimension name="Width" xvalue="125"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="88"/>
+          <dimension name="YOPQ" xvalue="20"/>
+          <dimension name="XTRA" xvalue="510"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="466"/>
+          <dimension name="YTAS" xvalue="782"/>
+          <dimension name="YTDE" xvalue="-224"/>
+          <dimension name="YTFI" xvalue="772"/>
+          <dimension name="XSHU" xvalue="95"/>
+          <dimension name="XSHL" xvalue="110"/>
+          <dimension name="YSHU" xvalue="12"/>
+          <dimension name="YSHL" xvalue="12"/>
+          <dimension name="XSVU" xvalue="18"/>
+          <dimension name="XSVL" xvalue="15"/>
+          <dimension name="XSVF" xvalue="15"/>
+          <dimension name="YSVU" xvalue="160"/>
+          <dimension name="YSVL" xvalue="116"/>
+          <dimension name="YSVF" xvalue="158"/>
+          <dimension name="YTOS" xvalue="8"/>
+          <dimension name="XUCS" xvalue="227"/>
+          <dimension name="WDSP" xvalue="279"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Optical size" xvalue="144"/>
+          <dimension name="Width" xvalue="50"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="81"/>
+          <dimension name="YOPQ" xvalue="14"/>
+          <dimension name="XTRA" xvalue="160"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="466"/>
+          <dimension name="YTAS" xvalue="788"/>
+          <dimension name="YTDE" xvalue="-233"/>
+          <dimension name="YTFI" xvalue="763"/>
+          <dimension name="XSHU" xvalue="56"/>
+          <dimension name="XSHL" xvalue="58"/>
+          <dimension name="YSHU" xvalue="10"/>
+          <dimension name="YSHL" xvalue="10"/>
+          <dimension name="XSVU" xvalue="14"/>
+          <dimension name="XSVL" xvalue="8"/>
+          <dimension name="XSVF" xvalue="10"/>
+          <dimension name="YSVU" xvalue="160"/>
+          <dimension name="YSVL" xvalue="116"/>
+          <dimension name="YSVF" xvalue="143"/>
+          <dimension name="YTOS" xvalue="3"/>
+          <dimension name="XUCS" xvalue="152"/>
+          <dimension name="WDSP" xvalue="180"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="100"/>
-          <dimension name="Width" xvalue="100"/>
         </input>
         <output>
           <dimension name="XOPQ" xvalue="31"/>
@@ -78,20 +131,16 @@
           <dimension name="YTFI" xvalue="761"/>
           <dimension name="XSHU" xvalue="85"/>
           <dimension name="XSHL" xvalue="80"/>
-          <dimension name="XSHF" xvalue="20"/>
           <dimension name="YSHU" xvalue="10"/>
           <dimension name="YSHL" xvalue="6"/>
-          <dimension name="YSHF" xvalue="18"/>
           <dimension name="XSVU" xvalue="8"/>
           <dimension name="XSVL" xvalue="5"/>
-          <dimension name="XSVF" xvalue="403"/>
+          <dimension name="XSVF" xvalue="12"/>
           <dimension name="YSVU" xvalue="144"/>
           <dimension name="YSVL" xvalue="104"/>
           <dimension name="YSVF" xvalue="103"/>
           <dimension name="YTOS" xvalue="8"/>
           <dimension name="XUCS" xvalue="204"/>
-          <dimension name="XTTW" xvalue="184"/>
-          <dimension name="YTTL" xvalue="1"/>
           <dimension name="WDSP" xvalue="213"/>
         </output>
       </mapping>
@@ -112,20 +161,16 @@
           <dimension name="YTFI" xvalue="770"/>
           <dimension name="XSHU" xvalue="104"/>
           <dimension name="XSHL" xvalue="124"/>
-          <dimension name="XSHF" xvalue="24"/>
           <dimension name="YSHU" xvalue="10"/>
           <dimension name="YSHL" xvalue="8"/>
-          <dimension name="YSHF" xvalue="17"/>
           <dimension name="XSVU" xvalue="10"/>
           <dimension name="XSVL" xvalue="8"/>
-          <dimension name="XSVF" xvalue="506"/>
+          <dimension name="XSVF" xvalue="6"/>
           <dimension name="YSVU" xvalue="144"/>
           <dimension name="YSVL" xvalue="104"/>
           <dimension name="YSVF" xvalue="110"/>
           <dimension name="YTOS" xvalue="6"/>
           <dimension name="XUCS" xvalue="240"/>
-          <dimension name="XTTW" xvalue="260"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="320"/>
         </output>
       </mapping>
@@ -146,96 +191,23 @@
           <dimension name="YTFI" xvalue="761"/>
           <dimension name="XSHU" xvalue="62"/>
           <dimension name="XSHL" xvalue="74"/>
-          <dimension name="XSHF" xvalue="28"/>
           <dimension name="YSHU" xvalue="8"/>
           <dimension name="YSHL" xvalue="6"/>
-          <dimension name="YSHF" xvalue="24"/>
           <dimension name="XSVU" xvalue="6"/>
           <dimension name="XSVL" xvalue="8"/>
-          <dimension name="XSVF" xvalue="232"/>
+          <dimension name="XSVF" xvalue="8"/>
           <dimension name="YSVU" xvalue="171"/>
           <dimension name="YSVL" xvalue="104"/>
           <dimension name="YSVF" xvalue="118"/>
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="158"/>
-          <dimension name="XTTW" xvalue="132"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="162"/>
         </output>
       </mapping>
       <mapping>
         <input>
           <dimension name="Optical size" xvalue="144"/>
-          <dimension name="Weight" xvalue="400"/>
-          <dimension name="Width" xvalue="125"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="88"/>
-          <dimension name="YOPQ" xvalue="20"/>
-          <dimension name="XTRA" xvalue="510"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="466"/>
-          <dimension name="YTAS" xvalue="782"/>
-          <dimension name="YTDE" xvalue="-224"/>
-          <dimension name="YTFI" xvalue="772"/>
-          <dimension name="XSHU" xvalue="95"/>
-          <dimension name="XSHL" xvalue="110"/>
-          <dimension name="XSHF" xvalue="13"/>
-          <dimension name="YSHU" xvalue="12"/>
-          <dimension name="YSHL" xvalue="12"/>
-          <dimension name="YSHF" xvalue="17"/>
-          <dimension name="XSVU" xvalue="18"/>
-          <dimension name="XSVL" xvalue="15"/>
-          <dimension name="XSVF" xvalue="462"/>
-          <dimension name="YSVU" xvalue="160"/>
-          <dimension name="YSVL" xvalue="116"/>
-          <dimension name="YSVF" xvalue="158"/>
-          <dimension name="YTOS" xvalue="8"/>
-          <dimension name="XUCS" xvalue="227"/>
-          <dimension name="XTTW" xvalue="242"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="279"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="144"/>
-          <dimension name="Weight" xvalue="400"/>
-          <dimension name="Width" xvalue="50"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="81"/>
-          <dimension name="YOPQ" xvalue="14"/>
-          <dimension name="XTRA" xvalue="160"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="466"/>
-          <dimension name="YTAS" xvalue="788"/>
-          <dimension name="YTDE" xvalue="-233"/>
-          <dimension name="YTFI" xvalue="763"/>
-          <dimension name="XSHU" xvalue="56"/>
-          <dimension name="XSHL" xvalue="58"/>
-          <dimension name="XSHF" xvalue="14"/>
-          <dimension name="YSHU" xvalue="10"/>
-          <dimension name="YSHL" xvalue="10"/>
-          <dimension name="YSHF" xvalue="17"/>
-          <dimension name="XSVU" xvalue="14"/>
-          <dimension name="XSVL" xvalue="8"/>
-          <dimension name="XSVF" xvalue="307"/>
-          <dimension name="YSVU" xvalue="160"/>
-          <dimension name="YSVL" xvalue="116"/>
-          <dimension name="YSVF" xvalue="143"/>
-          <dimension name="YTOS" xvalue="3"/>
-          <dimension name="XUCS" xvalue="152"/>
-          <dimension name="XTTW" xvalue="126"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="180"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="900"/>
-          <dimension name="Width" xvalue="100"/>
         </input>
         <output>
           <dimension name="XOPQ" xvalue="253"/>
@@ -248,20 +220,16 @@
           <dimension name="YTFI" xvalue="768"/>
           <dimension name="XSHU" xvalue="50"/>
           <dimension name="XSHL" xvalue="71"/>
-          <dimension name="XSHF" xvalue="18"/>
           <dimension name="YSHU" xvalue="28"/>
           <dimension name="YSHL" xvalue="29"/>
-          <dimension name="YSHF" xvalue="17"/>
           <dimension name="XSVU" xvalue="40"/>
           <dimension name="XSVL" xvalue="36"/>
-          <dimension name="XSVF" xvalue="366"/>
+          <dimension name="XSVF" xvalue="34"/>
           <dimension name="YSVU" xvalue="182"/>
           <dimension name="YSVL" xvalue="164"/>
           <dimension name="YSVF" xvalue="242"/>
           <dimension name="YTOS" xvalue="14"/>
           <dimension name="XUCS" xvalue="141"/>
-          <dimension name="XTTW" xvalue="122"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="344"/>
         </output>
       </mapping>
@@ -282,20 +250,16 @@
           <dimension name="YTFI" xvalue="773"/>
           <dimension name="XSHU" xvalue="65"/>
           <dimension name="XSHL" xvalue="104"/>
-          <dimension name="XSHF" xvalue="12"/>
           <dimension name="YSHU" xvalue="28"/>
           <dimension name="YSHL" xvalue="30"/>
-          <dimension name="YSHF" xvalue="17"/>
           <dimension name="XSVU" xvalue="42"/>
           <dimension name="XSVL" xvalue="46"/>
-          <dimension name="XSVF" xvalue="540"/>
+          <dimension name="XSVF" xvalue="40"/>
           <dimension name="YSVU" xvalue="166"/>
           <dimension name="YSVL" xvalue="160"/>
           <dimension name="YSVF" xvalue="242"/>
           <dimension name="YTOS" xvalue="11"/>
           <dimension name="XUCS" xvalue="184"/>
-          <dimension name="XTTW" xvalue="226"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="400"/>
         </output>
       </mapping>
@@ -316,293 +280,17 @@
           <dimension name="YTFI" xvalue="772"/>
           <dimension name="XSHU" xvalue="32"/>
           <dimension name="XSHL" xvalue="58"/>
-          <dimension name="XSHF" xvalue="18"/>
           <dimension name="YSHU" xvalue="26"/>
           <dimension name="YSHL" xvalue="29"/>
-          <dimension name="YSHF" xvalue="17"/>
           <dimension name="XSVU" xvalue="26"/>
           <dimension name="XSVL" xvalue="34"/>
-          <dimension name="XSVF" xvalue="346"/>
+          <dimension name="XSVF" xvalue="40"/>
           <dimension name="YSVU" xvalue="200"/>
           <dimension name="YSVL" xvalue="172"/>
           <dimension name="YSVF" xvalue="243"/>
           <dimension name="YTOS" xvalue="12"/>
           <dimension name="XUCS" xvalue="107"/>
-          <dimension name="XTTW" xvalue="91"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="328"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="100"/>
-          <dimension name="Width" xvalue="100"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="43"/>
-          <dimension name="YOPQ" xvalue="30"/>
-          <dimension name="XTRA" xvalue="414"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="510"/>
-          <dimension name="YTAS" xvalue="797"/>
-          <dimension name="YTDE" xvalue="-184"/>
-          <dimension name="YTFI" xvalue="772"/>
-          <dimension name="XSHU" xvalue="94"/>
-          <dimension name="XSHL" xvalue="90"/>
-          <dimension name="XSHF" xvalue="18"/>
-          <dimension name="YSHU" xvalue="24"/>
-          <dimension name="YSHL" xvalue="23"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="30"/>
-          <dimension name="XSVL" xvalue="20"/>
-          <dimension name="XSVF" xvalue="414"/>
-          <dimension name="YSVU" xvalue="146"/>
-          <dimension name="YSVL" xvalue="121"/>
-          <dimension name="YSVF" xvalue="139"/>
-          <dimension name="YTOS" xvalue="10"/>
-          <dimension name="XUCS" xvalue="201"/>
-          <dimension name="XTTW" xvalue="188"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="320"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="100"/>
-          <dimension name="Width" xvalue="125"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="48"/>
-          <dimension name="YOPQ" xvalue="36"/>
-          <dimension name="XTRA" xvalue="618"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="506"/>
-          <dimension name="YTAS" xvalue="794"/>
-          <dimension name="YTDE" xvalue="-178"/>
-          <dimension name="YTFI" xvalue="768"/>
-          <dimension name="XSHU" xvalue="108"/>
-          <dimension name="XSHL" xvalue="132"/>
-          <dimension name="XSHF" xvalue="19"/>
-          <dimension name="YSHU" xvalue="24"/>
-          <dimension name="YSHL" xvalue="25"/>
-          <dimension name="YSHF" xvalue="25"/>
-          <dimension name="XSVU" xvalue="30"/>
-          <dimension name="XSVL" xvalue="28"/>
-          <dimension name="XSVF" xvalue="519"/>
-          <dimension name="YSVU" xvalue="146"/>
-          <dimension name="YSVL" xvalue="121"/>
-          <dimension name="YSVF" xvalue="139"/>
-          <dimension name="YTOS" xvalue="10"/>
-          <dimension name="XUCS" xvalue="247"/>
-          <dimension name="XTTW" xvalue="285"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="320"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="100"/>
-          <dimension name="Width" xvalue="50"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="40"/>
-          <dimension name="YOPQ" xvalue="34"/>
-          <dimension name="XTRA" xvalue="268"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="505"/>
-          <dimension name="YTAS" xvalue="798"/>
-          <dimension name="YTDE" xvalue="-191"/>
-          <dimension name="YTFI" xvalue="774"/>
-          <dimension name="XSHU" xvalue="70"/>
-          <dimension name="XSHL" xvalue="83"/>
-          <dimension name="XSHF" xvalue="19"/>
-          <dimension name="YSHU" xvalue="22"/>
-          <dimension name="YSHL" xvalue="23"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="26"/>
-          <dimension name="XSVL" xvalue="16"/>
-          <dimension name="XSVF" xvalue="352"/>
-          <dimension name="YSVU" xvalue="146"/>
-          <dimension name="YSVL" xvalue="126"/>
-          <dimension name="YSVF" xvalue="139"/>
-          <dimension name="YTOS" xvalue="6"/>
-          <dimension name="XUCS" xvalue="170"/>
-          <dimension name="XTTW" xvalue="136"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="200"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="400"/>
-          <dimension name="Width" xvalue="125"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="90"/>
-          <dimension name="YOPQ" xvalue="60"/>
-          <dimension name="XTRA" xvalue="566"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="506"/>
-          <dimension name="YTAS" xvalue="775"/>
-          <dimension name="YTDE" xvalue="-178"/>
-          <dimension name="YTFI" xvalue="764"/>
-          <dimension name="XSHU" xvalue="108"/>
-          <dimension name="XSHL" xvalue="118"/>
-          <dimension name="XSHF" xvalue="18"/>
-          <dimension name="YSHU" xvalue="50"/>
-          <dimension name="YSHL" xvalue="46"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="54"/>
-          <dimension name="XSVL" xvalue="52"/>
-          <dimension name="XSVF" xvalue="482"/>
-          <dimension name="YSVU" xvalue="174"/>
-          <dimension name="YSVL" xvalue="126"/>
-          <dimension name="YSVF" xvalue="186"/>
-          <dimension name="YTOS" xvalue="10"/>
-          <dimension name="XUCS" xvalue="235"/>
-          <dimension name="XTTW" xvalue="229"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="320"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="400"/>
-          <dimension name="Width" xvalue="50"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="82"/>
-          <dimension name="YOPQ" xvalue="58"/>
-          <dimension name="XTRA" xvalue="216"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="505"/>
-          <dimension name="YTAS" xvalue="778"/>
-          <dimension name="YTDE" xvalue="-191"/>
-          <dimension name="YTFI" xvalue="762"/>
-          <dimension name="XSHU" xvalue="70"/>
-          <dimension name="XSHL" xvalue="64"/>
-          <dimension name="XSHF" xvalue="20"/>
-          <dimension name="YSHU" xvalue="48"/>
-          <dimension name="YSHL" xvalue="44"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="50"/>
-          <dimension name="XSVL" xvalue="36"/>
-          <dimension name="XSVF" xvalue="326"/>
-          <dimension name="YSVU" xvalue="174"/>
-          <dimension name="YSVL" xvalue="126"/>
-          <dimension name="YSVF" xvalue="172"/>
-          <dimension name="YTOS" xvalue="6"/>
-          <dimension name="XUCS" xvalue="157"/>
-          <dimension name="XTTW" xvalue="114"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="152"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="900"/>
-          <dimension name="Width" xvalue="100"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="254"/>
-          <dimension name="YOPQ" xvalue="70"/>
-          <dimension name="XTRA" xvalue="231"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="534"/>
-          <dimension name="YTAS" xvalue="758"/>
-          <dimension name="YTDE" xvalue="-180"/>
-          <dimension name="YTFI" xvalue="775"/>
-          <dimension name="XSHU" xvalue="64"/>
-          <dimension name="XSHL" xvalue="71"/>
-          <dimension name="XSHF" xvalue="16"/>
-          <dimension name="YSHU" xvalue="65"/>
-          <dimension name="YSHL" xvalue="63"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="78"/>
-          <dimension name="XSVL" xvalue="82"/>
-          <dimension name="XSVF" xvalue="424"/>
-          <dimension name="YSVU" xvalue="180"/>
-          <dimension name="YSVL" xvalue="148"/>
-          <dimension name="YSVF" xvalue="226"/>
-          <dimension name="YTOS" xvalue="12"/>
-          <dimension name="XUCS" xvalue="159"/>
-          <dimension name="XTTW" xvalue="128"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="320"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="900"/>
-          <dimension name="Width" xvalue="125"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="259"/>
-          <dimension name="YOPQ" xvalue="76"/>
-          <dimension name="XTRA" xvalue="436"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="530"/>
-          <dimension name="YTAS" xvalue="744"/>
-          <dimension name="YTDE" xvalue="-174"/>
-          <dimension name="YTFI" xvalue="773"/>
-          <dimension name="XSHU" xvalue="78"/>
-          <dimension name="XSHL" xvalue="118"/>
-          <dimension name="XSHF" xvalue="16"/>
-          <dimension name="YSHU" xvalue="65"/>
-          <dimension name="YSHL" xvalue="65"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="84"/>
-          <dimension name="XSVL" xvalue="110"/>
-          <dimension name="XSVF" xvalue="510"/>
-          <dimension name="YSVU" xvalue="180"/>
-          <dimension name="YSVL" xvalue="148"/>
-          <dimension name="YSVF" xvalue="226"/>
-          <dimension name="YTOS" xvalue="13"/>
-          <dimension name="XUCS" xvalue="205"/>
-          <dimension name="XTTW" xvalue="214"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="320"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="14"/>
-          <dimension name="Weight" xvalue="900"/>
-          <dimension name="Width" xvalue="50"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="252"/>
-          <dimension name="YOPQ" xvalue="74"/>
-          <dimension name="XTRA" xvalue="116"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="529"/>
-          <dimension name="YTAS" xvalue="751"/>
-          <dimension name="YTDE" xvalue="-186"/>
-          <dimension name="YTFI" xvalue="760"/>
-          <dimension name="XSHU" xvalue="45"/>
-          <dimension name="XSHL" xvalue="64"/>
-          <dimension name="XSHF" xvalue="20"/>
-          <dimension name="YSHU" xvalue="63"/>
-          <dimension name="YSHL" xvalue="63"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="78"/>
-          <dimension name="XSVL" xvalue="78"/>
-          <dimension name="XSVF" xvalue="388"/>
-          <dimension name="YSVU" xvalue="180"/>
-          <dimension name="YSVL" xvalue="148"/>
-          <dimension name="YSVF" xvalue="246"/>
-          <dimension name="YTOS" xvalue="8"/>
-          <dimension name="XUCS" xvalue="108"/>
-          <dimension name="XTTW" xvalue="98"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="150"/>
         </output>
       </mapping>
       <mapping>
@@ -620,28 +308,81 @@
           <dimension name="YTFI" xvalue="775"/>
           <dimension name="XSHU" xvalue="94"/>
           <dimension name="XSHL" xvalue="71"/>
-          <dimension name="XSHF" xvalue="16"/>
           <dimension name="YSHU" xvalue="74"/>
           <dimension name="YSHL" xvalue="62"/>
-          <dimension name="YSHF" xvalue="31"/>
           <dimension name="XSVU" xvalue="74"/>
           <dimension name="XSVL" xvalue="48"/>
-          <dimension name="XSVF" xvalue="404"/>
+          <dimension name="XSVF" xvalue="66"/>
           <dimension name="YSVU" xvalue="194"/>
           <dimension name="YSVL" xvalue="158"/>
           <dimension name="YSVF" xvalue="198"/>
           <dimension name="YTOS" xvalue="16"/>
           <dimension name="XUCS" xvalue="196"/>
-          <dimension name="XTTW" xvalue="134"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="320"/>
         </output>
       </mapping>
       <mapping>
         <input>
           <dimension name="Optical size" xvalue="8"/>
+          <dimension name="Width" xvalue="125"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="118"/>
+          <dimension name="YOPQ" xvalue="90"/>
+          <dimension name="XTRA" xvalue="576"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="531"/>
+          <dimension name="YTAS" xvalue="774"/>
+          <dimension name="YTDE" xvalue="-189"/>
+          <dimension name="YTFI" xvalue="764"/>
+          <dimension name="XSHU" xvalue="108"/>
+          <dimension name="XSHL" xvalue="118"/>
+          <dimension name="YSHU" xvalue="74"/>
+          <dimension name="YSHL" xvalue="64"/>
+          <dimension name="XSVU" xvalue="80"/>
+          <dimension name="XSVL" xvalue="56"/>
+          <dimension name="XSVF" xvalue="72"/>
+          <dimension name="YSVU" xvalue="194"/>
+          <dimension name="YSVL" xvalue="158"/>
+          <dimension name="YSVF" xvalue="198"/>
+          <dimension name="YTOS" xvalue="16"/>
+          <dimension name="XUCS" xvalue="242"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Optical size" xvalue="8"/>
+          <dimension name="Width" xvalue="50"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="110"/>
+          <dimension name="YOPQ" xvalue="78"/>
+          <dimension name="XTRA" xvalue="203"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="530"/>
+          <dimension name="YTAS" xvalue="781"/>
+          <dimension name="YTDE" xvalue="-202"/>
+          <dimension name="YTFI" xvalue="762"/>
+          <dimension name="XSHU" xvalue="70"/>
+          <dimension name="XSHL" xvalue="67"/>
+          <dimension name="YSHU" xvalue="72"/>
+          <dimension name="YSHL" xvalue="58"/>
+          <dimension name="XSVU" xvalue="74"/>
+          <dimension name="XSVL" xvalue="40"/>
+          <dimension name="XSVF" xvalue="66"/>
+          <dimension name="YSVU" xvalue="194"/>
+          <dimension name="YSVL" xvalue="158"/>
+          <dimension name="YSVF" xvalue="183"/>
+          <dimension name="YTOS" xvalue="2"/>
+          <dimension name="XUCS" xvalue="146"/>
+          <dimension name="WDSP" xvalue="152"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="100"/>
-          <dimension name="Width" xvalue="100"/>
         </input>
         <output>
           <dimension name="XOPQ" xvalue="61"/>
@@ -654,20 +395,16 @@
           <dimension name="YTFI" xvalue="776"/>
           <dimension name="XSHU" xvalue="98"/>
           <dimension name="XSHL" xvalue="90"/>
-          <dimension name="XSHF" xvalue="16"/>
           <dimension name="YSHU" xvalue="47"/>
           <dimension name="YSHL" xvalue="40"/>
-          <dimension name="YSHF" xvalue="31"/>
           <dimension name="XSVU" xvalue="42"/>
           <dimension name="XSVL" xvalue="34"/>
-          <dimension name="XSVF" xvalue="396"/>
+          <dimension name="XSVF" xvalue="38"/>
           <dimension name="YSVU" xvalue="166"/>
           <dimension name="YSVL" xvalue="137"/>
           <dimension name="YSVF" xvalue="126"/>
           <dimension name="YTOS" xvalue="16"/>
           <dimension name="XUCS" xvalue="212"/>
-          <dimension name="XTTW" xvalue="190"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="320"/>
         </output>
       </mapping>
@@ -688,20 +425,16 @@
           <dimension name="YTFI" xvalue="762"/>
           <dimension name="XSHU" xvalue="108"/>
           <dimension name="XSHL" xvalue="136"/>
-          <dimension name="XSHF" xvalue="20"/>
           <dimension name="YSHU" xvalue="47"/>
           <dimension name="YSHL" xvalue="42"/>
-          <dimension name="YSHF" xvalue="31"/>
           <dimension name="XSVU" xvalue="44"/>
           <dimension name="XSVL" xvalue="32"/>
-          <dimension name="XSVF" xvalue="542"/>
+          <dimension name="XSVF" xvalue="44"/>
           <dimension name="YSVU" xvalue="166"/>
           <dimension name="YSVL" xvalue="137"/>
           <dimension name="YSVF" xvalue="160"/>
           <dimension name="YTOS" xvalue="6"/>
           <dimension name="XUCS" xvalue="254"/>
-          <dimension name="XTTW" xvalue="296"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="320"/>
         </output>
       </mapping>
@@ -722,96 +455,23 @@
           <dimension name="YTFI" xvalue="762"/>
           <dimension name="XSHU" xvalue="84"/>
           <dimension name="XSHL" xvalue="83"/>
-          <dimension name="XSHF" xvalue="18"/>
           <dimension name="YSHU" xvalue="44"/>
           <dimension name="YSHL" xvalue="40"/>
-          <dimension name="YSHF" xvalue="31"/>
           <dimension name="XSVU" xvalue="40"/>
           <dimension name="XSVL" xvalue="30"/>
-          <dimension name="XSVF" xvalue="303"/>
+          <dimension name="XSVF" xvalue="38"/>
           <dimension name="YSVU" xvalue="166"/>
           <dimension name="YSVL" xvalue="121"/>
           <dimension name="YSVF" xvalue="136"/>
           <dimension name="YTOS" xvalue="4"/>
           <dimension name="XUCS" xvalue="174"/>
-          <dimension name="XTTW" xvalue="154"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="106"/>
         </output>
       </mapping>
       <mapping>
         <input>
           <dimension name="Optical size" xvalue="8"/>
-          <dimension name="Weight" xvalue="400"/>
-          <dimension name="Width" xvalue="125"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="118"/>
-          <dimension name="YOPQ" xvalue="90"/>
-          <dimension name="XTRA" xvalue="576"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="531"/>
-          <dimension name="YTAS" xvalue="774"/>
-          <dimension name="YTDE" xvalue="-189"/>
-          <dimension name="YTFI" xvalue="764"/>
-          <dimension name="XSHU" xvalue="108"/>
-          <dimension name="XSHL" xvalue="118"/>
-          <dimension name="XSHF" xvalue="16"/>
-          <dimension name="YSHU" xvalue="74"/>
-          <dimension name="YSHL" xvalue="64"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="80"/>
-          <dimension name="XSVL" xvalue="56"/>
-          <dimension name="XSVF" xvalue="490"/>
-          <dimension name="YSVU" xvalue="194"/>
-          <dimension name="YSVL" xvalue="158"/>
-          <dimension name="YSVF" xvalue="198"/>
-          <dimension name="YTOS" xvalue="16"/>
-          <dimension name="XUCS" xvalue="242"/>
-          <dimension name="XTTW" xvalue="215"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="320"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="8"/>
-          <dimension name="Weight" xvalue="400"/>
-          <dimension name="Width" xvalue="50"/>
-        </input>
-        <output>
-          <dimension name="XOPQ" xvalue="110"/>
-          <dimension name="YOPQ" xvalue="78"/>
-          <dimension name="XTRA" xvalue="203"/>
-          <dimension name="YTUC" xvalue="750"/>
-          <dimension name="YTLC" xvalue="530"/>
-          <dimension name="YTAS" xvalue="781"/>
-          <dimension name="YTDE" xvalue="-202"/>
-          <dimension name="YTFI" xvalue="762"/>
-          <dimension name="XSHU" xvalue="70"/>
-          <dimension name="XSHL" xvalue="67"/>
-          <dimension name="XSHF" xvalue="18"/>
-          <dimension name="YSHU" xvalue="72"/>
-          <dimension name="YSHL" xvalue="58"/>
-          <dimension name="YSHF" xvalue="31"/>
-          <dimension name="XSVU" xvalue="74"/>
-          <dimension name="XSVL" xvalue="40"/>
-          <dimension name="XSVF" xvalue="334"/>
-          <dimension name="YSVU" xvalue="194"/>
-          <dimension name="YSVL" xvalue="158"/>
-          <dimension name="YSVF" xvalue="183"/>
-          <dimension name="YTOS" xvalue="2"/>
-          <dimension name="XUCS" xvalue="146"/>
-          <dimension name="XTTW" xvalue="105"/>
-          <dimension name="YTTL" xvalue="0"/>
-          <dimension name="WDSP" xvalue="152"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="900"/>
-          <dimension name="Width" xvalue="100"/>
         </input>
         <output>
           <dimension name="XOPQ" xvalue="282"/>
@@ -824,20 +484,16 @@
           <dimension name="YTFI" xvalue="785"/>
           <dimension name="XSHU" xvalue="64"/>
           <dimension name="XSHL" xvalue="71"/>
-          <dimension name="XSHF" xvalue="15"/>
           <dimension name="YSHU" xvalue="88"/>
           <dimension name="YSHL" xvalue="80"/>
-          <dimension name="YSHF" xvalue="24"/>
           <dimension name="XSVU" xvalue="104"/>
           <dimension name="XSVL" xvalue="86"/>
-          <dimension name="XSVF" xvalue="448"/>
+          <dimension name="XSVF" xvalue="91"/>
           <dimension name="YSVU" xvalue="200"/>
           <dimension name="YSVL" xvalue="179"/>
           <dimension name="YSVF" xvalue="256"/>
           <dimension name="YTOS" xvalue="18"/>
           <dimension name="XUCS" xvalue="161"/>
-          <dimension name="XTTW" xvalue="114"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="320"/>
         </output>
       </mapping>
@@ -858,20 +514,16 @@
           <dimension name="YTFI" xvalue="783"/>
           <dimension name="XSHU" xvalue="78"/>
           <dimension name="XSHL" xvalue="118"/>
-          <dimension name="XSHF" xvalue="16"/>
           <dimension name="YSHU" xvalue="88"/>
           <dimension name="YSHL" xvalue="88"/>
-          <dimension name="YSHF" xvalue="31"/>
           <dimension name="XSVU" xvalue="108"/>
           <dimension name="XSVL" xvalue="128"/>
-          <dimension name="XSVF" xvalue="544"/>
+          <dimension name="XSVF" xvalue="113"/>
           <dimension name="YSVU" xvalue="200"/>
           <dimension name="YSVL" xvalue="180"/>
           <dimension name="YSVF" xvalue="263"/>
           <dimension name="YTOS" xvalue="19"/>
           <dimension name="XUCS" xvalue="182"/>
-          <dimension name="XTTW" xvalue="192"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="310"/>
         </output>
       </mapping>
@@ -892,21 +544,273 @@
           <dimension name="YTFI" xvalue="762"/>
           <dimension name="XSHU" xvalue="50"/>
           <dimension name="XSHL" xvalue="68"/>
-          <dimension name="XSHF" xvalue="18"/>
           <dimension name="YSHU" xvalue="86"/>
           <dimension name="YSHL" xvalue="80"/>
-          <dimension name="YSHF" xvalue="31"/>
           <dimension name="XSVU" xvalue="84"/>
           <dimension name="XSVL" xvalue="77"/>
-          <dimension name="XSVF" xvalue="335"/>
+          <dimension name="XSVF" xvalue="87"/>
           <dimension name="YSVU" xvalue="194"/>
           <dimension name="YSVL" xvalue="169"/>
           <dimension name="YSVF" xvalue="233"/>
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="114"/>
-          <dimension name="XTTW" xvalue="80"/>
-          <dimension name="YTTL" xvalue="0"/>
           <dimension name="WDSP" xvalue="240"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Width" xvalue="125"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="90"/>
+          <dimension name="YOPQ" xvalue="60"/>
+          <dimension name="XTRA" xvalue="566"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="506"/>
+          <dimension name="YTAS" xvalue="775"/>
+          <dimension name="YTDE" xvalue="-178"/>
+          <dimension name="YTFI" xvalue="764"/>
+          <dimension name="XSHU" xvalue="108"/>
+          <dimension name="XSHL" xvalue="118"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="YSHL" xvalue="46"/>
+          <dimension name="XSVU" xvalue="54"/>
+          <dimension name="XSVL" xvalue="52"/>
+          <dimension name="XSVF" xvalue="56"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="YSVL" xvalue="126"/>
+          <dimension name="YSVF" xvalue="186"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="235"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Width" xvalue="50"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="82"/>
+          <dimension name="YOPQ" xvalue="58"/>
+          <dimension name="XTRA" xvalue="216"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="505"/>
+          <dimension name="YTAS" xvalue="778"/>
+          <dimension name="YTDE" xvalue="-191"/>
+          <dimension name="YTFI" xvalue="762"/>
+          <dimension name="XSHU" xvalue="70"/>
+          <dimension name="XSHL" xvalue="64"/>
+          <dimension name="YSHU" xvalue="48"/>
+          <dimension name="YSHL" xvalue="44"/>
+          <dimension name="XSVU" xvalue="50"/>
+          <dimension name="XSVL" xvalue="36"/>
+          <dimension name="XSVF" xvalue="51"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="YSVL" xvalue="126"/>
+          <dimension name="YSVF" xvalue="172"/>
+          <dimension name="YTOS" xvalue="6"/>
+          <dimension name="XUCS" xvalue="157"/>
+          <dimension name="WDSP" xvalue="152"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="100"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="43"/>
+          <dimension name="YOPQ" xvalue="30"/>
+          <dimension name="XTRA" xvalue="414"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="510"/>
+          <dimension name="YTAS" xvalue="797"/>
+          <dimension name="YTDE" xvalue="-184"/>
+          <dimension name="YTFI" xvalue="772"/>
+          <dimension name="XSHU" xvalue="94"/>
+          <dimension name="XSHL" xvalue="90"/>
+          <dimension name="YSHU" xvalue="24"/>
+          <dimension name="YSHL" xvalue="23"/>
+          <dimension name="XSVU" xvalue="30"/>
+          <dimension name="XSVL" xvalue="20"/>
+          <dimension name="XSVF" xvalue="24"/>
+          <dimension name="YSVU" xvalue="146"/>
+          <dimension name="YSVL" xvalue="121"/>
+          <dimension name="YSVF" xvalue="139"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="201"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="100"/>
+          <dimension name="Width" xvalue="125"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="48"/>
+          <dimension name="YOPQ" xvalue="36"/>
+          <dimension name="XTRA" xvalue="618"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="506"/>
+          <dimension name="YTAS" xvalue="794"/>
+          <dimension name="YTDE" xvalue="-178"/>
+          <dimension name="YTFI" xvalue="768"/>
+          <dimension name="XSHU" xvalue="108"/>
+          <dimension name="XSHL" xvalue="132"/>
+          <dimension name="YSHU" xvalue="24"/>
+          <dimension name="YSHL" xvalue="25"/>
+          <dimension name="XSVU" xvalue="30"/>
+          <dimension name="XSVL" xvalue="28"/>
+          <dimension name="XSVF" xvalue="29"/>
+          <dimension name="YSVU" xvalue="146"/>
+          <dimension name="YSVL" xvalue="121"/>
+          <dimension name="YSVF" xvalue="139"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="247"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="100"/>
+          <dimension name="Width" xvalue="50"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="40"/>
+          <dimension name="YOPQ" xvalue="34"/>
+          <dimension name="XTRA" xvalue="268"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="505"/>
+          <dimension name="YTAS" xvalue="798"/>
+          <dimension name="YTDE" xvalue="-191"/>
+          <dimension name="YTFI" xvalue="774"/>
+          <dimension name="XSHU" xvalue="70"/>
+          <dimension name="XSHL" xvalue="83"/>
+          <dimension name="YSHU" xvalue="22"/>
+          <dimension name="YSHL" xvalue="23"/>
+          <dimension name="XSVU" xvalue="26"/>
+          <dimension name="XSVL" xvalue="16"/>
+          <dimension name="XSVF" xvalue="28"/>
+          <dimension name="YSVU" xvalue="146"/>
+          <dimension name="YSVL" xvalue="126"/>
+          <dimension name="YSVF" xvalue="139"/>
+          <dimension name="YTOS" xvalue="6"/>
+          <dimension name="XUCS" xvalue="170"/>
+          <dimension name="WDSP" xvalue="200"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="400"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="84"/>
+          <dimension name="YOPQ" xvalue="54"/>
+          <dimension name="XTRA" xvalue="360"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="510"/>
+          <dimension name="YTAS" xvalue="778"/>
+          <dimension name="YTDE" xvalue="-184"/>
+          <dimension name="YTFI" xvalue="775"/>
+          <dimension name="XSHU" xvalue="94"/>
+          <dimension name="XSHL" xvalue="71"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="YSHL" xvalue="44"/>
+          <dimension name="XSVU" xvalue="50"/>
+          <dimension name="XSVL" xvalue="44"/>
+          <dimension name="XSVF" xvalue="51"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="YSVL" xvalue="126"/>
+          <dimension name="YSVF" xvalue="186"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="189"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="900"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="254"/>
+          <dimension name="YOPQ" xvalue="70"/>
+          <dimension name="XTRA" xvalue="231"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="534"/>
+          <dimension name="YTAS" xvalue="758"/>
+          <dimension name="YTDE" xvalue="-180"/>
+          <dimension name="YTFI" xvalue="775"/>
+          <dimension name="XSHU" xvalue="64"/>
+          <dimension name="XSHL" xvalue="71"/>
+          <dimension name="YSHU" xvalue="65"/>
+          <dimension name="YSHL" xvalue="63"/>
+          <dimension name="XSVU" xvalue="78"/>
+          <dimension name="XSVL" xvalue="82"/>
+          <dimension name="XSVF" xvalue="76"/>
+          <dimension name="YSVU" xvalue="180"/>
+          <dimension name="YSVL" xvalue="148"/>
+          <dimension name="YSVF" xvalue="226"/>
+          <dimension name="YTOS" xvalue="12"/>
+          <dimension name="XUCS" xvalue="159"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="900"/>
+          <dimension name="Width" xvalue="125"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="259"/>
+          <dimension name="YOPQ" xvalue="76"/>
+          <dimension name="XTRA" xvalue="436"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="530"/>
+          <dimension name="YTAS" xvalue="744"/>
+          <dimension name="YTDE" xvalue="-174"/>
+          <dimension name="YTFI" xvalue="773"/>
+          <dimension name="XSHU" xvalue="78"/>
+          <dimension name="XSHL" xvalue="118"/>
+          <dimension name="YSHU" xvalue="65"/>
+          <dimension name="YSHL" xvalue="65"/>
+          <dimension name="XSVU" xvalue="84"/>
+          <dimension name="XSVL" xvalue="110"/>
+          <dimension name="XSVF" xvalue="86"/>
+          <dimension name="YSVU" xvalue="180"/>
+          <dimension name="YSVL" xvalue="148"/>
+          <dimension name="YSVF" xvalue="226"/>
+          <dimension name="YTOS" xvalue="13"/>
+          <dimension name="XUCS" xvalue="205"/>
+          <dimension name="WDSP" xvalue="320"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="Weight" xvalue="900"/>
+          <dimension name="Width" xvalue="50"/>
+        </input>
+        <output>
+          <dimension name="XOPQ" xvalue="252"/>
+          <dimension name="YOPQ" xvalue="74"/>
+          <dimension name="XTRA" xvalue="116"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="529"/>
+          <dimension name="YTAS" xvalue="751"/>
+          <dimension name="YTDE" xvalue="-186"/>
+          <dimension name="YTFI" xvalue="760"/>
+          <dimension name="XSHU" xvalue="45"/>
+          <dimension name="XSHL" xvalue="64"/>
+          <dimension name="YSHU" xvalue="63"/>
+          <dimension name="YSHL" xvalue="63"/>
+          <dimension name="XSVU" xvalue="78"/>
+          <dimension name="XSVL" xvalue="78"/>
+          <dimension name="XSVF" xvalue="97"/>
+          <dimension name="YSVU" xvalue="180"/>
+          <dimension name="YSVL" xvalue="148"/>
+          <dimension name="YSVF" xvalue="246"/>
+          <dimension name="YTOS" xvalue="8"/>
+          <dimension name="XUCS" xvalue="108"/>
+          <dimension name="WDSP" xvalue="150"/>
         </output>
       </mapping>
       <mapping>
@@ -930,7 +834,7 @@
           <dimension name="YSHL" xvalue="44"/>
           <dimension name="XSVL" xvalue="44"/>
           <dimension name="YSVL" xvalue="126"/>
-          <dimension name="XSVF" xvalue="396"/>
+          <dimension name="XSVF" xvalue="51"/>
           <dimension name="YSVF" xvalue="186"/>
           <dimension name="XTTW" xvalue="9"/>
           <dimension name="YTTL" xvalue="64"/>
@@ -960,7 +864,7 @@
           <dimension name="YSHL" xvalue="44"/>
           <dimension name="XSVL" xvalue="44"/>
           <dimension name="YSVL" xvalue="126"/>
-          <dimension name="XSVF" xvalue="396"/>
+          <dimension name="XSVF" xvalue="51"/>
           <dimension name="YSVF" xvalue="186"/>
           <dimension name="XTTW" xvalue="9"/>
           <dimension name="YTTL" xvalue="64"/>
@@ -990,7 +894,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1017,7 +921,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1044,7 +948,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1071,7 +975,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1098,7 +1002,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1125,7 +1029,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1152,7 +1056,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1179,7 +1083,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1206,7 +1110,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1233,7 +1137,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1260,7 +1164,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1287,7 +1191,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1314,7 +1218,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1341,7 +1245,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1368,7 +1272,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1395,7 +1299,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1422,7 +1326,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1449,7 +1353,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1476,7 +1380,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1503,7 +1407,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1530,7 +1434,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1557,7 +1461,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1584,7 +1488,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1611,7 +1515,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1638,7 +1542,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1665,7 +1569,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1692,7 +1596,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1719,7 +1623,7 @@
         <dimension name="YSHL" xvalue="144"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1746,7 +1650,7 @@
         <dimension name="YSHL" xvalue="0"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1773,7 +1677,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="120"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1800,7 +1704,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="0"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1827,7 +1731,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="64"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1854,7 +1758,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="202"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1863,7 +1767,7 @@
         <dimension name="WDSP" xvalue="320"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XSVF422.ufo" familyname="AmstelvarA2" stylename="XSVF422">
+    <source filename="AmstelvarA2-Italic_XSVF126.ufo" familyname="AmstelvarA2" stylename="XSVF126">
       <location>
         <dimension name="XOPQ" xvalue="84"/>
         <dimension name="XTRA" xvalue="360"/>
@@ -1881,7 +1785,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="422"/>
+        <dimension name="XSVF" xvalue="126"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1890,7 +1794,7 @@
         <dimension name="WDSP" xvalue="320"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XSVF372.ufo" familyname="AmstelvarA2" stylename="XSVF372">
+    <source filename="AmstelvarA2-Italic_XSVF0.ufo" familyname="AmstelvarA2" stylename="XSVF0">
       <location>
         <dimension name="XOPQ" xvalue="84"/>
         <dimension name="XTRA" xvalue="360"/>
@@ -1908,7 +1812,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="372"/>
+        <dimension name="XSVF" xvalue="0"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1935,7 +1839,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="84"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1962,7 +1866,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="286"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -1989,7 +1893,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="30"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2016,7 +1920,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="0"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2043,7 +1947,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="0"/>
@@ -2070,7 +1974,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="104"/>
@@ -2097,7 +2001,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2124,7 +2028,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2151,7 +2055,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2178,7 +2082,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2205,7 +2109,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2232,7 +2136,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2261,16 +2165,70 @@
         <dimension name="YSHL" xvalue="10"/>
         <dimension name="XSVL" xvalue="8"/>
         <dimension name="YSVL" xvalue="116"/>
-        <dimension name="XSVF" xvalue="377"/>
+        <dimension name="XSVF" xvalue="10"/>
         <dimension name="YSVF" xvalue="158"/>
-        <dimension name="XTTW" xvalue="160"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="8"/>
         <dimension name="XUCS" xvalue="181"/>
         <dimension name="WDSP" xvalue="234"/>
       </location>
     </instance>
-    <instance name="opsz144_wght100_wdth100" familyname="AmstelvarA2" stylename="opsz144_wght100_wdth100" filename="instances/AmstelvarA2-Italic_opsz144_wght100_wdth100.ufo">
+    <instance name="opsz144_wdth125" familyname="AmstelvarA2" stylename="opsz144_wdth125" filename="instances/AmstelvarA2-Italic_opsz144_wdth125.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="88"/>
+        <dimension name="XTRA" xvalue="510"/>
+        <dimension name="YOPQ" xvalue="20"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="466"/>
+        <dimension name="YTAS" xvalue="782"/>
+        <dimension name="YTDE" xvalue="-224"/>
+        <dimension name="YTFI" xvalue="772"/>
+        <dimension name="XSHU" xvalue="95"/>
+        <dimension name="YSHU" xvalue="12"/>
+        <dimension name="XSVU" xvalue="18"/>
+        <dimension name="YSVU" xvalue="160"/>
+        <dimension name="XSHL" xvalue="110"/>
+        <dimension name="YSHL" xvalue="12"/>
+        <dimension name="XSVL" xvalue="15"/>
+        <dimension name="YSVL" xvalue="116"/>
+        <dimension name="XSVF" xvalue="15"/>
+        <dimension name="YSVF" xvalue="158"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="8"/>
+        <dimension name="XUCS" xvalue="227"/>
+        <dimension name="WDSP" xvalue="279"/>
+      </location>
+    </instance>
+    <instance name="opsz144_wdth50" familyname="AmstelvarA2" stylename="opsz144_wdth50" filename="instances/AmstelvarA2-Italic_opsz144_wdth50.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="81"/>
+        <dimension name="XTRA" xvalue="160"/>
+        <dimension name="YOPQ" xvalue="14"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="466"/>
+        <dimension name="YTAS" xvalue="788"/>
+        <dimension name="YTDE" xvalue="-233"/>
+        <dimension name="YTFI" xvalue="763"/>
+        <dimension name="XSHU" xvalue="56"/>
+        <dimension name="YSHU" xvalue="10"/>
+        <dimension name="XSVU" xvalue="14"/>
+        <dimension name="YSVU" xvalue="160"/>
+        <dimension name="XSHL" xvalue="58"/>
+        <dimension name="YSHL" xvalue="10"/>
+        <dimension name="XSVL" xvalue="8"/>
+        <dimension name="YSVL" xvalue="116"/>
+        <dimension name="XSVF" xvalue="10"/>
+        <dimension name="YSVF" xvalue="143"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="3"/>
+        <dimension name="XUCS" xvalue="152"/>
+        <dimension name="WDSP" xvalue="180"/>
+      </location>
+    </instance>
+    <instance name="opsz144_wght100" familyname="AmstelvarA2" stylename="opsz144_wght100" filename="instances/AmstelvarA2-Italic_opsz144_wght100.ufo">
       <location>
         <dimension name="XOPQ" xvalue="31"/>
         <dimension name="XTRA" xvalue="390"/>
@@ -2288,10 +2246,10 @@
         <dimension name="YSHL" xvalue="6"/>
         <dimension name="XSVL" xvalue="5"/>
         <dimension name="YSVL" xvalue="104"/>
-        <dimension name="XSVF" xvalue="403"/>
+        <dimension name="XSVF" xvalue="12"/>
         <dimension name="YSVF" xvalue="103"/>
-        <dimension name="XTTW" xvalue="184"/>
-        <dimension name="YTTL" xvalue="1"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="8"/>
         <dimension name="XUCS" xvalue="204"/>
         <dimension name="WDSP" xvalue="213"/>
@@ -2315,10 +2273,10 @@
         <dimension name="YSHL" xvalue="8"/>
         <dimension name="XSVL" xvalue="8"/>
         <dimension name="YSVL" xvalue="104"/>
-        <dimension name="XSVF" xvalue="506"/>
+        <dimension name="XSVF" xvalue="6"/>
         <dimension name="YSVF" xvalue="110"/>
-        <dimension name="XTTW" xvalue="260"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="6"/>
         <dimension name="XUCS" xvalue="240"/>
         <dimension name="WDSP" xvalue="320"/>
@@ -2342,70 +2300,16 @@
         <dimension name="YSHL" xvalue="6"/>
         <dimension name="XSVL" xvalue="8"/>
         <dimension name="YSVL" xvalue="104"/>
-        <dimension name="XSVF" xvalue="232"/>
+        <dimension name="XSVF" xvalue="8"/>
         <dimension name="YSVF" xvalue="118"/>
-        <dimension name="XTTW" xvalue="132"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="158"/>
         <dimension name="WDSP" xvalue="162"/>
       </location>
     </instance>
-    <instance name="opsz144_wght400_wdth125" familyname="AmstelvarA2" stylename="opsz144_wght400_wdth125" filename="instances/AmstelvarA2-Italic_opsz144_wght400_wdth125.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="88"/>
-        <dimension name="XTRA" xvalue="510"/>
-        <dimension name="YOPQ" xvalue="20"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="466"/>
-        <dimension name="YTAS" xvalue="782"/>
-        <dimension name="YTDE" xvalue="-224"/>
-        <dimension name="YTFI" xvalue="772"/>
-        <dimension name="XSHU" xvalue="95"/>
-        <dimension name="YSHU" xvalue="12"/>
-        <dimension name="XSVU" xvalue="18"/>
-        <dimension name="YSVU" xvalue="160"/>
-        <dimension name="XSHL" xvalue="110"/>
-        <dimension name="YSHL" xvalue="12"/>
-        <dimension name="XSVL" xvalue="15"/>
-        <dimension name="YSVL" xvalue="116"/>
-        <dimension name="XSVF" xvalue="462"/>
-        <dimension name="YSVF" xvalue="158"/>
-        <dimension name="XTTW" xvalue="242"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="8"/>
-        <dimension name="XUCS" xvalue="227"/>
-        <dimension name="WDSP" xvalue="279"/>
-      </location>
-    </instance>
-    <instance name="opsz144_wght400_wdth50" familyname="AmstelvarA2" stylename="opsz144_wght400_wdth50" filename="instances/AmstelvarA2-Italic_opsz144_wght400_wdth50.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="81"/>
-        <dimension name="XTRA" xvalue="160"/>
-        <dimension name="YOPQ" xvalue="14"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="466"/>
-        <dimension name="YTAS" xvalue="788"/>
-        <dimension name="YTDE" xvalue="-233"/>
-        <dimension name="YTFI" xvalue="763"/>
-        <dimension name="XSHU" xvalue="56"/>
-        <dimension name="YSHU" xvalue="10"/>
-        <dimension name="XSVU" xvalue="14"/>
-        <dimension name="YSVU" xvalue="160"/>
-        <dimension name="XSHL" xvalue="58"/>
-        <dimension name="YSHL" xvalue="10"/>
-        <dimension name="XSVL" xvalue="8"/>
-        <dimension name="YSVL" xvalue="116"/>
-        <dimension name="XSVF" xvalue="307"/>
-        <dimension name="YSVF" xvalue="143"/>
-        <dimension name="XTTW" xvalue="126"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="3"/>
-        <dimension name="XUCS" xvalue="152"/>
-        <dimension name="WDSP" xvalue="180"/>
-      </location>
-    </instance>
-    <instance name="opsz144_wght900_wdth100" familyname="AmstelvarA2" stylename="opsz144_wght900_wdth100" filename="instances/AmstelvarA2-Italic_opsz144_wght900_wdth100.ufo">
+    <instance name="opsz144_wght900" familyname="AmstelvarA2" stylename="opsz144_wght900" filename="instances/AmstelvarA2-Italic_opsz144_wght900.ufo">
       <location>
         <dimension name="XOPQ" xvalue="253"/>
         <dimension name="XTRA" xvalue="175"/>
@@ -2423,10 +2327,10 @@
         <dimension name="YSHL" xvalue="29"/>
         <dimension name="XSVL" xvalue="36"/>
         <dimension name="YSVL" xvalue="164"/>
-        <dimension name="XSVF" xvalue="366"/>
+        <dimension name="XSVF" xvalue="34"/>
         <dimension name="YSVF" xvalue="242"/>
-        <dimension name="XTTW" xvalue="122"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="141"/>
         <dimension name="WDSP" xvalue="344"/>
@@ -2450,10 +2354,10 @@
         <dimension name="YSHL" xvalue="30"/>
         <dimension name="XSVL" xvalue="46"/>
         <dimension name="YSVL" xvalue="160"/>
-        <dimension name="XSVF" xvalue="540"/>
+        <dimension name="XSVF" xvalue="40"/>
         <dimension name="YSVF" xvalue="242"/>
-        <dimension name="XTTW" xvalue="226"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="11"/>
         <dimension name="XUCS" xvalue="184"/>
         <dimension name="WDSP" xvalue="400"/>
@@ -2477,229 +2381,13 @@
         <dimension name="YSHL" xvalue="29"/>
         <dimension name="XSVL" xvalue="34"/>
         <dimension name="YSVL" xvalue="172"/>
-        <dimension name="XSVF" xvalue="346"/>
+        <dimension name="XSVF" xvalue="40"/>
         <dimension name="YSVF" xvalue="243"/>
-        <dimension name="XTTW" xvalue="91"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="12"/>
         <dimension name="XUCS" xvalue="107"/>
         <dimension name="WDSP" xvalue="328"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght100_wdth100" familyname="AmstelvarA2" stylename="opsz14_wght100_wdth100" filename="instances/AmstelvarA2-Italic_opsz14_wght100_wdth100.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="43"/>
-        <dimension name="XTRA" xvalue="414"/>
-        <dimension name="YOPQ" xvalue="30"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="510"/>
-        <dimension name="YTAS" xvalue="797"/>
-        <dimension name="YTDE" xvalue="-184"/>
-        <dimension name="YTFI" xvalue="772"/>
-        <dimension name="XSHU" xvalue="94"/>
-        <dimension name="YSHU" xvalue="24"/>
-        <dimension name="XSVU" xvalue="30"/>
-        <dimension name="YSVU" xvalue="146"/>
-        <dimension name="XSHL" xvalue="90"/>
-        <dimension name="YSHL" xvalue="23"/>
-        <dimension name="XSVL" xvalue="20"/>
-        <dimension name="YSVL" xvalue="121"/>
-        <dimension name="XSVF" xvalue="414"/>
-        <dimension name="YSVF" xvalue="139"/>
-        <dimension name="XTTW" xvalue="188"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="201"/>
-        <dimension name="WDSP" xvalue="320"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght100_wdth125" familyname="AmstelvarA2" stylename="opsz14_wght100_wdth125" filename="instances/AmstelvarA2-Italic_opsz14_wght100_wdth125.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="48"/>
-        <dimension name="XTRA" xvalue="618"/>
-        <dimension name="YOPQ" xvalue="36"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="506"/>
-        <dimension name="YTAS" xvalue="794"/>
-        <dimension name="YTDE" xvalue="-178"/>
-        <dimension name="YTFI" xvalue="768"/>
-        <dimension name="XSHU" xvalue="108"/>
-        <dimension name="YSHU" xvalue="24"/>
-        <dimension name="XSVU" xvalue="30"/>
-        <dimension name="YSVU" xvalue="146"/>
-        <dimension name="XSHL" xvalue="132"/>
-        <dimension name="YSHL" xvalue="25"/>
-        <dimension name="XSVL" xvalue="28"/>
-        <dimension name="YSVL" xvalue="121"/>
-        <dimension name="XSVF" xvalue="519"/>
-        <dimension name="YSVF" xvalue="139"/>
-        <dimension name="XTTW" xvalue="285"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="247"/>
-        <dimension name="WDSP" xvalue="320"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght100_wdth50" familyname="AmstelvarA2" stylename="opsz14_wght100_wdth50" filename="instances/AmstelvarA2-Italic_opsz14_wght100_wdth50.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="40"/>
-        <dimension name="XTRA" xvalue="268"/>
-        <dimension name="YOPQ" xvalue="34"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="505"/>
-        <dimension name="YTAS" xvalue="798"/>
-        <dimension name="YTDE" xvalue="-191"/>
-        <dimension name="YTFI" xvalue="774"/>
-        <dimension name="XSHU" xvalue="70"/>
-        <dimension name="YSHU" xvalue="22"/>
-        <dimension name="XSVU" xvalue="26"/>
-        <dimension name="YSVU" xvalue="146"/>
-        <dimension name="XSHL" xvalue="83"/>
-        <dimension name="YSHL" xvalue="23"/>
-        <dimension name="XSVL" xvalue="16"/>
-        <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="352"/>
-        <dimension name="YSVF" xvalue="139"/>
-        <dimension name="XTTW" xvalue="136"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="6"/>
-        <dimension name="XUCS" xvalue="170"/>
-        <dimension name="WDSP" xvalue="200"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght400_wdth125" familyname="AmstelvarA2" stylename="opsz14_wght400_wdth125" filename="instances/AmstelvarA2-Italic_opsz14_wght400_wdth125.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="90"/>
-        <dimension name="XTRA" xvalue="566"/>
-        <dimension name="YOPQ" xvalue="60"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="506"/>
-        <dimension name="YTAS" xvalue="775"/>
-        <dimension name="YTDE" xvalue="-178"/>
-        <dimension name="YTFI" xvalue="764"/>
-        <dimension name="XSHU" xvalue="108"/>
-        <dimension name="YSHU" xvalue="50"/>
-        <dimension name="XSVU" xvalue="54"/>
-        <dimension name="YSVU" xvalue="174"/>
-        <dimension name="XSHL" xvalue="118"/>
-        <dimension name="YSHL" xvalue="46"/>
-        <dimension name="XSVL" xvalue="52"/>
-        <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="482"/>
-        <dimension name="YSVF" xvalue="186"/>
-        <dimension name="XTTW" xvalue="229"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="235"/>
-        <dimension name="WDSP" xvalue="320"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght400_wdth50" familyname="AmstelvarA2" stylename="opsz14_wght400_wdth50" filename="instances/AmstelvarA2-Italic_opsz14_wght400_wdth50.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="82"/>
-        <dimension name="XTRA" xvalue="216"/>
-        <dimension name="YOPQ" xvalue="58"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="505"/>
-        <dimension name="YTAS" xvalue="778"/>
-        <dimension name="YTDE" xvalue="-191"/>
-        <dimension name="YTFI" xvalue="762"/>
-        <dimension name="XSHU" xvalue="70"/>
-        <dimension name="YSHU" xvalue="48"/>
-        <dimension name="XSVU" xvalue="50"/>
-        <dimension name="YSVU" xvalue="174"/>
-        <dimension name="XSHL" xvalue="64"/>
-        <dimension name="YSHL" xvalue="44"/>
-        <dimension name="XSVL" xvalue="36"/>
-        <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="326"/>
-        <dimension name="YSVF" xvalue="172"/>
-        <dimension name="XTTW" xvalue="114"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="6"/>
-        <dimension name="XUCS" xvalue="157"/>
-        <dimension name="WDSP" xvalue="152"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght900_wdth100" familyname="AmstelvarA2" stylename="opsz14_wght900_wdth100" filename="instances/AmstelvarA2-Italic_opsz14_wght900_wdth100.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="254"/>
-        <dimension name="XTRA" xvalue="231"/>
-        <dimension name="YOPQ" xvalue="70"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="534"/>
-        <dimension name="YTAS" xvalue="758"/>
-        <dimension name="YTDE" xvalue="-180"/>
-        <dimension name="YTFI" xvalue="775"/>
-        <dimension name="XSHU" xvalue="64"/>
-        <dimension name="YSHU" xvalue="65"/>
-        <dimension name="XSVU" xvalue="78"/>
-        <dimension name="YSVU" xvalue="180"/>
-        <dimension name="XSHL" xvalue="71"/>
-        <dimension name="YSHL" xvalue="63"/>
-        <dimension name="XSVL" xvalue="82"/>
-        <dimension name="YSVL" xvalue="148"/>
-        <dimension name="XSVF" xvalue="424"/>
-        <dimension name="YSVF" xvalue="226"/>
-        <dimension name="XTTW" xvalue="128"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="12"/>
-        <dimension name="XUCS" xvalue="159"/>
-        <dimension name="WDSP" xvalue="320"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght900_wdth125" familyname="AmstelvarA2" stylename="opsz14_wght900_wdth125" filename="instances/AmstelvarA2-Italic_opsz14_wght900_wdth125.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="259"/>
-        <dimension name="XTRA" xvalue="436"/>
-        <dimension name="YOPQ" xvalue="76"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="530"/>
-        <dimension name="YTAS" xvalue="744"/>
-        <dimension name="YTDE" xvalue="-174"/>
-        <dimension name="YTFI" xvalue="773"/>
-        <dimension name="XSHU" xvalue="78"/>
-        <dimension name="YSHU" xvalue="65"/>
-        <dimension name="XSVU" xvalue="84"/>
-        <dimension name="YSVU" xvalue="180"/>
-        <dimension name="XSHL" xvalue="118"/>
-        <dimension name="YSHL" xvalue="65"/>
-        <dimension name="XSVL" xvalue="110"/>
-        <dimension name="YSVL" xvalue="148"/>
-        <dimension name="XSVF" xvalue="510"/>
-        <dimension name="YSVF" xvalue="226"/>
-        <dimension name="XTTW" xvalue="214"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="13"/>
-        <dimension name="XUCS" xvalue="205"/>
-        <dimension name="WDSP" xvalue="320"/>
-      </location>
-    </instance>
-    <instance name="opsz14_wght900_wdth50" familyname="AmstelvarA2" stylename="opsz14_wght900_wdth50" filename="instances/AmstelvarA2-Italic_opsz14_wght900_wdth50.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="252"/>
-        <dimension name="XTRA" xvalue="116"/>
-        <dimension name="YOPQ" xvalue="74"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="529"/>
-        <dimension name="YTAS" xvalue="751"/>
-        <dimension name="YTDE" xvalue="-186"/>
-        <dimension name="YTFI" xvalue="760"/>
-        <dimension name="XSHU" xvalue="45"/>
-        <dimension name="YSHU" xvalue="63"/>
-        <dimension name="XSVU" xvalue="78"/>
-        <dimension name="YSVU" xvalue="180"/>
-        <dimension name="XSHL" xvalue="64"/>
-        <dimension name="YSHL" xvalue="63"/>
-        <dimension name="XSVL" xvalue="78"/>
-        <dimension name="YSVL" xvalue="148"/>
-        <dimension name="XSVF" xvalue="388"/>
-        <dimension name="YSVF" xvalue="246"/>
-        <dimension name="XTTW" xvalue="98"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="8"/>
-        <dimension name="XUCS" xvalue="108"/>
-        <dimension name="WDSP" xvalue="150"/>
       </location>
     </instance>
     <instance name="opsz8" familyname="AmstelvarA2" stylename="opsz8" filename="instances/AmstelvarA2-Italic_opsz8.ufo">
@@ -2720,16 +2408,70 @@
         <dimension name="YSHL" xvalue="62"/>
         <dimension name="XSVL" xvalue="48"/>
         <dimension name="YSVL" xvalue="158"/>
-        <dimension name="XSVF" xvalue="404"/>
+        <dimension name="XSVF" xvalue="66"/>
         <dimension name="YSVF" xvalue="198"/>
-        <dimension name="XTTW" xvalue="134"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="16"/>
         <dimension name="XUCS" xvalue="196"/>
         <dimension name="WDSP" xvalue="320"/>
       </location>
     </instance>
-    <instance name="opsz8_wght100_wdth100" familyname="AmstelvarA2" stylename="opsz8_wght100_wdth100" filename="instances/AmstelvarA2-Italic_opsz8_wght100_wdth100.ufo">
+    <instance name="opsz8_wdth125" familyname="AmstelvarA2" stylename="opsz8_wdth125" filename="instances/AmstelvarA2-Italic_opsz8_wdth125.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="118"/>
+        <dimension name="XTRA" xvalue="576"/>
+        <dimension name="YOPQ" xvalue="90"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="531"/>
+        <dimension name="YTAS" xvalue="774"/>
+        <dimension name="YTDE" xvalue="-189"/>
+        <dimension name="YTFI" xvalue="764"/>
+        <dimension name="XSHU" xvalue="108"/>
+        <dimension name="YSHU" xvalue="74"/>
+        <dimension name="XSVU" xvalue="80"/>
+        <dimension name="YSVU" xvalue="194"/>
+        <dimension name="XSHL" xvalue="118"/>
+        <dimension name="YSHL" xvalue="64"/>
+        <dimension name="XSVL" xvalue="56"/>
+        <dimension name="YSVL" xvalue="158"/>
+        <dimension name="XSVF" xvalue="72"/>
+        <dimension name="YSVF" xvalue="198"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="16"/>
+        <dimension name="XUCS" xvalue="242"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="opsz8_wdth50" familyname="AmstelvarA2" stylename="opsz8_wdth50" filename="instances/AmstelvarA2-Italic_opsz8_wdth50.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="110"/>
+        <dimension name="XTRA" xvalue="203"/>
+        <dimension name="YOPQ" xvalue="78"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="530"/>
+        <dimension name="YTAS" xvalue="781"/>
+        <dimension name="YTDE" xvalue="-202"/>
+        <dimension name="YTFI" xvalue="762"/>
+        <dimension name="XSHU" xvalue="70"/>
+        <dimension name="YSHU" xvalue="72"/>
+        <dimension name="XSVU" xvalue="74"/>
+        <dimension name="YSVU" xvalue="194"/>
+        <dimension name="XSHL" xvalue="67"/>
+        <dimension name="YSHL" xvalue="58"/>
+        <dimension name="XSVL" xvalue="40"/>
+        <dimension name="YSVL" xvalue="158"/>
+        <dimension name="XSVF" xvalue="66"/>
+        <dimension name="YSVF" xvalue="183"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="2"/>
+        <dimension name="XUCS" xvalue="146"/>
+        <dimension name="WDSP" xvalue="152"/>
+      </location>
+    </instance>
+    <instance name="opsz8_wght100" familyname="AmstelvarA2" stylename="opsz8_wght100" filename="instances/AmstelvarA2-Italic_opsz8_wght100.ufo">
       <location>
         <dimension name="XOPQ" xvalue="61"/>
         <dimension name="XTRA" xvalue="434"/>
@@ -2747,10 +2489,10 @@
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="34"/>
         <dimension name="YSVL" xvalue="137"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="38"/>
         <dimension name="YSVF" xvalue="126"/>
-        <dimension name="XTTW" xvalue="190"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="16"/>
         <dimension name="XUCS" xvalue="212"/>
         <dimension name="WDSP" xvalue="320"/>
@@ -2774,10 +2516,10 @@
         <dimension name="YSHL" xvalue="42"/>
         <dimension name="XSVL" xvalue="32"/>
         <dimension name="YSVL" xvalue="137"/>
-        <dimension name="XSVF" xvalue="542"/>
+        <dimension name="XSVF" xvalue="44"/>
         <dimension name="YSVF" xvalue="160"/>
-        <dimension name="XTTW" xvalue="296"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="6"/>
         <dimension name="XUCS" xvalue="254"/>
         <dimension name="WDSP" xvalue="320"/>
@@ -2801,70 +2543,16 @@
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="30"/>
         <dimension name="YSVL" xvalue="121"/>
-        <dimension name="XSVF" xvalue="303"/>
+        <dimension name="XSVF" xvalue="38"/>
         <dimension name="YSVF" xvalue="136"/>
-        <dimension name="XTTW" xvalue="154"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="4"/>
         <dimension name="XUCS" xvalue="174"/>
         <dimension name="WDSP" xvalue="106"/>
       </location>
     </instance>
-    <instance name="opsz8_wght400_wdth125" familyname="AmstelvarA2" stylename="opsz8_wght400_wdth125" filename="instances/AmstelvarA2-Italic_opsz8_wght400_wdth125.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="118"/>
-        <dimension name="XTRA" xvalue="576"/>
-        <dimension name="YOPQ" xvalue="90"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="531"/>
-        <dimension name="YTAS" xvalue="774"/>
-        <dimension name="YTDE" xvalue="-189"/>
-        <dimension name="YTFI" xvalue="764"/>
-        <dimension name="XSHU" xvalue="108"/>
-        <dimension name="YSHU" xvalue="74"/>
-        <dimension name="XSVU" xvalue="80"/>
-        <dimension name="YSVU" xvalue="194"/>
-        <dimension name="XSHL" xvalue="118"/>
-        <dimension name="YSHL" xvalue="64"/>
-        <dimension name="XSVL" xvalue="56"/>
-        <dimension name="YSVL" xvalue="158"/>
-        <dimension name="XSVF" xvalue="490"/>
-        <dimension name="YSVF" xvalue="198"/>
-        <dimension name="XTTW" xvalue="215"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="16"/>
-        <dimension name="XUCS" xvalue="242"/>
-        <dimension name="WDSP" xvalue="320"/>
-      </location>
-    </instance>
-    <instance name="opsz8_wght400_wdth50" familyname="AmstelvarA2" stylename="opsz8_wght400_wdth50" filename="instances/AmstelvarA2-Italic_opsz8_wght400_wdth50.ufo">
-      <location>
-        <dimension name="XOPQ" xvalue="110"/>
-        <dimension name="XTRA" xvalue="203"/>
-        <dimension name="YOPQ" xvalue="78"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="530"/>
-        <dimension name="YTAS" xvalue="781"/>
-        <dimension name="YTDE" xvalue="-202"/>
-        <dimension name="YTFI" xvalue="762"/>
-        <dimension name="XSHU" xvalue="70"/>
-        <dimension name="YSHU" xvalue="72"/>
-        <dimension name="XSVU" xvalue="74"/>
-        <dimension name="YSVU" xvalue="194"/>
-        <dimension name="XSHL" xvalue="67"/>
-        <dimension name="YSHL" xvalue="58"/>
-        <dimension name="XSVL" xvalue="40"/>
-        <dimension name="YSVL" xvalue="158"/>
-        <dimension name="XSVF" xvalue="334"/>
-        <dimension name="YSVF" xvalue="183"/>
-        <dimension name="XTTW" xvalue="105"/>
-        <dimension name="YTTL" xvalue="0"/>
-        <dimension name="YTOS" xvalue="2"/>
-        <dimension name="XUCS" xvalue="146"/>
-        <dimension name="WDSP" xvalue="152"/>
-      </location>
-    </instance>
-    <instance name="opsz8_wght900_wdth100" familyname="AmstelvarA2" stylename="opsz8_wght900_wdth100" filename="instances/AmstelvarA2-Italic_opsz8_wght900_wdth100.ufo">
+    <instance name="opsz8_wght900" familyname="AmstelvarA2" stylename="opsz8_wght900" filename="instances/AmstelvarA2-Italic_opsz8_wght900.ufo">
       <location>
         <dimension name="XOPQ" xvalue="282"/>
         <dimension name="XTRA" xvalue="241"/>
@@ -2882,10 +2570,10 @@
         <dimension name="YSHL" xvalue="80"/>
         <dimension name="XSVL" xvalue="86"/>
         <dimension name="YSVL" xvalue="179"/>
-        <dimension name="XSVF" xvalue="448"/>
+        <dimension name="XSVF" xvalue="91"/>
         <dimension name="YSVF" xvalue="256"/>
-        <dimension name="XTTW" xvalue="114"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="18"/>
         <dimension name="XUCS" xvalue="161"/>
         <dimension name="WDSP" xvalue="320"/>
@@ -2909,10 +2597,10 @@
         <dimension name="YSHL" xvalue="88"/>
         <dimension name="XSVL" xvalue="128"/>
         <dimension name="YSVL" xvalue="180"/>
-        <dimension name="XSVF" xvalue="544"/>
+        <dimension name="XSVF" xvalue="113"/>
         <dimension name="YSVF" xvalue="263"/>
-        <dimension name="XTTW" xvalue="192"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="19"/>
         <dimension name="XUCS" xvalue="182"/>
         <dimension name="WDSP" xvalue="310"/>
@@ -2936,13 +2624,256 @@
         <dimension name="YSHL" xvalue="80"/>
         <dimension name="XSVL" xvalue="77"/>
         <dimension name="YSVL" xvalue="169"/>
-        <dimension name="XSVF" xvalue="335"/>
+        <dimension name="XSVF" xvalue="87"/>
         <dimension name="YSVF" xvalue="233"/>
-        <dimension name="XTTW" xvalue="80"/>
-        <dimension name="YTTL" xvalue="0"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="114"/>
         <dimension name="WDSP" xvalue="240"/>
+      </location>
+    </instance>
+    <instance name="wdth125" familyname="AmstelvarA2" stylename="wdth125" filename="instances/AmstelvarA2-Italic_wdth125.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="90"/>
+        <dimension name="XTRA" xvalue="566"/>
+        <dimension name="YOPQ" xvalue="60"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="506"/>
+        <dimension name="YTAS" xvalue="775"/>
+        <dimension name="YTDE" xvalue="-178"/>
+        <dimension name="YTFI" xvalue="764"/>
+        <dimension name="XSHU" xvalue="108"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="54"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="118"/>
+        <dimension name="YSHL" xvalue="46"/>
+        <dimension name="XSVL" xvalue="52"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSVF" xvalue="56"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="235"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="wdth50" familyname="AmstelvarA2" stylename="wdth50" filename="instances/AmstelvarA2-Italic_wdth50.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="82"/>
+        <dimension name="XTRA" xvalue="216"/>
+        <dimension name="YOPQ" xvalue="58"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="505"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-191"/>
+        <dimension name="YTFI" xvalue="762"/>
+        <dimension name="XSHU" xvalue="70"/>
+        <dimension name="YSHU" xvalue="48"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="64"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="36"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="172"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="6"/>
+        <dimension name="XUCS" xvalue="157"/>
+        <dimension name="WDSP" xvalue="152"/>
+      </location>
+    </instance>
+    <instance name="wght100" familyname="AmstelvarA2" stylename="wght100" filename="instances/AmstelvarA2-Italic_wght100.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="43"/>
+        <dimension name="XTRA" xvalue="414"/>
+        <dimension name="YOPQ" xvalue="30"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="797"/>
+        <dimension name="YTDE" xvalue="-184"/>
+        <dimension name="YTFI" xvalue="772"/>
+        <dimension name="XSHU" xvalue="94"/>
+        <dimension name="YSHU" xvalue="24"/>
+        <dimension name="XSVU" xvalue="30"/>
+        <dimension name="YSVU" xvalue="146"/>
+        <dimension name="XSHL" xvalue="90"/>
+        <dimension name="YSHL" xvalue="23"/>
+        <dimension name="XSVL" xvalue="20"/>
+        <dimension name="YSVL" xvalue="121"/>
+        <dimension name="XSVF" xvalue="24"/>
+        <dimension name="YSVF" xvalue="139"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="201"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="wght100_wdth125" familyname="AmstelvarA2" stylename="wght100_wdth125" filename="instances/AmstelvarA2-Italic_wght100_wdth125.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="48"/>
+        <dimension name="XTRA" xvalue="618"/>
+        <dimension name="YOPQ" xvalue="36"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="506"/>
+        <dimension name="YTAS" xvalue="794"/>
+        <dimension name="YTDE" xvalue="-178"/>
+        <dimension name="YTFI" xvalue="768"/>
+        <dimension name="XSHU" xvalue="108"/>
+        <dimension name="YSHU" xvalue="24"/>
+        <dimension name="XSVU" xvalue="30"/>
+        <dimension name="YSVU" xvalue="146"/>
+        <dimension name="XSHL" xvalue="132"/>
+        <dimension name="YSHL" xvalue="25"/>
+        <dimension name="XSVL" xvalue="28"/>
+        <dimension name="YSVL" xvalue="121"/>
+        <dimension name="XSVF" xvalue="29"/>
+        <dimension name="YSVF" xvalue="139"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="247"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="wght100_wdth50" familyname="AmstelvarA2" stylename="wght100_wdth50" filename="instances/AmstelvarA2-Italic_wght100_wdth50.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="40"/>
+        <dimension name="XTRA" xvalue="268"/>
+        <dimension name="YOPQ" xvalue="34"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="505"/>
+        <dimension name="YTAS" xvalue="798"/>
+        <dimension name="YTDE" xvalue="-191"/>
+        <dimension name="YTFI" xvalue="774"/>
+        <dimension name="XSHU" xvalue="70"/>
+        <dimension name="YSHU" xvalue="22"/>
+        <dimension name="XSVU" xvalue="26"/>
+        <dimension name="YSVU" xvalue="146"/>
+        <dimension name="XSHL" xvalue="83"/>
+        <dimension name="YSHL" xvalue="23"/>
+        <dimension name="XSVL" xvalue="16"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSVF" xvalue="28"/>
+        <dimension name="YSVF" xvalue="139"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="6"/>
+        <dimension name="XUCS" xvalue="170"/>
+        <dimension name="WDSP" xvalue="200"/>
+      </location>
+    </instance>
+    <instance name="wght400" familyname="AmstelvarA2" stylename="wght400" filename="instances/AmstelvarA2-Italic_wght400.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="84"/>
+        <dimension name="XTRA" xvalue="360"/>
+        <dimension name="YOPQ" xvalue="54"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-184"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="94"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="71"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="44"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="189"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="wght900" familyname="AmstelvarA2" stylename="wght900" filename="instances/AmstelvarA2-Italic_wght900.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="254"/>
+        <dimension name="XTRA" xvalue="231"/>
+        <dimension name="YOPQ" xvalue="70"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="534"/>
+        <dimension name="YTAS" xvalue="758"/>
+        <dimension name="YTDE" xvalue="-180"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="64"/>
+        <dimension name="YSHU" xvalue="65"/>
+        <dimension name="XSVU" xvalue="78"/>
+        <dimension name="YSVU" xvalue="180"/>
+        <dimension name="XSHL" xvalue="71"/>
+        <dimension name="YSHL" xvalue="63"/>
+        <dimension name="XSVL" xvalue="82"/>
+        <dimension name="YSVL" xvalue="148"/>
+        <dimension name="XSVF" xvalue="76"/>
+        <dimension name="YSVF" xvalue="226"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="12"/>
+        <dimension name="XUCS" xvalue="159"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="wght900_wdth125" familyname="AmstelvarA2" stylename="wght900_wdth125" filename="instances/AmstelvarA2-Italic_wght900_wdth125.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="259"/>
+        <dimension name="XTRA" xvalue="436"/>
+        <dimension name="YOPQ" xvalue="76"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="530"/>
+        <dimension name="YTAS" xvalue="744"/>
+        <dimension name="YTDE" xvalue="-174"/>
+        <dimension name="YTFI" xvalue="773"/>
+        <dimension name="XSHU" xvalue="78"/>
+        <dimension name="YSHU" xvalue="65"/>
+        <dimension name="XSVU" xvalue="84"/>
+        <dimension name="YSVU" xvalue="180"/>
+        <dimension name="XSHL" xvalue="118"/>
+        <dimension name="YSHL" xvalue="65"/>
+        <dimension name="XSVL" xvalue="110"/>
+        <dimension name="YSVL" xvalue="148"/>
+        <dimension name="XSVF" xvalue="86"/>
+        <dimension name="YSVF" xvalue="226"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="13"/>
+        <dimension name="XUCS" xvalue="205"/>
+        <dimension name="WDSP" xvalue="320"/>
+      </location>
+    </instance>
+    <instance name="wght900_wdth50" familyname="AmstelvarA2" stylename="wght900_wdth50" filename="instances/AmstelvarA2-Italic_wght900_wdth50.ufo">
+      <location>
+        <dimension name="XOPQ" xvalue="252"/>
+        <dimension name="XTRA" xvalue="116"/>
+        <dimension name="YOPQ" xvalue="74"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="529"/>
+        <dimension name="YTAS" xvalue="751"/>
+        <dimension name="YTDE" xvalue="-186"/>
+        <dimension name="YTFI" xvalue="760"/>
+        <dimension name="XSHU" xvalue="45"/>
+        <dimension name="YSHU" xvalue="63"/>
+        <dimension name="XSVU" xvalue="78"/>
+        <dimension name="YSVU" xvalue="180"/>
+        <dimension name="XSHL" xvalue="64"/>
+        <dimension name="YSHL" xvalue="63"/>
+        <dimension name="XSVL" xvalue="78"/>
+        <dimension name="YSVL" xvalue="148"/>
+        <dimension name="XSVF" xvalue="97"/>
+        <dimension name="YSVF" xvalue="246"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="8"/>
+        <dimension name="XUCS" xvalue="108"/>
+        <dimension name="WDSP" xvalue="150"/>
       </location>
     </instance>
     <instance name="XTSP-100" familyname="AmstelvarA2" stylename="XTSP-100" filename="instances/AmstelvarA2-Italic_XTSP-100.ufo">
@@ -2963,7 +2894,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
@@ -2990,7 +2921,7 @@
         <dimension name="YSHL" xvalue="44"/>
         <dimension name="XSVL" xvalue="44"/>
         <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSVF" xvalue="396"/>
+        <dimension name="XSVF" xvalue="51"/>
         <dimension name="YSVF" xvalue="186"/>
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>

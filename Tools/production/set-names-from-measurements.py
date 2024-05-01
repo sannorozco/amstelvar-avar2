@@ -16,7 +16,7 @@ allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 ignoreTags = ['wght', 'GRAD', 'BARS']
 
-preflight = False
+preflight = True
 
 allNames = []
 for ufo in sorted(allUFOs):
