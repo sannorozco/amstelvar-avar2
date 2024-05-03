@@ -652,7 +652,7 @@ if __name__ == '__main__':
     # D0.save()
 
     D = AmstelvarA2DesignSpaceBuilder()
-    D.build(blends=False, instances=False)
+    D.build(blends=True, instances=True)
     D.save()
     # D.buildInstances()
 
@@ -661,10 +661,10 @@ if __name__ == '__main__':
     # D1.save()
     # D1.buildVariableFont()
 
-    # D2 = AmstelvarA2DesignSpaceBuilder_avar2()
-    # D2.build()
-    # D2.save()
-    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    D2 = AmstelvarA2DesignSpaceBuilder_avar2()
+    D2.build()
+    D2.save()
+    D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
