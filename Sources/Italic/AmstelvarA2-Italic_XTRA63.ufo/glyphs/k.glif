@@ -38,15 +38,21 @@
       <point x="539" y="703" type="line"/>
     </contour>
     <contour>
-      <point x="424" y="580" type="line"/>
-      <point x="413" y="140" type="line"/>
+      <point x="423" y="588" type="line"/>
+      <point x="423" y="140" type="line"/>
       <point x="537" y="140" type="line"/>
       <point x="537" y="52" type="line"/>
       <point x="336" y="4" type="line" smooth="yes"/>
       <point x="311" y="-1"/>
       <point x="271" y="27"/>
       <point x="281" y="115" type="qcurve"/>
-      <point x="294" y="417" type="line"/>
+      <point x="284" y="404" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.34888</string>
+    </dict>
+  </lib>
 </glyph>
