@@ -8,8 +8,8 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
 glyphNames    = [
-    'dieresistonoscomb.case',
-    'dieresistonos.case',
+    'hookabovecombstack.case',
+    'hookcomb-stack.case',
 ]
 
 for ufoPath in ufoPaths:

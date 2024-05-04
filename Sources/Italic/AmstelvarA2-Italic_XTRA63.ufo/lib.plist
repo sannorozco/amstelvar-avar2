@@ -300,6 +300,11 @@
       <string>trademark</string>
       <string>zerosuperior</string>
       <string>foursuperior</string>
+      <string>fivesuperior</string>
+      <string>sixsuperior</string>
+      <string>sevensuperior</string>
+      <string>eightsuperior</string>
+      <string>ninesuperior</string>
       <string>fraction</string>
       <string>divisionslash</string>
       <string>primemod</string>
@@ -357,6 +362,7 @@
       <string>ringcomb-stack</string>
       <string>hungarumlautcomb-stack</string>
       <string>caroncomb-stack</string>
+      <string>breveinvertedcomb-stack</string>
       <string>dblgravecomb-stack</string>
       <string>grave-stack</string>
       <string>acute-stack</string>
@@ -416,6 +422,20 @@
       <string>commaaccentcomb.case</string>
       <string>brevebelowcomb.case</string>
       <string>macronbelowcomb.case</string>
+      <string>grave-stack.case</string>
+      <string>acute-stack.case</string>
+      <string>dieresis-stack.case</string>
+      <string>macron-stack.case</string>
+      <string>circumflex-stack.case</string>
+      <string>caron-stack.case</string>
+      <string>breve-stack.case</string>
+      <string>dotaccent-stack.case</string>
+      <string>ring-stack.case</string>
+      <string>tilde-stack.case</string>
+      <string>hungarumlaut-stack.case</string>
+      <string>hook-stack.case</string>
+      <string>breveinverted-stack.case</string>
+      <string>dblgrave-stack.case</string>
       <string>gravecomb-stack.case</string>
       <string>acutecomb-stack.case</string>
       <string>dieresiscomb-stack.case</string>
@@ -427,6 +447,7 @@
       <string>ringcomb-stack.case</string>
       <string>tildecomb-stack.case</string>
       <string>hungarumlautcomb-stack.case</string>
+      <string>hookabovecomb-stack.case</string>
       <string>breveinvertedcomb-stack.case</string>
       <string>dblgravecomb-stack.case</string>
       <string>Amacron</string>
@@ -939,16 +960,23 @@
       <string>yumacron</string>
       <string>breve.cyr.case</string>
       <string>breve.cyr</string>
+      <string>yi-dieresis</string>
       <string>breve.cyrcomb.case</string>
       <string>breve.cyrcomb</string>
       <string>Yi-dieresiscomb.case</string>
+      <string>yi-dieresiscomb</string>
       <string>increment</string>
+      <string>Yu-dash.case</string>
       <string>idot</string>
       <string>Oslash.rvrn</string>
       <string>oslash.rvrn</string>
       <string>engn</string>
+      <string>ha-stroke</string>
       <string>hornU</string>
       <string>hornu</string>
+      <string>kai-tail</string>
+      <string>ustraight-stroke</string>
+      <string>yu.bgr-stroke</string>
       <string>periodcentered.loclCAT.case</string>
       <string>Alpha</string>
       <string>Alphatonos</string>
@@ -1020,25 +1048,39 @@
       <string>omega</string>
       <string>omegatonos</string>
       <string>kaisymbol</string>
+      <string>Cy-descender.case</string>
+      <string>Cy-descendercomb.case</string>
+      <string>Ha-stroke</string>
+      <string>Obarcyr-stroke</string>
+      <string>U-stroke</string>
+      <string>Yi-dieresis.case</string>
       <string>acutecombstack</string>
       <string>acutecombstack.case</string>
       <string>brevecombstack.case</string>
       <string>breveinvertedcomb.stack</string>
       <string>circumflexcombstack</string>
       <string>circumflexcombstack.case</string>
+      <string>cy-descender</string>
+      <string>cy-descendercomb</string>
+      <string>descender-cy</string>
+      <string>descenderinverted-cy</string>
       <string>diagonalbarL</string>
       <string>dieresiscombstack</string>
       <string>dieresiscombstack.case</string>
       <string>dotaccentcombstack</string>
       <string>dotaccentcombstack.case</string>
+      <string>enspace</string>
       <string>gravecombstack.case</string>
-      <string>hookabovecombstack.case</string>
-      <string>hookcomb-stack.case</string>
       <string>macroncombstack</string>
       <string>macroncombstack.case</string>
+      <string>obarcyr-stroke</string>
+      <string>thinspace</string>
       <string>tildecombstack</string>
+      <string>tildecombstack.case</string>
       <string>tildemacroncomb</string>
       <string>tildemacroncomb.case</string>
+      <string>yu-i</string>
+      <string>yu-l.bgr</string>
     </array>
   </dict>
 </plist>

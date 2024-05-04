@@ -3,13 +3,13 @@
   <advance width="1506"/>
   <outline>
     <component base="yu-l.bgr"/>
-    <component base="yu-dash" xOffset="-19"/>
+    <component base="yu.bgr-stroke"/>
     <component base="o" xOffset="456"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0.6,1,0.5</string>
+      <string>0,0,1,1</string>
     </dict>
   </lib>
 </glyph>
