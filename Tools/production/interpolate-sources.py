@@ -8,9 +8,9 @@ sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 src1 = 'wght400'
-src2 = 'XSVL120'
+src2 = 'XUCS126'
 
-f = 1.14
+f = 1.2
 
 ufoPath1 = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{src1}.ufo')
 ufoPath2 = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{src2}.ufo')
