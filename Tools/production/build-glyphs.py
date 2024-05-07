@@ -15,7 +15,7 @@ sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
 # glyphs to (re)build
-glyphNames = ['iacute_j.loclNLD']
+glyphNames = ['edieresis', 'aring', 'ocircumflex', 'odieresis', 'ucircumflex', 'udieresis']
 
 # get all sources
 targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f in glob.glob(f'{sourcesFolder}/*.ufo')]
