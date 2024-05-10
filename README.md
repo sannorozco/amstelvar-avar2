@@ -161,13 +161,12 @@ The different designspaces and variable fonts are built by a single `build.py` s
 
 - reading all necessary data from the appropriate files and folders
 - creating a designspace document with the parametric axes, taking min/max values from the UFO file names, and default values by measuring the default UFO
-- adding the default source
 - inserting parametric sources at their appropriate locations, based on actual measurements taken from each source
-- adding blended axes using data from the `blends.json` file, and build blended sources as instances
+- adding blended axes using data from the `blends.json` file, and building blended sources as instances
 - saving the designspace document into a `.designspace` file
 - building a variable font for the current designspace
 
-More specific designspaces inherit from this core object, and add their own special behavior around it.
+More specific designspaces inherit from this core object, and add their own special behavior on top of it.
 
 ### Production scripts
 

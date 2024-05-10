@@ -4,55 +4,59 @@
   <unicode hex="0065"/>
   <anchor x="339" y="0" name="bottom"/>
   <anchor x="495" y="0" name="ogonek"/>
-  <anchor x="601" y="1000" name="top"/>
+  <anchor x="572" y="850" name="top"/>
   <outline>
     <contour>
-      <point x="12" y="485" type="qcurve" smooth="yes"/>
-      <point x="64" y="728"/>
-      <point x="417" y="1017"/>
-      <point x="594" y="1017" type="qcurve" smooth="yes"/>
-      <point x="737" y="1017"/>
-      <point x="861" y="907"/>
-      <point x="871" y="834" type="qcurve" smooth="yes"/>
-      <point x="877" y="789"/>
-      <point x="870" y="703"/>
-      <point x="859" y="654" type="qcurve"/>
-      <point x="889" y="645" type="line"/>
-      <point x="854" y="544" type="line"/>
-      <point x="779" y="546"/>
-      <point x="652" y="546"/>
-      <point x="585" y="546" type="qcurve" smooth="yes"/>
-      <point x="127" y="544" type="line"/>
-      <point x="124" y="638" type="line"/>
-      <point x="672" y="646" type="line"/>
-      <point x="684" y="677"/>
-      <point x="701" y="767"/>
-      <point x="695" y="801" type="qcurve" smooth="yes"/>
-      <point x="688" y="840"/>
-      <point x="628" y="888"/>
-      <point x="571" y="888" type="qcurve" smooth="yes"/>
-      <point x="440" y="888"/>
-      <point x="215" y="692"/>
-      <point x="178" y="511" type="qcurve" smooth="yes"/>
-      <point x="142" y="334"/>
-      <point x="249" y="125"/>
+      <point x="12" y="425" type="qcurve" smooth="yes"/>
+      <point x="58" y="627"/>
+      <point x="384" y="868"/>
+      <point x="565" y="868" type="qcurve" smooth="yes"/>
+      <point x="702" y="868"/>
+      <point x="839" y="769"/>
+      <point x="854" y="699" type="qcurve" smooth="yes"/>
+      <point x="862" y="661"/>
+      <point x="859" y="589"/>
+      <point x="849" y="545" type="qcurve"/>
+      <point x="879" y="536" type="line"/>
+      <point x="844" y="435" type="line"/>
+      <point x="772" y="437"/>
+      <point x="650" y="437"/>
+      <point x="585" y="437" type="qcurve" smooth="yes"/>
+      <point x="107" y="435" type="line"/>
+      <point x="144" y="529" type="line"/>
+      <point x="666" y="537" type="line"/>
+      <point x="675" y="564"/>
+      <point x="683" y="632"/>
+      <point x="677" y="661" type="qcurve" smooth="yes"/>
+      <point x="670" y="695"/>
+      <point x="603" y="739"/>
+      <point x="532" y="739" type="qcurve" smooth="yes"/>
+      <point x="413" y="739"/>
+      <point x="206" y="591"/>
+      <point x="178" y="451" type="qcurve" smooth="yes"/>
+      <point x="147" y="300"/>
+      <point x="249" y="127"/>
       <point x="386" y="120" type="qcurve" smooth="yes"/>
-      <point x="511" y="115"/>
-      <point x="687" y="211"/>
+      <point x="481" y="115"/>
+      <point x="683" y="213"/>
       <point x="766" y="313" type="qcurve"/>
       <point x="806" y="258" type="line"/>
       <point x="827" y="230" type="line"/>
-      <point x="751" y="125"/>
-      <point x="494" y="-24"/>
+      <point x="751" y="115"/>
+      <point x="504" y="-23"/>
       <point x="326" y="-17" type="qcurve" smooth="yes"/>
-      <point x="154" y="-10"/>
-      <point x="-33" y="274"/>
+      <point x="144" y="-11"/>
+      <point x="-31" y="238"/>
     </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_YTLC436.ufo/glyphs</string>
       <key>com.typemytype.robofont.guideline.magnetic.t201CLapts</key>
       <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>

@@ -20,9 +20,9 @@
       <point x="562.0410958904109" y="645" type="line"/>
       <point x="527.0410958904109" y="544" type="line"/>
       <point x="480.04109589041093" y="545"/>
-      <point x="400.04109589041093" y="546"/>
+      <point x="400" y="546"/>
       <point x="358.04109589041093" y="546" type="qcurve" smooth="yes"/>
-      <point x="28.041095890410958" y="544" type="line"/>
+      <point x="29" y="544" type="line"/>
       <point x="59.04109589041096" y="639" type="line"/>
       <point x="518.0410958904109" y="646" type="line"/>
       <point x="530.0410958904109" y="677"/>
@@ -51,6 +51,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XOPQ4.ufo/glyphs</string>
       <key>com.typemytype.robofont.guideline.magnetic.t201CLapts</key>
       <integer>5</integer>
       <key>public.markColor</key>

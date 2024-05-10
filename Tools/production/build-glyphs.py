@@ -9,13 +9,13 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 from hTools3.modules.accents import buildAccentedGlyphs
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
 # glyphs to (re)build
-glyphNames = "Adotbelow Ahookabove Acircumflexacute Acircumflexgrave Acircumflexhookabove Acircumflextilde Acircumflexdotbelow Abreveacute Abrevegrave Abrevehookabove Abrevetilde Abrevedotbelow Edotbelow Ehookabove Etilde Ecircumflexacute Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Ecircumflexdotbelow Ihookabove Idotbelow Odotbelow Ohookabove Ocircumflexacute Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Ocircumflexdotbelow Ohornacute Ohorngrave Ohornhookabove Ohorntilde Ohorndotbelow Udotbelow Uhookabove Uhornacute Uhorngrave Uhornhookabove Uhorntilde Uhorndotbelow Ygrave Ydotbelow Yhookabove Ytilde Wgrave Wacute Wdieresis".split()
+glyphNames = ['edieresis', 'aring', 'ocircumflex', 'odieresis', 'ucircumflex', 'udieresis']
 
 # get all sources
 targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f in glob.glob(f'{sourcesFolder}/*.ufo')]

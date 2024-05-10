@@ -5,6 +5,9 @@
   <anchor x="339" y="0" name="bottom"/>
   <anchor x="495" y="0" name="ogonek"/>
   <anchor x="601" y="1000" name="top"/>
+  <anchor x="339" y="0" name="bottom"/>
+  <anchor x="495" y="0" name="ogonek"/>
+  <anchor x="601" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="12" y="485" type="qcurve" smooth="yes"/>
@@ -22,8 +25,8 @@
       <point x="779" y="546"/>
       <point x="652" y="546"/>
       <point x="585" y="546" type="qcurve" smooth="yes"/>
-      <point x="127" y="544" type="line"/>
-      <point x="124" y="638" type="line"/>
+      <point x="107" y="544" type="line"/>
+      <point x="144" y="638" type="line"/>
       <point x="672" y="646" type="line"/>
       <point x="684" y="677"/>
       <point x="701" y="767"/>
@@ -51,6 +54,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XUCS259.ufo/glyphs</string>
       <key>com.typemytype.robofont.guideline.magnetic.t201CLapts</key>
       <integer>5</integer>
     </dict>

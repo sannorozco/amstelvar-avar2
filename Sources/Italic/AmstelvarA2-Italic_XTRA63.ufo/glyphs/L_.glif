@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="L" format="2">
-  <advance width="666"/>
+  <advance width="766"/>
   <unicode hex="004C"/>
-  <anchor x="535" y="0" name="bottom"/>
+  <anchor x="280" y="0" name="bottom"/>
   <anchor x="755" y="750" name="centerright"/>
-  <anchor x="878" y="1500" name="top"/>
+  <anchor x="548" y="1500" name="top"/>
   <anchor x="804" y="1001" name="topright"/>
-  <anchor x="310" y="750" name="center"/>
+  <anchor x="397" y="750" name="center"/>
   <outline>
     <contour>
       <point x="-59" y="0" type="line"/>
@@ -22,10 +22,16 @@
       <point x="430" y="754" type="line"/>
       <point x="311" y="135" type="line"/>
       <point x="342" y="108" type="line"/>
-      <point x="360" y="108" type="line"/>
-      <point x="519" y="341" type="line"/>
-      <point x="630" y="341" type="line"/>
-      <point x="481" y="0" type="line"/>
+      <point x="460" y="108" type="line"/>
+      <point x="619" y="341" type="line"/>
+      <point x="730" y="341" type="line"/>
+      <point x="581" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.34888</string>
+    </dict>
+  </lib>
 </glyph>

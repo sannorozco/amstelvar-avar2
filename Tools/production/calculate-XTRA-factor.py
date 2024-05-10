@@ -23,7 +23,7 @@ assert g is not None
 
 i = 0
 
-srcFont  = AllFonts().getFontsByStyleName('wght400')[0] # OpenFont(defaultPath, showInterface=False)
+srcFont  = OpenFont(defaultPath, showInterface=False) # AllFonts().getFontsByStyleName('wght400')[0] # 
 dstFont  = CurrentFont()
 srcGlyph = 'H'
 dstGlyph = g.name

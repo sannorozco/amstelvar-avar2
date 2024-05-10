@@ -11,14 +11,18 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = [
-    'K',
-]
-dstFonts = [
-    'XSVU124',
-    'YSVU224',
-]
+glyphNames = 'caroncomb-stack.case Yi yu ghestroke ustraightstroke hastroke-cy yu.bgr yumacron kaisymbol'.split()
 
+dstFonts = [
+'YTAS642', 'YTAS852', 
+'YTDE-54', 'YTDE-264', 
+'YTFI281', 'YTFI895', 
+'YTLC436', 'YTLC594', 
+'YTUC541', 'YTUC875', 
+'YTTL0', 'YTTL104', 
+'YTOS-4', 'YTOS25', 
+]
+    
 preflight = False
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
@@ -35,6 +39,9 @@ for ufoPath in ufoPaths:
 
         print(f'copying glyphs to {ufoPath}...')
         for glyphName in glyphNames:
+            if glyphName not in sourceFont:
+                print(f'\tERROR: {glyphName} not in source font')
+                continue
             print(f'\tcopying {glyphName}...')
             if not preflight:
                 dstFont.insertGlyph(sourceFont[glyphName], name=glyphName)
