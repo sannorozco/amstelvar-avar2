@@ -22,7 +22,7 @@ for ufoPath in ufoPaths:
     if ufoPath == defaultPath:
         continue
     font = OpenFont(ufoPath, showInterface=False)
-    print(f'setting glyph order in {ufoPath}…')
+    print(f'setting glyph order in {os.path.split(ufoPath)[-1]}…')
     font.templateGlyphOrder = glyphOrder
     font.save()
-    # font.close()
+    font.close()
