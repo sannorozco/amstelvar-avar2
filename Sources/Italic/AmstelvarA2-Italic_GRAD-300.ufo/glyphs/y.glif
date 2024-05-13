@@ -2,6 +2,8 @@
 <glyph name="y" format="2">
   <advance width="989"/>
   <unicode hex="0079"/>
+  <anchor x="782.0" y="0" name="bottom"/>
+  <anchor x="504.0" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="-331" y="-415" type="line"/>
@@ -20,19 +22,22 @@
       <point x="209" y="1001" type="line"/>
       <point x="237" y="1001" type="line"/>
       <point x="260" y="890" type="line"/>
-      <point x="389" y="74" type="line"/>
-      <point x="571" y="301"/>
-      <point x="753" y="637"/>
+      <point x="372" y="183" type="line"/>
+      <point x="384" y="74" type="line"/>
+      <point x="394" y="74" type="line"/>
+      <point x="473" y="181" type="line"/>
+      <point x="611" y="367"/>
+      <point x="753" y="649"/>
       <point x="753" y="739" type="qcurve" smooth="yes"/>
       <point x="753" y="790"/>
       <point x="684" y="902"/>
       <point x="684" y="934" type="qcurve" smooth="yes"/>
       <point x="684" y="971"/>
       <point x="713" y="1012"/>
-      <point x="743" y="1012.0" type="qcurve" smooth="yes"/>
+      <point x="743" y="1012" type="qcurve" smooth="yes"/>
       <point x="782" y="1012"/>
       <point x="847" y="934"/>
-      <point x="847.0" y="857" type="qcurve" smooth="yes"/>
+      <point x="847" y="857" type="qcurve" smooth="yes"/>
       <point x="847" y="707"/>
       <point x="661" y="306"/>
       <point x="394" y="-27" type="qcurve" smooth="yes"/>
@@ -46,6 +51,8 @@
     <dict>
       <key>com.typemytype.robofont.guideline.magnetic.f21M5Ywg8X</key>
       <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>

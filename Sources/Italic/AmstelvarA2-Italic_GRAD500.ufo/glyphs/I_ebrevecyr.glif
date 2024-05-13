@@ -2,9 +2,14 @@
 <glyph name="Iebrevecyr" format="2">
   <advance width="1182"/>
   <unicode hex="04D6"/>
-  <guideline x="631" y="1168" angle="90" identifier="QuiI5bs4hd"/>
   <outline>
-    <component base="Ie"/>
-    <component base="breve.cyr.case" xOffset="23"/>
+    <component base="E"/>
+    <component base="breve.cyrcomb.case" xOffset="496.99999999996135"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>

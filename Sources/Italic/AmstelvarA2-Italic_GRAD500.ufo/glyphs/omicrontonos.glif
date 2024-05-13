@@ -3,7 +3,13 @@
   <advance width="1050"/>
   <unicode hex="03CC"/>
   <outline>
-    <component base="omicron"/>
-    <component base="tonoscomb" xOffset="60"/>
+    <component base="o"/>
+    <component base="tonoscomb" xOffset="389.9999999999094"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>

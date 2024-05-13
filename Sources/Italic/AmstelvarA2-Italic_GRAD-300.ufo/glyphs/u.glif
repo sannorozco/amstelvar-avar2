@@ -3,6 +3,10 @@
   <advance width="1171"/>
   <unicode hex="0075"/>
   <guideline x="670" y="1000" angle="79" identifier="qLVYXgNDL4"/>
+  <anchor x="404.0" y="0" name="bottom"/>
+  <anchor x="871" y="20" name="ogonek"/>
+  <anchor x="572.0" y="1000" name="top"/>
+  <anchor x="915" y="1000" name="topright"/>
   <outline>
     <contour>
       <point x="771" y="-15" type="line"/>
@@ -44,6 +48,8 @@
     <dict>
       <key>com.typemytype.robofont.guideline.magnetic.qLVYXgNDL4</key>
       <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>

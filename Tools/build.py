@@ -83,8 +83,8 @@ class AmstelvarA2DesignSpaceBuilder:
     @property
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
+        L['GRAD'] = 0
         if self.subFamilyName != 'Italic':
-            L['GRAD'] = 0
             L['BARS'] = 100
         return L
 
@@ -155,14 +155,13 @@ class AmstelvarA2DesignSpaceBuilder:
     def addParametricAxes(self):
 
         # add custom parametric axes
-        if self.subFamilyName != 'Italic':
-            a = AxisDescriptor()
-            a.name    = 'GRAD'
-            a.tag     = 'GRAD'
-            a.minimum = -300
-            a.maximum = 500
-            a.default = 0
-            self.designspace.addAxis(a)
+        a = AxisDescriptor()
+        a.name    = 'GRAD'
+        a.tag     = 'GRAD'
+        a.minimum = -300
+        a.maximum = 500
+        a.default = 0
+        self.designspace.addAxis(a)
 
         # add parametric axes
         for name in self.parametricAxes:
@@ -207,18 +206,18 @@ class AmstelvarA2DesignSpaceBuilder:
     def addParametricSources(self):
 
         # add custom parametric sources
-        if self.subFamilyName != 'Italic':
-            axis = 'GRAD'
-            for value in [-300, 500]:
-                src = SourceDescriptor()
-                src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-                src.familyName = self.familyName
-                src.styleName  = f'{axis}{value}'
-                L = self.defaultLocation.copy()
-                L[axis] = value
-                src.location = L
-                self.designspace.addSource(src)
+        axis = 'GRAD'
+        for value in [-300, 500]:
+            src = SourceDescriptor()
+            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+            src.familyName = self.familyName
+            src.styleName  = f'{axis}{value}'
+            L = self.defaultLocation.copy()
+            L[axis] = value
+            src.location = L
+            self.designspace.addSource(src)
 
+        if self.subFamilyName != 'Italic':
             axis  = 'BARS'
             value = 0
             src = SourceDescriptor()
@@ -664,7 +663,7 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
-    D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()

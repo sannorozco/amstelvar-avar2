@@ -2,9 +2,12 @@
 <glyph name="acircumflexgrave" format="2">
   <advance width="1045"/>
   <unicode hex="1EA7"/>
+  <note>
+@topleft
+</note>
   <outline>
     <component base="a"/>
-    <component base="circumflexcomb" xOffset="23" yOffset="35"/>
-    <component base="gravecomb" xOffset="-310.4961015518" yOffset="319"/>
+    <component base="circumflexcomb-stack" xOffset="499.9999999999119" yOffset="-53"/>
+    <component base="gravecomb-stack" xOffset="919.000000000015" yOffset="215"/>
   </outline>
 </glyph>

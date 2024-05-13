@@ -2,6 +2,9 @@
 <glyph name="a" format="2">
   <advance width="1045"/>
   <unicode hex="0061"/>
+  <anchor x="345.0" y="0" name="bottom"/>
+  <anchor x="732" y="0" name="ogonek"/>
+  <anchor x="608.0" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="4" y="248" type="qcurve" smooth="yes"/>
@@ -49,6 +52,8 @@
     <dict>
       <key>com.typemytype.robofont.guideline.magnetic.aElvfKe6lu</key>
       <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0,0.98107,0.57369,0.5</string>
     </dict>
   </lib>
 </glyph>

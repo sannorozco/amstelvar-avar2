@@ -2,6 +2,13 @@
 <glyph name="ghe.locl" format="2">
   <advance width="618"/>
   <outline>
-    <component base="imacron"/>
+    <component base="idotless"/>
+    <component base="macroncomb" xOffset="205"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>
