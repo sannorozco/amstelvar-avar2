@@ -1,0 +1,41 @@
+# menuTitle: copy default glyphs to other sources
+
+import os, glob
+
+familyName    = 'AmstelvarA2'
+subFamilyName = ['Roman', 'Italic'][1]
+sourceName    = 'wght400'
+baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
+sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sourceName}.ufo')
+
+assert os.path.exists(sourcePath)
+
+dstFonts = []
+    
+preflight = False
+
+sourceFont = OpenFont(sourcePath, showInterface=False)
+ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
+
+for ufoPath in ufoPaths:
+    if ufoPath == sourcePath:
+        continue
+
+    name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
+    if name in dstFonts or not dstFonts:
+        dstFont = OpenFont(ufoPath, showInterface=False)
+
+        print(f'copying unicodes to {ufoPath}...')
+        for glyphName in sourceFont.glyphOrder:
+            if glyphName not in sourceFont or glyphName not in dstFont:
+                continue
+            if not preflight:
+                dstFont[glyphName].unicodes = sourceFont[glyphName].unicodes
+
+        if not preflight:
+            print(f'\tsaving font...')
+            dstFont.save()
+
+        # dstFont.close()
+        print()

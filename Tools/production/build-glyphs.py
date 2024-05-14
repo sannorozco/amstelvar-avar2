@@ -14,29 +14,32 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-# glyphs to (re)build
-glyphNames = ['edieresis', 'aring', 'ocircumflex', 'odieresis', 'ucircumflex', 'udieresis']
+glyphNames = 'Kje yi Yumacron yumacron Acircumflexhookabove Abrevehookabove Ecircumflexhookabove Ocircumflexhookabove'.split()
 
-# get all sources
-targetStyles = [os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1] for f in glob.glob(f'{sourcesFolder}/*.ufo')]
+dstFonts = ' YTDE-264 YTDE-54 YTOS25 YTOS-4'.split()
+    
+ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
 # get glyph constructions
 with open(glyphConstructionPath, 'r') as f:
     glyphConstructions = f.read()
 
-verbose = False
+verbose = True
 
-for styleName in targetStyles:
-    dstPath = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{styleName}.ufo')
-    if not os.path.exists(dstPath):
-        print(f'target font {dstPath} does not exist.\n')
-    dstFont = OpenFont(dstPath, showInterface=False)
+for ufoPath in ufoPaths:
+    # if ufoPath == sourcePath:
+    #     continue
 
-    print(f'building glyphs in {dstPath}...')
-    buildAccentedGlyphs(dstFont, glyphNames, glyphConstructions, clear=True, verbose=verbose, autoUnicodes=False, indentLevel=1)
+    name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
+    if name in dstFonts or not dstFonts:
 
-    print(f'\tsaving font...')
-    dstFont.save()
-    # dstFont.close()
-    print()
+        dstFont = OpenFont(ufoPath, showInterface=False)
+
+        print(f'building glyphs in {os.path.split(ufoPath)[-1]}...')
+        buildAccentedGlyphs(dstFont, glyphNames, glyphConstructions, clear=True, verbose=verbose, autoUnicodes=False, indentLevel=1)
+        print(f'\tsaving font...')
+        dstFont.save()
+        # dstFont.close()
+
+        print()
 

@@ -2,6 +2,12 @@
 <glyph name="periodcentered.loclCAT.case" format="2">
   <advance width="584"/>
   <outline>
-    <component base="periodcentered" xOffset="40" yOffset="80"/>
+    <component base="periodcentered"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>

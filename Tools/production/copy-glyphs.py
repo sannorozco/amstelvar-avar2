@@ -11,17 +11,9 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = 'caroncomb-stack.case Yi yu ghestroke ustraightstroke hastroke-cy yu.bgr yumacron kaisymbol'.split()
+glyphNames = ['e'] # 'yi-dieresiscomb hookabovecomb-stack.case'.split()
 
-dstFonts = [
-'YTAS642', 'YTAS852', 
-'YTDE-54', 'YTDE-264', 
-'YTFI281', 'YTFI895', 
-'YTLC436', 'YTLC594', 
-'YTUC541', 'YTUC875', 
-'YTTL0', 'YTTL104', 
-'YTOS-4', 'YTOS25', 
-]
+dstFonts = 'XUCS114 XUCS259'.split()
     
 preflight = False
 

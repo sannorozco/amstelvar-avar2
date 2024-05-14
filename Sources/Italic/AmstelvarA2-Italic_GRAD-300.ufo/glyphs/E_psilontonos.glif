@@ -1,9 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Epsilontonos" format="2">
-  <advance width="1767"/>
+  <advance width="1764"/>
   <unicode hex="0388"/>
+  <note>
+50,E
+</note>
   <outline>
-    <component base="Epsilon" xOffset="585"/>
-    <component base="tonos.case" xOffset="-214" yOffset="-16"/>
+    <component base="E" xOffset="582.0000000000007"/>
+    <component base="tonoscomb.case" xOffset="300.99999999999994"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>

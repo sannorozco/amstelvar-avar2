@@ -1,4 +1,6 @@
-# menuTitle: include external features in parametric sources
+# menuTitle: set features in all parametric sources
+
+# >> include external features from file
 
 import os, glob
 

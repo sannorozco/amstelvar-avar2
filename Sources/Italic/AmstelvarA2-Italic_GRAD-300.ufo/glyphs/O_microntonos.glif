@@ -2,8 +2,17 @@
 <glyph name="Omicrontonos" format="2">
   <advance width="1911"/>
   <unicode hex="038C"/>
+  <note>
+10,O
+</note>
   <outline>
-    <component base="Omicron" xOffset="383"/>
-    <component base="tonos.case" xOffset="-217" yOffset="-22"/>
+    <component base="O" xOffset="382.9999999999941"/>
+    <component base="tonoscomb.case" xOffset="301"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>

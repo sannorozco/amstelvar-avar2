@@ -2,9 +2,14 @@
 <glyph name="amacroncyr" format="2">
   <advance width="1045"/>
   <unicode hex="F50F"/>
-  <guideline x="676" y="1163" angle="79" identifier="fnsz0qwTar"/>
   <outline>
     <component base="a"/>
-    <component base="macron" xOffset="38"/>
+    <component base="macroncomb" xOffset="510.9999999999168"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>

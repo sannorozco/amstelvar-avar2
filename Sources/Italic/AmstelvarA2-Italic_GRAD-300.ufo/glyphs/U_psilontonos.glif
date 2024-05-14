@@ -1,9 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Upsilontonos" format="2">
-  <advance width="1784"/>
+  <advance width="1838"/>
   <unicode hex="038E"/>
+  <note>
+10,Y
+</note>
   <outline>
-    <component base="Upsilon" xOffset="635"/>
-    <component base="tonos.case" xOffset="-211" yOffset="-23"/>
+    <component base="Y" xOffset="635.9999999999957"/>
+    <component base="tonoscomb.case" xOffset="300.99999999999994"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>

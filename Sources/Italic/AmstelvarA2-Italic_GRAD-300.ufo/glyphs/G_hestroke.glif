@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ghestroke" format="2">
-  <advance width="1069"/>
+  <advance width="1033"/>
   <unicode hex="0492"/>
   <outline>
-    <component base="Ghe" xOffset="23"/>
-    <component base="horizontalbar" xOffset="26" yOffset="41"/>
+    <component base="Gamma"/>
+    <component base="horizontalbar" xOffset="128.50000000002848" yOffset="31.5"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.6,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>
