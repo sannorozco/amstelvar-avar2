@@ -2222,6 +2222,10 @@
         "name": "YOUC",
         "direction": "a"
       },
+      "4 11": {
+        "name": "XTUC",
+        "direction": "x"
+      },
       "19 1": {
         "name": "YTUC",
         "direction": "y"
@@ -2859,6 +2863,14 @@
         "direction": "x"
       },
       "26 20": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "28 36": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "34 7": {
         "name": "XTLC",
         "direction": "x"
       },
@@ -3664,6 +3676,10 @@
         "name": "XOLC",
         "direction": "a"
       },
+      "6 25": {
+        "name": "XTLC",
+        "direction": "x"
+      },
       "0 31": {
         "name": "YTLC",
         "direction": "y"
@@ -3878,11 +3894,7 @@
         "name": "YOLC",
         "direction": "a"
       },
-      "9 7": {
-        "name": "XTLC",
-        "direction": "x"
-      },
-      "20 22": {
+      "9 22": {
         "name": "XTLC",
         "direction": "x"
       },
@@ -7324,51 +7336,55 @@
       }
     },
     "thorn": {
-      "2 23": {
+      "1 37": {
+        "name": "XOLC",
+        "direction": "a"
+      },
+      "30 13": {
         "name": "XOLC",
         "direction": "x"
       },
-      "32 16": {
-        "name": "XOLC",
+      "33 10": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "16 27": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "36 30": {
+        "name": "XTLC",
         "direction": "x"
       },
-      "O 7": {
+      "O 5": {
         "name": "YTAS",
         "direction": "y"
       },
-      "0 O": {
+      "O 23": {
         "name": "YTDE",
         "direction": "y"
       },
-      "1 2": {
+      "20 21": {
         "name": "XSHL",
         "direction": "x"
       },
-      "23 24": {
+      "3 2": {
         "name": "XSHL",
         "direction": "x"
       },
-      "5 4": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "5 6": {
+      "3 4": {
         "name": "YSHL",
         "direction": "y"
       },
-      "0 1": {
+      "22 21": {
         "name": "YSHL",
         "direction": "y"
       },
-      "24 25": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "O 19": {
+      "O 16": {
         "name": "YTOS",
         "direction": "y"
       },
-      "X 13": {
+      "X 10": {
         "name": "YTOS",
         "direction": "y"
       }
