@@ -12,7 +12,7 @@ def checkGlyph(g1, g2):
         'unicodes'       : validateUnicodes(g1, g2),
     }
 
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 defaultPath   = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}_wght400.ufo')
@@ -24,11 +24,11 @@ ufoPaths.remove(defaultPath)
 
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
-
 ufoPaths.insert(0, defaultPath)
 
 glyphNames = defaultFont.glyphOrder
 
+savePDF = True
 
 for ufoPath in ufoPaths:
 
@@ -38,7 +38,6 @@ for ufoPath in ufoPaths:
 
     m = 25, 10, 10, 10
     stepsX, stepsY = 41, 26
-    # print(stepsX*stepsY)
 
     colorContours   = 0,
     colorComponents = 0.65,
@@ -48,12 +47,12 @@ for ufoPath in ufoPaths:
 
     font('Menlo-Bold')
 
-    fontSize(9)
+    fontSize(8)
     text(f'AmstelvarA2 {subFamilyName}', (m[3], height()-m[0]*0.66), align='left')
     text(f'{currentFont.info.styleName}', (width()/2, height()-m[0]*0.66), align='center')
     text(now, (width()-m[1], height()-m[0]*0.66), align='right')
 
-    stroke(0.85)
+    stroke(0.75)
     strokeWidth(0.5)
     fill(None)
     fontSize(6)
@@ -69,11 +68,13 @@ for ufoPath in ufoPaths:
             if n > len(glyphNames)-1:
                 break
 
-            rect(x, y, stepX, stepY)
-
             glyphName = glyphNames[n]
             defaultGlyph = defaultFont[glyphName]
             if glyphName not in currentFont:
+                # draw empty cell
+                rect(x, y, stepX, stepY)
+                line((x, y), (x + stepX, y + stepY))
+                line((x, y + stepY), (x + stepX, y))
                 n += 1
                 continue
 
@@ -86,6 +87,16 @@ for ufoPath in ufoPaths:
                 W = R-L
                 _x = x + (stepX - W * s) / 2
                 _y = y + stepY * 0.3
+
+                rect(x, y, stepX, stepY)
+                # draw margins
+                with savedState():
+                    stroke(None)
+                    fill(0.93)
+                    rect(x, y, _x - x - currentGlyph.leftMargin*s, stepY)
+                    rect(x + stepX, y, -_x + x + currentGlyph.rightMargin*s, stepY)
+
+                # draw contours / components
                 with savedState():
                     stroke(None)
                     if currentGlyph.components and not currentGlyph.contours:
@@ -96,29 +107,35 @@ for ufoPath in ufoPaths:
                     translate(_x, _y)
                     scale(s)
                     drawGlyph(currentGlyph)
+
             else:
+                # draw empty cell
+                rect(x, y, stepX, stepY)
                 print(f'no bounds for {glyphName}')
 
-            with savedState():
-                stroke(None)
-                translate(x, y)
-                font('Menlo-Bold')
-                fontSize(3.5)
-                for check in results.keys():
-                    if check == 'pointPositions':
-                        continue
-                    if results[check]:
-                        fill(0, 1, 0)
-                        if check == 'points' and results['pointPositions']:
-                            fill(0, 0, 1)
-                    else:
-                        fill(1, 0, 0)
-                    label = check[0].upper()
-                    text(label, (1, 1))
-                    w, h = textSize(label)
-                    translate(w+0.5, 0)
+            if ufoPath != defaultPath:
+                with savedState():
+                    stroke(None)
+                    translate(x, y)
+                    font('Menlo-Bold')
+                    fontSize(3.5)
+                    for check in results.keys():
+                        if check == 'pointPositions':
+                            continue
+                        if results[check]:
+                            fill(0, 1, 0)
+                            if check == 'points' and results['pointPositions']:
+                                fill(0, 0, 1)
+                        else:
+                            fill(1, 0, 0)
+                        label = check[0].upper()
+                        text(label, (1, 1))
+                        w, h = textSize(label)
+                        translate(w + 0.5, 0)
                 
             n += 1
 
-pdfPath = os.path.join(os.getcwd(), f'glyphset_{subFamilyName}.pdf')
-saveImage(pdfPath)
+
+if savePDF:
+    pdfPath = os.path.join(os.getcwd(), f'glyphset_{subFamilyName}.pdf')
+    saveImage(pdfPath)
