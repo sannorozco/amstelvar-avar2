@@ -11,13 +11,15 @@ import os, glob, time
 from variableValues.glyphSetProofer import GlyphSetProofer
 
 familyName      = 'AmstelvarA2'
-subFamily       = ['Roman', 'Italic'][1]
+subFamily       = ['Roman', 'Italic'][0]
 proofsFolder    = os.path.dirname(os.getcwd())
 baseFolder      = os.path.dirname(proofsFolder)
 sourcesFolder   = os.path.join(baseFolder, 'Sources', subFamily)
 defaultFontPath = os.path.join(sourcesFolder, f'{familyName}-{subFamily}_wght400.ufo')
 sourcePaths     = sorted(glob.glob(f'{sourcesFolder}/*.ufo'))
 sourcePaths.remove(defaultFontPath)
+
+# sourcePaths = sourcePaths[7:9]
 
 start = time.time()
 
