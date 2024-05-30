@@ -9,7 +9,7 @@ import ufoProcessor # upgrade to UFOOperator
 from variableValues.measurements import FontMeasurements, permille
 
 
-SUBFAMILY = ['Roman', 'Italic'][0]
+SUBFAMILY = ['Roman', 'Italic'][1]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -84,8 +84,7 @@ class AmstelvarA2DesignSpaceBuilder:
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
-        if self.subFamilyName != 'Italic':
-            L['BARS'] = 100
+        L['BARS'] = 100
         return L
 
     @property
@@ -185,15 +184,13 @@ class AmstelvarA2DesignSpaceBuilder:
             self.designspace.addAxis(a)
 
         # add custom BARS axis
-        if self.subFamilyName != 'Italic':
-            a = AxisDescriptor()
-            a.name    = 'BARS'
-            a.tag     = 'BARS'
-            a.minimum = 0
-            a.maximum = 100
-            a.default = 100
-            # a.map     = [(50, 0), (51, 100)]
-            self.designspace.addAxis(a)
+        a = AxisDescriptor()
+        a.name    = 'BARS'
+        a.tag     = 'BARS'
+        a.minimum = 0
+        a.maximum = 100
+        a.default = 100
+        self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
@@ -217,17 +214,16 @@ class AmstelvarA2DesignSpaceBuilder:
             src.location = L
             self.designspace.addSource(src)
 
-        if self.subFamilyName != 'Italic':
-            axis  = 'BARS'
-            value = 0
-            src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = self.familyName
-            src.styleName  = f'{axis}{value}'
-            L = self.defaultLocation.copy()
-            L[axis] = value
-            src.location = L
-            self.designspace.addSource(src)
+        axis  = 'BARS'
+        value = 0
+        src = SourceDescriptor()
+        src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+        src.familyName = self.familyName
+        src.styleName  = f'{axis}{value}'
+        L = self.defaultLocation.copy()
+        L[axis] = value
+        src.location = L
+        self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:
