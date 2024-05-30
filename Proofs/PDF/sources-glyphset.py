@@ -19,13 +19,11 @@ defaultFontPath = os.path.join(sourcesFolder, f'{familyName}-{subFamily}_wght400
 sourcePaths     = sorted(glob.glob(f'{sourcesFolder}/*.ufo'))
 sourcePaths.remove(defaultFontPath)
 
-# print(defaultFontPath)
-# print(len(sourcePaths))
-
 start = time.time()
 
-P = GlyphSetProofer(familyName, defaultFontPath, sourcePaths)
+P = GlyphSetProofer(f'{familyName} {subFamily}', defaultFontPath, sourcePaths)
 P.build(savePDF=True)
 
 end = time.time()
-print(f'total build time: {end - start / 60} minutes\n')
+
+print(f'total build time: {end - start:.2f} seconds\n')
