@@ -3,7 +3,7 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 sourceName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
@@ -11,12 +11,13 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = 'I Soft'.split()
-# glyphNames = 'yu-i Cy-descendercomb.case cy-descendercomb Obarcyr-stroke U-stroke Ha-stroke obarcyr-stroke'.split()
-# glyphNames += 'Ustraightstroke Hastroke-cy H I O T Soft Zhe Ka Che Sha Shcha Yu Zhedescender Kadescender Endescender Tedescender-cy Hadescender Chedescender-cy Obarcyr Yumacron Yu-dash.case yu.bgr-stroke'.split() # H Y X 
-# glyphNames += 'l o u obarcyr hastroke-cy tse.bgr sha.bgr shcha.bgr yumacron zhe ka en te che sha shcha yeru soft yu zhedescender kadescender endescender tedescender-cy hadescender chedescender-cy'.split() # x 
+# glyphNames = "zero one two three four five six seven eight nine".split()
+# glyphNames = "dollar cent sterling yen twosuperior threesuperior onesuperior Euro franc lira naira peseta won dong rupeeIndian liraTurkish manat ruble kip peso cedi colonsign guarani florin hryvnia tenge dollar.rvrn cent.rvrn naira.rvrn won.rvrn kip.rvrn peso.rvrn cedi.rvrn colonsign.rvrn dollar.rvrn2 guarani.rvrn zero.lc one.lc two.lc three.lc four.lc five.lc six.lc seven.lc eight.lc nine.lc zero.tab one.tab two.tab three.tab four.tab five.tab six.tab seven.tab eight.tab nine.tab zerosuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior".split()
+# # glyphNames += 'k t y germandbls'.split()
+glyphNames = 'horizontalbar leftanglebracket rightanglebracket periodcentered.loclCAT diagonalbarO horizontalbarH horizontalbarlc'.split()
+glyphNames += 'ampersand registered notequal currency breveinvertedcomb-stack endash yi-dieresis'.split()
 
-dstFonts = 'XTTW0 XTTW30'.split()
+dstFonts = 'XTRA650 XTRA63'.split()
     
 preflight = False
 
