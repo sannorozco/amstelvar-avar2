@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="tau" format="2">
-  <advance width="689"/>
+  <advance width="701"/>
   <unicode hex="03C4"/>
   <outline>
     <contour>
@@ -23,4 +23,10 @@
       <point x="438" y="72" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>
