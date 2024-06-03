@@ -1,20 +1,48 @@
 XTRA
 ====
 
+description
+: General x transparent
+
+default
+: 400
+
+minimum
+: 73
+
+maximum
+: 668
+
+
 Variation
 ---------
 
 ### Glyphs
 
-all glyphs with exceptions:
+rule:
+
+- all glyphs
+
+exceptions:
 
 - thin (single stroke) glyphs: i l I etc.
 - dots, bars, etc: .,:;!
 
+### Shape
+
+- not all glyphs scale at the same proportion
+
+examples:
+
+- ...
+
 ### Widths
 
 - character widths change with glyph shape
-- rule: sidebearings same as default
+
+rule:
+
+- sidebearings same as default
 
 ## Anchors
 
@@ -24,13 +52,14 @@ all glyphs with exceptions:
 Workflow
 --------
 
+### GF
+
 - use script to calculate new XTRA value based on H
-- ...
+- scale...
 
 
-Notes
------
+Issues
+------
 
-- some glyphs scale different than others
-- in practice: adjust values for special cases
+...
 

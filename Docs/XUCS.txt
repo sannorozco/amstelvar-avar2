@@ -1,13 +1,32 @@
 XUCS
 ====
 
+description
+: X sidebearing uppercase H
+
+default
+: 145
+
+minimum
+: 32
+
+maximum
+: 205
+
 
 Variation
 ---------
 
 ### Glyphs
 
-- all glyphs except `space`
+rule:
+
+- all glyphs
+
+exceptions:
+
+- `space`
+
 
 ### Widths
 
@@ -29,7 +48,12 @@ Workflow
 - test effect on width and optical size axes
 
 
-Notes
------
+Issues
+------
 
-...
+### Ligatures
+
+- should ligatures and digraphs retain the internal whitespace of default?
+- or should their internal whitespace also be variable with XUCS
+
+

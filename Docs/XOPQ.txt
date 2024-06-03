@@ -1,42 +1,74 @@
 XOPQ
 ====
 
+description
+: General x opaque
+
+default
+: 90
+
+minimum
+: 4
+
+maximum
+: 310
+
 
 Variation
 ---------
 
 ### Glyphs
 
+rule:
+
 - all glyphs with a thick stroke
 
-### Widths
+exceptions:
 
-- rule: sidebearings same as default
-- (exceptions?)
+- ?
 
 ### Shape
 
 - internal whitespace (XTRA) does not change in closed glyphs
 - in open glyphs, internal whitespace is adjusted to harmonize with widths of closed glyphs
 
+### Widths
+
+- rule: sidebearings same as default
+- (exceptions?)
+
 ### Anchors
 
 - some anchors are positioned proportionally (center stroke, ogonek)
 - some anchors remain attached to contour points (cyrillic descender)
 
+### Sub-axes
+
+- `XOLC
+- `XOUC
+- `XOFI
+
 
 Workflow
 --------
 
-- shift points until measurement snaps
+### GF
+
+- select and shift points until measurement value matches target min/max
 - import default in the background
 - isolate parts of contour and scale to match foreground
 - reposition foreground points based on scaled curve in the background 
 
 
-Notes
------
+Issues
+------
+
+### Width compensation
+
+- glyphs with 
+
 
 ### Tapering
 
-- keep tapering in XTRA min? (currently inconsistent)
+- remove tapering in XTRA min? (currently inconsistent)
+

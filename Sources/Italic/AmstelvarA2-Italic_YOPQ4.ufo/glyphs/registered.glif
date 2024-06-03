@@ -47,9 +47,9 @@
       <point x="1214" y="664"/>
       <point x="1088" y="664" type="qcurve" smooth="yes"/>
       <point x="1037" y="664"/>
-      <point x="897" y="673"/>
-      <point x="873" y="673" type="qcurve"/>
-      <point x="873" y="758" type="line"/>
+      <point x="851" y="673"/>
+      <point x="827" y="673" type="qcurve"/>
+      <point x="827" y="758" type="line"/>
       <point x="1030" y="758" type="line" smooth="yes"/>
       <point x="1149" y="758"/>
       <point x="1233" y="868"/>
@@ -65,10 +65,10 @@
       <point x="1040" y="176" type="line"/>
     </contour>
     <contour>
-      <point x="991" y="710" type="line"/>
-      <point x="1142" y="738" type="line"/>
+      <point x="988" y="714" type="line"/>
+      <point x="1153" y="720" type="line"/>
       <point x="1392" y="393" type="line" smooth="yes"/>
-      <point x="1463" y="295"/>
+      <point x="1464" y="295"/>
       <point x="1558" y="266"/>
       <point x="1600" y="266" type="qcurve"/>
       <point x="1600" y="176" type="line"/>
@@ -76,4 +76,10 @@
       <point x="1367" y="190" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,1,0.65,0.35</string>
+    </dict>
+  </lib>
 </glyph>
