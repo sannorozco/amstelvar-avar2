@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="yu-l.bgr" format="2">
   <advance width="460"/>
+  <anchor x="193" y="498" name="yu_dash"/>
   <outline>
     <contour>
       <point x="56" y="-23" type="line"/>
@@ -16,10 +17,4 @@
       <point x="230" y="0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dblgravecomb.case" format="2">
-  <advance width="500"/>
+  <anchor x="98.0" y="1500" name="_top"/>
+  <anchor x="194.0" y="1994" name="top"/>
   <outline>
     <contour>
       <point x="-310.0" y="1928.0" type="qcurve" smooth="yes"/>
@@ -31,10 +32,4 @@
       <point x="80.0" y="1892.0"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>

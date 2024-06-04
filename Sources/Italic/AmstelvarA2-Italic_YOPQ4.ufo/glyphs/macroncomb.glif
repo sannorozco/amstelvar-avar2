@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="macroncomb" format="2">
-  <advance width="500"/>
   <unicode hex="0304"/>
+  <anchor x="0.0" y="1000" name="_top"/>
+  <anchor x="55.0" y="1281.0" name="top"/>
   <outline>
     <contour>
       <point x="-245.0" y="1182.0" type="line"/>
@@ -10,10 +11,4 @@
       <point x="307.0" y="1182.0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>

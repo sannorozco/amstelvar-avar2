@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="caroncomb-stack" format="2">
-  <advance width="500"/>
+  <anchor x="0" y="1052" name="_top"/>
+  <anchor x="0" y="1528" name="top"/>
   <outline>
     <contour>
       <point x="128" y="1112" type="qcurve" smooth="yes"/>
       <point x="94" y="1112"/>
       <point x="56" y="1143"/>
-      <point x="34" y="1185" type="qcurve"/>
+      <point x="34" y="1185" type="qcurve" smooth="yes"/>
       <point x="-118" y="1428" type="line"/>
       <point x="-37" y="1501" type="line"/>
       <point x="153" y="1286" type="line"/>
@@ -17,10 +18,4 @@
       <point x="162" y="1112"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>

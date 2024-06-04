@@ -2,6 +2,7 @@
 <glyph name="en" format="2">
   <advance width="1165"/>
   <unicode hex="043D"/>
+  <anchor x="1007" y="134" name="cy_descender"/>
   <outline>
     <contour>
       <point x="34" y="56" type="line"/>
@@ -39,10 +40,4 @@
       <point x="198" y="441" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>

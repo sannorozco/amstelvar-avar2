@@ -2,6 +2,7 @@
 <glyph name="che" format="2">
   <advance width="1123"/>
   <unicode hex="0447"/>
+  <anchor x="960" y="134" name="cy_descender"/>
   <outline>
     <contour>
       <point x="117" y="586" type="qcurve" smooth="yes"/>
@@ -39,10 +40,4 @@
       <point x="937" y="47" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>

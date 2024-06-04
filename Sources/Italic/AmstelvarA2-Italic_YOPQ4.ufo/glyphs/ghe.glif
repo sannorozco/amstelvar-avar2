@@ -2,6 +2,8 @@
 <glyph name="ghe" format="2">
   <advance width="888"/>
   <unicode hex="0433"/>
+  <anchor x="546.0" y="1000" name="top"/>
+  <anchor x="422" y="533" name="center"/>
   <outline>
     <contour>
       <point x="480" y="891" type="qcurve" smooth="yes"/>
@@ -46,10 +48,4 @@
       <point x="539" y="891"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,1,0.65,0.35</string>
-    </dict>
-  </lib>
 </glyph>
