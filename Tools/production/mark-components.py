@@ -46,7 +46,10 @@ for g in f:
             g.markColor = colorComponents
     else:
         if results['points'] and results['pointPositions']:
-            g.markColor = colorDefault
+            if f.path != defaultFont.path:
+                g.markColor = colorDefault
+            else:
+                g.markColor = None
 
 f.changed()
 
