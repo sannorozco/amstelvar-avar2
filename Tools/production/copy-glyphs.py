@@ -11,9 +11,13 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = ['e'] # 'yi-dieresiscomb hookabovecomb-stack.case'.split()
+# glyphNames = "zero one two three four five six seven eight nine".split()
+# glyphNames = "dollar cent sterling yen twosuperior threesuperior onesuperior Euro franc lira naira peseta won dong rupeeIndian liraTurkish manat ruble kip peso cedi colonsign guarani florin hryvnia tenge dollar.rvrn cent.rvrn naira.rvrn won.rvrn kip.rvrn peso.rvrn cedi.rvrn colonsign.rvrn dollar.rvrn2 guarani.rvrn zero.lc one.lc two.lc three.lc four.lc five.lc six.lc seven.lc eight.lc nine.lc zero.tab one.tab two.tab three.tab four.tab five.tab six.tab seven.tab eight.tab nine.tab zerosuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior".split()
+# # glyphNames += 'k t y germandbls'.split()
+glyphNames = 'horizontalbar leftanglebracket rightanglebracket periodcentered.loclCAT diagonalbarO horizontalbarH horizontalbarlc'.split()
+glyphNames += 'ampersand registered notequal currency breveinvertedcomb-stack endash yi-dieresis'.split()
 
-dstFonts = 'XUCS114 XUCS259'.split()
+dstFonts = 'XTRA650 XTRA63'.split()
     
 preflight = False
 
@@ -29,7 +33,7 @@ for ufoPath in ufoPaths:
 
         dstFont = OpenFont(ufoPath, showInterface=False)
 
-        print(f'copying glyphs to {ufoPath}...')
+        print(f'copying glyphs to {os.path.split(ufoPath)[-1]}...')
         for glyphName in glyphNames:
             if glyphName not in sourceFont:
                 print(f'\tERROR: {glyphName} not in source font')
@@ -42,5 +46,5 @@ for ufoPath in ufoPaths:
             print(f'\tsaving font...')
             dstFont.save()
 
-        dstFont.close()
+        # dstFont.close()
         print()
