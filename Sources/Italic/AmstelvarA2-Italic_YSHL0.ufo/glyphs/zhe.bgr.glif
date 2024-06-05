@@ -5,36 +5,36 @@
     <contour>
       <point x="492" y="715" type="line"/>
       <point x="602" y="598" type="line"/>
-      <point x="226" y="115" type="line"/>
-      <point x="177" y="15"/>
-      <point x="126" y="-11"/>
+      <point x="226" y="115" type="line" smooth="yes"/>
+      <point x="158" y="27"/>
+      <point x="117" y="-9"/>
       <point x="88" y="-1" type="qcurve" smooth="yes"/>
       <point x="-83" y="45" type="line"/>
-      <point x="-83" y="133" type="line"/>
-      <point x="41" y="133" type="line"/>
+      <point x="-83" y="45" type="line"/>
+      <point x="-27" y="45" type="line"/>
     </contour>
     <contour>
       <point x="759" y="361" type="line"/>
-      <point x="265" y="867" type="line"/>
-      <point x="114" y="902" type="line"/>
+      <point x="282" y="957" type="line"/>
+      <point x="131" y="992" type="line"/>
       <point x="131" y="992" type="line"/>
       <point x="597" y="992" type="line"/>
-      <point x="580" y="902" type="line"/>
-      <point x="427" y="872" type="line"/>
+      <point x="597" y="992" type="line"/>
+      <point x="444" y="962" type="line"/>
       <point x="776" y="486" type="line"/>
-      <point x="1268" y="872" type="line"/>
-      <point x="1127" y="902" type="line"/>
+      <point x="1305" y="962" type="line" identifier="JY6UqcABNj"/>
+      <point x="1144" y="992" type="line"/>
       <point x="1144" y="992" type="line"/>
       <point x="1590" y="992" type="line"/>
-      <point x="1573" y="902" type="line"/>
-      <point x="1428" y="867" type="line"/>
+      <point x="1590" y="992" type="line"/>
+      <point x="1465" y="957" type="line" identifier="d12jOOmsJy"/>
     </contour>
     <contour>
       <point x="645" y="-23" type="line"/>
       <point x="603" y="56" type="line"/>
       <point x="706" y="527" type="line"/>
-      <point x="864" y="1404" type="line"/>
-      <point x="760" y="1500" type="line"/>
+      <point x="879" y="1488" type="line"/>
+      <point x="788" y="1572" type="line"/>
       <point x="788" y="1572" type="line"/>
       <point x="969" y="1602" type="line"/>
       <point x="1056" y="1532" type="line"/>
@@ -44,8 +44,8 @@
     </contour>
     <contour>
       <point x="1080" y="664" type="line"/>
-      <point x="1394" y="133" type="line"/>
-      <point x="1518" y="133" type="line"/>
+      <point x="1446" y="45" type="line"/>
+      <point x="1518" y="45" type="line"/>
       <point x="1518" y="45" type="line"/>
       <point x="1303" y="-6" type="line" smooth="yes"/>
       <point x="1288" y="-10"/>
@@ -54,4 +54,10 @@
       <point x="955" y="565" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array/>
+    </dict>
+  </lib>
 </glyph>
