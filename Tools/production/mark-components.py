@@ -1,55 +1,78 @@
 # menuTitle: mark different types of glyphs
 
-from variableValues.validation import *
+from importlib import reload
+import variableValues.validation
+reload(variableValues.validation)
 
-def getNestingLevels(g, levels=0):
-    if g.components:
-        levels += 1
-        for c in g.components:
-            if c.baseGlyph not in f:
-                print(f'ERROR in "{g.name}": glyph {c.baseGlyph} not in font')
-                continue
-            baseGlyph = f[c.baseGlyph]
-            levels = getNestingLevels(baseGlyph, levels)
-    return levels
+from variableValues.validation import *
+from variableValues.decomposePointPen import DecomposePointPen
 
 alpha = 0.35
 
-colorComponents = 1, 0.65, 0, alpha
-colorDefault    = 0, 0.65, 1, alpha
-colorWarning    = 1, 0, 0, alpha
+colorComponents      = 1, 0.35, 0, alpha
+colorComponentsEqual = 1, 0.65, 0, alpha
+colorDefault         = 0, 0.65, 1, alpha
+colorWarning         = 1, 0, 0, 0.5
 
-f = CurrentFont()
+currentFont = CurrentFont()
 
-sourcesFolder = os.path.split(f.path)[0]
+sourcesFolder = os.path.split(currentFont.path)[0]
 defaultPath = os.path.join(sourcesFolder, f'AmstelvarA2-Italic_wght400.ufo')
 
 assert os.path.exists(defaultPath)
 
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
-for g in f:
-    g.markColor = None
+for currentGlyph in currentFont:
+    currentGlyph.markColor = None
 
-    if g.name not in defaultFont:
+    if currentGlyph.name not in defaultFont:
         continue
 
-    defaultGlyph = defaultFont[g.name]
+    # decompose glyphs with components
+    if currentGlyph.components:
+        currentGlyph_flat = RGlyph()
+        pointPen = currentGlyph_flat.getPointPen()
+        decomposePen = DecomposePointPen(currentFont, pointPen)
+        currentGlyph.drawPoints(decomposePen)
+        currentGlyph_flat.name    = currentGlyph.name
+        currentGlyph_flat.unicode = currentGlyph.unicode
+        currentGlyph_flat.width   = currentGlyph.width
+    else:
+        currentGlyph_flat = currentGlyph
 
-    results = validateGlyph(defaultGlyph, g)
+    defaultGlyph = defaultFont[currentGlyph.name]
 
-    if g.components:
-        levels = getNestingLevels(g)
-        if levels > 1 or len(g.contours):
-            g.markColor = colorWarning
+    # decompose default glyph with components
+    if defaultGlyph.components:
+        defaultGlyph_flat = RGlyph()
+        pointPen = defaultGlyph_flat.getPointPen()
+        decomposePen = DecomposePointPen(defaultFont, pointPen)
+        defaultGlyph.drawPoints(decomposePen)
+        defaultGlyph_flat.name    = defaultGlyph.name
+        defaultGlyph_flat.unicode = defaultGlyph.unicode
+        defaultGlyph_flat.width   = defaultGlyph.width
+    else:
+        defaultGlyph_flat = defaultGlyph
+
+    results = validateGlyph(defaultGlyph, currentGlyph)
+    results_flat = validateGlyph(defaultGlyph_flat, currentGlyph_flat)
+
+    if currentGlyph.components:
+        levels = getNestingLevels(currentGlyph)
+        if levels > 1 or len(currentGlyph.contours):
+            currentGlyph.markColor = colorWarning
         else:
-            g.markColor = colorComponents
+            if all(results_flat.values()):
+                currentGlyph.markColor = colorComponentsEqual
+            else:
+                currentGlyph.markColor = colorComponents
     else:
         if results['points'] and results['pointPositions']:
-            if f.path != defaultFont.path:
-                g.markColor = colorDefault
+            if currentFont.path != defaultFont.path:
+                currentGlyph.markColor = colorDefault
             else:
-                g.markColor = None
+                currentGlyph.markColor = None
 
-f.changed()
+currentFont.changed()
 
