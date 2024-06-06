@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Gamma" format="2">
-  <advance width="1033"/>
+  <advance width="1497"/>
   <unicode hex="0393"/>
-  <anchor x="664" y="1500" name="top"/>
+  <anchor x="964" y="1500" name="top"/>
   <anchor x="334" y="760" name="center"/>
   <outline>
     <contour>
@@ -13,10 +13,10 @@
       <point x="366" y="1362" type="line"/>
       <point x="183" y="1386" type="line"/>
       <point x="196" y="1500" type="line"/>
-      <point x="1083" y="1500" type="line"/>
-      <point x="1039" y="1101" type="line"/>
-      <point x="940" y="1101" type="line"/>
-      <point x="931" y="1392" type="line"/>
+      <point x="1547" y="1500" type="line"/>
+      <point x="1503" y="1101" type="line"/>
+      <point x="1404" y="1101" type="line"/>
+      <point x="1395" y="1392" type="line"/>
       <point x="558" y="1392" type="line"/>
       <point x="532" y="1372" type="line"/>
       <point x="413" y="760" type="line"/>
@@ -25,4 +25,10 @@
       <point x="484" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>
