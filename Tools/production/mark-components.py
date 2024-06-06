@@ -1,15 +1,6 @@
-# menuTitle: mark glyphs with components
+# menuTitle: mark different types of glyphs
 
-'''
-red    : nested components
-blue   : multiple components
-green  : one component only
-
-'''
-
-alpha = 0.5
-
-f = CurrentFont()
+from variableValues.validation import *
 
 def getNestingLevels(g, levels=0):
     if g.components:
@@ -22,17 +13,43 @@ def getNestingLevels(g, levels=0):
             levels = getNestingLevels(baseGlyph, levels)
     return levels
 
+alpha = 0.35
+
+colorComponents = 1, 0.65, 0, alpha
+colorDefault    = 0, 0.65, 1, alpha
+colorWarning    = 1, 0, 0, alpha
+
+f = CurrentFont()
+
+sourcesFolder = os.path.split(f.path)[0]
+defaultPath = os.path.join(sourcesFolder, f'AmstelvarA2-Italic_wght400.ufo')
+
+assert os.path.exists(defaultPath)
+
+defaultFont = OpenFont(defaultPath, showInterface=False)
+
 for g in f:
     g.markColor = None
-    if not(g.components):
+
+    if g.name not in defaultFont:
         continue
-    if len(g.components) == 1:
-        g.markColor = 0.5, 1, 0, alpha
-    else:
+
+    defaultGlyph = defaultFont[g.name]
+
+    results = validateGlyph(defaultGlyph, g)
+
+    if g.components:
         levels = getNestingLevels(g)
-        if levels > 1:
-            g.markColor = 1, 0, 0, alpha
+        if levels > 1 or len(g.contours):
+            g.markColor = colorWarning
         else:
-            g.markColor = 0, 0.6, 1, alpha
+            g.markColor = colorComponents
+    else:
+        if results['points'] and results['pointPositions']:
+            if f.path != defaultFont.path:
+                g.markColor = colorDefault
+            else:
+                g.markColor = None
 
 f.changed()
+
