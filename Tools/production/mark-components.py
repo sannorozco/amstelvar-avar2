@@ -9,10 +9,12 @@ from variableValues.decomposePointPen import DecomposePointPen
 
 alpha = 0.35
 
-colorComponents      = 1, 0.35, 0, alpha
+colorComponents      = 1, 0.3, 0, alpha
 colorComponentsEqual = 1, 0.65, 0, alpha
 colorDefault         = 0, 0.65, 1, alpha
-colorWarning         = 1, 0, 0, 0.5
+colorWarning         = 1, 0, 0, 0.65
+
+selectedGlyphs = False
 
 currentFont = CurrentFont()
 
@@ -23,10 +25,15 @@ assert os.path.exists(defaultPath)
 
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
-for currentGlyph in currentFont:
+glyphNames = currentFont.selectedGlyphNames
+if not glyphNames or not selectedGlyphs:
+    glyphNames = currentFont.glyphOrder
+
+for glyphName in glyphNames:
+    currentGlyph = currentFont[glyphName]
     currentGlyph.markColor = None
 
-    if currentGlyph.name not in defaultFont:
+    if glyphName not in defaultFont:
         continue
 
     # decompose glyphs with components
@@ -41,7 +48,7 @@ for currentGlyph in currentFont:
     else:
         currentGlyph_flat = currentGlyph
 
-    defaultGlyph = defaultFont[currentGlyph.name]
+    defaultGlyph = defaultFont[glyphName]
 
     # decompose default glyph with components
     if defaultGlyph.components:

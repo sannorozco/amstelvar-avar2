@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph name="breveinverted-stack.case" format="2">
+<glyph name="softhyphen" format="2">
+  <advance width="739"/>
   <outline>
-    <component base="breveinvertedcomb.case"/>
+    <component base="hyphen" xOffset="-6"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.65,0,0.35</string>
+      <string>1,0.35,0,0.35</string>
     </dict>
   </lib>
 </glyph>
