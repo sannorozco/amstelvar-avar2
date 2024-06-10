@@ -1,18 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="gamma" format="2">
-  <advance width="500"/>
+  <advance width="1029"/>
   <unicode hex="03B3"/>
+  <guideline x="673" y="-40" angle="0" identifier="g2zcNzszsg"/>
   <outline>
     <contour>
       <point x="479" y="-480" type="line"/>
       <point x="454" y="-444" type="line"/>
       <point x="482" y="-8" type="line"/>
       <point x="296" y="481" type="line"/>
-      <point x="165" y="808" type="line" smooth="yes"/>
-      <point x="154" y="836"/>
-      <point x="107" y="871"/>
-      <point x="60" y="880" type="qcurve" smooth="yes"/>
-      <point x="10" y="890" type="line"/>
+      <point x="135" y="883" type="line" smooth="yes"/>
+      <point x="124" y="911"/>
+      <point x="97" y="953"/>
+      <point x="60" y="960" type="qcurve" smooth="yes"/>
+      <point x="10" y="970" type="line"/>
       <point x="10" y="970" type="line"/>
       <point x="186" y="1008" type="line"/>
       <point x="225" y="1008"/>
@@ -32,4 +33,10 @@
       <point x="636" y="-459" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
+    </dict>
+  </lib>
 </glyph>

@@ -7,7 +7,7 @@
   <guideline x="627" y="553" angle="90" identifier="m4aYe0x4PZ"/>
   <guideline x="641" y="891" angle="90" identifier="cgCypNhhfk"/>
   <anchor x="641" y="0" name="bottom"/>
-  <anchor x="641" y="1000" name="top"/>
+  <anchor x="641" y="950" name="top"/>
   <outline>
     <contour>
       <point x="312" y="277" type="line"/>
@@ -54,6 +54,8 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
     </dict>
   </lib>
 </glyph>

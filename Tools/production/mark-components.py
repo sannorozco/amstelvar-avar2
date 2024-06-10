@@ -7,27 +7,38 @@ reload(variableValues.validation)
 from variableValues.validation import *
 from variableValues.decomposePointPen import DecomposePointPen
 
+subFamilyName = ['Roman', 'Italic'][0]
+
 alpha = 0.35
 
-colorComponents      = 1, 0.35, 0, alpha
+colorComponents      = 1, 0.3, 0, alpha
 colorComponentsEqual = 1, 0.65, 0, alpha
 colorDefault         = 0, 0.65, 1, alpha
-colorWarning         = 1, 0, 0, 0.5
+colorWarning         = 1, 0, 0, 0.65
+
+selectedGlyphs = False
 
 currentFont = CurrentFont()
 
 sourcesFolder = os.path.split(currentFont.path)[0]
-defaultPath = os.path.join(sourcesFolder, f'AmstelvarA2-Italic_wght400.ufo')
+defaultPath = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}_wght400.ufo')
 
 assert os.path.exists(defaultPath)
 
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
-for currentGlyph in currentFont:
+glyphNames = currentFont.selectedGlyphNames
+if not glyphNames or not selectedGlyphs:
+    glyphNames = currentFont.glyphOrder
+
+for glyphName in glyphNames:
+    currentGlyph = currentFont[glyphName]
     currentGlyph.markColor = None
 
-    if currentGlyph.name not in defaultFont:
+    if glyphName not in defaultFont:
         continue
+
+    defaultGlyph = defaultFont[glyphName]
 
     # decompose glyphs with components
     if currentGlyph.components:
@@ -40,8 +51,6 @@ for currentGlyph in currentFont:
         currentGlyph_flat.width   = currentGlyph.width
     else:
         currentGlyph_flat = currentGlyph
-
-    defaultGlyph = defaultFont[currentGlyph.name]
 
     # decompose default glyph with components
     if defaultGlyph.components:
@@ -75,4 +84,3 @@ for currentGlyph in currentFont:
                 currentGlyph.markColor = None
 
 currentFont.changed()
-

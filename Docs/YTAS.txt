@@ -1,2 +1,42 @@
 YTAS
 ====
+
+
+Variation
+---------
+
+### Glyphs
+
+- all lowercase glyphs with ascenders
+- all `top` anchors of lowercase glyphs
+
+### Shape
+
+- extends ascender
+
+### Widths
+
+- same as default
+
+## Anchors
+
+- same as default
+
+exception:
+
+- all `top` anchors of lowercase glyphs move up/down to increase/decrease distance between base glyph and diacritic
+
+
+Workflow
+--------
+
+### GF
+
+- select and move points / anchors
+
+
+Issues
+------
+
+- apostrophe in `napostrophe` not moving up, construction needs to use anchor
+- cyrillic ascenders appear longer in relation to roman
