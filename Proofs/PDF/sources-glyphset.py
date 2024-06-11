@@ -19,8 +19,8 @@ defaultFontPath = os.path.join(sourcesFolder, f'{familyName}-{subFamily}_wght400
 sourcePaths     = sorted(glob.glob(f'{sourcesFolder}/*.ufo'))
 sourcePaths.remove(defaultFontPath)
 
-i = 19 * 2 + 1
-sourcePaths = sourcePaths[i:i+2]
+# i = 25 * 2 + 1
+# sourcePaths = sourcePaths[i:i+2]
 
 start = time.time()
 
