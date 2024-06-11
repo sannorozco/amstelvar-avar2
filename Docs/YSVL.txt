@@ -1,2 +1,38 @@
 YSVL
 ====
+
+
+Variation
+---------
+
+### Glyphs
+
+- all lowercase glyphs with vertical serifs
+- cyrillic vertical serif components
+
+### Shape
+
+- extend serif edges up/down
+
+### Widths
+
+- equal to default
+
+## Anchors
+
+- equal to default
+
+
+Workflow
+--------
+
+### GF
+
+- max: select and shift edge points up/down by XXX units
+- min: select and move to retract serif points
+
+
+Issues
+------
+
+- minimum values are not harmonic (range of movement differs greatly between serifs)

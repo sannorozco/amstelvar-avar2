@@ -3,7 +3,7 @@
   <advance width="1048"/>
   <unicode hex="0067"/>
   <anchor x="524.0" y="-416" name="bottom"/>
-  <anchor x="484.0" y="1000" name="top"/>
+  <anchor x="484.0" y="1050" name="top"/>
   <outline>
     <contour>
       <point x="14" y="-264" type="qcurve" smooth="yes"/>
@@ -169,6 +169,8 @@
           <string>YOLC</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
     </dict>
   </lib>
 </glyph>

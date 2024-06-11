@@ -4,14 +4,14 @@
   <unicode hex="03B0"/>
   <outline>
     <component base="upsilon"/>
-    <component base="dieresistonoscomb" xOffset="510"/>
+    <component base="dieresistonoscomb" xOffset="510" yOffset="-50"/>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
       <key>public.markColor</key>
-      <string>0,0.6,1,0.5</string>
+      <string>1,0.3,0,0.35</string>
     </dict>
   </lib>
 </glyph>

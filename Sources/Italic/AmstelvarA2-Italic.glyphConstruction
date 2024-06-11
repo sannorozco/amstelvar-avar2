@@ -729,7 +729,7 @@ firsttonechinese = macroncomb ^ 1048
 ellipsis = period&period&period | 0x2026
 
 hyphentwo = hyphen | 0x2010
-softhyphen = hyphen | 0xooAD
+softhyphen = hyphen | 0x00AD
 
 periodcentered.loclCAT = periodcentered | None
 periodcentered.loclCAT.case = periodcentered | None
