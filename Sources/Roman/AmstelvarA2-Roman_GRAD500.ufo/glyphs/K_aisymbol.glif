@@ -1,10 +1,58 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Kaisymbol" format="2">
-  <advance width="1440"/>
+  <advance width="1461"/>
   <unicode hex="03CF"/>
   <outline>
-    <component base="K"/>
-    <component base="kai-tail" xOffset="371"/>
+    <contour>
+      <point x="82" y="0" type="line"/>
+      <point x="82" y="120" type="line"/>
+      <point x="240" y="155" type="line"/>
+      <point x="242" y="754" type="line"/>
+      <point x="240" y="1332" type="line"/>
+      <point x="82" y="1366" type="line"/>
+      <point x="82" y="1500" type="line"/>
+      <point x="668" y="1500" type="line"/>
+      <point x="668" y="1366" type="line"/>
+      <point x="520" y="1332" type="line"/>
+      <point x="518" y="754" type="line"/>
+      <point x="520" y="155" type="line"/>
+      <point x="678" y="120" type="line"/>
+      <point x="678" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="380" y="431" type="line"/>
+      <point x="380" y="663" type="line"/>
+      <point x="991" y="1318" type="line"/>
+      <point x="864" y="1366" type="line"/>
+      <point x="864" y="1500" type="line"/>
+      <point x="1420" y="1500" type="line"/>
+      <point x="1420" y="1366" type="line"/>
+      <point x="1222" y="1318" type="line"/>
+      <point x="758" y="833" type="line"/>
+      <point x="722" y="795" type="line"/>
+    </contour>
+    <contour>
+      <point x="848" y="-528" type="qcurve" smooth="yes"/>
+      <point x="648" y="-528"/>
+      <point x="361" y="-363"/>
+      <point x="267" y="-221" type="qcurve"/>
+      <point x="360" y="-146" type="line"/>
+      <point x="434" y="-232"/>
+      <point x="666" y="-356"/>
+      <point x="848" y="-356" type="qcurve" smooth="yes"/>
+      <point x="1035" y="-356"/>
+      <point x="1272" y="-161"/>
+      <point x="1304" y="0" type="qcurve"/>
+      <point x="903" y="0" type="line"/>
+      <point x="903" y="120" type="line"/>
+      <point x="1021" y="155" type="line"/>
+      <point x="586" y="762" type="line"/>
+      <point x="773" y="952" type="line"/>
+      <point x="1369" y="155" type="line"/>
+      <point x="1496" y="120" type="line"/>
+      <point x="1507" y="-179"/>
+      <point x="1136" y="-528"/>
+    </contour>
   </outline>
   <lib>
     <dict>
