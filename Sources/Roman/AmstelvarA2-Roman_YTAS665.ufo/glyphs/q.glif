@@ -3,7 +3,7 @@
   <advance width="1188"/>
   <unicode hex="0071"/>
   <anchor x="594.0" y="0" name="bottom"/>
-  <anchor x="594.0" y="1000" name="top"/>
+  <anchor x="594.0" y="950" name="top"/>
   <outline>
     <contour>
       <point x="68" y="478" type="qcurve" smooth="yes"/>
@@ -157,6 +157,8 @@
           <string>XSLC</string>
         </dict>
       </dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
     </dict>
   </lib>
 </glyph>

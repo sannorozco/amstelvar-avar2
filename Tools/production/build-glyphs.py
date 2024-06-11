@@ -14,9 +14,9 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = 'yu yumacron'.split()
+glyphNames = 'wacute wgrave'.split()
 
-dstFonts = 'XTRA63 XTRA650'.split()
+dstFonts = [] # 'XTRA63 XTRA650'.split()
     
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 

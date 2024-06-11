@@ -2,16 +2,17 @@
 <glyph name="Iotatonos" format="2">
   <advance width="1048"/>
   <unicode hex="038A"/>
+  <note>
+10,I
+</note>
   <outline>
     <component base="I" xOffset="268"/>
     <component base="tonoscomb.case" xOffset="268"/>
   </outline>
   <lib>
     <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
       <key>public.markColor</key>
-      <string>1,0.18574,0.57340,0.29823</string>
+      <string>1,0.65,0,0.35</string>
     </dict>
   </lib>
 </glyph>

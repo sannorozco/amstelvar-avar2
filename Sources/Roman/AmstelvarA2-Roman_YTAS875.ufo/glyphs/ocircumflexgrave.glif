@@ -2,18 +2,15 @@
 <glyph name="ocircumflexgrave" format="2">
   <advance width="1168"/>
   <unicode hex="1ED3"/>
-  <note>
-@topleft
-</note>
   <outline>
     <component base="o"/>
-    <component base="circumflexcomb-stack" xOffset="584" yOffset="-53"/>
-    <component base="gravecomb-stack" xOffset="896" yOffset="195"/>
+    <component base="circumflexcomb-stack" xOffset="584" yOffset="-3"/>
+    <component base="gravecomb-stack" xOffset="896" yOffset="245"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0.6,1,0.5</string>
+      <string>1,0.3,0,0.35</string>
     </dict>
   </lib>
 </glyph>
