@@ -2,7 +2,7 @@
 <glyph name="omega" format="2">
   <advance width="1417"/>
   <unicode hex="03C9"/>
-  <anchor x="762" y="1000" name="GRKtop"/>
+  <anchor x="732" y="1000" name="GRKtop"/>
   <outline>
     <contour>
       <point x="257" y="-15" type="qcurve" smooth="yes"/>
@@ -50,10 +50,4 @@
       <point x="94" y="-5"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0.65,1,0.35</string>
-    </dict>
-  </lib>
 </glyph>
