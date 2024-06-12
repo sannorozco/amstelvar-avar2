@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="commaaccentcomb.case" format="2">
-  <anchor x="17" y="0" name="_bottom"/>
-  <anchor x="17" y="-700" name="bottom"/>
+  <advance width="500"/>
   <outline>
     <contour>
       <point x="-150" y="-638" type="line"/>
@@ -22,10 +21,4 @@
       <point x="-97" y="-700" type="qcurve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
-    </dict>
-  </lib>
 </glyph>

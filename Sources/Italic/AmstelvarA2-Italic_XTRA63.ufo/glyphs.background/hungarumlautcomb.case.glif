@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hungarumlautcomb.case" format="2">
-  <anchor x="0" y="1500" name="_top"/>
-  <anchor x="0" y="1994" name="top"/>
+  <advance width="500"/>
   <outline>
     <contour>
       <point x="4" y="1916" type="qcurve" smooth="yes"/>
@@ -32,10 +31,4 @@
       <point x="394" y="1951"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
-    </dict>
-  </lib>
 </glyph>
