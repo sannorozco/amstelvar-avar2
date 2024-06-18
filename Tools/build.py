@@ -195,7 +195,7 @@ class AmstelvarA2DesignSpaceBuilder:
     def addDefaultSource(self):
         src = SourceDescriptor()
         src.path       = self.defaultUFO
-        src.familyName = self.familyName
+        src.familyName = f'{self.familyName} {self.subFamilyName}'
         src.styleName  = self.defaultName
         src.location   = self.defaultLocation
         self.designspace.addSource(src)
@@ -207,7 +207,7 @@ class AmstelvarA2DesignSpaceBuilder:
         for value in [-300, 500]:
             src = SourceDescriptor()
             src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = self.familyName
+            src.familyName = f'{self.familyName} {self.subFamilyName}'
             src.styleName  = f'{axis}{value}'
             L = self.defaultLocation.copy()
             L[axis] = value
@@ -218,7 +218,7 @@ class AmstelvarA2DesignSpaceBuilder:
         value = 0
         src = SourceDescriptor()
         src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-        src.familyName = self.familyName
+        src.familyName = f'{self.familyName} {self.subFamilyName}'
         src.styleName  = f'{axis}{value}'
         L = self.defaultLocation.copy()
         L[axis] = value
@@ -231,7 +231,7 @@ class AmstelvarA2DesignSpaceBuilder:
                 if name in ufo:
                     src = SourceDescriptor()
                     src.path       = ufo
-                    src.familyName = self.familyName
+                    src.familyName = f'{self.familyName} {self.subFamilyName}'
                     L = self.defaultLocation.copy()
                     value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
                     src.styleName  = f'{name}{value}'
@@ -246,7 +246,7 @@ class AmstelvarA2DesignSpaceBuilder:
                 L[axis] = value
 
             I = InstanceDescriptor()
-            I.familyName     = self.familyName
+            I.familyName     = f'{self.familyName} {self.subFamilyName}'
             I.styleName      = styleName.replace('_', ' ')
             I.name           = styleName
             I.designLocation = L
@@ -675,9 +675,9 @@ if __name__ == '__main__':
     # D0.build()
     # D0.save()
 
-    # D = AmstelvarA2DesignSpaceBuilder()
-    # D.build(blends=True, instances=True)
-    # D.save()
+    D = AmstelvarA2DesignSpaceBuilder()
+    D.build(blends=True, instances=True)
+    D.save()
     # D.buildInstances()
 
     # D1 = AmstelvarA2DesignSpaceBuilder_avar1()
@@ -688,15 +688,15 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
-    D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
     # D3.save()
     # D3.buildVariableFont()
 
-    D4 = AmstelvarA2DesignSpaceBuilder_avar2_v2()
-    D4.build()
-    D4.save()
-    D4.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    # D4 = AmstelvarA2DesignSpaceBuilder_avar2_v2()
+    # D4.build()
+    # D4.save()
+    # D4.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
