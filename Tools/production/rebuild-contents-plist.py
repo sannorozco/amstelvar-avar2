@@ -1,13 +1,9 @@
-# menuTitle : Rebuild contents.plist
+# menuTitle : rebuild contents.plist
 
+import os, glob
 import plistlib
-import glob
-import os
-
 from fontTools.ufoLib import LAYERCONTENTS_FILENAME
 from fontTools.ufoLib.glifLib import readGlyphFromString, CONTENTS_FILENAME
-
-from fontParts.ui import GetFile
 
 
 class SimpleGlyph:
@@ -17,7 +13,6 @@ class SimpleGlyph:
     
     def drawPoints(self, pointPen):
         pass
-
 
 def rebuildContenstPlist(ufoPath):
     layerPlistPath = os.path.join(ufoPath, LAYERCONTENTS_FILENAME)
@@ -41,11 +36,14 @@ def rebuildContenstPlist(ufoPath):
             plistlib.dump(contentsDict, f)
 
 
-ufoPaths = GetFile(
-    "Select ufo to rebuild the contents.plist",
-    allowsMultipleSelection=True,
-    fileTypes=["ufo"]
-)
-for ufoPath in ufoPaths:           
-    rebuildContenstPlist(ufoPath)
-    
+familyName    = 'AmstelvarA2'
+subFamilyName = ['Roman', 'Italic'][1]
+baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
+
+assert os.path.exists(sourcesFolder)
+
+sources = glob.glob(f'{sourcesFolder}/*.ufo')
+
+for sourcePath in sources:
+    rebuildContenstPlist(sourcePath)

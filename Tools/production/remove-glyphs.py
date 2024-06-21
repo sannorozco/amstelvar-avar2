@@ -8,10 +8,8 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
 
-glyphNames = 'acutecombstack acutecombstack.case brevecombstack.case circumflexcombstack circumflexcombstack.case dieresiscombstack dieresiscombstack.case dotaccentcombstack dotaccentcombstack.case gravecombstack.case macroncombstack macroncombstack.case tildecombstack tildecombstack.case'.split()
-dstFonts   = [
-# 'XOPQ', 'WDSP1000', 
-]
+glyphNames = ['kai-tail']
+dstFonts   = []
 
 preflight = False
 
