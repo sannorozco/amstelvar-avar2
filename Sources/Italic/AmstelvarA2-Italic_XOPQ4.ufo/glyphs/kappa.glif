@@ -2,7 +2,6 @@
 <glyph name="kappa" format="2">
   <advance width="999"/>
   <unicode hex="03BA"/>
-  <anchor x="803" y="134" name="kai_tail"/>
   <outline>
     <contour>
       <point x="47" y="0" type="line"/>
@@ -38,10 +37,4 @@
       <point x="843" y="47" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.6,0.8,0,0.5</string>
-    </dict>
-  </lib>
 </glyph>

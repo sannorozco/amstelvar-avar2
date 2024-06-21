@@ -1,86 +1,48 @@
-# menuTitle: mark different types of glyphs
+# menuTitle: apply validation colors to sources
 
 from importlib import reload
 import variableValues.validation
 reload(variableValues.validation)
 
+import os, glob
 from variableValues.validation import *
-from variableValues.decomposePointPen import DecomposePointPen
 
-subFamilyName = ['Roman', 'Italic'][0]
+familyName    = 'AmstelvarA2'
+subFamilyName = ['Roman', 'Italic'][1]
+sourceName    = 'wght400'
+baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
+sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sourceName}.ufo')
 
-alpha = 0.35
+assert os.path.exists(sourcePath)
 
-colorComponents      = 1, 0.3, 0, alpha
-colorComponentsEqual = 1, 0.65, 0, alpha
-colorDefault         = 0, 0.65, 1, alpha
-colorWarning         = 1, 0, 0, 0.65
+colors = {
+    'components'      : (1.00, 0.30, 0.00, 0.35),
+    'componentsEqual' : (1.00, 0.65, 0.00, 0.35),
+    'default'         : (0.00, 0.65, 1.00, 0.35),
+    'warning'         : (1.00, 0.00, 0.00, 0.65),
+}
 
-selectedGlyphs = False
+dstFonts = [] # 'XOPQ310 XSHL0 XSHL136 XSHU144 XSHU2 XSVF126 XSVF6 XSVL0 XSVL130 XSVU0 XSVU124 XTRA63 XTRA650 XTTW0 XTTW30 XUCS114 XUCS259'.split()
+    
+preflight = False
 
-currentFont = CurrentFont()
+sourceFont = OpenFont(sourcePath, showInterface=False)
+ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
-sourcesFolder = os.path.split(currentFont.path)[0]
-defaultPath = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}_wght400.ufo')
-
-assert os.path.exists(defaultPath)
-
-defaultFont = OpenFont(defaultPath, showInterface=False)
-
-glyphNames = currentFont.selectedGlyphNames
-if not glyphNames or not selectedGlyphs:
-    glyphNames = currentFont.glyphOrder
-
-for glyphName in glyphNames:
-    currentGlyph = currentFont[glyphName]
-    currentGlyph.markColor = None
-
-    if glyphName not in defaultFont:
+for ufoPath in ufoPaths:
+    if ufoPath == sourcePath:
         continue
 
-    defaultGlyph = defaultFont[glyphName]
+    name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
+    if name in dstFonts or not dstFonts:
 
-    # decompose glyphs with components
-    if currentGlyph.components:
-        currentGlyph_flat = RGlyph()
-        pointPen = currentGlyph_flat.getPointPen()
-        decomposePen = DecomposePointPen(currentFont, pointPen)
-        currentGlyph.drawPoints(decomposePen)
-        currentGlyph_flat.name    = currentGlyph.name
-        currentGlyph_flat.unicode = currentGlyph.unicode
-        currentGlyph_flat.width   = currentGlyph.width
-    else:
-        currentGlyph_flat = currentGlyph
+        dstFont = OpenFont(ufoPath, showInterface=False)
 
-    # decompose default glyph with components
-    if defaultGlyph.components:
-        defaultGlyph_flat = RGlyph()
-        pointPen = defaultGlyph_flat.getPointPen()
-        decomposePen = DecomposePointPen(defaultFont, pointPen)
-        defaultGlyph.drawPoints(decomposePen)
-        defaultGlyph_flat.name    = defaultGlyph.name
-        defaultGlyph_flat.unicode = defaultGlyph.unicode
-        defaultGlyph_flat.width   = defaultGlyph.width
-    else:
-        defaultGlyph_flat = defaultGlyph
+        print(f'applying mark colors to {os.path.split(ufoPath)[-1]}...')
+        applyValidationColors(dstFont, sourceFont, colors)
 
-    results = validateGlyph(defaultGlyph, currentGlyph)
-    results_flat = validateGlyph(defaultGlyph_flat, currentGlyph_flat)
+        if not preflight:
+            dstFont.save()
 
-    if currentGlyph.components:
-        levels = getNestingLevels(currentGlyph)
-        if levels > 1 or len(currentGlyph.contours):
-            currentGlyph.markColor = colorWarning
-        else:
-            if all(results_flat.values()):
-                currentGlyph.markColor = colorComponentsEqual
-            else:
-                currentGlyph.markColor = colorComponents
-    else:
-        if results['points'] and results['pointPositions']:
-            if currentFont.path != defaultFont.path:
-                currentGlyph.markColor = colorDefault
-            else:
-                currentGlyph.markColor = None
-
-currentFont.changed()
+        # dstFont.close()

@@ -2,7 +2,6 @@
 <glyph name="kappa" format="2">
   <advance width="1082"/>
   <unicode hex="03BA"/>
-  <anchor x="834" y="134" name="kai_tail"/>
   <outline>
     <contour>
       <point x="47" y="0" type="line"/>
@@ -15,18 +14,18 @@
       <point x="228" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="177" y="204" type="line"/>
-      <point x="204" y="342" type="line"/>
-      <point x="670" y="845" type="line" smooth="yes"/>
-      <point x="766" y="948"/>
-      <point x="852" y="1008"/>
-      <point x="912" y="1010" type="qcurve"/>
+      <point x="216" y="48" type="line"/>
+      <point x="204" y="442" type="line"/>
+      <point x="453" y="782" type="line" smooth="yes"/>
+      <point x="554" y="920"/>
+      <point x="732" y="1010"/>
+      <point x="912" y="1010" type="qcurve" smooth="yes"/>
       <point x="979" y="1010" type="line"/>
       <point x="997" y="977" type="line"/>
       <point x="967" y="825" type="line"/>
-      <point x="879" y="841"/>
-      <point x="759" y="798"/>
-      <point x="696" y="735" type="qcurve" smooth="yes"/>
+      <point x="917" y="825"/>
+      <point x="821" y="761"/>
+      <point x="638" y="545" type="qcurve" smooth="yes"/>
     </contour>
     <contour>
       <point x="672" y="-15" type="line"/>
@@ -41,7 +40,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0.65,1,0.35</string>
+      <string>0.6,0.8,0,0.5</string>
     </dict>
   </lib>
 </glyph>
