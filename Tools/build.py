@@ -9,7 +9,7 @@ import ufoProcessor # upgrade to UFOOperator
 from variableValues.measurements import FontMeasurements, permille
 
 
-SUBFAMILY = ['Roman', 'Italic'][0]
+SUBFAMILY = ['Roman', 'Italic'][1]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -195,7 +195,7 @@ class AmstelvarA2DesignSpaceBuilder:
     def addDefaultSource(self):
         src = SourceDescriptor()
         src.path       = self.defaultUFO
-        src.familyName = self.familyName
+        src.familyName = f'{self.familyName} {self.subFamilyName}'
         src.styleName  = self.defaultName
         src.location   = self.defaultLocation
         self.designspace.addSource(src)
@@ -207,7 +207,7 @@ class AmstelvarA2DesignSpaceBuilder:
         for value in [-300, 500]:
             src = SourceDescriptor()
             src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = self.familyName
+            src.familyName = f'{self.familyName} {self.subFamilyName}'
             src.styleName  = f'{axis}{value}'
             L = self.defaultLocation.copy()
             L[axis] = value
@@ -218,7 +218,7 @@ class AmstelvarA2DesignSpaceBuilder:
         value = 0
         src = SourceDescriptor()
         src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-        src.familyName = self.familyName
+        src.familyName = f'{self.familyName} {self.subFamilyName}'
         src.styleName  = f'{axis}{value}'
         L = self.defaultLocation.copy()
         L[axis] = value
@@ -231,7 +231,7 @@ class AmstelvarA2DesignSpaceBuilder:
                 if name in ufo:
                     src = SourceDescriptor()
                     src.path       = ufo
-                    src.familyName = self.familyName
+                    src.familyName = f'{self.familyName} {self.subFamilyName}'
                     L = self.defaultLocation.copy()
                     value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
                     src.styleName  = f'{name}{value}'
@@ -246,7 +246,7 @@ class AmstelvarA2DesignSpaceBuilder:
                 L[axis] = value
 
             I = InstanceDescriptor()
-            I.familyName     = self.familyName
+            I.familyName     = f'{self.familyName} {self.subFamilyName}'
             I.styleName      = styleName.replace('_', ' ')
             I.name           = styleName
             I.designLocation = L
@@ -695,8 +695,8 @@ if __name__ == '__main__':
     # D3.save()
     # D3.buildVariableFont()
 
-    D4 = AmstelvarA2DesignSpaceBuilder_avar2_v2()
-    D4.build()
-    D4.save()
-    D4.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    # D4 = AmstelvarA2DesignSpaceBuilder_avar2_v2()
+    # D4.build()
+    # D4.save()
+    # D4.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 

@@ -3,7 +3,6 @@ import variableValues.measurements
 reload(variableValues.measurements)
 
 import os, glob, shutil
-from collections import Counter
 from variableValues.measurements import FontMeasurements
 
 familyName       = 'AmstelvarA2'
@@ -66,6 +65,7 @@ for ufo in sorted(allUFOs):
     print()
 
 # find duplicate styles
+from collections import Counter
 duplicates = [k for k,v in Counter(allNames).items() if v > 1]
 print('duplicate style names:')
 print(duplicates)
