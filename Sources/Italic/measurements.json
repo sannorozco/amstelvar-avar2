@@ -4052,6 +4052,10 @@
         "name": "XOLC",
         "direction": "a"
       },
+      "25 30": {
+        "name": "XOLC",
+        "direction": "x"
+      },
       "22 33": {
         "name": "YOLC",
         "direction": "y"
@@ -4075,10 +4079,6 @@
       "B 4": {
         "name": "YTAS",
         "direction": "y"
-      },
-      "25 30": {
-        "name": "XSVL",
-        "direction": "x"
       },
       "22 28": {
         "name": "YSVL",
@@ -7095,7 +7095,7 @@
         "name": "XOLC",
         "direction": "x"
       },
-      "7 26": {
+      "19 33": {
         "name": "XOLC",
         "direction": "x"
       },
@@ -7103,8 +7103,20 @@
         "name": "YOLC",
         "direction": "y"
       },
-      "29 16": {
+      "36 16": {
         "name": "YOLC",
+        "direction": "y"
+      },
+      "13 19": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "B 36": {
+        "name": "YTOS",
+        "direction": "y"
+      },
+      "A 40": {
+        "name": "YTOS",
         "direction": "y"
       }
     },
@@ -10118,7 +10130,52 @@
       }
     },
     "Yu": {},
-    "kgreenlandic": {},
+    "kgreenlandic": {
+      "0 9": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "14 22": {
+        "name": "XOLC",
+        "direction": "a"
+      },
+      "25 13": {
+        "name": "YOLC",
+        "direction": "x"
+      },
+      "3 2": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "27 26": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "13 12": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "3 4": {
+        "name": "YSHL",
+        "direction": "y"
+      },
+      "27 28": {
+        "name": "YSHL",
+        "direction": "y"
+      },
+      "12 29": {
+        "name": "YSHL",
+        "direction": "y"
+      },
+      "17 16": {
+        "name": "YSHL",
+        "direction": "y"
+      }
+    },
     "em": {
       "2 26": {
         "name": "XOLC",
@@ -10412,6 +10469,7 @@
     "peso": {},
     "primemod": {},
     "lownumeralsign": {},
-    "obarcyr-stroke": {}
+    "obarcyr-stroke": {},
+    "eightsuperior": {}
   }
 }
