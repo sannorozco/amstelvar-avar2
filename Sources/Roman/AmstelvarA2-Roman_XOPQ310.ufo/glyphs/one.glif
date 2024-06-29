@@ -6,7 +6,7 @@
     <contour>
       <point x="84" y="0" type="line"/>
       <point x="84" y="94" type="line"/>
-      <point x="342" y="129" type="line"/>
+      <point x="342" y="129" type="line" identifier="nxz1KV2mu0"/>
       <point x="342" y="754" type="line"/>
       <point x="340" y="1352" type="line"/>
       <point x="82" y="1386" type="line"/>
@@ -14,7 +14,7 @@
       <point x="921" y="1513" type="line"/>
       <point x="953" y="1478" type="line"/>
       <point x="947" y="754" type="line"/>
-      <point x="947" y="129" type="line"/>
+      <point x="947" y="129" type="line" identifier="lIfes9NbAE"/>
       <point x="1205" y="94" type="line"/>
       <point x="1205" y="0" type="line"/>
     </contour>
@@ -45,6 +45,13 @@
           <string>YOFI</string>
         </dict>
       </dict>
+      <key>com.hipertipo.linkPoints</key>
+      <array>
+        <array>
+          <string>nxz1KV2mu0</string>
+          <string>lIfes9NbAE</string>
+        </array>
+      </array>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Source/Parametric-avar2/Roman/AmstelvarA2-Roman_XOPQ100.ufo/glyphs</string>
     </dict>

@@ -412,9 +412,25 @@
         "name": "XOPQ",
         "direction": "x"
       },
+      "24 19": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "23 20": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
       "22 21": {
         "name": "YOPQ",
-        "direction": "a"
+        "direction": "x"
+      },
+      "6 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XUCS",
+        "direction": "x"
       },
       "0 6": {
         "name": "XDOT",
@@ -511,6 +527,14 @@
       "B 15": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "-1 3": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "13 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "two": {
@@ -611,6 +635,10 @@
       "B 45": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "42 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "four": {
@@ -709,6 +737,14 @@
       "B 29": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "O 0": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "26 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "seven": {
@@ -3358,10 +3394,6 @@
         "name": "YTDE",
         "direction": "y"
       },
-      "3 2": {
-        "name": "XSHL",
-        "direction": "x"
-      },
       "19 20": {
         "name": "XSHL",
         "direction": "x"
@@ -3932,9 +3964,25 @@
         "name": "XOPQ",
         "direction": "x"
       },
+      "19 24": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
       "21 22": {
         "name": "YOPQ",
-        "direction": "a"
+        "direction": "x"
+      },
+      "23 20": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "-1 6": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "0 99": {
+        "name": "XUCS",
+        "direction": "x"
       },
       "6 0": {
         "name": "XDOT",
@@ -3946,11 +3994,19 @@
       }
     },
     "periodcentered": {
+      "-1 0": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "6 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
       "0 6": {
         "name": "XDOT",
         "direction": "x"
       },
-      "3 9": {
+      "9 3": {
         "name": "YDOT",
         "direction": "y"
       }
@@ -3996,6 +4052,10 @@
       },
       "9 17": {
         "name": "YOPQ",
+        "direction": "x"
+      },
+      "7 10": {
+        "name": "XTRA",
         "direction": "x"
       }
     },
@@ -4072,7 +4132,11 @@
         "name": "YOLC",
         "direction": "y"
       },
-      "55 36": {
+      "55 25": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "30 36": {
         "name": "XTLC",
         "direction": "x"
       },
@@ -6915,7 +6979,28 @@
     "perthousand": {},
     "questiondown": {},
     "cent": {},
-    "ordfeminine": {},
+    "ordfeminine": {
+      "0 18": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "26 10": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "30 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "17 23": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "20 26": {
+        "name": "XTLC",
+        "direction": "x"
+      }
+    },
     "won.rvrn": {},
     "degree": {},
     "fraction": {
@@ -6928,10 +7013,28 @@
         "direction": "y"
       }
     },
-    "quotesinglbase": {},
+    "quotesinglbase": {
+      "-1 6": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "12 99": {
+        "name": "XLCS",
+        "direction": "x"
+      }
+    },
     "bullet": {},
     "guilsinglright": {},
-    "quoteright": {},
+    "quoteright": {
+      "-1 6": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "12 99": {
+        "name": "XLCS",
+        "direction": "x"
+      }
+    },
     "underscore": {
       "5 2": {
         "name": "YOPQ",
@@ -7118,6 +7221,14 @@
       "A 40": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "-1 0": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "33 99": {
+        "name": "XLCR",
+        "direction": "x"
       }
     },
     "thorn": {
@@ -8946,11 +9057,41 @@
     },
     "ringcomb": {},
     "horizontalbarH": {},
-    "onesuperior": {},
+    "onesuperior": {
+      "3 13": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "6 7": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "14 99": {
+        "name": "XFIR",
+        "direction": "x"
+      }
+    },
     "daggerdbl": {},
     "dagger": {},
     "plusminus": {},
-    "ordmasculine": {},
+    "ordmasculine": {
+      "0 12": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "18 6": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "99 6": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XLCR",
+        "direction": "x"
+      }
+    },
     "breveinvertedcomb": {},
     "dieresiscomb": {},
     "hookabovecomb": {
@@ -10361,7 +10502,16 @@
     "shcha.bgr": {},
     "hard.bgr": {},
     "soft.bgr": {},
-    "quoteleft": {},
+    "quoteleft": {
+      "-1 12": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "6 99": {
+        "name": "XLCS",
+        "direction": "x"
+      }
+    },
     "macroncomb-stack": {},
     "acutecomb-stack": {},
     "dotaccentcomb-stack": {},
@@ -10381,7 +10531,20 @@
     "bulletoperator": {},
     "endash": {},
     "emdash": {},
-    "quotedblbase": {},
+    "quotedblbase": {
+      "28 6": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "-1 22": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "12 99": {
+        "name": "XLCR",
+        "direction": "x"
+      }
+    },
     "gravecomb-stack.case": {},
     "circumflexcomb-stack.case": {},
     "dieresistonoscomb.case": {},
@@ -10470,6 +10633,10 @@
     "primemod": {},
     "lownumeralsign": {},
     "obarcyr-stroke": {},
-    "eightsuperior": {}
+    "eightsuperior": {},
+    "sevensuperior": {},
+    "nine.lf": {},
+    "onequarter": {},
+    "onehalf": {}
   }
 }
