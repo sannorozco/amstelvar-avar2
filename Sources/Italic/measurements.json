@@ -554,11 +554,11 @@
         "name": "YOFI",
         "direction": "a"
       },
-      "2 21": {
+      "1 0": {
         "name": "YOFI",
         "direction": "a"
       },
-      "11 29": {
+      "11 5": {
         "name": "XTFI",
         "direction": "x"
       },
@@ -568,11 +568,11 @@
       },
       "29 30": {
         "name": "XSVF",
-        "direction": "x"
+        "direction": "a"
       },
-      "30 31": {
+      "31 30": {
         "name": "YSVF",
-        "direction": "y"
+        "direction": "a"
       },
       "C 15": {
         "name": "YTOS",
@@ -581,6 +581,10 @@
       "B 31": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "30 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "three": {
@@ -676,7 +680,7 @@
         "name": "XOFI",
         "direction": "x"
       },
-      "17 22": {
+      "16 25": {
         "name": "YOFI",
         "direction": "x"
       },
@@ -695,6 +699,10 @@
       "B 32": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "29 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "six": {
@@ -6948,7 +6956,28 @@
         "direction": "y"
       }
     },
-    "threesuperior": {},
+    "threesuperior": {
+      "14 43": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "23 36": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "26 33": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "46 11": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "17 20": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "asterisk": {
       "25 29": {
         "name": "XOPQ",
@@ -6978,26 +7007,71 @@
     "currency": {},
     "perthousand": {},
     "questiondown": {},
-    "cent": {},
-    "ordfeminine": {
-      "0 18": {
+    "cent": {
+      "16 33": {
         "name": "XOLC",
         "direction": "x"
       },
-      "26 10": {
+      "27 22": {
         "name": "XOLC",
         "direction": "x"
+      },
+      "44 36": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "30 19": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "0 7": {
+        "name": "YOLC",
+        "direction": "x"
+      },
+      "8 9": {
+        "name": "YOLC",
+        "direction": "x"
+      },
+      "39 41": {
+        "name": "YOLC",
+        "direction": "a"
+      },
+      "-1 16": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "41 99": {
+        "name": "XLCS",
+        "direction": "x"
+      }
+    },
+    "ordfeminine": {
+      "13 0": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "6 23": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "10 16": {
+        "name": "YOPQ",
+        "direction": "y"
       },
       "30 3": {
         "name": "YOPQ",
         "direction": "y"
       },
-      "17 23": {
-        "name": "YOPQ",
-        "direction": "y"
-      },
-      "20 26": {
+      "0 6": {
         "name": "XTLC",
+        "direction": "x"
+      },
+      "-1 13": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "24 99": {
+        "name": "XLCS",
         "direction": "x"
       }
     },
@@ -9248,6 +9322,14 @@
       "10 11": {
         "name": "YOPQ",
         "direction": "a"
+      },
+      "99 10": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "periodcentered.loclCAT": {},
@@ -9450,7 +9532,20 @@
     "two.lf": {},
     "three.lf": {},
     "paragraph": {},
-    "twosuperior": {},
+    "twosuperior": {
+      "5 18": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "26 25": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "26 99": {
+        "name": "XFIR",
+        "direction": "x"
+      }
+    },
     "parenright": {
       "7 0": {
         "name": "XOPQ",
@@ -9463,6 +9558,14 @@
       "3 4": {
         "name": "YOPQ",
         "direction": "a"
+      },
+      "-1 4": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "0 99": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "asciicircum": {
@@ -9730,20 +9833,20 @@
       }
     },
     "at": {
-      "36 23": {
-        "name": "XOPQ",
-        "direction": "x"
-      },
-      "17 42": {
-        "name": "XOPQ",
-        "direction": "x"
-      },
       "60 10": {
         "name": "XOPQ",
         "direction": "x"
       },
       "0 54": {
         "name": "XOPQ",
+        "direction": "x"
+      },
+      "36 23": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "17 42": {
+        "name": "YOPQ",
         "direction": "x"
       },
       "63 3": {
@@ -9781,6 +9884,14 @@
       "B 33": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "-1 36": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "42 99": {
+        "name": "XLCR",
+        "direction": "x"
       }
     },
     "sterling": {},
@@ -10578,7 +10689,16 @@
     "hookabovecomb.case": {},
     "hookabovecomb-stack": {},
     "hookabovecomb-stack.case": {},
-    "foursuperior": {},
+    "foursuperior": {
+      "10 5": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "1 12": {
+        "name": "YOPQ",
+        "direction": "y"
+      }
+    },
     "rightanglebracket": {},
     "micro": {},
     "Cy-descendercomb.case": {},
@@ -10637,6 +10757,8 @@
     "sevensuperior": {},
     "nine.lf": {},
     "onequarter": {},
-    "onehalf": {}
+    "onehalf": {},
+    "sixsuperior": {},
+    "threequarters": {}
   }
 }
