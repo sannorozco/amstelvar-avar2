@@ -30,16 +30,16 @@
       <point x="1180" y="1348" type="line"/>
     </contour>
     <contour>
-      <point x="520" y="-510" type="qcurve" smooth="yes"/>
-      <point x="349" y="-510"/>
-      <point x="84" y="-351"/>
-      <point x="20" y="-194" type="qcurve"/>
-      <point x="110" y="-134" type="line"/>
-      <point x="157" y="-220"/>
-      <point x="368" y="-363"/>
-      <point x="550" y="-363" type="qcurve" smooth="yes"/>
-      <point x="778" y="-363"/>
-      <point x="1000" y="-123"/>
+      <point x="520" y="-621" type="qcurve" smooth="yes"/>
+      <point x="349" y="-621"/>
+      <point x="84" y="-462"/>
+      <point x="20" y="-305" type="qcurve"/>
+      <point x="110" y="-245" type="line"/>
+      <point x="157" y="-331"/>
+      <point x="368" y="-474"/>
+      <point x="550" y="-474" type="qcurve" smooth="yes"/>
+      <point x="778" y="-474"/>
+      <point x="1000" y="-223"/>
       <point x="1041" y="0" type="qcurve"/>
       <point x="725" y="0" type="line"/>
       <point x="734" y="100" type="line"/>
@@ -48,8 +48,14 @@
       <point x="717" y="993" type="line"/>
       <point x="1047" y="125" type="line"/>
       <point x="1201" y="100" type="line"/>
-      <point x="1186" y="-130"/>
-      <point x="804" y="-510"/>
+      <point x="1186" y="-230"/>
+      <point x="804" y="-621"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>

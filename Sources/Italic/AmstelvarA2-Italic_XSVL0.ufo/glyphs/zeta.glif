@@ -4,9 +4,9 @@
   <unicode hex="03B6"/>
   <outline>
     <contour>
-      <point x="418" y="-313" type="line"/>
-      <point x="437" y="-42" type="line"/>
-      <point x="338" y="-23" type="line"/>
+      <point x="515" y="-313" type="line"/>
+      <point x="533" y="-61" type="line"/>
+      <point x="338" y="-23" type="line" smooth="yes"/>
       <point x="120" y="20"/>
       <point x="-63" y="221"/>
       <point x="-29" y="400" type="qcurve" smooth="yes"/>
@@ -30,4 +30,10 @@
       <point x="515" y="-313" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>

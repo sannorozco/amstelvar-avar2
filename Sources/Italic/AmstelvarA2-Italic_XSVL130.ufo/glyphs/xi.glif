@@ -4,13 +4,13 @@
   <unicode hex="03BE"/>
   <outline>
     <contour>
-      <point x="452.6906474820144" y="-313" type="line"/>
-      <point x="471.6906474820144" y="-42" type="line"/>
-      <point x="392.6906474820144" y="-27" type="line" smooth="yes"/>
-      <point x="144.69064748201438" y="20"/>
-      <point x="-49.30935251798561" y="247"/>
-      <point x="-7.309352517985609" y="438" type="qcurve" smooth="yes"/>
-      <point x="16.69064748201439" y="544"/>
+      <point x="323" y="-313" type="line"/>
+      <point x="344" y="-17" type="line"/>
+      <point x="336" y="-15" type="line" smooth="yes"/>
+      <point x="120" y="39"/>
+      <point x="-50" y="257"/>
+      <point x="-7" y="438" type="qcurve" smooth="yes"/>
+      <point x="17" y="544"/>
       <point x="183" y="710"/>
       <point x="347" y="767" type="qcurve"/>
       <point x="348" y="774" type="line"/>
@@ -47,4 +47,10 @@
       <point x="549.6906474820144" y="-313" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>

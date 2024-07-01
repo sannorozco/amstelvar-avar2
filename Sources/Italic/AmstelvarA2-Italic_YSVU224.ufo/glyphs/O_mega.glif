@@ -6,8 +6,8 @@
   <outline>
     <contour>
       <point x="5" y="0" type="line"/>
-      <point x="17" y="378" type="line"/>
-      <point x="117" y="378" type="line"/>
+      <point x="21" y="478" type="line"/>
+      <point x="121" y="478" type="line"/>
       <point x="148" y="118" type="line"/>
       <point x="437" y="114" type="line"/>
       <point x="464" y="237" type="line"/>
@@ -25,8 +25,8 @@
       <point x="899" y="207" type="qcurve"/>
       <point x="897" y="114" type="line"/>
       <point x="1233" y="117" type="line"/>
-      <point x="1334" y="378" type="line"/>
-      <point x="1433" y="378" type="line"/>
+      <point x="1356" y="478" type="line"/>
+      <point x="1455" y="478" type="line"/>
       <point x="1349" y="0" type="line"/>
       <point x="759" y="0" type="line"/>
       <point x="772" y="306" type="line"/>
@@ -45,4 +45,10 @@
       <point x="545" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>
