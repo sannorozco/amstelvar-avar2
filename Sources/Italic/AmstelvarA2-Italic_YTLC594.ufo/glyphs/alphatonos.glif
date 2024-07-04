@@ -4,6 +4,12 @@
   <unicode hex="03AC"/>
   <outline>
     <component base="alpha"/>
-    <component base="tonoscomb" xOffset="440"/>
+    <component base="tonoscomb" xOffset="450" yOffset="168"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.6,0.8,0,0.5</string>
+    </dict>
+  </lib>
 </glyph>
