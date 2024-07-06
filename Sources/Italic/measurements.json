@@ -9215,9 +9215,30 @@
       "19 6": {
         "name": "XOLC",
         "direction": "a"
+      },
+      "12 13": {
+        "name": "YOLC",
+        "direction": "a"
+      },
+      "0 25": {
+        "name": "YOLC",
+        "direction": "a"
       }
     },
-    "circumflexcomb": {},
+    "circumflexcomb": {
+      "0 6": {
+        "name": "XOPQ",
+        "direction": "a"
+      },
+      "7 8": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "4 5": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
     "dotbelowcomb": {},
     "caroncomb": {},
     "brevecomb": {
@@ -9287,6 +9308,14 @@
       "18 6": {
         "name": "XOLC",
         "direction": "x"
+      },
+      "21 3": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "9 15": {
+        "name": "YOPQ",
+        "direction": "y"
       },
       "99 6": {
         "name": "XLCR",
@@ -9622,6 +9651,14 @@
       "41 42": {
         "name": "YOPQ",
         "direction": "x"
+      },
+      "19 20": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "0 1": {
+        "name": "YOPQ",
+        "direction": "a"
       },
       "32 99": {
         "name": "XUCR",
@@ -11023,7 +11060,19 @@
     },
     "diagonalbarO.rvrn": {},
     "quotedblright": {
+      "0 15": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "31 16": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
       "28 0": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "28 6": {
         "name": "XTLC",
         "direction": "x"
       },
@@ -11034,6 +11083,22 @@
       "12 99": {
         "name": "XLCR",
         "direction": "x"
+      },
+      "6 12": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "22 28": {
+        "name": "XDOT",
+        "direction": "x"
+      },
+      "3 9": {
+        "name": "YDOT",
+        "direction": "y"
+      },
+      "19 25": {
+        "name": "YDOT",
+        "direction": "y"
       }
     },
     "quotedblleft": {
@@ -11107,6 +11172,18 @@
       "44 27": {
         "name": "XOPQ",
         "direction": "x"
+      },
+      "18 1": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "22 46": {
+        "name": "YOPQ",
+        "direction": "x"
+      },
+      "29 41": {
+        "name": "YOPQ",
+        "direction": "a"
       }
     },
     "breveinvertedcomb-stack": {},
@@ -11181,7 +11258,32 @@
     "Lslash": {},
     "ogonekcomb.case": {},
     "ringcomb.case": {},
-    "cedillacomb.case": {},
+    "cedillacomb.case": {
+      "20 7": {
+        "name": "XOUC",
+        "direction": "x"
+      },
+      "23 4": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "10 17": {
+        "name": "YOPQ",
+        "direction": "y"
+      },
+      "13 14": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "0 28": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "26 27": {
+        "name": "YOPQ",
+        "direction": "a"
+      }
+    },
     "circumflexcomb.case": {},
     "tildecomb.case": {},
     "caroncomb.case": {},
@@ -11192,6 +11294,8 @@
     "manat": {},
     "Oslash": {},
     "diagonalbaro": {},
-    "oslash": {}
+    "oslash": {},
+    "commaaccentturnedcomb": {},
+    "ring": {}
   }
 }
