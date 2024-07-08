@@ -92,6 +92,8 @@
     <string>H_ard.glif</string>
     <key>Hastroke-cy</key>
     <string>H_astroke-cy.glif</string>
+    <key>Hbar</key>
+    <string>H_bar.glif</string>
     <key>I</key>
     <string>I_.glif</string>
     <key>Icyr</key>
@@ -134,6 +136,8 @@
     <string>L_ambda.glif</string>
     <key>Lje</key>
     <string>L_je.glif</string>
+    <key>Lslash</key>
+    <string>L_slash.glif</string>
     <key>M</key>
     <string>M_.glif</string>
     <key>N</key>
@@ -252,8 +256,14 @@
     <string>a.glif</string>
     <key>abrevecyr</key>
     <string>abrevecyr.glif</string>
+    <key>acute</key>
+    <string>acute.glif</string>
+    <key>acutecomb</key>
+    <string>acutecomb.glif</string>
     <key>acutecomb-stack.case</key>
     <string>acutecomb-stack.case.glif</string>
+    <key>acutecomb.case</key>
+    <string>acutecomb.case.glif</string>
     <key>acyr</key>
     <string>acyr.glif</string>
     <key>adieresiscyr</key>
@@ -266,6 +276,10 @@
     <string>alphatonos.glif</string>
     <key>ampersand</key>
     <string>ampersand.glif</string>
+    <key>asciicircum</key>
+    <string>asciicircum.glif</string>
+    <key>asciitilde</key>
+    <string>asciitilde.glif</string>
     <key>asterisk</key>
     <string>asterisk.glif</string>
     <key>at</key>
@@ -284,20 +298,40 @@
     <string>bracketleft.glif</string>
     <key>bracketright</key>
     <string>bracketright.glif</string>
+    <key>breve</key>
+    <string>breve.glif</string>
+    <key>breve.cyr</key>
+    <string>breve.cyr.glif</string>
+    <key>brevebelow</key>
+    <string>brevebelow.glif</string>
     <key>brevecomb-stack.case</key>
     <string>brevecomb-stack.case.glif</string>
+    <key>breveinverted</key>
+    <string>breveinverted.glif</string>
     <key>breveinvertedcomb-stack</key>
     <string>breveinvertedcomb-stack.glif</string>
     <key>breveinvertedcomb-stack.case</key>
     <string>breveinvertedcomb-stack.case.glif</string>
     <key>c</key>
     <string>c.glif</string>
+    <key>caron</key>
+    <string>caron.glif</string>
+    <key>caroncomb</key>
+    <string>caroncomb.glif</string>
     <key>caroncomb-stack.case</key>
     <string>caroncomb-stack.case.glif</string>
+    <key>caroncomb.case</key>
+    <string>caroncomb.case.glif</string>
     <key>cedi</key>
     <string>cedi.glif</string>
     <key>cedi.rvrn</key>
     <string>cedi.rvrn.glif</string>
+    <key>cedilla</key>
+    <string>cedilla.glif</string>
+    <key>cedillacomb</key>
+    <string>cedillacomb.glif</string>
+    <key>cedillacomb.case</key>
+    <string>cedillacomb.case.glif</string>
     <key>cent</key>
     <string>cent.glif</string>
     <key>cent.rvrn</key>
@@ -306,8 +340,14 @@
     <string>che.glif</string>
     <key>chi</key>
     <string>chi.glif</string>
+    <key>circumflex</key>
+    <string>circumflex.glif</string>
+    <key>circumflexcomb</key>
+    <string>circumflexcomb.glif</string>
     <key>circumflexcomb-stack.case</key>
     <string>circumflexcomb-stack.case.glif</string>
+    <key>circumflexcomb.case</key>
+    <string>circumflexcomb.case.glif</string>
     <key>colon</key>
     <string>colon.glif</string>
     <key>colonsign</key>
@@ -316,22 +356,50 @@
     <string>colonsign.rvrn.glif</string>
     <key>comma</key>
     <string>comma.glif</string>
+    <key>commaaccent</key>
+    <string>commaaccent.glif</string>
+    <key>commaaccentturned</key>
+    <string>commaaccentturned.glif</string>
     <key>commaaccentturnedcomb</key>
     <string>commaaccentturnedcomb.glif</string>
+    <key>copyright</key>
+    <string>copyright.glif</string>
     <key>currency</key>
     <string>currency.glif</string>
     <key>d</key>
     <string>d.glif</string>
+    <key>dagger</key>
+    <string>dagger.glif</string>
+    <key>daggerdbl</key>
+    <string>daggerdbl.glif</string>
+    <key>dblgrave</key>
+    <string>dblgrave.glif</string>
     <key>dblgravecomb-stack.case</key>
     <string>dblgravecomb-stack.case.glif</string>
+    <key>dcroat</key>
+    <string>dcroat.glif</string>
     <key>de</key>
     <string>de.glif</string>
     <key>delta</key>
     <string>delta.glif</string>
+    <key>diagonalbarL</key>
+    <string>diagonalbarL_.glif</string>
     <key>diagonalbarO</key>
     <string>diagonalbarO_.glif</string>
+    <key>diagonalbarl</key>
+    <string>diagonalbarl.glif</string>
+    <key>dieresis</key>
+    <string>dieresis.glif</string>
+    <key>dieresisbelow</key>
+    <string>dieresisbelow.glif</string>
+    <key>dieresiscomb</key>
+    <string>dieresiscomb.glif</string>
     <key>dieresiscomb-stack.case</key>
     <string>dieresiscomb-stack.case.glif</string>
+    <key>dieresiscomb.case</key>
+    <string>dieresiscomb.case.glif</string>
+    <key>dieresistonos</key>
+    <string>dieresistonos.glif</string>
     <key>divide</key>
     <string>divide.glif</string>
     <key>dje</key>
@@ -344,8 +412,14 @@
     <string>dollar.rvrn2.glif</string>
     <key>dong</key>
     <string>dong.glif</string>
+    <key>dotaccent</key>
+    <string>dotaccent.glif</string>
+    <key>dotaccentcomb</key>
+    <string>dotaccentcomb.glif</string>
     <key>dotaccentcomb-stack.case</key>
     <string>dotaccentcomb-stack.case.glif</string>
+    <key>dotbelow</key>
+    <string>dotbelow.glif</string>
     <key>e</key>
     <string>e.glif</string>
     <key>ecyr</key>
@@ -404,6 +478,8 @@
     <string>fi.glif</string>
     <key>finalsigma</key>
     <string>finalsigma.glif</string>
+    <key>firsttonechinese</key>
+    <string>firsttonechinese.glif</string>
     <key>five</key>
     <string>five.glif</string>
     <key>five.lc</key>
@@ -440,20 +516,38 @@
     <string>gheup.glif</string>
     <key>gje</key>
     <string>gje.glif</string>
+    <key>grave</key>
+    <string>grave.glif</string>
+    <key>gravecomb</key>
+    <string>gravecomb.glif</string>
     <key>gravecomb-stack.case</key>
     <string>gravecomb-stack.case.glif</string>
+    <key>gravecomb.case</key>
+    <string>gravecomb.case.glif</string>
     <key>greater</key>
     <string>greater.glif</string>
     <key>guarani</key>
     <string>guarani.glif</string>
     <key>guarani.rvrn</key>
     <string>guarani.rvrn.glif</string>
+    <key>guillemotleft</key>
+    <string>guillemotleft.glif</string>
+    <key>guillemotright</key>
+    <string>guillemotright.glif</string>
+    <key>guilsinglleft</key>
+    <string>guilsinglleft.glif</string>
+    <key>guilsinglright</key>
+    <string>guilsinglright.glif</string>
     <key>h</key>
     <string>h.glif</string>
     <key>ha</key>
     <string>ha.glif</string>
     <key>hard</key>
     <string>hard.glif</string>
+    <key>hbar</key>
+    <string>hbar.glif</string>
+    <key>hookabove</key>
+    <string>hookabove.glif</string>
     <key>hookabovecomb-stack.case</key>
     <string>hookabovecomb-stack.case.glif</string>
     <key>horizontalbar</key>
@@ -462,10 +556,14 @@
     <string>horizontalbarH_.glif</string>
     <key>horizontalbarlc</key>
     <string>horizontalbarlc.glif</string>
+    <key>horn</key>
+    <string>horn.glif</string>
     <key>hornU</key>
     <string>hornU_.glif</string>
     <key>hryvnia</key>
     <string>hryvnia.glif</string>
+    <key>hungarumlaut</key>
+    <string>hungarumlaut.glif</string>
     <key>hungarumlautcomb-stack.case</key>
     <string>hungarumlautcomb-stack.case.glif</string>
     <key>i</key>
@@ -530,8 +628,14 @@
     <string>liraT_urkish.glif</string>
     <key>lje</key>
     <string>lje.glif</string>
+    <key>lslash</key>
+    <string>lslash.glif</string>
     <key>m</key>
     <string>m.glif</string>
+    <key>macron</key>
+    <string>macron.glif</string>
+    <key>macronbelow</key>
+    <string>macronbelow.glif</string>
     <key>macroncomb-stack.case</key>
     <string>macroncomb-stack.case.glif</string>
     <key>manat</key>
@@ -558,6 +662,8 @@
     <string>notequal.glif</string>
     <key>nu</key>
     <string>nu.glif</string>
+    <key>numbersign</key>
+    <string>numbersign.glif</string>
     <key>o</key>
     <string>o.glif</string>
     <key>ocyr</key>
@@ -566,6 +672,8 @@
     <string>odieresiscyr.glif</string>
     <key>oe</key>
     <string>oe.glif</string>
+    <key>ogonek</key>
+    <string>ogonek.glif</string>
     <key>omega</key>
     <string>omega.glif</string>
     <key>omegatonos</key>
@@ -650,6 +758,8 @@
     <string>rho.glif</string>
     <key>rightanglebracket</key>
     <string>rightanglebracket.glif</string>
+    <key>ring</key>
+    <string>ring.glif</string>
     <key>ruble</key>
     <string>ruble.glif</string>
     <key>rupeeIndian</key>
@@ -692,6 +802,8 @@
     <string>t.glif</string>
     <key>tau</key>
     <string>tau.glif</string>
+    <key>tbar</key>
+    <string>tbar.glif</string>
     <key>te</key>
     <string>te.glif</string>
     <key>tenge</key>
@@ -710,6 +822,14 @@
     <string>threequarters.glif</string>
     <key>threesuperior</key>
     <string>threesuperior.glif</string>
+    <key>tilde</key>
+    <string>tilde.glif</string>
+    <key>tildecomb</key>
+    <string>tildecomb.glif</string>
+    <key>tildecomb.case</key>
+    <string>tildecomb.case.glif</string>
+    <key>tonos</key>
+    <string>tonos.glif</string>
     <key>trademark</key>
     <string>trademark.glif</string>
     <key>tse</key>
@@ -768,6 +888,8 @@
     <string>yen.glif</string>
     <key>yeru</key>
     <string>yeru.glif</string>
+    <key>yi-dieresis</key>
+    <string>yi-dieresis.glif</string>
     <key>yi-dieresiscomb</key>
     <string>yi-dieresiscomb.glif</string>
     <key>yu</key>
