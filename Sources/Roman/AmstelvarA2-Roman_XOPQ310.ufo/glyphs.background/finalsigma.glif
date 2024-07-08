@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph name="zeta" format="2">
-  <advance width="1347"/>
-  <unicode hex="03B6"/>
+<glyph name="finalsigma" format="2">
+  <advance width="1407"/>
+  <unicode hex="03C2"/>
   <outline>
     <contour>
       <point x="1162" y="-313" type="line"/>
@@ -11,9 +11,9 @@
       <point x="1019" y="-34" type="qcurve" smooth="yes"/>
       <point x="791" y="-17" type="line" smooth="yes"/>
       <point x="423" y="10"/>
-      <point x="64" y="241"/>
-      <point x="64" y="448" type="qcurve" smooth="yes"/>
-      <point x="64" y="592"/>
+      <point x="64" y="221"/>
+      <point x="64" y="428" type="qcurve" smooth="yes"/>
+      <point x="64" y="572"/>
       <point x="244" y="819"/>
       <point x="588" y="1036" type="qcurve" smooth="yes"/>
       <point x="683" y="1096" type="line"/>
@@ -37,10 +37,4 @@
       <point x="1242" y="-313" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict/>
-    </dict>
-  </lib>
 </glyph>
