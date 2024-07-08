@@ -3,15 +3,14 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
 
-glyphNames = ['kai-tail']
+glyphNames = 'dollar.rvrn cent.rvrn naira.rvrn won.rvrn kip.rvrn peso.rvrn cedi.rvrn colonsign.rvrn dollar.rvrn2 guarani.rvrn'.split()
 dstFonts   = []
-
-preflight = False
+preflight  = False
 
 for ufoPath in ufoPaths:
     name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
