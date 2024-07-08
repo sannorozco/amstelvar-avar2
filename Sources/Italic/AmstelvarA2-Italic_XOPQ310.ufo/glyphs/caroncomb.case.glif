@@ -4,24 +4,18 @@
   <anchor x="197.0" y="2011" name="top"/>
   <outline>
     <contour>
-      <point x="133.0" y="1646.0" type="qcurve" smooth="yes"/>
-      <point x="99.0" y="1646.0"/>
-      <point x="64.0" y="1679.0"/>
-      <point x="39.0" y="1719.0" type="qcurve" smooth="yes"/>
-      <point x="-113.0" y="1962.0" type="line"/>
-      <point x="-32.0" y="2035.0" type="line"/>
-      <point x="158.0" y="1820.0" type="line"/>
-      <point x="438.0" y="2035.0" type="line"/>
-      <point x="513.0" y="1962.0" type="line"/>
-      <point x="259.0" y="1719.0" type="line" smooth="yes"/>
-      <point x="207.0" y="1670.0"/>
-      <point x="167.0" y="1646.0"/>
+      <point x="133" y="1646" type="qcurve" smooth="yes"/>
+      <point x="99" y="1646"/>
+      <point x="58" y="1682"/>
+      <point x="35" y="1708" type="qcurve" smooth="yes"/>
+      <point x="-192" y="1962" type="line"/>
+      <point x="-130" y="2035" type="line"/>
+      <point x="181" y="1910" type="line"/>
+      <point x="540" y="2035" type="line"/>
+      <point x="574" y="1962" type="line"/>
+      <point x="256" y="1709" type="line" smooth="yes"/>
+      <point x="218" y="1679"/>
+      <point x="167" y="1646"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0.65,1,0.35</string>
-    </dict>
-  </lib>
 </glyph>
