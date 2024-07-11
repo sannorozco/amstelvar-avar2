@@ -516,6 +516,10 @@
         "name": "YOFI",
         "direction": "a"
       },
+      "8 9": {
+        "name": "YOFI",
+        "direction": "a"
+      },
       "B 8": {
         "name": "YTFI",
         "direction": "y"
@@ -7051,28 +7055,32 @@
     },
     "threesuperior": {
       "14 43": {
-        "name": "XOPQ",
+        "name": "XOFI",
         "direction": "x"
       },
       "23 36": {
-        "name": "XOPQ",
+        "name": "XOFI",
         "direction": "x"
       },
       "26 33": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "y"
       },
       "46 11": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "y"
       },
       "17 20": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "y"
       },
       "29 30": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "a"
+      },
+      "43 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "asterisk": {
@@ -7101,7 +7109,44 @@
         "direction": "a"
       }
     },
-    "currency": {},
+    "currency": {
+      "21 3": {
+        "name": "XOPQ",
+        "direction": "y"
+      },
+      "9 15": {
+        "name": "XOPQ",
+        "direction": "y"
+      },
+      "18 6": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "0 12": {
+        "name": "XOPQ",
+        "direction": "x"
+      },
+      "30 31": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "25 26": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "37 38": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "34 35": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "12 18": {
+        "name": "XTRA",
+        "direction": "x"
+      }
+    },
     "perthousand": {},
     "questiondown": {},
     "cent": {
@@ -9283,6 +9328,10 @@
         "name": "YOPQ",
         "direction": "a"
       },
+      "9 8": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
       "14 99": {
         "name": "XFIR",
         "direction": "x"
@@ -10177,21 +10226,21 @@
         "name": "XOPQ",
         "direction": "x"
       },
-      "26 19": {
-        "name": "XOPQ",
-        "direction": "a"
-      },
-      "16 29": {
-        "name": "XOPQ",
-        "direction": "a"
-      },
-      "32 13": {
-        "name": "XOPQ",
-        "direction": "y"
-      },
       "44 63": {
         "name": "XOPQ",
         "direction": "a"
+      },
+      "26 19": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "16 29": {
+        "name": "YOPQ",
+        "direction": "a"
+      },
+      "32 13": {
+        "name": "YOPQ",
+        "direction": "y"
       },
       "57 50": {
         "name": "YOPQ",
@@ -10220,6 +10269,18 @@
       "B 7": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "C 50": {
+        "name": "YTOS",
+        "direction": "y"
+      },
+      "-1 10": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "23 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "section": {},
@@ -11221,9 +11282,9 @@
         "name": "XOPQ",
         "direction": "x"
       },
-      "12 1": {
+      "1 12": {
         "name": "YOPQ",
-        "direction": "y"
+        "direction": "x"
       },
       "16 15": {
         "name": "YOPQ",
