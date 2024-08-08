@@ -9,12 +9,13 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 from hTools3.modules.accents import buildAccentedGlyphs
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = 'Acircumflexgrave Ecircumflexgrave Ocircumflexgrave'.split()
+# glyphNames = 'Acircumflexgrave Ecircumflexgrave Ocircumflexgrave'.split()
+glyphNames = 'zero.lf one.lf two.lf three.lf four.lf five.lf six.lf seven.lf eight.lf nine.lf'.split()
 
 dstFonts = [] # 'XTRA63 XTRA650'.split()
     

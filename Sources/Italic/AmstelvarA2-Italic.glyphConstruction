@@ -1,5 +1,5 @@
 # -------------------------------
-#  L A T I N   U P P E R C A S E 
+#  L A T I N   U P P E R C A S E
 # -------------------------------
 
 Aacute = A + acutecomb.case@top | 0xc1
@@ -192,7 +192,7 @@ Zcaron = Z + caroncomb.case@top | 0x17d
 Zdotaccent = Z + dotaccentcomb.case@top | 0x17b
 
 # -------------------------------
-#  G R E E K   U P P E R C A S E 
+#  G R E E K   U P P E R C A S E
 # -------------------------------
 
 Alpha = A | 0x391
@@ -220,7 +220,7 @@ Upsilontonos = Y + tonoscomb.case@tonos ^ Alphatonos,Y | 0x038E
 Zeta = Z | 0x396
 
 # -------------------------------------
-#  C Y R I L L I C   U P P E R C A S E 
+#  C Y R I L L I C   U P P E R C A S E
 # -------------------------------------
 
 Acyr = A | 0x0410
@@ -282,7 +282,7 @@ Zhedescender = Zhe + Cy-descendercomb.case@cy_descender | 0x496
 Zhedieresiscyr = Zhe + dieresiscomb.case@top | 04DC
 
 # -------------------------------
-#  L A T I N   L O W E R C A S E 
+#  L A T I N   L O W E R C A S E
 # -------------------------------
 
 aacute = a + acutecomb@top | 0xe1
@@ -473,7 +473,7 @@ zcaron = z + caroncomb@top | 0x17e
 zdotaccent = z + dotaccentcomb@top | 0x17c
 
 # -------------------------------
-#  G R E E K   L O W E R C A S E 
+#  G R E E K   L O W E R C A S E
 # -------------------------------
 
 alphatonos = alpha + tonoscomb@GRKtop | 0x03AC
@@ -494,7 +494,7 @@ upsilontonos = upsilon + tonoscomb@GRKtop | 0x03CD
 kaisymbol = kappa + kai-tail@kai_tail | 0x03D7
 
 # -------------------------------------
-#  C Y R I L L I C   L O W E R C A S E 
+#  C Y R I L L I C   L O W E R C A S E
 # -------------------------------------
 
 abrevecyr = a + breve.cyrcomb@top | 0x4d1
@@ -604,7 +604,7 @@ Nj = N&jdotless + idot@top | 0x1cb
 nj = n&jdotless + idot@top | 0x1cc
 
 # -------------------
-#  L I G A T U R E S 
+#  L I G A T U R E S
 # -------------------
 
 f_f = f&f | FB00
@@ -714,13 +714,28 @@ tilde.case = tildecomb.case ^ 1048
 tilde-stack = tildecomb ^ 1048
 tilde-stack.case = tildecomb.case ^ 1048
 
-tonos = tonoscomb ^ 1048 | 0x0384 
-dieresistonos = dieresistonoscomb ^ 1048 | 0x0385 
+tonos = tonoscomb ^ 1048 | 0x0384
+dieresistonos = dieresistonoscomb ^ 1048 | 0x0385
 
 breve.cyr = breve.cyrcomb ^ 1048
 breve.cyr.case = breve.cyrcomb.case ^ 1048
 
 firsttonechinese = macroncomb ^ 1048
+
+# ---------------
+#  F I G U R E S
+# ---------------
+
+zero.lf = zero
+one.lf = one
+two.lf = two
+three.lf = three
+four.lf = four
+five.lf = five
+six.lf = six
+seven.lf = seven
+eight.lf = eight
+nine.lf = nine
 
 # -----------------
 #  E T C E T E R A
