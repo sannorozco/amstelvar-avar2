@@ -14,7 +14,7 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = 'wacute wgrave'.split()
+glyphNames = 'Acircumflexgrave Ecircumflexgrave Ocircumflexgrave'.split()
 
 dstFonts = [] # 'XTRA63 XTRA650'.split()
     
