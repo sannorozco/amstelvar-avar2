@@ -5,8 +5,8 @@ from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
 from defcon import Font
 from ufo2ft import compileTTF, compileVariableTTF
-import ufoProcessor # upgrade to UFOOperator
-from variableValues.measurements import FontMeasurements, permille
+import ufoProcessor # upgrade to UFOOperator?
+from xTools4.modules.measurements import FontMeasurements, permille
 
 
 SUBFAMILY = ['Roman', 'Italic'][1]
