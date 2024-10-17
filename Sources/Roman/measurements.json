@@ -369,6 +369,105 @@
       "parent": "",
       "description": "General y overshoot"
     },
+    "YTUO": {
+      "direction": "y",
+      "glyph 1": "O",
+      "point 1": "C",
+      "glyph 2": "O",
+      "point 2": "3",
+      "parent": "YTOS",
+      "description": "Uppercase overshoot"
+    },
+    "YTLO": {
+      "direction": "y",
+      "glyph 1": "o",
+      "point 1": "X",
+      "glyph 2": "o",
+      "point 2": "3",
+      "parent": "YTOS",
+      "description": "Lowercase overshoot"
+    },
+    "YTFO": {
+      "direction": "y",
+      "glyph 1": "zero",
+      "point 1": "C",
+      "glyph 2": "zero",
+      "point 2": "3",
+      "parent": "YTOS",
+      "description": "Figures overshoot"
+    },
+    "YTAO": {
+      "direction": "y",
+      "glyph 1": "f",
+      "point 1": "A",
+      "glyph 2": "f",
+      "point 2": "11",
+      "parent": "YTOS",
+      "description": "Ascender overshoot"
+    },
+    "YTDO": {
+      "direction": "y",
+      "glyph 1": "g",
+      "point 1": "D",
+      "glyph 2": "g",
+      "point 2": "35",
+      "parent": "YTOS",
+      "description": "Descender overshoot"
+    },
+    "XOAC": {
+      "direction": "a",
+      "glyph 1": "acutecomb",
+      "point 1": "8",
+      "glyph 2": "acutecomb",
+      "point 2": "1",
+      "parent": "",
+      "description": "Accents main weight"
+    },
+    "YOAC": {
+      "direction": "a",
+      "glyph 1": "acutecomb",
+      "point 1": "5",
+      "glyph 2": "acutecomb",
+      "point 2": "4",
+      "parent": "",
+      "description": "Accents secondary weight"
+    },
+    "XOUA": {
+      "direction": "a",
+      "glyph 1": "acutecomb.case",
+      "point 1": "8",
+      "glyph 2": "acutecomb.case",
+      "point 2": "1",
+      "parent": "XOAC",
+      "description": "Uppercase accents main weight"
+    },
+    "XOLA": {
+      "direction": "a",
+      "glyph 1": "acutecomb",
+      "point 1": "8",
+      "glyph 2": "acutecomb",
+      "point 2": "1",
+      "parent": "XOAC",
+      "description": "Lowercase accents main weight"
+    },
+    "YOUA": {
+      "direction": "a",
+      "glyph 1": "acutecomb",
+      "point 1": "5",
+      "glyph 2": "acutecomb",
+      "point 2": "4",
+      "parent": "YOAC",
+      "description": "Uppercase accents secondary weight"
+    },
+    "YOLA": {
+      "direction": "a",
+      "glyph 1": "acutecomb",
+      "point 1": "5",
+      "glyph 2": "acutecomb",
+      "point 2": "4",
+      "parent": "YOAC",
+      "description": "Lowercase accents secondary weight"
+    },
     "XTTW": {
       "direction": "x",
       "glyph 1": "V",
@@ -492,11 +591,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       },
       "B 9": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -530,7 +629,7 @@
         "direction": "y"
       },
       "C 7": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -560,7 +659,7 @@
         "direction": "x"
       },
       "C 17": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -606,11 +705,11 @@
         "direction": "y"
       },
       "C 26": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       },
       "B 39": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -652,7 +751,7 @@
         "direction": "y"
       },
       "C 1": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -686,7 +785,7 @@
         "direction": "x"
       },
       "B 26": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -732,11 +831,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       },
       "B 29": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -770,7 +869,7 @@
         "direction": "y"
       },
       "B 6": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -824,11 +923,11 @@
         "direction": "x"
       },
       "C 22": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       },
       "B 47": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -870,11 +969,11 @@
         "direction": "x"
       },
       "B 9": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -1002,7 +1101,7 @@
         "direction": "y"
       },
       "C 4": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "16 15": {
@@ -1122,11 +1221,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "B 27": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       }
     },
@@ -1374,11 +1473,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "B 33": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       }
     },
@@ -1970,11 +2069,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "B 9": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       }
     },
@@ -2090,11 +2189,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "B 9": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       }
     },
@@ -2214,11 +2313,11 @@
         "direction": "y"
       },
       "B 41": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "C 18": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       }
     },
@@ -2338,7 +2437,7 @@
         "direction": "x"
       },
       "B 24": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       }
     },
@@ -2392,7 +2491,7 @@
         "direction": "y"
       },
       "B 19": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "7 8": {
@@ -2478,7 +2577,7 @@
         "direction": "y"
       },
       "B 0": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "10 11": {
@@ -2782,11 +2881,11 @@
         "direction": "x"
       },
       "X 32": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 44": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -2836,11 +2935,15 @@
         "direction": "x"
       },
       "X 11": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 17": {
-        "name": "YTOS",
+        "name": "YTLO",
+        "direction": "y"
+      },
+      "A 6": {
+        "name": "YTAO",
         "direction": "y"
       }
     },
@@ -2882,11 +2985,11 @@
         "direction": "x"
       },
       "X 3": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 27": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -2944,11 +3047,15 @@
         "direction": "x"
       },
       "X 3": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 22": {
-        "name": "YTOS",
+        "name": "YTLO",
+        "direction": "y"
+      },
+      "A 10": {
+        "name": "YTAO",
         "direction": "y"
       }
     },
@@ -2994,11 +3101,11 @@
         "direction": "x"
       },
       "X 3": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 26": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3048,7 +3155,7 @@
         "direction": "y"
       },
       "A 11": {
-        "name": "YTOS",
+        "name": "YTAO",
         "direction": "y"
       }
     },
@@ -3114,11 +3221,11 @@
         "direction": "y"
       },
       "D 35": {
-        "name": "YTOS",
+        "name": "YTDO",
         "direction": "y"
       },
       "X 41": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3196,11 +3303,11 @@
         "direction": "x"
       },
       "X 13": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "A 7": {
-        "name": "YTOS",
+        "name": "YTAO",
         "direction": "y"
       }
     },
@@ -3370,7 +3477,7 @@
         "direction": "x"
       },
       "A 7": {
-        "name": "YTOS",
+        "name": "YTAO",
         "direction": "y"
       }
     },
@@ -3416,7 +3523,7 @@
         "direction": "x"
       },
       "A 7": {
-        "name": "YTOS",
+        "name": "YTAO",
         "direction": "y"
       }
     },
@@ -3516,6 +3623,14 @@
       "25 99": {
         "name": "XLCS",
         "direction": "x"
+      },
+      "X 12": {
+        "name": "YTLO",
+        "direction": "y"
+      },
+      "X 18": {
+        "name": "YTLO",
+        "direction": "y"
       }
     },
     "n": {
@@ -3584,7 +3699,7 @@
         "direction": "x"
       },
       "X 12": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3622,11 +3737,11 @@
         "direction": "x"
       },
       "X 3": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 9": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3692,11 +3807,11 @@
         "direction": "x"
       },
       "X 12": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 18": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3766,11 +3881,11 @@
         "direction": "x"
       },
       "B 21": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "X 3": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3828,7 +3943,7 @@
         "direction": "x"
       },
       "X 12": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3878,11 +3993,11 @@
         "direction": "y"
       },
       "X 18": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "B 41": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3920,7 +4035,7 @@
         "direction": "y"
       },
       "B 18": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -3978,7 +4093,7 @@
         "direction": "x"
       },
       "B 29": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       }
     },
@@ -4036,7 +4151,7 @@
         "direction": "y"
       },
       "B 19": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "7 8": {
@@ -4126,7 +4241,7 @@
         "direction": "y"
       },
       "B 0": {
-        "name": "YTOS",
+        "name": "YTLO",
         "direction": "y"
       },
       "10 11": {
@@ -4342,7 +4457,7 @@
         "direction": "y"
       },
       "D 21": {
-        "name": "YTOS",
+        "name": "YTDO",
         "direction": "y"
       },
       "7 8": {
@@ -4554,11 +4669,11 @@
         "direction": "y"
       },
       "O 15": {
-        "name": "YTOS",
+        "name": "YTDO",
         "direction": "y"
       },
       "A 58": {
-        "name": "YTOS",
+        "name": "YTDO",
         "direction": "y"
       }
     },
@@ -12882,7 +12997,7 @@
     },
     "acutecomb": {
       "1 8": {
-        "name": "XOPQ",
+        "name": "XOAC",
         "direction": "a"
       },
       "4 5": {
