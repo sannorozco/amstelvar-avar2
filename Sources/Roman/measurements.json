@@ -360,6 +360,15 @@
       "parent": "",
       "description": "X Figure width"
     },
+    "WDSP": {
+      "direction": "x",
+      "glyph 1": "space",
+      "point 1": "-1",
+      "glyph 2": "space",
+      "point 2": "99",
+      "parent": "",
+      "description": "Word space width"
+    },
     "YTOS": {
       "direction": "y",
       "glyph 1": "O",
@@ -468,6 +477,60 @@
       "parent": "YOAC",
       "description": "Lowercase accents secondary weight"
     },
+    "YTUA": {
+      "direction": "y",
+      "glyph 1": "acutecomb.case",
+      "point 1": "C",
+      "glyph 2": "acutecomb.case",
+      "point 2": "4",
+      "parent": "",
+      "description": "Uppercase accent base"
+    },
+    "YTLA": {
+      "direction": "y",
+      "glyph 1": "acutecomb",
+      "point 1": "X",
+      "glyph 2": "acutecomb",
+      "point 2": "4",
+      "parent": "",
+      "description": "Lowercase accent base"
+    },
+    "YUAT": {
+      "direction": "y",
+      "glyph 1": "acutecomb.case",
+      "point 1": "4",
+      "glyph 2": "acutecomb.case",
+      "point 2": "9",
+      "parent": "",
+      "description": "Uppercase accent height"
+    },
+    "YLAT": {
+      "direction": "y",
+      "glyph 1": "acutecomb",
+      "point 1": "4",
+      "glyph 2": "acutecomb",
+      "point 2": "9",
+      "parent": "",
+      "description": "Lowercase accent height"
+    },
+    "XTUA": {
+      "direction": "x",
+      "glyph 1": "acutecomb.case",
+      "point 1": "5",
+      "glyph 2": "acutecomb.case",
+      "point 2": "0",
+      "parent": "",
+      "description": "Uppercase accent width"
+    },
+    "XTLA": {
+      "direction": "x",
+      "glyph 1": "acutecomb",
+      "point 1": "5",
+      "glyph 2": "acutecomb",
+      "point 2": "0",
+      "parent": "",
+      "description": "Lowercase accent width"
+    },
     "XTTW": {
       "direction": "x",
       "glyph 1": "V",
@@ -503,15 +566,6 @@
       "point 2": "3",
       "parent": "",
       "description": "Dot height"
-    },
-    "WDSP": {
-      "direction": "x",
-      "glyph 1": "space",
-      "point 1": "-1",
-      "glyph 2": "space",
-      "point 2": "99",
-      "parent": "",
-      "description": "Word space width"
     }
   },
   "glyphs": {
@@ -11230,22 +11284,54 @@
     },
     "tildecomb": {
       "19 6": {
-        "name": "XOLC",
+        "name": "XOLA",
         "direction": "a"
+      },
+      "0 25": {
+        "name": "YOLA",
+        "direction": "a"
+      },
+      "12 13": {
+        "name": "YOLA",
+        "direction": "a"
+      },
+      "16 X": {
+        "name": "YTLA",
+        "direction": "y"
+      },
+      "12 25": {
+        "name": "XTLA",
+        "direction": "x"
+      },
+      "3 16": {
+        "name": "YLAT",
+        "direction": "y"
       }
     },
     "circumflexcomb": {
       "6 0": {
-        "name": "XOPQ",
+        "name": "XOLA",
         "direction": "y"
       },
       "8 7": {
-        "name": "YOPQ",
+        "name": "YOLA",
         "direction": "a"
       },
       "5 4": {
-        "name": "YOPQ",
+        "name": "YOLA",
         "direction": "a"
+      },
+      "X 7": {
+        "name": "YTLA",
+        "direction": "y"
+      },
+      "5 7": {
+        "name": "XTLA",
+        "direction": "x"
+      },
+      "0 7": {
+        "name": "YLAT",
+        "direction": "y"
       }
     },
     "dotbelowcomb": {},
@@ -12987,22 +13073,46 @@
     "divisionslash": {},
     "gravecomb": {
       "11 4": {
-        "name": "XOPQ",
+        "name": "XOLA",
         "direction": "a"
       },
       "8 7": {
-        "name": "YOPQ",
+        "name": "YOLA",
         "direction": "a"
+      },
+      "8 X": {
+        "name": "YTLA",
+        "direction": "y"
+      },
+      "3 8": {
+        "name": "YLAT",
+        "direction": "y"
+      },
+      "0 7": {
+        "name": "XTLA",
+        "direction": "x"
       }
     },
     "acutecomb": {
       "1 8": {
-        "name": "XOAC",
+        "name": "XOLA",
         "direction": "a"
       },
       "4 5": {
-        "name": "YOPQ",
+        "name": "YOLA",
         "direction": "a"
+      },
+      "X 4": {
+        "name": "YTLA",
+        "direction": "y"
+      },
+      "4 9": {
+        "name": "YLAT",
+        "direction": "y"
+      },
+      "0 5": {
+        "name": "XTLA",
+        "direction": "x"
       }
     },
     "macronbelowcomb": {},
@@ -14978,7 +15088,28 @@
       }
     },
     "gravecomb.case": {},
-    "acutecomb.case": {},
+    "acutecomb.case": {
+      "1 8": {
+        "name": "XOUA",
+        "direction": "a"
+      },
+      "4 5": {
+        "name": "YOUA",
+        "direction": "a"
+      },
+      "4 C": {
+        "name": "YTUA",
+        "direction": "y"
+      },
+      "4 9": {
+        "name": "YUAT",
+        "direction": "y"
+      },
+      "0 5": {
+        "name": "XTUA",
+        "direction": "x"
+      }
+    },
     "brevebelowcomb.case": {},
     "circumflexcomb.case": {},
     "hookabovecomb.case": {},
