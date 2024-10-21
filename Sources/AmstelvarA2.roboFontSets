@@ -2130,5 +2130,29 @@
 		<key>smartSetName</key>
 		<string>overshoots</string>
 	</dict>
+	<dict>
+		<key>query</key>
+		<string>Contours == 0 AND Components == 0</string>
+		<key>smartSetName</key>
+		<string>empty</string>
+	</dict>
+	<dict>
+		<key>query</key>
+		<string>Contours &gt; 0 AND Components == 0</string>
+		<key>smartSetName</key>
+		<string>contours only</string>
+	</dict>
+	<dict>
+		<key>query</key>
+		<string>Components &gt; 0 AND Contours == 0</string>
+		<key>smartSetName</key>
+		<string>components only</string>
+	</dict>
+	<dict>
+		<key>query</key>
+		<string>Contours &gt; 0 AND Components &gt; 0</string>
+		<key>smartSetName</key>
+		<string>contours &amp; components</string>
+	</dict>
 </array>
 </plist>

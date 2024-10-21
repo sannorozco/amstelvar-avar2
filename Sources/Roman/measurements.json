@@ -11295,17 +11295,17 @@
         "name": "YOLA",
         "direction": "a"
       },
-      "16 X": {
+      "X 16": {
         "name": "YTLA",
         "direction": "y"
       },
-      "12 25": {
-        "name": "XTLA",
-        "direction": "x"
-      },
-      "3 16": {
+      "16 3": {
         "name": "YLAT",
         "direction": "y"
+      },
+      "25 12": {
+        "name": "XTLA",
+        "direction": "x"
       }
     },
     "circumflexcomb": {
@@ -11325,13 +11325,13 @@
         "name": "YTLA",
         "direction": "y"
       },
-      "5 7": {
-        "name": "XTLA",
-        "direction": "x"
-      },
-      "0 7": {
+      "7 0": {
         "name": "YLAT",
         "direction": "y"
+      },
+      "7 5": {
+        "name": "XTLA",
+        "direction": "x"
       }
     },
     "dotbelowcomb": {},
@@ -13080,11 +13080,11 @@
         "name": "YOLA",
         "direction": "a"
       },
-      "8 X": {
+      "X 8": {
         "name": "YTLA",
         "direction": "y"
       },
-      "3 8": {
+      "8 3": {
         "name": "YLAT",
         "direction": "y"
       },
@@ -13110,7 +13110,7 @@
         "name": "YLAT",
         "direction": "y"
       },
-      "0 5": {
+      "5 0": {
         "name": "XTLA",
         "direction": "x"
       }
@@ -15097,7 +15097,7 @@
         "name": "YOUA",
         "direction": "a"
       },
-      "4 C": {
+      "C 4": {
         "name": "YTUA",
         "direction": "y"
       },
@@ -15105,7 +15105,7 @@
         "name": "YUAT",
         "direction": "y"
       },
-      "0 5": {
+      "5 0": {
         "name": "XTUA",
         "direction": "x"
       }
@@ -15266,6 +15266,7 @@
     "commaaccentcomb": {},
     "dieresistonoscomb": {},
     "lslash": {},
-    "Eth": {}
+    "Eth": {},
+    "yi-dieresiscomb": {}
   }
 }
