@@ -180,11 +180,12 @@ class AmstelvarA2DesignSpaceBuilder:
                 children[childName] = values
 
             # add parent axis
-            parentMin = min([v[0] for v in children.values()])
-            parentMax = max([v[1] for v in children.values()])
+            parentMin    = min([v[0] for v in children.values()])
+            parentMax    = max([v[1] for v in children.values()])
+            parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
             blendsDict['axes'][parentAxis] = {
                 "name"    : parentAxis,
-                "default" : self.measurementsDefault.values[parentAxis],
+                "default" : parenDefault,
                 "min"     : parentMin,
                 "max"     : parentMax,
             }
