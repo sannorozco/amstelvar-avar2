@@ -5,6 +5,11 @@
     <axis tag="wght" name="Weight" minimum="100" maximum="1000" default="400"/>
     <axis tag="wdth" name="Width" minimum="50" maximum="125" default="100"/>
     <axis tag="XTSP" name="XTSP" minimum="-100" maximum="100" default="0"/>
+    <axis tag="XOPQ" name="XOPQ" minimum="4" maximum="310" default="180"/>
+    <axis tag="XSHA" name="XSHA" minimum="0" maximum="239" default="208"/>
+    <axis tag="YSHA" name="YSHA" minimum="0" maximum="150" default="100"/>
+    <axis tag="XSVA" name="XSVA" minimum="0" maximum="131" default="110"/>
+    <axis tag="YSVA" name="YSVA" minimum="59" maximum="306" default="230"/>
     <axis tag="GRAD" name="GRAD" minimum="-300" maximum="500" default="0"/>
     <axis tag="XOUC" name="XOUC" minimum="4" maximum="310" default="90"/>
     <axis tag="XOLC" name="XOLC" minimum="4" maximum="293" default="85"/>
@@ -994,6 +999,366 @@
           <dimension name="YTTL" xvalue="57"/>
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="205"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XOPQ" xvalue="4"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="4"/>
+          <dimension name="XOLC" xvalue="4"/>
+          <dimension name="XOFI" xvalue="4"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XOPQ" xvalue="310"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="310"/>
+          <dimension name="XOLC" xvalue="293"/>
+          <dimension name="XOFI" xvalue="302"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XSHA" xvalue="0"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="0"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="0"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="0"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XSHA" xvalue="239"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="154"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="124"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="239"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="YSHA" xvalue="0"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="0"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="0"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="0"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="YSHA" xvalue="150"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="150"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="140"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="147"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XSVA" xvalue="0"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="0"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="0"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="0"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XSVA" xvalue="131"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="130"/>
+          <dimension name="YSVU" xvalue="174"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="114"/>
+          <dimension name="YSVL" xvalue="176"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="131"/>
+          <dimension name="YSVF" xvalue="201"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="YSVA" xvalue="59"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="59"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="107"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="84"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
+          <dimension name="WDSP" xvalue="320"/>
+          <dimension name="GRAD" xvalue="0"/>
+          <dimension name="BARS" xvalue="100"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="YSVA" xvalue="306"/>
+        </input>
+        <output>
+          <dimension name="XOUC" xvalue="90"/>
+          <dimension name="XOLC" xvalue="85"/>
+          <dimension name="XOFI" xvalue="88"/>
+          <dimension name="XTRA" xvalue="400"/>
+          <dimension name="YOPQ" xvalue="62"/>
+          <dimension name="YTUC" xvalue="750"/>
+          <dimension name="YTLC" xvalue="511"/>
+          <dimension name="YTAS" xvalue="767"/>
+          <dimension name="YTDE" xvalue="-240"/>
+          <dimension name="YTFI" xvalue="771"/>
+          <dimension name="XSHU" xvalue="104"/>
+          <dimension name="YSHU" xvalue="50"/>
+          <dimension name="XSVU" xvalue="55"/>
+          <dimension name="YSVU" xvalue="224"/>
+          <dimension name="XSHL" xvalue="74"/>
+          <dimension name="YSHL" xvalue="40"/>
+          <dimension name="XSVL" xvalue="48"/>
+          <dimension name="YSVL" xvalue="251"/>
+          <dimension name="XSHF" xvalue="129"/>
+          <dimension name="YSHF" xvalue="47"/>
+          <dimension name="XSVF" xvalue="61"/>
+          <dimension name="YSVF" xvalue="306"/>
+          <dimension name="XTTW" xvalue="5"/>
+          <dimension name="YTTL" xvalue="57"/>
+          <dimension name="YTOS" xvalue="10"/>
+          <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
@@ -3871,6 +4236,336 @@
         <dimension name="YTTL" xvalue="57"/>
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="205"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="XOPQ4" familyname="AmstelvarA2 Roman" stylename="XOPQ4" filename="instances/AmstelvarA2-Roman_XOPQ4.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="4"/>
+        <dimension name="XOLC" xvalue="4"/>
+        <dimension name="XOFI" xvalue="4"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="XOPQ310" familyname="AmstelvarA2 Roman" stylename="XOPQ310" filename="instances/AmstelvarA2-Roman_XOPQ310.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="310"/>
+        <dimension name="XOLC" xvalue="293"/>
+        <dimension name="XOFI" xvalue="302"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="XSHA0" familyname="AmstelvarA2 Roman" stylename="XSHA0" filename="instances/AmstelvarA2-Roman_XSHA0.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="0"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="0"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="0"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="XSHA239" familyname="AmstelvarA2 Roman" stylename="XSHA239" filename="instances/AmstelvarA2-Roman_XSHA239.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="154"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="124"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="239"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="YSHA0" familyname="AmstelvarA2 Roman" stylename="YSHA0" filename="instances/AmstelvarA2-Roman_YSHA0.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="0"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="0"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="0"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="YSHA150" familyname="AmstelvarA2 Roman" stylename="YSHA150" filename="instances/AmstelvarA2-Roman_YSHA150.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="150"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="140"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="147"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="XSVA0" familyname="AmstelvarA2 Roman" stylename="XSVA0" filename="instances/AmstelvarA2-Roman_XSVA0.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="0"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="0"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="0"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="XSVA131" familyname="AmstelvarA2 Roman" stylename="XSVA131" filename="instances/AmstelvarA2-Roman_XSVA131.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="130"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="114"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="131"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="YSVA59" familyname="AmstelvarA2 Roman" stylename="YSVA59" filename="instances/AmstelvarA2-Roman_YSVA59.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="59"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="107"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="84"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="YSVA306" familyname="AmstelvarA2 Roman" stylename="YSVA306" filename="instances/AmstelvarA2-Roman_YSVA306.ufo">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="XTRA" xvalue="400"/>
+        <dimension name="YOPQ" xvalue="62"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="251"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="306"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
       </location>

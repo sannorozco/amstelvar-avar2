@@ -7,6 +7,7 @@ from defcon import Font
 from ufo2ft import compileTTF, compileVariableTTF
 import ufoProcessor # upgrade to UFOOperator?
 from xTools4.modules.measurements import FontMeasurements, permille
+from xTools4.modules.linkPoints2 import readMeasurements
 
 
 SUBFAMILY = ['Roman', 'Italic'][0]
@@ -123,10 +124,14 @@ class AmstelvarA2DesignSpaceBuilder:
         if not os.path.exists(self.amstelvarBlendsPath):
             return
 
-        # import blends data from the original Amstelvar
+        # import Amstelvar blends
         with open(self.amstelvarBlendsPath, 'r', encoding='utf-8') as f:
             blendsDict = json.load(f)
+
+        # -------------
         # add XTSP axis
+        # -------------
+
         blendsDict['axes']['XTSP'] = {
             "name"    : "XTSP",
             "default" : 0,
@@ -147,7 +152,57 @@ class AmstelvarA2DesignSpaceBuilder:
         # add XTSP max source
         blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
         blendsDict['sources']['XTSP100']['XUCS'] = values[1]
-        # save modified data to AmstelvarA2 blends.json
+
+        # -----------------------
+        # add blended PARENT axes
+        # -----------------------
+
+        parentAxes = ['XOPQ', 'XSHA', 'YSHA', 'XSVA', 'YSVA']
+
+        measurements = readMeasurements(self.measurementsPath)
+        fontMeasurements = measurements['font']
+
+        # get children axes
+        for parentAxis in parentAxes:
+            parentMeasurement = fontMeasurements[parentAxis]
+
+            children = {}
+            childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxis]
+            for childName in childNames:
+                # get min/max values from file names
+                values = []
+                for ufo in self.parametricSources:
+                    if childName in ufo:
+                        value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                        values.append(value)
+                assert len(values)
+                values.sort()
+                children[childName] = values
+
+            # add parent axis
+            parentMin = min([v[0] for v in children.values()])
+            parentMax = max([v[1] for v in children.values()])
+            blendsDict['axes'][parentAxis] = {
+                "name"    : parentAxis,
+                "default" : self.measurementsDefault.values[parentAxis],
+                "min"     : parentMin,
+                "max"     : parentMax,
+            }
+
+            # add parent min source
+            blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
+            for childAxis in children.keys():
+                blendsDict['sources'][f'{parentAxis}{parentMin}'][childAxis] = children[childAxis][0]
+
+            # add parent max source
+            blendsDict['sources'][f'{parentAxis}{parentMax}'] = self.defaultLocation.copy()
+            for childAxis in children.keys():
+                blendsDict['sources'][f'{parentAxis}{parentMax}'][childAxis] = children[childAxis][1]
+
+        # -----------------------
+        # save AmstelvarA2 blends
+        # -----------------------
+
         with open(self.blendsPath, 'w', encoding='utf-8') as f:
             json.dump(blendsDict, f, indent=2)
 
