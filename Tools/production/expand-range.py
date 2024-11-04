@@ -3,7 +3,7 @@
 import os, shutil, glob
 import ufoProcessor
 from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, InstanceDescriptor, SourceDescriptor
-from variableValues.measurements import FontMeasurements, permille
+from xTools4.modules.measurements import FontMeasurements, permille
 
 # see http://github.com/gferreira/amstelvar-avar2/issues/12
 

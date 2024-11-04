@@ -1,6 +1,6 @@
 import os
-from variableValues.measurements import FontMeasurements, Measurement, permille
-from variableValues.linkPoints import readMeasurements
+from xTools4.modules.measurements import FontMeasurements, Measurement, permille
+from xTools4.modules.linkPoints2 import readMeasurements
 
 familyName       = 'AmstelvarA2'
 subFamilyName    = ['Roman', 'Italic'][1]

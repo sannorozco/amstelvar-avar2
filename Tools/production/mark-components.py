@@ -1,11 +1,11 @@
 # menuTitle: apply validation colors to sources
 
 from importlib import reload
-import variableValues.validation
-reload(variableValues.validation)
+import xTools4.modules.validation
+reload(xTools4.modules.validation)
 
 import os, glob
-from variableValues.validation import *
+from xTools4.modules.validation import *
 
 familyName    = 'AmstelvarA2'
 subFamilyName = ['Roman', 'Italic'][1]

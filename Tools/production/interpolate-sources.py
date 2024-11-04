@@ -1,5 +1,5 @@
 import os
-from variableValues.measurements import FontMeasurements, permille
+from xTools4.modules.measurements import FontMeasurements, permille
 
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 familyName       = 'AmstelvarA2'
