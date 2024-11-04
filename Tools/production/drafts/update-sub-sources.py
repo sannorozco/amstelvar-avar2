@@ -2,7 +2,7 @@
 
 import os, glob
 from mojo.smartSet import readSmartSets
-from variableValues.linkPoints import readMeasurements
+from xTools4.modules.linkPoints2 import readMeasurements
 
 
 class AmstelvarSubSourceUpdater:
