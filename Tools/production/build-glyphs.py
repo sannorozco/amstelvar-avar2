@@ -1,12 +1,12 @@
 # menuTitle: build glyphs in sources
 
 from importlib import reload
-import hTools3.modules.accents
-reload(hTools3.modules.accents)
+import xTools4.modules.accents
+reload(xTools4.modules.accents)
 
 import os, glob
 from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
-from hTools3.modules.accents import buildAccentedGlyphs
+from xTools4.modules.accents import buildAccentedGlyphs
 
 familyName    = 'AmstelvarA2'
 subFamilyName = ['Roman', 'Italic'][0]

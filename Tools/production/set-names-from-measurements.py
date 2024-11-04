@@ -1,9 +1,9 @@
 from importlib import reload
-import variableValues.measurements
-reload(variableValues.measurements)
+import xTools4.modules.measurements
+reload(xTools4.modules.measurements)
 
 import os, glob, shutil
-from variableValues.measurements import FontMeasurements
+from xTools4.modules.measurements import FontMeasurements
 
 familyName       = 'AmstelvarA2'
 subFamilyName    = ['Roman', 'Italic'][0]
