@@ -4,7 +4,7 @@ from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, Source
 from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
 from defcon import Font
-from ufo2ft import compileTTF, compileVariableTTF
+from ufo2ft import compileVariableTTF
 import ufoProcessor # upgrade to UFOOperator?
 from xTools4.modules.measurements import FontMeasurements, permille
 from xTools4.modules.linkPoints2 import readMeasurements
@@ -370,7 +370,7 @@ class AmstelvarA2DesignSpaceBuilder:
             src.font = Font(src.path)
 
         print(f'\tcompiling variable font...')
-        f = compileVariableTTF(D, featureWriters=[])
+        f = compileVariableTTF(D, featureWriters=[], reverseDirection=False)
         f.save(self.varFontPath)
 
         assert os.path.exists(self.varFontPath)
