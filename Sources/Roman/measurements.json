@@ -39,9 +39,9 @@
     "YOPQ": {
       "direction": "y",
       "glyph 1": "H",
-      "point 1": "19",
+      "point 1": "14",
       "glyph 2": "H",
-      "point 2": "16",
+      "point 2": "15",
       "parent": "",
       "description": "General y opaque"
     },
@@ -137,8 +137,8 @@
     },
     "YTDE": {
       "direction": "y",
-      "glyph 1": "n",
-      "point 1": "0",
+      "glyph 1": "p",
+      "point 1": "-1",
       "glyph 2": "p",
       "point 2": "0",
       "parent": "",
@@ -3415,48 +3415,7 @@
         "direction": "y"
       }
     },
-    "j": {
-      "-1 0": {
-        "direction": "y",
-        "name": "YTDE"
-      },
-      "-1 10": {
-        "direction": "y",
-        "name": "YTLC"
-      },
-      "-1 5": {
-        "direction": "x",
-        "name": "XLCS"
-      },
-      "0 1": {
-        "direction": "y",
-        "name": "YOLC"
-      },
-      "16 22": {
-        "direction": "x",
-        "name": "XDOT"
-      },
-      "19 25": {
-        "direction": "y",
-        "name": "YDOT"
-      },
-      "5 12": {
-        "direction": "x",
-        "name": "XOLC"
-      },
-      "6 7": {
-        "direction": "x",
-        "name": "XSHL"
-      },
-      "7 8": {
-        "direction": "y",
-        "name": "YSHL"
-      },
-      "99 12": {
-        "direction": "x",
-        "name": "XLCS"
-      }
-    },
+    "j": {},
     "k": {
       "2 11": {
         "name": "XOLC",
