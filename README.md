@@ -213,11 +213,18 @@ Variation axes in AmstelvarA2
 - `wght` Weight
 - `wdth` Width
 - `XTSP` Proportional spacing
+- `XOPQ` General x opaque
+- `XSHA` General x horizontal serifs
+- `YSHA` General y horizontal serifs
+- `XSVA` General x vertical serifs
+- `YSVA` General y vertical serifs
 
 ### Parametric axes
 
 - `GRAD` Grades
-- `XOPQ` General x opaque
+- `XOUC` X stem uppercase
+- `XOLC` X stem lowercase
+- `XOFI` X stem figures
 - `XTRA` General x transparent
 - `YOPQ` General y opaque
 - `YTUC` Y transparent uppercase
