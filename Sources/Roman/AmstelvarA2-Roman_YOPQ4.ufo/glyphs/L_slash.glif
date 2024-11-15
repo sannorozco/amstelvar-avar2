@@ -4,12 +4,14 @@
   <unicode hex="0141"/>
   <outline>
     <component base="L"/>
-    <component base="diagonalbarl" xOffset="96.5" yOffset="-13"/>
+    <component base="diagonalbarL" xOffset="96.5" yOffset="-13"/>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
     </dict>
   </lib>
 </glyph>

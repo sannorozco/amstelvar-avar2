@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="yumacron" format="2">
-  <advance width="1698"/>
+  <advance width="1717"/>
   <unicode hex="F52D"/>
   <outline>
     <component base="yu-i"/>
@@ -8,4 +8,10 @@
     <component base="o" xOffset="530"/>
     <component base="macroncomb" xOffset="851.5"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>
