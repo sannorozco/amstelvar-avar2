@@ -4,9 +4,10 @@ from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, Source
 from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
 from defcon import Font
-from ufo2ft import compileTTF, compileVariableTTF
+from ufo2ft import compileVariableTTF
 import ufoProcessor # upgrade to UFOOperator?
 from xTools4.modules.measurements import FontMeasurements, permille
+from xTools4.modules.linkPoints2 import readMeasurements
 
 
 SUBFAMILY = ['Roman', 'Italic'][0]
@@ -32,7 +33,7 @@ class AmstelvarA2DesignSpaceBuilder:
     defaultName     = 'wght400'
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
-    parametricAxesRoman  = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parametricAxesRoman  = 'XOUC XOLC XOFI XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
     parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
 
     def __init__(self):
@@ -123,10 +124,14 @@ class AmstelvarA2DesignSpaceBuilder:
         if not os.path.exists(self.amstelvarBlendsPath):
             return
 
-        # import blends data from the original Amstelvar
+        # import Amstelvar blends
         with open(self.amstelvarBlendsPath, 'r', encoding='utf-8') as f:
             blendsDict = json.load(f)
+
+        # -------------
         # add XTSP axis
+        # -------------
+
         blendsDict['axes']['XTSP'] = {
             "name"    : "XTSP",
             "default" : 0,
@@ -147,7 +152,58 @@ class AmstelvarA2DesignSpaceBuilder:
         # add XTSP max source
         blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
         blendsDict['sources']['XTSP100']['XUCS'] = values[1]
-        # save modified data to AmstelvarA2 blends.json
+
+        # -----------------------
+        # add blended PARENT axes
+        # -----------------------
+
+        parentAxes = ['XOPQ', 'XSHA', 'YSHA', 'XSVA', 'YSVA']
+
+        measurements = readMeasurements(self.measurementsPath)
+        fontMeasurements = measurements['font']
+
+        # get children axes
+        for parentAxis in parentAxes:
+            parentMeasurement = fontMeasurements[parentAxis]
+
+            children = {}
+            childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxis]
+            for childName in childNames:
+                # get min/max values from file names
+                values = []
+                for ufo in self.parametricSources:
+                    if childName in ufo:
+                        value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                        values.append(value)
+                assert len(values)
+                values.sort()
+                children[childName] = values
+
+            # add parent axis
+            parentMin    = min([v[0] for v in children.values()])
+            parentMax    = max([v[1] for v in children.values()])
+            parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
+            blendsDict['axes'][parentAxis] = {
+                "name"    : parentAxis,
+                "default" : parenDefault,
+                "min"     : parentMin,
+                "max"     : parentMax,
+            }
+
+            # add parent min source
+            blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
+            for childAxis in children.keys():
+                blendsDict['sources'][f'{parentAxis}{parentMin}'][childAxis] = children[childAxis][0]
+
+            # add parent max source
+            blendsDict['sources'][f'{parentAxis}{parentMax}'] = self.defaultLocation.copy()
+            for childAxis in children.keys():
+                blendsDict['sources'][f'{parentAxis}{parentMax}'][childAxis] = children[childAxis][1]
+
+        # -----------------------
+        # save AmstelvarA2 blends
+        # -----------------------
+
         with open(self.blendsPath, 'w', encoding='utf-8') as f:
             json.dump(blendsDict, f, indent=2)
 
@@ -314,7 +370,7 @@ class AmstelvarA2DesignSpaceBuilder:
             src.font = Font(src.path)
 
         print(f'\tcompiling variable font...')
-        f = compileVariableTTF(D, featureWriters=[])
+        f = compileVariableTTF(D, featureWriters=[], reverseDirection=False)
         f.save(self.varFontPath)
 
         assert os.path.exists(self.varFontPath)
@@ -636,7 +692,6 @@ class AmstelvarA2DesignSpaceInitializer(AmstelvarA2DesignSpaceBuilder):
         # self.buildParametricSources()
 
 
-
 class AmstelvarA2DesignSpaceBuilder_avar2_v2(AmstelvarA2DesignSpaceBuilder_avar2):
     '''
     Experimental version of avar2 designspace with instances defined by user axes instead of parametric ones.
@@ -664,6 +719,7 @@ class AmstelvarA2DesignSpaceBuilder_avar2_v2(AmstelvarA2DesignSpaceBuilder_avar2
             I.filename     = os.path.join('instances', f'{self.familyName}-{self.subFamilyName}_{styleName}.ufo')
 
             self.designspace.addInstance(I)
+
 
 # -----
 # build

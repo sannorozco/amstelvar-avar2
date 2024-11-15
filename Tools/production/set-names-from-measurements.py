@@ -46,7 +46,7 @@ for ufo in sorted(allUFOs):
     newStyleName = f'{tag}{newValue1000}'
     allNames.append(newStyleName)
     if newStyleName != f.info.styleName:
-        print(f'style name: {f.info.styleName} --> {newStyleName}' )
+        print(f'\tstyle name: {f.info.styleName} --> {newStyleName}' )
         if not preflight:
             f.info.styleName = newStyleName
 

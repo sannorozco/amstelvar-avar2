@@ -1,4 +1,4 @@
-# menuTitle: build glyphs in sources
+# menuTitle: build glyphs from glyph constructions in sources
 
 from importlib import reload
 import xTools4.modules.accents
@@ -15,9 +15,10 @@ sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
 # glyphNames = 'Acircumflexgrave Ecircumflexgrave Ocircumflexgrave'.split()
-glyphNames = 'zero.lf one.lf two.lf three.lf four.lf five.lf six.lf seven.lf eight.lf nine.lf'.split()
+# glyphNames = 'zero.lf one.lf two.lf three.lf four.lf five.lf six.lf seven.lf eight.lf nine.lf'.split()
+glyphNames = ['Lslash'] # .split()
 
-dstFonts = [] # 'XTRA63 XTRA650'.split()
+dstFonts = [] # 'YSVL251 YSVL107'.split()
     
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 

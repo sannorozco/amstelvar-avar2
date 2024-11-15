@@ -5,7 +5,7 @@
   <outline>
     <component base="D"/>
     <component base="z" xOffset="1610"/>
-    <component base="caroncomb" xOffset="2033"/>
+    <component base="caroncomb" xOffset="2033" yOffset="-50"/>
   </outline>
   <lib>
     <dict>
@@ -13,6 +13,8 @@
       <dict/>
       <key>com.hipertipo.tempEdit.glyphSetPath</key>
       <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/sources/Roman/Amstelvar-Roman_wght400.ufo/glyphs</string>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
     </dict>
   </lib>
 </glyph>

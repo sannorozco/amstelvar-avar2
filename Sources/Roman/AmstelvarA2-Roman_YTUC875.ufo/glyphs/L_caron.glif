@@ -4,12 +4,14 @@
   <unicode hex="013D"/>
   <outline>
     <component base="L"/>
-    <component base="caroncomb.alt" xOffset="968" yOffset="120"/>
+    <component base="caroncomb-alt.case" xOffset="968" yOffset="120"/>
   </outline>
   <lib>
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
     </dict>
   </lib>
 </glyph>

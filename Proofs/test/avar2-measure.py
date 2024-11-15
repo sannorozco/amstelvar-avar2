@@ -1,29 +1,22 @@
 from importlib import reload
-import variableValues.measurements
-reload(variableValues.measurements)
+import xTools4.modules.measurements
+reload(xTools4.modules.measurements)
 
 import os
 from fontTools.ttLib import TTFont
 from fontTools.varLib.mutator import instantiateVariableFont
-from variableValues.measurements import FontMeasurements, permille
+from xTools4.modules.measurements import FontMeasurements, permille
 
 folder  = os.path.dirname(os.path.dirname(os.getcwd()))
 ttfPath = os.path.join(folder, 'Fonts', 'AmstelvarA2-Roman_avar2.ttf')
 
 font(ttfPath)
 parameters = fontVariations()
-print('default parameters:')
-print(parameters)
-print()
 
 # parameters['opsz'] = 36 # doesn't have any effect!
-parameters['XOPQ'] = 60
-parameters['XTRA'] = 500
-parameters['YOPQ'] = 62
-
-print('parameters:')
-print(parameters)
-print()
+parameters['XOPQ'] = 120
+# parameters['XTRA'] = 500
+# parameters['YOPQ'] = 62
 
 varfont = TTFont(ttfPath)
 partial = instantiateVariableFont(varfont, parameters)
@@ -43,7 +36,7 @@ measurementsPath = os.path.join(folder, 'Sources', 'Roman', 'measurements.json')
 
 assert os.path.exists(measurementsPath)
 
-f = OpenFont(partialPath, showInterface=True)
+f = OpenFont(partialPath, showInterface=False)
 # this fixes most indexes, but not all
 # for g in f:
 #     if not len(f):
