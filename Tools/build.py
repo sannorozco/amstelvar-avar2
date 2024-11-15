@@ -33,7 +33,7 @@ class AmstelvarA2DesignSpaceBuilder:
     defaultName     = 'wght400'
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTRA YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
     parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
 
     def __init__(self):
@@ -157,7 +157,7 @@ class AmstelvarA2DesignSpaceBuilder:
         # add blended PARENT axes
         # -----------------------
 
-        parentAxes = ['XOPQ', 'XSHA', 'YSHA', 'XSVA', 'YSVA']
+        parentAxes = ['XOPQ', 'YOPQ', 'XSHA', 'YSHA', 'XSVA', 'YSVA']
 
         measurements = readMeasurements(self.measurementsPath)
         fontMeasurements = measurements['font']
