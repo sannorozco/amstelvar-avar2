@@ -108,13 +108,22 @@
       "parent": "XTRA",
       "description": "X transparent figures"
     },
+    "YTRA": {
+      "direction": "y",
+      "glyph 1": "p",
+      "point 1": "0",
+      "glyph 2": "h",
+      "point 2": "7",
+      "parent": "",
+      "description": "General y transparent"
+    },
     "YTUC": {
       "direction": "y",
       "glyph 1": "H",
       "point 1": "0",
       "glyph 2": "H",
       "point 2": "6",
-      "parent": "",
+      "parent": "YTRA",
       "description": "Y transparent uppercase"
     },
     "YTLC": {
@@ -123,7 +132,7 @@
       "point 1": "0",
       "glyph 2": "h",
       "point 2": "13",
-      "parent": "",
+      "parent": "YTRA",
       "description": "Y transparent lowercase"
     },
     "YTAS": {
@@ -132,7 +141,7 @@
       "point 1": "0",
       "glyph 2": "h",
       "point 2": "7",
-      "parent": "",
+      "parent": "YTRA",
       "description": "Y transparent ascender"
     },
     "YTDE": {
@@ -141,7 +150,7 @@
       "point 1": "-1",
       "glyph 2": "p",
       "point 2": "0",
-      "parent": "",
+      "parent": "YTRA",
       "description": "Y transparent descender"
     },
     "YTFI": {
@@ -150,7 +159,7 @@
       "point 1": "9",
       "glyph 2": "zero",
       "point 2": "3",
-      "parent": "",
+      "parent": "YTRA",
       "description": "Y transparent figures"
     },
     "XSHA": {
@@ -8317,80 +8326,7 @@
         "direction": "y"
       }
     },
-    "yu": {
-      "18 30": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "36 24": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "5 10": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "39 21": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "27 33": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "3 0": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "12 18": {
-        "name": "XTLC",
-        "direction": "x"
-      },
-      "30 36": {
-        "name": "XTLC",
-        "direction": "x"
-      },
-      "6 5": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "10 9": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "16 17": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "12 13": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "6 7": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "9 8": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "15 16": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "14 13": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "B 27": {
-        "name": "YTOS",
-        "direction": "y"
-      },
-      "X 21": {
-        "name": "YTOS",
-        "direction": "y"
-      }
-    },
+    "yu": {},
     "ghe.bgr": {
       "14 31": {
         "name": "XOLC",
@@ -13521,56 +13457,7 @@
         "direction": "y"
       }
     },
-    "Tedescender-cy": {
-      "7 0": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "18 15": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "12 17": {
-        "name": "XTUC",
-        "direction": "x"
-      },
-      "5 14": {
-        "name": "YTUC",
-        "direction": "y"
-      },
-      "6 7": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "5 6": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "17 16": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "13 12": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "3 2": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "16 15": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "13 14": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "2 1": {
-        "name": "YSVU",
-        "direction": "y"
-      }
-    },
+    "Tedescender-cy": {},
     "Hadescender": {
       "10 15": {
         "name": "XOUC",
@@ -13859,44 +13746,7 @@
         "direction": "y"
       }
     },
-    "Obarcyr": {
-      "6 18": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "24 12": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "27 9": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "15 21": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "18 24": {
-        "name": "XTUC",
-        "direction": "x"
-      },
-      "15 9": {
-        "name": "YTUC",
-        "direction": "y"
-      },
-      "C 9": {
-        "name": "YTOS",
-        "direction": "y"
-      },
-      "15 B": {
-        "name": "YTOS",
-        "direction": "y"
-      }
-    },
+    "Obarcyr": {},
     "Zhe.bgr": {
       "2 11": {
         "name": "XOUC",
@@ -15226,6 +15076,55 @@
     "dieresistonoscomb": {},
     "lslash": {},
     "Eth": {},
-    "yi-dieresiscomb": {}
+    "yi-dieresiscomb": {},
+    "udieresis": {},
+    "edotaccent": {},
+    "eng": {},
+    "Ecircumflex": {},
+    "adieresis": {},
+    "agrave": {},
+    "oacute": {},
+    "ugrave": {},
+    "igrave": {},
+    "Udieresis": {},
+    "aacute": {},
+    "CR": {},
+    "sixsuperior": {},
+    "Etatonos": {},
+    "Ebrevecyr": {},
+    "nine.lf": {},
+    "ohm": {},
+    "wdieresis": {},
+    "ytilde": {},
+    "lownumeralsign": {},
+    "wacute": {},
+    "Yi": {},
+    "Engtail": {},
+    "Obarcyr-stroke": {},
+    "cy-descendercomb": {},
+    "Iotadieresis": {},
+    "Ccedilla": {},
+    "egrave": {},
+    "breve": {},
+    "ecircumflexacute": {},
+    "dieresis": {},
+    "threequarters": {},
+    "dieresisbelow": {},
+    "hookabove": {},
+    "horn": {},
+    "Dzcaron": {},
+    "nj": {},
+    "Ghestroke": {},
+    "Ntilde": {},
+    "Dcaron": {},
+    "Uhorn": {},
+    "Cy-descendercomb.case": {},
+    "Rho": {},
+    "Yamacron": {},
+    "dblgravecomb-stack.case": {},
+    "napostrophe": {},
+    "palochka": {},
+    "onequarter": {},
+    "nbspace": {}
   }
 }

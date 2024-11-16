@@ -33,8 +33,11 @@ class AmstelvarA2DesignSpaceBuilder:
     defaultName     = 'wght400'
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTRA YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parentAxes = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA 
+
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
     parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+
 
     def __init__(self):
         # get measurements for default source
@@ -157,13 +160,11 @@ class AmstelvarA2DesignSpaceBuilder:
         # add blended PARENT axes
         # -----------------------
 
-        parentAxes = ['XOPQ', 'YOPQ', 'XSHA', 'YSHA', 'XSVA', 'YSVA']
-
         measurements = readMeasurements(self.measurementsPath)
         fontMeasurements = measurements['font']
 
         # get children axes
-        for parentAxis in parentAxes:
+        for parentAxis in self.parentAxes:
             parentMeasurement = fontMeasurements[parentAxis]
 
             children = {}
@@ -180,8 +181,8 @@ class AmstelvarA2DesignSpaceBuilder:
                 children[childName] = values
 
             # add parent axis
-            parentMin    = min([v[0] for v in children.values()])
-            parentMax    = max([v[1] for v in children.values()])
+            parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
+            parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
             parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
             blendsDict['axes'][parentAxis] = {
                 "name"    : parentAxis,
@@ -226,7 +227,8 @@ class AmstelvarA2DesignSpaceBuilder:
                 if name in ufo:
                     value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
                     values.append(value)
-            assert len(values)
+            if not len(values) == 2:
+                print(f'ERROR: {name}: {values}')
             values.sort()
 
             # create axis
@@ -744,7 +746,7 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
-    D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
