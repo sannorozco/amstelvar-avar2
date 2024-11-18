@@ -686,6 +686,22 @@
 				<key>smartSetName</key>
 				<string>uppercase cyrillic</string>
 			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>diagonalbarL</string>
+					<string>diagonalbarO</string>
+					<string>Obarcyr-stroke</string>
+					<string>U-stroke</string>
+					<string>Ha-stroke</string>
+					<string>Cy-descendercomb.case</string>
+					<string>horizontalbar</string>
+					<string>horizontalbarH</string>
+					<string>hornU</string>
+				</array>
+				<key>smartSetName</key>
+				<string>uppercase parts</string>
+			</dict>
 		</array>
 		<key>smartSetName</key>
 		<string>uppercase</string>
@@ -1066,6 +1082,20 @@
 				<key>smartSetName</key>
 				<string>lowercase cyrillic</string>
 			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>diagonalbarl</string>
+					<string>diagonalbaro</string>
+					<string>horizontalbarlc</string>
+					<string>ustraight-stroke</string>
+					<string>yu.bgr-stroke</string>
+					<string>engn</string>
+					<string>cy-descendercomb</string>
+				</array>
+				<key>smartSetName</key>
+				<string>lowercase parts</string>
+			</dict>
 		</array>
 		<key>smartSetName</key>
 		<string>lowercase</string>
@@ -1123,6 +1153,23 @@
 				</array>
 				<key>smartSetName</key>
 				<string>figures oldstyle</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>zero.lf</string>
+					<string>one.lf</string>
+					<string>two.lf</string>
+					<string>three.lf</string>
+					<string>four.lf</string>
+					<string>five.lf</string>
+					<string>six.lf</string>
+					<string>seven.lf</string>
+					<string>eight.lf</string>
+					<string>nine.lf</string>
+				</array>
+				<key>smartSetName</key>
+				<string>figures lining</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
