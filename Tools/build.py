@@ -34,10 +34,10 @@ class AmstelvarA2DesignSpaceBuilder:
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
-    parentAxesItalic = 'XOPQ XSHA YSHA XSVA YSVA'.split() # YTRA
+    parentAxesItalic = 'XOPQ YOPQ      XSHA YSHA XSVA YSVA'.split() # YTRA
 
     parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
-    parametricAxesItalic = 'XOUC XOLC XOFI YOPQ           XTRA           YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTRA           YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
 
     def __init__(self):
         # get measurements for default source
