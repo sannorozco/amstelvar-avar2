@@ -11,7 +11,7 @@ measurementsSrc = readMeasurements(measurementsPathSrc)
 measurementsDst = readMeasurements(measurementsPathDst)
 
 measurementNames = [] # 'YTUO YTLO YTFO YTAO YTDO XOAC YOAC XOUA XOLA YOUA YOLA YTUA YTLA YUAT YLAT XTUA XTLA'.split()
-glyphNames       = CurrentFont().selectedGlyphNames
+glyphNames       = ['AE'] # CurrentFont().selectedGlyphNames
 
 # copy font-level measurements
 for measurementName in measurementNames:

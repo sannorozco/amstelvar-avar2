@@ -3225,48 +3225,7 @@
       }
     },
     "i": {},
-    "j": {
-      "-1 0": {
-        "direction": "y",
-        "name": "YTDE"
-      },
-      "-1 10": {
-        "direction": "y",
-        "name": "YTLC"
-      },
-      "-1 5": {
-        "direction": "x",
-        "name": "XLCS"
-      },
-      "0 1": {
-        "direction": "y",
-        "name": "YOLC"
-      },
-      "16 22": {
-        "direction": "x",
-        "name": "XDOT"
-      },
-      "19 25": {
-        "direction": "y",
-        "name": "YDOT"
-      },
-      "5 12": {
-        "direction": "x",
-        "name": "XOLC"
-      },
-      "6 7": {
-        "direction": "x",
-        "name": "XSHL"
-      },
-      "7 8": {
-        "direction": "y",
-        "name": "YSHL"
-      },
-      "99 12": {
-        "direction": "x",
-        "name": "XLCS"
-      }
-    },
+    "j": {},
     "k": {
       "14 11": {
         "name": "XOLC",
@@ -7820,6 +7779,14 @@
         "name": "YOUC",
         "direction": "a"
       },
+      "38 10": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "22 24": {
+        "name": "XTUC",
+        "direction": "x"
+      },
       "41 14": {
         "name": "YTUC",
         "direction": "y"
@@ -7844,11 +7811,11 @@
         "name": "YSHU",
         "direction": "y"
       },
-      "13 14": {
+      "8 9": {
         "name": "YSHU",
         "direction": "y"
       },
-      "8 9": {
+      "13 14": {
         "name": "YSHU",
         "direction": "y"
       },
@@ -7864,13 +7831,9 @@
         "name": "XSVU",
         "direction": "x"
       },
-      "34 33": {
+      "27 26": {
         "name": "XSVU",
         "direction": "x"
-      },
-      "27 26": {
-        "name": "YSVU",
-        "direction": "y"
       },
       "16 15": {
         "name": "YSVU",
@@ -7943,76 +7906,7 @@
         "direction": "y"
       }
     },
-    "OE": {
-      "32 14": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "0 26": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "10 7": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "37 3": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "23 29": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "19 16": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "47 42": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "23 3": {
-        "name": "YTUC",
-        "direction": "y"
-      },
-      "9 8": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "17 18": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "43 44": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "46 45": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "8 7": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "19 18": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "45 44": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "C 3": {
-        "name": "YTOS",
-        "direction": "y"
-      },
-      "O 23": {
-        "name": "YTOS",
-        "direction": "y"
-      }
-    },
+    "OE": {},
     "Schwa": {
       "20 6": {
         "name": "XOUC",
@@ -9388,32 +9282,7 @@
         "direction": "a"
       }
     },
-    "tildecomb": {
-      "19 6": {
-        "name": "XOLA",
-        "direction": "a"
-      },
-      "0 25": {
-        "name": "YOLA",
-        "direction": "a"
-      },
-      "12 13": {
-        "name": "YOLA",
-        "direction": "a"
-      },
-      "X 16": {
-        "name": "YTLA",
-        "direction": "y"
-      },
-      "16 3": {
-        "name": "YLAT",
-        "direction": "y"
-      },
-      "25 12": {
-        "name": "XTLA",
-        "direction": "x"
-      }
-    },
+    "tildecomb": {},
     "circumflexcomb": {
       "6 0": {
         "name": "XOLA",
@@ -9596,12 +9465,7 @@
         "direction": "y"
       }
     },
-    "nu": {
-      "1 12": {
-        "name": "XOLC",
-        "direction": "a"
-      }
-    },
+    "nu": {},
     "upsilon": {
       "3 14": {
         "name": "XOLC",
@@ -9721,52 +9585,7 @@
         "direction": "x"
       }
     },
-    "te": {
-      "4 17": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "14 11": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "2 10": {
-        "name": "YTLC",
-        "direction": "y"
-      },
-      "3 4": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "17 0": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "3 2": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "9 8": {
-        "name": "XSVL",
-        "direction": "x"
-      },
-      "13 12": {
-        "name": "XSVL",
-        "direction": "x"
-      },
-      "9 10": {
-        "name": "YSVL",
-        "direction": "y"
-      },
-      "12 11": {
-        "name": "YSVL",
-        "direction": "y"
-      }
-    },
+    "te": {},
     "tse": {
       "9 18": {
         "name": "XOLC",
@@ -11671,6 +11490,107 @@
     "ijacute": {},
     "ebreve": {},
     "Atilde": {},
-    "dblgrave-stack": {}
+    "dblgrave-stack": {},
+    "Agrave": {},
+    "Igrave": {},
+    "ntilde": {},
+    "adblgrave": {},
+    "ecircumflex": {},
+    "ucircumflex": {},
+    "ellipsis": {},
+    "circumflex": {},
+    "horn": {},
+    "Lj": {},
+    "Nj": {},
+    "Dzcaron": {},
+    "Ainvertedbreve": {},
+    "iacute_j.loclNLD": {},
+    "Odblgrave": {},
+    "otildemacron": {},
+    "ocircumflextilde": {},
+    "Odotbelow": {},
+    "ringcomb-stack": {},
+    "tildecomb-stack": {},
+    "yu.bgr": {},
+    "Rho": {},
+    "Upsilontonos": {},
+    "hornu": {},
+    "Aring": {},
+    "Icircumflex": {},
+    "Utilde": {},
+    "Engtail": {},
+    "Eng": {},
+    "Omacron": {},
+    "Tbar": {},
+    "commaaccent": {},
+    "ring-stack": {},
+    "hungarumlaut": {},
+    "Adblgrave": {},
+    "wgrave": {},
+    "Ahookabove": {},
+    "acircumflextilde": {},
+    "abrevetilde": {},
+    "Iotadieresis": {},
+    "Alpha": {},
+    "Uhorntilde": {},
+    "Uhookabove": {},
+    "Ohorngrave": {},
+    "cdotaccent": {},
+    "udieresis": {},
+    "ldot": {},
+    "tbar": {},
+    "ohorn": {},
+    "iinvertedbreve": {},
+    "uhorngrave": {},
+    "tilde": {},
+    "Cacute": {},
+    "Omicrontonos": {},
+    "Yacute": {},
+    "Idotbelow": {},
+    "Abrevecyr": {},
+    "yi-dieresis": {},
+    "macronbelow": {},
+    "Oslashacute": {},
+    "Zacute": {},
+    "Edotaccent": {},
+    "Etatonos": {},
+    "Beta": {},
+    "eogonek": {},
+    "lacute": {},
+    "Udieresis": {},
+    "Emacron": {},
+    "Ymacron": {},
+    "Upsilondieresis": {},
+    "upsilondieresistonos": {},
+    "itilde": {},
+    "Idieresis": {},
+    "Ocircumflex": {},
+    "Uhorndotbelow": {},
+    "Iotatonos": {},
+    "ncaron": {},
+    "ebrevecyr": {},
+    "Ccedilla": {},
+    "grave-stack": {},
+    "Rcaron": {},
+    "Oinvertedbreve": {},
+    "Eta": {},
+    "egrave": {},
+    "nbspace": {},
+    ".null": {},
+    "CR": {},
+    "sacute": {},
+    "wcircumflex": {},
+    "otilde": {},
+    "uacute": {},
+    "edotbelow": {},
+    "ohorngrave": {},
+    "imacron": {},
+    "brevebelow": {},
+    "Omacroncyr": {},
+    "acircumflex": {},
+    "Gcaron": {},
+    "brevebelow.case": {},
+    "ccaron": {},
+    "ccircumflex": {}
   }
 }
