@@ -33,11 +33,12 @@ class AmstelvarA2DesignSpaceBuilder:
     defaultName     = 'wght400'
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
+    parentAxesBuild  = True
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
-    parentAxesItalic = 'XOPQ YOPQ      XSHA YSHA XSVA YSVA'.split() # YTRA
+    parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
 
     parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
-    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTRA           YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
 
     def __init__(self):
         # get measurements for default source
@@ -160,51 +161,52 @@ class AmstelvarA2DesignSpaceBuilder:
         # add blended PARENT axes
         # -----------------------
 
-        measurements = readMeasurements(self.measurementsPath)
-        fontMeasurements = measurements['font']
+        if self.parentAxesBuild:
+            measurements = readMeasurements(self.measurementsPath)
+            fontMeasurements = measurements['font']
 
-        # get children axes
-        parentAxes = self.parentAxesRoman if SUBFAMILY == 'Roman' else self.parentAxesItalic
-        for parentAxis in parentAxes:
-            parentMeasurement = fontMeasurements[parentAxis]
+            # get children axes
+            parentAxes = self.parentAxesRoman if SUBFAMILY == 'Roman' else self.parentAxesItalic
+            for parentAxis in parentAxes:
+                parentMeasurement = fontMeasurements[parentAxis]
 
-            children = {}
-            childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxis]
-            for childName in childNames:
-                # get min/max values from file names
-                values = []
-                for ufo in self.parametricSources:
-                    if childName in ufo:
-                        value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                        values.append(value)
+                children = {}
+                childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxis]
+                for childName in childNames:
+                    # get min/max values from file names
+                    values = []
+                    for ufo in self.parametricSources:
+                        if childName in ufo:
+                            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                            values.append(value)
 
-                if not len(values) == 2:
-                    print(parentAxis, childName, values)
-                    continue
+                    if not len(values) == 2:
+                        print(parentAxis, childName, values)
+                        continue
 
-                values.sort()
-                children[childName] = values
+                    values.sort()
+                    children[childName] = values
 
-            # add parent axis
-            parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
-            parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
-            parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
-            blendsDict['axes'][parentAxis] = {
-                "name"    : parentAxis,
-                "default" : parenDefault,
-                "min"     : parentMin,
-                "max"     : parentMax,
-            }
+                # add parent axis
+                parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
+                parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
+                parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
+                blendsDict['axes'][parentAxis] = {
+                    "name"    : parentAxis,
+                    "default" : parenDefault,
+                    "min"     : parentMin,
+                    "max"     : parentMax,
+                }
 
-            # add parent min source
-            blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
-            for childAxis in children.keys():
-                blendsDict['sources'][f'{parentAxis}{parentMin}'][childAxis] = children[childAxis][0]
+                # add parent min source
+                blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
+                for childAxis in children.keys():
+                    blendsDict['sources'][f'{parentAxis}{parentMin}'][childAxis] = children[childAxis][0]
 
-            # add parent max source
-            blendsDict['sources'][f'{parentAxis}{parentMax}'] = self.defaultLocation.copy()
-            for childAxis in children.keys():
-                blendsDict['sources'][f'{parentAxis}{parentMax}'][childAxis] = children[childAxis][1]
+                # add parent max source
+                blendsDict['sources'][f'{parentAxis}{parentMax}'] = self.defaultLocation.copy()
+                for childAxis in children.keys():
+                    blendsDict['sources'][f'{parentAxis}{parentMax}'][childAxis] = children[childAxis][1]
 
         # -----------------------
         # save AmstelvarA2 blends
@@ -751,7 +753,7 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
-    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()

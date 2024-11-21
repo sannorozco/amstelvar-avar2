@@ -6,8 +6,8 @@ sourcesFolder = os.path.join(baseFolder, 'Sources', subFamily)
 
 parentAxes = {
     # 'XOPQ' : ('XOUC', 'XOLC', 'XOFI'), 
-    'YOPQ' : ('YOUC', 'YOLC', 'YOFI'), 
-    # 'XTRA' : ('XTUC', 'XTLC', 'XTFI'), 
+    # 'YOPQ' : ('YOUC', 'YOLC', 'YOFI'), 
+    'XTRA' : ('XTUC', 'XTLC', 'XTFI'), 
 }
 
 deleteParent = True
