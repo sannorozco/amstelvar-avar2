@@ -4,6 +4,12 @@
   <unicode hex="014B"/>
   <outline>
     <component base="engn"/>
-    <component base="engtail"/>
+    <component base="engtail" xOffset="397"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.65,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>
