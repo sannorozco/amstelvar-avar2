@@ -2142,6 +2142,10 @@
       "5 6": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "10 99": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "Q": {
@@ -4741,6 +4745,10 @@
       "26 27": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "28 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Ef": {
@@ -4861,6 +4869,14 @@
       "21 20": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "22 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "-1 3": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Ucyr": {
@@ -5045,6 +5061,10 @@
       "19 20": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "8 99": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "Kadescender": {
@@ -5574,6 +5594,10 @@
       "10 11": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "9 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Soft": {
@@ -8344,6 +8368,14 @@
       "27 28": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "23 99": {
+        "name": "XUCR",
+        "direction": "x"
+      },
+      "-1 2": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Dje": {
@@ -8514,11 +8546,15 @@
       "36 35": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "34 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Lje": {
       "47 34": {
-        "name": "XOUC",
+        "name": "YOUC",
         "direction": "x"
       },
       "28 3": {
@@ -8576,6 +8612,14 @@
       "12 13": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "37 44": {
+        "name": "XOUC",
+        "direction": "y"
+      },
+      "22 99": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "Be": {
@@ -8888,6 +8932,10 @@
       "0 16": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "0 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "lambda": {
@@ -10815,55 +10863,19 @@
         "direction": "y"
       }
     },
-    "Tedescender-cy": {
-      "7 0": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "18 15": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "5 14": {
-        "name": "YTUC",
-        "direction": "y"
-      },
-      "6 7": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "5 6": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "17 16": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "13 12": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "3 2": {
-        "name": "XSVU",
-        "direction": "x"
-      },
-      "16 15": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "13 14": {
-        "name": "YSVU",
-        "direction": "y"
-      },
-      "2 1": {
-        "name": "YSVU",
-        "direction": "y"
-      }
-    },
+    "Tedescender-cy": {},
     "Hadescender": {},
     "Chedescender-cy": {},
-    "Cheverticalstroke-cy": {},
+    "Cheverticalstroke-cy": {
+      "-1 14": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "31 99": {
+        "name": "XUCS",
+        "direction": "x"
+      }
+    },
     "Schwacyr": {},
     "Obarcyr": {},
     "Zhe.bgr": {
@@ -11591,6 +11603,15 @@
     "Gcaron": {},
     "brevebelow.case": {},
     "ccaron": {},
-    "ccircumflex": {}
+    "ccircumflex": {},
+    "Itilde": {},
+    "Ushort": {},
+    "Epsilontonos": {},
+    "Ocyr": {},
+    "Ha": {},
+    "Adieresiscyr": {},
+    "Igravecyr": {},
+    "Odieresiscyr": {},
+    "En": {}
   }
 }
