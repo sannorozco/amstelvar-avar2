@@ -10,7 +10,7 @@ from xTools4.modules.measurements import FontMeasurements, permille
 from xTools4.modules.linkPoints2 import readMeasurements
 
 
-SUBFAMILY = ['Roman', 'Italic'][0]
+SUBFAMILY = ['Roman', 'Italic'][1]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -33,11 +33,12 @@ class AmstelvarA2DesignSpaceBuilder:
     defaultName     = 'wght400'
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
-    parentAxes = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
+    parentAxesBuild  = True
+    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
+    parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
 
     parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
-    parametricAxesItalic = 'XOPQ XTRA YOPQ YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
-
+    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
 
     def __init__(self):
         # get measurements for default source
@@ -160,46 +161,52 @@ class AmstelvarA2DesignSpaceBuilder:
         # add blended PARENT axes
         # -----------------------
 
-        measurements = readMeasurements(self.measurementsPath)
-        fontMeasurements = measurements['font']
+        if self.parentAxesBuild:
+            measurements = readMeasurements(self.measurementsPath)
+            fontMeasurements = measurements['font']
 
-        # get children axes
-        for parentAxis in self.parentAxes:
-            parentMeasurement = fontMeasurements[parentAxis]
+            # get children axes
+            parentAxes = self.parentAxesRoman if SUBFAMILY == 'Roman' else self.parentAxesItalic
+            for parentAxis in parentAxes:
+                parentMeasurement = fontMeasurements[parentAxis]
 
-            children = {}
-            childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxis]
-            for childName in childNames:
-                # get min/max values from file names
-                values = []
-                for ufo in self.parametricSources:
-                    if childName in ufo:
-                        value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                        values.append(value)
-                assert len(values)
-                values.sort()
-                children[childName] = values
+                children = {}
+                childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxis]
+                for childName in childNames:
+                    # get min/max values from file names
+                    values = []
+                    for ufo in self.parametricSources:
+                        if childName in ufo:
+                            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                            values.append(value)
 
-            # add parent axis
-            parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
-            parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
-            parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
-            blendsDict['axes'][parentAxis] = {
-                "name"    : parentAxis,
-                "default" : parenDefault,
-                "min"     : parentMin,
-                "max"     : parentMax,
-            }
+                    if not len(values) == 2:
+                        print(parentAxis, childName, values)
+                        continue
 
-            # add parent min source
-            blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
-            for childAxis in children.keys():
-                blendsDict['sources'][f'{parentAxis}{parentMin}'][childAxis] = children[childAxis][0]
+                    values.sort()
+                    children[childName] = values
 
-            # add parent max source
-            blendsDict['sources'][f'{parentAxis}{parentMax}'] = self.defaultLocation.copy()
-            for childAxis in children.keys():
-                blendsDict['sources'][f'{parentAxis}{parentMax}'][childAxis] = children[childAxis][1]
+                # add parent axis
+                parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
+                parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
+                parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
+                blendsDict['axes'][parentAxis] = {
+                    "name"    : parentAxis,
+                    "default" : parenDefault,
+                    "min"     : parentMin,
+                    "max"     : parentMax,
+                }
+
+                # add parent min source
+                blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
+                for childAxis in children.keys():
+                    blendsDict['sources'][f'{parentAxis}{parentMin}'][childAxis] = children[childAxis][0]
+
+                # add parent max source
+                blendsDict['sources'][f'{parentAxis}{parentMax}'] = self.defaultLocation.copy()
+                for childAxis in children.keys():
+                    blendsDict['sources'][f'{parentAxis}{parentMax}'][childAxis] = children[childAxis][1]
 
         # -----------------------
         # save AmstelvarA2 blends

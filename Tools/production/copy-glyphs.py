@@ -11,9 +11,9 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = 'alpha rho tau'.split()
+glyphNames = 'Oslash diagonalbarO'.split()
 
-dstFonts = 'XOPQ310 XSHL0 XSHL136 XSHU144 XSHU2 XSVF126 XSVF6 XSVL0 XSVL130 XSVU0 XSVU124 XTRA63 XTRA650 XTTW0 XTTW30 XUCS114 XUCS259'.split()
+dstFonts = 'YTFI281 YTFI895'.split()
     
 preflight = False
 
