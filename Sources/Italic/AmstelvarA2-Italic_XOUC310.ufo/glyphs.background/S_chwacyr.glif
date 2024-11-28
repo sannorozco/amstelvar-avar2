@@ -1,7 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Schwacyr" format="2">
-  <advance width="500"/>
+  <advance width="1419"/>
   <unicode hex="04D8"/>
   <outline>
+    <contour>
+      <point x="2211" y="872" type="move"/>
+      <point x="2211" y="493"/>
+      <point x="1504" y="-22"/>
+      <point x="942" y="-22" type="qcurve" smooth="yes"/>
+      <point x="551" y="-22"/>
+      <point x="68" y="317"/>
+      <point x="68" y="614" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="1570" y="890" type="move"/>
+      <point x="1570" y="1132"/>
+      <point x="1270" y="1389"/>
+      <point x="945" y="1389" type="qcurve" smooth="yes"/>
+      <point x="824" y="1389"/>
+      <point x="635" y="1341"/>
+      <point x="574" y="1295" type="qcurve"/>
+    </contour>
+    <contour>
+      <point x="462" y="1423" type="move"/>
+      <point x="513" y="1438" type="line"/>
+      <point x="565" y="1453" type="line"/>
+      <point x="673" y="1487"/>
+      <point x="946" y="1527"/>
+      <point x="1152" y="1527" type="qcurve" smooth="yes"/>
+      <point x="1679" y="1527"/>
+      <point x="2211" y="1159"/>
+      <point x="2211" y="872" type="qcurve"/>
+    </contour>
   </outline>
 </glyph>

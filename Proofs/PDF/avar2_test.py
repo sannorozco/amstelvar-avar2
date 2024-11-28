@@ -3,8 +3,10 @@
 import os
 from random import randint 
 
+subFamily = ['Roman', 'Italic'][1]
+
 folder  = os.path.dirname(os.path.dirname(os.getcwd()))
-ttfPath = os.path.join(folder, 'Fonts', 'AmstelvarA2-Roman_avar2.ttf')
+ttfPath = os.path.join(folder, 'Fonts', f'AmstelvarA2-{subFamily}_avar2.ttf')
 
 newPage('A4')
 font(ttfPath)
@@ -46,6 +48,7 @@ T.font(ttfPath)
 T.fontSize(fontsize)
 T.lineHeight(fontsize*lineheight)
 T.fontVariations(**variations)
+# T.openTypeFeatures(kern=False)
 T.append(txt)
 
 textBox(T, (x, y, w, h))
