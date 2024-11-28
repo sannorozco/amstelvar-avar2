@@ -3,12 +3,12 @@
 import os
 from mojo.smartSet import readSmartSets
 
-subfamilyName = ['Roman', 'Italic'][0]
-defaultName   = 'wght400'
-baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
-sourcesFolder = os.path.join(baseFolder, 'Sources')
+subfamilyName = ['Roman', 'Italic'][1]
+defaultName     = 'wght400'
+baseFolder      = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder   = os.path.join(baseFolder, 'Sources')
 smartSetsPath = os.path.join(sourcesFolder, 'AmstelvarA2.roboFontSets')
-defaultPath   = os.path.join(sourcesFolder, f'AmstelvarA2-{subfamilyName}_{defaultName}.ufo')
+defaultPath   = os.path.join(sourcesFolder, subfamilyName, f'AmstelvarA2-{subfamilyName}_{defaultName}.ufo')
 
 assert os.path.exists(smartSetsPath)
 assert os.path.exists(defaultPath)
@@ -39,4 +39,8 @@ componentsUC = set(components['uppercase'])
 componentsLC = set(components['lowercase'])
 
 componentsCommon = componentsUC.intersection(componentsLC)
-print(componentsCommon)
+
+print('components which are used in both UC & lc glyphs:')
+for glyphName in componentsCommon:
+    print(f'- {glyphName}')
+

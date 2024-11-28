@@ -93,9 +93,9 @@ Jcircumflex = J + circumflexcomb.case@top | 0x134
 Kcommaaccent = K + commaaccentcomb.case@bottom | 0x136
 
 Lacute = L + acutecomb.case@top | 0x139
-Lcaron = L + caroncomb.alt@topright | 0x13d
+Lcaron = L + caroncomb-alt.case@topright | 0x13d
 Lcommaaccent = L + commaaccentcomb.case@bottom | 0x13b
-Ldot = L + periodcentered.loclCAT@centerright | 0x13f
+Ldot = L + periodcentered-loclCAT.case@centerright | 0x13f
 Lslash = L + diagonalbarL@center | 0x141
 
 Nacute = N + acutecomb.case@top | 0x143
