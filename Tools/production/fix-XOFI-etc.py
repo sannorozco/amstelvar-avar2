@@ -80,7 +80,7 @@ for figuresName, lowercaseName in sourcesFigures.items():
         if not preflight:
             for glyphName in glyphNames:
                 if glyphName not in figuresSrc:
-                    print(f'ERROR: {glyphName} not in lowercase font {lowercaseSrcValue}')
+                    print(f'\t\tERROR: {glyphName} not in lowercase font {lowercaseName}{lowercaseSrcValue}')
                     continue
                 figuresSrc.insertGlyph(lowercaseSrc[glyphName], name=glyphName)
             figuresSrc.save()
@@ -91,7 +91,7 @@ for figuresName, lowercaseName in sourcesFigures.items():
         if not preflight:
             for glyphName in glyphNames:
                 if glyphName not in defaultSrc:
-                    print(f'ERROR: {glyphName} not in default font {defaultName}')
+                    print(f'\t\tERROR: {glyphName} not in default font {defaultName}')
                     continue
                 lowercaseSrc.insertGlyph(defaultSrc[glyphName], name=glyphName)
             lowercaseSrc.save()
