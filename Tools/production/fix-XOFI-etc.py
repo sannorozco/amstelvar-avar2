@@ -17,7 +17,7 @@ from mojo.smartSet import readSmartSets
 
 '''
 
-subfamilyName = ['Roman', 'Italic'][1]
+subfamilyName = ['Roman', 'Italic'][0]
 defaultName   = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources')
@@ -28,7 +28,7 @@ ufoPaths      = glob.glob(f'{sourcesFolder}/{subfamilyName}/*.ufo')
 assert os.path.exists(smartSetsPath)
 assert os.path.exists(defaultPath)
 
-preflight = True
+preflight = False
 
 sourcesFigures = {
     'XOFI' : 'XOLC',   # figures : lowercase
