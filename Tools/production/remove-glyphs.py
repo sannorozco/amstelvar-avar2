@@ -8,10 +8,10 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
 
-glyphNames = 'periodcentered.loclCAT.case'.split()
+glyphNames = ['periodcentered.loclCAT.case']
 
 dstFonts   = []
-preflight  = True
+preflight  = False
 
 for ufoPath in ufoPaths:
     name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
