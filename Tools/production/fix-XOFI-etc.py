@@ -51,10 +51,7 @@ for smartSet in smartSets:
         if group.name in copyGroups:
             glyphNames += group.glyphNames
 
-glyphNames += [
-    'perthousand'
-    'fraction',
-]
+glyphNames += ['perthousand', 'fraction']
 
 defaultSrc = OpenFont(defaultPath, showInterface=False)
 
@@ -66,7 +63,7 @@ for figuresName, lowercaseName in sourcesFigures.items():
     lowercaseSources = [f for f in ufoPaths if lowercaseName in os.path.split(f)[-1]]
     lowercaseValues = {int(os.path.splitext(os.path.split(f)[-1])[0].split('_')[-1][4:]) : f for f in lowercaseSources }
 
-    print(f'fixing {figuresName} and {lowercaseName} sources...')
+    print(f'fixing {figuresName} and {lowercaseName} sources...\n')
     for i, figuresSrcValue in enumerate(sorted(figuresValues.keys())):
         figuresSrcPath = figuresValues[figuresSrcValue]
         figuresSrc = OpenFont(figuresSrcPath, showInterface=False)
@@ -77,25 +74,26 @@ for figuresName, lowercaseName in sourcesFigures.items():
 
         # copy lowercase glyphs to figures source
         print(f'\tcopying glyphs from {lowercaseName}{lowercaseSrcValue} to {figuresName}{figuresSrcValue}...')
+        for glyphName in glyphNames:
+            if glyphName not in figuresSrc:
+                print(f'\t\tERROR: {glyphName} not in lowercase font {lowercaseName}{lowercaseSrcValue}')
+                continue
+            figuresSrc.insertGlyph(lowercaseSrc[glyphName], name=glyphName)
         if not preflight:
-            for glyphName in glyphNames:
-                if glyphName not in figuresSrc:
-                    print(f'\t\tERROR: {glyphName} not in lowercase font {lowercaseName}{lowercaseSrcValue}')
-                    continue
-                figuresSrc.insertGlyph(lowercaseSrc[glyphName], name=glyphName)
             figuresSrc.save()
-            figuresSrc.close()
+        figuresSrc.close()
+        print()
 
         # copy default glyphs to lowercase source
         print(f'\tcopying glyphs from {defaultName} to {lowercaseName}{lowercaseSrcValue}...')
+        for glyphName in glyphNames:
+            if glyphName not in defaultSrc:
+                print(f'\t\tERROR: {glyphName} not in default font {defaultName}')
+                continue
+            lowercaseSrc.insertGlyph(defaultSrc[glyphName], name=glyphName)
         if not preflight:
-            for glyphName in glyphNames:
-                if glyphName not in defaultSrc:
-                    print(f'\t\tERROR: {glyphName} not in default font {defaultName}')
-                    continue
-                lowercaseSrc.insertGlyph(defaultSrc[glyphName], name=glyphName)
             lowercaseSrc.save()
-            lowercaseSrc.close()
+        lowercaseSrc.close()
 
         print()
 
