@@ -1,17 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Icyr" format="2">
-  <advance width="984"/>
+  <advance width="500"/>
   <unicode hex="0418"/>
-  <anchor x="353" y="1" name="bottom"/>
-  <anchor x="640.0" y="1501" name="top"/>
   <outline>
     <contour>
       <point x="228" y="152" type="line"/>
-      <point x="295" y="491" type="line"/>
-      <point x="485" y="841" type="line"/>
+      <point x="295" y="490" type="line"/>
       <point x="753" y="1336" type="line"/>
-      <point x="695" y="1011" type="line"/>
-      <point x="539" y="724" type="line"/>
+      <point x="696" y="1014" type="line"/>
     </contour>
     <contour>
       <point x="-66" y="0" type="line"/>
@@ -46,10 +42,4 @@
       <point x="788" y="0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0.65,1,0.35</string>
-    </dict>
-  </lib>
 </glyph>
