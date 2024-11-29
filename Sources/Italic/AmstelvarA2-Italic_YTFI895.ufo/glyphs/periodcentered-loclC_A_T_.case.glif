@@ -2,7 +2,6 @@
 <glyph name="periodcentered-loclCAT.case" format="2">
   <advance width="584"/>
   <anchor x="296" y="667" name="centerright"/>
-  <anchor x="296" y="667" name="centerright"/>
   <outline>
     <contour>
       <point x="161" y="667" type="qcurve" smooth="yes"/>
@@ -18,19 +17,11 @@
       <point x="238" y="531"/>
       <point x="161" y="613"/>
     </contour>
-    <contour>
-      <point x="161" y="667" type="qcurve" smooth="yes"/>
-      <point x="161" y="722"/>
-      <point x="238" y="804"/>
-      <point x="298" y="804" type="qcurve" smooth="yes"/>
-      <point x="358" y="804"/>
-      <point x="435" y="722"/>
-      <point x="435" y="667" type="qcurve" smooth="yes"/>
-      <point x="435" y="613"/>
-      <point x="358" y="531"/>
-      <point x="298" y="531" type="qcurve" smooth="yes"/>
-      <point x="238" y="531"/>
-      <point x="161" y="613"/>
-    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>
