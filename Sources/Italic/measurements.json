@@ -4705,6 +4705,10 @@
       "47 99": {
         "name": "XUCR",
         "direction": "x"
+      },
+      "-1 6": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Ghe": {},
@@ -4822,6 +4826,22 @@
       "12 11": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "16 37": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "43 5": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "-1 25": {
+        "name": "XUCR",
+        "direction": "x"
+      },
+      "99 31": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "Tse": {
@@ -4962,6 +4982,10 @@
       "9 10": {
         "name": "YTTL",
         "direction": "a"
+      },
+      "2 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Ecyr": {
@@ -5023,6 +5047,14 @@
       },
       "11 99": {
         "name": "XUCR",
+        "direction": "x"
+      },
+      "1 28": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "21 28": {
+        "name": "XTUC",
         "direction": "x"
       }
     },
@@ -5134,6 +5166,10 @@
       "18 99": {
         "name": "XUCS",
         "direction": "x"
+      },
+      "-1 17": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "breve.cyr.case": {},
@@ -5211,76 +5247,7 @@
         "direction": "x"
       }
     },
-    "Pe": {
-      "24 19": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "10 5": {
-        "name": "XOUC",
-        "direction": "x"
-      },
-      "5 24": {
-        "name": "XTUC",
-        "direction": "x"
-      },
-      "2 14": {
-        "name": "YOUC",
-        "direction": "y"
-      },
-      "8 14": {
-        "name": "YTUC",
-        "direction": "y"
-      },
-      "23 24": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "19 20": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "16 17": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "13 12": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "9 10": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "5 6": {
-        "name": "XSHU",
-        "direction": "x"
-      },
-      "22 23": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "7 6": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "8 9": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "13 14": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "16 15": {
-        "name": "YSHU",
-        "direction": "y"
-      },
-      "21 20": {
-        "name": "YSHU",
-        "direction": "y"
-      }
-    },
+    "Pe": {},
     "Icyr": {
       "8 17": {
         "name": "XOUC",
@@ -8501,6 +8468,10 @@
       "22 99": {
         "name": "XUCR",
         "direction": "x"
+      },
+      "-1 41": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Be": {
@@ -8780,7 +8751,19 @@
         "name": "YSHU",
         "direction": "y"
       },
-      "29 99": {
+      "27 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "11 32": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "45 2": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "-1 50": {
         "name": "XUCS",
         "direction": "x"
       }
@@ -10523,6 +10506,14 @@
       "15 99": {
         "name": "XUCS",
         "direction": "x"
+      },
+      "21 19": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "-1 22": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Kaverticalstrokecyr": {
@@ -10645,7 +10636,7 @@
         "name": "XOUC",
         "direction": "x"
       },
-      "3 11": {
+      "3 14": {
         "name": "XOUC",
         "direction": "x"
       },
@@ -10664,6 +10655,14 @@
       "37 99": {
         "name": "XUCR",
         "direction": "x"
+      },
+      "11 20": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "-1 3": {
+        "name": "XUCR",
+        "direction": "x"
       }
     },
     "Obarcyr": {},
@@ -10680,7 +10679,11 @@
         "name": "XOUC",
         "direction": "x"
       },
-      "18 99": {
+      "-1 25": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "16 99": {
         "name": "XUCS",
         "direction": "x"
       }
@@ -11462,6 +11465,11 @@
     "Egrave": {},
     "Acircumflex": {},
     "Iebrevecyr": {},
-    "Je": {}
+    "Je": {},
+    "Udieresiscyr": {},
+    "Ocircumflexdotbelow": {},
+    "Ecircumflexdotbelow": {},
+    "Zhebrevecyr": {},
+    "Umacroncyr": {}
   }
 }
