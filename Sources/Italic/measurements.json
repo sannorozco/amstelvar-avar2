@@ -1268,7 +1268,52 @@
         "direction": "x"
       }
     },
-    "C": {},
+    "C": {
+      "14 3": {
+        "name": "YOUC",
+        "direction": "y"
+      },
+      "28 20": {
+        "name": "YOUC",
+        "direction": "y"
+      },
+      "0 17": {
+        "name": "XOUC",
+        "direction": "x"
+      },
+      "23 25": {
+        "name": "YOUC",
+        "direction": "a"
+      },
+      "C 3": {
+        "name": "YTOS",
+        "direction": "y"
+      },
+      "B 28": {
+        "name": "YTOS",
+        "direction": "y"
+      },
+      "-1 0": {
+        "name": "XUCR",
+        "direction": "x"
+      },
+      "10 9": {
+        "name": "XSVU",
+        "direction": "x"
+      },
+      "9 8": {
+        "name": "YSVU",
+        "direction": "y"
+      },
+      "25 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "17 23": {
+        "name": "XTUC",
+        "direction": "x"
+      }
+    },
     "D": {
       "2 14": {
         "name": "XOUC",
@@ -1387,6 +1432,10 @@
       "8 7": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "-1 2": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "F": {
@@ -1457,6 +1506,10 @@
       "9 10": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "-1 2": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "G": {
@@ -1516,7 +1569,7 @@
         "name": "XUCR",
         "direction": "x"
       },
-      "27 99": {
+      "29 99": {
         "name": "XUCS",
         "direction": "x"
       }
@@ -1655,6 +1708,14 @@
       "8 7": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "11 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "-1 2": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "J": {
@@ -1701,6 +1762,10 @@
       "13 12": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "14 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "K": {
@@ -1791,6 +1856,14 @@
       "8 7": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "-1 2": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "24 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "L": {
@@ -2214,7 +2287,7 @@
         "name": "XOUC",
         "direction": "a"
       },
-      "13 18": {
+      "13 19": {
         "name": "YOUC",
         "direction": "y"
       },
@@ -2226,7 +2299,7 @@
         "name": "YOUC",
         "direction": "y"
       },
-      "29 22": {
+      "27 22": {
         "name": "XTUC",
         "direction": "x"
       },
@@ -5055,6 +5128,10 @@
       },
       "21 28": {
         "name": "XTUC",
+        "direction": "x"
+      },
+      "-1 19": {
+        "name": "XUCR",
         "direction": "x"
       }
     },
@@ -8266,6 +8343,18 @@
       "20 99": {
         "name": "XUCR",
         "direction": "x"
+      },
+      "19 16": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "7 4": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "24 27": {
+        "name": "XTUC",
+        "direction": "x"
       }
     },
     "Ieukran": {
@@ -10411,6 +10500,18 @@
       "25 26": {
         "name": "YSHU",
         "direction": "y"
+      },
+      "34 29": {
+        "name": "XTUC",
+        "direction": "x"
+      },
+      "-1 5": {
+        "name": "XUCS",
+        "direction": "x"
+      },
+      "22 99": {
+        "name": "XUCS",
+        "direction": "x"
       }
     },
     "Endescender": {},
@@ -11470,6 +11571,14 @@
     "Ocircumflexdotbelow": {},
     "Ecircumflexdotbelow": {},
     "Zhebrevecyr": {},
-    "Umacroncyr": {}
+    "Umacroncyr": {},
+    "Amacroncyr": {},
+    "Ka.bgr": {},
+    "AEacute": {},
+    "Esdescendercyr": {},
+    "Hcircumflex": {},
+    "Ecircumflex": {},
+    "Ohorndotbelow": {},
+    "Lacute": {}
   }
 }
