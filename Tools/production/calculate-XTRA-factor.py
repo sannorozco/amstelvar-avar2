@@ -45,4 +45,4 @@ dstValue = srcValue * dstReference / srcReference
 
 print(f'{srcValue} -> {round(dstValue)}')
 
-dstFont[dstGlyph].rightMargin = srcFont[dstGlyph].rightMargin
+# dstFont[dstGlyph].rightMargin = srcFont[dstGlyph].rightMargin
