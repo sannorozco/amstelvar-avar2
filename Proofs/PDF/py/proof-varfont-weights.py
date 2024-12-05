@@ -1,6 +1,6 @@
 import os, datetime
 
-baseFolder = os.path.dirname(os.path.dirname(os.getcwd()))
+baseFolder = os.path.dirname(os.path.dirname(os.path.dirname(os.getcwd())))
 fontsFolder = os.path.join(baseFolder, 'Fonts')
 
 subFamilyName = ['Roman', 'Italic'][1]
@@ -20,10 +20,10 @@ opszs = [8, 14, 144]
 
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-savePDF = False
+savePDF = True
 
 proofName = f'varfont-weights_{subFamilyName}.pdf'
-pdfPath   = os.path.join(os.getcwd(), proofName)
+pdfPath   = os.path.join(os.path.dirname(os.getcwd()), proofName)
 
 for opsz in opszs:
     for wdth in wdths:
@@ -37,13 +37,13 @@ for opsz in opszs:
             y = height() - p[0]*0.57
             font('Menlo')
             fontSize(9)
-            fill(1, 0, 0)
+            # fill(1, 0, 0)
             text(f'AmstelvarA2 {subFamilyName}', (x1, y), align='left')
             text(f'opsz{opsz} wdth{wdth}', (x2, y), align='center')
             text(f'{now}', (x3, y), align='right')
 
         strokeWidth(0.5)
-        stroke(1, 0, 0)
+        stroke(0, 0, 0)
         fill(None)
         fontSize(fs)
         font(fontPath)
