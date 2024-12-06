@@ -3,12 +3,12 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
 
-glyphNames = ['periodcentered.loclCAT.case']
+glyphNames = ['periodcentered.loclCAT.case', 'hook-stack.case']
 
 dstFonts   = []
 preflight  = False
