@@ -1,26 +1,18 @@
-# make sure that the VariableValues module is installed
-import sys
-modulePath = '/Users/gferreira/hipertipo/tools/variable-values/code/Lib'
-if modulePath not in sys.path:
-    sys.path.append(modulePath)
 from importlib import reload
-import variableValues.glyphSetProofer
-reload(variableValues.glyphSetProofer)
+import xTools4.modules.glyphSetProofer
+reload(xTools4.modules.glyphSetProofer)
 
 import os, glob, time
-from variableValues.glyphSetProofer import GlyphSetProofer
+from xTools4.modules.glyphSetProofer import GlyphSetProofer
 
 familyName      = 'AmstelvarA2'
 subFamily       = ['Roman', 'Italic'][1]
-proofsFolder    = os.path.dirname(os.getcwd())
+proofsFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 baseFolder      = os.path.dirname(proofsFolder)
 sourcesFolder   = os.path.join(baseFolder, 'Sources', subFamily)
 defaultFontPath = os.path.join(sourcesFolder, f'{familyName}-{subFamily}_wght400.ufo')
 sourcePaths     = sorted(glob.glob(f'{sourcesFolder}/*.ufo'))
 sourcePaths.remove(defaultFontPath)
-
-# i = 5 * 2 + 1
-# sourcePaths = sourcePaths[i:i+2]
 
 start = time.time()
 
