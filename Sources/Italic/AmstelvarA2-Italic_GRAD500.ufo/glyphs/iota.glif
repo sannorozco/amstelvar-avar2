@@ -2,20 +2,26 @@
 <glyph name="iota" format="2">
   <advance width="589"/>
   <unicode hex="03B9"/>
-  <anchor x="284" y="1000" name="GRKtop"/>
+  <anchor x="311" y="1000" name="GRKtop"/>
   <outline>
     <contour>
-      <point x="89" y="-15" type="line"/>
-      <point x="15" y="117" type="line"/>
-      <point x="102" y="511" type="line"/>
-      <point x="185" y="978" type="line"/>
-      <point x="266" y="1000" type="line"/>
-      <point x="311" y="1000" type="line"/>
-      <point x="353" y="921" type="line"/>
-      <point x="252" y="477" type="line"/>
-      <point x="198" y="134" type="line"/>
-      <point x="453" y="160" type="line"/>
-      <point x="453" y="72" type="line"/>
+      <point x="72" y="-31" type="line"/>
+      <point x="-8" y="101" type="line"/>
+      <point x="79" y="527" type="line"/>
+      <point x="154" y="966" type="line"/>
+      <point x="240" y="1000" type="line"/>
+      <point x="380" y="1000" type="line"/>
+      <point x="412" y="921" type="line"/>
+      <point x="323" y="507" type="line"/>
+      <point x="250" y="170" type="line"/>
+      <point x="471" y="194" type="line"/>
+      <point x="469" y="76" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.9904,0.5022,0.0329,1</string>
+    </dict>
+  </lib>
 </glyph>
