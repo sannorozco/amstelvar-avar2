@@ -1,7 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Omicrontonos" format="2">
-  <advance width="1695"/>
+  <advance width="1807"/>
   <unicode hex="038C"/>
+  <note>
+10,O
+</note>
   <outline>
     <component base="O" xOffset="167"/>
     <component base="tonoscomb.case" xOffset="202"/>
@@ -9,7 +12,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.65,0,0.35</string>
+      <string>1,0.3,0,0.35</string>
     </dict>
   </lib>
 </glyph>
