@@ -17,7 +17,7 @@ sourcePaths.remove(defaultFontPath)
 start = time.time()
 
 P = GlyphSetProofer(f'{familyName} {subFamily}', defaultFontPath, sourcePaths)
-P.build(savePDF=True)
+P.build(savePDF=True, folder=proofsFolder)
 
 end = time.time()
 
