@@ -1,10 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Iacute_J.loclNLD" format="2">
-  <advance width="674"/>
+  <advance width="714"/>
   <outline>
     <component base="I"/>
     <component base="acutecomb.case" xOffset="239.99999999994495"/>
-    <component base="J" xOffset="338"/>
-    <component base="acutecomb.case" xOffset="570.9999999999823"/>
+    <component base="J" xOffset="378"/>
+    <component base="acutecomb.case" xOffset="610.9999999999823"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>

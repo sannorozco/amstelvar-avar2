@@ -16,7 +16,6 @@ def makeMeasurementArgs(glyphName, i=0, measurement='XTUC'):
     args.insert(4, glyphName)
     return args
 
-
 g = CurrentGlyph()
 
 assert g is not None
