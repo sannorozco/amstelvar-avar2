@@ -14,7 +14,7 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = 'Lcaron Ldot'.split()
+glyphNames = 'Ecircumflexgrave Ocircumflexgrave'.split()
 dstFonts   = []
     
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')

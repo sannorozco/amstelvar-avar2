@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ohookabove" format="2">
-  <advance width="1318"/>
+  <advance width="1398"/>
   <unicode hex="1ECE"/>
   <outline>
-    <component base="O"/>
-    <component base="hookabovecomb.case" xOffset="728.0000000000135"/>
+    <component base="O" xOffset="1.4210854715202004e-14"/>
+    <component base="hookabovecomb.case" xOffset="728"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>

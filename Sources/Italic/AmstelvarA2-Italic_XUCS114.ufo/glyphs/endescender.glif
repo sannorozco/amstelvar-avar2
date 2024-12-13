@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="endescender" format="2">
-  <advance width="1165"/>
+  <advance width="974"/>
   <unicode hex="04A3"/>
   <outline>
     <component base="en"/>
-    <component base="cy-descendercomb" xOffset="378.00000000001023" yOffset="1"/>
+    <component base="cy-descendercomb" xOffset="316.9999999999925" yOffset="1"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>
