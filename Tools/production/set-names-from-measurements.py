@@ -13,9 +13,9 @@ measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
-ignoreTags = ['wght', 'GRAD', 'BARS']
+ignoreTags = ['wght', 'GRAD', 'BARS', 'YTEQ']
 
-preflight = False
+preflight = True
 
 allNames = []
 for ufo in sorted(allUFOs):

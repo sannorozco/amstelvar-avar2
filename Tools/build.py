@@ -10,7 +10,7 @@ from xTools4.modules.measurements import FontMeasurements, permille
 from xTools4.modules.linkPoints2 import readMeasurements
 
 
-SUBFAMILY = ['Roman', 'Italic'][1]
+SUBFAMILY = ['Roman', 'Italic'][0]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -90,6 +90,7 @@ class AmstelvarA2DesignSpaceBuilder:
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
         L['BARS'] = 100
+        L['YTEQ'] = 0
         return L
 
     @property
@@ -257,6 +258,17 @@ class AmstelvarA2DesignSpaceBuilder:
         a.default = 100
         self.designspace.addAxis(a)
 
+        # custom YTEQ axis
+        if self.subFamilyName == 'Roman':
+            print('adding YTEQ axis!')
+            a = AxisDescriptor()
+            a.name    = 'YTEQ'
+            a.tag     = 'YTEQ'
+            a.minimum = 0
+            a.maximum = 100
+            a.default = 0
+            self.designspace.addAxis(a)
+
     def addDefaultSource(self):
         src = SourceDescriptor()
         src.path       = self.defaultUFO
@@ -289,6 +301,19 @@ class AmstelvarA2DesignSpaceBuilder:
         L[axis] = value
         src.location = L
         self.designspace.addSource(src)
+
+        if self.subFamilyName == 'Roman':
+            print('adding YTEQ source!')
+            axis  = 'YTEQ'
+            value = 100
+            src = SourceDescriptor()
+            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+            src.familyName = f'{self.familyName} {self.subFamilyName}'
+            src.styleName  = f'{axis}{value}'
+            L = self.defaultLocation.copy()
+            L[axis] = value
+            src.location = L
+            self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:
@@ -753,7 +778,7 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder_avar2()
     D2.build()
     D2.save()
-    D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
