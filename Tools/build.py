@@ -90,6 +90,7 @@ class AmstelvarA2DesignSpaceBuilder:
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
         L['BARS'] = 100
+        L['YTEQ'] = 0
         return L
 
     @property
@@ -257,6 +258,16 @@ class AmstelvarA2DesignSpaceBuilder:
         a.default = 100
         self.designspace.addAxis(a)
 
+        # custom YTEQ axis
+        if self.subFamilyName == 'Roman':
+            a = AxisDescriptor()
+            a.name    = 'YTEQ'
+            a.tag     = 'YTEQ'
+            a.minimum = 0
+            a.maximum = 100
+            a.default = 0
+            self.designspace.addAxis(a)
+
     def addDefaultSource(self):
         src = SourceDescriptor()
         src.path       = self.defaultUFO
@@ -289,6 +300,18 @@ class AmstelvarA2DesignSpaceBuilder:
         L[axis] = value
         src.location = L
         self.designspace.addSource(src)
+
+        if self.subFamilyName == 'Roman':
+            axis  = 'YTEQ'
+            value = 100
+            src = SourceDescriptor()
+            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+            src.familyName = f'{self.familyName} {self.subFamilyName}'
+            src.styleName  = f'{axis}{value}'
+            L = self.defaultLocation.copy()
+            L[axis] = value
+            src.location = L
+            self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:

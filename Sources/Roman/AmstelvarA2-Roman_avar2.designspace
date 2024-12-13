@@ -45,6 +45,7 @@
     <axis tag="XUCS" name="XUCS" minimum="32" maximum="205" default="145"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="BARS" name="BARS" minimum="0" maximum="100" default="100"/>
+    <axis tag="YTEQ" name="YTEQ" minimum="0" maximum="100" default="0"/>
     <mappings>
       <mapping>
         <input>
@@ -1192,6 +1193,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1232,6 +1234,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1272,6 +1275,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1312,6 +1316,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1352,6 +1357,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1392,6 +1398,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1432,6 +1439,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1472,6 +1480,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1512,6 +1521,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1552,6 +1562,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1592,6 +1603,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1632,6 +1644,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1672,6 +1685,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1712,6 +1726,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1752,6 +1767,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1792,6 +1808,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
+          <dimension name="YTEQ" xvalue="0"/>
         </output>
       </mapping>
     </mappings>
@@ -1832,6 +1849,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_GRAD-300.ufo" familyname="AmstelvarA2 Roman" stylename="GRAD-300">
@@ -1869,6 +1887,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_GRAD500.ufo" familyname="AmstelvarA2 Roman" stylename="GRAD500">
@@ -1906,6 +1925,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_BARS0.ufo" familyname="AmstelvarA2 Roman" stylename="BARS0">
@@ -1943,6 +1963,45 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="0"/>
+        <dimension name="YTEQ" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_YTEQ100.ufo" familyname="AmstelvarA2 Roman" stylename="YTEQ100">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="YOUC" xvalue="66"/>
+        <dimension name="YOLC" xvalue="72"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTLC" xvalue="243"/>
+        <dimension name="XTFI" xvalue="329"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="100"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XOUC4.ufo" familyname="AmstelvarA2 Roman" stylename="XOUC4">
@@ -1980,6 +2039,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XOUC310.ufo" familyname="AmstelvarA2 Roman" stylename="XOUC310">
@@ -2017,6 +2077,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XOLC4.ufo" familyname="AmstelvarA2 Roman" stylename="XOLC4">
@@ -2054,6 +2115,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XOLC293.ufo" familyname="AmstelvarA2 Roman" stylename="XOLC293">
@@ -2091,6 +2153,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XOFI302.ufo" familyname="AmstelvarA2 Roman" stylename="XOFI302">
@@ -2128,6 +2191,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XOFI4.ufo" familyname="AmstelvarA2 Roman" stylename="XOFI4">
@@ -2165,6 +2229,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YOUC208.ufo" familyname="AmstelvarA2 Roman" stylename="YOUC208">
@@ -2202,6 +2267,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YOUC4.ufo" familyname="AmstelvarA2 Roman" stylename="YOUC4">
@@ -2239,6 +2305,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YOLC6.ufo" familyname="AmstelvarA2 Roman" stylename="YOLC6">
@@ -2276,6 +2343,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YOLC168.ufo" familyname="AmstelvarA2 Roman" stylename="YOLC168">
@@ -2313,6 +2381,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YOFI4.ufo" familyname="AmstelvarA2 Roman" stylename="YOFI4">
@@ -2350,6 +2419,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YOFI196.ufo" familyname="AmstelvarA2 Roman" stylename="YOFI196">
@@ -2387,6 +2457,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTUC72.ufo" familyname="AmstelvarA2 Roman" stylename="XTUC72">
@@ -2424,6 +2495,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTUC668.ufo" familyname="AmstelvarA2 Roman" stylename="XTUC668">
@@ -2461,6 +2533,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTLC70.ufo" familyname="AmstelvarA2 Roman" stylename="XTLC70">
@@ -2498,6 +2571,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTLC406.ufo" familyname="AmstelvarA2 Roman" stylename="XTLC406">
@@ -2535,6 +2609,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTFI576.ufo" familyname="AmstelvarA2 Roman" stylename="XTFI576">
@@ -2572,6 +2647,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTFI101.ufo" familyname="AmstelvarA2 Roman" stylename="XTFI101">
@@ -2609,6 +2685,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTUC875.ufo" familyname="AmstelvarA2 Roman" stylename="YTUC875">
@@ -2646,6 +2723,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTUC541.ufo" familyname="AmstelvarA2 Roman" stylename="YTUC541">
@@ -2683,6 +2761,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTLC594.ufo" familyname="AmstelvarA2 Roman" stylename="YTLC594">
@@ -2720,6 +2799,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTLC436.ufo" familyname="AmstelvarA2 Roman" stylename="YTLC436">
@@ -2757,6 +2837,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTAS665.ufo" familyname="AmstelvarA2 Roman" stylename="YTAS665">
@@ -2794,6 +2875,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTAS875.ufo" familyname="AmstelvarA2 Roman" stylename="YTAS875">
@@ -2831,6 +2913,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTDE-310.ufo" familyname="AmstelvarA2 Roman" stylename="YTDE-310">
@@ -2868,6 +2951,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTDE-100.ufo" familyname="AmstelvarA2 Roman" stylename="YTDE-100">
@@ -2905,6 +2989,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTFI281.ufo" familyname="AmstelvarA2 Roman" stylename="YTFI281">
@@ -2942,6 +3027,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTFI896.ufo" familyname="AmstelvarA2 Roman" stylename="YTFI896">
@@ -2979,6 +3065,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSHU0.ufo" familyname="AmstelvarA2 Roman" stylename="XSHU0">
@@ -3016,6 +3103,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSHU154.ufo" familyname="AmstelvarA2 Roman" stylename="XSHU154">
@@ -3053,6 +3141,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSHU0.ufo" familyname="AmstelvarA2 Roman" stylename="YSHU0">
@@ -3090,6 +3179,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSHU150.ufo" familyname="AmstelvarA2 Roman" stylename="YSHU150">
@@ -3127,6 +3217,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSVU0.ufo" familyname="AmstelvarA2 Roman" stylename="XSVU0">
@@ -3164,6 +3255,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSVU130.ufo" familyname="AmstelvarA2 Roman" stylename="XSVU130">
@@ -3201,6 +3293,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSVU59.ufo" familyname="AmstelvarA2 Roman" stylename="YSVU59">
@@ -3238,6 +3331,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSVU224.ufo" familyname="AmstelvarA2 Roman" stylename="YSVU224">
@@ -3275,6 +3369,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSHL124.ufo" familyname="AmstelvarA2 Roman" stylename="XSHL124">
@@ -3312,6 +3407,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSHL0.ufo" familyname="AmstelvarA2 Roman" stylename="XSHL0">
@@ -3349,6 +3445,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSHL0.ufo" familyname="AmstelvarA2 Roman" stylename="YSHL0">
@@ -3386,6 +3483,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSHL140.ufo" familyname="AmstelvarA2 Roman" stylename="YSHL140">
@@ -3423,6 +3521,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSVL0.ufo" familyname="AmstelvarA2 Roman" stylename="XSVL0">
@@ -3460,6 +3559,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSVL114.ufo" familyname="AmstelvarA2 Roman" stylename="XSVL114">
@@ -3497,6 +3597,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSVL251.ufo" familyname="AmstelvarA2 Roman" stylename="YSVL251">
@@ -3534,6 +3635,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSVL107.ufo" familyname="AmstelvarA2 Roman" stylename="YSVL107">
@@ -3571,6 +3673,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSHF0.ufo" familyname="AmstelvarA2 Roman" stylename="XSHF0">
@@ -3608,6 +3711,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSHF239.ufo" familyname="AmstelvarA2 Roman" stylename="XSHF239">
@@ -3645,6 +3749,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSHF0.ufo" familyname="AmstelvarA2 Roman" stylename="YSHF0">
@@ -3682,6 +3787,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSHF147.ufo" familyname="AmstelvarA2 Roman" stylename="YSHF147">
@@ -3719,6 +3825,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSVF0.ufo" familyname="AmstelvarA2 Roman" stylename="XSVF0">
@@ -3756,6 +3863,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XSVF131.ufo" familyname="AmstelvarA2 Roman" stylename="XSVF131">
@@ -3793,6 +3901,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSVF84.ufo" familyname="AmstelvarA2 Roman" stylename="YSVF84">
@@ -3830,6 +3939,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YSVF306.ufo" familyname="AmstelvarA2 Roman" stylename="YSVF306">
@@ -3867,6 +3977,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTTW30.ufo" familyname="AmstelvarA2 Roman" stylename="XTTW30">
@@ -3904,6 +4015,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XTTW0.ufo" familyname="AmstelvarA2 Roman" stylename="XTTW0">
@@ -3941,6 +4053,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTTL0.ufo" familyname="AmstelvarA2 Roman" stylename="YTTL0">
@@ -3978,6 +4091,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTTL104.ufo" familyname="AmstelvarA2 Roman" stylename="YTTL104">
@@ -4015,6 +4129,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTOS25.ufo" familyname="AmstelvarA2 Roman" stylename="YTOS25">
@@ -4052,6 +4167,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_YTOS0.ufo" familyname="AmstelvarA2 Roman" stylename="YTOS0">
@@ -4089,6 +4205,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XUCS205.ufo" familyname="AmstelvarA2 Roman" stylename="XUCS205">
@@ -4126,6 +4243,7 @@
         <dimension name="XUCS" xvalue="205"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_XUCS32.ufo" familyname="AmstelvarA2 Roman" stylename="XUCS32">
@@ -4163,6 +4281,7 @@
         <dimension name="XUCS" xvalue="32"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_WDSP0.ufo" familyname="AmstelvarA2 Roman" stylename="WDSP0">
@@ -4200,6 +4319,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="0"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Roman_WDSP1000.ufo" familyname="AmstelvarA2 Roman" stylename="WDSP1000">
@@ -4237,6 +4357,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="1000"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </source>
   </sources>
@@ -4276,6 +4397,7 @@
         <dimension name="XUCS" xvalue="113"/>
         <dimension name="WDSP" xvalue="267"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wdth125" familyname="AmstelvarA2 Roman" stylename="opsz144 wdth125" filename="instances/AmstelvarA2-Roman_opsz144_wdth125.ufo">
@@ -4313,6 +4435,7 @@
         <dimension name="XUCS" xvalue="157"/>
         <dimension name="WDSP" xvalue="267"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wdth50" familyname="AmstelvarA2 Roman" stylename="opsz144 wdth50" filename="instances/AmstelvarA2-Roman_opsz144_wdth50.ufo">
@@ -4350,6 +4473,7 @@
         <dimension name="XUCS" xvalue="65"/>
         <dimension name="WDSP" xvalue="100"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wght100" familyname="AmstelvarA2 Roman" stylename="opsz144 wght100" filename="instances/AmstelvarA2-Roman_opsz144_wght100.ufo">
@@ -4387,6 +4511,7 @@
         <dimension name="XUCS" xvalue="126"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wght1000" familyname="AmstelvarA2 Roman" stylename="opsz144 wght1000" filename="instances/AmstelvarA2-Roman_opsz144_wght1000.ufo">
@@ -4424,6 +4549,7 @@
         <dimension name="XUCS" xvalue="78"/>
         <dimension name="WDSP" xvalue="198"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wght1000_wdth125" familyname="AmstelvarA2 Roman" stylename="opsz144 wght1000 wdth125" filename="instances/AmstelvarA2-Roman_opsz144_wght1000_wdth125.ufo">
@@ -4461,6 +4587,7 @@
         <dimension name="XUCS" xvalue="122"/>
         <dimension name="WDSP" xvalue="225"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wght1000_wdth50" familyname="AmstelvarA2 Roman" stylename="opsz144 wght1000 wdth50" filename="instances/AmstelvarA2-Roman_opsz144_wght1000_wdth50.ufo">
@@ -4498,6 +4625,7 @@
         <dimension name="XUCS" xvalue="35"/>
         <dimension name="WDSP" xvalue="156"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wght100_wdth125" familyname="AmstelvarA2 Roman" stylename="opsz144 wght100 wdth125" filename="instances/AmstelvarA2-Roman_opsz144_wght100_wdth125.ufo">
@@ -4535,6 +4663,7 @@
         <dimension name="XUCS" xvalue="172"/>
         <dimension name="WDSP" xvalue="278"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz144_wght100_wdth50" familyname="AmstelvarA2 Roman" stylename="opsz144 wght100 wdth50" filename="instances/AmstelvarA2-Roman_opsz144_wght100_wdth50.ufo">
@@ -4572,6 +4701,7 @@
         <dimension name="XUCS" xvalue="78"/>
         <dimension name="WDSP" xvalue="122"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz24" familyname="AmstelvarA2 Roman" stylename="opsz24" filename="instances/AmstelvarA2-Roman_opsz24.ufo">
@@ -4609,6 +4739,7 @@
         <dimension name="XUCS" xvalue="142"/>
         <dimension name="WDSP" xvalue="316"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz36" familyname="AmstelvarA2 Roman" stylename="opsz36" filename="instances/AmstelvarA2-Roman_opsz36.ufo">
@@ -4646,6 +4777,7 @@
         <dimension name="XUCS" xvalue="130"/>
         <dimension name="WDSP" xvalue="294"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8" familyname="AmstelvarA2 Roman" stylename="opsz8" filename="instances/AmstelvarA2-Roman_opsz8.ufo">
@@ -4683,6 +4815,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz84" familyname="AmstelvarA2 Roman" stylename="opsz84" filename="instances/AmstelvarA2-Roman_opsz84.ufo">
@@ -4720,6 +4853,7 @@
         <dimension name="XUCS" xvalue="114"/>
         <dimension name="WDSP" xvalue="270"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wdth125" familyname="AmstelvarA2 Roman" stylename="opsz8 wdth125" filename="instances/AmstelvarA2-Roman_opsz8_wdth125.ufo">
@@ -4757,6 +4891,7 @@
         <dimension name="XUCS" xvalue="189"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wdth50" familyname="AmstelvarA2 Roman" stylename="opsz8 wdth50" filename="instances/AmstelvarA2-Roman_opsz8_wdth50.ufo">
@@ -4794,6 +4929,7 @@
         <dimension name="XUCS" xvalue="97"/>
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wght100" familyname="AmstelvarA2 Roman" stylename="opsz8 wght100" filename="instances/AmstelvarA2-Roman_opsz8_wght100.ufo">
@@ -4831,6 +4967,7 @@
         <dimension name="XUCS" xvalue="158"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wght1000" familyname="AmstelvarA2 Roman" stylename="opsz8 wght1000" filename="instances/AmstelvarA2-Roman_opsz8_wght1000.ufo">
@@ -4868,6 +5005,7 @@
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="250"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wght1000_wdth125" familyname="AmstelvarA2 Roman" stylename="opsz8 wght1000 wdth125" filename="instances/AmstelvarA2-Roman_opsz8_wght1000_wdth125.ufo">
@@ -4905,6 +5043,7 @@
         <dimension name="XUCS" xvalue="154"/>
         <dimension name="WDSP" xvalue="310"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wght1000_wdth50" familyname="AmstelvarA2 Roman" stylename="opsz8 wght1000 wdth50" filename="instances/AmstelvarA2-Roman_opsz8_wght1000_wdth50.ufo">
@@ -4942,6 +5081,7 @@
         <dimension name="XUCS" xvalue="64"/>
         <dimension name="WDSP" xvalue="240"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wght100_wdth125" familyname="AmstelvarA2 Roman" stylename="opsz8 wght100 wdth125" filename="instances/AmstelvarA2-Roman_opsz8_wght100_wdth125.ufo">
@@ -4979,6 +5119,7 @@
         <dimension name="XUCS" xvalue="202"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="opsz8_wght100_wdth50" familyname="AmstelvarA2 Roman" stylename="opsz8 wght100 wdth50" filename="instances/AmstelvarA2-Roman_opsz8_wght100_wdth50.ufo">
@@ -5016,6 +5157,7 @@
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="160"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wdth125" familyname="AmstelvarA2 Roman" stylename="wdth125" filename="instances/AmstelvarA2-Roman_wdth125.ufo">
@@ -5053,6 +5195,7 @@
         <dimension name="XUCS" xvalue="189"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wdth50" familyname="AmstelvarA2 Roman" stylename="wdth50" filename="instances/AmstelvarA2-Roman_wdth50.ufo">
@@ -5090,6 +5233,7 @@
         <dimension name="XUCS" xvalue="97"/>
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght100" familyname="AmstelvarA2 Roman" stylename="wght100" filename="instances/AmstelvarA2-Roman_wght100.ufo">
@@ -5127,6 +5271,7 @@
         <dimension name="XUCS" xvalue="158"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght1000" familyname="AmstelvarA2 Roman" stylename="wght1000" filename="instances/AmstelvarA2-Roman_wght1000.ufo">
@@ -5164,6 +5309,7 @@
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="250"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght1000_wdth125" familyname="AmstelvarA2 Roman" stylename="wght1000 wdth125" filename="instances/AmstelvarA2-Roman_wght1000_wdth125.ufo">
@@ -5201,6 +5347,7 @@
         <dimension name="XUCS" xvalue="154"/>
         <dimension name="WDSP" xvalue="250"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght1000_wdth50" familyname="AmstelvarA2 Roman" stylename="wght1000 wdth50" filename="instances/AmstelvarA2-Roman_wght1000_wdth50.ufo">
@@ -5238,6 +5385,7 @@
         <dimension name="XUCS" xvalue="39"/>
         <dimension name="WDSP" xvalue="150"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght100_wdth125" familyname="AmstelvarA2 Roman" stylename="wght100 wdth125" filename="instances/AmstelvarA2-Roman_wght100_wdth125.ufo">
@@ -5275,6 +5423,7 @@
         <dimension name="XUCS" xvalue="202"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght100_wdth50" familyname="AmstelvarA2 Roman" stylename="wght100 wdth50" filename="instances/AmstelvarA2-Roman_wght100_wdth50.ufo">
@@ -5312,6 +5461,7 @@
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="105"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="wght400" familyname="AmstelvarA2 Roman" stylename="wght400" filename="instances/AmstelvarA2-Roman_wght400.ufo">
@@ -5349,6 +5499,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XTSP-100" familyname="AmstelvarA2 Roman" stylename="XTSP-100" filename="instances/AmstelvarA2-Roman_XTSP-100.ufo">
@@ -5386,6 +5537,7 @@
         <dimension name="XUCS" xvalue="32"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XTSP100" familyname="AmstelvarA2 Roman" stylename="XTSP100" filename="instances/AmstelvarA2-Roman_XTSP100.ufo">
@@ -5423,6 +5575,7 @@
         <dimension name="XUCS" xvalue="205"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XOPQ4" familyname="AmstelvarA2 Roman" stylename="XOPQ4" filename="instances/AmstelvarA2-Roman_XOPQ4.ufo">
@@ -5460,6 +5613,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XOPQ310" familyname="AmstelvarA2 Roman" stylename="XOPQ310" filename="instances/AmstelvarA2-Roman_XOPQ310.ufo">
@@ -5497,6 +5651,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="YOPQ4" familyname="AmstelvarA2 Roman" stylename="YOPQ4" filename="instances/AmstelvarA2-Roman_YOPQ4.ufo">
@@ -5534,6 +5689,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="YOPQ208" familyname="AmstelvarA2 Roman" stylename="YOPQ208" filename="instances/AmstelvarA2-Roman_YOPQ208.ufo">
@@ -5571,6 +5727,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XTRA70" familyname="AmstelvarA2 Roman" stylename="XTRA70" filename="instances/AmstelvarA2-Roman_XTRA70.ufo">
@@ -5608,6 +5765,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XTRA668" familyname="AmstelvarA2 Roman" stylename="XTRA668" filename="instances/AmstelvarA2-Roman_XTRA668.ufo">
@@ -5645,6 +5803,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XSHA0" familyname="AmstelvarA2 Roman" stylename="XSHA0" filename="instances/AmstelvarA2-Roman_XSHA0.ufo">
@@ -5682,6 +5841,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XSHA239" familyname="AmstelvarA2 Roman" stylename="XSHA239" filename="instances/AmstelvarA2-Roman_XSHA239.ufo">
@@ -5719,6 +5879,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="YSHA0" familyname="AmstelvarA2 Roman" stylename="YSHA0" filename="instances/AmstelvarA2-Roman_YSHA0.ufo">
@@ -5756,6 +5917,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="YSHA150" familyname="AmstelvarA2 Roman" stylename="YSHA150" filename="instances/AmstelvarA2-Roman_YSHA150.ufo">
@@ -5793,6 +5955,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XSVA0" familyname="AmstelvarA2 Roman" stylename="XSVA0" filename="instances/AmstelvarA2-Roman_XSVA0.ufo">
@@ -5830,6 +5993,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="XSVA131" familyname="AmstelvarA2 Roman" stylename="XSVA131" filename="instances/AmstelvarA2-Roman_XSVA131.ufo">
@@ -5867,6 +6031,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="YSVA59" familyname="AmstelvarA2 Roman" stylename="YSVA59" filename="instances/AmstelvarA2-Roman_YSVA59.ufo">
@@ -5904,6 +6069,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
     <instance name="YSVA306" familyname="AmstelvarA2 Roman" stylename="YSVA306" filename="instances/AmstelvarA2-Roman_YSVA306.ufo">
@@ -5941,6 +6107,7 @@
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
       </location>
     </instance>
   </instances>
