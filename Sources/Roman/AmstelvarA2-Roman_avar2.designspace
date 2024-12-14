@@ -44,6 +44,7 @@
     <axis tag="YTOS" name="YTOS" minimum="0" maximum="25" default="10"/>
     <axis tag="XUCS" name="XUCS" minimum="32" maximum="205" default="145"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
+    <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="144"/>
     <axis tag="BARS" name="BARS" minimum="0" maximum="100" default="100"/>
     <axis tag="YTEQ" name="YTEQ" minimum="0" maximum="100" default="0"/>
     <mappings>
@@ -1191,6 +1192,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="32"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1232,6 +1234,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="205"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1273,6 +1276,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1314,6 +1318,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1355,6 +1360,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1396,6 +1402,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1437,6 +1444,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1478,6 +1486,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1519,6 +1528,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1560,6 +1570,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1601,6 +1612,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1642,6 +1654,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1683,6 +1696,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1724,6 +1738,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1765,6 +1780,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1806,6 +1822,7 @@
           <dimension name="YTOS" xvalue="10"/>
           <dimension name="XUCS" xvalue="145"/>
           <dimension name="WDSP" xvalue="320"/>
+          <dimension name="XDOT" xvalue="144"/>
           <dimension name="GRAD" xvalue="0"/>
           <dimension name="BARS" xvalue="100"/>
           <dimension name="YTEQ" xvalue="0"/>
@@ -1848,6 +1865,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -1886,6 +1904,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -1924,6 +1943,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -1962,6 +1982,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2000,6 +2021,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="100"/>
       </location>
@@ -2038,6 +2060,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2076,6 +2099,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2114,6 +2138,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2152,6 +2177,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2190,6 +2216,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2228,6 +2255,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2266,6 +2294,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2304,6 +2333,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2342,6 +2372,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2380,6 +2411,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2418,6 +2450,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2456,6 +2489,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2494,6 +2528,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2532,6 +2567,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2570,6 +2606,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2608,6 +2645,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2646,6 +2684,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2684,6 +2723,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2722,6 +2762,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2760,6 +2801,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2798,6 +2840,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2836,6 +2879,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2874,6 +2918,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2912,6 +2957,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2950,6 +2996,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -2988,6 +3035,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3026,6 +3074,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3064,6 +3113,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3102,6 +3152,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3140,6 +3191,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3178,6 +3230,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3216,6 +3269,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3254,6 +3308,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3292,6 +3347,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3330,6 +3386,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3368,6 +3425,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3406,6 +3464,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3444,6 +3503,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3482,6 +3542,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3520,6 +3581,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3558,6 +3620,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3596,6 +3659,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3634,6 +3698,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3672,6 +3737,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3710,6 +3776,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3748,6 +3815,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3786,6 +3854,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3824,6 +3893,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3862,6 +3932,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3900,6 +3971,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3938,6 +4010,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -3976,6 +4049,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4014,6 +4088,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4052,6 +4127,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4090,6 +4166,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4128,6 +4205,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4166,6 +4244,7 @@
         <dimension name="YTOS" xvalue="25"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4204,6 +4283,7 @@
         <dimension name="YTOS" xvalue="0"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4242,6 +4322,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="205"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4280,6 +4361,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="32"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4318,6 +4400,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="0"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4356,6 +4439,85 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="1000"/>
+        <dimension name="XDOT" xvalue="144"/>
+        <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XDOT23.ufo" familyname="AmstelvarA2 Roman" stylename="XDOT23">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="YOUC" xvalue="66"/>
+        <dimension name="YOLC" xvalue="72"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTLC" xvalue="243"/>
+        <dimension name="XTFI" xvalue="329"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="23"/>
+        <dimension name="BARS" xvalue="100"/>
+        <dimension name="YTEQ" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XDOT274.ufo" familyname="AmstelvarA2 Roman" stylename="XDOT274">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="YOUC" xvalue="66"/>
+        <dimension name="YOLC" xvalue="72"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTLC" xvalue="243"/>
+        <dimension name="XTFI" xvalue="329"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="48"/>
+        <dimension name="YSVL" xvalue="176"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="201"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="274"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4396,6 +4558,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="113"/>
         <dimension name="WDSP" xvalue="267"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4434,6 +4597,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="157"/>
         <dimension name="WDSP" xvalue="267"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4472,6 +4636,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="65"/>
         <dimension name="WDSP" xvalue="100"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4510,6 +4675,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="126"/>
         <dimension name="WDSP" xvalue="256"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4548,6 +4714,7 @@
         <dimension name="YTOS" xvalue="13"/>
         <dimension name="XUCS" xvalue="78"/>
         <dimension name="WDSP" xvalue="198"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4586,6 +4753,7 @@
         <dimension name="YTOS" xvalue="13"/>
         <dimension name="XUCS" xvalue="122"/>
         <dimension name="WDSP" xvalue="225"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4624,6 +4792,7 @@
         <dimension name="YTOS" xvalue="9"/>
         <dimension name="XUCS" xvalue="35"/>
         <dimension name="WDSP" xvalue="156"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4662,6 +4831,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="172"/>
         <dimension name="WDSP" xvalue="278"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4700,6 +4870,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="78"/>
         <dimension name="WDSP" xvalue="122"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4738,6 +4909,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="142"/>
         <dimension name="WDSP" xvalue="316"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4776,6 +4948,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="130"/>
         <dimension name="WDSP" xvalue="294"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4814,6 +4987,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4852,6 +5026,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="114"/>
         <dimension name="WDSP" xvalue="270"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4890,6 +5065,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="189"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4928,6 +5104,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="97"/>
         <dimension name="WDSP" xvalue="152"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -4966,6 +5143,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="158"/>
         <dimension name="WDSP" xvalue="256"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5004,6 +5182,7 @@
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="250"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5042,6 +5221,7 @@
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="154"/>
         <dimension name="WDSP" xvalue="310"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5080,6 +5260,7 @@
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="64"/>
         <dimension name="WDSP" xvalue="240"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5118,6 +5299,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="202"/>
         <dimension name="WDSP" xvalue="256"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5156,6 +5338,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="160"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5194,6 +5377,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="189"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5232,6 +5416,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="97"/>
         <dimension name="WDSP" xvalue="152"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5270,6 +5455,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="158"/>
         <dimension name="WDSP" xvalue="256"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5308,6 +5494,7 @@
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="250"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5346,6 +5533,7 @@
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="154"/>
         <dimension name="WDSP" xvalue="250"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5384,6 +5572,7 @@
         <dimension name="YTOS" xvalue="14"/>
         <dimension name="XUCS" xvalue="39"/>
         <dimension name="WDSP" xvalue="150"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5422,6 +5611,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="202"/>
         <dimension name="WDSP" xvalue="256"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5460,6 +5650,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="110"/>
         <dimension name="WDSP" xvalue="105"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5498,6 +5689,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5536,6 +5728,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="32"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5574,6 +5767,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="205"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5612,6 +5806,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5650,6 +5845,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5688,6 +5884,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5726,6 +5923,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5764,6 +5962,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5802,6 +6001,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5840,6 +6040,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5878,6 +6079,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5916,6 +6118,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5954,6 +6157,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -5992,6 +6196,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -6030,6 +6235,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -6068,6 +6274,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
@@ -6106,6 +6313,7 @@
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="145"/>
         <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="100"/>
         <dimension name="YTEQ" xvalue="0"/>
       </location>
