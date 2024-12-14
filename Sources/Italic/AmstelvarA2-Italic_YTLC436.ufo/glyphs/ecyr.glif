@@ -5,6 +5,12 @@
   <anchor x="449.0" y="850" name="top"/>
   <outline>
     <contour>
+      <point x="713" y="390" type="line"/>
+      <point x="238" y="372" type="line"/>
+      <point x="258" y="477" type="line"/>
+      <point x="733" y="490" type="line"/>
+    </contour>
+    <contour>
       <point x="204" y="-17" type="qcurve" smooth="yes"/>
       <point x="85" y="-17"/>
       <point x="-30" y="76"/>
@@ -36,12 +42,6 @@
       <point x="804" y="511" type="qcurve" smooth="yes"/>
       <point x="782" y="263"/>
       <point x="442" y="-17"/>
-    </contour>
-    <contour>
-      <point x="713" y="390" type="line"/>
-      <point x="238" y="372" type="line"/>
-      <point x="258" y="477" type="line"/>
-      <point x="733" y="490" type="line"/>
     </contour>
   </outline>
   <lib>
