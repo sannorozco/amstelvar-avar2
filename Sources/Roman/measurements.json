@@ -575,6 +575,15 @@
       "point 2": "3",
       "parent": "",
       "description": "Dot height"
+    },
+    "YTEQ": {
+      "direction": "y",
+      "glyph 1": "O",
+      "point 1": "12",
+      "glyph 2": "O",
+      "point 2": "23",
+      "parent": null,
+      "description": null
     }
   },
   "glyphs": {
@@ -2137,6 +2146,10 @@
       },
       "B 9": {
         "name": "YTUO",
+        "direction": "y"
+      },
+      "12 23": {
+        "name": "YTEQ",
         "direction": "y"
       }
     },
@@ -12106,10 +12119,6 @@
       "4 7": {
         "name": "XOPQ",
         "direction": "x"
-      },
-      "0 1": {
-        "name": "ZOPQ",
-        "direction": ""
       }
     },
     "asciitilde": {
