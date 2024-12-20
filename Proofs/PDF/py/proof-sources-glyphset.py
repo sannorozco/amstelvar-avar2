@@ -6,8 +6,9 @@ import os, glob, time
 from xTools4.modules.glyphSetProofer import GlyphSetProofer
 
 familyName      = 'AmstelvarA2'
-subFamily       = ['Roman', 'Italic'][1]
+subFamily       = ['Roman', 'Italic'][0]
 proofsFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
+pdfsFolder      = os.path.join(proofsFolder, 'PDF')
 baseFolder      = os.path.dirname(proofsFolder)
 sourcesFolder   = os.path.join(baseFolder, 'Sources', subFamily)
 defaultFontPath = os.path.join(sourcesFolder, f'{familyName}-{subFamily}_wght400.ufo')
@@ -17,7 +18,7 @@ sourcePaths.remove(defaultFontPath)
 start = time.time()
 
 P = GlyphSetProofer(f'{familyName} {subFamily}', defaultFontPath, sourcePaths)
-P.build(savePDF=True, folder=proofsFolder)
+P.build(savePDF=True, folder=pdfsFolder)
 
 end = time.time()
 
