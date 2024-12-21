@@ -10,7 +10,7 @@ from xTools4.modules.measurements import FontMeasurements, permille
 from xTools4.modules.linkPoints2 import readMeasurements
 
 
-SUBFAMILY = ['Roman', 'Italic'][1]
+SUBFAMILY = ['Roman', 'Italic'][0]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -37,8 +37,8 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
     parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT'.split()
-    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP'.split()
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT YTEQ'.split()
+    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL           XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT'.split()
 
     def __init__(self):
         # get measurements for default source
@@ -90,7 +90,7 @@ class AmstelvarA2DesignSpaceBuilder:
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
         L['BARS'] = 100
-        L['YTEQ'] = 0
+        # L['YTEQ'] = 0
         return L
 
     @property
@@ -229,23 +229,32 @@ class AmstelvarA2DesignSpaceBuilder:
 
         # add parametric axes
         for name in self.parametricAxes:
+            # get default value
+            defaultValue = permille(self.measurementsDefault.values[name], self.unitsPerEm)
             # get min/max values from file names
             values = []
             for ufo in self.parametricSources:
                 if name in ufo:
                     value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
                     values.append(value)
-            if not len(values) == 2:
+            if len(values) == 2:
+                values.sort()
+                minValue, maxValue = values
+            elif len(values) == 1:
+                values.append(defaultValue)
+                values.sort()
+                minValue, maxValue = values
+            else:
                 print(f'ERROR: {name}: {values}')
-            values.sort()
+                # continue
 
             # create axis
             a = AxisDescriptor()
             a.name    = name
             a.tag     = name
-            a.minimum = values[0]
-            a.maximum = values[1]
-            a.default = permille(self.measurementsDefault.values[name], self.unitsPerEm)
+            a.minimum = minValue
+            a.maximum = maxValue
+            a.default = defaultValue
 
             self.designspace.addAxis(a)
 
@@ -258,15 +267,15 @@ class AmstelvarA2DesignSpaceBuilder:
         a.default = 100
         self.designspace.addAxis(a)
 
-        # custom YTEQ axis
-        if self.subFamilyName == 'Roman':
-            a = AxisDescriptor()
-            a.name    = 'YTEQ'
-            a.tag     = 'YTEQ'
-            a.minimum = 0
-            a.maximum = 100
-            a.default = 0
-            self.designspace.addAxis(a)
+        # # custom YTEQ axis
+        # if self.subFamilyName == 'Roman':
+        #     a = AxisDescriptor()
+        #     a.name    = 'YTEQ'
+        #     a.tag     = 'YTEQ'
+        #     a.minimum = 0
+        #     a.maximum = 100
+        #     a.default = 0
+        #     self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
@@ -301,17 +310,17 @@ class AmstelvarA2DesignSpaceBuilder:
         src.location = L
         self.designspace.addSource(src)
 
-        if self.subFamilyName == 'Roman':
-            axis  = 'YTEQ'
-            value = 100
-            src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = f'{self.familyName} {self.subFamilyName}'
-            src.styleName  = f'{axis}{value}'
-            L = self.defaultLocation.copy()
-            L[axis] = value
-            src.location = L
-            self.designspace.addSource(src)
+        # if self.subFamilyName == 'Roman':
+        #     axis  = 'YTEQ'
+        #     value = 100
+        #     src = SourceDescriptor()
+        #     src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+        #     src.familyName = f'{self.familyName} {self.subFamilyName}'
+        #     src.styleName  = f'{axis}{value}'
+        #     L = self.defaultLocation.copy()
+        #     L[axis] = value
+        #     src.location = L
+        #     self.designspace.addSource(src)
 
         # add parametric sources
         for name in self.parametricAxes:
