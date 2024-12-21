@@ -6,14 +6,14 @@ import os, glob, shutil
 from xTools4.modules.measurements import FontMeasurements
 
 familyName       = 'AmstelvarA2'
-subFamilyName    = ['Roman', 'Italic'][1]
+subFamilyName    = ['Roman', 'Italic'][0]
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
-ignoreTags = ['wght', 'GRAD', 'BARS', 'YTEQ']
+ignoreTags = ['wght', 'GRAD', 'BARS']
 
 preflight = False
 
