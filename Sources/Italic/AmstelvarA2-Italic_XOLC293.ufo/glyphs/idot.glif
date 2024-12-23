@@ -1,20 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idot" format="2">
-  <anchor x="97" y="1000" name="top"/>
+  <anchor x="194" y="1000" name="top"/>
   <outline>
     <contour>
-      <point x="-116" y="1337" type="qcurve" smooth="yes"/>
-      <point x="-102" y="1467"/>
-      <point x="57" y="1609"/>
-      <point x="192" y="1609" type="qcurve" smooth="yes"/>
-      <point x="319" y="1609"/>
-      <point x="457" y="1458"/>
-      <point x="444" y="1337" type="qcurve" smooth="yes"/>
-      <point x="431" y="1206"/>
-      <point x="273" y="1065"/>
-      <point x="139" y="1065" type="qcurve" smooth="yes"/>
-      <point x="10" y="1065"/>
-      <point x="-129" y="1215"/>
+      <point x="154" y="1337" type="qcurve" smooth="yes"/>
+      <point x="160" y="1396"/>
+      <point x="222" y="1460"/>
+      <point x="275" y="1460" type="qcurve" smooth="yes"/>
+      <point x="324" y="1460"/>
+      <point x="378" y="1392"/>
+      <point x="372" y="1337" type="qcurve" smooth="yes"/>
+      <point x="366" y="1278"/>
+      <point x="304" y="1214"/>
+      <point x="251" y="1214" type="qcurve" smooth="yes"/>
+      <point x="202" y="1214"/>
+      <point x="148" y="1282"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>
