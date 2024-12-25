@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph name="ze" format="2">
-  <advance width="946"/>
-  <unicode hex="0437"/>
-  <anchor x="285" y="0" name="bottom"/>
+<glyph name="ecyr" format="2">
+  <advance width="500"/>
   <outline>
     <contour>
       <point x="327" y="335" type="qcurve" smooth="yes"/>
@@ -54,10 +52,4 @@
       <point x="236" y="335"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0.65,1,0.35</string>
-    </dict>
-  </lib>
 </glyph>
