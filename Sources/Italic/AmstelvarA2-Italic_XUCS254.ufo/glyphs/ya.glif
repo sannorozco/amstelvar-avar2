@@ -46,7 +46,6 @@
     <contour>
       <point x="763" y="709" type="line" smooth="yes"/>
       <point x="731" y="576"/>
-      <point x="641" y="508" type="qcurve" smooth="yes"/>
       <point x="546" y="436"/>
       <point x="460" y="436" type="qcurve" smooth="yes"/>
       <point x="408" y="436"/>
@@ -60,4 +59,10 @@
       <point x="779" y="786" type="qcurve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XUCS254.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

@@ -1,7 +1,7 @@
 import os, glob
 from xTools4.modules.validation import validateFonts
 
-subfamilyName = ['Roman', 'Italic'][0]
+subfamilyName = ['Roman', 'Italic'][1]
 defaultName   = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subfamilyName)

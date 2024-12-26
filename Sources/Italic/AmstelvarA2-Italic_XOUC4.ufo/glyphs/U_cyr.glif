@@ -28,8 +28,9 @@
       <point x="409" y="1363" type="line"/>
       <point x="524" y="931" type="line"/>
       <point x="634" y="519" type="line"/>
-      <point x="459" y="283" type="line"/>
-      <point x="251" y="-9"/>
+      <point x="459" y="283" type="line" smooth="yes"/>
+      <point x="385" y="183"/>
+      <point x="220" y="-9"/>
       <point x="189" y="-9" type="qcurve" smooth="yes"/>
       <point x="157" y="-9"/>
       <point x="105" y="-1"/>
@@ -42,4 +43,10 @@
       <point x="572" y="239"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XOUC4.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>
