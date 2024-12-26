@@ -46,6 +46,7 @@
     <contour>
       <point x="680" y="683" type="line" smooth="yes"/>
       <point x="665" y="645"/>
+      <point x="584" y="623" type="qcurve" smooth="yes"/>
       <point x="498" y="600"/>
       <point x="412" y="597" type="qcurve" smooth="yes"/>
       <point x="360" y="596"/>
@@ -61,8 +62,6 @@
   </outline>
   <lib>
     <dict>
-      <key>com.hipertipo.tempEdit.glyphSetPath</key>
-      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_YOLC110.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>0,0.65,1,0.35</string>
     </dict>
