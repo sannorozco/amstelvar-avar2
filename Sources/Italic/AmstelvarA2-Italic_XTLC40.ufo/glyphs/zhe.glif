@@ -4,28 +4,8 @@
   <unicode hex="0436"/>
   <anchor x="580" y="0" name="bottom"/>
   <anchor x="695.0" y="1000" name="top"/>
-  <anchor x="1379" y="134" name="cy_descender"/>
+  <anchor x="1145" y="134" name="cy_descender"/>
   <outline>
-    <contour>
-      <point x="538" y="524" type="line"/>
-      <point x="606" y="911" type="line"/>
-      <point x="575" y="994" type="line"/>
-      <point x="739" y="1021" type="line"/>
-      <point x="781" y="942" type="line"/>
-      <point x="693" y="522" type="line"/>
-      <point x="609" y="77" type="line"/>
-      <point x="640" y="-6" type="line"/>
-      <point x="476" y="-29" type="line"/>
-      <point x="434" y="50" type="line"/>
-    </contour>
-    <contour>
-      <point x="348" y="545" type="line"/>
-      <point x="617" y="563" type="line"/>
-      <point x="898" y="585" type="line"/>
-      <point x="868" y="478" type="line"/>
-      <point x="597" y="461" type="line"/>
-      <point x="325" y="437" type="line"/>
-    </contour>
     <contour>
       <point x="801" y="503" type="qcurve" smooth="yes"/>
       <point x="882" y="795"/>
@@ -91,6 +71,26 @@
       <point x="290" y="1017" type="qcurve" smooth="yes"/>
       <point x="412" y="1017"/>
       <point x="473" y="716"/>
+    </contour>
+    <contour>
+      <point x="538" y="524" type="line"/>
+      <point x="606" y="911" type="line"/>
+      <point x="575" y="994" type="line"/>
+      <point x="739" y="1021" type="line"/>
+      <point x="781" y="942" type="line"/>
+      <point x="693" y="522" type="line"/>
+      <point x="609" y="77" type="line"/>
+      <point x="640" y="-6" type="line"/>
+      <point x="476" y="-29" type="line"/>
+      <point x="434" y="50" type="line"/>
+    </contour>
+    <contour>
+      <point x="348" y="545" type="line"/>
+      <point x="617" y="563" type="line"/>
+      <point x="898" y="585" type="line"/>
+      <point x="868" y="478" type="line"/>
+      <point x="597" y="461" type="line"/>
+      <point x="325" y="437" type="line"/>
     </contour>
   </outline>
   <lib>
