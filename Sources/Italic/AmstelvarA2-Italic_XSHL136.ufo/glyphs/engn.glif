@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="engn" format="2">
   <advance width="1173"/>
+  <anchor x="811" y="0" name="engtail"/>
   <outline>
     <contour>
       <point x="75" y="-23" type="line"/>
@@ -37,6 +38,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XSHL136.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>0,0.65,1,0.35</string>
     </dict>
