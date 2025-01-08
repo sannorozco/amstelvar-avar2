@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="engtail" format="2">
   <advance width="683"/>
+  <anchor x="414" y="0" name="_engtail"/>
   <outline>
     <contour>
       <point x="-136" y="-329" type="qcurve"/>
@@ -22,4 +23,10 @@
       <point x="-117" y="-370"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_YTOS25.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

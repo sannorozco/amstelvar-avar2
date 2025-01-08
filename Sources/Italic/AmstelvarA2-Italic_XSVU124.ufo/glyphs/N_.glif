@@ -4,6 +4,7 @@
   <unicode hex="004E"/>
   <anchor x="640.0" y="0" name="bottom"/>
   <anchor x="884.0" y="1500" name="top"/>
+  <anchor x="1041" y="0" name="engtail"/>
   <outline>
     <contour>
       <point x="-76" y="0" type="line"/>
@@ -42,6 +43,8 @@
   </outline>
   <lib>
     <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_XSVU124.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>0,0.65,1,0.35</string>
     </dict>
