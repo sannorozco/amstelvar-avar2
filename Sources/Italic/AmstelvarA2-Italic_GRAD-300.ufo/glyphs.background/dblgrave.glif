@@ -2,5 +2,12 @@
 <glyph name="dblgrave" format="2">
   <advance width="1048"/>
   <outline>
+    <component base="dblgravecomb" xOffset="573.1818181818182"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>

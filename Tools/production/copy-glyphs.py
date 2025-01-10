@@ -11,9 +11,9 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 
 assert os.path.exists(sourcePath)
 
-glyphNames = 'Oslash diagonalbarO'.split()
+glyphNames = [ 'tonos.case' ] #'Oslash diagonalbarO'.split()
 
-dstFonts = 'YTFI281 YTFI895'.split()
+dstFonts = [] # 'YTFI281 YTFI895'.split()
     
 preflight = False
 
