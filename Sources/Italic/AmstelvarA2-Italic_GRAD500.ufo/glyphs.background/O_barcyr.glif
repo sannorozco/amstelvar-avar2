@@ -32,12 +32,20 @@
       <point x="458" y="1128"/>
     </contour>
     <contour>
-      <point x="210" y="728" type="line"/>
-      <point x="231" y="865" type="line"/>
-      <point x="779" y="861" type="line"/>
-      <point x="1335" y="865" type="line"/>
-      <point x="1314" y="728" type="line"/>
-      <point x="760" y="732" type="line"/>
+      <point x="210" y="687" type="line"/>
+      <point x="231" y="824" type="line"/>
+      <point x="779" y="820" type="line"/>
+      <point x="1335" y="824" type="line"/>
+      <point x="1314" y="687" type="line"/>
+      <point x="760" y="691" type="line"/>
     </contour>
+    <component base="O"/>
+    <component base="Obarcyr-stroke" yOffset="-41"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>

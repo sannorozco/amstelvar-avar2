@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ldot" format="2">
-  <advance width="904"/>
+  <advance width="946"/>
   <unicode hex="0140"/>
   <outline>
     <component base="l"/>
-    <component base="periodcentered.loclCAT" xOffset="314.0000000000137" yOffset="75"/>
+    <component base="periodcentered.loclCAT" xOffset="411.0000000000306" yOffset="75"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.3,0,0.35</string>
+    </dict>
+  </lib>
 </glyph>
