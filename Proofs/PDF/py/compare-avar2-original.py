@@ -1,8 +1,10 @@
 import os, json
 
-proofsFolder  = os.path.dirname(os.getcwd())
+proofsFolder  = os.path.dirname(os.path.dirname(os.getcwd()))
 baseFolder    = os.path.dirname(proofsFolder)
 fontsFolder   = os.path.join(baseFolder, 'Fonts')
+
+print(fontsFolder)
 
 font1_name    = 'Amstelvar'
 font1_Roman   = os.path.join(proofsFolder, 'Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
@@ -26,7 +28,7 @@ fs = 28
 
 savePDF = False
 
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 
 font1 = font1_Roman if subFamilyName == 'Roman' else font1_Italic
 font2 = font2_Roman if subFamilyName == 'Roman' else font2_Italic
