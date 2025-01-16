@@ -17,7 +17,7 @@ glyphNames = 'space exclam quotedbl numbersign dollar percent ampersand quotesin
 
 ignoreGlyphs = 'space nbspace CR .notdef .null gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb hookabovecomb ringcomb hungarumlautcomb caroncomb breveinvertedcomb dblgravecomb horncomb dotbelowcomb dieresisbelowcomb commaaccentcomb cedillacomb ogonekcomb brevebelowcomb macronbelowcomb commaaccentturnedcomb gravecomb-stack acutecomb-stack circumflexcomb-stack tildecomb-stack macroncomb-stack brevecomb-stack dotaccentcomb-stack dieresiscomb-stack hookabovecomb-stack ringcomb-stack hungarumlautcomb-stack caroncomb-stack breveinvertedcomb-stack dblgravecomb-stack gravecomb-stack.case acutecomb-stack.case dieresiscomb-stack.case macroncomb-stack.case circumflexcomb-stack.case caroncomb-stack.case brevecomb-stack.case dotaccentcomb-stack.case ringcomb-stack.case tildecomb-stack.case hungarumlautcomb-stack.case hookabovecomb-stack.case breveinvertedcomb-stack.case dblgravecomb-stack.case caroncomb.alt tonoscomb dieresistonoscomb breve.cyrcomb yi-dieresiscomb'.split()
 
-for glyphName in glyphNames:
+for glyphName in glyphNames[:20]:
     if glyphName in ignoreGlyphs:
         # print(f'skipping {glyphName}...')
         continue
@@ -58,6 +58,11 @@ for glyphName in glyphNames:
                     T.fontVariations(**variations)
                     T.appendGlyph(glyphName)
                     text(T, (x, y), align='center')
+                    with savedState():
+                        fill(1, 0, 0)
+                        txt = f'{"Roman" if jj else "Italic"}\n{opsz} {wght} {wdth}'
+                        fontSize(7)
+                        text(txt, (x, y-10), align='center')
 
 # save PDF
 pdfPath = os.path.join(pdfsFolder, 'glyphs-Roman-Italic.pdf')
