@@ -12321,7 +12321,32 @@
       }
     },
     "cedi.rvrn": {},
-    "five.lc": {},
+    "five.lc": {
+      "0 18": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "9 8": {
+        "name": "XOFI",
+        "direction": "y"
+      },
+      "21 28": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "3 15": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "6 11": {
+        "name": "YOFI",
+        "direction": "x"
+      },
+      "0 25": {
+        "name": "XTFI",
+        "direction": "x"
+      }
+    },
     "zero.lc": {
       "0 12": {
         "name": "XOFI",
@@ -12407,6 +12432,10 @@
       "0 41": {
         "name": "YOFI",
         "direction": "a"
+      },
+      "0 6": {
+        "name": "XTFI",
+        "direction": "x"
       },
       "35 99": {
         "name": "XUCR",
@@ -13054,7 +13083,40 @@
         "direction": "y"
       }
     },
-    "eight.tab": {},
+    "eight.tab": {
+      "19 38": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "13 44": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "16 41": {
+        "name": "XOFI",
+        "direction": "a"
+      },
+      "35 22": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "47 10": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "0 7": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "32 25": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "7 13": {
+        "name": "XTFI",
+        "direction": "x"
+      }
+    },
     "eight.lf": {},
     "cent.rvrn": {},
     "hornU": {
@@ -15411,7 +15473,40 @@
         "direction": "x"
       }
     },
-    "eightsuperior": {},
+    "eightsuperior": {
+      "34 15": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "40 9": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "37 12": {
+        "name": "XOFI",
+        "direction": "a"
+      },
+      "6 43": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "18 31": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "3 46": {
+        "name": "YOFI",
+        "direction": "x"
+      },
+      "21 28": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "28 34": {
+        "name": "XTFI",
+        "direction": "x"
+      }
+    },
     "guilsinglleft": {
       "18 9": {
         "name": "XOPQ",
@@ -15588,6 +15683,17 @@
         "name": "XTFI",
         "direction": "x"
       }
-    }
+    },
+    "Agrave": {},
+    "acircumflex": {},
+    "Igrave": {},
+    "Ucircumflex": {},
+    "hungarumlaut": {},
+    "Odieresis": {},
+    "odieresis": {},
+    "idieresis": {},
+    "cedilla": {},
+    "Aogonek": {},
+    "macron.case": {}
   }
 }
