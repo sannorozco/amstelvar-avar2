@@ -986,12 +986,16 @@
         "direction": "x"
       },
       "4 8": {
-        "name": "YOFI",
+        "name": "XOFI",
         "direction": "a"
       },
-      "3 9": {
+      "9 3": {
         "name": "YOFI",
-        "direction": "a"
+        "direction": "x"
+      },
+      "12 9": {
+        "name": "XTFI",
+        "direction": "x"
       },
       "6 1": {
         "name": "YTFI",
@@ -12381,7 +12385,36 @@
         "direction": "x"
       }
     },
-    "seven.lc": {},
+    "seven.lc": {
+      "6 5": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "4 8": {
+        "name": "XOFI",
+        "direction": "a"
+      },
+      "11 1": {
+        "name": "XOFI",
+        "direction": "y"
+      },
+      "9 3": {
+        "name": "YOFI",
+        "direction": "x"
+      },
+      "12 9": {
+        "name": "XTFI",
+        "direction": "x"
+      },
+      "0 12": {
+        "name": "XSVF",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSVF",
+        "direction": "y"
+      }
+    },
     "peso.rvrn": {},
     "dong": {},
     "won": {},
@@ -13106,7 +13139,36 @@
       }
     },
     "brokenbar": {},
-    "seven.tab": {},
+    "seven.tab": {
+      "11 1": {
+        "name": "XOFI",
+        "direction": "y"
+      },
+      "6 5": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "4 8": {
+        "name": "XOFI",
+        "direction": "a"
+      },
+      "9 3": {
+        "name": "YOFI",
+        "direction": "x"
+      },
+      "12 9": {
+        "name": "XTFI",
+        "direction": "x"
+      },
+      "0 12": {
+        "name": "XSVF",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSVF",
+        "direction": "y"
+      }
+    },
     "bracketleft": {
       "0 7": {
         "name": "XOPQ",
@@ -15791,7 +15853,36 @@
         "direction": "a"
       }
     },
-    "sevensuperior": {},
+    "sevensuperior": {
+      "11 1": {
+        "name": "XOFI",
+        "direction": "y"
+      },
+      "6 5": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "4 8": {
+        "name": "XOFI",
+        "direction": "a"
+      },
+      "12 9": {
+        "name": "XTFI",
+        "direction": "x"
+      },
+      "0 12": {
+        "name": "XSVF",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSVF",
+        "direction": "y"
+      },
+      "9 3": {
+        "name": "YOFI",
+        "direction": "x"
+      }
+    },
     "dieresistonoscomb.case": {},
     "macronbelowcomb.case": {},
     "dotbelowcomb.case": {},
@@ -15909,32 +16000,7 @@
         "direction": "y"
       }
     },
-    "six.tab": {
-      "0 7": {
-        "name": "XOFI",
-        "direction": "x"
-      },
-      "13 26": {
-        "name": "XOFI",
-        "direction": "x"
-      },
-      "29 10": {
-        "name": "YOFI",
-        "direction": "y"
-      },
-      "16 23": {
-        "name": "YOFI",
-        "direction": "y"
-      },
-      "3 4": {
-        "name": "YOFI",
-        "direction": "a"
-      },
-      "7 13": {
-        "name": "XTFI",
-        "direction": "x"
-      }
-    },
+    "six.tab": {},
     "Agrave": {},
     "acircumflex": {},
     "Igrave": {},
@@ -15964,6 +16030,9 @@
     "Aring": {},
     "Adieresis": {},
     "ellipsis": {},
-    "macronbelow": {}
+    "macronbelow": {},
+    "macron": {},
+    "ringcomb-stack.case": {},
+    "ogonek": {}
   }
 }
