@@ -1140,6 +1140,10 @@
       "15 16": {
         "name": "XTEQ",
         "direction": "x"
+      },
+      "29 22": {
+        "name": "YOFI",
+        "direction": "y"
       }
     },
     "colon": {
@@ -9607,6 +9611,14 @@
         "name": "XOLC",
         "direction": "x"
       },
+      "35 13": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "19 29": {
+        "name": "YOLC",
+        "direction": "y"
+      },
       "26 32": {
         "name": "XTLC",
         "direction": "x"
@@ -12713,8 +12725,28 @@
         "name": "XOFI",
         "direction": "x"
       },
+      "5 6": {
+        "name": "YOFI",
+        "direction": "y"
+      },
       "0 7": {
         "name": "YTFI",
+        "direction": "y"
+      },
+      "1 2": {
+        "name": "XSHF",
+        "direction": "x"
+      },
+      "10 11": {
+        "name": "XSHF",
+        "direction": "x"
+      },
+      "0 1": {
+        "name": "YSHF",
+        "direction": "y"
+      },
+      "12 11": {
+        "name": "YSHF",
         "direction": "y"
       }
     },
@@ -12738,6 +12770,10 @@
       "3 4": {
         "name": "YOFI",
         "direction": "a"
+      },
+      "20 19": {
+        "name": "YOFI",
+        "direction": "y"
       },
       "13 7": {
         "name": "XTFI",
@@ -15866,6 +15902,10 @@
         "name": "XOFI",
         "direction": "a"
       },
+      "9 3": {
+        "name": "YOFI",
+        "direction": "x"
+      },
       "12 9": {
         "name": "XTFI",
         "direction": "x"
@@ -15877,10 +15917,6 @@
       "0 1": {
         "name": "YSVF",
         "direction": "y"
-      },
-      "9 3": {
-        "name": "YOFI",
-        "direction": "x"
       }
     },
     "dieresistonoscomb.case": {},
@@ -16000,7 +16036,36 @@
         "direction": "y"
       }
     },
-    "six.tab": {},
+    "six.tab": {
+      "13 26": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "0 7": {
+        "name": "XOFI",
+        "direction": "x"
+      },
+      "29 10": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "16 23": {
+        "name": "YOFI",
+        "direction": "y"
+      },
+      "19 20": {
+        "name": "YOFI",
+        "direction": "a"
+      },
+      "3 4": {
+        "name": "YOFI",
+        "direction": "a"
+      },
+      "7 13": {
+        "name": "XTFI",
+        "direction": "x"
+      }
+    },
     "Agrave": {},
     "acircumflex": {},
     "Igrave": {},
@@ -16033,6 +16098,8 @@
     "macronbelow": {},
     "macron": {},
     "ringcomb-stack.case": {},
-    "ogonek": {}
+    "ogonek": {},
+    "cacute": {},
+    "amacron": {}
   }
 }
