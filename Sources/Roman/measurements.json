@@ -593,6 +593,15 @@
       "point 2": "21",
       "parent": null,
       "description": null
+    },
+    "BARS": {
+      "direction": "Y",
+      "glyph 1": "dollar",
+      "point 1": 41,
+      "glyph 2": "dollar",
+      "point 2": 51,
+      "parent": null,
+      "description": null
     }
   },
   "glyphs": {
@@ -12403,20 +12412,24 @@
     "won": {},
     "dollar": {
       "10 29": {
-        "name": "XOPQ",
+        "name": "XOFI",
         "direction": "a"
       },
       "23 16": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "y"
       },
       "35 4": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "y"
       },
       "41 42": {
-        "name": "YOPQ",
+        "name": "YOFI",
         "direction": "x"
+      },
+      "41 51": {
+        "name": "BARS",
+        "direction": "Y"
       }
     },
     "kip": {},
