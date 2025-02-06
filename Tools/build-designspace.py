@@ -38,7 +38,7 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
     parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT BARS'.split() # XTEQ YTEQ
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT BARS GRAD'.split() # XTEQ YTEQ
     parametricAxesItalic = parametricAxesRoman
 
     def __init__(self):
@@ -89,7 +89,7 @@ class AmstelvarA2DesignSpaceBuilder:
     @property
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
-        L['GRAD'] = 0
+        # L['GRAD'] = 0
         # L['BARS'] = 100
         # L['YTEQ'] = 0
         return L
@@ -220,13 +220,13 @@ class AmstelvarA2DesignSpaceBuilder:
     def addParametricAxes(self):
 
         # add custom parametric axes
-        a = AxisDescriptor()
-        a.name    = 'GRAD'
-        a.tag     = 'GRAD'
-        a.minimum = -300
-        a.maximum = 500
-        a.default = 0
-        self.designspace.addAxis(a)
+        # a = AxisDescriptor()
+        # a.name    = 'GRAD'
+        # a.tag     = 'GRAD'
+        # a.minimum = -300
+        # a.maximum = 500
+        # a.default = 0
+        # self.designspace.addAxis(a)
 
         # add parametric axes
         for name in self.parametricAxes:
@@ -289,16 +289,16 @@ class AmstelvarA2DesignSpaceBuilder:
     def addParametricSources(self):
 
         # add custom parametric sources
-        axis = 'GRAD'
-        for value in [-300, 500]:
-            src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = f'{self.familyName} {self.subFamilyName}'
-            src.styleName  = f'{axis}{value}'
-            L = self.defaultLocation.copy()
-            L[axis] = value
-            src.location = L
-            self.designspace.addSource(src)
+        # axis = 'GRAD'
+        # for value in [-300, 500]:
+        #     src = SourceDescriptor()
+        #     src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
+        #     src.familyName = f'{self.familyName} {self.subFamilyName}'
+        #     src.styleName  = f'{axis}{value}'
+        #     L = self.defaultLocation.copy()
+        #     L[axis] = value
+        #     src.location = L
+        #     self.designspace.addSource(src)
 
         # axis  = 'BARS'
         # value = 0
