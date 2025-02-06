@@ -7,14 +7,20 @@ reload(xTools4.modules.validation)
 import os, glob
 from xTools4.modules.validation import assignValidationGroup
 
+# --------
+# settings
+# --------
+
 familyName     = 'AmstelvarA2'
 subFamilyName  = ['Roman', 'Italic'][1]
-baseFolder     = os.path.dirname(os.path.dirname(os.getcwd()))
-sourcesFolder  = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphNames     = ['caroncomb-alt.case',]
 newDefaultName = 'wght400'
 oldDefaultName = 'BARS0'
 preflight      = False
+
+# ---------
+# functions
+# ---------
 
 def updateGlyphsFromDefault(font, oldDefault, newDefault, glyphNames):
     name = os.path.splitext(os.path.split(font.path)[-1])[0].split('_')[-1]
@@ -38,6 +44,13 @@ def updateGlyphsFromDefault(font, oldDefault, newDefault, glyphNames):
         font.save()
         font.close()
     print()
+
+# --------
+# do stuff
+# --------
+
+baseFolder     = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder  = os.path.join(baseFolder, 'Sources', subFamilyName)
 
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 

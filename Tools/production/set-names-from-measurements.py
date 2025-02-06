@@ -3,19 +3,27 @@ import xTools4.modules.measurements
 reload(xTools4.modules.measurements)
 
 import os, glob, shutil
+from collections import Counter
 from xTools4.modules.measurements import FontMeasurements
 
+# --------
+# settings
+# --------
+
 familyName       = 'AmstelvarA2'
-subFamilyName    = ['Roman', 'Italic'][0]
+subFamilyName    = ['Roman', 'Italic'][1]
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
-allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
-
 ignoreTags = ['wght', 'GRAD', 'BARS']
+preflight  = True
 
-preflight = False
+# --------
+# do stuff
+# --------
+
+allUFOs = glob.glob(f'{sourcesFolder}/*.ufo')
 
 allNames = []
 for ufo in sorted(allUFOs):
@@ -65,7 +73,6 @@ for ufo in sorted(allUFOs):
     print()
 
 # find duplicate styles
-from collections import Counter
-duplicates = [k for k,v in Counter(allNames).items() if v > 1]
+duplicates = [k for k, v in Counter(allNames).items() if v > 1]
 print('duplicate style names:')
 print(duplicates)
