@@ -36,7 +36,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
     parentAxesBuild  = True
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
-    parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
+    parentAxesItalic = parentAxesRoman
 
     parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT BARS GRAD'.split() # XTEQ YTEQ
     parametricAxesItalic = parametricAxesRoman
