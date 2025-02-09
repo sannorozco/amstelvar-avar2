@@ -12,6 +12,7 @@
     <axis tag="YSHA" name="YSHA" minimum="0" maximum="150" default="50"/>
     <axis tag="XSVA" name="XSVA" minimum="0" maximum="130" default="50"/>
     <axis tag="YSVA" name="YSVA" minimum="59" maximum="286" default="115"/>
+    <axis tag="GRAD" name="GRAD" minimum="-300" maximum="500" default="0"/>
     <axis tag="XOUC" name="XOUC" minimum="4" maximum="310" default="84"/>
     <axis tag="XOLC" name="XOLC" minimum="4" maximum="293" default="88"/>
     <axis tag="XOFI" name="XOFI" minimum="6" maximum="310" default="94"/>
@@ -45,7 +46,6 @@
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="137"/>
     <axis tag="BARS" name="BARS" minimum="0" maximum="707" default="0"/>
-    <axis tag="GRAD" name="GRAD" minimum="39" maximum="142" default="84"/>
     <mappings>
       <mapping>
         <input>
@@ -82,7 +82,6 @@
           <dimension name="WDSP" xvalue="234"/>
           <dimension name="XSHF" xvalue="86"/>
           <dimension name="YSHF" xvalue="14"/>
-          <dimension name="GRAD" xvalue="84"/>
           <dimension name="BARS" xvalue="6"/>
         </output>
       </mapping>
@@ -122,7 +121,6 @@
           <dimension name="WDSP" xvalue="279"/>
           <dimension name="XSHF" xvalue="110"/>
           <dimension name="YSHF" xvalue="14"/>
-          <dimension name="GRAD" xvalue="88"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -162,7 +160,6 @@
           <dimension name="WDSP" xvalue="180"/>
           <dimension name="XSHF" xvalue="64"/>
           <dimension name="YSHF" xvalue="12"/>
-          <dimension name="GRAD" xvalue="81"/>
           <dimension name="BARS" xvalue="6"/>
         </output>
       </mapping>
@@ -202,7 +199,6 @@
           <dimension name="WDSP" xvalue="213"/>
           <dimension name="XSHF" xvalue="86"/>
           <dimension name="YSHF" xvalue="10"/>
-          <dimension name="GRAD" xvalue="31"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -242,7 +238,6 @@
           <dimension name="WDSP" xvalue="344"/>
           <dimension name="XSHF" xvalue="74"/>
           <dimension name="YSHF" xvalue="28"/>
-          <dimension name="GRAD" xvalue="253"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -283,7 +278,6 @@
           <dimension name="WDSP" xvalue="400"/>
           <dimension name="XSHF" xvalue="98"/>
           <dimension name="YSHF" xvalue="28"/>
-          <dimension name="GRAD" xvalue="248"/>
           <dimension name="BARS" xvalue="6"/>
         </output>
       </mapping>
@@ -324,7 +318,6 @@
           <dimension name="WDSP" xvalue="328"/>
           <dimension name="XSHF" xvalue="44"/>
           <dimension name="YSHF" xvalue="23"/>
-          <dimension name="GRAD" xvalue="239"/>
           <dimension name="BARS" xvalue="6"/>
         </output>
       </mapping>
@@ -365,7 +358,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="110"/>
           <dimension name="YSHF" xvalue="10"/>
-          <dimension name="GRAD" xvalue="34"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -406,7 +398,6 @@
           <dimension name="WDSP" xvalue="162"/>
           <dimension name="XSHF" xvalue="56"/>
           <dimension name="YSHF" xvalue="8"/>
-          <dimension name="GRAD" xvalue="28"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -445,7 +436,6 @@
           <dimension name="WDSP" xvalue="313"/>
           <dimension name="XSHF" xvalue="98"/>
           <dimension name="YSHF" xvalue="47"/>
-          <dimension name="GRAD" xvalue="84"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -484,7 +474,6 @@
           <dimension name="WDSP" xvalue="278"/>
           <dimension name="XSHF" xvalue="93"/>
           <dimension name="YSHF" xvalue="32"/>
-          <dimension name="GRAD" xvalue="84"/>
           <dimension name="BARS" xvalue="3"/>
         </output>
       </mapping>
@@ -523,7 +512,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="102"/>
           <dimension name="YSHF" xvalue="67"/>
-          <dimension name="GRAD" xvalue="112"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -562,7 +550,6 @@
           <dimension name="WDSP" xvalue="238"/>
           <dimension name="XSHF" xvalue="87"/>
           <dimension name="YSHF" xvalue="16"/>
-          <dimension name="GRAD" xvalue="84"/>
           <dimension name="BARS" xvalue="6"/>
         </output>
       </mapping>
@@ -602,7 +589,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="126"/>
           <dimension name="YSHF" xvalue="67"/>
-          <dimension name="GRAD" xvalue="118"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -642,7 +628,6 @@
           <dimension name="WDSP" xvalue="152"/>
           <dimension name="XSHF" xvalue="90"/>
           <dimension name="YSHF" xvalue="65"/>
-          <dimension name="GRAD" xvalue="110"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -682,7 +667,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="114"/>
           <dimension name="YSHF" xvalue="40"/>
-          <dimension name="GRAD" xvalue="61"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -722,7 +706,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="90"/>
           <dimension name="YSHF" xvalue="82"/>
-          <dimension name="GRAD" xvalue="282"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -763,7 +746,6 @@
           <dimension name="WDSP" xvalue="310"/>
           <dimension name="XSHF" xvalue="98"/>
           <dimension name="YSHF" xvalue="88"/>
-          <dimension name="GRAD" xvalue="287"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -804,7 +786,6 @@
           <dimension name="WDSP" xvalue="240"/>
           <dimension name="XSHF" xvalue="62"/>
           <dimension name="YSHF" xvalue="85"/>
-          <dimension name="GRAD" xvalue="270"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -845,7 +826,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="135"/>
           <dimension name="YSHF" xvalue="40"/>
-          <dimension name="GRAD" xvalue="66"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -886,7 +866,6 @@
           <dimension name="WDSP" xvalue="106"/>
           <dimension name="XSHF" xvalue="85"/>
           <dimension name="YSHF" xvalue="40"/>
-          <dimension name="GRAD" xvalue="56"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -925,7 +904,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="122"/>
           <dimension name="YSHF" xvalue="50"/>
-          <dimension name="GRAD" xvalue="90"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -964,7 +942,6 @@
           <dimension name="WDSP" xvalue="152"/>
           <dimension name="XSHF" xvalue="82"/>
           <dimension name="YSHF" xvalue="48"/>
-          <dimension name="GRAD" xvalue="82"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1003,7 +980,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="100"/>
           <dimension name="YSHF" xvalue="24"/>
-          <dimension name="GRAD" xvalue="43"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1042,7 +1018,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="87"/>
           <dimension name="YSHF" xvalue="65"/>
-          <dimension name="GRAD" xvalue="254"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1082,7 +1057,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="116"/>
           <dimension name="YSHF" xvalue="65"/>
-          <dimension name="GRAD" xvalue="259"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1122,7 +1096,6 @@
           <dimension name="WDSP" xvalue="150"/>
           <dimension name="XSHF" xvalue="70"/>
           <dimension name="YSHF" xvalue="63"/>
-          <dimension name="GRAD" xvalue="252"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1162,7 +1135,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="122"/>
           <dimension name="YSHF" xvalue="24"/>
-          <dimension name="GRAD" xvalue="48"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1202,7 +1174,6 @@
           <dimension name="WDSP" xvalue="200"/>
           <dimension name="XSHF" xvalue="80"/>
           <dimension name="YSHF" xvalue="22"/>
-          <dimension name="GRAD" xvalue="40"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1241,7 +1212,6 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XSHF" xvalue="99"/>
           <dimension name="YSHF" xvalue="50"/>
-          <dimension name="GRAD" xvalue="84"/>
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
@@ -1283,7 +1253,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1324,7 +1294,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1365,7 +1335,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1406,7 +1376,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1447,7 +1417,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1488,7 +1458,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1529,7 +1499,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1570,7 +1540,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1611,7 +1581,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1652,7 +1622,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1693,7 +1663,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1734,7 +1704,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1775,7 +1745,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1816,7 +1786,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1857,7 +1827,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
       <mapping>
@@ -1898,7 +1868,7 @@
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
           <dimension name="BARS" xvalue="0"/>
-          <dimension name="GRAD" xvalue="84"/>
+          <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
     </mappings>
@@ -1906,6 +1876,7 @@
   <sources>
     <source filename="AmstelvarA2-Italic_wght400.ufo" familyname="AmstelvarA2 Italic" stylename="wght400">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -1939,11 +1910,87 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Italic_GRAD-300.ufo" familyname="AmstelvarA2 Italic" stylename="GRAD-300">
+      <location>
+        <dimension name="GRAD" xvalue="-300"/>
+        <dimension name="XOUC" xvalue="84"/>
+        <dimension name="XOLC" xvalue="88"/>
+        <dimension name="XOFI" xvalue="94"/>
+        <dimension name="YOUC" xvalue="58"/>
+        <dimension name="YOLC" xvalue="47"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="360"/>
+        <dimension name="XTLC" xvalue="231"/>
+        <dimension name="XTFI" xvalue="327"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-184"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="94"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="71"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="44"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSHF" xvalue="99"/>
+        <dimension name="YSHF" xvalue="50"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="189"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="137"/>
+        <dimension name="BARS" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Italic_GRAD500.ufo" familyname="AmstelvarA2 Italic" stylename="GRAD500">
+      <location>
+        <dimension name="GRAD" xvalue="500"/>
+        <dimension name="XOUC" xvalue="84"/>
+        <dimension name="XOLC" xvalue="88"/>
+        <dimension name="XOFI" xvalue="94"/>
+        <dimension name="YOUC" xvalue="58"/>
+        <dimension name="YOLC" xvalue="47"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="360"/>
+        <dimension name="XTLC" xvalue="231"/>
+        <dimension name="XTFI" xvalue="327"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-184"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="94"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="71"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="44"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSHF" xvalue="99"/>
+        <dimension name="YSHF" xvalue="50"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="189"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="137"/>
+        <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XOUC4.ufo" familyname="AmstelvarA2 Italic" stylename="XOUC4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="4"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -1977,11 +2024,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XOUC310.ufo" familyname="AmstelvarA2 Italic" stylename="XOUC310">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="310"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2015,11 +2062,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XOLC4.ufo" familyname="AmstelvarA2 Italic" stylename="XOLC4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="4"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2053,11 +2100,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XOLC293.ufo" familyname="AmstelvarA2 Italic" stylename="XOLC293">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="293"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2091,11 +2138,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XOFI310.ufo" familyname="AmstelvarA2 Italic" stylename="XOFI310">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="310"/>
@@ -2129,11 +2176,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XOFI6.ufo" familyname="AmstelvarA2 Italic" stylename="XOFI6">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="6"/>
@@ -2167,11 +2214,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YOUC4.ufo" familyname="AmstelvarA2 Italic" stylename="YOUC4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2205,11 +2252,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YOUC219.ufo" familyname="AmstelvarA2 Italic" stylename="YOUC219">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2243,11 +2290,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YOLC110.ufo" familyname="AmstelvarA2 Italic" stylename="YOLC110">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2281,11 +2328,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YOLC4.ufo" familyname="AmstelvarA2 Italic" stylename="YOLC4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2319,11 +2366,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YOFI214.ufo" familyname="AmstelvarA2 Italic" stylename="YOFI214">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2357,11 +2404,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YOFI4.ufo" familyname="AmstelvarA2 Italic" stylename="YOFI4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2395,11 +2442,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTUC650.ufo" familyname="AmstelvarA2 Italic" stylename="XTUC650">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2433,11 +2480,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTUC63.ufo" familyname="AmstelvarA2 Italic" stylename="XTUC63">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2471,11 +2518,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTLC420.ufo" familyname="AmstelvarA2 Italic" stylename="XTLC420">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2509,11 +2556,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTLC40.ufo" familyname="AmstelvarA2 Italic" stylename="XTLC40">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2547,11 +2594,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTFI94.ufo" familyname="AmstelvarA2 Italic" stylename="XTFI94">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2585,11 +2632,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTFI524.ufo" familyname="AmstelvarA2 Italic" stylename="XTFI524">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2623,11 +2670,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTUC541.ufo" familyname="AmstelvarA2 Italic" stylename="YTUC541">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2661,11 +2708,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTUC875.ufo" familyname="AmstelvarA2 Italic" stylename="YTUC875">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2699,11 +2746,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTLC594.ufo" familyname="AmstelvarA2 Italic" stylename="YTLC594">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2737,11 +2784,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTLC436.ufo" familyname="AmstelvarA2 Italic" stylename="YTLC436">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2775,11 +2822,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTAS852.ufo" familyname="AmstelvarA2 Italic" stylename="YTAS852">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2813,11 +2860,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTAS642.ufo" familyname="AmstelvarA2 Italic" stylename="YTAS642">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2851,11 +2898,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTDE-54.ufo" familyname="AmstelvarA2 Italic" stylename="YTDE-54">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2889,11 +2936,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTDE-264.ufo" familyname="AmstelvarA2 Italic" stylename="YTDE-264">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2927,11 +2974,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTFI281.ufo" familyname="AmstelvarA2 Italic" stylename="YTFI281">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -2965,11 +3012,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTFI895.ufo" familyname="AmstelvarA2 Italic" stylename="YTFI895">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3003,11 +3050,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSHU144.ufo" familyname="AmstelvarA2 Italic" stylename="XSHU144">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3041,11 +3088,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSHU2.ufo" familyname="AmstelvarA2 Italic" stylename="XSHU2">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3079,11 +3126,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSHU150.ufo" familyname="AmstelvarA2 Italic" stylename="YSHU150">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3117,11 +3164,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSHU0.ufo" familyname="AmstelvarA2 Italic" stylename="YSHU0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3155,11 +3202,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSVU0.ufo" familyname="AmstelvarA2 Italic" stylename="XSVU0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3193,11 +3240,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSVU124.ufo" familyname="AmstelvarA2 Italic" stylename="XSVU124">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3231,11 +3278,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSVU59.ufo" familyname="AmstelvarA2 Italic" stylename="YSVU59">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3269,11 +3316,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSVU224.ufo" familyname="AmstelvarA2 Italic" stylename="YSVU224">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3307,11 +3354,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSHL136.ufo" familyname="AmstelvarA2 Italic" stylename="XSHL136">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3345,11 +3392,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSHL0.ufo" familyname="AmstelvarA2 Italic" stylename="XSHL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3383,11 +3430,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSHL144.ufo" familyname="AmstelvarA2 Italic" stylename="YSHL144">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3421,11 +3468,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSHL0.ufo" familyname="AmstelvarA2 Italic" stylename="YSHL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3459,11 +3506,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSVL130.ufo" familyname="AmstelvarA2 Italic" stylename="XSVL130">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3497,11 +3544,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSVL0.ufo" familyname="AmstelvarA2 Italic" stylename="XSVL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3535,11 +3582,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSVL64.ufo" familyname="AmstelvarA2 Italic" stylename="YSVL64">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3573,11 +3620,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSVL202.ufo" familyname="AmstelvarA2 Italic" stylename="YSVL202">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3611,11 +3658,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSHF1.ufo" familyname="AmstelvarA2 Italic" stylename="XSHF1">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3649,11 +3696,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSHF149.ufo" familyname="AmstelvarA2 Italic" stylename="XSHF149">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3687,11 +3734,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSHF150.ufo" familyname="AmstelvarA2 Italic" stylename="YSHF150">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3725,11 +3772,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSHF0.ufo" familyname="AmstelvarA2 Italic" stylename="YSHF0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3763,11 +3810,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSVF126.ufo" familyname="AmstelvarA2 Italic" stylename="XSVF126">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3801,11 +3848,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XSVF0.ufo" familyname="AmstelvarA2 Italic" stylename="XSVF0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3839,11 +3886,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSVF83.ufo" familyname="AmstelvarA2 Italic" stylename="YSVF83">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3877,11 +3924,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YSVF286.ufo" familyname="AmstelvarA2 Italic" stylename="YSVF286">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3915,11 +3962,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTTW30.ufo" familyname="AmstelvarA2 Italic" stylename="XTTW30">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3953,11 +4000,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XTTW0.ufo" familyname="AmstelvarA2 Italic" stylename="XTTW0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -3991,11 +4038,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTTL0.ufo" familyname="AmstelvarA2 Italic" stylename="YTTL0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4029,11 +4076,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTTL104.ufo" familyname="AmstelvarA2 Italic" stylename="YTTL104">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4067,11 +4114,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTOS25.ufo" familyname="AmstelvarA2 Italic" stylename="YTOS25">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4105,11 +4152,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_YTOS-4.ufo" familyname="AmstelvarA2 Italic" stylename="YTOS-4">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4143,11 +4190,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XUCS114.ufo" familyname="AmstelvarA2 Italic" stylename="XUCS114">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4181,11 +4228,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XUCS254.ufo" familyname="AmstelvarA2 Italic" stylename="XUCS254">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4219,11 +4266,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_WDSP1000.ufo" familyname="AmstelvarA2 Italic" stylename="WDSP1000">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4257,11 +4304,11 @@
         <dimension name="WDSP" xvalue="1000"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_WDSP0.ufo" familyname="AmstelvarA2 Italic" stylename="WDSP0">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4295,11 +4342,11 @@
         <dimension name="WDSP" xvalue="0"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XDOT23.ufo" familyname="AmstelvarA2 Italic" stylename="XDOT23">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4333,11 +4380,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="23"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_XDOT274.ufo" familyname="AmstelvarA2 Italic" stylename="XDOT274">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4371,11 +4418,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="274"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </source>
     <source filename="AmstelvarA2-Italic_BARS707.ufo" familyname="AmstelvarA2 Italic" stylename="BARS707">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4409,89 +4456,13 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="707"/>
-        <dimension name="GRAD" xvalue="84"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Italic_GRAD39.ufo" familyname="AmstelvarA2 Italic" stylename="GRAD39">
-      <location>
-        <dimension name="XOUC" xvalue="84"/>
-        <dimension name="XOLC" xvalue="88"/>
-        <dimension name="XOFI" xvalue="94"/>
-        <dimension name="YOUC" xvalue="58"/>
-        <dimension name="YOLC" xvalue="47"/>
-        <dimension name="YOFI" xvalue="56"/>
-        <dimension name="XTUC" xvalue="360"/>
-        <dimension name="XTLC" xvalue="231"/>
-        <dimension name="XTFI" xvalue="327"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="510"/>
-        <dimension name="YTAS" xvalue="778"/>
-        <dimension name="YTDE" xvalue="-184"/>
-        <dimension name="YTFI" xvalue="775"/>
-        <dimension name="XSHU" xvalue="94"/>
-        <dimension name="YSHU" xvalue="50"/>
-        <dimension name="XSVU" xvalue="50"/>
-        <dimension name="YSVU" xvalue="174"/>
-        <dimension name="XSHL" xvalue="71"/>
-        <dimension name="YSHL" xvalue="44"/>
-        <dimension name="XSVL" xvalue="44"/>
-        <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSHF" xvalue="99"/>
-        <dimension name="YSHF" xvalue="50"/>
-        <dimension name="XSVF" xvalue="51"/>
-        <dimension name="YSVF" xvalue="186"/>
-        <dimension name="XTTW" xvalue="9"/>
-        <dimension name="YTTL" xvalue="64"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="189"/>
-        <dimension name="WDSP" xvalue="320"/>
-        <dimension name="XDOT" xvalue="137"/>
-        <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="39"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Italic_GRAD142.ufo" familyname="AmstelvarA2 Italic" stylename="GRAD142">
-      <location>
-        <dimension name="XOUC" xvalue="84"/>
-        <dimension name="XOLC" xvalue="88"/>
-        <dimension name="XOFI" xvalue="94"/>
-        <dimension name="YOUC" xvalue="58"/>
-        <dimension name="YOLC" xvalue="47"/>
-        <dimension name="YOFI" xvalue="56"/>
-        <dimension name="XTUC" xvalue="360"/>
-        <dimension name="XTLC" xvalue="231"/>
-        <dimension name="XTFI" xvalue="327"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="510"/>
-        <dimension name="YTAS" xvalue="778"/>
-        <dimension name="YTDE" xvalue="-184"/>
-        <dimension name="YTFI" xvalue="775"/>
-        <dimension name="XSHU" xvalue="94"/>
-        <dimension name="YSHU" xvalue="50"/>
-        <dimension name="XSVU" xvalue="50"/>
-        <dimension name="YSVU" xvalue="174"/>
-        <dimension name="XSHL" xvalue="71"/>
-        <dimension name="YSHL" xvalue="44"/>
-        <dimension name="XSVL" xvalue="44"/>
-        <dimension name="YSVL" xvalue="126"/>
-        <dimension name="XSHF" xvalue="99"/>
-        <dimension name="YSHF" xvalue="50"/>
-        <dimension name="XSVF" xvalue="51"/>
-        <dimension name="YSVF" xvalue="186"/>
-        <dimension name="XTTW" xvalue="9"/>
-        <dimension name="YTTL" xvalue="64"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="189"/>
-        <dimension name="WDSP" xvalue="320"/>
-        <dimension name="XDOT" xvalue="137"/>
-        <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="142"/>
       </location>
     </source>
   </sources>
   <instances>
     <instance name="opsz144" familyname="AmstelvarA2 Italic" stylename="opsz144" filename="instances/AmstelvarA2-Italic_opsz144.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="75"/>
         <dimension name="XOFI" xvalue="80"/>
@@ -4525,11 +4496,11 @@
         <dimension name="WDSP" xvalue="234"/>
         <dimension name="XDOT" xvalue="116"/>
         <dimension name="BARS" xvalue="6"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="opsz144_wdth125" familyname="AmstelvarA2 Italic" stylename="opsz144 wdth125" filename="instances/AmstelvarA2-Italic_opsz144_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="88"/>
         <dimension name="XOLC" xvalue="82"/>
         <dimension name="XOFI" xvalue="84"/>
@@ -4563,11 +4534,11 @@
         <dimension name="WDSP" xvalue="279"/>
         <dimension name="XDOT" xvalue="124"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="88"/>
       </location>
     </instance>
     <instance name="opsz144_wdth50" familyname="AmstelvarA2 Italic" stylename="opsz144 wdth50" filename="instances/AmstelvarA2-Italic_opsz144_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="81"/>
         <dimension name="XOLC" xvalue="70"/>
         <dimension name="XOFI" xvalue="75"/>
@@ -4601,11 +4572,11 @@
         <dimension name="WDSP" xvalue="180"/>
         <dimension name="XDOT" xvalue="103"/>
         <dimension name="BARS" xvalue="6"/>
-        <dimension name="GRAD" xvalue="81"/>
       </location>
     </instance>
     <instance name="opsz144_wght100" familyname="AmstelvarA2 Italic" stylename="opsz144 wght100" filename="instances/AmstelvarA2-Italic_opsz144_wght100.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="31"/>
         <dimension name="XOLC" xvalue="38"/>
         <dimension name="XOFI" xvalue="34"/>
@@ -4639,11 +4610,11 @@
         <dimension name="WDSP" xvalue="213"/>
         <dimension name="XDOT" xvalue="60"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="31"/>
       </location>
     </instance>
     <instance name="opsz144_wght1000" familyname="AmstelvarA2 Italic" stylename="opsz144 wght1000" filename="instances/AmstelvarA2-Italic_opsz144_wght1000.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="253"/>
         <dimension name="XOLC" xvalue="226"/>
         <dimension name="XOFI" xvalue="236"/>
@@ -4677,11 +4648,11 @@
         <dimension name="WDSP" xvalue="344"/>
         <dimension name="XDOT" xvalue="212"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="253"/>
       </location>
     </instance>
     <instance name="opsz144_wght1000_wdth125" familyname="AmstelvarA2 Italic" stylename="opsz144 wght1000 wdth125" filename="instances/AmstelvarA2-Italic_opsz144_wght1000_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="248"/>
         <dimension name="XOLC" xvalue="247"/>
         <dimension name="XOFI" xvalue="260"/>
@@ -4715,11 +4686,11 @@
         <dimension name="WDSP" xvalue="400"/>
         <dimension name="XDOT" xvalue="212"/>
         <dimension name="BARS" xvalue="6"/>
-        <dimension name="GRAD" xvalue="248"/>
       </location>
     </instance>
     <instance name="opsz144_wght1000_wdth50" familyname="AmstelvarA2 Italic" stylename="opsz144 wght1000 wdth50" filename="instances/AmstelvarA2-Italic_opsz144_wght1000_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="239"/>
         <dimension name="XOLC" xvalue="225"/>
         <dimension name="XOFI" xvalue="225"/>
@@ -4753,11 +4724,11 @@
         <dimension name="WDSP" xvalue="328"/>
         <dimension name="XDOT" xvalue="199"/>
         <dimension name="BARS" xvalue="6"/>
-        <dimension name="GRAD" xvalue="239"/>
       </location>
     </instance>
     <instance name="opsz144_wght100_wdth125" familyname="AmstelvarA2 Italic" stylename="opsz144 wght100 wdth125" filename="instances/AmstelvarA2-Italic_opsz144_wght100_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="34"/>
         <dimension name="XOLC" xvalue="34"/>
         <dimension name="XOFI" xvalue="37"/>
@@ -4791,11 +4762,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="64"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="34"/>
       </location>
     </instance>
     <instance name="opsz144_wght100_wdth50" familyname="AmstelvarA2 Italic" stylename="opsz144 wght100 wdth50" filename="instances/AmstelvarA2-Italic_opsz144_wght100_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="28"/>
         <dimension name="XOLC" xvalue="30"/>
         <dimension name="XOFI" xvalue="28"/>
@@ -4829,11 +4800,11 @@
         <dimension name="WDSP" xvalue="162"/>
         <dimension name="XDOT" xvalue="55"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="28"/>
       </location>
     </instance>
     <instance name="opsz24" familyname="AmstelvarA2 Italic" stylename="opsz24" filename="instances/AmstelvarA2-Italic_opsz24.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="86"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -4867,11 +4838,11 @@
         <dimension name="WDSP" xvalue="313"/>
         <dimension name="XDOT" xvalue="136"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="opsz36" familyname="AmstelvarA2 Italic" stylename="opsz36" filename="instances/AmstelvarA2-Italic_opsz36.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="81"/>
         <dimension name="XOFI" xvalue="88"/>
@@ -4905,11 +4876,11 @@
         <dimension name="WDSP" xvalue="278"/>
         <dimension name="XDOT" xvalue="127"/>
         <dimension name="BARS" xvalue="3"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="opsz8" familyname="AmstelvarA2 Italic" stylename="opsz8" filename="instances/AmstelvarA2-Italic_opsz8.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="112"/>
         <dimension name="XOLC" xvalue="118"/>
         <dimension name="XOFI" xvalue="128"/>
@@ -4943,11 +4914,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="154"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="112"/>
       </location>
     </instance>
     <instance name="opsz84" familyname="AmstelvarA2 Italic" stylename="opsz84" filename="instances/AmstelvarA2-Italic_opsz84.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="76"/>
         <dimension name="XOFI" xvalue="80"/>
@@ -4981,11 +4952,11 @@
         <dimension name="WDSP" xvalue="238"/>
         <dimension name="XDOT" xvalue="118"/>
         <dimension name="BARS" xvalue="6"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="opsz8_wdth125" familyname="AmstelvarA2 Italic" stylename="opsz8 wdth125" filename="instances/AmstelvarA2-Italic_opsz8_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="118"/>
         <dimension name="XOLC" xvalue="125"/>
         <dimension name="XOFI" xvalue="120"/>
@@ -5019,11 +4990,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="154"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="118"/>
       </location>
     </instance>
     <instance name="opsz8_wdth50" familyname="AmstelvarA2 Italic" stylename="opsz8 wdth50" filename="instances/AmstelvarA2-Italic_opsz8_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="110"/>
         <dimension name="XOLC" xvalue="107"/>
         <dimension name="XOFI" xvalue="112"/>
@@ -5057,11 +5028,11 @@
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="XDOT" xvalue="141"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="110"/>
       </location>
     </instance>
     <instance name="opsz8_wght100" familyname="AmstelvarA2 Italic" stylename="opsz8 wght100" filename="instances/AmstelvarA2-Italic_opsz8_wght100.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="61"/>
         <dimension name="XOLC" xvalue="76"/>
         <dimension name="XOFI" xvalue="62"/>
@@ -5095,11 +5066,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="106"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="61"/>
       </location>
     </instance>
     <instance name="opsz8_wght1000" familyname="AmstelvarA2 Italic" stylename="opsz8 wght1000" filename="instances/AmstelvarA2-Italic_opsz8_wght1000.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="282"/>
         <dimension name="XOLC" xvalue="280"/>
         <dimension name="XOFI" xvalue="280"/>
@@ -5133,11 +5104,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="250"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="282"/>
       </location>
     </instance>
     <instance name="opsz8_wght1000_wdth125" familyname="AmstelvarA2 Italic" stylename="opsz8 wght1000 wdth125" filename="instances/AmstelvarA2-Italic_opsz8_wght1000_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="287"/>
         <dimension name="XOLC" xvalue="286"/>
         <dimension name="XOFI" xvalue="290"/>
@@ -5171,11 +5142,11 @@
         <dimension name="WDSP" xvalue="310"/>
         <dimension name="XDOT" xvalue="261"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="287"/>
       </location>
     </instance>
     <instance name="opsz8_wght1000_wdth50" familyname="AmstelvarA2 Italic" stylename="opsz8 wght1000 wdth50" filename="instances/AmstelvarA2-Italic_opsz8_wght1000_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="270"/>
         <dimension name="XOLC" xvalue="268"/>
         <dimension name="XOFI" xvalue="248"/>
@@ -5209,11 +5180,11 @@
         <dimension name="WDSP" xvalue="240"/>
         <dimension name="XDOT" xvalue="237"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="270"/>
       </location>
     </instance>
     <instance name="opsz8_wght100_wdth125" familyname="AmstelvarA2 Italic" stylename="opsz8 wght100 wdth125" filename="instances/AmstelvarA2-Italic_opsz8_wght100_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="66"/>
         <dimension name="XOLC" xvalue="74"/>
         <dimension name="XOFI" xvalue="60"/>
@@ -5247,11 +5218,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="112"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="66"/>
       </location>
     </instance>
     <instance name="opsz8_wght100_wdth50" familyname="AmstelvarA2 Italic" stylename="opsz8 wght100 wdth50" filename="instances/AmstelvarA2-Italic_opsz8_wght100_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="56"/>
         <dimension name="XOLC" xvalue="66"/>
         <dimension name="XOFI" xvalue="53"/>
@@ -5285,11 +5256,11 @@
         <dimension name="WDSP" xvalue="106"/>
         <dimension name="XDOT" xvalue="93"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="56"/>
       </location>
     </instance>
     <instance name="wdth125" familyname="AmstelvarA2 Italic" stylename="wdth125" filename="instances/AmstelvarA2-Italic_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
         <dimension name="XOLC" xvalue="94"/>
         <dimension name="XOFI" xvalue="87"/>
@@ -5323,11 +5294,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="90"/>
       </location>
     </instance>
     <instance name="wdth50" familyname="AmstelvarA2 Italic" stylename="wdth50" filename="instances/AmstelvarA2-Italic_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="82"/>
         <dimension name="XOLC" xvalue="82"/>
         <dimension name="XOFI" xvalue="90"/>
@@ -5361,11 +5332,11 @@
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="XDOT" xvalue="124"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="82"/>
       </location>
     </instance>
     <instance name="wght100" familyname="AmstelvarA2 Italic" stylename="wght100" filename="instances/AmstelvarA2-Italic_wght100.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="43"/>
         <dimension name="XOLC" xvalue="42"/>
         <dimension name="XOFI" xvalue="42"/>
@@ -5399,11 +5370,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="89"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="43"/>
       </location>
     </instance>
     <instance name="wght1000" familyname="AmstelvarA2 Italic" stylename="wght1000" filename="instances/AmstelvarA2-Italic_wght1000.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="254"/>
         <dimension name="XOLC" xvalue="249"/>
         <dimension name="XOFI" xvalue="250"/>
@@ -5437,11 +5408,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="233"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="254"/>
       </location>
     </instance>
     <instance name="wght1000_wdth125" familyname="AmstelvarA2 Italic" stylename="wght1000 wdth125" filename="instances/AmstelvarA2-Italic_wght1000_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="259"/>
         <dimension name="XOLC" xvalue="256"/>
         <dimension name="XOFI" xvalue="258"/>
@@ -5475,11 +5446,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="233"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="259"/>
       </location>
     </instance>
     <instance name="wght1000_wdth50" familyname="AmstelvarA2 Italic" stylename="wght1000 wdth50" filename="instances/AmstelvarA2-Italic_wght1000_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="252"/>
         <dimension name="XOLC" xvalue="236"/>
         <dimension name="XOFI" xvalue="235"/>
@@ -5513,11 +5484,11 @@
         <dimension name="WDSP" xvalue="150"/>
         <dimension name="XDOT" xvalue="220"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="252"/>
       </location>
     </instance>
     <instance name="wght100_wdth125" familyname="AmstelvarA2 Italic" stylename="wght100 wdth125" filename="instances/AmstelvarA2-Italic_wght100_wdth125.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="48"/>
         <dimension name="XOLC" xvalue="51"/>
         <dimension name="XOFI" xvalue="40"/>
@@ -5551,11 +5522,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="89"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="48"/>
       </location>
     </instance>
     <instance name="wght100_wdth50" familyname="AmstelvarA2 Italic" stylename="wght100 wdth50" filename="instances/AmstelvarA2-Italic_wght100_wdth50.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="40"/>
         <dimension name="XOLC" xvalue="42"/>
         <dimension name="XOFI" xvalue="38"/>
@@ -5589,11 +5560,11 @@
         <dimension name="WDSP" xvalue="200"/>
         <dimension name="XDOT" xvalue="76"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="40"/>
       </location>
     </instance>
     <instance name="wght400" familyname="AmstelvarA2 Italic" stylename="wght400" filename="instances/AmstelvarA2-Italic_wght400.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5627,11 +5598,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XTSP-100" familyname="AmstelvarA2 Italic" stylename="XTSP-100" filename="instances/AmstelvarA2-Italic_XTSP-100.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5665,11 +5636,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XTSP100" familyname="AmstelvarA2 Italic" stylename="XTSP100" filename="instances/AmstelvarA2-Italic_XTSP100.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5703,11 +5674,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XOPQ4" familyname="AmstelvarA2 Italic" stylename="XOPQ4" filename="instances/AmstelvarA2-Italic_XOPQ4.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="4"/>
         <dimension name="XOLC" xvalue="4"/>
         <dimension name="XOFI" xvalue="6"/>
@@ -5741,11 +5712,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XOPQ310" familyname="AmstelvarA2 Italic" stylename="XOPQ310" filename="instances/AmstelvarA2-Italic_XOPQ310.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="310"/>
         <dimension name="XOLC" xvalue="293"/>
         <dimension name="XOFI" xvalue="310"/>
@@ -5779,11 +5750,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="YOPQ4" familyname="AmstelvarA2 Italic" stylename="YOPQ4" filename="instances/AmstelvarA2-Italic_YOPQ4.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5817,11 +5788,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="YOPQ219" familyname="AmstelvarA2 Italic" stylename="YOPQ219" filename="instances/AmstelvarA2-Italic_YOPQ219.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5855,11 +5826,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XTRA40" familyname="AmstelvarA2 Italic" stylename="XTRA40" filename="instances/AmstelvarA2-Italic_XTRA40.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5893,11 +5864,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XTRA650" familyname="AmstelvarA2 Italic" stylename="XTRA650" filename="instances/AmstelvarA2-Italic_XTRA650.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5931,11 +5902,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XSHA0" familyname="AmstelvarA2 Italic" stylename="XSHA0" filename="instances/AmstelvarA2-Italic_XSHA0.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -5969,11 +5940,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XSHA149" familyname="AmstelvarA2 Italic" stylename="XSHA149" filename="instances/AmstelvarA2-Italic_XSHA149.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6007,11 +5978,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="YSHA0" familyname="AmstelvarA2 Italic" stylename="YSHA0" filename="instances/AmstelvarA2-Italic_YSHA0.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6045,11 +6016,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="YSHA150" familyname="AmstelvarA2 Italic" stylename="YSHA150" filename="instances/AmstelvarA2-Italic_YSHA150.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6083,11 +6054,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XSVA0" familyname="AmstelvarA2 Italic" stylename="XSVA0" filename="instances/AmstelvarA2-Italic_XSVA0.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6121,11 +6092,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="XSVA130" familyname="AmstelvarA2 Italic" stylename="XSVA130" filename="instances/AmstelvarA2-Italic_XSVA130.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6159,11 +6130,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="YSVA59" familyname="AmstelvarA2 Italic" stylename="YSVA59" filename="instances/AmstelvarA2-Italic_YSVA59.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6197,11 +6168,11 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
     <instance name="YSVA286" familyname="AmstelvarA2 Italic" stylename="YSVA286" filename="instances/AmstelvarA2-Italic_YSVA286.ufo">
       <location>
+        <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
         <dimension name="XOLC" xvalue="88"/>
         <dimension name="XOFI" xvalue="94"/>
@@ -6235,7 +6206,6 @@
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
-        <dimension name="GRAD" xvalue="84"/>
       </location>
     </instance>
   </instances>
