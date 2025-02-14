@@ -7,7 +7,7 @@ sourcesFolder = os.path.join(folder, 'Sources', subFamilyName)
 designspacePath = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}.designspace')
 
 _sources   = True
-_instances = False
+_instances = True
 
 assert os.path.exists(designspacePath)
 
