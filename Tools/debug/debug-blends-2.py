@@ -11,7 +11,7 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 subFamilyName = ['Roman', 'Italic'][0]
 
 threshold = 1
-savePDF   = False
+savePDF   = True
 
 fs = 11              # font size
 p  = 40, 20, 20, 20  # padding
@@ -58,6 +58,7 @@ tabs = [
     (100, "right"),
     (190, "right"),
     (270, "right"),
+    (320, "right"),
 ]
 
 for instanceName in sorted(_instances1.keys()):
@@ -84,7 +85,8 @@ for instanceName in sorted(_instances1.keys()):
         y1 = height() - p[0]*0.57
         font('Menlo')
         fontSize(fs)
-        text(f'{instanceName}', (x1, y1), align='left')
+        text(f'{instanceName.replace("_", " ")}', (x1, y1), align='left')
+        text(f'threshold={threshold}', (width()/2, y1), align='center')
         text(f'{now}', (x3, y1), align='right')
 
     # measurements table
@@ -94,7 +96,7 @@ for instanceName in sorted(_instances1.keys()):
     T.lineHeight(fs*1.25)
 
     T.tabs(*tabs)
-    T.append('\tglyph\tAmstelvarA2\tAmstelvar\n')
+    T.append('\tglyph\tAmstelvarA2\tAmstelvar\tdiff\n')
     for key, value2 in M2.values.items():
         value1 = M1.values.get(key)
 
@@ -111,19 +113,32 @@ for instanceName in sorted(_instances1.keys()):
         else:
             glyph21 = pt21 = glyph22 = pt22 = '—'
 
-        T.fill(0)
-        T.append(f'{key}\t{glyph11}\t')
-        if value1 is None or value2 is None:
-            value1 = '—'
+        if value1 is None or value2 is None:            
+            value1 = difference = '—'
             c = colorCheckNone
-        elif value1 == value2:
-            c = colorCheckEqual
-        elif abs(value1 - value2) <= threshold:
-            c = colorCheckTrue
         else:
-            c = colorCheckFalse
+            difference = abs(value1 - value2)
+            if value1 == value2:
+                c = colorCheckEqual
+            elif difference <= threshold:
+                c = colorCheckTrue
+            else:
+                c = colorCheckFalse
+
+        if c == colorCheckFalse:
+            T.fill(*c)
+        else:
+            T.fill(0)
+        T.append(f'{key}\t')
+        T.fill(0)
+        T.append(f'{glyph11}\t')
         T.fill(*c)
-        T.append(f'{value2}\t{value1}\n')
+        T.append(f'{value2}\t{value1}\t')
+        if c == colorCheckFalse:
+            T.fill(*c)
+        else:
+            T.fill(0)
+        T.append(f'{difference}\n')
 
     text(T, (p[3], height()-45))
 
