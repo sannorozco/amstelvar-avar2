@@ -69,7 +69,7 @@ for char in chars:
     DB.fontSize(fs)
     DB.stroke(None)
     DB.translate(0, -p[0])
-        
+
     for i, wdth in enumerate(wdths):
         for j, opsz in enumerate(opszs):
             _variations = DB.fontVariations()
