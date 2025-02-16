@@ -8,7 +8,7 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 # settings
 # --------
 
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 
 threshold = 1
 savePDF   = True
@@ -22,7 +22,7 @@ p  = 40, 20, 20, 20  # padding
 
 familyName1       = 'AmstelvarA2'
 baseFolder1       = os.path.dirname(os.path.dirname(os.getcwd()))
-instancesFolder1  = os.path.join(baseFolder1, 'Fonts', 'instances')
+instancesFolder1  = os.path.join(baseFolder1, 'Fonts', 'instances', subFamilyName)
 instances1        = glob.glob(f'{instancesFolder1}/*.ufo')
 measurementsPath1 = os.path.join(baseFolder1, 'Sources', subFamilyName, 'measurements.json')
 
@@ -46,7 +46,7 @@ for i in instances2:
     instanceName = '_'.join(os.path.splitext(os.path.split(i)[1])[0].split('_')[1:])
     _instances2[instanceName] = i
 
-print('instances in Amstelvar and NOT in AmstelvarA2:')
+print(f'instances in Amstelvar {subFamilyName} and NOT in AmstelvarA2 {subFamilyName}:')
 missingInstances = set(_instances2.keys()).difference(set(_instances1.keys()))
 for i in sorted(missingInstances):
     print(f'\t{i}')
