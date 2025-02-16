@@ -8,7 +8,7 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 # settings
 # --------
 
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 
 threshold = 1
 savePDF   = True
@@ -85,7 +85,7 @@ for instanceName in sorted(_instances1.keys()):
         y1 = height() - p[0]*0.57
         font('Menlo')
         fontSize(fs)
-        text(f'{instanceName.replace("_", " ")}', (x1, y1), align='left')
+        text(f'{subFamilyName} {instanceName.replace("_", " ")}', (x1, y1), align='left')
         text(f'threshold={threshold}', (width()/2, y1), align='center')
         text(f'{now}', (x3, y1), align='right')
 
@@ -140,7 +140,7 @@ for instanceName in sorted(_instances1.keys()):
             T.fill(0)
         T.append(f'{difference}\n')
 
-    text(T, (p[3], height()-45))
+    text(T, (p[3], height()-50))
 
 if savePDF:
     pdfPath = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_blending-check.pdf')
