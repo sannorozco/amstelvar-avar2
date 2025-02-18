@@ -327,18 +327,18 @@
     "XLCS": {
       "direction": "x",
       "glyph 1": "n",
-      "point 1": "-1",
+      "point 1": "28",
       "glyph 2": "n",
-      "point 2": "3",
+      "point 2": "99",
       "parent": "",
       "description": "X sidebearing lowercase o"
     },
     "XFIR": {
       "direction": "x",
       "glyph 1": "zero",
-      "point 1": "-1",
+      "point 1": "6",
       "glyph 2": "zero",
-      "point 2": "0",
+      "point 2": "99",
       "parent": "",
       "description": "X sidebearing figure 0"
     },
@@ -3508,6 +3508,10 @@
         "name": "XLCS",
         "direction": "x"
       },
+      "28 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
       "X 24": {
         "name": "YTOS",
         "direction": "y"
@@ -3515,10 +3519,6 @@
       "B 0": {
         "name": "YTOS",
         "direction": "y"
-      },
-      "27 99": {
-        "name": "XLCS",
-        "direction": "x"
       }
     },
     "o": {
