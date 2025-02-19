@@ -43,7 +43,7 @@
     <axis tag="YTTL" name="YTTL" minimum="0" maximum="104" default="64"/>
     <axis tag="YTOS" name="YTOS" minimum="-4" maximum="25" default="10"/>
     <axis tag="XUCS" name="XUCS" minimum="114" maximum="254" default="189"/>
-    <axis tag="XLCS" name="XLCS" minimum="122" maximum="167" default="167"/>
+    <axis tag="XLCS" name="XLCS" minimum="78" maximum="234" default="167"/>
     <axis tag="XFIR" name="XFIR" minimum="-14" maximum="89" default="40"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="137"/>
@@ -4488,7 +4488,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCS167.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS167">
+    <source filename="AmstelvarA2-Italic_XLCS78.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS78">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -4521,14 +4521,14 @@
         <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="189"/>
-        <dimension name="XLCS" xvalue="167"/>
+        <dimension name="XLCS" xvalue="78"/>
         <dimension name="XFIR" xvalue="40"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCS122.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS122">
+    <source filename="AmstelvarA2-Italic_XLCS234.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS234">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -4561,7 +4561,7 @@
         <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="10"/>
         <dimension name="XUCS" xvalue="189"/>
-        <dimension name="XLCS" xvalue="122"/>
+        <dimension name="XLCS" xvalue="234"/>
         <dimension name="XFIR" xvalue="40"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
