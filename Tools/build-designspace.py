@@ -402,7 +402,7 @@ class AmstelvarA2DesignSpaceBuilder:
             a.default = self.blendedAxes[tag]['default']
             self.designspace.addAxis(a)
 
-    def build(self, blends=True, instances=True):
+    def build(self, blends=True):
         print(f'building {os.path.split(self.designspacePath)[-1]}...')
         self.designspace = DesignSpaceDocument()
         if blends:
@@ -410,8 +410,7 @@ class AmstelvarA2DesignSpaceBuilder:
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
-        if instances:
-            self.addInstances()
+        self.addInstances()
 
     def save(self):
         if not self.designspace:
