@@ -4,6 +4,7 @@ reload(xTools4.modules.glyphSetProofer)
 
 import os, glob, time
 from xTools4.modules.glyphSetProofer import GlyphSetProofer
+from xTools4.modules.sys import timer
 
 familyName      = 'AmstelvarA2'
 subFamily       = ['Roman', 'Italic'][0]
@@ -24,4 +25,4 @@ P = GlyphSetProofer(f'{familyName} {subFamily}', defaultFontPath, sourcePaths)
 P.build(savePDF=True, folder=pdfsFolder)
 end = time.time()
 
-print(f'total build time: {end - start:.2f} seconds\n')
+timer(start, end)

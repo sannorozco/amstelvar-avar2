@@ -14,7 +14,7 @@ threshold = 1
 savePDF   = True
 
 fs = 11              # font size
-p  = 40, 20, 20, 20  # padding
+p  = 30, 20, 20, 20  # padding
 
 # --------
 # do stuff
@@ -46,11 +46,11 @@ for i in instances2:
     instanceName = '_'.join(os.path.splitext(os.path.split(i)[1])[0].split('_')[1:])
     _instances2[instanceName] = i
 
-print(f'instances in Amstelvar {subFamilyName} and NOT in AmstelvarA2 {subFamilyName}:')
-missingInstances = set(_instances2.keys()).difference(set(_instances1.keys()))
-for i in sorted(missingInstances):
-    print(f'\t{i}')
-print()
+# print(f'instances in Amstelvar {subFamilyName} and NOT in AmstelvarA2 {subFamilyName}:')
+# missingInstances = set(_instances2.keys()).difference(set(_instances1.keys()))
+# for i in sorted(missingInstances):
+#     print(f'\t{i}')
+# print()
     
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -61,86 +61,104 @@ tabs = [
     (320, "right"),
 ]
 
-for instanceName in sorted(_instances1.keys()):
-    instancePath1 = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_avar2_{instanceName}.ufo')
-    instancePath2 = os.path.join(instancesFolder2, f'Amstelvar-{subFamilyName}_{instanceName}.ufo')
-    instance1 = OpenFont(instancePath1, showInterface=False)
-    instance2 = OpenFont(instancePath2, showInterface=False)
+# for instanceName in sorted(_instances1.keys()):
+#     print(instanceName)
 
-    M1 = FontMeasurements()
-    M1.read(measurementsPath1)
-    M1.measure(instance1)
+for opsz in [14, 8, 144]:
+    for wght in [400, 100, 1000]:
+        for wdth in [100, 50, 125]:
+            instanceName = []
+            if opsz == 14 and wght == 400 and wdth == 100:
+                continue
+            if opsz != 14:
+                instanceName.append(f'opsz{opsz}')
+            if wght != 400:
+                instanceName.append(f'wght{wght}')
+            if wdth != 100:
+                instanceName.append(f'wdth{wdth}')
+            instanceName = '_'.join(instanceName)
 
-    M2 = FontMeasurements()
-    M2.read(measurementsPath2)
-    M2.measure(instance2)
+            assert instanceName in _instances1
 
-    newPage('A4')
+            instancePath1 = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_avar2_{instanceName}.ufo')
+            instancePath2 = os.path.join(instancesFolder2, f'Amstelvar-{subFamilyName}_{instanceName}.ufo')
+            instance1 = OpenFont(instancePath1, showInterface=False)
+            instance2 = OpenFont(instancePath2, showInterface=False)
 
-    # page header: instance name & date
-    with savedState():
-        x1 = p[3]
-        x2 = width() / 2
-        x3 = width() - p[1]
-        y1 = height() - p[0]*0.57
-        font('Menlo')
-        fontSize(fs)
-        text(f'{subFamilyName} {instanceName.replace("_", " ")}', (x1, y1), align='left')
-        text(f'threshold={threshold}', (width()/2, y1), align='center')
-        text(f'{now}', (x3, y1), align='right')
+            M1 = FontMeasurements()
+            M1.read(measurementsPath1)
+            M1.measure(instance1)
 
-    # measurements table
-    T = FormattedString()
-    T.font('Menlo')
-    T.fontSize(fs)
-    T.lineHeight(fs*1.25)
+            M2 = FontMeasurements()
+            M2.read(measurementsPath2)
+            M2.measure(instance2)
 
-    T.tabs(*tabs)
-    T.append('\tglyph\tAmstelvarA2\tAmstelvar\tdiff\n')
-    for key, value2 in M2.values.items():
-        value1 = M1.values.get(key)
+            newPage('A4')
 
-        def1 = [d for d in M1.definitions if d[0] == key]
-        def2 = [d for d in M2.definitions if d[0] == key]
+            # page header: instance name & date
+            with savedState():
+                x1 = p[3]
+                x2 = width() / 2
+                x3 = width() - p[1]
+                y1 = height() - p[0]*0.57
+                font('Menlo')
+                fontSize(fs)
+                text(f'{subFamilyName} opsz{opsz} wght{wght} wdth{wdth}', (x1, y1), align='left')
+                text(f'threshold={threshold}', (width()/2, y1), align='center')
+                text(f'{now}', (x3, y1), align='right')
 
-        if def1:        
-            glyph11, pt11, glyph12, pt12 = [(d[2], d[3], d[4], d[5]) for d in M1.definitions if d[0] == key][0]
-        else:
-            glyph11 = pt11 = glyph12 = pt12 = '—'
+            # measurements table
+            T = FormattedString()
+            T.font('Menlo')
+            T.fontSize(fs)
+            T.lineHeight(fs*1.25)
 
-        if def2:
-            glyph21, pt21, glyph22, pt22 = [(d[2], d[3], d[4], d[5]) for d in M2.definitions if d[0] == key][0]
-        else:
-            glyph21 = pt21 = glyph22 = pt22 = '—'
+            T.tabs(*tabs)
+            T.append('\tglyph\tAmstelvarA2\tAmstelvar\tdiff\n')
+            for key, value2 in M2.values.items():
+                value1 = M1.values.get(key)
 
-        if value1 is None or value2 is None:            
-            value1 = difference = '—'
-            c = colorCheckNone
-        else:
-            difference = abs(value1 - value2)
-            if value1 == value2:
-                c = colorCheckEqual
-            elif difference <= threshold:
-                c = colorCheckTrue
-            else:
-                c = colorCheckFalse
+                def1 = [d for d in M1.definitions if d[0] == key]
+                def2 = [d for d in M2.definitions if d[0] == key]
 
-        if c == colorCheckFalse:
-            T.fill(*c)
-        else:
-            T.fill(0)
-        T.append(f'{key}\t')
-        T.fill(0)
-        T.append(f'{glyph11}\t')
-        T.fill(*c)
-        T.append(f'{value2}\t{value1}\t')
-        if c == colorCheckFalse:
-            T.fill(*c)
-        else:
-            T.fill(0)
-        T.append(f'{difference}\n')
+                if def1:        
+                    glyph11, pt11, glyph12, pt12 = [(d[2], d[3], d[4], d[5]) for d in M1.definitions if d[0] == key][0]
+                else:
+                    glyph11 = pt11 = glyph12 = pt12 = '—'
 
-    text(T, (p[3], height()-50))
+                if def2:
+                    glyph21, pt21, glyph22, pt22 = [(d[2], d[3], d[4], d[5]) for d in M2.definitions if d[0] == key][0]
+                else:
+                    glyph21 = pt21 = glyph22 = pt22 = '—'
+
+                if value1 is None or value2 is None:            
+                    value1 = difference = '—'
+                    c = colorCheckNone
+                else:
+                    difference = abs(value1 - value2)
+                    if value1 == value2:
+                        c = colorCheckEqual
+                    elif difference <= threshold:
+                        c = colorCheckTrue
+                    else:
+                        c = colorCheckFalse
+
+                if c == colorCheckFalse:
+                    T.fill(*c)
+                else:
+                    T.fill(0)
+                T.append(f'{key}\t')
+                T.fill(0)
+                T.append(f'{glyph11}\t')
+                T.fill(*c)
+                T.append(f'{value2}\t{value1}\t')
+                if c == colorCheckFalse:
+                    T.fill(*c)
+                else:
+                    T.fill(0)
+                T.append(f'{difference}\n')
+
+            text(T, (p[3], height()-50))
 
 if savePDF:
     pdfPath = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_blending-check.pdf')
