@@ -11,7 +11,7 @@ assert os.path.exists(pdfsFolder)
 subFamilyName = ['Roman', 'Italic'][0]
 fontPath = os.path.join(fontsFolder, f'AmstelvarA2-{subFamilyName}_avar2.ttf')
 
-glyphset  = list('''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~-'"^`''')
+glyphset  = ['C'] # list('''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~-'"^`''')
 
 fs = 36
 p  = 30, 10, 10, 10
@@ -25,7 +25,7 @@ opszs = [8, 14, 144]
 
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-savePDF = True
+savePDF = False
 
 proofName = f'varfont-weights_{subFamilyName}.pdf'
 pdfPath   = os.path.join(pdfsFolder, proofName)

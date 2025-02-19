@@ -1,17 +1,24 @@
-import os, glob, shutil, json, time
+from importlib import reload
+import xTools4.modules.sys
+reload(xTools4.modules.sys)
+
+import os, glob, shutil, json, time, datetime
 import subprocess
 from xml.etree.ElementTree import parse
 from fontTools.designspaceLib import DesignSpaceDocument, AxisDescriptor, SourceDescriptor, InstanceDescriptor, AxisMappingDescriptor
 from fontTools.subset import Subsetter
 from fontTools.ttLib import TTFont
+from fontTools.varLib import instancer
 from defcon import Font
 from ufo2ft import compileVariableTTF
 import ufoProcessor # upgrade to UFOOperator?
+from extractor import extractUFO
 from xTools4.modules.measurements import FontMeasurements, permille
 from xTools4.modules.linkPoints2 import readMeasurements
+from xTools4.modules.sys import timer
 
 
-SUBFAMILY = ['Roman', 'Italic'][1]
+SUBFAMILY = ['Roman', 'Italic'][0]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -38,7 +45,7 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
     parentAxesItalic = parentAxesRoman
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS WDSP XDOT BARS'.split() # GRAD XTEQ YTEQ
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS XLCS XFIR WDSP XDOT BARS'.split() # GRAD XTEQ YTEQ
     parametricAxesItalic = parametricAxesRoman
 
     def __init__(self):
@@ -61,6 +68,12 @@ class AmstelvarA2DesignSpaceBuilder:
     @property
     def instancesFolder(self):
         return os.path.join(self.sourcesFolder, 'instances')
+
+    @property
+    def instances(self):
+        D = DesignSpaceDocument()
+        D.read(self.designspacePath)
+        return D.instances
 
     @property
     def varFontsFolder(self):
@@ -339,6 +352,12 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def addInstances(self):
         for styleName in self.blendedSources.keys():
+            # add only opsz-wght-wdth as instances
+            if not ('opsz' in styleName or 'wght' in styleName or 'wdth' in styleName):
+                continue
+            # if styleName == 'wght400':
+            #     continue
+
             L = self.defaultLocation.copy()
             for axis, value in self.blendedSources[styleName].items():
                 L[axis] = value
@@ -383,7 +402,7 @@ class AmstelvarA2DesignSpaceBuilder:
             a.default = self.blendedAxes[tag]['default']
             self.designspace.addAxis(a)
 
-    def build(self, blends=True, instances=True):
+    def build(self, blends=True):
         print(f'building {os.path.split(self.designspacePath)[-1]}...')
         self.designspace = DesignSpaceDocument()
         if blends:
@@ -391,14 +410,14 @@ class AmstelvarA2DesignSpaceBuilder:
         self.addParametricAxes()
         self.addDefaultSource()
         self.addParametricSources()
-        if instances:
-            self.addInstances()
+        self.addInstances()
 
     def save(self):
         if not self.designspace:
             return
-        print(f'saving...')
+        print(f'saving...', end=' ')
         self.designspace.write(self.designspacePath)
+        print(os.path.exists(self.designspacePath))
 
     def buildVariableFont(self, subset=None, setVersionInfo=True, debug=False):
 
@@ -565,6 +584,57 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
         self.addParametricSources()
         self.addInstances()
 
+    def buildInstancesVariableFont(self, clear=True, ufo=False):
+
+        varInstancesFolder = os.path.join(self.varFontsFolder, 'instances', self.subFamilyName)
+
+        if clear:
+            varInstances = glob.glob(f'{varInstancesFolder}/*.ttf')
+            for instance in varInstances:
+                os.remove(instance)
+            if ufo:
+                ufos = glob.glob(f'{varInstancesFolder}/*.ufo')
+                for ufo in ufos:
+                    shutil.rmtree(ufo)
+
+        # http://stackoverflow.com/questions/65184937/fatal-python-error-init-fs-encoding-failed-to-get-the-python-codec-of-the-file
+        if 'PYTHONHOME' in os.environ:
+           del os.environ['PYTHONHOME']
+
+        print(f"Building AmstelvarA2 {self.subFamilyName} instances...")
+
+        for instance in self.instances:
+            ttfPath = os.path.join(varInstancesFolder, f'AmstelvarA2-{self.subFamilyName}_avar2_{instance.name}.ttf')
+            print(f"\tBuilding {instance.name}...", end=' ')
+            cmd  = ['/opt/homebrew/bin/fontmake']
+            cmd += ['-m', self.designspacePath]
+            # cmd += ['-m', '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_avar2.designspace']
+            cmd += ['-o', 'ttf']
+            cmd += ['-i', instance.name]
+            cmd += ['--feature-writer', 'None']
+            cmd += ['--output-path', ttfPath]
+            cmd += ['--keep-direction', '--keep-overlaps']
+            cmd += ['--verbose ERROR']
+            cmd  = ' '.join(cmd)
+
+            with subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as p:
+                for line in p.stdout.readlines():
+                    print(line,)
+                retval = p.wait()
+
+            print(f'({os.path.exists(ttfPath)})')
+
+        if ufo:
+            print(f"Converting instances to UFO format...")
+            ttfPaths = glob.glob(f'{varInstancesFolder}/*.ttf')
+            for ttfPath in ttfPaths:
+                ufo = Font()
+                extractUFO(ttfPath, ufo)
+                ufoPath = ttfPath.replace('.ttf', '.ufo')
+                print(f"\tSaving {os.path.split(ufoPath)[-1]}...")
+                ufo.save(ufoPath)
+
+        print("done!")
 
 class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_avar2):
     '''
@@ -739,33 +809,51 @@ class AmstelvarA2DesignSpaceBuilder_avar2_v2(AmstelvarA2DesignSpaceBuilder_avar2
 
     '''
 
-    designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_v2.designspace')
+    # designspaceName = AmstelvarA2DesignSpaceBuilder.designspaceName.replace('.designspace', '_avar2_v2.designspace')
 
-    def addInstances(self):
+    # @property
+    # def designspacePath(self):
+    #     return os.path.join(self.varFontsFolder, 'instances', self.designspaceName)
 
-        for styleName in self.blendedSources.keys():
-            parameters = styleName.split('_')
-            L = {}
-            for parameter in parameters:
-                tag  = parameter[:4]
-                value = int(parameter[4:])
-                axis = self.blendedAxes[tag]['name']
-                L[axis] = value
+    # def addInstances(self):
 
-            I = InstanceDescriptor()
-            I.familyName   = self.familyName
-            I.styleName    = styleName.replace('_', ' ')
-            I.name         = styleName
-            I.userLocation = L
-            I.filename     = os.path.join('instances', f'{self.familyName}-{self.subFamilyName}_{styleName}.ufo')
+    #     # clear existing instances
+    #     self.designspace.instances = []
 
-            self.designspace.addInstance(I)
+    #     print('adding instances...')
+    #     for styleName in self.blendedSources.keys():
+    #         if not ('opsz' in styleName or 'wght' in styleName or 'wdth' in styleName):
+    #             continue
+    #         if styleName == 'wght400':
+    #             continue
+
+    #         parameters = styleName.split('_')
+    #         L = {}
+    #         for parameter in parameters:
+    #             tag  = parameter[:4]
+    #             value = int(parameter[4:])
+    #             axis = self.blendedAxes[tag]['name']
+    #             L[axis] = value
+
+    #         I = InstanceDescriptor()
+    #         I.familyName   = self.familyName
+    #         I.styleName    = styleName.replace('_', ' ')
+    #         I.name         = styleName
+    #         I.userLocation = L
+    #         I.filename     = os.path.join('instances', f'{self.familyName}-{self.subFamilyName}_{styleName}.ufo')
+    #         print(f'\tadding {styleName}...')
+
+    #         self.designspace.addInstance(I)
+
+
 
 # -----
 # build
 # -----
 
 if __name__ == '__main__':
+
+    start = time.time()
 
     # D0 = AmstelvarA2DesignSpaceInitializer()
     # D0.build()
@@ -785,13 +873,13 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    D2.buildInstancesVariableFont(clear=True, ufo=True)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
     # D3.save()
     # D3.buildVariableFont()
 
-    # D4 = AmstelvarA2DesignSpaceBuilder_avar2_v2()
-    # D4.build()
-    # D4.save()
-    # D4.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
+    end = time.time()
+
+    timer(start, end)
