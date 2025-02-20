@@ -8,9 +8,9 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 # settings
 # --------
 
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 
-threshold = 1
+threshold = 2
 savePDF   = True
 
 fs = 11              # font size
