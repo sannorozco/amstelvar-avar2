@@ -3,7 +3,7 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 sourceName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
@@ -12,7 +12,7 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 assert os.path.exists(sourcePath)
 
 dstFonts  = []
-preflight = True
+preflight = False
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
