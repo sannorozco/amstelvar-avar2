@@ -607,13 +607,13 @@ nj = n&jdotless + idot@top | 0x1cc
 #  L I G A T U R E S
 # -------------------
 
-f_f = f&f | FB00
-f_f_i = f&f&idotless + idot@top | FB03
-f_f_ij = f&f&idotless + idot@top&jdotless + idot@top | None
-f_f_l = f&f&l | FB04
-f_ij = f&idotless + idot@top&jdotless + idot@top | None
-fi = f&idotless + idot@top | FB01
-fl = f&l | FB02
+# f_f = f&f | FB00
+# f_f_i = f&f&idotless + idot@top | FB03
+# f_f_ij = f&f&idotless + idot@top&jdotless + idot@top | None
+# f_f_l = f&f&l | FB04
+# f_ij = f&idotless + idot@top&jdotless + idot@top | None
+# fi = f&idotless + idot@top | FB01
+# fl = f&l | FB02
 
 # ---------------
 #  A C C E N T S
