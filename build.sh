@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# cd amstelvar-avar2
+# python3.11 -m pip install --user virtualenv
+# python3.11 -m venv venv
+# source venv/bin/activate
+# pip install -r requirements.txt
+# deactivate
+# sh build.sh
+
 source venv/bin/activate
 
 echo "Building variable fonts..."
