@@ -1,5 +1,15 @@
 #!/bin/sh
 
+# cd amstelvar-avar2
+# python3.11 -m pip install --user virtualenv
+# python3.11 -m venv venv
+# source venv/bin/activate
+# pip install -r requirements.txt
+# deactivate
+# sh build.sh
+
+source venv/bin/activate
+
 echo "Building variable fonts..."
 
 echo "  Building AmstelvarA2 Roman..."
@@ -9,3 +19,5 @@ echo "  Building AmstelvarA2 Italic..."
 fontmake -m Sources/Italic/AmstelvarA2-Italic_avar2.designspace -o variable --output-path Fonts/AmstelvarA2-Italic_avar2.ttf --feature-writer None --keep-direction --verbose WARNING
 
 echo "done!"
+
+deactivate
