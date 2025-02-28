@@ -8,7 +8,7 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 # settings
 # --------
 
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 
 threshold = 0.1
 savePDF   = True
@@ -140,7 +140,10 @@ for opsz in [14, 8, 144]:
                         scale_o = None
 
                     if scale_o is None:
-                        c = colorCheckNone
+                        if value1 == value2:
+                            c = colorCheckEqual                                
+                        else:
+                            c = colorCheckNone
                     elif scale_o == 1:
                         c = colorCheckEqual
                     elif (1.0 - threshold) < scale_o < (1.0 + threshold):
