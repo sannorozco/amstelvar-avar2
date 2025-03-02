@@ -14,7 +14,7 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
 
-glyphNames = ['hastroke-cy', 'ustraightstroke', 'Hastroke-cy', 'Ustraightstroke'] # 'Ecircumflexgrave Ocircumflexgrave'.split()
+glyphNames = ['DZcaron', 'Dzcaron', 'dzcaron'] # 'Ustraightstroke', 'Hastroke-cy'
 dstFonts   = []
     
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
@@ -33,5 +33,5 @@ for ufoPath in ufoPaths:
         buildAccentedGlyphs(dstFont, glyphNames, glyphConstructions, clear=True, verbose=verbose, autoUnicodes=False, indentLevel=1)
         print(f'\tsaving font...')
         dstFont.save()
-        dstFont.close()
+        # dstFont.close()
         print()

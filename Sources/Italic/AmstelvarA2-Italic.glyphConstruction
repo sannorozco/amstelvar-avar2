@@ -591,9 +591,9 @@ ij = idotless + idot@top&jdotless + idot@top | 0x133
 ijacute = idotless + idot@top&jdotless + acutecomb@jdotless:top | None
 iacute_j.loclNLD = idotless + acutecomb@top&jdotless + acutecomb@top | None
 
-DZcaron = D&\Z + caroncomb.case@top | 0x1c4
-Dzcaron = D &\z + caroncomb@top | 0x1c5
-dzcaron = d&\z + caroncomb@top | 0x1c6
+DZcaron = D&Z + caroncomb.case@top | 0x1c4
+Dzcaron = D&z + caroncomb@top | 0x1c5
+dzcaron = d&z + caroncomb@top | 0x1c6
 
 LJ = L&J | 0x1c7
 Lj = L&jdotless + idot@top | 0x1c8
