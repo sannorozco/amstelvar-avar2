@@ -3,7 +3,7 @@
   <advance width="1212"/>
   <unicode hex="0052"/>
   <anchor x="573.0" y="0" name="bottom"/>
-  <anchor x="798.0" y="1750" name="top"/>
+  <anchor x="718.0" y="1750" name="top"/>
   <outline>
     <contour>
       <point x="-86" y="0" type="line"/>
@@ -53,4 +53,10 @@
       <point x="618" y="771" type="qcurve" smooth="yes"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Italic/AmstelvarA2-Italic_YTUC875.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

@@ -10,11 +10,13 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 
 subFamilyName = ['Roman', 'Italic'][0]
 
-threshold = 2
+threshold = 0.1
 savePDF   = True
 
 fs = 11              # font size
-p  = 30, 20, 20, 20  # padding
+p  = 40, 25, 20, 25  # padding
+
+ignoreMeasurements = 'XTAB XVAA YHAA XVAU YHAU XVAL YHAL XVAF YHAF'.split()
 
 # --------
 # do stuff
@@ -54,15 +56,9 @@ for i in instances2:
     
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-tabs = [
-    (100, "right"),
-    (190, "right"),
-    (270, "right"),
-    (320, "right"),
-]
-
-# for instanceName in sorted(_instances1.keys()):
-#     print(instanceName)
+cols = 6
+colWidth = 109
+tabs = [(i * colWidth, 'right') for i in range(cols)]
 
 for opsz in [14, 8, 144]:
     for wght in [400, 100, 1000]:
@@ -95,29 +91,31 @@ for opsz in [14, 8, 144]:
 
             newPage('A4')
 
-            # page header: instance name & date
+            # draw page header : instance name, threshold, time & date
             with savedState():
                 x1 = p[3]
                 x2 = width() / 2
                 x3 = width() - p[1]
                 y1 = height() - p[0]*0.57
+                y2 = p[2]*0.57
                 font('Menlo')
                 fontSize(fs)
-                text(f'{subFamilyName} opsz{opsz} wght{wght} wdth{wdth}', (x1, y1), align='left')
-                text(f'threshold={threshold}', (width()/2, y1), align='center')
-                text(f'{now}', (x3, y1), align='right')
+                text(f'{familyName1} {subFamilyName} opsz{opsz} wght{wght} wdth{wdth}', (x1, y1), align='left')
+                text(f'threshold={threshold}', (x3, y1), align='right')
+                text(f'{now}', (x2, y2), align='center')
 
-            # measurements table
+            # draw measurements table
             T = FormattedString()
             T.font('Menlo')
             T.fontSize(fs)
             T.lineHeight(fs*1.25)
-
             T.tabs(*tabs)
-            T.append('\tglyph\tAmstelvarA2\tAmstelvar\tdiff\n')
+            T.append('\tglyph\tinstance\toriginal\to-scale\tunits\n')
+            T.append(f"{'-'*83}\n")
             for key, value2 in M2.values.items():
+                if key in ignoreMeasurements:
+                    continue
                 value1 = M1.values.get(key)
-
                 def1 = [d for d in M1.definitions if d[0] == key]
                 def2 = [d for d in M2.definitions if d[0] == key]
 
@@ -133,32 +131,31 @@ for opsz in [14, 8, 144]:
 
                 if value1 is None or value2 is None:            
                     value1 = difference = '—'
-                    c = colorCheckNone
+                    scale_o = None
                 else:
                     difference = abs(value1 - value2)
-                    if value1 == value2:
+                    if value1 and value2:
+                        scale_o = value2 / value1
+                    else:                        
+                        scale_o = None
+
+                    if scale_o is None:
+                        if value1 == value2:
+                            c = colorCheckEqual                                
+                        else:
+                            c = colorCheckNone
+                    elif scale_o == 1:
                         c = colorCheckEqual
-                    elif difference <= threshold:
+                    elif (1.0 - threshold) < scale_o < (1.0 + threshold):
                         c = colorCheckTrue
                     else:
                         c = colorCheckFalse
 
-                if c == colorCheckFalse:
-                    T.fill(*c)
-                else:
-                    T.fill(0)
-                T.append(f'{key}\t')
-                T.fill(0)
-                T.append(f'{glyph11}\t')
+                _scale_o = '-' if scale_o is None else f'{scale_o:.3f}'
                 T.fill(*c)
-                T.append(f'{value2}\t{value1}\t')
-                if c == colorCheckFalse:
-                    T.fill(*c)
-                else:
-                    T.fill(0)
-                T.append(f'{difference}\n')
+                T.append(f'{key}\t{glyph11}\t{value2}\t{value1}\t{_scale_o}\t{difference}\n')
 
-            text(T, (p[3], height()-50))
+            text(T, (p[3], height()-p[0]-20))
 
 if savePDF:
     pdfPath = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_blending-check.pdf')

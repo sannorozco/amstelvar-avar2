@@ -13,9 +13,9 @@ from xTools4.modules.validation import assignValidationGroup
 
 familyName     = 'AmstelvarA2'
 subFamilyName  = ['Roman', 'Italic'][1]
-glyphNames     = ['caroncomb-alt.case',]
+glyphNames     = ['one.lc', 'diagonalbarO'] # 'ya', 'kabashkircyr', 'yi-dieresiscomb', 'Omega'
 newDefaultName = 'wght400'
-oldDefaultName = 'BARS0'
+oldDefaultName = 'WDSP1000' # 'BARS0'
 preflight      = False
 
 # ---------
