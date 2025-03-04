@@ -8,6 +8,7 @@
   <anchor x="367" y="1000" name="topright"/>
   <anchor x="746.0" y="680.0" name="centerright"/>
   <anchor x="321" y="500" name="yu_dash"/>
+  <anchor x="632" y="0" name="liga"/>
   <outline>
     <contour>
       <point x="76" y="0" type="line"/>
@@ -26,4 +27,10 @@
       <point x="566" y="0" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>
