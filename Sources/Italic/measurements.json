@@ -679,11 +679,11 @@
         "direction": "x"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       },
       "B 9": {
-        "name": "YTOS",
+        "name": "YTFO",
         "direction": "y"
       }
     },
@@ -2964,6 +2964,10 @@
         "name": "YTLC",
         "direction": "y"
       },
+      "10 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
       "X 3": {
         "name": "YTLO",
         "direction": "y"
@@ -2971,10 +2975,6 @@
       "B 21": {
         "name": "YTLO",
         "direction": "y"
-      },
-      "10 99": {
-        "name": "XLCS",
-        "direction": "x"
       }
     },
     "b": {
@@ -7328,15 +7328,15 @@
         "name": "XOLC",
         "direction": "x"
       },
-      "1 32": {
+      "1 28": {
         "name": "XOLC",
         "direction": "x"
       },
-      "14 9": {
+      "14 10": {
         "name": "XOLC",
         "direction": "x"
       },
-      "6 27": {
+      "6 23": {
         "name": "YOLC",
         "direction": "y"
       }
@@ -8807,6 +8807,10 @@
         "name": "YTDE",
         "direction": "y"
       },
+      "16 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
       "6 A": {
         "name": "YTLO",
         "direction": "y"
@@ -8818,10 +8822,6 @@
       "0 D": {
         "name": "YTDO",
         "direction": "y"
-      },
-      "16 99": {
-        "name": "XLCS",
-        "direction": "x"
       }
     },
     "theta": {
@@ -8865,17 +8865,17 @@
         "name": "YSHL",
         "direction": "y"
       },
-      "A 22": {
-        "name": "YTAO",
-        "direction": "y"
+      "25 99": {
+        "name": "XLCR",
+        "direction": "x"
       },
       "B 0": {
         "name": "YTLO",
         "direction": "y"
       },
-      "25 99": {
-        "name": "XLCR",
-        "direction": "x"
+      "A 22": {
+        "name": "YTAO",
+        "direction": "y"
       }
     },
     "gamma": {},
@@ -8887,7 +8887,28 @@
         "direction": "x"
       }
     },
-    "zeta": {},
+    "zeta": {
+      "5 17": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "10 12": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "1 20": {
+        "name": "YOLC",
+        "direction": "y"
+      },
+      "0 23": {
+        "name": "XSVL",
+        "direction": "x"
+      },
+      "22 23": {
+        "name": "YSVL",
+        "direction": "y"
+      }
+    },
     "pi": {
       "14 19": {
         "name": "XOLC",
@@ -8899,15 +8920,15 @@
       }
     },
     "xi": {
-      "18 30": {
+      "12 24": {
         "name": "XOLC",
         "direction": "x"
       },
-      "8 37": {
+      "5 34": {
         "name": "XOLC",
         "direction": "x"
       },
-      "5 40": {
+      "1 37": {
         "name": "YOLC",
         "direction": "y"
       }
@@ -9104,58 +9125,90 @@
       }
     },
     "rho": {
-      "9 23": {
+      "20 9": {
         "name": "XOLC",
         "direction": "x"
       },
-      "3 29": {
+      "3 26": {
         "name": "XOLC",
         "direction": "x"
       },
-      "6 26": {
+      "1 16": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "23 6": {
         "name": "YOLC",
         "direction": "y"
       },
-      "12 20": {
+      "12 17": {
         "name": "YOLC",
         "direction": "y"
+      },
+      "9 99": {
+        "name": "XLCR",
+        "direction": "x"
       }
     },
     "nu": {},
     "upsilon": {
-      "3 14": {
+      "3 10": {
         "name": "XOLC",
         "direction": "x"
       },
-      "20 27": {
+      "16 23": {
         "name": "XOLC",
         "direction": "x"
+      },
+      "0 13": {
+        "name": "YOLC",
+        "direction": "y"
+      }
+    },
+    "sigma": {
+      "3 27": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "20 14": {
+        "name": "XOLC",
+        "direction": "x"
+      },
+      "24 6": {
+        "name": "XOLC",
+        "direction": "y"
       },
       "0 17": {
         "name": "YOLC",
         "direction": "y"
       }
     },
-    "sigma": {
-      "3 13": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "19 27": {
-        "name": "XOLC",
-        "direction": "x"
-      }
-    },
     "finalsigma": {
-      "8 23": {
+      "5 22": {
         "name": "XOLC",
         "direction": "x"
       }
     },
     "chi": {
-      "4 15": {
+      "21 17": {
         "name": "XOLC",
         "direction": "a"
+      },
+      "4 3": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "4 5": {
+        "name": "YSHL",
+        "direction": "y"
+      },
+      "17 18": {
+        "name": "XSHL",
+        "direction": "x"
+      },
+      "19 18": {
+        "name": "YSHL",
+        "direction": "y"
       }
     },
     "omega": {
@@ -9173,43 +9226,59 @@
       }
     },
     "psi": {
-      "3 10": {
+      "14 21": {
         "name": "XOLC",
         "direction": "x"
       },
-      "16 27": {
+      "27 34": {
         "name": "XOLC",
         "direction": "x"
       },
-      "31 39": {
+      "1 10": {
         "name": "XOLC",
         "direction": "x"
       },
-      "34 36": {
-        "name": "XOLC",
-        "direction": "x"
+      "11 24": {
+        "name": "YOLC",
+        "direction": "y"
       }
     },
     "phi": {
-      "35 3": {
+      "1 38": {
         "name": "XOLC",
         "direction": "x"
       },
-      "17 15": {
+      "16 23": {
         "name": "XOLC",
         "direction": "x"
       },
-      "9 29": {
+      "29 10": {
         "name": "XOLC",
         "direction": "x"
       },
-      "26 0": {
+      "13 26": {
         "name": "YOLC",
         "direction": "y"
       },
-      "6 32": {
+      "32 7": {
         "name": "YOLC",
         "direction": "y"
+      },
+      "19 20": {
+        "name": "YOLC",
+        "direction": "a"
+      },
+      "23 4": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "35 29": {
+        "name": "XTLC",
+        "direction": "x"
+      },
+      "10 99": {
+        "name": "XLCR",
+        "direction": "x"
       }
     },
     "parenleft": {
@@ -12084,6 +12153,8 @@
     "ocircumflexdotbelow": {},
     "ccedilla": {},
     "edotaccent": {},
-    "iotadieresistonos": {}
+    "iotadieresistonos": {},
+    "omicron": {},
+    "upsilontonos": {}
   }
 }

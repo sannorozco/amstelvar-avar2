@@ -20,6 +20,8 @@ assert os.path.exists(defaultFontPath)
 
 sourcePaths.remove(defaultFontPath)
 
+# i, n = 45, 2
+
 start = time.time()
 P = GlyphSetProofer(f'{familyName} {subFamily}', defaultFontPath, sourcePaths)
 P.build(savePDF=True, folder=pdfsFolder)

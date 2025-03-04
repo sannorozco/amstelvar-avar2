@@ -689,6 +689,20 @@
 			<dict>
 				<key>glyphNames</key>
 				<array>
+					<string>DZcaron</string>
+					<string>Dzcaron</string>
+					<string>Lj</string>
+					<string>Nj</string>
+					<string>IJ</string>
+					<string>IJacute</string>
+					<string>Iacute_J.loclNLD</string>
+				</array>
+				<key>smartSetName</key>
+				<string>uppercase digraphs</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
 					<string>diagonalbarL</string>
 					<string>diagonalbarO</string>
 					<string>Obarcyr-stroke</string>
@@ -698,6 +712,7 @@
 					<string>horizontalbar</string>
 					<string>horizontalbarH</string>
 					<string>hornU</string>
+					<string>Engtail</string>
 				</array>
 				<key>smartSetName</key>
 				<string>uppercase parts</string>
@@ -919,6 +934,9 @@
 					<string>jacute.loclNLD</string>
 					<string>f_f_ij</string>
 					<string>f_ij</string>
+					<string>wgrave</string>
+					<string>wacute</string>
+					<string>wdieresis</string>
 				</array>
 				<key>smartSetName</key>
 				<string>lowercase latin</string>
@@ -1085,6 +1103,19 @@
 			<dict>
 				<key>glyphNames</key>
 				<array>
+					<string>dzcaron</string>
+					<string>lj</string>
+					<string>nj</string>
+					<string>ij</string>
+					<string>ijacute</string>
+					<string>iacute_j.loclNLD</string>
+				</array>
+				<key>smartSetName</key>
+				<string>lowercase digraphs</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
 					<string>diagonalbarl</string>
 					<string>diagonalbaro</string>
 					<string>horizontalbarlc</string>
@@ -1092,6 +1123,11 @@
 					<string>yu.bgr-stroke</string>
 					<string>engn</string>
 					<string>cy-descendercomb</string>
+					<string>ha-stroke</string>
+					<string>obarcyr-stroke</string>
+					<string>engtail</string>
+					<string>yu-i</string>
+					<string>yu-l.bgr</string>
 				</array>
 				<key>smartSetName</key>
 				<string>lowercase parts</string>
@@ -1735,6 +1771,7 @@
 					<string>macronbelow.case</string>
 					<string>breve.cyr.case</string>
 					<string>periodcentered.loclCAT.case</string>
+					<string>tonos.case</string>
 				</array>
 				<key>smartSetName</key>
 				<string>accents spacing case</string>

@@ -583,25 +583,25 @@ yu.bgr = yu-l.bgr + yu.bgr-stroke@yu_dash + o@yu_dash ^ yu-l.bgr,o | None
 #  D I G R A P H S
 # -----------------
 
-IJ = I&J | 0x132
-IJacute = I&J + acutecomb.case@top | None
-Iacute_J.loclNLD = I + acutecomb.case@top&J + acutecomb.case@top | None
+IJ = I + J@liga ^ I,J | 0x132
+IJacute = I + J@liga + acutecomb.case@top ^ I,Jacute.loclNLD | None
+Iacute_J.loclNLD = I + acutecomb.case@top + J@I:liga + acutecomb.case@top ^ I,Jacute.loclNLD | None
 
-ij = idotless + idot@top&jdotless + idot@top | 0x133
-ijacute = idotless + idot@top&jdotless + acutecomb@jdotless:top | None
-iacute_j.loclNLD = idotless + acutecomb@top&jdotless + acutecomb@top | None
+ij = idotless + idot@top + jdotless@idotless:liga + idot@top ^ idotless,j | 0x133
+ijacute = idotless + idot@top + jdotless@idotless:liga + acutecomb@top ^ idotless,jacute.loclNLD | None
+iacute_j.loclNLD = idotless + acutecomb@top + jdotless@idotless:liga + acutecomb@top ^ idotless,jacute.loclNLD | None
 
-DZcaron = D&\Z + caroncomb.case@top | 0x1c4
-Dzcaron = D &\z + caroncomb@top | 0x1c5
-dzcaron = d&\z + caroncomb@top | 0x1c6
+DZcaron = D + Z@liga + caroncomb.case@top ^ D,Zcaron | 0x1c4
+Dzcaron = D + z@liga + caroncomb@top ^ D,zcaron | 0x1c5
+dzcaron = d + z@liga + caroncomb@top ^ d,zcaron | 0x1c6
 
-LJ = L&J | 0x1c7
-Lj = L&jdotless + idot@top | 0x1c8
-lj = l&jdotless + idot@top | 0x1c9
+LJ = L + J@liga ^ L,J | 0x1c7
+Lj = L + jdotless@liga + idot@top ^ L,j | 0x1c8
+lj = l + jdotless@liga + idot@top ^ l,j | 0x1c9
 
-NJ = N&J | 0x1ca
-Nj = N&jdotless + idot@top | 0x1cb
-nj = n&jdotless + idot@top | 0x1cc
+NJ = N + J@liga ^ N,J | 0x1ca
+Nj = N + jdotless@liga + idot@top ^ N,j | 0x1cb
+nj = n + jdotless@liga + idot@top ^ n,j| 0x1cc
 
 # -------------------
 #  L I G A T U R E S
