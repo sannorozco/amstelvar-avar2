@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="breve.cyr" format="2">
-  <advance width="1022"/>
-  <anchor x="511.0" y="1000" name="_top"/>
+  <advance width="1048"/>
   <outline>
-    <component base="breve.cyrcomb" xOffset="511"/>
+    <component base="breve.cyrcomb"/>
   </outline>
   <lib>
     <dict>
+      <key>com.fontBureau.measurements</key>
+      <dict/>
       <key>public.markColor</key>
       <string>1,0.7,0,0.35</string>
     </dict>
