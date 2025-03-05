@@ -575,11 +575,11 @@ yu.bgr = l + yu.bgr-stroke@yu_dash + o@yu_dash ^ l,o | None
 
 IJ = I + J@liga ^ I,J | 0x132
 IJacute = I + J@liga + acutecomb.case@top ^ I,Jacute.loclNLD | None
-Iacute_J.loclNLD = I + acutecomb.case@top + J@I:liga + acutecomb.case@top ^ I,Jacute.loclNLD | None
+Iacute_J.loclNLD = I + acutecomb.case@top + J@I:liga + acutecomb.case@top ^ Iacute,Jacute.loclNLD | None
 
-ij = idotless + idot@top + jdotless@idotless:liga + idot@top ^ idotless,j | 0x133
-ijacute = idotless + idot@top + jdotless@idotless:liga + acutecomb@top ^ idotless,jacute.loclNLD | None
-iacute_j.loclNLD = idotless + acutecomb@top + jdotless@idotless:liga + acutecomb@top ^ idotless,jacute.loclNLD | None
+ij = idotless + idot@top + jdotless@idotless:liga + idot@top ^ i,j | 0x133
+ijacute = idotless + idot@top + jdotless@idotless:liga + acutecomb@top ^ i,jacute.loclNLD | None
+iacute_j.loclNLD = idotless + acutecomb@top + jdotless@idotless:liga + acutecomb@top ^ iacute,jacute.loclNLD | None
 
 DZcaron = D + Z@liga + caroncomb.case@top ^ D,Zcaron | 0x1c4
 Dzcaron = D + z@liga + caroncomb@top ^ D,zcaron | 0x1c5
@@ -597,13 +597,13 @@ nj = n + jdotless@liga + idot@top ^ n,j| 0x1cc
 #  L I G A T U R E S
 # -------------------
 
-f_f = f&f | FB00
-f_f_i = f&f&idotless + idot@top | FB03
-f_f_ij = f&f&idotless + idot@top&jdotless + idot@top | None
-f_f_l = f&f&l | FB04
-f_ij = f&idotless + idot@top&jdotless + idot@top | None
-fi = f&idotless + idot@top | FB01
-fl = f&l | FB02
+# f_f = f&f | FB00
+# f_f_i = f&f&idotless + idot@top | FB03
+# f_f_ij = f&f&idotless + idot@top&jdotless + idot@top | None
+# f_f_l = f&f&l | FB04
+# f_ij = f&idotless + idot@top&jdotless + idot@top | None
+# fi = f&idotless + idot@top | FB01
+# fl = f&l | FB02
 
 # ---------------
 #  A C C E N T S

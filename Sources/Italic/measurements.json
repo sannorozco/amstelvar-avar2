@@ -90,6 +90,24 @@
       "parent": "XTRA",
       "description": "X transparent uppercase"
     },
+    "XTUR": {
+      "direction": "x",
+      "glyph 1": "O",
+      "point 1": 12,
+      "glyph 2": "O",
+      "point 2": 18,
+      "parent": "XTRA",
+      "description": "X transparent uppercase rounds"
+    },
+    "XTUD": {
+      "direction": "x",
+      "glyph 1": "V",
+      "point 1": 4,
+      "glyph 2": "V",
+      "point 2": 11,
+      "parent": "XTRA",
+      "description": "X transparent uppercase diagonals"
+    },
     "XTLC": {
       "direction": "x",
       "glyph 1": "n",
@@ -98,6 +116,24 @@
       "point 2": "13",
       "parent": "XTRA",
       "description": "X transparent lowercase"
+    },
+    "XTLR": {
+      "direction": "x",
+      "glyph 1": "o",
+      "point 1": 12,
+      "glyph 2": "o",
+      "point 2": 18,
+      "parent": "XTRA",
+      "description": "X transparent lowercase rounds"
+    },
+    "XTLD": {
+      "direction": "x",
+      "glyph 1": "v",
+      "point 1": 6,
+      "glyph 2": "v",
+      "point 2": 14,
+      "parent": "XTRA",
+      "description": "X transparent lowercase diagonals"
     },
     "XTFI": {
       "direction": "x",
@@ -340,7 +376,7 @@
       "glyph 2": "zero",
       "point 2": "99",
       "parent": "",
-      "description": "X sidebearing figure 0"
+      "description": "X sidebearing figure round"
     },
     "XFIS": {
       "direction": "x",
@@ -349,7 +385,7 @@
       "glyph 2": "one",
       "point 2": "99",
       "parent": "",
-      "description": ""
+      "description": "X sidebearing figure straight"
     },
     "XTAB": {
       "direction": "x",
@@ -2148,10 +2184,6 @@
         "name": "YOUC",
         "direction": "y"
       },
-      "12 18": {
-        "name": "XTUC",
-        "direction": "x"
-      },
       "9 3": {
         "name": "YTUC",
         "direction": "y"
@@ -2539,7 +2571,7 @@
         "direction": "a"
       },
       "4 11": {
-        "name": "XTUC",
+        "name": "XTUD",
         "direction": "x"
       },
       "19 1": {
@@ -3551,7 +3583,7 @@
         "direction": "y"
       },
       "12 18": {
-        "name": "XTLC",
+        "name": "XTLR",
         "direction": "x"
       },
       "9 3": {
@@ -3824,7 +3856,7 @@
         "direction": "a"
       },
       "6 14": {
-        "name": "XTLC",
+        "name": "XTLD",
         "direction": "x"
       },
       "0 20": {
