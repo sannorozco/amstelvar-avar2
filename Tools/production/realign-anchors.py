@@ -12,7 +12,9 @@ defaultPath   = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defa
 
 anchorNames = [
     'top',
-    # 'bottom',
+    'GRKtop',
+    # 'center',
+    'bottom',
 ]
 
 defaultFont = OpenFont(defaultPath, showInterface=False)

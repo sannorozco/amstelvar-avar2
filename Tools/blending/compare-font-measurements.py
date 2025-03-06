@@ -8,10 +8,10 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 # settings
 # --------
 
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 
 threshold = 0.1
-savePDF   = False
+savePDF   = True
 
 fs = 11              # font size
 p  = 40, 25, 20, 25  # padding
@@ -49,11 +49,13 @@ for i in instances2:
     instanceName = '_'.join(os.path.splitext(os.path.split(i)[1])[0].split('_')[1:])
     _instances2[instanceName] = i
         
-now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+now     = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+pdfPath = os.path.join(baseFolder1, 'Proofs', 'PDF', f'blending-check_{subFamilyName}.pdf')
 
-cols = 6
-colWidth = 109
+cols       = 6
+colWidth   = 109
 tabs_first = 30
+
 tabs = []
 for i in range(cols):
     tab_x = i * colWidth
@@ -161,5 +163,4 @@ for opsz in [14, 8, 144]:
             text(T, (p[3], height()-p[0]-20))
 
 if savePDF:
-    pdfPath = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_blending-check.pdf')
     saveImage(pdfPath)
