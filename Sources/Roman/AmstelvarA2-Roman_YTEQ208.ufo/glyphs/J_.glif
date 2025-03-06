@@ -4,6 +4,7 @@
   <unicode hex="004A"/>
   <anchor x="376.0" y="-208" name="bottom"/>
   <anchor x="376.0" y="1500" name="top"/>
+  <anchor x="0" y="0" name="_liga"/>
   <outline>
     <contour>
       <point x="37" y="-204" type="qcurve"/>
@@ -32,79 +33,6 @@
   </outline>
   <lib>
     <dict>
-      <key>com.fontBureau.measurements</key>
-      <dict>
-        <key>-1 12</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YTUC</string>
-        </dict>
-        <key>1 7</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XTUC</string>
-        </dict>
-        <key>10 11</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSUC</string>
-        </dict>
-        <key>12 13</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YSUC</string>
-        </dict>
-        <key>13 14</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSUC</string>
-        </dict>
-        <key>4 19</key>
-        <dict>
-          <key>direction</key>
-          <string>y</string>
-          <key>name</key>
-          <string>YOUC</string>
-        </dict>
-        <key>9 -1</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XUCS</string>
-        </dict>
-        <key>9 10</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XSUC</string>
-        </dict>
-        <key>9 14</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XOUC</string>
-        </dict>
-        <key>99 14</key>
-        <dict>
-          <key>direction</key>
-          <string>x</string>
-          <key>name</key>
-          <string>XUCS</string>
-        </dict>
-      </dict>
       <key>public.markColor</key>
       <string>0,0.65,1,0.35</string>
     </dict>
