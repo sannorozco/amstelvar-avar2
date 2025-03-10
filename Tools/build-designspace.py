@@ -18,7 +18,7 @@ from xTools4.modules.linkPoints2 import readMeasurements
 from xTools4.modules.sys import timer
 
 
-SUBFAMILY = ['Roman', 'Italic'][1]
+SUBFAMILY = ['Roman', 'Italic'][0]
 
 ASCII  = 'space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde'
 LATIN1 = ASCII + ' exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute uni00B5 micro paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis idotless Lslash lslash OE oe Scaron scaron Ydieresis Zcaron zcaron florin circumflex caron breve dotaccent ring ogonek tilde hungarumlaut endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro trademark minus fi fl'
@@ -45,7 +45,7 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
     parentAxesItalic = parentAxesRoman
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS XLCS XFIR WDSP XDOT BARS'.split() # GRAD XTEQ YTEQ
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS XLCS XFIR WDSP XDOT BARS YTEQ'.split() # GRAD XTEQ 
     parametricAxesItalic = parametricAxesRoman
 
     def __init__(self):
@@ -158,19 +158,34 @@ class AmstelvarA2DesignSpaceBuilder:
             "max"     : 100,
         }
         # get min/max values from file names
-        values = []
+        valuesXUCS = []
+        valuesXLCS = []
+        valuesXFIR = []
         for ufo in self.parametricSources:
+            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
             if 'XUCS' in ufo:
-                value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                values.append(value)
-        assert len(values)
-        values.sort()
+                valuesXUCS.append(value)
+            if 'XLCS' in ufo:
+                valuesXLCS.append(value)
+            if 'XFIR' in ufo:
+                valuesXFIR.append(value)
+        assert len(valuesXUCS)
+        assert len(valuesXLCS)
+        assert len(valuesXFIR)
+        valuesXUCS.sort()
+        valuesXLCS.sort()
+        valuesXFIR.sort()
+
         # add XTSP min source
         blendsDict['sources']['XTSP-100'] = self.defaultLocation.copy()
-        blendsDict['sources']['XTSP-100']['XUCS'] = values[0]
+        blendsDict['sources']['XTSP-100']['XUCS'] = valuesXUCS[0]
+        blendsDict['sources']['XTSP-100']['XLCS'] = valuesXLCS[0]
+        blendsDict['sources']['XTSP-100']['XFIR'] = valuesXFIR[0]
         # add XTSP max source
         blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
-        blendsDict['sources']['XTSP100']['XUCS'] = values[1]
+        blendsDict['sources']['XTSP100']['XUCS'] = valuesXUCS[1]
+        blendsDict['sources']['XTSP100']['XLCS'] = valuesXLCS[1]
+        blendsDict['sources']['XTSP100']['XFIR'] = valuesXFIR[1]
 
         # -----------------------
         # add blended PARENT axes
@@ -873,7 +888,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    D2.buildInstancesVariableFont(clear=True, ufo=True)
+    # D2.buildInstancesVariableFont(clear=True, ufo=True)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
