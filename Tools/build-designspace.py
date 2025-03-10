@@ -42,10 +42,10 @@ class AmstelvarA2DesignSpaceBuilder:
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
     parentAxesBuild  = True
-    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA'.split() # YTRA
+    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # YTRA
     parentAxesItalic = parentAxesRoman
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XTTW YTTL YTOS XUCS XLCS XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XLCS XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
     parametricAxesItalic = parametricAxesRoman
 
     def __init__(self):

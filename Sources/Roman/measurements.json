@@ -342,6 +342,78 @@
       "parent": "YSVA",
       "description": "Y vertical serif figures"
     },
+    "XVAA": {
+      "direction": "x",
+      "glyph 1": "E",
+      "point 1": "10",
+      "glyph 2": "E",
+      "point 2": "9",
+      "parent": "",
+      "description": "General vertical serif angle"
+    },
+    "YHAA": {
+      "direction": "y",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "",
+      "description": "General horizontal serif angle"
+    },
+    "XVAU": {
+      "direction": "x",
+      "glyph 1": "E",
+      "point 1": "10",
+      "glyph 2": "E",
+      "point 2": "9",
+      "parent": "XVAA",
+      "description": "Uppercase vertical serif angle"
+    },
+    "YHAU": {
+      "direction": "y",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "YHAA",
+      "description": "Uppercase horizontal serif angle"
+    },
+    "XVAL": {
+      "direction": "x",
+      "glyph 1": "z",
+      "point 1": "4",
+      "glyph 2": "z",
+      "point 2": "3",
+      "parent": "XVAA",
+      "description": "Lowercase vertical serif angle"
+    },
+    "YHAL": {
+      "direction": "y",
+      "glyph 1": "n",
+      "point 1": "1",
+      "glyph 2": "n",
+      "point 2": "2",
+      "parent": "YHAA",
+      "description": "Lowercase horizontal serif angle"
+    },
+    "XVAF": {
+      "direction": "x",
+      "glyph 1": "seven",
+      "point 1": "12",
+      "glyph 2": "seven",
+      "point 2": "11",
+      "parent": "XVAA",
+      "description": "Figures vertical serif angle"
+    },
+    "YHAF": {
+      "direction": "y",
+      "glyph 1": "one",
+      "point 1": "1",
+      "glyph 2": "one",
+      "point 2": "2",
+      "parent": "YHAA",
+      "description": "Figures horizontal serif angle"
+    },
     "XTSP": {
       "direction": "x",
       "glyph 1": "H",
