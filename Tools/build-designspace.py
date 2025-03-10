@@ -158,19 +158,34 @@ class AmstelvarA2DesignSpaceBuilder:
             "max"     : 100,
         }
         # get min/max values from file names
-        values = []
+        valuesXUCS = []
+        valuesXLCS = []
+        valuesXFIR = []
         for ufo in self.parametricSources:
+            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
             if 'XUCS' in ufo:
-                value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-                values.append(value)
-        assert len(values)
-        values.sort()
+                valuesXUCS.append(value)
+            if 'XLCS' in ufo:
+                valuesXLCS.append(value)
+            if 'XFIR' in ufo:
+                valuesXFIR.append(value)
+        assert len(valuesXUCS)
+        assert len(valuesXLCS)
+        assert len(valuesXFIR)
+        valuesXUCS.sort()
+        valuesXLCS.sort()
+        valuesXFIR.sort()
+
         # add XTSP min source
         blendsDict['sources']['XTSP-100'] = self.defaultLocation.copy()
-        blendsDict['sources']['XTSP-100']['XUCS'] = values[0]
+        blendsDict['sources']['XTSP-100']['XUCS'] = valuesXUCS[0]
+        blendsDict['sources']['XTSP-100']['XLCS'] = valuesXLCS[0]
+        blendsDict['sources']['XTSP-100']['XFIR'] = valuesXFIR[0]
         # add XTSP max source
         blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
-        blendsDict['sources']['XTSP100']['XUCS'] = values[1]
+        blendsDict['sources']['XTSP100']['XUCS'] = valuesXUCS[1]
+        blendsDict['sources']['XTSP100']['XLCS'] = valuesXLCS[1]
+        blendsDict['sources']['XTSP100']['XFIR'] = valuesXFIR[1]
 
         # -----------------------
         # add blended PARENT axes
