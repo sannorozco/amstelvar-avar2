@@ -272,19 +272,19 @@
     },
     "XSVA": {
       "direction": "x",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "8",
+      "glyph 1": "T",
+      "point 1": "4",
+      "glyph 2": "T",
+      "point 2": "3",
       "parent": "",
       "description": "General x vertical serifs"
     },
     "XSVU": {
       "direction": "x",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "8",
+      "glyph 1": "T",
+      "point 1": "4",
+      "glyph 2": "T",
+      "point 2": "3",
       "parent": "XSVA",
       "description": "X vertical serif uppercase"
     },
@@ -308,19 +308,19 @@
     },
     "YSVA": {
       "direction": "y",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "10",
+      "glyph 1": "T",
+      "point 1": "3",
+      "glyph 2": "T",
+      "point 2": "2",
       "parent": "",
       "description": "General y vertical serifs"
     },
     "YSVU": {
       "direction": "y",
-      "glyph 1": "E",
-      "point 1": "8",
-      "glyph 2": "E",
-      "point 2": "7",
+      "glyph 1": "T",
+      "point 1": "3",
+      "glyph 2": "T",
+      "point 2": "2",
       "parent": "YSVA",
       "description": "Y vertical serif uppercase"
     },
@@ -357,7 +357,7 @@
       "point 1": "-1",
       "glyph 2": "H",
       "point 2": "2",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing uppercase H"
     },
     "XUCR": {
@@ -366,7 +366,7 @@
       "point 1": "-1",
       "glyph 2": "O",
       "point 2": "0",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing uppercase O"
     },
     "XLCR": {
@@ -375,7 +375,7 @@
       "point 1": "-1",
       "glyph 2": "o",
       "point 2": "0",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing lowercase n"
     },
     "XLCS": {
@@ -384,7 +384,7 @@
       "point 1": "-1",
       "glyph 2": "n",
       "point 2": "2",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing lowercase o"
     },
     "XFIR": {
@@ -393,7 +393,7 @@
       "point 1": "-1",
       "glyph 2": "zero",
       "point 2": "0",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing figure 0"
     },
     "XFIS": {
@@ -402,7 +402,7 @@
       "point 1": 10,
       "glyph 2": "one",
       "point 2": "99",
-      "parent": "",
+      "parent": "XTSP",
       "description": ""
     },
     "XTAB": {
@@ -1442,6 +1442,14 @@
       "19 20": {
         "name": "XTEQ",
         "direction": "x"
+      },
+      "14 13": {
+        "name": "XTEQ",
+        "direction": "x"
+      },
+      "20 21": {
+        "name": "XTEQ",
+        "direction": "x"
       }
     },
     "D": {
@@ -1687,6 +1695,10 @@
         "name": "XSVU",
         "direction": "x"
       },
+      "29 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
       "-1 0": {
         "name": "XUCR",
         "direction": "x"
@@ -1712,6 +1724,14 @@
         "direction": "x"
       },
       "19 20": {
+        "name": "XTEQ",
+        "direction": "x"
+      },
+      "14 13": {
+        "name": "XTEQ",
+        "direction": "x"
+      },
+      "20 21": {
         "name": "XTEQ",
         "direction": "x"
       }
@@ -3519,12 +3539,12 @@
         "name": "YTDE",
         "direction": "y"
       },
-      "D 35": {
-        "name": "YTDO",
-        "direction": "y"
-      },
       "X 41": {
         "name": "YTLO",
+        "direction": "y"
+      },
+      "D 35": {
+        "name": "YTDO",
         "direction": "y"
       }
     },
@@ -3610,56 +3630,7 @@
         "direction": "y"
       }
     },
-    "i": {
-      "14 20": {
-        "name": "XDOT",
-        "direction": "x"
-      },
-      "-1 2": {
-        "name": "XLCS",
-        "direction": "x"
-      },
-      "11 99": {
-        "name": "XLCS",
-        "direction": "x"
-      },
-      "2 11": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "1 2": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "11 12": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "5 4": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "23 17": {
-        "name": "YDOT",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "13 12": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "5 6": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "0 7": {
-        "name": "YTLC",
-        "direction": "y"
-      }
-    },
+    "i": {},
     "j": {},
     "k": {
       "2 11": {
@@ -16223,6 +16194,24 @@
     "Lslash": {},
     "Eng": {},
     "Wdieresis": {},
-    "Ocircumflex": {}
+    "Ocircumflex": {},
+    "Ohungarumlaut": {},
+    "Cdotaccent": {},
+    "Ocircumflexacute": {},
+    "Gcircumflex": {},
+    "Ccaron": {},
+    "Omacron": {},
+    "Otilde": {},
+    "Ohookabove": {},
+    "Ocircumflextilde": {},
+    "Obreve": {},
+    "Ihookabove": {},
+    "Ohorn": {},
+    "Ocircumflexhookabove": {},
+    "Oacute": {},
+    "Ocircumflexdotbelow": {},
+    "Iacute": {},
+    "Cacute": {},
+    "Abrevegrave": {}
   }
 }
