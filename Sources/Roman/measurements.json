@@ -272,28 +272,28 @@
     },
     "XSVA": {
       "direction": "x",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "8",
+      "glyph 1": "T",
+      "point 1": "4",
+      "glyph 2": "T",
+      "point 2": "3",
       "parent": "",
       "description": "General x vertical serifs"
     },
     "XSVU": {
       "direction": "x",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "8",
+      "glyph 1": "T",
+      "point 1": "4",
+      "glyph 2": "T",
+      "point 2": "3",
       "parent": "XSVA",
       "description": "X vertical serif uppercase"
     },
     "XSVL": {
       "direction": "x",
-      "glyph 1": "c",
-      "point 1": "10",
-      "glyph 2": "c",
-      "point 2": "9",
+      "glyph 1": "r",
+      "point 1": "15",
+      "glyph 2": "r",
+      "point 2": "14",
       "parent": "XSVA",
       "description": "X vertical serif lowercase"
     },
@@ -308,28 +308,28 @@
     },
     "YSVA": {
       "direction": "y",
-      "glyph 1": "E",
-      "point 1": "9",
-      "glyph 2": "E",
-      "point 2": "10",
+      "glyph 1": "T",
+      "point 1": "3",
+      "glyph 2": "T",
+      "point 2": "2",
       "parent": "",
       "description": "General y vertical serifs"
     },
     "YSVU": {
       "direction": "y",
-      "glyph 1": "E",
-      "point 1": "8",
-      "glyph 2": "E",
-      "point 2": "7",
+      "glyph 1": "T",
+      "point 1": "3",
+      "glyph 2": "T",
+      "point 2": "2",
       "parent": "YSVA",
       "description": "Y vertical serif uppercase"
     },
     "YSVL": {
       "direction": "y",
-      "glyph 1": "c",
-      "point 1": "9",
-      "glyph 2": "c",
-      "point 2": "8",
+      "glyph 1": "r",
+      "point 1": "14",
+      "glyph 2": "r",
+      "point 2": "13",
       "parent": "YSVA",
       "description": "Y vertical serif lowercase"
     },
@@ -341,6 +341,78 @@
       "point 2": "1",
       "parent": "YSVA",
       "description": "Y vertical serif figures"
+    },
+    "XVAA": {
+      "direction": "x",
+      "glyph 1": "T",
+      "point 1": "5",
+      "glyph 2": "T",
+      "point 2": "4",
+      "parent": "",
+      "description": "General vertical serif angle"
+    },
+    "YHAA": {
+      "direction": "y",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "",
+      "description": "General horizontal serif angle"
+    },
+    "XVAU": {
+      "direction": "x",
+      "glyph 1": "T",
+      "point 1": "5",
+      "glyph 2": "T",
+      "point 2": "4",
+      "parent": "XVAA",
+      "description": "Uppercase vertical serif angle"
+    },
+    "YHAU": {
+      "direction": "y",
+      "glyph 1": "H",
+      "point 1": "1",
+      "glyph 2": "H",
+      "point 2": "2",
+      "parent": "YHAA",
+      "description": "Uppercase horizontal serif angle"
+    },
+    "XVAL": {
+      "direction": "x",
+      "glyph 1": "r",
+      "point 1": "16",
+      "glyph 2": "r",
+      "point 2": "15",
+      "parent": "XVAA",
+      "description": "Lowercase vertical serif angle"
+    },
+    "YHAL": {
+      "direction": "y",
+      "glyph 1": "n",
+      "point 1": "1",
+      "glyph 2": "n",
+      "point 2": "2",
+      "parent": "YHAA",
+      "description": "Lowercase horizontal serif angle"
+    },
+    "XVAF": {
+      "direction": "x",
+      "glyph 1": "seven",
+      "point 1": "12",
+      "glyph 2": "seven",
+      "point 2": "11",
+      "parent": "XVAA",
+      "description": "Figures vertical serif angle"
+    },
+    "YHAF": {
+      "direction": "y",
+      "glyph 1": "one",
+      "point 1": "1",
+      "glyph 2": "one",
+      "point 2": "2",
+      "parent": "YHAA",
+      "description": "Figures horizontal serif angle"
     },
     "XTSP": {
       "direction": "x",
@@ -357,7 +429,7 @@
       "point 1": "-1",
       "glyph 2": "H",
       "point 2": "2",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing uppercase H"
     },
     "XUCR": {
@@ -366,7 +438,7 @@
       "point 1": "-1",
       "glyph 2": "O",
       "point 2": "0",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing uppercase O"
     },
     "XLCR": {
@@ -375,7 +447,7 @@
       "point 1": "-1",
       "glyph 2": "o",
       "point 2": "0",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing lowercase n"
     },
     "XLCS": {
@@ -384,7 +456,7 @@
       "point 1": "-1",
       "glyph 2": "n",
       "point 2": "2",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing lowercase o"
     },
     "XFIR": {
@@ -393,7 +465,7 @@
       "point 1": "-1",
       "glyph 2": "zero",
       "point 2": "0",
-      "parent": "",
+      "parent": "XTSP",
       "description": "X sidebearing figure 0"
     },
     "XFIS": {
@@ -402,7 +474,7 @@
       "point 1": 10,
       "glyph 2": "one",
       "point 2": "99",
-      "parent": "",
+      "parent": "XTSP",
       "description": ""
     },
     "XTAB": {
@@ -1034,6 +1106,10 @@
       "B 6": {
         "name": "YTFO",
         "direction": "y"
+      },
+      "12 11": {
+        "name": "XVAF",
+        "direction": "x"
       }
     },
     "eight": {
@@ -1442,6 +1518,14 @@
       "19 20": {
         "name": "XTEQ",
         "direction": "x"
+      },
+      "14 13": {
+        "name": "XTEQ",
+        "direction": "x"
+      },
+      "20 21": {
+        "name": "XTEQ",
+        "direction": "x"
       }
     },
     "D": {
@@ -1566,6 +1650,22 @@
       "-1 4": {
         "name": "XUCS",
         "direction": "x"
+      },
+      "10 9": {
+        "name": "XVAU",
+        "direction": "x"
+      },
+      "22 23": {
+        "name": "XVAU",
+        "direction": "x"
+      },
+      "27 26": {
+        "name": "XVAU",
+        "direction": "x"
+      },
+      "16 17": {
+        "name": "XVAU",
+        "direction": "x"
       }
     },
     "F": {
@@ -1687,6 +1787,10 @@
         "name": "XSVU",
         "direction": "x"
       },
+      "29 99": {
+        "name": "XUCS",
+        "direction": "x"
+      },
       "-1 0": {
         "name": "XUCR",
         "direction": "x"
@@ -1712,6 +1816,14 @@
         "direction": "x"
       },
       "19 20": {
+        "name": "XTEQ",
+        "direction": "x"
+      },
+      "14 13": {
+        "name": "XTEQ",
+        "direction": "x"
+      },
+      "20 21": {
         "name": "XTEQ",
         "direction": "x"
       }
@@ -2672,6 +2784,14 @@
       "3 2": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "5 4": {
+        "name": "XVAU",
+        "direction": "x"
+      },
+      "19 18": {
+        "name": "XVAU",
+        "direction": "x"
       }
     },
     "U": {
@@ -3519,12 +3639,12 @@
         "name": "YTDE",
         "direction": "y"
       },
-      "D 35": {
-        "name": "YTDO",
-        "direction": "y"
-      },
       "X 41": {
         "name": "YTLO",
+        "direction": "y"
+      },
+      "D 35": {
+        "name": "YTDO",
         "direction": "y"
       }
     },
@@ -3610,56 +3730,7 @@
         "direction": "y"
       }
     },
-    "i": {
-      "14 20": {
-        "name": "XDOT",
-        "direction": "x"
-      },
-      "-1 2": {
-        "name": "XLCS",
-        "direction": "x"
-      },
-      "11 99": {
-        "name": "XLCS",
-        "direction": "x"
-      },
-      "2 11": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "1 2": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "11 12": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "5 4": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "23 17": {
-        "name": "YDOT",
-        "direction": "y"
-      },
-      "0 1": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "13 12": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "5 6": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "0 7": {
-        "name": "YTLC",
-        "direction": "y"
-      }
-    },
+    "i": {},
     "j": {},
     "k": {
       "2 11": {
@@ -4195,6 +4266,10 @@
       "14 13": {
         "name": "YSVL",
         "direction": "y"
+      },
+      "16 15": {
+        "name": "XVAL",
+        "direction": "x"
       },
       "-1 2": {
         "name": "XLCS",
@@ -4761,8 +4836,8 @@
         "direction": "y"
       },
       "4 3": {
-        "name": "YSVL",
-        "direction": "y"
+        "name": "XVAL",
+        "direction": "x"
       }
     },
     "exclamdown": {
@@ -5704,6 +5779,10 @@
       "3 4": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "5 6": {
+        "name": "XVAU",
+        "direction": "x"
       },
       "C 25": {
         "name": "YTOS",
@@ -10659,6 +10738,10 @@
       "35 34": {
         "name": "YSVU",
         "direction": "y"
+      },
+      "32 33": {
+        "name": "XVAU",
+        "direction": "x"
       },
       "C 3": {
         "name": "YTOS",
@@ -16223,6 +16306,26 @@
     "Lslash": {},
     "Eng": {},
     "Wdieresis": {},
-    "Ocircumflex": {}
+    "Ocircumflex": {},
+    "Ohungarumlaut": {},
+    "Cdotaccent": {},
+    "Ocircumflexacute": {},
+    "Gcircumflex": {},
+    "Ccaron": {},
+    "Omacron": {},
+    "Otilde": {},
+    "Ohookabove": {},
+    "Ocircumflextilde": {},
+    "Obreve": {},
+    "Ihookabove": {},
+    "Ohorn": {},
+    "Ocircumflexhookabove": {},
+    "Oacute": {},
+    "Ocircumflexdotbelow": {},
+    "Iacute": {},
+    "Cacute": {},
+    "Abrevegrave": {},
+    "aring": {},
+    "ka.bgr": {}
   }
 }
