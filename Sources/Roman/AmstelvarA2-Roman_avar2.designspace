@@ -25,7 +25,7 @@
     <axis tag="XTUR" name="XTUR" minimum="60" maximum="902" default="561"/>
     <axis tag="XTUD" name="XTUD" minimum="76" maximum="686" default="410"/>
     <axis tag="XTLC" name="XTLC" minimum="42" maximum="500" default="243"/>
-    <axis tag="XTLR" name="XTLR" minimum="66" maximum="626" default="337"/>
+    <axis tag="XTLR" name="XTLR" minimum="47" maximum="626" default="337"/>
     <axis tag="XTLD" name="XTLD" minimum="84" maximum="501" default="248"/>
     <axis tag="XTFI" name="XTFI" minimum="40" maximum="604" default="329"/>
     <axis tag="YTUC" name="YTUC" minimum="541" maximum="875" default="750"/>
@@ -1908,7 +1908,7 @@
           <dimension name="XTUR" xvalue="60"/>
           <dimension name="XTUD" xvalue="76"/>
           <dimension name="XTLC" xvalue="42"/>
-          <dimension name="XTLR" xvalue="66"/>
+          <dimension name="XTLR" xvalue="47"/>
           <dimension name="XTLD" xvalue="84"/>
           <dimension name="XTFI" xvalue="40"/>
           <dimension name="YTUC" xvalue="750"/>
@@ -3936,7 +3936,7 @@
         <dimension name="YTEQ" xvalue="141"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTLR626.ufo" familyname="AmstelvarA2 Roman" stylename="XTLR626">
+    <source filename="AmstelvarA2-Roman_XTLR47.ufo" familyname="AmstelvarA2 Roman" stylename="XTLR47">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -3949,7 +3949,7 @@
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
         <dimension name="XTLC" xvalue="243"/>
-        <dimension name="XTLR" xvalue="626"/>
+        <dimension name="XTLR" xvalue="47"/>
         <dimension name="XTLD" xvalue="248"/>
         <dimension name="XTFI" xvalue="329"/>
         <dimension name="YTUC" xvalue="750"/>
@@ -3990,7 +3990,7 @@
         <dimension name="YTEQ" xvalue="141"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTLR66.ufo" familyname="AmstelvarA2 Roman" stylename="XTLR66">
+    <source filename="AmstelvarA2-Roman_XTLR626.ufo" familyname="AmstelvarA2 Roman" stylename="XTLR626">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -4003,7 +4003,7 @@
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
         <dimension name="XTLC" xvalue="243"/>
-        <dimension name="XTLR" xvalue="66"/>
+        <dimension name="XTLR" xvalue="626"/>
         <dimension name="XTLD" xvalue="248"/>
         <dimension name="XTFI" xvalue="329"/>
         <dimension name="YTUC" xvalue="750"/>
