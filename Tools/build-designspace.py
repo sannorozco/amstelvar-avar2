@@ -616,11 +616,11 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
         if 'PYTHONHOME' in os.environ:
            del os.environ['PYTHONHOME']
 
-        print(f"Building AmstelvarA2 {self.subFamilyName} instances...")
+        print(f"building AmstelvarA2 {self.subFamilyName} instances...")
 
         for instance in self.instances:
             ttfPath = os.path.join(varInstancesFolder, f'AmstelvarA2-{self.subFamilyName}_avar2_{instance.name}.ttf')
-            print(f"\tBuilding {instance.name}...", end=' ')
+            print(f"\tbuilding {instance.name}...", end=' ')
             cmd  = ['/opt/homebrew/bin/fontmake']
             cmd += ['-m', self.designspacePath]
             # cmd += ['-m', '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_avar2.designspace']
@@ -888,7 +888,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.buildInstancesVariableFont(clear=True, ufo=True)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
