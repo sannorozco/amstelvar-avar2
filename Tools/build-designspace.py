@@ -44,9 +44,15 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesBuild  = True
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # YTRA
     parentAxesItalic = parentAxesRoman
-
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
+    
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
     parametricAxesItalic = parametricAxesRoman
+
+    spacingAxes = [
+        'XUCS', 'XUCR', 'XUCD',
+        'XLCS', 'XLCR', 'XLCD',
+        'XFIR', # 'XFIS', 
+    ]
 
     def __init__(self):
         # get measurements for default source
@@ -160,12 +166,7 @@ class AmstelvarA2DesignSpaceBuilder:
         blendsDict['sources']['XTSP-100'] = self.defaultLocation.copy()
         blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
 
-        spacingAxes = [
-            'XUCS', 'XUCR', 'XUCD',
-            'XLCS', 'XLCR', # 'XLCD',
-            'XFIR', # 'XFIS', 
-        ]
-        for axisName in spacingAxes:
+        for axisName in self.spacingAxes:
             values = []    
             for ufo in self.parametricSources:
                 value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
