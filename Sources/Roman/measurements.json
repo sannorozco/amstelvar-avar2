@@ -429,8 +429,8 @@
       "point 1": "-1",
       "glyph 2": "H",
       "point 2": "2",
-      "parent": "XTSP",
-      "description": "X sidebearing uppercase H"
+      "parent": "",
+      "description": "X sidebearing uppercase straights"
     },
     "XUCR": {
       "direction": "x",
@@ -438,8 +438,17 @@
       "point 1": "-1",
       "glyph 2": "O",
       "point 2": "0",
-      "parent": "XTSP",
-      "description": "X sidebearing uppercase O"
+      "parent": "",
+      "description": "X sidebearing uppercase rounds"
+    },
+    "XUCD": {
+      "direction": "x",
+      "glyph 1": "V",
+      "point 1": "-1",
+      "glyph 2": "V",
+      "point 2": 21,
+      "parent": "",
+      "description": "X sidebearing uppercase diagonals"
     },
     "XLCR": {
       "direction": "x",
@@ -447,8 +456,8 @@
       "point 1": "-1",
       "glyph 2": "o",
       "point 2": "0",
-      "parent": "XTSP",
-      "description": "X sidebearing lowercase n"
+      "parent": "",
+      "description": "X sidebearing lowercase straights"
     },
     "XLCS": {
       "direction": "x",
@@ -456,8 +465,17 @@
       "point 1": "-1",
       "glyph 2": "n",
       "point 2": "2",
-      "parent": "XTSP",
-      "description": "X sidebearing lowercase o"
+      "parent": "",
+      "description": "X sidebearing lowercase rounds"
+    },
+    "XLCD": {
+      "direction": "x",
+      "glyph 1": "v",
+      "point 1": "-1",
+      "glyph 2": "v",
+      "point 2": 21,
+      "parent": "",
+      "description": "X sidebearing lowercase diagonals"
     },
     "XFIR": {
       "direction": "x",
@@ -465,7 +483,7 @@
       "point 1": "-1",
       "glyph 2": "zero",
       "point 2": "0",
-      "parent": "XTSP",
+      "parent": "",
       "description": "X sidebearing figure 0"
     },
     "XFIS": {
@@ -474,8 +492,8 @@
       "point 1": 10,
       "glyph 2": "one",
       "point 2": "99",
-      "parent": "XTSP",
-      "description": ""
+      "parent": "",
+      "description": "X sidebearing figure 1"
     },
     "XTAB": {
       "direction": "x",
@@ -484,7 +502,7 @@
       "glyph 2": "zero",
       "point 2": "6",
       "parent": "",
-      "description": "X Figure width"
+      "description": "X figure width"
     },
     "WDSP": {
       "direction": "x",
@@ -1647,10 +1665,6 @@
         "name": "YSVU",
         "direction": "y"
       },
-      "-1 4": {
-        "name": "XUCS",
-        "direction": "x"
-      },
       "10 9": {
         "name": "XVAU",
         "direction": "x"
@@ -1665,6 +1679,10 @@
       },
       "16 17": {
         "name": "XVAU",
+        "direction": "x"
+      },
+      "-1 4": {
+        "name": "XUCS",
         "direction": "x"
       }
     },
@@ -3808,6 +3826,10 @@
       "A 7": {
         "name": "YTAO",
         "direction": "y"
+      },
+      "24 99": {
+        "name": "XLCD",
+        "direction": "x"
       }
     },
     "l": {
@@ -4498,6 +4520,14 @@
       "8 9": {
         "name": "YTTL",
         "direction": "a"
+      },
+      "-1 21": {
+        "name": "XLCD",
+        "direction": "x"
+      },
+      "16 99": {
+        "name": "XLCD",
+        "direction": "x"
       }
     },
     "w": {
@@ -4612,6 +4642,14 @@
       "36 37": {
         "name": "YTTL",
         "direction": "a"
+      },
+      "-1 2": {
+        "name": "XLCD",
+        "direction": "x"
+      },
+      "32 99": {
+        "name": "XLCD",
+        "direction": "x"
       }
     },
     "x": {
@@ -8051,44 +8089,7 @@
         "direction": "y"
       }
     },
-    "obarcyr": {
-      "0 12": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "18 6": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "21 3": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "9 15": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "29 24": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "12 18": {
-        "name": "XTLC",
-        "direction": "x"
-      },
-      "9 3": {
-        "name": "YTLC",
-        "direction": "y"
-      },
-      "X 3": {
-        "name": "YTOS",
-        "direction": "y"
-      },
-      "9 B": {
-        "name": "YTOS",
-        "direction": "y"
-      }
-    },
+    "obarcyr": {},
     "kadescender": {
       "13 8": {
         "name": "XOLC",
@@ -16326,6 +16327,56 @@
     "Cacute": {},
     "Abrevegrave": {},
     "aring": {},
-    "ka.bgr": {}
+    "ka.bgr": {},
+    "yu-i": {},
+    "Tcedilla": {},
+    "Eogonek": {},
+    "IJ": {},
+    "Yeru": {},
+    "Gbreve": {},
+    "Ohorndotbelow": {},
+    "Gcaron": {},
+    "Odotbelow": {},
+    "Esdescendercyr": {},
+    "Dcroat": {},
+    "DZcaron": {},
+    "Odieresismacron": {},
+    "Yumacron": {},
+    "Omicrontonos": {},
+    "Obrevecyr": {},
+    "Es": {},
+    "Oogonek": {},
+    "Odblgrave": {},
+    "emacron": {},
+    "odblgrave": {},
+    "eacute": {},
+    "ccedilla": {},
+    "ecircumflex": {},
+    "edieresis": {},
+    "ograve": {},
+    "ocircumflex": {},
+    "otilde": {},
+    "es": {},
+    "esdescendercyr": {},
+    "schwacyr": {},
+    "iebrevecyr": {},
+    "ohornhookabove": {},
+    "cdotaccent": {},
+    "ohungarumlaut": {},
+    "ebrevecyr": {},
+    "abrevecyr": {},
+    "io": {},
+    "obarcyr-stroke": {},
+    "obreve": {},
+    "NJ": {},
+    "Nacute": {},
+    "Acircumflexacute": {},
+    "Zacute": {},
+    "Ha": {},
+    "Ainvertedbreve": {},
+    "Ncaron": {},
+    "AEacute": {},
+    "Acyr": {},
+    "Aringacute": {}
   }
 }
