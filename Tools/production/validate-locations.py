@@ -36,8 +36,8 @@ if _instances:
                 if axisName not in expandAxes:
                     expandAxes[axisName] = []
                 expandAxes[axisName].append(value)
-    #             print(f"\t!! {axisName} {value} ({axis.minimum} {axis.maximum}) {'-' if value < axis.minimum else '+' if value > axis.maximum else ''} ")
-    #     print()
+                # print(f"\t!! {axisName} {value} ({axis.minimum} {axis.maximum}) {'-' if value < axis.minimum else '+' if value > axis.maximum else ''} ")
+        # print()
 
     for axisName, values in expandAxes.items():
         print(f'{axisName}:')

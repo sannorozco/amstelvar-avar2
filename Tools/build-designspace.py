@@ -44,9 +44,15 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesBuild  = True
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # YTRA
     parentAxesItalic = parentAxesRoman
-
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XLCS XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
+    
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
     parametricAxesItalic = parametricAxesRoman
+
+    spacingAxes = [
+        'XUCS', 'XUCR', 'XUCD',
+        'XLCS', 'XLCR', 'XLCD',
+        'XFIR', # 'XFIS', 
+    ]
 
     def __init__(self):
         # get measurements for default source
@@ -157,35 +163,19 @@ class AmstelvarA2DesignSpaceBuilder:
             "min"     : -100,
             "max"     : 100,
         }
-        # get min/max values from file names
-        valuesXUCS = []
-        valuesXLCS = []
-        valuesXFIR = []
-        for ufo in self.parametricSources:
-            value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-            if 'XUCS' in ufo:
-                valuesXUCS.append(value)
-            if 'XLCS' in ufo:
-                valuesXLCS.append(value)
-            if 'XFIR' in ufo:
-                valuesXFIR.append(value)
-        assert len(valuesXUCS)
-        assert len(valuesXLCS)
-        assert len(valuesXFIR)
-        valuesXUCS.sort()
-        valuesXLCS.sort()
-        valuesXFIR.sort()
-
-        # add XTSP min source
         blendsDict['sources']['XTSP-100'] = self.defaultLocation.copy()
-        blendsDict['sources']['XTSP-100']['XUCS'] = valuesXUCS[0]
-        blendsDict['sources']['XTSP-100']['XLCS'] = valuesXLCS[0]
-        blendsDict['sources']['XTSP-100']['XFIR'] = valuesXFIR[0]
-        # add XTSP max source
         blendsDict['sources']['XTSP100'] = self.defaultLocation.copy()
-        blendsDict['sources']['XTSP100']['XUCS'] = valuesXUCS[1]
-        blendsDict['sources']['XTSP100']['XLCS'] = valuesXLCS[1]
-        blendsDict['sources']['XTSP100']['XFIR'] = valuesXFIR[1]
+
+        for axisName in self.spacingAxes:
+            values = []    
+            for ufo in self.parametricSources:
+                value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+                if axisName in ufo:
+                    values.append(value)
+            assert len(values)
+            values.sort()
+            blendsDict['sources']['XTSP-100'][axisName] = values[0]
+            blendsDict['sources']['XTSP100'][axisName] = values[1]
 
         # -----------------------
         # add blended PARENT axes
@@ -616,14 +606,13 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
         if 'PYTHONHOME' in os.environ:
            del os.environ['PYTHONHOME']
 
-        print(f"Building AmstelvarA2 {self.subFamilyName} instances...")
+        print(f"building AmstelvarA2 {self.subFamilyName} instances...")
 
         for instance in self.instances:
             ttfPath = os.path.join(varInstancesFolder, f'AmstelvarA2-{self.subFamilyName}_avar2_{instance.name}.ttf')
-            print(f"\tBuilding {instance.name}...", end=' ')
+            print(f"\tbuilding {instance.name}...", end=' ')
             cmd  = ['/opt/homebrew/bin/fontmake']
             cmd += ['-m', self.designspacePath]
-            # cmd += ['-m', '/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_avar2.designspace']
             cmd += ['-o', 'ttf']
             cmd += ['-i', instance.name]
             cmd += ['--feature-writer', 'None']
@@ -888,7 +877,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.buildInstancesVariableFont(clear=True, ufo=True)
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()

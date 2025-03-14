@@ -11,12 +11,12 @@ from xTools4.dialogs.variable.Measurements import colorCheckTrue, colorCheckFals
 subFamilyName = ['Roman', 'Italic'][0]
 
 threshold = 0.1
-savePDF   = False
+savePDF   = True
 
 fs = 11              # font size
 p  = 40, 25, 20, 25  # padding
 
-ignoreMeasurements = 'XTAB XVAA YHAA XVAU YHAU XVAL YHAL XVAF YHAF'.split()
+ignoreMeasurements = 'XOPQ XTRA YOPQ XSHA YSHA YSVA XSVA XTAB XVAA YHAA'.split()
 
 # --------
 # do stuff
