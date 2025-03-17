@@ -280,3 +280,15 @@ Variation axes in AmstelvarA2
 50. `XTEQ` 
 51. `YTEQ` 
 
+XTEQ X internal horizontal curvature
+YTEQ Y internal vertical curvature
+
+XQUC X internal horizontal curvature uppercase
+XQLC X internal horizontal curvature lowercase
+XQFI X internal horizontal curvature figures
+
+YQUC X internal vertical curvature uppercase
+YQLC X internal vertical curvature lowercase
+YQFI X internal vertical curvature figures
+
+
