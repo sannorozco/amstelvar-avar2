@@ -450,21 +450,21 @@
       "parent": "",
       "description": "X sidebearing uppercase diagonals"
     },
-    "XLCR": {
-      "direction": "x",
-      "glyph 1": "o",
-      "point 1": "-1",
-      "glyph 2": "o",
-      "point 2": "0",
-      "parent": "",
-      "description": "X sidebearing lowercase straights"
-    },
     "XLCS": {
       "direction": "x",
       "glyph 1": "n",
       "point 1": "-1",
       "glyph 2": "n",
       "point 2": "2",
+      "parent": "",
+      "description": "X sidebearing lowercase straights"
+    },
+    "XLCR": {
+      "direction": "x",
+      "glyph 1": "o",
+      "point 1": "-1",
+      "glyph 2": "o",
+      "point 2": "0",
       "parent": "",
       "description": "X sidebearing lowercase rounds"
     },
@@ -4200,6 +4200,10 @@
       "14 15": {
         "name": "XQLC",
         "direction": "x"
+      },
+      "12 23": {
+        "name": "YQLC",
+        "direction": "y"
       }
     },
     "p": {

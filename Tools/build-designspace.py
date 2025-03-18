@@ -484,7 +484,7 @@ class AmstelvarA2DesignSpaceBuilder:
         for d in self.measurementsDefault.definitions:
             measurements[d[0]] = d[7]
 
-        print('### Parent axes (parametric)\n')
+        print('### Parent parametric axes\n')
         for n, axis in enumerate(self.parentAxesRoman):
             print(f'{n+1}. `{axis}` {measurements[axis]}')
 
@@ -891,8 +891,8 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    D2.buildInstancesVariableFont(clear=True, ufo=True)
-    # D2.printAxes()
+    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.printAxes()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()
