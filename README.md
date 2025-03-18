@@ -210,11 +210,11 @@ Variation axes in AmstelvarA2
 ### Typographic axes
 
 1. `opsz` Optical size
-1. `wght` Weight
-1. `wdth` Width
-1. `XTSP` Proportional spacing
+2. `wght` Weight
+3. `wdth` Width
+4. `XTSP` Proportional spacing
 
-### Parent axes (parametric)
+### Parent parametric axes
 
 1. `XOPQ` General x opaque
 2. `YOPQ` General y opaque
