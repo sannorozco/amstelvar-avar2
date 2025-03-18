@@ -1,6 +1,8 @@
 from importlib import reload
 import xTools4.modules.sys
 reload(xTools4.modules.sys)
+import xTools4.modules.measurements
+reload(xTools4.modules.measurements)
 
 import os, glob, shutil, json, time, datetime
 import subprocess
@@ -42,10 +44,10 @@ class AmstelvarA2DesignSpaceBuilder:
     designspaceName = f'{familyName}-{subFamilyName}.designspace'
 
     parentAxesBuild  = True
-    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # YTRA
+    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA XTEQ YTEQ'.split() # YTRA
     parentAxesItalic = parentAxesRoman
     
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XTEQ YTEQ'.split() # GRAD 
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC XQLC XQFI YQUC YQLC YQFI'.split() # GRAD
     parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [
@@ -109,8 +111,6 @@ class AmstelvarA2DesignSpaceBuilder:
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
-        # L['BARS'] = 100
-        # L['YTEQ'] = 0
         return L
 
     @property
@@ -477,6 +477,20 @@ class AmstelvarA2DesignSpaceBuilder:
             os.remove(ttxPath)
 
         print('...done.\n')
+
+    def printAxes(self):
+
+        measurements = {}
+        for d in self.measurementsDefault.definitions:
+            measurements[d[0]] = d[7]
+
+        print('### Parent parametric axes\n')
+        for n, axis in enumerate(self.parentAxesRoman):
+            print(f'{n+1}. `{axis}` {measurements[axis]}')
+
+        print('\n### Parametric axes\n')
+        for n, axis in enumerate(self.parametricAxesRoman):
+            print(f'{n+1}. `{axis}` {measurements[axis]}')
 
 
 class AmstelvarA2DesignSpaceBuilder_avar1(AmstelvarA2DesignSpaceBuilder):
@@ -861,7 +875,7 @@ if __name__ == '__main__':
 
     # D0 = AmstelvarA2DesignSpaceInitializer()
     # D0.build()
-    # D0.save()
+    # D0.save()x
 
     # D = AmstelvarA2DesignSpaceBuilder()
     # D.build(blends=True, instances=True)
@@ -877,7 +891,8 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    D2.buildInstancesVariableFont(clear=True, ufo=True)
+    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.printAxes()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
     # D3.build()

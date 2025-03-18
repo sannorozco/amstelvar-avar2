@@ -207,52 +207,81 @@ Using this separate measurements file, the original Amstelvar sources are then m
 Variation axes in AmstelvarA2
 -----------------------------
 
-### Blended axes
+### Typographic axes
 
-- `opsz` Optical size
-- `wght` Weight
-- `wdth` Width
-- `XTSP` Proportional spacing
-- `XOPQ` General x opaque
-- `YOPQ` General y opaque
-- `XTRA` General x transparent
-- `XSHA` General x horizontal serifs
-- `YSHA` General y horizontal serifs
-- `XSVA` General x vertical serifs
-- `YSVA` General y vertical serifs
+1. `opsz` Optical size
+2. `wght` Weight
+3. `wdth` Width
+4. `XTSP` Proportional spacing
+
+### Parent parametric axes
+
+1. `XOPQ` General x opaque
+2. `YOPQ` General y opaque
+3. `XTRA` General x transparent
+4. `XSHA` General x horizontal serifs
+5. `YSHA` General y horizontal serif
+6. `XSVA` General x vertical serifs
+7. `YSVA` General y vertical serifs
+8. `XVAA` General vertical serif angle
+9. `YHAA` General horizontal serif angle
+10. `XTEQ` X internal curvature
+11. `YTEQ` Y internal curvature
 
 ### Parametric axes
 
-- `GRAD` Grades
-- `XOUC` X stem uppercase
-- `XOLC` X stem lowercase
-- `XOFI` X stem figures
-- `YOUC` Y stem uppercase
-- `YOLC` Y stem lowercase
-- `YOFI` Y stem figures
-- `XTUC` X transparent uppercase
-- `XTLC` X transparent lowercase
-- `XTFI` X transparent figures
-- `YTUC` Y transparent uppercase
-- `YTLC` Y transparent lowercase
-- `YTAS` Y transparent ascender
-- `YTDE` Y transparent descender
-- `YTFI` Y transparent figures
-- `XSHU` X horizontal serif uppercase
-- `YSHU` Y horizontal serif uppercase
-- `XSVU` X vertical serif uppercase
-- `YSVU` Y vertical serif uppercase
-- `XSHL` X horizontal serif lowercase
-- `YSHL` Y horizontal serif lowercase
-- `XSVL` X vertical serif lowercase
-- `YSVL` Y vertical serif lowercase
-- `XSHF` X horizontal serif figures
-- `YSHF` Y horizontal serif figures
-- `XSVF` X vertical serif figures
-- `YSVF` Y vertical serif figures
-- `XTTW` Trap width
-- `YTTL` Trap length
-- `YTOS` General y overshoot
-- `XUCS` X sidebearing uppercase H
-- `WDSP` Word space width
-- `BARS` Bars
+1. `XOUC` X stem uppercase
+2. `XOLC` X stem lowercase
+3. `XOFI` X stem figures
+4. `YOUC` Y stem uppercase
+5. `YOLC` Y stem lowercase
+6. `YOFI` Y stem figures
+7. `XTUC` X transparent uppercase
+8. `XTUR` X transparent uppercase rounds
+9. `XTUD` X transparent uppercase diagonals
+10. `XTLC` X transparent lowercase
+11. `XTLR` X transparent lowercase rounds
+12. `XTLD` X transparent lowercase diagonals
+13. `XTFI` X transparent figures
+14. `YTUC` Y transparent uppercase
+15. `YTLC` Y transparent lowercase
+16. `YTAS` Y transparent ascender
+17. `YTDE` Y transparent descender
+18. `YTFI` Y transparent figures
+19. `XSHU` X horizontal serif uppercase
+20. `YSHU` Y horizontal serif uppercase
+21. `XSVU` X vertical serif uppercase
+22. `YSVU` Y vertical serif uppercase
+23. `XSHL` X horizontal serif lowercase
+24. `YSHL` Y horizontal serif lowercase
+25. `XSVL` X vertical serif lowercase
+26. `YSVL` Y vertical serif lowercase
+27. `XSHF` X horizontal serif figures
+28. `YSHF` Y horizontal serif figures
+29. `XSVF` X vertical serif figures
+30. `YSVF` Y vertical serif figures
+31. `XVAU` Uppercase vertical serif angle
+32. `YHAU` Uppercase horizontal serif angle
+33. `XVAL` Lowercase vertical serif angle
+34. `YHAL` Lowercase horizontal serif angle
+35. `XVAF` Figures vertical serif angle
+36. `YHAF` Figures horizontal serif angle
+37. `XTTW` Trap width
+38. `YTTL` Trap length
+39. `YTOS` General y overshoot
+40. `XUCS` X sidebearing uppercase straights
+41. `XUCR` X sidebearing uppercase rounds
+42. `XUCD` X sidebearing uppercase diagonals
+43. `XLCS` X sidebearing lowercase rounds
+44. `XLCR` X sidebearing lowercase straights
+45. `XLCD` X sidebearing lowercase diagonals
+46. `XFIR` X sidebearing figure 0
+47. `WDSP` Word space width
+48. `XDOT` Dot width
+49. `BARS` 
+50. `XQUC` X internal curvature uppercase
+51. `XQLC` X internal curvature lowercase
+52. `XQFI` X internal curvature figures
+53. `YQUC` Y internal curvature uppercase
+54. `YQLC` Y internal curvature lowercase
+55. `YQFI` Y internal curvature figures

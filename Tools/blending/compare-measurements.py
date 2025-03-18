@@ -13,10 +13,10 @@ subFamilyName = ['Roman', 'Italic'][0]
 threshold = 0.1
 savePDF   = True
 
-fs = 11              # font size
+fs = 10              # font size
 p  = 40, 25, 20, 25  # padding
 
-ignoreMeasurements = 'XOPQ XTRA YOPQ XSHA YSHA YSVA XSVA XTAB XVAA YHAA'.split()
+ignoreMeasurements = 'XOPQ XTRA YOPQ XSHA YSHA YSVA XSVA XTAB XVAA YHAA XTEQ YTEQ'.split()
 
 # --------
 # do stuff
@@ -124,7 +124,7 @@ for opsz in [14, 8, 144]:
             T.lineHeight(fs*1.25)
             T.tabs(*tabs)
             T.append('measurement\tglyph\tinstance\toriginal\to-scale\tunits\n')
-            T.append(f"{'-'*83}\n")
+            T.append(f"{'-'*91}\n")
             for key, value2 in M2.values.items():
                 if key in ignoreMeasurements:
                     continue
@@ -168,7 +168,7 @@ for opsz in [14, 8, 144]:
                 T.fill(*c)
                 T.append(f'{key}\t{glyph11}\t{value2}\t{value1}\t{_scale_o}\t{difference}\n')
 
-            text(T, (p[3], height()-p[0]-20))
+            text(T, (p[3], height()-p[0]-15))
 
 if savePDF:
     saveImage(pdfPath)
