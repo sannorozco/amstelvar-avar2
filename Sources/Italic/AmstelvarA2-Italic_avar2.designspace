@@ -21,7 +21,7 @@
     <axis tag="YOFI" name="YOFI" minimum="4" maximum="214" default="56"/>
     <axis tag="XTUC" name="XTUC" minimum="63" maximum="650" default="360"/>
     <axis tag="XTLC" name="XTLC" minimum="42" maximum="436" default="232"/>
-    <axis tag="XTFI" name="XTFI" minimum="44" maximum="570" default="330"/>
+    <axis tag="XTFI" name="XTFI" minimum="44" maximum="586" default="330"/>
     <axis tag="YTUC" name="YTUC" minimum="541" maximum="875" default="750"/>
     <axis tag="YTLC" name="YTLC" minimum="436" maximum="594" default="510"/>
     <axis tag="YTAS" name="YTAS" minimum="642" maximum="852" default="778"/>
@@ -42,10 +42,10 @@
     <axis tag="XTTW" name="XTTW" minimum="0" maximum="30" default="9"/>
     <axis tag="YTTL" name="YTTL" minimum="0" maximum="104" default="64"/>
     <axis tag="YTOS" name="YTOS" minimum="-4" maximum="25" default="10"/>
-    <axis tag="XUCS" name="XUCS" minimum="45" maximum="194" default="128"/>
+    <axis tag="XUCS" name="XUCS" minimum="31" maximum="194" default="128"/>
     <axis tag="XUCR" name="XUCR" minimum="0" maximum="64" default="39"/>
     <axis tag="XUCD" name="XUCD" minimum="20" maximum="132" default="46"/>
-    <axis tag="XLCS" name="XLCS" minimum="20" maximum="176" default="108"/>
+    <axis tag="XLCS" name="XLCS" minimum="20" maximum="183" default="108"/>
     <axis tag="XFIR" name="XFIR" minimum="-13" maximum="90" default="42"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="137"/>
@@ -1247,7 +1247,7 @@
           <dimension name="XTTW" xvalue="9"/>
           <dimension name="YTTL" xvalue="64"/>
           <dimension name="YTOS" xvalue="10"/>
-          <dimension name="XUCS" xvalue="45"/>
+          <dimension name="XUCS" xvalue="31"/>
           <dimension name="XUCR" xvalue="0"/>
           <dimension name="XUCD" xvalue="20"/>
           <dimension name="XLCS" xvalue="20"/>
@@ -1295,7 +1295,7 @@
           <dimension name="XUCS" xvalue="194"/>
           <dimension name="XUCR" xvalue="64"/>
           <dimension name="XUCD" xvalue="132"/>
-          <dimension name="XLCS" xvalue="176"/>
+          <dimension name="XLCS" xvalue="183"/>
           <dimension name="XFIR" xvalue="90"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1541,7 +1541,7 @@
           <dimension name="YOFI" xvalue="56"/>
           <dimension name="XTUC" xvalue="650"/>
           <dimension name="XTLC" xvalue="436"/>
-          <dimension name="XTFI" xvalue="570"/>
+          <dimension name="XTFI" xvalue="586"/>
           <dimension name="YTUC" xvalue="750"/>
           <dimension name="YTLC" xvalue="510"/>
           <dimension name="YTAS" xvalue="778"/>
@@ -2734,7 +2734,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XTFI44.ufo" familyname="AmstelvarA2 Italic" stylename="XTFI44">
+    <source filename="AmstelvarA2-Italic_XTFI586.ufo" familyname="AmstelvarA2 Italic" stylename="XTFI586">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -2745,7 +2745,7 @@
         <dimension name="YOFI" xvalue="56"/>
         <dimension name="XTUC" xvalue="360"/>
         <dimension name="XTLC" xvalue="232"/>
-        <dimension name="XTFI" xvalue="44"/>
+        <dimension name="XTFI" xvalue="586"/>
         <dimension name="YTUC" xvalue="750"/>
         <dimension name="YTLC" xvalue="510"/>
         <dimension name="YTAS" xvalue="778"/>
@@ -2776,7 +2776,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XTFI570.ufo" familyname="AmstelvarA2 Italic" stylename="XTFI570">
+    <source filename="AmstelvarA2-Italic_XTFI44.ufo" familyname="AmstelvarA2 Italic" stylename="XTFI44">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -2787,7 +2787,7 @@
         <dimension name="YOFI" xvalue="56"/>
         <dimension name="XTUC" xvalue="360"/>
         <dimension name="XTLC" xvalue="232"/>
-        <dimension name="XTFI" xvalue="570"/>
+        <dimension name="XTFI" xvalue="44"/>
         <dimension name="YTUC" xvalue="750"/>
         <dimension name="YTLC" xvalue="510"/>
         <dimension name="YTAS" xvalue="778"/>
@@ -4498,7 +4498,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XUCS45.ufo" familyname="AmstelvarA2 Italic" stylename="XUCS45">
+    <source filename="AmstelvarA2-Italic_XUCS31.ufo" familyname="AmstelvarA2 Italic" stylename="XUCS31">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -4530,7 +4530,7 @@
         <dimension name="XTTW" xvalue="9"/>
         <dimension name="YTTL" xvalue="64"/>
         <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="45"/>
+        <dimension name="XUCS" xvalue="31"/>
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
@@ -4792,7 +4792,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCS176.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS176">
+    <source filename="AmstelvarA2-Italic_XLCS183.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS183">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -4827,7 +4827,7 @@
         <dimension name="XUCS" xvalue="128"/>
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
-        <dimension name="XLCS" xvalue="176"/>
+        <dimension name="XLCS" xvalue="183"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
