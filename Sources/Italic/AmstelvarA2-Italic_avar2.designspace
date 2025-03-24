@@ -46,6 +46,8 @@
     <axis tag="XUCR" name="XUCR" minimum="0" maximum="64" default="39"/>
     <axis tag="XUCD" name="XUCD" minimum="20" maximum="132" default="46"/>
     <axis tag="XLCS" name="XLCS" minimum="20" maximum="183" default="108"/>
+    <axis tag="XLCR" name="XLCR" minimum="-27" maximum="38" default="26"/>
+    <axis tag="XLCD" name="XLCD" minimum="34" maximum="62" default="57"/>
     <axis tag="XFIR" name="XFIR" minimum="-13" maximum="90" default="42"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="137"/>
@@ -1251,6 +1253,8 @@
           <dimension name="XUCR" xvalue="0"/>
           <dimension name="XUCD" xvalue="20"/>
           <dimension name="XLCS" xvalue="20"/>
+          <dimension name="XLCR" xvalue="-27"/>
+          <dimension name="XLCD" xvalue="34"/>
           <dimension name="XFIR" xvalue="-13"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1296,6 +1300,8 @@
           <dimension name="XUCR" xvalue="64"/>
           <dimension name="XUCD" xvalue="132"/>
           <dimension name="XLCS" xvalue="183"/>
+          <dimension name="XLCR" xvalue="38"/>
+          <dimension name="XLCD" xvalue="62"/>
           <dimension name="XFIR" xvalue="90"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1341,6 +1347,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1386,6 +1394,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1431,6 +1441,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1476,6 +1488,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1521,6 +1535,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1566,6 +1582,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1611,6 +1629,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1656,6 +1676,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1701,6 +1723,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1746,6 +1770,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1791,6 +1817,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1836,6 +1864,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1881,6 +1911,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1926,6 +1958,8 @@
           <dimension name="XUCR" xvalue="39"/>
           <dimension name="XUCD" xvalue="46"/>
           <dimension name="XLCS" xvalue="108"/>
+          <dimension name="XLCR" xvalue="26"/>
+          <dimension name="XLCD" xvalue="57"/>
           <dimension name="XFIR" xvalue="42"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1972,6 +2006,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2014,6 +2050,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2056,6 +2094,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2098,6 +2138,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2140,6 +2182,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2182,6 +2226,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2224,6 +2270,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2266,6 +2314,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2308,6 +2358,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2350,6 +2402,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2392,6 +2446,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2434,6 +2490,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2476,6 +2534,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2518,6 +2578,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2560,6 +2622,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2602,6 +2666,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2644,6 +2710,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2686,6 +2754,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2728,6 +2798,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2770,6 +2842,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2812,6 +2886,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2854,6 +2930,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2896,6 +2974,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2938,6 +3018,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -2980,6 +3062,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3022,6 +3106,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3064,6 +3150,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3106,6 +3194,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3148,6 +3238,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3190,6 +3282,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3232,6 +3326,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3274,6 +3370,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3316,6 +3414,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3358,6 +3458,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3400,6 +3502,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3442,6 +3546,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3484,6 +3590,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3526,6 +3634,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3568,6 +3678,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3610,6 +3722,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3652,6 +3766,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3694,6 +3810,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3736,6 +3854,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3778,6 +3898,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3820,6 +3942,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3862,6 +3986,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3904,6 +4030,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3946,6 +4074,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -3988,6 +4118,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4030,6 +4162,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4072,6 +4206,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4114,6 +4250,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4156,6 +4294,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4198,6 +4338,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4240,6 +4382,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4282,6 +4426,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4324,6 +4470,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4366,6 +4514,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4408,6 +4558,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4450,6 +4602,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4492,6 +4646,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4534,6 +4690,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4576,6 +4734,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4618,6 +4778,8 @@
         <dimension name="XUCR" xvalue="0"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4660,6 +4822,8 @@
         <dimension name="XUCR" xvalue="64"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4702,6 +4866,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="132"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4744,6 +4910,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="20"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4786,6 +4954,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="20"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4828,6 +4998,184 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="183"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
+        <dimension name="XFIR" xvalue="42"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="137"/>
+        <dimension name="BARS" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Italic_XLCR-27.ufo" familyname="AmstelvarA2 Italic" stylename="XLCR-27">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="84"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="92"/>
+        <dimension name="YOUC" xvalue="58"/>
+        <dimension name="YOLC" xvalue="47"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="360"/>
+        <dimension name="XTLC" xvalue="232"/>
+        <dimension name="XTFI" xvalue="330"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-196"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="92"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="70"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="47"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSHF" xvalue="96"/>
+        <dimension name="YSHF" xvalue="50"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="128"/>
+        <dimension name="XUCR" xvalue="39"/>
+        <dimension name="XUCD" xvalue="46"/>
+        <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="-27"/>
+        <dimension name="XLCD" xvalue="57"/>
+        <dimension name="XFIR" xvalue="42"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="137"/>
+        <dimension name="BARS" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Italic_XLCR38.ufo" familyname="AmstelvarA2 Italic" stylename="XLCR38">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="84"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="92"/>
+        <dimension name="YOUC" xvalue="58"/>
+        <dimension name="YOLC" xvalue="47"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="360"/>
+        <dimension name="XTLC" xvalue="232"/>
+        <dimension name="XTFI" xvalue="330"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-196"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="92"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="70"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="47"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSHF" xvalue="96"/>
+        <dimension name="YSHF" xvalue="50"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="128"/>
+        <dimension name="XUCR" xvalue="39"/>
+        <dimension name="XUCD" xvalue="46"/>
+        <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="38"/>
+        <dimension name="XLCD" xvalue="57"/>
+        <dimension name="XFIR" xvalue="42"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="137"/>
+        <dimension name="BARS" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Italic_XLCD62.ufo" familyname="AmstelvarA2 Italic" stylename="XLCD62">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="84"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="92"/>
+        <dimension name="YOUC" xvalue="58"/>
+        <dimension name="YOLC" xvalue="47"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="360"/>
+        <dimension name="XTLC" xvalue="232"/>
+        <dimension name="XTFI" xvalue="330"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-196"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="92"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="70"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="47"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSHF" xvalue="96"/>
+        <dimension name="YSHF" xvalue="50"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="128"/>
+        <dimension name="XUCR" xvalue="39"/>
+        <dimension name="XUCD" xvalue="46"/>
+        <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="62"/>
+        <dimension name="XFIR" xvalue="42"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="137"/>
+        <dimension name="BARS" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Italic_XLCD34.ufo" familyname="AmstelvarA2 Italic" stylename="XLCD34">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="84"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="92"/>
+        <dimension name="YOUC" xvalue="58"/>
+        <dimension name="YOLC" xvalue="47"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="360"/>
+        <dimension name="XTLC" xvalue="232"/>
+        <dimension name="XTFI" xvalue="330"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="510"/>
+        <dimension name="YTAS" xvalue="778"/>
+        <dimension name="YTDE" xvalue="-196"/>
+        <dimension name="YTFI" xvalue="775"/>
+        <dimension name="XSHU" xvalue="92"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="50"/>
+        <dimension name="YSVU" xvalue="174"/>
+        <dimension name="XSHL" xvalue="70"/>
+        <dimension name="YSHL" xvalue="44"/>
+        <dimension name="XSVL" xvalue="47"/>
+        <dimension name="YSVL" xvalue="126"/>
+        <dimension name="XSHF" xvalue="96"/>
+        <dimension name="YSHF" xvalue="50"/>
+        <dimension name="XSVF" xvalue="51"/>
+        <dimension name="YSVF" xvalue="186"/>
+        <dimension name="XTTW" xvalue="9"/>
+        <dimension name="YTTL" xvalue="64"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="128"/>
+        <dimension name="XUCR" xvalue="39"/>
+        <dimension name="XUCD" xvalue="46"/>
+        <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="34"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4870,6 +5218,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="90"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4912,6 +5262,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="-13"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4954,6 +5306,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="1000"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -4996,6 +5350,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="0"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -5038,6 +5394,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="23"/>
@@ -5080,6 +5438,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="274"/>
@@ -5122,6 +5482,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -5166,6 +5528,8 @@
         <dimension name="XUCR" xvalue="33"/>
         <dimension name="XUCD" xvalue="49"/>
         <dimension name="XLCS" xvalue="93"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="28"/>
         <dimension name="WDSP" xvalue="234"/>
         <dimension name="XDOT" xvalue="116"/>
@@ -5208,6 +5572,8 @@
         <dimension name="XUCR" xvalue="32"/>
         <dimension name="XUCD" xvalue="55"/>
         <dimension name="XLCS" xvalue="142"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="32"/>
         <dimension name="WDSP" xvalue="279"/>
         <dimension name="XDOT" xvalue="124"/>
@@ -5250,6 +5616,8 @@
         <dimension name="XUCR" xvalue="21"/>
         <dimension name="XUCD" xvalue="59"/>
         <dimension name="XLCS" xvalue="52"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="24"/>
         <dimension name="WDSP" xvalue="180"/>
         <dimension name="XDOT" xvalue="103"/>
@@ -5292,6 +5660,8 @@
         <dimension name="XUCR" xvalue="18"/>
         <dimension name="XUCD" xvalue="87"/>
         <dimension name="XLCS" xvalue="86"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="36"/>
         <dimension name="WDSP" xvalue="213"/>
         <dimension name="XDOT" xvalue="60"/>
@@ -5334,6 +5704,8 @@
         <dimension name="XUCR" xvalue="21"/>
         <dimension name="XUCD" xvalue="20"/>
         <dimension name="XLCS" xvalue="72"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="29"/>
         <dimension name="WDSP" xvalue="344"/>
         <dimension name="XDOT" xvalue="212"/>
@@ -5376,6 +5748,8 @@
         <dimension name="XUCR" xvalue="14"/>
         <dimension name="XUCD" xvalue="21"/>
         <dimension name="XLCS" xvalue="88"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="28"/>
         <dimension name="WDSP" xvalue="400"/>
         <dimension name="XDOT" xvalue="212"/>
@@ -5418,6 +5792,8 @@
         <dimension name="XUCR" xvalue="8"/>
         <dimension name="XUCD" xvalue="26"/>
         <dimension name="XLCS" xvalue="20"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="18"/>
         <dimension name="WDSP" xvalue="328"/>
         <dimension name="XDOT" xvalue="199"/>
@@ -5460,6 +5836,8 @@
         <dimension name="XUCR" xvalue="43"/>
         <dimension name="XUCD" xvalue="98"/>
         <dimension name="XLCS" xvalue="145"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="63"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="64"/>
@@ -5502,6 +5880,8 @@
         <dimension name="XUCR" xvalue="41"/>
         <dimension name="XUCD" xvalue="42"/>
         <dimension name="XLCS" xvalue="44"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="7"/>
         <dimension name="WDSP" xvalue="162"/>
         <dimension name="XDOT" xvalue="55"/>
@@ -5544,6 +5924,8 @@
         <dimension name="XUCR" xvalue="42"/>
         <dimension name="XUCD" xvalue="67"/>
         <dimension name="XLCS" xvalue="112"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="154"/>
@@ -5586,6 +5968,8 @@
         <dimension name="XUCR" xvalue="42"/>
         <dimension name="XUCD" xvalue="132"/>
         <dimension name="XLCS" xvalue="159"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="78"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="154"/>
@@ -5628,6 +6012,8 @@
         <dimension name="XUCR" xvalue="30"/>
         <dimension name="XUCD" xvalue="74"/>
         <dimension name="XLCS" xvalue="64"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="41"/>
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="XDOT" xvalue="141"/>
@@ -5670,6 +6056,8 @@
         <dimension name="XUCR" xvalue="46"/>
         <dimension name="XUCD" xvalue="67"/>
         <dimension name="XLCS" xvalue="118"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="38"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="106"/>
@@ -5712,6 +6100,8 @@
         <dimension name="XUCR" xvalue="35"/>
         <dimension name="XUCD" xvalue="48"/>
         <dimension name="XLCS" xvalue="102"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="31"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="250"/>
@@ -5754,6 +6144,8 @@
         <dimension name="XUCR" xvalue="40"/>
         <dimension name="XUCD" xvalue="112"/>
         <dimension name="XLCS" xvalue="182"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="52"/>
         <dimension name="WDSP" xvalue="310"/>
         <dimension name="XDOT" xvalue="261"/>
@@ -5796,6 +6188,8 @@
         <dimension name="XUCR" xvalue="26"/>
         <dimension name="XUCD" xvalue="32"/>
         <dimension name="XLCS" xvalue="46"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="32"/>
         <dimension name="WDSP" xvalue="240"/>
         <dimension name="XDOT" xvalue="237"/>
@@ -5838,6 +6232,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="110"/>
         <dimension name="XLCS" xvalue="156"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="33"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="112"/>
@@ -5880,6 +6276,8 @@
         <dimension name="XUCR" xvalue="27"/>
         <dimension name="XUCD" xvalue="40"/>
         <dimension name="XLCS" xvalue="92"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="38"/>
         <dimension name="WDSP" xvalue="106"/>
         <dimension name="XDOT" xvalue="93"/>
@@ -5922,6 +6320,8 @@
         <dimension name="XUCR" xvalue="38"/>
         <dimension name="XUCD" xvalue="112"/>
         <dimension name="XLCS" xvalue="155"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="77"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
@@ -5964,6 +6364,8 @@
         <dimension name="XUCR" xvalue="25"/>
         <dimension name="XUCD" xvalue="54"/>
         <dimension name="XLCS" xvalue="70"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="36"/>
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="XDOT" xvalue="124"/>
@@ -6006,6 +6408,8 @@
         <dimension name="XUCR" xvalue="38"/>
         <dimension name="XUCD" xvalue="86"/>
         <dimension name="XLCS" xvalue="114"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="38"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="89"/>
@@ -6048,6 +6452,8 @@
         <dimension name="XUCR" xvalue="28"/>
         <dimension name="XUCD" xvalue="62"/>
         <dimension name="XLCS" xvalue="104"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="45"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="233"/>
@@ -6090,6 +6496,8 @@
         <dimension name="XUCR" xvalue="32"/>
         <dimension name="XUCD" xvalue="88"/>
         <dimension name="XLCS" xvalue="150"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="57"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="233"/>
@@ -6132,6 +6540,8 @@
         <dimension name="XUCR" xvalue="21"/>
         <dimension name="XUCD" xvalue="24"/>
         <dimension name="XLCS" xvalue="68"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="150"/>
         <dimension name="XDOT" xvalue="220"/>
@@ -6174,6 +6584,8 @@
         <dimension name="XUCR" xvalue="38"/>
         <dimension name="XUCD" xvalue="110"/>
         <dimension name="XLCS" xvalue="161"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="65"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="89"/>
@@ -6216,6 +6628,8 @@
         <dimension name="XUCR" xvalue="32"/>
         <dimension name="XUCD" xvalue="74"/>
         <dimension name="XLCS" xvalue="76"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="31"/>
         <dimension name="WDSP" xvalue="200"/>
         <dimension name="XDOT" xvalue="76"/>
@@ -6258,6 +6672,8 @@
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="108"/>
+        <dimension name="XLCR" xvalue="26"/>
+        <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>

@@ -3014,12 +3014,12 @@
         "name": "YTLC",
         "direction": "y"
       },
-      "-1 0": {
-        "name": "XLCR",
-        "direction": "x"
-      },
       "10 99": {
         "name": "XLCS",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XLCR",
         "direction": "x"
       },
       "X 3": {
@@ -3068,6 +3068,14 @@
         "name": "YSHL",
         "direction": "y"
       },
+      "-1 2": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "27 99": {
+        "name": "XLCR",
+        "direction": "x"
+      },
       "X 24": {
         "name": "YTLO",
         "direction": "y"
@@ -3086,37 +3094,29 @@
         "name": "XOLC",
         "direction": "x"
       },
-      "11 6": {
-        "name": "XOLC",
-        "direction": "x"
+      "14 3": {
+        "name": "YOLC",
+        "direction": "y"
       },
       "28 20": {
         "name": "YOLC",
         "direction": "y"
       },
-      "14 3": {
-        "name": "YOLC",
-        "direction": "y"
-      },
       "25 23": {
         "name": "YOLC",
-        "direction": "a"
+        "direction": "y"
       },
       "17 23": {
-        "name": "XTLC",
+        "name": "XTLR",
         "direction": "x"
       },
-      "27 3": {
-        "name": "YTLC",
-        "direction": "y"
+      "25 99": {
+        "name": "XLCS",
+        "direction": "x"
       },
-      "X 3": {
-        "name": "YTLO",
-        "direction": "y"
-      },
-      "B 28": {
-        "name": "YTLO",
-        "direction": "y"
+      "0 -1": {
+        "name": "XLCR",
+        "direction": "x"
       }
     },
     "d": {
@@ -3164,6 +3164,14 @@
         "name": "YSHL",
         "direction": "y"
       },
+      "11 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XLCR",
+        "direction": "x"
+      },
       "X 3": {
         "name": "YTLO",
         "direction": "y"
@@ -3209,6 +3217,14 @@
       "37 3": {
         "name": "YTLC",
         "direction": "y"
+      },
+      "34 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XLCR",
+        "direction": "x"
       },
       "X 3": {
         "name": "YTLO",
@@ -3321,6 +3337,14 @@
       "D 16": {
         "name": "YTDO",
         "direction": "y"
+      },
+      "0 -1": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "10 99": {
+        "name": "XLCS",
+        "direction": "x"
       }
     },
     "h": {
@@ -3670,12 +3694,12 @@
         "name": "YSHL",
         "direction": "y"
       },
-      "12 99": {
-        "name": "XLCR",
-        "direction": "x"
-      },
       "-1 2": {
         "name": "XLCS",
+        "direction": "x"
+      },
+      "12 99": {
+        "name": "XLCR",
         "direction": "x"
       },
       "X 9": {
@@ -3735,6 +3759,10 @@
       "X 3": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "10 99": {
+        "name": "XLCS",
+        "direction": "x"
       }
     },
     "r": {
@@ -6874,12 +6902,12 @@
         "name": "XTFI",
         "direction": "x"
       },
-      "-1 16": {
-        "name": "XLCR",
-        "direction": "x"
-      },
       "41 99": {
         "name": "XLCS",
+        "direction": "x"
+      },
+      "-1 16": {
+        "name": "XLCR",
         "direction": "x"
       }
     },
@@ -7123,6 +7151,14 @@
       "59 25": {
         "name": "YTLC",
         "direction": "y"
+      },
+      "-1 13": {
+        "name": "XLCR",
+        "direction": "x"
+      },
+      "99 56": {
+        "name": "XLCS",
+        "direction": "x"
       }
     },
     "eth": {
@@ -7231,6 +7267,14 @@
       "X 10": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "-1 1": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "13 99": {
+        "name": "XLCR",
+        "direction": "x"
       }
     },
     "oe": {
@@ -7281,6 +7325,14 @@
       "43 9": {
         "name": "YTLC",
         "direction": "y"
+      },
+      "40 99": {
+        "name": "XLCS",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XLCR",
+        "direction": "x"
       },
       "X 9": {
         "name": "YTOS",
@@ -12240,6 +12292,19 @@
     "Ohornhookabove": {},
     "Rdblgrave": {},
     "Ocircumflexacute": {},
-    "Ohookabove": {}
+    "Ohookabove": {},
+    "Abreve": {},
+    "Mu": {},
+    "Wgrave": {},
+    "Idotaccent": {},
+    "Ecaron": {},
+    "increment": {},
+    "aringacute": {},
+    "odieresis": {},
+    "eacute": {},
+    "aogonek": {},
+    "ocircumflex": {},
+    "einvertedbreve": {},
+    "oacute": {}
   }
 }

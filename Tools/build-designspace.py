@@ -48,11 +48,11 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA                    '.split()
     
     parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC XQLC XQFI YQUC YQLC YQFI'.split() # GRAD
-    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC           XTLC           XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF                               XTTW YTTL YTOS XUCS XUCR XUCD XLCS           XFIR WDSP XDOT BARS                              '.split() # parametricAxesRoman
+    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC           XTLC           XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF                               XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS                              '.split() # parametricAxesRoman
 
     spacingAxes = [
         'XUCS', 'XUCR', 'XUCD',
-        'XLCS', # 'XLCR', 'XLCD',
+        'XLCS', 'XLCR', 'XLCD',
         'XFIR', # 'XFIS', 
     ]
 
