@@ -1,14 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="obarcyr-stroke" format="2">
-  <advance width="1525"/>
+  <advance width="1050"/>
   <outline>
     <contour>
       <point x="97" y="544" type="line"/>
-      <point x="704" y="564" type="line"/>
-      <point x="1317" y="588" type="line"/>
-      <point x="1297" y="482" type="line"/>
-      <point x="684" y="462" type="line"/>
+      <point x="469" y="563" type="line"/>
+      <point x="847" y="587" type="line"/>
+      <point x="827" y="481" type="line"/>
+      <point x="449" y="461" type="line"/>
       <point x="77" y="438" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>
