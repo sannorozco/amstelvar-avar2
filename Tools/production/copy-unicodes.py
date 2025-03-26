@@ -1,4 +1,4 @@
-# menuTitle: copy default glyphs to other sources
+# menuTitle: copy unicodes from default font to other sources
 
 import os, glob
 
@@ -12,7 +12,7 @@ sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sour
 assert os.path.exists(sourcePath)
 
 dstFonts  = []
-preflight = False
+preflight = True
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
