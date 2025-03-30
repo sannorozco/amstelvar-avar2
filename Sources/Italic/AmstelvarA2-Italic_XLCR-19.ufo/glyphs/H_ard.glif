@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Hard" format="2">
-  <advance width="1242"/>
+  <advance width="1400"/>
   <unicode hex="042A"/>
   <outline>
     <contour>
@@ -40,4 +40,10 @@
       <point x="976" y="788"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>
