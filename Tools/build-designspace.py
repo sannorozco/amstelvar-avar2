@@ -4,6 +4,16 @@ reload(xTools4.modules.sys)
 import xTools4.modules.measurements
 reload(xTools4.modules.measurements)
 
+'''
+this script needs to ne cleaned-up and/or rewritten:
+
+- avar1 designspace no longer in use
+- what about fences?
+- avar2.v2 probably not longer needed too
+- variable font generation is now done in Terminal with build.sh
+
+'''
+
 import os, glob, shutil, json, time, datetime
 import subprocess
 from xml.etree.ElementTree import parse
@@ -653,6 +663,7 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
                 ufo.save(ufoPath)
 
         print("done!")
+
 
 class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_avar2):
     '''
