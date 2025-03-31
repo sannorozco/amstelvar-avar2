@@ -20,10 +20,10 @@
     <axis tag="YOLC" name="YOLC" minimum="4" maximum="110" default="47"/>
     <axis tag="YOFI" name="YOFI" minimum="4" maximum="214" default="56"/>
     <axis tag="XTUC" name="XTUC" minimum="63" maximum="650" default="360"/>
-    <axis tag="XTUR" name="XTUR" minimum="102" maximum="904" default="498"/>
+    <axis tag="XTUR" name="XTUR" minimum="58" maximum="904" default="498"/>
     <axis tag="XTUD" name="XTUD" minimum="123" maximum="621" default="344"/>
     <axis tag="XTLC" name="XTLC" minimum="42" maximum="436" default="232"/>
-    <axis tag="XTLR" name="XTLR" minimum="46" maximum="536" default="286"/>
+    <axis tag="XTLR" name="XTLR" minimum="46" maximum="600" default="286"/>
     <axis tag="XTLD" name="XTLD" minimum="83" maximum="462" default="241"/>
     <axis tag="XTFI" name="XTFI" minimum="44" maximum="586" default="330"/>
     <axis tag="YTUC" name="YTUC" minimum="541" maximum="875" default="750"/>
@@ -49,9 +49,9 @@
     <axis tag="XUCS" name="XUCS" minimum="31" maximum="194" default="128"/>
     <axis tag="XUCR" name="XUCR" minimum="0" maximum="64" default="39"/>
     <axis tag="XUCD" name="XUCD" minimum="20" maximum="132" default="46"/>
-    <axis tag="XLCS" name="XLCS" minimum="54" maximum="146" default="86"/>
+    <axis tag="XLCS" name="XLCS" minimum="40" maximum="172" default="86"/>
     <axis tag="XLCR" name="XLCR" minimum="-19" maximum="66" default="26"/>
-    <axis tag="XLCD" name="XLCD" minimum="37" maximum="107" default="57"/>
+    <axis tag="XLCD" name="XLCD" minimum="17" maximum="112" default="57"/>
     <axis tag="XFIR" name="XFIR" minimum="-13" maximum="90" default="42"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="137"/>
@@ -1422,9 +1422,9 @@
           <dimension name="XUCS" xvalue="31"/>
           <dimension name="XUCR" xvalue="0"/>
           <dimension name="XUCD" xvalue="20"/>
-          <dimension name="XLCS" xvalue="54"/>
+          <dimension name="XLCS" xvalue="40"/>
           <dimension name="XLCR" xvalue="-19"/>
-          <dimension name="XLCD" xvalue="37"/>
+          <dimension name="XLCD" xvalue="17"/>
           <dimension name="XFIR" xvalue="-13"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1473,9 +1473,9 @@
           <dimension name="XUCS" xvalue="194"/>
           <dimension name="XUCR" xvalue="64"/>
           <dimension name="XUCD" xvalue="132"/>
-          <dimension name="XLCS" xvalue="146"/>
+          <dimension name="XLCS" xvalue="172"/>
           <dimension name="XLCR" xvalue="66"/>
-          <dimension name="XLCD" xvalue="107"/>
+          <dimension name="XLCD" xvalue="112"/>
           <dimension name="XFIR" xvalue="90"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="137"/>
@@ -1699,7 +1699,7 @@
           <dimension name="YOLC" xvalue="47"/>
           <dimension name="YOFI" xvalue="56"/>
           <dimension name="XTUC" xvalue="63"/>
-          <dimension name="XTUR" xvalue="102"/>
+          <dimension name="XTUR" xvalue="58"/>
           <dimension name="XTUD" xvalue="123"/>
           <dimension name="XTLC" xvalue="42"/>
           <dimension name="XTLR" xvalue="46"/>
@@ -1753,7 +1753,7 @@
           <dimension name="XTUR" xvalue="904"/>
           <dimension name="XTUD" xvalue="621"/>
           <dimension name="XTLC" xvalue="436"/>
-          <dimension name="XTLR" xvalue="536"/>
+          <dimension name="XTLR" xvalue="600"/>
           <dimension name="XTLD" xvalue="462"/>
           <dimension name="XTFI" xvalue="586"/>
           <dimension name="YTUC" xvalue="750"/>
@@ -3064,7 +3064,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XTUR102.ufo" familyname="AmstelvarA2 Italic" stylename="XTUR102">
+    <source filename="AmstelvarA2-Italic_XTUR58.ufo" familyname="AmstelvarA2 Italic" stylename="XTUR58">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -3074,7 +3074,7 @@
         <dimension name="YOLC" xvalue="47"/>
         <dimension name="YOFI" xvalue="56"/>
         <dimension name="XTUC" xvalue="360"/>
-        <dimension name="XTUR" xvalue="102"/>
+        <dimension name="XTUR" xvalue="58"/>
         <dimension name="XTUD" xvalue="344"/>
         <dimension name="XTLC" xvalue="232"/>
         <dimension name="XTLR" xvalue="286"/>
@@ -3304,7 +3304,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XTLR46.ufo" familyname="AmstelvarA2 Italic" stylename="XTLR46">
+    <source filename="AmstelvarA2-Italic_XTLR600.ufo" familyname="AmstelvarA2 Italic" stylename="XTLR600">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -3317,7 +3317,7 @@
         <dimension name="XTUR" xvalue="498"/>
         <dimension name="XTUD" xvalue="344"/>
         <dimension name="XTLC" xvalue="232"/>
-        <dimension name="XTLR" xvalue="46"/>
+        <dimension name="XTLR" xvalue="600"/>
         <dimension name="XTLD" xvalue="241"/>
         <dimension name="XTFI" xvalue="330"/>
         <dimension name="YTUC" xvalue="750"/>
@@ -3352,7 +3352,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XTLR536.ufo" familyname="AmstelvarA2 Italic" stylename="XTLR536">
+    <source filename="AmstelvarA2-Italic_XTLR46.ufo" familyname="AmstelvarA2 Italic" stylename="XTLR46">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -3365,7 +3365,7 @@
         <dimension name="XTUR" xvalue="498"/>
         <dimension name="XTUD" xvalue="344"/>
         <dimension name="XTLC" xvalue="232"/>
-        <dimension name="XTLR" xvalue="536"/>
+        <dimension name="XTLR" xvalue="46"/>
         <dimension name="XTLD" xvalue="241"/>
         <dimension name="XTFI" xvalue="330"/>
         <dimension name="YTUC" xvalue="750"/>
@@ -5800,7 +5800,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCS54.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS54">
+    <source filename="AmstelvarA2-Italic_XLCS40.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS40">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -5839,7 +5839,7 @@
         <dimension name="XUCS" xvalue="128"/>
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
-        <dimension name="XLCS" xvalue="54"/>
+        <dimension name="XLCS" xvalue="40"/>
         <dimension name="XLCR" xvalue="26"/>
         <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
@@ -5848,7 +5848,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCS146.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS146">
+    <source filename="AmstelvarA2-Italic_XLCS172.ufo" familyname="AmstelvarA2 Italic" stylename="XLCS172">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -5887,7 +5887,7 @@
         <dimension name="XUCS" xvalue="128"/>
         <dimension name="XUCR" xvalue="39"/>
         <dimension name="XUCD" xvalue="46"/>
-        <dimension name="XLCS" xvalue="146"/>
+        <dimension name="XLCS" xvalue="172"/>
         <dimension name="XLCR" xvalue="26"/>
         <dimension name="XLCD" xvalue="57"/>
         <dimension name="XFIR" xvalue="42"/>
@@ -5992,7 +5992,7 @@
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCD37.ufo" familyname="AmstelvarA2 Italic" stylename="XLCD37">
+    <source filename="AmstelvarA2-Italic_XLCD17.ufo" familyname="AmstelvarA2 Italic" stylename="XLCD17">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -6033,14 +6033,14 @@
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="86"/>
         <dimension name="XLCR" xvalue="26"/>
-        <dimension name="XLCD" xvalue="37"/>
+        <dimension name="XLCD" xvalue="17"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
         <dimension name="BARS" xvalue="0"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Italic_XLCD107.ufo" familyname="AmstelvarA2 Italic" stylename="XLCD107">
+    <source filename="AmstelvarA2-Italic_XLCD112.ufo" familyname="AmstelvarA2 Italic" stylename="XLCD112">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="84"/>
@@ -6081,7 +6081,7 @@
         <dimension name="XUCD" xvalue="46"/>
         <dimension name="XLCS" xvalue="86"/>
         <dimension name="XLCR" xvalue="26"/>
-        <dimension name="XLCD" xvalue="107"/>
+        <dimension name="XLCD" xvalue="112"/>
         <dimension name="XFIR" xvalue="42"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="137"/>
