@@ -4,6 +4,16 @@ reload(xTools4.modules.sys)
 import xTools4.modules.measurements
 reload(xTools4.modules.measurements)
 
+'''
+this script needs to ne cleaned-up and/or rewritten:
+
+- avar1 designspace no longer in use
+- what about fences?
+- avar2.v2 probably not longer needed too
+- variable font generation is now done in Terminal with build.sh
+
+'''
+
 import os, glob, shutil, json, time, datetime
 import subprocess
 from xml.etree.ElementTree import parse
@@ -654,6 +664,7 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
 
         print("done!")
 
+
 class AmstelvarA2DesignSpaceBuilder_avar2_fences(AmstelvarA2DesignSpaceBuilder_avar2):
     '''
     Designspace which adds fences to the avar2 variable font.
@@ -891,7 +902,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()

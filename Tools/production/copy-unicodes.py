@@ -1,4 +1,4 @@
-# menuTitle: copy default glyphs to other sources
+# menuTitle: copy unicodes from default font to other sources
 
 import os, glob
 
