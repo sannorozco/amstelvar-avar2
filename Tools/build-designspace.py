@@ -902,7 +902,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
