@@ -662,6 +662,17 @@ class AmstelvarA2DesignSpaceBuilder_avar2(AmstelvarA2DesignSpaceBuilder):
                 print(f"\tSaving {os.path.split(ufoPath)[-1]}...")
                 ufo.save(ufoPath)
 
+            # set slant offset in Italic fonts
+            ufoPaths = glob.glob(f'{varInstancesFolder}/*.ufo')
+            defaultFont = OpenFont(self.defaultUFO, showInterface=False)
+            slantOffset = defaultFont.lib.get('com.typemytype.robofont.italicSlantOffset')
+            if slantOffset:
+                for ufoPath in ufoPaths:
+                    f = OpenFont(ufoPath, showInterface=False)
+                    f.lib['com.typemytype.robofont.italicSlantOffset'] = slantOffset
+                    f.save()
+                    f.close()
+
         print("done!")
 
 
@@ -902,7 +913,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    D2.buildInstancesVariableFont(clear=True, ufo=True)
+    # D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
