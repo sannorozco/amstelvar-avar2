@@ -3,7 +3,7 @@
 import os, glob
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
+subFamilyName = ['Roman', 'Italic'][1]
 sourceName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
@@ -16,7 +16,7 @@ glyphNames = 'threequartersemdash figuredash'.split()
 dstFonts   = []
 preflight  = False
 
-# do stuff!
+# batch copy glyphs
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
