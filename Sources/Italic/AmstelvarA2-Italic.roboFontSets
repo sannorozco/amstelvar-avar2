@@ -2074,9 +2074,23 @@
 					<string>endash</string>
 					<string>emdash</string>
 					<string>underscore</string>
+					<string>threequartersemdash</string>
 				</array>
 				<key>smartSetName</key>
 				<string>dashes</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>parenleft</string>
+					<string>parenright</string>
+					<string>bracketleft</string>
+					<string>bracketright</string>
+					<string>braceleft</string>
+					<string>braceright</string>
+				</array>
+				<key>smartSetName</key>
+				<string>parentheticals</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
@@ -2099,6 +2113,17 @@
 				</array>
 				<key>smartSetName</key>
 				<string>guillemets</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>slash</string>
+					<string>backslash</string>
+					<string>bar</string>
+					<string>brokenbar</string>
+				</array>
+				<key>smartSetName</key>
+				<string>slashes</string>
 			</dict>
 			<dict>
 				<key>glyphNames</key>
@@ -2975,6 +3000,12 @@
 					<string>p</string>
 					<string>thorn</string>
 					<string>er</string>
+					<string>kgreenlandic</string>
+					<string>ka</string>
+					<string>kaverticalstrokecyr</string>
+					<string>kabashkircyr</string>
+					<string>kaisymbol</string>
+					<string>kappa</string>
 				</array>
 				<key>smartSetName</key>
 				<string>XLCS left margin</string>
@@ -3543,9 +3574,6 @@
 					<string>ohornhookabove</string>
 					<string>ohorntilde</string>
 					<string>ohorndotbelow</string>
-					<string>ie</string>
-					<string>io</string>
-					<string>iebrevecyr</string>
 					<string>ocyr</string>
 					<string>odieresiscyr</string>
 					<string>er</string>
@@ -3696,6 +3724,7 @@
 					<string>three.tab</string>
 					<string>two.tab</string>
 					<string>zero.tab</string>
+					<string>figuredash</string>
 				</array>
 				<key>smartSetName</key>
 				<string>figures tabular</string>
