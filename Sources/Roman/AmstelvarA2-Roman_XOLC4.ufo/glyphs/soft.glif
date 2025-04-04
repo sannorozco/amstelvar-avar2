@@ -2,11 +2,11 @@
 <glyph name="soft" format="2">
   <advance width="780"/>
   <unicode hex="044C"/>
-  <guideline x="302" y="625" angle="90" identifier="A4qVwRmZ22"/>
-  <guideline x="953" y="554" angle="90" identifier="h0tFJgBRAh"/>
-  <guideline x="627" y="553" angle="90" identifier="x6MEKzPxp5"/>
+  <guideline x="302" y="625" angle="90.0" identifier="A4qVwRmZ22"/>
+  <guideline x="953" y="554" angle="90.0" identifier="h0tFJgBRAh"/>
+  <guideline x="627" y="553" angle="90.0" identifier="x6MEKzPxp5"/>
   <guideline x="1028" y="1251" angle="0" identifier="Iz6BEWeM15"/>
-  <anchor x="752" y="0" name="yeru_i"/>
+  <anchor x="750" y="0" name="yeru_i"/>
   <outline>
     <contour>
       <point x="219" y="105" type="line"/>
@@ -43,6 +43,8 @@
     <dict>
       <key>com.fontBureau.measurements</key>
       <dict/>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_XOLC4.ufo/glyphs</string>
       <key>com.typemytype.robofont.guideline.showMeasurements.Iz6BEWeM15</key>
       <true/>
     </dict>

@@ -19,7 +19,7 @@ preflight  = False
 # batch copy glyphs
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
-ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
+ufoPaths   = glob.glob(f'{sourcesFolder}/*.ufo')
 
 for ufoPath in ufoPaths:
     if ufoPath == sourcePath:

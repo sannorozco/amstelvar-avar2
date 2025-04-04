@@ -217,9 +217,13 @@ class AmstelvarA2DesignSpaceBuilder:
                     values.sort()
                     children[childName] = values
 
+                ### REWRITE WITH “CLAMPS”
+
                 # add parent axis
-                parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
-                parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
+                # parent min is the lowest  child min
+                # parent max is the highest child max
+                parentMin    = min([v[0] for v in children.values()])
+                parentMax    = max([v[1] for v in children.values()])
                 parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
                 blendsDict['axes'][parentAxis] = {
                     "name"    : parentAxis,
@@ -227,6 +231,8 @@ class AmstelvarA2DesignSpaceBuilder:
                     "min"     : parentMin,
                     "max"     : parentMax,
                 }
+
+                ### INSTEAD OF MIN/MAX ONLY, ADD EACH CHILD AS A MAPPING ??
 
                 # add parent min source
                 blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
@@ -897,7 +903,7 @@ if __name__ == '__main__':
 
     # D0 = AmstelvarA2DesignSpaceInitializer()
     # D0.build()
-    # D0.save()x
+    # D0.save()
 
     # D = AmstelvarA2DesignSpaceBuilder()
     # D.build(blends=True, instances=True)
