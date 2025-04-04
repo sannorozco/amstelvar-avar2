@@ -8,14 +8,15 @@ sourceName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sourceName}.ufo')
-
 assert os.path.exists(sourcePath)
 
-glyphNames = [ 'tonos.case' ] #'Oslash diagonalbarO'.split()
+# options
 
-dstFonts = [] # 'YTFI281 YTFI895'.split()
-    
-preflight = False
+glyphNames = 'threequartersemdash figuredash'.split()
+dstFonts   = []
+preflight  = False
+
+# batch copy glyphs
 
 sourceFont = OpenFont(sourcePath, showInterface=False)
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
