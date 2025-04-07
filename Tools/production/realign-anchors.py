@@ -12,7 +12,7 @@ defaultPath   = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defa
 
 anchorNames = [
     'top',
-    'GRKtop',
+    # 'GRKtop',
     # 'center',
     'bottom',
 ]

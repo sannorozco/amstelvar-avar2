@@ -638,6 +638,24 @@
       "point 2": 51,
       "parent": "",
       "description": ""
+    },
+    "XQUC": {
+      "direction": "x",
+      "glyph 1": "O",
+      "point 1": "22",
+      "glyph 2": "O",
+      "point 2": 21,
+      "parent": null,
+      "description": null
+    },
+    "YQUC": {
+      "direction": "y",
+      "glyph 1": "O",
+      "point 1": 12,
+      "glyph 2": "O",
+      "point 2": "23",
+      "parent": null,
+      "description": null
     }
   },
   "glyphs": {
@@ -2225,6 +2243,38 @@
       "B 9": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "22 21": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "21 20": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "14 15": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "12 23": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "18 19": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "13 12": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "17 18": {
+        "name": "YQUC",
+        "direction": "y"
       }
     },
     "P": {
@@ -2334,7 +2384,7 @@
         "name": "XUCR",
         "direction": "x"
       },
-      "99 6": {
+      "6 99": {
         "name": "XUCR",
         "direction": "x"
       },
@@ -2344,6 +2394,38 @@
       },
       "B 9": {
         "name": "YTOS",
+        "direction": "y"
+      },
+      "22 21": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "21 20": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "14 15": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "13 12": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "18 19": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "17 18": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "12 23": {
+        "name": "YQUC",
         "direction": "y"
       }
     },
