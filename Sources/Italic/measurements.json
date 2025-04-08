@@ -645,7 +645,7 @@
       "point 1": "22",
       "glyph 2": "O",
       "point 2": 21,
-      "parent": null,
+      "parent": "XTEQ",
       "description": null
     },
     "YQUC": {
@@ -654,7 +654,7 @@
       "point 1": 12,
       "glyph 2": "O",
       "point 2": "23",
-      "parent": null,
+      "parent": "YTEQ",
       "description": null
     },
     "XQLC": {
@@ -663,7 +663,7 @@
       "point 1": "22",
       "glyph 2": "o",
       "point 2": 21,
-      "parent": null,
+      "parent": "XTEQ",
       "description": null
     },
     "YQLC": {
@@ -671,6 +671,42 @@
       "glyph 1": "o",
       "point 1": 12,
       "glyph 2": "o",
+      "point 2": "23",
+      "parent": "YTEQ",
+      "description": null
+    },
+    "XQFI": {
+      "direction": "x",
+      "glyph 1": "zero",
+      "point 1": "22",
+      "glyph 2": "zero",
+      "point 2": 21,
+      "parent": "XTEQ",
+      "description": null
+    },
+    "YQFI": {
+      "direction": "y",
+      "glyph 1": "zero",
+      "point 1": 12,
+      "glyph 2": "zero",
+      "point 2": "23",
+      "parent": "YTEQ",
+      "description": null
+    },
+    "XTEQ": {
+      "direction": "x",
+      "glyph 1": "O",
+      "point 1": "22",
+      "glyph 2": "O",
+      "point 2": "21",
+      "parent": null,
+      "description": null
+    },
+    "YTEQ": {
+      "direction": "y",
+      "glyph 1": "O",
+      "point 1": "12",
+      "glyph 2": "O",
       "point 2": "23",
       "parent": null,
       "description": null
@@ -774,6 +810,38 @@
       },
       "B 9": {
         "name": "YTFO",
+        "direction": "y"
+      },
+      "22 21": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "21 20": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "14 15": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "12 23": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "18 19": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "13 12": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "17 18": {
+        "name": "YQFI",
         "direction": "y"
       }
     },

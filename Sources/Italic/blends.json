@@ -65,6 +65,18 @@
       "default": 115,
       "min": 59,
       "max": 286
+    },
+    "XTEQ": {
+      "name": "XTEQ",
+      "default": 115,
+      "min": 10,
+      "max": 208
+    },
+    "YTEQ": {
+      "name": "YTEQ",
+      "default": 154,
+      "min": 34,
+      "max": 272
     }
   },
   "sources": {
@@ -113,7 +125,9 @@
       "XQUC": 100,
       "YQUC": 190,
       "XQLC": 64,
-      "YQLC": 89
+      "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 158
     },
     "opsz144_wdth125": {
       "XOUC": 88,
@@ -160,7 +174,9 @@
       "XQUC": 147,
       "YQUC": 191,
       "XQLC": 116,
-      "YQLC": 90
+      "YQLC": 90,
+      "XQFI": 113,
+      "YQFI": 158
     },
     "opsz144_wdth50": {
       "XOUC": 81,
@@ -207,7 +223,9 @@
       "XQUC": 52,
       "YQUC": 184,
       "XQLC": 38,
-      "YQLC": 90
+      "YQLC": 90,
+      "XQFI": 54,
+      "YQFI": 168
     },
     "opsz144_wght100": {
       "XOUC": 31,
@@ -254,7 +272,9 @@
       "XQUC": 122,
       "YQUC": 170,
       "XQLC": 88,
-      "YQLC": 98
+      "YQLC": 98,
+      "XQFI": 102,
+      "YQFI": 174
     },
     "opsz144_wght1000": {
       "XOUC": 253,
@@ -301,7 +321,9 @@
       "XQUC": 64,
       "YQUC": 232,
       "XQLC": 46,
-      "YQLC": 105
+      "YQLC": 105,
+      "XQFI": 50,
+      "YQFI": 190
     },
     "opsz144_wght1000_wdth125": {
       "XOUC": 248,
@@ -348,7 +370,9 @@
       "XQUC": 126,
       "YQUC": 183,
       "XQLC": 99,
-      "YQLC": 104
+      "YQLC": 104,
+      "XQFI": 83,
+      "YQFI": 159
     },
     "opsz144_wght1000_wdth50": {
       "XOUC": 239,
@@ -395,7 +419,9 @@
       "XQUC": 24,
       "YQUC": 272,
       "XQLC": 23,
-      "YQLC": 144
+      "YQLC": 144,
+      "XQFI": 20,
+      "YQFI": 280
     },
     "opsz144_wght100_wdth125": {
       "XOUC": 34,
@@ -442,7 +468,9 @@
       "XQUC": 168,
       "YQUC": 183,
       "XQLC": 120,
-      "YQLC": 98
+      "YQLC": 98,
+      "XQFI": 132,
+      "YQFI": 155
     },
     "opsz144_wght100_wdth50": {
       "XOUC": 28,
@@ -489,7 +517,9 @@
       "XQUC": 68,
       "YQUC": 176,
       "XQLC": 40,
-      "YQLC": 110
+      "YQLC": 110,
+      "XQFI": 46,
+      "YQFI": 153
     },
     "opsz8": {
       "XOUC": 112,
@@ -536,7 +566,9 @@
       "XQUC": 116,
       "YQUC": 154,
       "XQLC": 72,
-      "YQLC": 89
+      "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144
     },
     "opsz8_wdth125": {
       "XOUC": 118,
@@ -583,7 +615,9 @@
       "XQUC": 164,
       "YQUC": 154,
       "XQLC": 124,
-      "YQLC": 90
+      "YQLC": 90,
+      "XQFI": 114,
+      "YQFI": 144
     },
     "opsz8_wdth50": {
       "XOUC": 110,
@@ -630,7 +664,9 @@
       "XQUC": 72,
       "YQUC": 150,
       "XQLC": 42,
-      "YQLC": 88
+      "YQLC": 88,
+      "XQFI": 54,
+      "YQFI": 154
     },
     "opsz8_wght100": {
       "XOUC": 61,
@@ -677,7 +713,9 @@
       "XQUC": 148,
       "YQUC": 160,
       "XQLC": 76,
-      "YQLC": 102
+      "YQLC": 102,
+      "XQFI": 96,
+      "YQFI": 144
     },
     "opsz8_wght1000": {
       "XOUC": 282,
@@ -724,7 +762,9 @@
       "XQUC": 72,
       "YQUC": 161,
       "XQLC": 54,
-      "YQLC": 84
+      "YQLC": 84,
+      "XQFI": 64,
+      "YQFI": 144
     },
     "opsz8_wght1000_wdth125": {
       "XOUC": 287,
@@ -771,7 +811,9 @@
       "XQUC": 110,
       "YQUC": 159,
       "XQLC": 106,
-      "YQLC": 84
+      "YQLC": 84,
+      "XQFI": 84,
+      "YQFI": 144
     },
     "opsz8_wght1000_wdth50": {
       "XOUC": 270,
@@ -818,7 +860,9 @@
       "XQUC": 26,
       "YQUC": 207,
       "XQLC": 24,
-      "YQLC": 126
+      "YQLC": 126,
+      "XQFI": 24,
+      "YQFI": 224
     },
     "opsz8_wght100_wdth125": {
       "XOUC": 66,
@@ -865,7 +909,9 @@
       "XQUC": 184,
       "YQUC": 157,
       "XQLC": 128,
-      "YQLC": 103
+      "YQLC": 103,
+      "XQFI": 128,
+      "YQFI": 136
     },
     "opsz8_wght100_wdth50": {
       "XOUC": 56,
@@ -912,7 +958,9 @@
       "XQUC": 83,
       "YQUC": 166,
       "XQLC": 55,
-      "YQLC": 102
+      "YQLC": 102,
+      "XQFI": 62,
+      "YQFI": 154
     },
     "wdth125": {
       "XOUC": 90,
@@ -959,7 +1007,9 @@
       "XQUC": 162,
       "YQUC": 145,
       "XQLC": 124,
-      "YQLC": 90
+      "YQLC": 90,
+      "XQFI": 114,
+      "YQFI": 144
     },
     "wdth50": {
       "XOUC": 82,
@@ -1006,7 +1056,9 @@
       "XQUC": 70,
       "YQUC": 154,
       "XQLC": 42,
-      "YQLC": 88
+      "YQLC": 88,
+      "XQFI": 54,
+      "YQFI": 154
     },
     "wght100": {
       "XOUC": 43,
@@ -1053,7 +1105,9 @@
       "XQUC": 132,
       "YQUC": 162,
       "XQLC": 76,
-      "YQLC": 102
+      "YQLC": 102,
+      "XQFI": 100,
+      "YQFI": 144
     },
     "wght1000": {
       "XOUC": 254,
@@ -1100,7 +1154,9 @@
       "XQUC": 71,
       "YQUC": 162,
       "XQLC": 54,
-      "YQLC": 85
+      "YQLC": 85,
+      "XQFI": 50,
+      "YQFI": 144
     },
     "wght1000_wdth125": {
       "XOUC": 259,
@@ -1147,7 +1203,9 @@
       "XQUC": 118,
       "YQUC": 162,
       "XQLC": 106,
-      "YQLC": 86
+      "YQLC": 86,
+      "XQFI": 100,
+      "YQFI": 145
     },
     "wght1000_wdth50": {
       "XOUC": 252,
@@ -1194,7 +1252,9 @@
       "XQUC": 34,
       "YQUC": 228,
       "XQLC": 24,
-      "YQLC": 108
+      "YQLC": 108,
+      "XQFI": 26,
+      "YQFI": 235
     },
     "wght100_wdth125": {
       "XOUC": 48,
@@ -1241,7 +1301,9 @@
       "XQUC": 178,
       "YQUC": 166,
       "XQLC": 128,
-      "YQLC": 106
+      "YQLC": 106,
+      "XQFI": 138,
+      "YQFI": 149
     },
     "wght100_wdth50": {
       "XOUC": 40,
@@ -1288,7 +1350,9 @@
       "XQUC": 90,
       "YQUC": 161,
       "XQLC": 48,
-      "YQLC": 102
+      "YQLC": 102,
+      "XQFI": 74,
+      "YQFI": 154
     },
     "wght400": {
       "XOUC": 84,
@@ -1335,7 +1399,9 @@
       "XQUC": 115,
       "YQUC": 154,
       "XQLC": 72,
-      "YQLC": 89
+      "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144
     },
     "XTSP-100": {
       "XOUC": 84,
@@ -1385,6 +1451,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XTSP100": {
@@ -1435,6 +1503,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XOPQ3": {
@@ -1485,6 +1555,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XOPQ310": {
@@ -1535,6 +1607,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "YOPQ4": {
@@ -1585,6 +1659,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "YOPQ219": {
@@ -1635,6 +1711,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XTRA42": {
@@ -1650,7 +1728,7 @@
       "XTLC": 42,
       "XTLR": 46,
       "XTLD": 83,
-      "XTFI": 44,
+      "XTFI": 45,
       "YTUC": 750,
       "YTLC": 510,
       "YTAS": 778,
@@ -1685,6 +1763,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XTRA904": {
@@ -1735,6 +1815,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XSHA-2": {
@@ -1785,6 +1867,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XSHA146": {
@@ -1835,6 +1919,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "YSHA0": {
@@ -1885,6 +1971,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "YSHA150": {
@@ -1935,6 +2023,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XSVA0": {
@@ -1985,6 +2075,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "XSVA136": {
@@ -2035,6 +2127,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "YSVA59": {
@@ -2085,6 +2179,8 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
       "GRAD": 0
     },
     "YSVA286": {
@@ -2135,6 +2231,216 @@
       "YQUC": 154,
       "XQLC": 72,
       "YQLC": 89,
+      "XQFI": 80,
+      "YQFI": 144,
+      "GRAD": 0
+    },
+    "XTEQ10": {
+      "XOUC": 84,
+      "XOLC": 85,
+      "XOFI": 92,
+      "YOUC": 58,
+      "YOLC": 47,
+      "YOFI": 56,
+      "XTUC": 360,
+      "XTUR": 498,
+      "XTUD": 344,
+      "XTLC": 232,
+      "XTLR": 286,
+      "XTLD": 241,
+      "XTFI": 330,
+      "YTUC": 750,
+      "YTLC": 510,
+      "YTAS": 778,
+      "YTDE": -196,
+      "YTFI": 775,
+      "XSHU": 92,
+      "YSHU": 50,
+      "XSVU": 50,
+      "YSVU": 174,
+      "XSHL": 70,
+      "YSHL": 44,
+      "XSVL": 47,
+      "YSVL": 126,
+      "XSHF": 96,
+      "YSHF": 50,
+      "XSVF": 51,
+      "YSVF": 186,
+      "XTTW": 9,
+      "YTTL": 64,
+      "YTOS": 10,
+      "XUCS": 130,
+      "XUCR": 39,
+      "XUCD": 46,
+      "XLCS": 86,
+      "XLCR": 26,
+      "XLCD": 57,
+      "XFIR": 42,
+      "WDSP": 320,
+      "XDOT": 137,
+      "BARS": 0,
+      "XQUC": 14,
+      "YQUC": 154,
+      "XQLC": 10,
+      "YQLC": 89,
+      "XQFI": 20,
+      "YQFI": 144,
+      "GRAD": 0
+    },
+    "XTEQ208": {
+      "XOUC": 84,
+      "XOLC": 85,
+      "XOFI": 92,
+      "YOUC": 58,
+      "YOLC": 47,
+      "YOFI": 56,
+      "XTUC": 360,
+      "XTUR": 498,
+      "XTUD": 344,
+      "XTLC": 232,
+      "XTLR": 286,
+      "XTLD": 241,
+      "XTFI": 330,
+      "YTUC": 750,
+      "YTLC": 510,
+      "YTAS": 778,
+      "YTDE": -196,
+      "YTFI": 775,
+      "XSHU": 92,
+      "YSHU": 50,
+      "XSVU": 50,
+      "YSVU": 174,
+      "XSHL": 70,
+      "YSHL": 44,
+      "XSVL": 47,
+      "YSVL": 126,
+      "XSHF": 96,
+      "YSHF": 50,
+      "XSVF": 51,
+      "YSVF": 186,
+      "XTTW": 9,
+      "YTTL": 64,
+      "YTOS": 10,
+      "XUCS": 130,
+      "XUCR": 39,
+      "XUCD": 46,
+      "XLCS": 86,
+      "XLCR": 26,
+      "XLCD": 57,
+      "XFIR": 42,
+      "WDSP": 320,
+      "XDOT": 137,
+      "BARS": 0,
+      "XQUC": 208,
+      "YQUC": 154,
+      "XQLC": 150,
+      "YQLC": 89,
+      "XQFI": 144,
+      "YQFI": 144,
+      "GRAD": 0
+    },
+    "YTEQ34": {
+      "XOUC": 84,
+      "XOLC": 85,
+      "XOFI": 92,
+      "YOUC": 58,
+      "YOLC": 47,
+      "YOFI": 56,
+      "XTUC": 360,
+      "XTUR": 498,
+      "XTUD": 344,
+      "XTLC": 232,
+      "XTLR": 286,
+      "XTLD": 241,
+      "XTFI": 330,
+      "YTUC": 750,
+      "YTLC": 510,
+      "YTAS": 778,
+      "YTDE": -196,
+      "YTFI": 775,
+      "XSHU": 92,
+      "YSHU": 50,
+      "XSVU": 50,
+      "YSVU": 174,
+      "XSHL": 70,
+      "YSHL": 44,
+      "XSVL": 47,
+      "YSVL": 126,
+      "XSHF": 96,
+      "YSHF": 50,
+      "XSVF": 51,
+      "YSVF": 186,
+      "XTTW": 9,
+      "YTTL": 64,
+      "YTOS": 10,
+      "XUCS": 130,
+      "XUCR": 39,
+      "XUCD": 46,
+      "XLCS": 86,
+      "XLCR": 26,
+      "XLCD": 57,
+      "XFIR": 42,
+      "WDSP": 320,
+      "XDOT": 137,
+      "BARS": 0,
+      "XQUC": 115,
+      "YQUC": 98,
+      "XQLC": 72,
+      "YQLC": 72,
+      "XQFI": 80,
+      "YQFI": 34,
+      "GRAD": 0
+    },
+    "YTEQ272": {
+      "XOUC": 84,
+      "XOLC": 85,
+      "XOFI": 92,
+      "YOUC": 58,
+      "YOLC": 47,
+      "YOFI": 56,
+      "XTUC": 360,
+      "XTUR": 498,
+      "XTUD": 344,
+      "XTLC": 232,
+      "XTLR": 286,
+      "XTLD": 241,
+      "XTFI": 330,
+      "YTUC": 750,
+      "YTLC": 510,
+      "YTAS": 778,
+      "YTDE": -196,
+      "YTFI": 775,
+      "XSHU": 92,
+      "YSHU": 50,
+      "XSVU": 50,
+      "YSVU": 174,
+      "XSHL": 70,
+      "YSHL": 44,
+      "XSVL": 47,
+      "YSVL": 126,
+      "XSHF": 96,
+      "YSHF": 50,
+      "XSVF": 51,
+      "YSVF": 186,
+      "XTTW": 9,
+      "YTTL": 64,
+      "YTOS": 10,
+      "XUCS": 130,
+      "XUCR": 39,
+      "XUCD": 46,
+      "XLCS": 86,
+      "XLCR": 26,
+      "XLCD": 57,
+      "XFIR": 42,
+      "WDSP": 320,
+      "XDOT": 137,
+      "BARS": 0,
+      "XQUC": 115,
+      "YQUC": 272,
+      "XQLC": 72,
+      "YQLC": 107,
+      "XQFI": 80,
+      "YQFI": 244,
       "GRAD": 0
     }
   }
