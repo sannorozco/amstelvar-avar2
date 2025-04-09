@@ -2,7 +2,7 @@
 <glyph name="soft" format="2">
   <advance width="1058"/>
   <unicode hex="044C"/>
-  <anchor x="1032" y="0" name="yeru_i"/>
+  <anchor x="1030" y="0" name="yeru_i"/>
   <outline>
     <contour>
       <point x="398" y="105" type="line"/>
@@ -35,4 +35,10 @@
       <point x="396" y="500" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_YTDE-100.ufo/glyphs</string>
+    </dict>
+  </lib>
 </glyph>

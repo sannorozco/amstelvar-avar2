@@ -733,7 +733,7 @@ nine.lf = nine
 #  E T C E T E R A
 # -----------------
 
-ellipsis = period&period&period | 0x2026
+ellipsis = period + period@ellipsis + period@ellipsis ^ period,period | 0x2026
 
 hyphentwo = hyphen | 0x2010
 softhyphen = hyphen | 0xooAD

@@ -7,9 +7,9 @@ reload(xTools4.modules.measurements)
 '''
 this script needs to ne cleaned-up and/or rewritten:
 
-- avar1 designspace no longer in use
-- what about fences?
-- avar2.v2 probably not longer needed too
+- avar1 designspace is no longer in use
+- what about fences? current implementation is not correct
+- avar2.v2 is probably no longer needed too
 - variable font generation is now done in Terminal with build.sh
 
 '''
@@ -55,10 +55,10 @@ class AmstelvarA2DesignSpaceBuilder:
 
     parentAxesBuild  = True
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA XTEQ YTEQ'.split()
-    parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA                    '.split()
+    parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA           XTEQ YTEQ'.split()
     
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC XQLC XQFI YQUC YQLC YQFI'.split() # GRAD
-    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF                               XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS                              '.split() # parametricAxesRoman
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
+    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF                               XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
 
     spacingAxes = [
         'XUCS', 'XUCR', 'XUCD',
@@ -217,9 +217,13 @@ class AmstelvarA2DesignSpaceBuilder:
                     values.sort()
                     children[childName] = values
 
+                ### REWRITE WITH “CLAMPS”
+
                 # add parent axis
-                parentMin    = min([v[0] for v in children.values()]) # parent min is the lowest  child min  <-- IS THIS CORRECT ??
-                parentMax    = max([v[1] for v in children.values()]) # parent max is the highest child max 
+                # parent min is the lowest  child min
+                # parent max is the highest child max
+                parentMin    = min([v[0] for v in children.values()])
+                parentMax    = max([v[1] for v in children.values()])
                 parenDefault = permille(self.measurementsDefault.values[parentAxis], self.unitsPerEm)
                 blendsDict['axes'][parentAxis] = {
                     "name"    : parentAxis,
@@ -227,6 +231,8 @@ class AmstelvarA2DesignSpaceBuilder:
                     "min"     : parentMin,
                     "max"     : parentMax,
                 }
+
+                ### INSTEAD OF MIN/MAX ONLY, ADD EACH CHILD AS A MAPPING ??
 
                 # add parent min source
                 blendsDict['sources'][f'{parentAxis}{parentMin}'] = self.defaultLocation.copy()
@@ -897,7 +903,7 @@ if __name__ == '__main__':
 
     # D0 = AmstelvarA2DesignSpaceInitializer()
     # D0.build()
-    # D0.save()x
+    # D0.save()
 
     # D = AmstelvarA2DesignSpaceBuilder()
     # D.build(blends=True, instances=True)
@@ -913,7 +919,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    D2.buildInstancesVariableFont(clear=True, ufo=True)
+    # D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
 
     # D3 = AmstelvarA2DesignSpaceBuilder_avar2_fences()
