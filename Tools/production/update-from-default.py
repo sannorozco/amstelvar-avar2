@@ -13,9 +13,9 @@ from xTools4.modules.validation import assignValidationGroup
 
 familyName     = 'AmstelvarA2'
 subFamilyName  = ['Roman', 'Italic'][1]
-glyphNames     = ['one.lc', 'diagonalbarO'] # 'ya', 'kabashkircyr', 'yi-dieresiscomb', 'Omega'
+glyphNames     = ['one.lc', 'diagonalbarO']
 newDefaultName = 'wght400'
-oldDefaultName = 'WDSP1000' # 'BARS0'
+oldDefaultName = 'WDSP1000'
 preflight      = False
 
 # ---------
@@ -45,9 +45,9 @@ def updateGlyphsFromDefault(font, oldDefault, newDefault, glyphNames):
         font.close()
     print()
 
-# --------
-# do stuff
-# --------
+# ---------------------------
+# batch update default glyphs
+# ---------------------------
 
 baseFolder     = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder  = os.path.join(baseFolder, 'Sources', subFamilyName)
