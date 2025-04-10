@@ -2,10 +2,10 @@
 <glyph name="o" format="2">
   <advance width="1050"/>
   <unicode hex="006F"/>
-  <anchor x="358.0" y="0" name="bottom"/>
-  <anchor x="461.0" y="500.0" name="center"/>
+  <anchor x="358" y="0" name="bottom"/>
+  <anchor x="461" y="500" name="center"/>
   <anchor x="514" y="0" name="ogonek"/>
-  <anchor x="584.0" y="1000" name="top"/>
+  <anchor x="584" y="1000" name="top"/>
   <anchor x="663" y="1000" name="topright"/>
   <anchor x="584" y="1000" name="GRKtop"/>
   <anchor x="83" y="498" name="yu_dash"/>
@@ -26,17 +26,23 @@
     </contour>
     <contour>
       <point x="179" y="537" type="qcurve" smooth="yes"/>
-      <point x="136" y="326"/>
+      <point x="123" y="253"/>
       <point x="239" y="103"/>
       <point x="370" y="93" type="qcurve" smooth="yes"/>
       <point x="511" y="84"/>
-      <point x="693" y="265"/>
+      <point x="671" y="186"/>
       <point x="742" y="488" type="qcurve" smooth="yes"/>
-      <point x="787" y="693"/>
+      <point x="805" y="766"/>
       <point x="675" y="892"/>
       <point x="544" y="901" type="qcurve" smooth="yes"/>
       <point x="402" y="911"/>
-      <point x="223" y="751"/>
+      <point x="241" y="830"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>

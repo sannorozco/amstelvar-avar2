@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.1">
+  <axes>
+    <axis tag="XTRA" name="XTRA" minimum="60" maximum="902" default="561"/> <!-- ¿¿¿ WHAT SHOULD BE THE DEFAULT VALUE FOR XTRA ??? -->
+    <axis tag="XTUC" name="XTUC" minimum="72" maximum="668" default="400"/>
+    <axis tag="XTUR" name="XTUR" minimum="60" maximum="902" default="561"/>
+    <axis tag="XTUD" name="XTUD" minimum="76" maximum="686" default="410"/>
+    <mappings>
+      <!-- max clamps -->
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="668"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="668"/>
+          <dimension name="XTUR" xvalue="668"/>
+          <dimension name="XTUD" xvalue="668"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="686"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="668"/>
+          <dimension name="XTUR" xvalue="686"/>
+          <dimension name="XTUD" xvalue="686"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="902"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="668"/>
+          <dimension name="XTUR" xvalue="902"/>
+          <dimension name="XTUD" xvalue="686"/>
+        </output>
+      </mapping>
+      <!-- min clamps -->
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="76"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="76"/>
+          <dimension name="XTUR" xvalue="76"/>
+          <dimension name="XTUD" xvalue="76"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="72"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="72"/>
+          <dimension name="XTUR" xvalue="72"/>
+          <dimension name="XTUD" xvalue="76"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="60"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="72"/>
+          <dimension name="XTUR" xvalue="60"/>
+          <dimension name="XTUD" xvalue="76"/>
+        </output>
+      </mapping>
+    </mappings>
+  </axes>
+  <sources>
+    <source filename="AmstelvarA2-Roman_wght400.ufo" familyname="AmstelvarA2 Roman" stylename="wght400">
+      <location>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="410"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUC72.ufo" familyname="AmstelvarA2 Roman" stylename="XTUC72">
+      <location>
+        <dimension name="XTUC" xvalue="72"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="410"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUC668.ufo" familyname="AmstelvarA2 Roman" stylename="XTUC668">
+      <location>
+        <dimension name="XTUC" xvalue="668"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="410"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUR902.ufo" familyname="AmstelvarA2 Roman" stylename="XTUR902">
+      <location>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="902"/>
+        <dimension name="XTUD" xvalue="410"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUR60.ufo" familyname="AmstelvarA2 Roman" stylename="XTUR60">
+      <location>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="60"/>
+        <dimension name="XTUD" xvalue="410"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUD686.ufo" familyname="AmstelvarA2 Roman" stylename="XTUD686">
+      <location>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="686"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUD76.ufo" familyname="AmstelvarA2 Roman" stylename="XTUD76">
+      <location>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="76"/>
+      </location>
+    </source>
+  </sources>
+</designspace>
