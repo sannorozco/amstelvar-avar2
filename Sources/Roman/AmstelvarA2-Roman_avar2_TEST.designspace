@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="5.1">
   <axes>
-    <axis tag="XTRA" name="XTRA" minimum="60" maximum="902" default="561"/> <!-- ¿¿¿ WHAT SHOULD BE THE DEFAULT VALUE FOR XTRA ??? -->
-    <axis tag="XTUC" name="XTUC" minimum="72" maximum="668" default="400"/>
-    <axis tag="XTUR" name="XTUR" minimum="60" maximum="902" default="561"/>
-    <axis tag="XTUD" name="XTUD" minimum="76" maximum="686" default="410"/>
+    <axis tag="XTRA" name="XTRA" minimum="-101" maximum="741"  default="561"/>
+    <axis tag="XTUC" name="XTUC" minimum="72"   maximum="668"  default="400"/>
+    <axis tag="XTUR" name="XTUR" minimum="60"   maximum="902"  default="561"/>
+    <axis tag="XTUD" name="XTUD" minimum="76"   maximum="686"  default="410"/>
     <mappings>
       <!-- max clamps -->
       <mapping>
@@ -13,23 +13,23 @@
         </input>
         <output>
           <dimension name="XTUC" xvalue="668"/>
-          <dimension name="XTUR" xvalue="668"/>
-          <dimension name="XTUD" xvalue="668"/>
+          <dimension name="XTUR" xvalue="829"/>
+          <dimension name="XTUD" xvalue="678"/>
         </output>
       </mapping>
       <mapping>
         <input>
-          <dimension name="XTRA" xvalue="686"/>
+          <dimension name="XTRA" xvalue="676"/>
         </input>
         <output>
           <dimension name="XTUC" xvalue="668"/>
-          <dimension name="XTUR" xvalue="686"/>
+          <dimension name="XTUR" xvalue="837"/>
           <dimension name="XTUD" xvalue="686"/>
         </output>
       </mapping>
       <mapping>
         <input>
-          <dimension name="XTRA" xvalue="902"/>
+          <dimension name="XTRA" xvalue="741"/>
         </input>
         <output>
           <dimension name="XTUC" xvalue="668"/>
@@ -40,11 +40,21 @@
       <!-- min clamps -->
       <mapping>
         <input>
-          <dimension name="XTRA" xvalue="76"/>
+          <dimension name="XTRA" xvalue="-101"/>
         </input>
         <output>
-          <dimension name="XTUC" xvalue="76"/>
-          <dimension name="XTUR" xvalue="76"/>
+          <dimension name="XTUC" xvalue="72"/>
+          <dimension name="XTUR" xvalue="60"/>
+          <dimension name="XTUD" xvalue="76"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="66"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="72"/>
+          <dimension name="XTUR" xvalue="227"/>
           <dimension name="XTUD" xvalue="76"/>
         </output>
       </mapping>
@@ -54,18 +64,8 @@
         </input>
         <output>
           <dimension name="XTUC" xvalue="72"/>
-          <dimension name="XTUR" xvalue="72"/>
-          <dimension name="XTUD" xvalue="76"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="60"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="72"/>
-          <dimension name="XTUR" xvalue="60"/>
-          <dimension name="XTUD" xvalue="76"/>
+          <dimension name="XTUR" xvalue="233"/>
+          <dimension name="XTUD" xvalue="82"/>
         </output>
       </mapping>
     </mappings>
