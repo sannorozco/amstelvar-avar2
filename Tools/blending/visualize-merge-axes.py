@@ -7,15 +7,30 @@ import os
 # --------
 
 parametricAxes = {
-    "XTUC" : dict(minimum=72, maximum=668, default=400, color=(1,0,0)),
-    "XTUR" : dict(minimum=60, maximum=902, default=561, color=(0,1,0)),
-    "XTUD" : dict(minimum=76, maximum=686, default=410, color=(0,0,1)),
+    "XTUC" : dict(minimum=72, maximum=668, default=400),
+    "XTUR" : dict(minimum=60, maximum=902, default=561),
+    "XTUD" : dict(minimum=76, maximum=686, default=410),
+    "XTLC" : dict(minimum=42, maximum=500, default=243),
+    "XTLR" : dict(minimum=46, maximum=625, default=337),
+    "XTLD" : dict(minimum=84, maximum=501, default=248),
+    "XTFI" : dict(minimum=40, maximum=604, default=329),
 }
 
-parentAxisName = "XTRA" # name of the parent parametric axis
-defaultSrc     = 'XTUC' # source parametric axis for the default parent value
+parentName = "XTRA" # name of the parent parametric axis
+defaultSrc = 'XTUC' # source parametric axis for the default parent value
 
-w, h = 930, 429
+colors = {
+    "XTUC"     : (1,0,0),
+    "XTUR"     : (0,1,0),
+    "XTUD"     : (0,0,1),
+    "XTLC"     : (1,0,0),
+    "XTLR"     : (0,1,0),
+    "XTLD"     : (0,0,1),
+    "XTFI"     : (1,0,0),
+    parentName : (0,0,0),
+}
+
+w, h = 930, 830
 d  = 101
 r1 = 4
 r2 = 2
@@ -26,7 +41,7 @@ fs3 = 24
 
 drawRanges   = True
 drawMappings = True
-savePDF      = True
+savePDF      = False
 
 # ----------------
 # calculate parent
@@ -34,7 +49,7 @@ savePDF      = True
 
 # get parent ranges and default from parametric axes
 parentAxis = {
-    parentAxisName : {
+    parentName : {
         'default' : parametricAxes[defaultSrc]['default'],
         'minimum' : min([
             parametricAxes[a]['minimum'] + parametricAxes[defaultSrc]['default'] - parametricAxes[a]['default'] 
@@ -63,7 +78,8 @@ translate(x, y)
 
 for i, axisName in enumerate(axes.keys()):
     axis = axes[axisName]
-    xMin, xMax, xDef, c = axis['minimum'], axis['maximum'], axis['default'], axis['color']
+    xMin, xMax, xDef = axis['minimum'], axis['maximum'], axis['default']
+    c = colors[axisName]
     # print(axisName, xMin, xDef, xMax)
 
     save()
@@ -141,3 +157,4 @@ if savePDF:
     folder = os.getcwd()
     pdfPath = os.path.join(folder, 'merging-axes.pdf')
     saveImage(pdfPath)
+
