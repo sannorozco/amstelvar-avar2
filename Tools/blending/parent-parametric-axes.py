@@ -39,6 +39,7 @@ parentAxesDefaults = {
 drawRanges   = True
 drawMappings = True
 savePDF      = False
+trimExtremes = False
 
 p   = 55
 d   = 100
@@ -178,16 +179,23 @@ for i, axisName in enumerate(axes.keys()):
             for aName, a in axes.items():
                 if aName == parentAxis:
                     continue
-                steps += [
-                    a['minimum'] - a['default'] + xDef,
-                    a['maximum'] - a['default'] + xDef,
-                    # xDef,
-                ]
+                aShift = - a['default'] + xDef
+                minValue = a['minimum'] 
+                maxValue = a['maximum'] 
+                ### NOT WORKING YET
+                # if aName != parentAxisName:
+                #     if trimExtremes:
+                #         if minValue < xMin:
+                #             print('min', minValue, xMin)
+                #             minValue = xMin
+                #         elif maxValue < xMax:
+                #             print('max', maxValue, xMax)
+                #             maxValue = xMax
+                steps += [ minValue + aShift, maxValue + aShift ]
             fontSize(fs2)
 
             # draw mapping steps
             for xxx in sorted(steps):
-                ### if xxx <= xMin or xxx >= xMax: CLAMP to axis min/max
                 fill(*c)
                 oval(xxx-r2, -r2, r2*2, r2*2)
                 with savedState():    
