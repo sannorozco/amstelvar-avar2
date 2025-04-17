@@ -12,10 +12,10 @@ from xTools4.modules.validation import assignValidationGroup
 # --------
 
 familyName     = 'AmstelvarA2'
-subFamilyName  = ['Roman', 'Italic'][1]
-glyphNames     = ['one.lc', 'diagonalbarO']
+subFamilyName  = ['Roman', 'Italic'][0]
+glyphNames     = ['guilsinglright']
 newDefaultName = 'wght400'
-oldDefaultName = 'WDSP1000'
+oldDefaultName = 'WDSP0'
 preflight      = False
 
 # ---------
@@ -63,7 +63,7 @@ oldDefault = OpenFont(oldDefaultPath, showInterface=False)
 ufoPaths.remove(newDefaultPath)
 ufoPaths.remove(oldDefaultPath)
 
-for ufoPath in ufoPaths:
+for ufoPath in sorted(ufoPaths):
     font = OpenFont(ufoPath, showInterface=False)
     updateGlyphsFromDefault(font, oldDefault, newDefault, glyphNames)
 
