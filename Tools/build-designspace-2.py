@@ -21,25 +21,51 @@ from xTools4.modules.sys import timer
 
 
 def makeParentAxis(parentName, parametricAxes, defaultName):
+    r'''
+    Calculate a parent axis to control several parametric axes, 
+    with mappings to limit the range of each child axis.
 
-    defaultValue  = parametricAxes[defaultName]['default']
-    minimumValues = []
-    maximumValues = []
+    ::
+        parentName  = 'XTRA'
+        parametricAxes = {
+            'XTUC' : dict(minimum=72, maximum=668, default=400),
+            'XTUR' : dict(minimum=60, maximum=902, default=561),
+            'XTUD' : dict(minimum=76, maximum=686, default=410),
+            'XTLC' : dict(minimum=42, maximum=500, default=243),
+            'XTLR' : dict(minimum=46, maximum=625, default=337),
+            'XTLD' : dict(minimum=84, maximum=501, default=248),
+            'XTFI' : dict(minimum=40, maximum=604, default=329),
+        }
+        defaultName = 'XTUC'
+
+        parentAxis, mappings = makeParentAxis(parentName, parametricAxes, defaultName)
+        
+        print('parent parametric axis:')
+        print(parentAxis)
+        print()
+        print('parent mappings to child parameters:')
+        for parentValue, mapping in sorted(mappings.items()):
+            print(f'\t{ parentValue } { mapping }')
+
+    '''
+    defaultValue = parametricAxes[defaultName]['default']
+    minValues = []
+    maxValues = []
     for axisName, axis in parametricAxes.items():
         axisShift = defaultValue - axis['default'] 
         minValue  = axis['minimum'] + axisShift
         maxValue  = axis['maximum'] + axisShift
-        minimumValues.append(minValue)
-        maximumValues.append(maxValue)
-        
+        minValues.append(minValue)
+        maxValues.append(maxValue)
+    
     parentAxis = {
         'name'    : parentName,
         'default' : defaultValue,
-        'minimum' : min(minimumValues),
-        'maximum' : max(maximumValues),
+        'minimum' : min(minValues),
+        'maximum' : max(maxValues),
     }
 
-    mappingValues = set(minimumValues + maximumValues)
+    mappingValues = set(minValues + maxValues)
     mappings = {}
     for mappingValue in mappingValues:
         mappings[mappingValue] = {}
@@ -69,6 +95,8 @@ class AmstelvarA2DesignSpaceBuilder:
     - add default source
     - add parametric sources
     - add instances
+
+    see also: recipe.md
 
     '''
     familyName  = 'AmstelvarA2'
