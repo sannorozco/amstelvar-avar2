@@ -104,7 +104,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
     parentAxesBuild  = True
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA XTEQ YTEQ'.split()
-    parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA           XTEQ YTEQ'.split()
+    parentAxesItalic = parentAxesRoman
 
     parentAxesDefaults = {
         'XOPQ' : 'XOUC',
@@ -121,7 +121,7 @@ class AmstelvarA2DesignSpaceBuilder:
     }
 
     parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
-    parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU      YHAL           XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
+    parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [
         'XUCS', 'XUCR', 'XUCD',
@@ -648,7 +648,6 @@ if __name__ == '__main__':
     D2 = AmstelvarA2DesignSpaceBuilder(subFamilyName)
     D2.build()
     D2.save()
-
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
     # D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
