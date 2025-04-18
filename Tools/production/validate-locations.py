@@ -1,7 +1,7 @@
 import os
 from fontTools.designspaceLib import DesignSpaceDocument
 
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 folder = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(folder, 'Sources', subFamilyName)
 designspacePath = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}_avar2.designspace')
