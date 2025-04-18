@@ -17,7 +17,7 @@ sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 measurementsPath = os.path.join(sourcesFolder, 'measurements.json')
 
 ignoreTags = ['wght', 'GRAD'] # 'BARS',
-preflight  = True
+preflight  = False
 
 # --------
 # do stuff

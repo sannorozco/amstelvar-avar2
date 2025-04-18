@@ -69,7 +69,7 @@
     "XVAA": {
       "name": "XVAA",
       "default": 14,
-      "minimum": -10,
+      "minimum": -32,
       "maximum": 64
     },
     "YHAA": {
@@ -1979,6 +1979,11 @@
       "XVAL": -2,
       "XVAF": 36
     },
+    "XVAA-32": {
+      "XVAU": -32,
+      "XVAL": -34,
+      "XVAF": 4
+    },
     "XVAA64": {
       "XVAU": 64,
       "XVAL": 62,
@@ -1989,15 +1994,10 @@
       "XVAL": 2,
       "XVAF": 40
     },
-    "XVAA39": {
-      "XVAU": 39,
-      "XVAL": 37,
-      "XVAF": 75
-    },
-    "XVAA-10": {
-      "XVAU": -10,
-      "XVAL": -12,
-      "XVAF": 26
+    "XVAA59": {
+      "XVAU": 59,
+      "XVAL": 57,
+      "XVAF": 95
     },
     "YHAA0": {
       "YHAU": 0,
