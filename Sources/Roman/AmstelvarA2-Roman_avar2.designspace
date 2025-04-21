@@ -14,8 +14,6 @@
     <axis tag="YSVA" name="YSVA" minimum="59" maximum="329" default="224"/>
     <axis tag="XVAA" name="XVAA" minimum="0" maximum="100" default="18"/>
     <axis tag="YHAA" name="YHAA" minimum="0" maximum="68" default="18"/>
-    <axis tag="XTEQ" name="XTEQ" minimum="22" maximum="220" default="136"/>
-    <axis tag="YTEQ" name="YTEQ" minimum="73" maximum="331" default="141"/>
     <axis tag="GRAD" name="GRAD" minimum="-300" maximum="500" default="0"/>
     <axis tag="XOUC" name="XOUC" minimum="4" maximum="310" default="90"/>
     <axis tag="XOLC" name="XOLC" minimum="4" maximum="293" default="85"/>
@@ -1969,118 +1967,6 @@
       </mapping>
       <mapping>
         <input>
-          <dimension name="XTRA" xvalue="66"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="66"/>
-          <dimension name="XTUR" xvalue="227"/>
-          <dimension name="XTUD" xvalue="76"/>
-          <dimension name="XTLC" xvalue="-91"/>
-          <dimension name="XTLR" xvalue="3"/>
-          <dimension name="XTLD" xvalue="-86"/>
-          <dimension name="XTFI" xvalue="-5"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="675"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="675"/>
-          <dimension name="XTUR" xvalue="836"/>
-          <dimension name="XTUD" xvalue="685"/>
-          <dimension name="XTLC" xvalue="518"/>
-          <dimension name="XTLR" xvalue="612"/>
-          <dimension name="XTLD" xvalue="523"/>
-          <dimension name="XTFI" xvalue="604"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="676"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="676"/>
-          <dimension name="XTUR" xvalue="837"/>
-          <dimension name="XTUD" xvalue="686"/>
-          <dimension name="XTLC" xvalue="519"/>
-          <dimension name="XTLR" xvalue="613"/>
-          <dimension name="XTLD" xvalue="524"/>
-          <dimension name="XTFI" xvalue="605"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="741"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="741"/>
-          <dimension name="XTUR" xvalue="902"/>
-          <dimension name="XTUD" xvalue="751"/>
-          <dimension name="XTLC" xvalue="584"/>
-          <dimension name="XTLR" xvalue="678"/>
-          <dimension name="XTLD" xvalue="589"/>
-          <dimension name="XTFI" xvalue="670"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="199"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="199"/>
-          <dimension name="XTUR" xvalue="360"/>
-          <dimension name="XTUD" xvalue="209"/>
-          <dimension name="XTLC" xvalue="42"/>
-          <dimension name="XTLR" xvalue="136"/>
-          <dimension name="XTLD" xvalue="47"/>
-          <dimension name="XTFI" xvalue="128"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="72"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="72"/>
-          <dimension name="XTUR" xvalue="233"/>
-          <dimension name="XTUD" xvalue="82"/>
-          <dimension name="XTLC" xvalue="-85"/>
-          <dimension name="XTLR" xvalue="9"/>
-          <dimension name="XTLD" xvalue="-80"/>
-          <dimension name="XTFI" xvalue="1"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="236"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="236"/>
-          <dimension name="XTUR" xvalue="397"/>
-          <dimension name="XTUD" xvalue="246"/>
-          <dimension name="XTLC" xvalue="79"/>
-          <dimension name="XTLR" xvalue="173"/>
-          <dimension name="XTLD" xvalue="84"/>
-          <dimension name="XTFI" xvalue="165"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="109"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="109"/>
-          <dimension name="XTUR" xvalue="270"/>
-          <dimension name="XTUD" xvalue="119"/>
-          <dimension name="XTLC" xvalue="-48"/>
-          <dimension name="XTLR" xvalue="46"/>
-          <dimension name="XTLD" xvalue="-43"/>
-          <dimension name="XTFI" xvalue="38"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
           <dimension name="XTRA" xvalue="653"/>
         </input>
         <output>
@@ -2091,34 +1977,9 @@
           <dimension name="XTLR" xvalue="590"/>
           <dimension name="XTLD" xvalue="501"/>
           <dimension name="XTFI" xvalue="582"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="111"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="111"/>
-          <dimension name="XTUR" xvalue="272"/>
-          <dimension name="XTUD" xvalue="121"/>
-          <dimension name="XTLC" xvalue="-46"/>
-          <dimension name="XTLR" xvalue="48"/>
-          <dimension name="XTLD" xvalue="-41"/>
-          <dimension name="XTFI" xvalue="40"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTRA" xvalue="688"/>
-        </input>
-        <output>
-          <dimension name="XTUC" xvalue="688"/>
-          <dimension name="XTUR" xvalue="849"/>
-          <dimension name="XTUD" xvalue="698"/>
-          <dimension name="XTLC" xvalue="531"/>
-          <dimension name="XTLR" xvalue="625"/>
-          <dimension name="XTLD" xvalue="536"/>
-          <dimension name="XTFI" xvalue="617"/>
+          <dimension name="XQUC" xvalue="389"/>
+          <dimension name="XQLC" xvalue="335"/>
+          <dimension name="XQFI" xvalue="333"/>
         </output>
       </mapping>
       <mapping>
@@ -2133,6 +1994,9 @@
           <dimension name="XTLR" xvalue="594"/>
           <dimension name="XTLD" xvalue="505"/>
           <dimension name="XTFI" xvalue="586"/>
+          <dimension name="XQUC" xvalue="393"/>
+          <dimension name="XQLC" xvalue="339"/>
+          <dimension name="XQFI" xvalue="337"/>
         </output>
       </mapping>
       <mapping>
@@ -2147,6 +2011,9 @@
           <dimension name="XTLR" xvalue="-164"/>
           <dimension name="XTLD" xvalue="-253"/>
           <dimension name="XTFI" xvalue="-172"/>
+          <dimension name="XQUC" xvalue="-365"/>
+          <dimension name="XQLC" xvalue="-419"/>
+          <dimension name="XQFI" xvalue="-421"/>
         </output>
       </mapping>
       <mapping>
@@ -2161,6 +2028,281 @@
           <dimension name="XTLR" xvalue="605"/>
           <dimension name="XTLD" xvalue="516"/>
           <dimension name="XTFI" xvalue="597"/>
+          <dimension name="XQUC" xvalue="404"/>
+          <dimension name="XQLC" xvalue="350"/>
+          <dimension name="XQFI" xvalue="348"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="286"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="286"/>
+          <dimension name="XTUR" xvalue="447"/>
+          <dimension name="XTUD" xvalue="296"/>
+          <dimension name="XTLC" xvalue="129"/>
+          <dimension name="XTLR" xvalue="223"/>
+          <dimension name="XTLD" xvalue="134"/>
+          <dimension name="XTFI" xvalue="215"/>
+          <dimension name="XQUC" xvalue="22"/>
+          <dimension name="XQLC" xvalue="-32"/>
+          <dimension name="XQFI" xvalue="-34"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="675"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="675"/>
+          <dimension name="XTUR" xvalue="836"/>
+          <dimension name="XTUD" xvalue="685"/>
+          <dimension name="XTLC" xvalue="518"/>
+          <dimension name="XTLR" xvalue="612"/>
+          <dimension name="XTLD" xvalue="523"/>
+          <dimension name="XTFI" xvalue="604"/>
+          <dimension name="XQUC" xvalue="411"/>
+          <dimension name="XQLC" xvalue="357"/>
+          <dimension name="XQFI" xvalue="355"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="676"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="676"/>
+          <dimension name="XTUR" xvalue="837"/>
+          <dimension name="XTUD" xvalue="686"/>
+          <dimension name="XTLC" xvalue="519"/>
+          <dimension name="XTLR" xvalue="613"/>
+          <dimension name="XTLD" xvalue="524"/>
+          <dimension name="XTFI" xvalue="605"/>
+          <dimension name="XQUC" xvalue="412"/>
+          <dimension name="XQLC" xvalue="358"/>
+          <dimension name="XQFI" xvalue="356"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="688"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="688"/>
+          <dimension name="XTUR" xvalue="849"/>
+          <dimension name="XTUD" xvalue="698"/>
+          <dimension name="XTLC" xvalue="531"/>
+          <dimension name="XTLR" xvalue="625"/>
+          <dimension name="XTLD" xvalue="536"/>
+          <dimension name="XTFI" xvalue="617"/>
+          <dimension name="XQUC" xvalue="424"/>
+          <dimension name="XQLC" xvalue="370"/>
+          <dimension name="XQFI" xvalue="368"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="66"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="66"/>
+          <dimension name="XTUR" xvalue="227"/>
+          <dimension name="XTUD" xvalue="76"/>
+          <dimension name="XTLC" xvalue="-91"/>
+          <dimension name="XTLR" xvalue="3"/>
+          <dimension name="XTLD" xvalue="-86"/>
+          <dimension name="XTFI" xvalue="-5"/>
+          <dimension name="XQUC" xvalue="-198"/>
+          <dimension name="XQLC" xvalue="-252"/>
+          <dimension name="XQFI" xvalue="-254"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="199"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="199"/>
+          <dimension name="XTUR" xvalue="360"/>
+          <dimension name="XTUD" xvalue="209"/>
+          <dimension name="XTLC" xvalue="42"/>
+          <dimension name="XTLR" xvalue="136"/>
+          <dimension name="XTLD" xvalue="47"/>
+          <dimension name="XTFI" xvalue="128"/>
+          <dimension name="XQUC" xvalue="-65"/>
+          <dimension name="XQLC" xvalue="-119"/>
+          <dimension name="XQFI" xvalue="-121"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="72"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="72"/>
+          <dimension name="XTUR" xvalue="233"/>
+          <dimension name="XTUD" xvalue="82"/>
+          <dimension name="XTLC" xvalue="-85"/>
+          <dimension name="XTLR" xvalue="9"/>
+          <dimension name="XTLD" xvalue="-80"/>
+          <dimension name="XTFI" xvalue="1"/>
+          <dimension name="XQUC" xvalue="-192"/>
+          <dimension name="XQLC" xvalue="-246"/>
+          <dimension name="XQFI" xvalue="-248"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="331"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="331"/>
+          <dimension name="XTUR" xvalue="492"/>
+          <dimension name="XTUD" xvalue="341"/>
+          <dimension name="XTLC" xvalue="174"/>
+          <dimension name="XTLR" xvalue="268"/>
+          <dimension name="XTLD" xvalue="179"/>
+          <dimension name="XTFI" xvalue="260"/>
+          <dimension name="XQUC" xvalue="67"/>
+          <dimension name="XQLC" xvalue="13"/>
+          <dimension name="XQFI" xvalue="11"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="332"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="332"/>
+          <dimension name="XTUR" xvalue="493"/>
+          <dimension name="XTUD" xvalue="342"/>
+          <dimension name="XTLC" xvalue="175"/>
+          <dimension name="XTLR" xvalue="269"/>
+          <dimension name="XTLD" xvalue="180"/>
+          <dimension name="XTFI" xvalue="261"/>
+          <dimension name="XQUC" xvalue="68"/>
+          <dimension name="XQLC" xvalue="14"/>
+          <dimension name="XQFI" xvalue="12"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="466"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="466"/>
+          <dimension name="XTUR" xvalue="627"/>
+          <dimension name="XTUD" xvalue="476"/>
+          <dimension name="XTLC" xvalue="309"/>
+          <dimension name="XTLR" xvalue="403"/>
+          <dimension name="XTLD" xvalue="314"/>
+          <dimension name="XTFI" xvalue="395"/>
+          <dimension name="XQUC" xvalue="202"/>
+          <dimension name="XQLC" xvalue="148"/>
+          <dimension name="XQFI" xvalue="146"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="468"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="468"/>
+          <dimension name="XTUR" xvalue="629"/>
+          <dimension name="XTUD" xvalue="478"/>
+          <dimension name="XTLC" xvalue="311"/>
+          <dimension name="XTLR" xvalue="405"/>
+          <dimension name="XTLD" xvalue="316"/>
+          <dimension name="XTFI" xvalue="397"/>
+          <dimension name="XQUC" xvalue="204"/>
+          <dimension name="XQLC" xvalue="150"/>
+          <dimension name="XQFI" xvalue="148"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="484"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="484"/>
+          <dimension name="XTUR" xvalue="645"/>
+          <dimension name="XTUD" xvalue="494"/>
+          <dimension name="XTLC" xvalue="327"/>
+          <dimension name="XTLR" xvalue="421"/>
+          <dimension name="XTLD" xvalue="332"/>
+          <dimension name="XTFI" xvalue="413"/>
+          <dimension name="XQUC" xvalue="220"/>
+          <dimension name="XQLC" xvalue="166"/>
+          <dimension name="XQFI" xvalue="164"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="741"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="741"/>
+          <dimension name="XTUR" xvalue="902"/>
+          <dimension name="XTUD" xvalue="751"/>
+          <dimension name="XTLC" xvalue="584"/>
+          <dimension name="XTLR" xvalue="678"/>
+          <dimension name="XTLD" xvalue="589"/>
+          <dimension name="XTFI" xvalue="670"/>
+          <dimension name="XQUC" xvalue="477"/>
+          <dimension name="XQLC" xvalue="423"/>
+          <dimension name="XQFI" xvalue="421"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="236"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="236"/>
+          <dimension name="XTUR" xvalue="397"/>
+          <dimension name="XTUD" xvalue="246"/>
+          <dimension name="XTLC" xvalue="79"/>
+          <dimension name="XTLR" xvalue="173"/>
+          <dimension name="XTLD" xvalue="84"/>
+          <dimension name="XTFI" xvalue="165"/>
+          <dimension name="XQUC" xvalue="-28"/>
+          <dimension name="XQLC" xvalue="-82"/>
+          <dimension name="XQFI" xvalue="-84"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="109"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="109"/>
+          <dimension name="XTUR" xvalue="270"/>
+          <dimension name="XTUD" xvalue="119"/>
+          <dimension name="XTLC" xvalue="-48"/>
+          <dimension name="XTLR" xvalue="46"/>
+          <dimension name="XTLD" xvalue="-43"/>
+          <dimension name="XTFI" xvalue="38"/>
+          <dimension name="XQUC" xvalue="-155"/>
+          <dimension name="XQLC" xvalue="-209"/>
+          <dimension name="XQFI" xvalue="-211"/>
+        </output>
+      </mapping>
+      <mapping>
+        <input>
+          <dimension name="XTRA" xvalue="111"/>
+        </input>
+        <output>
+          <dimension name="XTUC" xvalue="111"/>
+          <dimension name="XTUR" xvalue="272"/>
+          <dimension name="XTUD" xvalue="121"/>
+          <dimension name="XTLC" xvalue="-46"/>
+          <dimension name="XTLR" xvalue="48"/>
+          <dimension name="XTLD" xvalue="-41"/>
+          <dimension name="XTFI" xvalue="40"/>
+          <dimension name="XQUC" xvalue="-153"/>
+          <dimension name="XQLC" xvalue="-207"/>
+          <dimension name="XQFI" xvalue="-209"/>
         </output>
       </mapping>
       <mapping>
@@ -2461,126 +2603,6 @@
           <dimension name="YHAU" xvalue="68"/>
           <dimension name="YHAL" xvalue="68"/>
           <dimension name="YHAF" xvalue="68"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTEQ" xvalue="67"/>
-        </input>
-        <output>
-          <dimension name="XQUC" xvalue="67"/>
-          <dimension name="XQLC" xvalue="13"/>
-          <dimension name="XQFI" xvalue="11"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTEQ" xvalue="68"/>
-        </input>
-        <output>
-          <dimension name="XQUC" xvalue="68"/>
-          <dimension name="XQLC" xvalue="14"/>
-          <dimension name="XQFI" xvalue="12"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTEQ" xvalue="202"/>
-        </input>
-        <output>
-          <dimension name="XQUC" xvalue="202"/>
-          <dimension name="XQLC" xvalue="148"/>
-          <dimension name="XQFI" xvalue="146"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTEQ" xvalue="204"/>
-        </input>
-        <output>
-          <dimension name="XQUC" xvalue="204"/>
-          <dimension name="XQLC" xvalue="150"/>
-          <dimension name="XQFI" xvalue="148"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTEQ" xvalue="22"/>
-        </input>
-        <output>
-          <dimension name="XQUC" xvalue="22"/>
-          <dimension name="XQLC" xvalue="-32"/>
-          <dimension name="XQFI" xvalue="-34"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="XTEQ" xvalue="220"/>
-        </input>
-        <output>
-          <dimension name="XQUC" xvalue="220"/>
-          <dimension name="XQLC" xvalue="166"/>
-          <dimension name="XQFI" xvalue="164"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="YTEQ" xvalue="73"/>
-        </input>
-        <output>
-          <dimension name="YQUC" xvalue="73"/>
-          <dimension name="YQLC" xvalue="22"/>
-          <dimension name="YQFI" xvalue="76"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="YTEQ" xvalue="331"/>
-        </input>
-        <output>
-          <dimension name="YQUC" xvalue="331"/>
-          <dimension name="YQLC" xvalue="280"/>
-          <dimension name="YQFI" xvalue="334"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="YTEQ" xvalue="307"/>
-        </input>
-        <output>
-          <dimension name="YQUC" xvalue="307"/>
-          <dimension name="YQLC" xvalue="256"/>
-          <dimension name="YQFI" xvalue="310"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="YTEQ" xvalue="243"/>
-        </input>
-        <output>
-          <dimension name="YQUC" xvalue="243"/>
-          <dimension name="YQLC" xvalue="192"/>
-          <dimension name="YQFI" xvalue="246"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="YTEQ" xvalue="122"/>
-        </input>
-        <output>
-          <dimension name="YQUC" xvalue="122"/>
-          <dimension name="YQLC" xvalue="71"/>
-          <dimension name="YQFI" xvalue="125"/>
-        </output>
-      </mapping>
-      <mapping>
-        <input>
-          <dimension name="YTEQ" xvalue="91"/>
-        </input>
-        <output>
-          <dimension name="YQUC" xvalue="91"/>
-          <dimension name="YQLC" xvalue="40"/>
-          <dimension name="YQFI" xvalue="94"/>
         </output>
       </mapping>
     </mappings>

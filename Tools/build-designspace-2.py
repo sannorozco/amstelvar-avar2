@@ -103,7 +103,7 @@ class AmstelvarA2DesignSpaceBuilder:
     defaultName = 'wght400'
 
     parentAxesBuild  = True
-    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA XTEQ YTEQ'.split()
+    parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # XTEQ YTEQ
     parentAxesItalic = parentAxesRoman
 
     parentAxesDefaults = {
@@ -641,7 +641,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][1]
+    subFamilyName = ['Roman', 'Italic'][0]
 
     start = time.time()
 

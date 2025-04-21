@@ -16,11 +16,11 @@ sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 designspacePath  = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_avar2.designspace')
 measurementsPath = os.path.join(sourcesFolder, f'measurements.json')
 
-parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA XTEQ YTEQ'.split()
-parentAxesItalic = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA           XTEQ YTEQ'.split()
+parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # XTEQ YTEQ
+parentAxesItalic = parentAxesRoman
 
 parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
-parametricAxesItalic = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU      YHAL           XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
+parametricAxesItalic = parametricAxesRoman
 
 parentAxesDefaults = {
     'XOPQ' : 'XOUC',
