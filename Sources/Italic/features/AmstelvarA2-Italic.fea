@@ -1,20 +1,23 @@
-
-# figures
-
-@figures = [zero one two three four five six seven eight nine];
-
-# tabular
-
-@tab = [zero.tab one.tab two.tab three.tab four.tab five.tab six.tab seven.tab eight.tab nine.tab];
-@tab_off = [zero one two three four five six seven eight nine];
-
 languagesystem DFLT dflt;
 languagesystem latn dflt;
 
+@figures_proportional = [ zero     one     two     three     four     five     six     seven     eight     nine     ];
+@figures_tabular      = [ zero.tab one.tab two.tab three.tab four.tab five.tab six.tab seven.tab eight.tab nine.tab ];
+@figures_oldstyle     = [ zero.lc  one.lc  two.lc  three.lc  four.lc  five.lc  six.lc  seven.lc  eight.lc  nine.lc  ];
+
+feature lnum {
+    sub @figures_oldstyle by @figures_proportional;
+} lnum;
+
+feature onum {
+    sub @figures_proportional by @figures_oldstyle;
+    sub @figures_tabular      by @figures_oldstyle;
+} onum;
+
 feature tnum {
-    sub @tab_off by @tab;
-    } tnum;
+    sub @figures_proportional by @figures_tabular;
+} tnum;
     
 feature pnum {
-    sub @tab by @tab_off;
-    } pnum;
+    sub @figures_tabular by @figures_proportional;
+} pnum;
