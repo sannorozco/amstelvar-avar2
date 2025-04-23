@@ -7,7 +7,7 @@ subFamilyName = ['Roman', 'Italic'][1]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 
-preflight = True
+preflight = False
 
 assert os.path.exists(sourcesFolder)
 
