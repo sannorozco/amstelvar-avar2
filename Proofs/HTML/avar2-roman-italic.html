@@ -182,6 +182,40 @@
               <output class="form-control border-0 bg-transparent" id='GRAD_value'><small>0</small></output>
             </div>
           </div>
+
+          <hr/>
+
+          <!-- opentype features -->
+
+          <div class="row">
+            <div class='col-12' id='opentype-features'>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="onum" id="onum">
+                <label class="form-check-label" for="onum">
+                  <small><code>onum</code> oldstyle numbers</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="tnum" id="tnum">
+                <label class="form-check-label" for="tnum">
+                  <small><code>tnum</code> tabular numbers</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="lnum" id="lnum">
+                <label class="form-check-label" for="lnum">
+                  <small><code>lnum</code> lining numbers</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="pnum" id="pnum">
+                <label class="form-check-label" for="pnum">
+                  <small><code>pnum</code> proportional numbers</small>
+                </label>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xxl-10 vh-100 position-relative">
@@ -222,16 +256,17 @@
 
         // get UI elements
 
-        fontsize_slider    = document.getElementById("fontsize");
-        lineheight_slider  = document.getElementById("lineheight");
-        opsz_slider        = document.getElementById("opsz");
-        link_fontsize      = document.getElementById("synchFontSize");
-        language_selector  = document.getElementById("language");
-        colormode_selector = document.getElementById("colormode");
-        font_samples       = document.querySelectorAll(".sample");
-        axis_sliders       = document.querySelectorAll('.axis')
-        sample_original    = document.getElementById('sample_original')
-        sample_avar2       = document.getElementById('sample_avar2')
+        fontsize_slider     = document.getElementById("fontsize");
+        lineheight_slider   = document.getElementById("lineheight");
+        opsz_slider         = document.getElementById("opsz");
+        link_fontsize       = document.getElementById("synchFontSize");
+        language_selector   = document.getElementById("language");
+        colormode_selector  = document.getElementById("colormode");
+        font_samples        = document.querySelectorAll(".sample");
+        axis_sliders        = document.querySelectorAll('.axis')
+        sample_original     = document.getElementById('sample_original')
+        sample_avar2        = document.getElementById('sample_avar2')
+        features_checkboxes = document.querySelectorAll('#opentype-features input.form-check-input')
 
         // define UI behavior
 
@@ -291,6 +326,17 @@
           }
         }
 
+        function features_changed() {
+          var features = [];
+          features_checkboxes.forEach(function(checkbox) {
+            var value = checkbox.checked == true ? 1 : 0;
+            features.push('"' + checkbox.name + '" ' + value)
+          })
+          for (var i = 0; i < font_samples.length; i++) {
+            font_samples[i].style.fontFeatureSettings = features.join(", ")
+          }
+        }
+
         // bind behavior to elements
 
         fontsize_slider.addEventListener('input', fontsize_slider_changed)
@@ -302,6 +348,10 @@
 
         axis_sliders.forEach(function(slider) {
           slider.addEventListener('input', axis_sliders_changed)
+        })
+
+        features_checkboxes.forEach(function(checkbox) {
+          checkbox.addEventListener('input', features_changed)
         })
 
         sample_avar2.addEventListener("input", function() {
