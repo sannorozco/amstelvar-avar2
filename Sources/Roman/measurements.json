@@ -338,7 +338,7 @@
       "glyph 1": "seven",
       "point 1": "0",
       "glyph 2": "seven",
-      "point 2": "1",
+      "point 2": "11",
       "parent": "YSVA",
       "description": "Y vertical serif figures"
     },
@@ -497,10 +497,10 @@
     },
     "XTAB": {
       "direction": "x",
-      "glyph 1": "zero",
-      "point 1": "0",
-      "glyph 2": "zero",
-      "point 2": "6",
+      "glyph 1": "zero.tab",
+      "point 1": "-1",
+      "glyph 2": "zero.tab",
+      "point 2": "99",
       "parent": "",
       "description": "X figure width"
     },
@@ -735,7 +735,7 @@
       "point 1": "22",
       "glyph 2": "O",
       "point 2": 21,
-      "parent": "XTEQ",
+      "parent": "XTRA",
       "description": "X internal curvature uppercase"
     },
     "XQLC": {
@@ -744,7 +744,7 @@
       "point 1": "22",
       "glyph 2": "o",
       "point 2": "21",
-      "parent": "XTEQ",
+      "parent": "XTRA",
       "description": "X internal curvature lowercase"
     },
     "XQFI": {
@@ -753,7 +753,7 @@
       "point 1": "22",
       "glyph 2": "zero",
       "point 2": 21,
-      "parent": "XTEQ",
+      "parent": "XTRA",
       "description": "X internal curvature figures"
     },
     "YQUC": {
@@ -1175,7 +1175,7 @@
         "name": "XSVF",
         "direction": "x"
       },
-      "0 1": {
+      "0 11": {
         "name": "YSVF",
         "direction": "y"
       },
@@ -16188,6 +16188,10 @@
       "C 3": {
         "name": "YTFO",
         "direction": "y"
+      },
+      "-1 99": {
+        "name": "XTAB",
+        "direction": "x"
       }
     },
     "six.tab": {

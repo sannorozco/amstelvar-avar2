@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="guarani" format="2">
-  <advance width="1376"/>
+  <advance width="500"/>
   <unicode hex="20B2"/>
   <outline>
     <contour>
       <point x="452" y="-122" type="line"/>
       <point x="509" y="86" type="line"/>
       <point x="527" y="81" type="line"/>
-      <point x="733" y="871" type="line"/>
+      <point x="727" y="842" type="line"/>
       <point x="841" y="803" type="line"/>
       <point x="648" y="54" type="line"/>
       <point x="668" y="50" type="line"/>
@@ -19,7 +19,7 @@
       <point x="1022" y="1424" type="line"/>
       <point x="1001" y="1428" type="line"/>
       <point x="841" y="803" type="line"/>
-      <point x="733" y="871" type="line"/>
+      <point x="727" y="842" type="line"/>
       <point x="881" y="1455" type="line"/>
       <point x="861" y="1460" type="line"/>
     </contour>
@@ -56,5 +56,23 @@
       <point x="278" y="49"/>
       <point x="62" y="523"/>
     </contour>
+    <contour identifier="6XeEED8Yw6">
+      <point x="590" y="-231" type="move"/>
+      <point x="590" y="-231"/>
+      <point x="920" y="1727"/>
+      <point x="952" y="1727" type="curve" smooth="yes"/>
+    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.trailingOffCurves</key>
+      <dict>
+        <key>6XeEED8Yw6</key>
+        <array>
+          <integer>984</integer>
+          <integer>1727</integer>
+        </array>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

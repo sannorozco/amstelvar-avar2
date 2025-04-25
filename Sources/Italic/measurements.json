@@ -320,7 +320,7 @@
       "glyph 1": "z",
       "point 1": "10",
       "glyph 2": "z",
-      "point 2": "12",
+      "point 2": "8",
       "parent": "YSVA",
       "description": "Y vertical serif lowercase"
     },
@@ -329,7 +329,7 @@
       "glyph 1": "seven",
       "point 1": "0",
       "glyph 2": "seven",
-      "point 2": "1",
+      "point 2": "13",
       "parent": "YSVA",
       "description": "Y vertical serif figures"
     },
@@ -479,10 +479,10 @@
     },
     "XTAB": {
       "direction": "x",
-      "glyph 1": "zero",
-      "point 1": "0",
-      "glyph 2": "zero",
-      "point 2": "6",
+      "glyph 1": "zero.tab",
+      "point 1": "-1",
+      "glyph 2": "zero.tab",
+      "point 2": "99",
       "parent": "",
       "description": "X Figure width"
     },
@@ -1186,17 +1186,17 @@
         "name": "XSVF",
         "direction": "x"
       },
-      "0 1": {
+      "0 13": {
         "name": "YSVF",
-        "direction": "y"
-      },
-      "B 7": {
-        "name": "YTOS",
         "direction": "y"
       },
       "14 13": {
         "name": "XVAF",
         "direction": "x"
+      },
+      "B 7": {
+        "name": "YTOS",
+        "direction": "y"
       }
     },
     "eight": {
@@ -4537,11 +4537,11 @@
         "name": "XSVL",
         "direction": "a"
       },
-      "10 12": {
+      "10 8": {
         "name": "YSVL",
         "direction": "y"
       },
-      "25 23": {
+      "21 23": {
         "name": "YSVL",
         "direction": "y"
       },
@@ -11920,7 +11920,12 @@
       }
     },
     "breveinvertedcomb-stack": {},
-    "zero.tab": {},
+    "zero.tab": {
+      "-1 99": {
+        "name": "XTAB",
+        "direction": "x"
+      }
+    },
     "cedi": {
       "0 13": {
         "name": "XOFI",
@@ -12743,6 +12748,7 @@
     "uinvertedbreve": {},
     "umacron": {},
     "yhookabove": {},
-    "obreve": {}
+    "obreve": {},
+    "figuredash": {}
   }
 }
