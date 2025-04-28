@@ -74,6 +74,12 @@ defaultLocation = { name: permille(measurementsDefault.values[name], defaultFont
 
 parentMeasurement = fontMeasurements[parentAxisName]
 
+matchRanges = {
+    'XQUC' : 'XTUR',
+    'XQLC' : 'XTLR',
+    'XQFI' : 'XTFI',
+}
+
 # get parametric axes for parent
 parametricAxes = {}
 childNames = [a[0] for a in fontMeasurements.items() if a[1]['parent'] == parentAxisName]
@@ -179,9 +185,11 @@ for i, axisName in enumerate(axes.keys()):
             for aName, a in axes.items():
                 if aName == parentAxis:
                     continue
+
                 aShift = - a['default'] + xDef
                 minValue = a['minimum'] 
                 maxValue = a['maximum'] 
+
                 ### NOT WORKING YET
                 # if aName != parentAxisName:
                 #     if trimExtremes:
@@ -191,6 +199,7 @@ for i, axisName in enumerate(axes.keys()):
                 #         elif maxValue < xMax:
                 #             print('max', maxValue, xMax)
                 #             maxValue = xMax
+
                 steps += [ minValue + aShift, maxValue + aShift ]
             fontSize(fs2)
 
