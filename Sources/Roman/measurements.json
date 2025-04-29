@@ -12445,6 +12445,10 @@
         "name": "XTFI",
         "direction": "x"
       },
+      "B 3": {
+        "name": "YTLC",
+        "direction": "y"
+      },
       "-1 0": {
         "name": "XUCR",
         "direction": "x"
@@ -12452,10 +12456,6 @@
       "6 99": {
         "name": "XUCR",
         "direction": "x"
-      },
-      "B 3": {
-        "name": "YTLC",
-        "direction": "y"
       },
       "22 21": {
         "name": "XQLC",
@@ -12874,6 +12874,18 @@
       },
       "13 7": {
         "name": "XTFI",
+        "direction": "x"
+      },
+      "11 10": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "10 9": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XQFI",
         "direction": "x"
       }
     },
@@ -13385,6 +13397,22 @@
       "13 7": {
         "name": "XTFI",
         "direction": "x"
+      },
+      "11 10": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "10 9": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "16 17": {
+        "name": "XQFI",
+        "direction": "x"
       }
     },
     "franc": {},
@@ -13426,6 +13454,30 @@
       "26 99": {
         "name": "XUCR",
         "direction": "x"
+      },
+      "16 15": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "10 11": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "9 10": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "8 7": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "12 13": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "13 14": {
+        "name": "YQFI",
+        "direction": "y"
       }
     },
     "backslash": {
@@ -16181,6 +16233,10 @@
         "name": "YTFI",
         "direction": "y"
       },
+      "-1 99": {
+        "name": "XTAB",
+        "direction": "x"
+      },
       "B 9": {
         "name": "YTFO",
         "direction": "y"
@@ -16189,9 +16245,37 @@
         "name": "YTFO",
         "direction": "y"
       },
-      "-1 99": {
-        "name": "XTAB",
+      "22 21": {
+        "name": "XQFI",
         "direction": "x"
+      },
+      "21 20": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "14 15": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "15 16": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "12 23": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "18 19": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "13 12": {
+        "name": "YQFI",
+        "direction": "y"
+      },
+      "17 18": {
+        "name": "YQFI",
+        "direction": "y"
       }
     },
     "six.tab": {
@@ -16221,6 +16305,18 @@
       },
       "7 13": {
         "name": "XTFI",
+        "direction": "x"
+      },
+      "9 10": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "10 11": {
+        "name": "XQFI",
+        "direction": "x"
+      },
+      "16 15": {
+        "name": "XQFI",
         "direction": "x"
       }
     },
@@ -16364,6 +16460,7 @@
     "omicron": {},
     "upsilondieresistonos": {},
     "omegatonos": {},
-    "ucyr": {}
+    "ucyr": {},
+    "figuredash": {}
   }
 }

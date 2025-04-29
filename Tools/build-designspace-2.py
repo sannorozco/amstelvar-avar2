@@ -48,10 +48,21 @@ def makeParentAxis(parentName, parametricAxes, defaultName):
             print(f'\t{ parentValue } { mapping }')
 
     '''
+    # THIS IS THE WRONG PLACE FOR THIS KIND OF DATA!
+    # MOVE TO DESIGNSPACE BUILDER? MEASUREMENTS FORMAT?
+    matchRangeAxes = {
+        'XQUC' : 'XTUR',
+        'XQLC' : 'XTLR',
+        'XQFI' : 'XTFI',
+    }
+
     defaultValue = parametricAxes[defaultName]['default']
     minValues = []
     maxValues = []
     for axisName, axis in parametricAxes.items():
+        # SKIP MATCHED RANGE AXES
+        if axisName in matchRangeAxes:
+            continue
         axisShift = defaultValue - axis['default'] 
         minValue  = axis['minimum'] + axisShift
         maxValue  = axis['maximum'] + axisShift
@@ -67,12 +78,47 @@ def makeParentAxis(parentName, parametricAxes, defaultName):
 
     mappingValues = set(minValues + maxValues)
     mappings = {}
-    for mappingValue in mappingValues:
+    for mappingValue in sorted(mappingValues):
         mappings[mappingValue] = {}
         for axisName, axis in parametricAxes.items():
+            # SKIP MATCHED RANGE AXES
+            if axisName in matchRangeAxes:
+                continue
             axisShift = defaultValue - axis['default'] 
             value = mappingValue - axisShift
             mappings[mappingValue][axisName] = value
+
+    # ADD AXES WITH MATCHED RANGES
+
+    for mappingValue, maps in mappings.items():
+        for axisName, mapAxisName in matchRangeAxes.items():
+            if mapAxisName in maps:
+                
+                axisDefault = parametricAxes[axisName]['default']
+                axisMinimum = parametricAxes[axisName]['minimum']
+                axisMaximum = parametricAxes[axisName]['maximum']
+
+                mapAxisDefault = parametricAxes[mapAxisName]['default']
+                mapAxisMinimum = parametricAxes[mapAxisName]['minimum']
+                mapAxisMaximum = parametricAxes[mapAxisName]['maximum']
+
+                mapAxisValue = maps[mapAxisName]
+
+                if mappingValue < defaultValue:
+                    axisRange = axisDefault    - axisMinimum   
+                    mapRange  = mapAxisDefault - mapAxisMinimum
+                    mapScale  = axisRange / mapRange
+                    mapValue  = (mapAxisValue - mapAxisMinimum) * mapScale
+                    axisValue = axisMinimum + mapValue
+
+                elif mappingValue > defaultValue:
+                    axisRange = axisMaximum    - axisDefault
+                    mapRange  = mapAxisMaximum - mapAxisDefault
+                    mapScale  = axisRange / mapRange
+                    mapValue  = (mapAxisValue - mapAxisDefault) * mapScale
+                    axisValue = axisDefault + mapValue
+
+                maps[axisName] = int(axisValue)
 
     return parentAxis, mappings
 
