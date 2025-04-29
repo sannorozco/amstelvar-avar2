@@ -72,7 +72,7 @@
     <axis tag="XQFI" name="XQFI" minimum="11" maximum="148" default="80"/>
     <axis tag="YQFI" name="YQFI" minimum="76" maximum="334" default="144"/>
     <mappings>
-      <mapping>
+      <mapping description="opsz144">
         <input>
           <dimension name="Optical size" xvalue="144"/>
         </input>
@@ -133,7 +133,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wdth125">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Width" xvalue="125"/>
@@ -195,7 +195,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wdth50">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Width" xvalue="50"/>
@@ -257,7 +257,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wght100">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="100"/>
@@ -319,7 +319,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wght1000">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="1000"/>
@@ -381,7 +381,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wght1000_wdth125">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="1000"/>
@@ -444,7 +444,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wght1000_wdth50">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="1000"/>
@@ -507,7 +507,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wght100_wdth125">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="100"/>
@@ -570,7 +570,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz144_wght100_wdth50">
         <input>
           <dimension name="Optical size" xvalue="144"/>
           <dimension name="Weight" xvalue="100"/>
@@ -633,7 +633,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8">
         <input>
           <dimension name="Optical size" xvalue="8"/>
         </input>
@@ -694,7 +694,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wdth125">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Width" xvalue="125"/>
@@ -756,7 +756,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wdth50">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Width" xvalue="50"/>
@@ -818,7 +818,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wght100">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="100"/>
@@ -880,7 +880,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wght1000">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="1000"/>
@@ -942,7 +942,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wght1000_wdth125">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="1000"/>
@@ -1005,7 +1005,7 @@
           <dimension name="BARS" xvalue="28"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wght1000_wdth50">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="1000"/>
@@ -1068,7 +1068,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wght100_wdth125">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="100"/>
@@ -1131,7 +1131,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="opsz8_wght100_wdth50">
         <input>
           <dimension name="Optical size" xvalue="8"/>
           <dimension name="Weight" xvalue="100"/>
@@ -1194,7 +1194,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wdth125">
         <input>
           <dimension name="Width" xvalue="125"/>
         </input>
@@ -1255,7 +1255,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wdth50">
         <input>
           <dimension name="Width" xvalue="50"/>
         </input>
@@ -1316,7 +1316,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght100">
         <input>
           <dimension name="Weight" xvalue="100"/>
         </input>
@@ -1377,7 +1377,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght1000">
         <input>
           <dimension name="Weight" xvalue="1000"/>
         </input>
@@ -1438,7 +1438,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght1000_wdth125">
         <input>
           <dimension name="Weight" xvalue="1000"/>
           <dimension name="Width" xvalue="125"/>
@@ -1500,7 +1500,7 @@
           <dimension name="BARS" xvalue="28"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght1000_wdth50">
         <input>
           <dimension name="Weight" xvalue="1000"/>
           <dimension name="Width" xvalue="50"/>
@@ -1562,7 +1562,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght100_wdth125">
         <input>
           <dimension name="Weight" xvalue="100"/>
           <dimension name="Width" xvalue="125"/>
@@ -1624,7 +1624,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght100_wdth50">
         <input>
           <dimension name="Weight" xvalue="100"/>
           <dimension name="Width" xvalue="50"/>
@@ -1686,7 +1686,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="wght400">
         <input>
           <dimension name="Weight" xvalue="400"/>
         </input>
@@ -1747,7 +1747,7 @@
           <dimension name="BARS" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTSP-100">
         <input>
           <dimension name="XTSP" xvalue="-100"/>
         </input>
@@ -1811,7 +1811,7 @@
           <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTSP100">
         <input>
           <dimension name="XTSP" xvalue="100"/>
         </input>
@@ -1875,7 +1875,7 @@
           <dimension name="GRAD" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XOPQ4">
         <input>
           <dimension name="XOPQ" xvalue="4"/>
         </input>
@@ -1885,7 +1885,7 @@
           <dimension name="XOFI" xvalue="2"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XOPQ6">
         <input>
           <dimension name="XOPQ" xvalue="6"/>
         </input>
@@ -1895,7 +1895,7 @@
           <dimension name="XOFI" xvalue="4"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XOPQ9">
         <input>
           <dimension name="XOPQ" xvalue="9"/>
         </input>
@@ -1905,7 +1905,7 @@
           <dimension name="XOFI" xvalue="7"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XOPQ298">
         <input>
           <dimension name="XOPQ" xvalue="298"/>
         </input>
@@ -1915,7 +1915,7 @@
           <dimension name="XOFI" xvalue="296"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XOPQ304">
         <input>
           <dimension name="XOPQ" xvalue="304"/>
         </input>
@@ -1925,7 +1925,7 @@
           <dimension name="XOFI" xvalue="302"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XOPQ310">
         <input>
           <dimension name="XOPQ" xvalue="310"/>
         </input>
@@ -1935,7 +1935,7 @@
           <dimension name="XOFI" xvalue="308"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YOPQ4">
         <input>
           <dimension name="YOPQ" xvalue="4"/>
         </input>
@@ -1945,7 +1945,7 @@
           <dimension name="YOFI" xvalue="-6"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YOPQ12">
         <input>
           <dimension name="YOPQ" xvalue="12"/>
         </input>
@@ -1955,7 +1955,7 @@
           <dimension name="YOFI" xvalue="2"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YOPQ14">
         <input>
           <dimension name="YOPQ" xvalue="14"/>
         </input>
@@ -1965,7 +1965,7 @@
           <dimension name="YOFI" xvalue="4"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YOPQ157">
         <input>
           <dimension name="YOPQ" xvalue="157"/>
         </input>
@@ -1975,7 +1975,7 @@
           <dimension name="YOFI" xvalue="147"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YOPQ206">
         <input>
           <dimension name="YOPQ" xvalue="206"/>
         </input>
@@ -1985,7 +1985,7 @@
           <dimension name="YOFI" xvalue="196"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YOPQ208">
         <input>
           <dimension name="YOPQ" xvalue="208"/>
         </input>
@@ -1995,7 +1995,7 @@
           <dimension name="YOFI" xvalue="198"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA-101">
         <input>
           <dimension name="XTRA" xvalue="-101"/>
         </input>
@@ -2012,7 +2012,7 @@
           <dimension name="XQFI" xvalue="-39"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA66">
         <input>
           <dimension name="XTRA" xvalue="66"/>
         </input>
@@ -2029,7 +2029,7 @@
           <dimension name="XQFI" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA72">
         <input>
           <dimension name="XTRA" xvalue="72"/>
         </input>
@@ -2046,7 +2046,7 @@
           <dimension name="XQFI" xvalue="1"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA109">
         <input>
           <dimension name="XTRA" xvalue="109"/>
         </input>
@@ -2063,7 +2063,7 @@
           <dimension name="XQFI" xvalue="10"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA111">
         <input>
           <dimension name="XTRA" xvalue="111"/>
         </input>
@@ -2080,7 +2080,7 @@
           <dimension name="XQFI" xvalue="11"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA199">
         <input>
           <dimension name="XTRA" xvalue="199"/>
         </input>
@@ -2097,7 +2097,7 @@
           <dimension name="XQFI" xvalue="32"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA236">
         <input>
           <dimension name="XTRA" xvalue="236"/>
         </input>
@@ -2114,7 +2114,7 @@
           <dimension name="XQFI" xvalue="40"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA653">
         <input>
           <dimension name="XTRA" xvalue="653"/>
         </input>
@@ -2131,7 +2131,7 @@
           <dimension name="XQFI" xvalue="142"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA657">
         <input>
           <dimension name="XTRA" xvalue="657"/>
         </input>
@@ -2148,7 +2148,7 @@
           <dimension name="XQFI" xvalue="143"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA668">
         <input>
           <dimension name="XTRA" xvalue="668"/>
         </input>
@@ -2165,7 +2165,7 @@
           <dimension name="XQFI" xvalue="146"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA675">
         <input>
           <dimension name="XTRA" xvalue="675"/>
         </input>
@@ -2182,7 +2182,7 @@
           <dimension name="XQFI" xvalue="148"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA676">
         <input>
           <dimension name="XTRA" xvalue="676"/>
         </input>
@@ -2199,7 +2199,7 @@
           <dimension name="XQFI" xvalue="148"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA688">
         <input>
           <dimension name="XTRA" xvalue="688"/>
         </input>
@@ -2216,7 +2216,7 @@
           <dimension name="XQFI" xvalue="151"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XTRA741">
         <input>
           <dimension name="XTRA" xvalue="741"/>
         </input>
@@ -2233,7 +2233,7 @@
           <dimension name="XQFI" xvalue="164"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSHA-25">
         <input>
           <dimension name="XSHA" xvalue="-25"/>
         </input>
@@ -2243,7 +2243,7 @@
           <dimension name="XSHF" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSHA0">
         <input>
           <dimension name="XSHA" xvalue="0"/>
         </input>
@@ -2253,7 +2253,7 @@
           <dimension name="XSHF" xvalue="25"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSHA30">
         <input>
           <dimension name="XSHA" xvalue="30"/>
         </input>
@@ -2263,7 +2263,7 @@
           <dimension name="XSHF" xvalue="55"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSHA154">
         <input>
           <dimension name="XSHA" xvalue="154"/>
         </input>
@@ -2273,7 +2273,7 @@
           <dimension name="XSHF" xvalue="179"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSHA214">
         <input>
           <dimension name="XSHA" xvalue="214"/>
         </input>
@@ -2283,7 +2283,7 @@
           <dimension name="XSHF" xvalue="239"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSHA0">
         <input>
           <dimension name="YSHA" xvalue="0"/>
         </input>
@@ -2293,7 +2293,7 @@
           <dimension name="YSHF" xvalue="-3"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSHA3">
         <input>
           <dimension name="YSHA" xvalue="3"/>
         </input>
@@ -2303,7 +2303,7 @@
           <dimension name="YSHF" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSHA10">
         <input>
           <dimension name="YSHA" xvalue="10"/>
         </input>
@@ -2313,7 +2313,7 @@
           <dimension name="YSHF" xvalue="7"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSHA150">
         <input>
           <dimension name="YSHA" xvalue="150"/>
         </input>
@@ -2323,7 +2323,7 @@
           <dimension name="YSHF" xvalue="147"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSVA-6">
         <input>
           <dimension name="XSVA" xvalue="-6"/>
         </input>
@@ -2333,7 +2333,7 @@
           <dimension name="XSVF" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSVA0">
         <input>
           <dimension name="XSVA" xvalue="0"/>
         </input>
@@ -2343,7 +2343,7 @@
           <dimension name="XSVF" xvalue="6"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSVA1">
         <input>
           <dimension name="XSVA" xvalue="1"/>
         </input>
@@ -2353,7 +2353,7 @@
           <dimension name="XSVF" xvalue="7"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSVA125">
         <input>
           <dimension name="XSVA" xvalue="125"/>
         </input>
@@ -2363,7 +2363,7 @@
           <dimension name="XSVF" xvalue="131"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSVA130">
         <input>
           <dimension name="XSVA" xvalue="130"/>
         </input>
@@ -2373,7 +2373,7 @@
           <dimension name="XSVF" xvalue="136"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XSVA147">
         <input>
           <dimension name="XSVA" xvalue="147"/>
         </input>
@@ -2383,7 +2383,7 @@
           <dimension name="XSVF" xvalue="153"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSVA59">
         <input>
           <dimension name="YSVA" xvalue="59"/>
         </input>
@@ -2393,7 +2393,7 @@
           <dimension name="YSVF" xvalue="-48"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSVA107">
         <input>
           <dimension name="YSVA" xvalue="107"/>
         </input>
@@ -2403,7 +2403,7 @@
           <dimension name="YSVF" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSVA194">
         <input>
           <dimension name="YSVA" xvalue="194"/>
         </input>
@@ -2413,7 +2413,7 @@
           <dimension name="YSVF" xvalue="87"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSVA274">
         <input>
           <dimension name="YSVA" xvalue="274"/>
         </input>
@@ -2423,7 +2423,7 @@
           <dimension name="YSVF" xvalue="167"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSVA308">
         <input>
           <dimension name="YSVA" xvalue="308"/>
         </input>
@@ -2433,7 +2433,7 @@
           <dimension name="YSVF" xvalue="201"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YSVA329">
         <input>
           <dimension name="YSVA" xvalue="329"/>
         </input>
@@ -2443,7 +2443,7 @@
           <dimension name="YSVF" xvalue="222"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XVAA0">
         <input>
           <dimension name="XVAA" xvalue="0"/>
         </input>
@@ -2453,7 +2453,7 @@
           <dimension name="XVAF" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XVAA1">
         <input>
           <dimension name="XVAA" xvalue="1"/>
         </input>
@@ -2463,7 +2463,7 @@
           <dimension name="XVAF" xvalue="1"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XVAA8">
         <input>
           <dimension name="XVAA" xvalue="8"/>
         </input>
@@ -2473,7 +2473,7 @@
           <dimension name="XVAF" xvalue="8"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XVAA47">
         <input>
           <dimension name="XVAA" xvalue="47"/>
         </input>
@@ -2483,7 +2483,7 @@
           <dimension name="XVAF" xvalue="47"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XVAA62">
         <input>
           <dimension name="XVAA" xvalue="62"/>
         </input>
@@ -2493,7 +2493,7 @@
           <dimension name="XVAF" xvalue="62"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="XVAA100">
         <input>
           <dimension name="XVAA" xvalue="100"/>
         </input>
@@ -2503,7 +2503,7 @@
           <dimension name="XVAF" xvalue="100"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YHAA0">
         <input>
           <dimension name="YHAA" xvalue="0"/>
         </input>
@@ -2513,7 +2513,7 @@
           <dimension name="YHAF" xvalue="0"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YHAA42">
         <input>
           <dimension name="YHAA" xvalue="42"/>
         </input>
@@ -2523,7 +2523,7 @@
           <dimension name="YHAF" xvalue="42"/>
         </output>
       </mapping>
-      <mapping>
+      <mapping description="YHAA68">
         <input>
           <dimension name="YHAA" xvalue="68"/>
         </input>

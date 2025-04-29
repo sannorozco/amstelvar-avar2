@@ -507,6 +507,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
             m.inputLocation  = inputLocation
             m.outputLocation = outputLocation
+            m.description    = styleName
 
             self.designspace.addAxisMapping(m)
 
