@@ -315,7 +315,6 @@ class AmstelvarA2DesignSpaceBuilder:
             self.designspace.addAxis(a)
 
         # add custom BARS axis
-
         a = AxisDescriptor()
         a.name    = 'BARS'
         a.tag     = 'BARS'
@@ -323,16 +322,6 @@ class AmstelvarA2DesignSpaceBuilder:
         a.maximum = 100
         a.default = 0
         self.designspace.addAxis(a)
-
-        # # custom YTEQ axis
-        # if self.subFamilyName == 'Roman':
-        #     a = AxisDescriptor()
-        #     a.name    = 'YTEQ'
-        #     a.tag     = 'YTEQ'
-        #     a.minimum = 0
-        #     a.maximum = 100
-        #     a.default = 0
-        #     self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
@@ -701,7 +690,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][1]
+    subFamilyName = ['Roman', 'Italic'][0]
 
     start = time.time()
 
