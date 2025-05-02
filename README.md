@@ -1,7 +1,7 @@
 AmstelvarA2
 ===========
 
-Alpha version of Amstelvar with avar2 data. (work in progress)
+Alpha version of Amstelvar with avar2 data. (work in progress) 
 
 
 Folder structure
