@@ -486,6 +486,29 @@ class AmstelvarA2DesignSpaceBuilder:
         with open(self.blendsPath, 'w', encoding='utf-8') as f:
             json.dump(blendsDict, f, indent=2)
 
+
+    def patchBlendsFile(self):
+
+        # import blends data
+        with open(self.blendsPath, 'r', encoding='utf-8') as f:
+            blendsDict = json.load(f)
+
+        # import & apply patch data
+        patchPath = self.blendsPath.replace('.json', '_patch.json')
+        with open(patchPath, 'r', encoding='utf-8') as f:
+            patchDict = json.load(f)
+
+        for key1, value1 in patchDict.items():
+            if key1 not in blendsDict:
+                print(f'{key1} not in blends dict')
+                continue
+            for key2, value2 in value1.items():
+                blendsDict[key1][key2] = value2
+
+        # # save patched blends data
+        # with open(self.blendsPath, 'w', encoding='utf-8') as f:
+        #     json.dump(blendsDict, f, indent=2)
+
     def addMappings(self):
 
         blendedAxes    = self.blendedAxes
@@ -523,6 +546,7 @@ class AmstelvarA2DesignSpaceBuilder:
     def build(self):
         print(f'building {os.path.split(self.designspacePath)[-1]}...')
         self.buildBlendsFile()
+        # self.patchBlendsFile()
         self.designspace = DesignSpaceDocument()
         self.addBlendedAxes()
         self.addParametricAxes()
@@ -633,7 +657,7 @@ class AmstelvarA2DesignSpaceBuilder:
             cmd  = ['/opt/homebrew/bin/fontmake']
             cmd += ['-m', self.designspacePath]
             cmd += ['-o', 'ttf']
-            cmd += ['-i', instance.name]
+            cmd += ['-i', instance.name, '--expand-features-to-instances']
             cmd += ['--feature-writer', 'None']
             cmd += ['--output-path', ttfPath]
             cmd += ['--keep-direction', '--keep-overlaps']
@@ -664,6 +688,7 @@ class AmstelvarA2DesignSpaceBuilder:
             if slantOffset:
                 for ufoPath in ufoPaths:
                     f = OpenFont(ufoPath, showInterface=False)
+                    f.features.text = '' # clear OpenType features
                     f.lib['com.typemytype.robofont.italicSlantOffset'] = slantOffset
                     f.save()
                     f.close()
@@ -690,7 +715,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][0]
+    subFamilyName = ['Roman', 'Italic'][1]
 
     start = time.time()
 
@@ -698,7 +723,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    # D2.buildInstancesVariableFont(clear=True, ufo=True)
+    D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
 
     end = time.time()

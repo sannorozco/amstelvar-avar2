@@ -87,7 +87,9 @@ for opsz in [14, 8, 144]:
                 instanceName.append(f'wdth{wdth}')
             instanceName = '_'.join(instanceName)
 
-            assert instanceName in _instances1
+            if instanceName not in _instances1:
+                # print(instanceName)
+                continue
 
             instancePath1 = os.path.join(instancesFolder1, f'AmstelvarA2-{subFamilyName}_avar2_{instanceName}.ufo')
             instancePath2 = os.path.join(instancesFolder2, f'Amstelvar-{subFamilyName}_{instanceName}.ufo')
