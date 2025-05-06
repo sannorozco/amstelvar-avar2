@@ -14,7 +14,7 @@ subFamilyName = ['Roman', 'Italic'][0]
 fs = 120              # font size
 p  = 25, 10, 10, 10   # padding
 
-chars = list('nodae')
+chars = list('HOGCE')
 
 wghts = [100, 400, 1000]
 wdths = [50, 100, 150]

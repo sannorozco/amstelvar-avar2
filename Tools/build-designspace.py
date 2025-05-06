@@ -166,7 +166,7 @@ class AmstelvarA2DesignSpaceBuilder:
         'YTEQ' : 'YQUC',
     }
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR XTAB WDSP XDOT XQUC YQUC XQLC YQLC XQFI YQFI'.split() # BARS
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR XTAB WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
     parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [
@@ -235,7 +235,6 @@ class AmstelvarA2DesignSpaceBuilder:
     def defaultLocation(self):
         L = { name: permille(self.measurementsDefault.values[name], self.unitsPerEm) for name in self.parametricAxes }
         L['GRAD'] = 0
-        L['BARS'] = 0
         return L
 
     @property
@@ -315,13 +314,23 @@ class AmstelvarA2DesignSpaceBuilder:
             self.designspace.addAxis(a)
 
         # add custom BARS axis
-        a = AxisDescriptor()
-        a.name    = 'BARS'
-        a.tag     = 'BARS'
-        a.minimum = 0
-        a.maximum = 100
-        a.default = 0
-        self.designspace.addAxis(a)
+        # a = AxisDescriptor()
+        # a.name    = 'BARS'
+        # a.tag     = 'BARS'
+        # a.minimum = 0
+        # a.maximum = 100
+        # a.default = 100
+        # self.designspace.addAxis(a)
+
+        # # custom YTEQ axis
+        # if self.subFamilyName == 'Roman':
+        #     a = AxisDescriptor()
+        #     a.name    = 'YTEQ'
+        #     a.tag     = 'YTEQ'
+        #     a.minimum = 0
+        #     a.maximum = 100
+        #     a.default = 0
+        #     self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
@@ -336,17 +345,6 @@ class AmstelvarA2DesignSpaceBuilder:
         # add custom parametric sources
         axis = 'GRAD'
         for value in [-300, 500]:
-            src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = f'{self.familyName} {self.subFamilyName}'
-            src.styleName  = f'{axis}{value}'
-            L = self.defaultLocation.copy()
-            L[axis] = value
-            src.location = L
-            self.designspace.addSource(src)
-
-        axis = 'BARS'
-        for value in [100]:
             src = SourceDescriptor()
             src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
             src.familyName = f'{self.familyName} {self.subFamilyName}'
@@ -690,7 +688,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][0]
+    subFamilyName = ['Roman', 'Italic'][1]
 
     start = time.time()
 
