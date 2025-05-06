@@ -3,15 +3,38 @@
 <plist version="1.0">
   <dict>
     <key>ascender</key>
-    <integer>1500</integer>
+    <integer>1568</integer>
     <key>capHeight</key>
     <integer>1500</integer>
     <key>descender</key>
-    <integer>-480</integer>
+    <integer>-428</integer>
     <key>familyName</key>
-    <string>AmstelvarA2 Roman</string>
+    <string>AmstelvarA2 Italic</string>
     <key>guidelines</key>
-    <array/>
+    <array>
+      <dict>
+        <key>angle</key>
+        <real>176.0</real>
+        <key>identifier</key>
+        <string>QLpK01J30W</string>
+        <key>x</key>
+        <integer>877</integer>
+        <key>y</key>
+        <integer>1531</integer>
+      </dict>
+      <dict>
+        <key>angle</key>
+        <real>78.0</real>
+        <key>identifier</key>
+        <string>5mWyZiMs4G</string>
+        <key>x</key>
+        <integer>265</integer>
+        <key>y</key>
+        <integer>1168</integer>
+      </dict>
+    </array>
+    <key>italicAngle</key>
+    <integer>-11</integer>
     <key>openTypeOS2WeightClass</key>
     <integer>400</integer>
     <key>openTypeOS2WidthClass</key>
@@ -29,7 +52,7 @@
     <key>postscriptStemSnapV</key>
     <array/>
     <key>styleName</key>
-    <string>YSVL110</string>
+    <string>BARS100</string>
     <key>unitsPerEm</key>
     <integer>2000</integer>
     <key>versionMajor</key>
