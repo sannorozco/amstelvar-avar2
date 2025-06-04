@@ -5283,17 +5283,12 @@
 				<key>glyphNames</key>
 				<array>
 					<string>H</string>
-					<string>B</string>
 					<string>E</string>
 					<string>F</string>
 					<string>I</string>
 					<string>J</string>
 					<string>L</string>
-					<string>P</string>
-					<string>R</string>
-					<string>S</string>
 					<string>T</string>
-					<string>U</string>
 					<string>Egrave</string>
 					<string>Eacute</string>
 					<string>Ecircumflex</string>
@@ -5302,10 +5297,6 @@
 					<string>Iacute</string>
 					<string>Icircumflex</string>
 					<string>Idieresis</string>
-					<string>Ugrave</string>
-					<string>Uacute</string>
-					<string>Ucircumflex</string>
-					<string>Udieresis</string>
 					<string>Thorn</string>
 					<string>Germandbls</string>
 					<string>horizontalbar</string>
@@ -5386,23 +5377,9 @@
 					<string>Lcaron</string>
 					<string>Ldot</string>
 					<string>Lslash</string>
-					<string>Racute</string>
-					<string>Rcommaaccent</string>
-					<string>Rcaron</string>
-					<string>Sacute</string>
-					<string>Scircumflex</string>
-					<string>Scedilla</string>
-					<string>Scaron</string>
 					<string>Tcedilla</string>
 					<string>Tcaron</string>
 					<string>Tbar</string>
-					<string>Utilde</string>
-					<string>Umacron</string>
-					<string>Ubreve</string>
-					<string>Uring</string>
-					<string>Uhungarumlaut</string>
-					<string>Uogonek</string>
-					<string>Uhorn</string>
 					<string>IJacute</string>
 					<string>Jacute.loclNLD</string>
 					<string>Iacute_J.loclNLD</string>
@@ -5412,11 +5389,6 @@
 					<string>Einvertedbreve</string>
 					<string>Idblgrave</string>
 					<string>Iinvertedbreve</string>
-					<string>Rdblgrave</string>
-					<string>Rinvertedbreve</string>
-					<string>Udblgrave</string>
-					<string>Uinvertedbreve</string>
-					<string>Scommaaccent</string>
 					<string>Tcommaaccent</string>
 					<string>Edotbelow</string>
 					<string>Ehookabove</string>
@@ -5428,18 +5400,10 @@
 					<string>Ecircumflexdotbelow</string>
 					<string>Ihookabove</string>
 					<string>Idotbelow</string>
-					<string>Udotbelow</string>
-					<string>Uhookabove</string>
-					<string>Uhornacute</string>
-					<string>Uhorngrave</string>
-					<string>Uhornhookabove</string>
-					<string>Uhorntilde</string>
-					<string>Uhorndotbelow</string>
 					<string>horizontalbarH</string>
 					<string>tonos.case</string>
 					<string>tonoscomb.case</string>
 					<string>Dje</string>
-					<string>Dze</string>
 					<string>Iukran</string>
 					<string>Yi</string>
 					<string>Je</string>
@@ -5448,7 +5412,6 @@
 					<string>Tshe</string>
 					<string>Dzhe</string>
 					<string>Be</string>
-					<string>Ve</string>
 					<string>Ghe</string>
 					<string>Gje</string>
 					<string>De</string>
@@ -5467,7 +5430,6 @@
 					<string>El</string>
 					<string>En</string>
 					<string>Pe</string>
-					<string>Er</string>
 					<string>Te</string>
 					<string>Tse</string>
 					<string>Che</string>
@@ -5496,8 +5458,6 @@
 					<string>Yamacron</string>
 					<string>breve.cyr.case</string>
 					<string>breve.cyrcomb.case</string>
-					<string>hornU</string>
-					<string>Beta</string>
 					<string>Gamma</string>
 					<string>Epsilon</string>
 					<string>Epsilontonos</string>
@@ -5508,7 +5468,6 @@
 					<string>Iotadieresis</string>
 					<string>Xi</string>
 					<string>Pi</string>
-					<string>Rho</string>
 					<string>Sigma</string>
 					<string>Tau</string>
 					<string>Psi</string>
@@ -5525,10 +5484,14 @@
 			<dict>
 				<key>glyphNames</key>
 				<array>
-					<string>O</string>
-					<string>Q</string>
 					<string>C</string>
 					<string>G</string>
+					<string>O</string>
+					<string>Q</string>
+					<string>B</string>
+					<string>R</string>
+					<string>S</string>
+					<string>U</string>
 					<string>Ccedilla</string>
 					<string>Ograve</string>
 					<string>Oacute</string>
@@ -5597,6 +5560,42 @@
 					<string>Dcroat</string>
 					<string>DZcaron</string>
 					<string>Dcaron</string>
+					<string>hornU</string>
+					<string>Ugrave</string>
+					<string>Uacute</string>
+					<string>Ucircumflex</string>
+					<string>Udieresis</string>
+					<string>Racute</string>
+					<string>Rcommaaccent</string>
+					<string>Rcaron</string>
+					<string>Sacute</string>
+					<string>Scircumflex</string>
+					<string>Scedilla</string>
+					<string>Scaron</string>
+					<string>Utilde</string>
+					<string>Umacron</string>
+					<string>Ubreve</string>
+					<string>Uring</string>
+					<string>Uhungarumlaut</string>
+					<string>Uogonek</string>
+					<string>Uhorn</string>
+					<string>Rdblgrave</string>
+					<string>Rinvertedbreve</string>
+					<string>Udblgrave</string>
+					<string>Uinvertedbreve</string>
+					<string>Scommaaccent</string>
+					<string>Udotbelow</string>
+					<string>Uhookabove</string>
+					<string>Uhornacute</string>
+					<string>Uhorngrave</string>
+					<string>Uhornhookabove</string>
+					<string>Uhorntilde</string>
+					<string>Uhorndotbelow</string>
+					<string>Dze</string>
+					<string>Ve</string>
+					<string>Beta</string>
+					<string>P</string>
+					<string>Er</string>
 				</array>
 				<key>smartSetName</key>
 				<string>XTUR</string>
