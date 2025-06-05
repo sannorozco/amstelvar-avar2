@@ -1,4 +1,4 @@
-# menuTitle: copy glyph order from Roman default to Italic default
+# menuTitle: copy groups from default to all other sources
 
 import os, glob
 
