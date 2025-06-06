@@ -484,7 +484,6 @@ class AmstelvarA2DesignSpaceBuilder:
         with open(self.blendsPath, 'w', encoding='utf-8') as f:
             json.dump(blendsDict, f, indent=2)
 
-
     def patchBlendsFile(self):
 
         # import blends data
