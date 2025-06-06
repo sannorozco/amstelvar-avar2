@@ -148,7 +148,7 @@ class AmstelvarA2DesignSpaceBuilder:
     familyName  = 'AmstelvarA2'
     defaultName = 'wght400'
 
-    parentAxesBuild  = True
+    parentAxesBuild  = False
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # XTEQ YTEQ
     parentAxesItalic = parentAxesRoman
 
@@ -712,7 +712,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][1]
+    subFamilyName = ['Roman', 'Italic'][0]
 
     start = time.time()
 
@@ -720,7 +720,7 @@ if __name__ == '__main__':
     D2.build()
     D2.save()
     # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    D2.buildInstancesVariableFont(clear=True, ufo=True)
+    # D2.buildInstancesVariableFont(clear=True, ufo=True)
     # D2.printAxes()
 
     end = time.time()
