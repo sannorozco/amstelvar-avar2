@@ -5,7 +5,7 @@ from mojo.smartSet import readSmartSets
 from fontTools.ttLib import TTFont
 from xml.etree.ElementTree import parse
 
-subfamilyName = ['Roman', 'Italic'][0]
+subfamilyName = ['Roman', 'Italic'][1]
 defaultName   = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources')
