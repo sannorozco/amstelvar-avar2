@@ -166,7 +166,7 @@ class AmstelvarA2DesignSpaceBuilder:
         'YTEQ' : 'YQUC',
     }
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR XTAB WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split()
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split() # XTAB
     parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [
@@ -431,6 +431,26 @@ class AmstelvarA2DesignSpaceBuilder:
             blendsDict['sources']['XTSP-100'][axisName] = values[0]
             blendsDict['sources']['XTSP100'][axisName] = values[1]
 
+        # -------------
+        # add XTRA axis
+        # -------------
+
+        # XTUC_default = permille(self.measurementsDefault.values['XTUC'], self.unitsPerEm)
+        # XTUC_values = []
+        # for ufo in self.parametricSources:
+        #     if 'XTUC' in ufo:
+        #         value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
+        #         XTUC_values.append(value)
+        # XTUC_values.sort()
+        # XTUC_min, XTUC_max = XTUC_values
+
+        # blendsDict['axes']['XTRA'] = {
+        #     "name"    : "XTRA",
+        #     "default" : XTUC_default,
+        #     "minimum" : XTUC_min,
+        #     "maximum" : XTUC_max,
+        # }
+
         # -----------------------
         # add blended PARENT axes
         # -----------------------
@@ -521,6 +541,9 @@ class AmstelvarA2DesignSpaceBuilder:
                 value = int(param[4:])
                 axisName  = blendedAxes[tag]['name']
                 inputLocation[axisName] = value
+
+            # if 'XTSP' not in styleName:
+            #     inputLocation['XTRA'] = int(blendedSources[styleName]['XTUC'])
 
             # get output value from blends.json file
             outputLocation = {}
@@ -712,7 +735,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][0]
+    subFamilyName = ['Roman', 'Italic'][1]
 
     start = time.time()
 

@@ -13,7 +13,7 @@
     <axis tag="YOLC" name="YOLC" minimum="4" maximum="149" default="58"/>
     <axis tag="YOFI" name="YOFI" minimum="4" maximum="196" default="56"/>
     <axis tag="XTUC" name="XTUC" minimum="72" maximum="668" default="400"/>
-    <axis tag="XTUR" name="XTUR" minimum="60" maximum="902" default="561"/>
+    <axis tag="XTUR" name="XTUR" minimum="58" maximum="902" default="561"/>
     <axis tag="XTUD" name="XTUD" minimum="76" maximum="686" default="410"/>
     <axis tag="XTLC" name="XTLC" minimum="42" maximum="500" default="243"/>
     <axis tag="XTLR" name="XTLR" minimum="46" maximum="625" default="337"/>
@@ -27,11 +27,11 @@
     <axis tag="XSHU" name="XSHU" minimum="0" maximum="154" default="104"/>
     <axis tag="YSHU" name="YSHU" minimum="0" maximum="150" default="50"/>
     <axis tag="XSVU" name="XSVU" minimum="0" maximum="130" default="55"/>
-    <axis tag="YSVU" name="YSVU" minimum="59" maximum="274" default="224"/>
+    <axis tag="YSVU" name="YSVU" minimum="0" maximum="216" default="165"/>
     <axis tag="XSHL" name="XSHL" minimum="0" maximum="124" default="74"/>
     <axis tag="YSHL" name="YSHL" minimum="0" maximum="140" default="40"/>
     <axis tag="XSVL" name="XSVL" minimum="0" maximum="146" default="54"/>
-    <axis tag="YSVL" name="YSVL" minimum="110" maximum="224" default="140"/>
+    <axis tag="YSVL" name="YSVL" minimum="40" maximum="155" default="70"/>
     <axis tag="XSHF" name="XSHF" minimum="0" maximum="239" default="129"/>
     <axis tag="YSHF" name="YSHF" minimum="0" maximum="147" default="47"/>
     <axis tag="XSVF" name="XSVF" minimum="0" maximum="131" default="61"/>
@@ -52,12 +52,11 @@
     <axis tag="XLCR" name="XLCR" minimum="-13" maximum="98" default="32"/>
     <axis tag="XLCD" name="XLCD" minimum="-8" maximum="122" default="54"/>
     <axis tag="XFIR" name="XFIR" minimum="0" maximum="97" default="37"/>
-    <axis tag="XTAB" name="XTAB" minimum="322" maximum="920" default="500"/>
     <axis tag="WDSP" name="WDSP" minimum="0" maximum="1000" default="320"/>
     <axis tag="XDOT" name="XDOT" minimum="23" maximum="274" default="144"/>
     <axis tag="BARS" name="BARS" minimum="0" maximum="683" default="0"/>
     <axis tag="XQUC" name="XQUC" minimum="22" maximum="220" default="136"/>
-    <axis tag="YQUC" name="YQUC" minimum="122" maximum="307" default="141"/>
+    <axis tag="YQUC" name="YQUC" minimum="92" maximum="307" default="141"/>
     <axis tag="XQLC" name="XQLC" minimum="14" maximum="148" default="82"/>
     <axis tag="YQLC" name="YQLC" minimum="40" maximum="192" default="90"/>
     <axis tag="XQFI" name="XQFI" minimum="11" maximum="148" default="80"/>
@@ -78,7 +77,6 @@
           <dimension name="XTLR" xvalue="308"/>
           <dimension name="XTLD" xvalue="254"/>
           <dimension name="XTFI" xvalue="258"/>
-          <dimension name="XTAB" xvalue="535"/>
           <dimension name="YOUC" xvalue="16"/>
           <dimension name="YOLC" xvalue="14"/>
           <dimension name="YOFI" xvalue="14"/>
@@ -96,7 +94,7 @@
           <dimension name="XSVU" xvalue="14"/>
           <dimension name="XSVL" xvalue="14"/>
           <dimension name="XSVF" xvalue="14"/>
-          <dimension name="YSVU" xvalue="168"/>
+          <dimension name="YSVU" xvalue="153"/>
           <dimension name="YSVL" xvalue="84"/>
           <dimension name="YSVF" xvalue="91"/>
           <dimension name="XUCS" xvalue="113"/>
@@ -139,7 +137,6 @@
           <dimension name="XTLR" xvalue="502"/>
           <dimension name="XTLD" xvalue="418"/>
           <dimension name="XTFI" xvalue="448"/>
-          <dimension name="XTAB" xvalue="785"/>
           <dimension name="YOUC" xvalue="16"/>
           <dimension name="YOLC" xvalue="14"/>
           <dimension name="YOFI" xvalue="20"/>
@@ -157,7 +154,7 @@
           <dimension name="XSVU" xvalue="24"/>
           <dimension name="XSVL" xvalue="20"/>
           <dimension name="XSVF" xvalue="14"/>
-          <dimension name="YSVU" xvalue="168"/>
+          <dimension name="YSVU" xvalue="153"/>
           <dimension name="YSVL" xvalue="84"/>
           <dimension name="YSVF" xvalue="86"/>
           <dimension name="XUCS" xvalue="157"/>
@@ -200,7 +197,6 @@
           <dimension name="XTLR" xvalue="140"/>
           <dimension name="XTLD" xvalue="153"/>
           <dimension name="XTFI" xvalue="148"/>
-          <dimension name="XTAB" xvalue="465"/>
           <dimension name="YOUC" xvalue="19"/>
           <dimension name="YOLC" xvalue="14"/>
           <dimension name="YOFI" xvalue="16"/>
@@ -218,7 +214,7 @@
           <dimension name="XSVU" xvalue="14"/>
           <dimension name="XSVL" xvalue="15"/>
           <dimension name="XSVF" xvalue="10"/>
-          <dimension name="YSVU" xvalue="158"/>
+          <dimension name="YSVU" xvalue="143"/>
           <dimension name="YSVL" xvalue="79"/>
           <dimension name="YSVF" xvalue="76"/>
           <dimension name="XUCS" xvalue="65"/>
@@ -261,7 +257,6 @@
           <dimension name="XTLR" xvalue="402"/>
           <dimension name="XTLD" xvalue="290"/>
           <dimension name="XTFI" xvalue="418"/>
-          <dimension name="XTAB" xvalue="550"/>
           <dimension name="YOUC" xvalue="13"/>
           <dimension name="YOLC" xvalue="9"/>
           <dimension name="YOFI" xvalue="7"/>
@@ -279,7 +274,7 @@
           <dimension name="XSVU" xvalue="6"/>
           <dimension name="XSVL" xvalue="11"/>
           <dimension name="XSVF" xvalue="7"/>
-          <dimension name="YSVU" xvalue="161"/>
+          <dimension name="YSVU" xvalue="152"/>
           <dimension name="YSVL" xvalue="112"/>
           <dimension name="YSVF" xvalue="112"/>
           <dimension name="XUCS" xvalue="126"/>
@@ -322,7 +317,6 @@
           <dimension name="XTLR" xvalue="175"/>
           <dimension name="XTLD" xvalue="214"/>
           <dimension name="XTFI" xvalue="105"/>
-          <dimension name="XTAB" xvalue="746"/>
           <dimension name="YOUC" xvalue="34"/>
           <dimension name="YOLC" xvalue="36"/>
           <dimension name="YOFI" xvalue="26"/>
@@ -340,7 +334,7 @@
           <dimension name="XSVU" xvalue="32"/>
           <dimension name="XSVL" xvalue="38"/>
           <dimension name="XSVF" xvalue="12"/>
-          <dimension name="YSVU" xvalue="166"/>
+          <dimension name="YSVU" xvalue="131"/>
           <dimension name="YSVL" xvalue="78"/>
           <dimension name="YSVF" xvalue="71"/>
           <dimension name="XUCS" xvalue="78"/>
@@ -384,7 +378,6 @@
           <dimension name="XTLR" xvalue="369"/>
           <dimension name="XTLD" xvalue="391"/>
           <dimension name="XTFI" xvalue="294"/>
-          <dimension name="XTAB" xvalue="996"/>
           <dimension name="YOUC" xvalue="35"/>
           <dimension name="YOLC" xvalue="35"/>
           <dimension name="YOFI" xvalue="32"/>
@@ -402,7 +395,7 @@
           <dimension name="XSVU" xvalue="36"/>
           <dimension name="XSVL" xvalue="44"/>
           <dimension name="XSVF" xvalue="12"/>
-          <dimension name="YSVU" xvalue="156"/>
+          <dimension name="YSVU" xvalue="120"/>
           <dimension name="YSVL" xvalue="106"/>
           <dimension name="YSVF" xvalue="66"/>
           <dimension name="XUCS" xvalue="122"/>
@@ -446,7 +439,6 @@
           <dimension name="XTLR" xvalue="49"/>
           <dimension name="XTLD" xvalue="104"/>
           <dimension name="XTFI" xvalue="44"/>
-          <dimension name="XTAB" xvalue="509"/>
           <dimension name="YOUC" xvalue="30"/>
           <dimension name="YOLC" xvalue="35"/>
           <dimension name="YOFI" xvalue="28"/>
@@ -464,7 +456,7 @@
           <dimension name="XSVU" xvalue="26"/>
           <dimension name="XSVL" xvalue="34"/>
           <dimension name="XSVF" xvalue="22"/>
-          <dimension name="YSVU" xvalue="210"/>
+          <dimension name="YSVU" xvalue="180"/>
           <dimension name="YSVL" xvalue="112"/>
           <dimension name="YSVF" xvalue="116"/>
           <dimension name="XUCS" xvalue="35"/>
@@ -508,7 +500,6 @@
           <dimension name="XTLR" xvalue="596"/>
           <dimension name="XTLD" xvalue="470"/>
           <dimension name="XTFI" xvalue="571"/>
-          <dimension name="XTAB" xvalue="723"/>
           <dimension name="YOUC" xvalue="16"/>
           <dimension name="YOLC" xvalue="8"/>
           <dimension name="YOFI" xvalue="8"/>
@@ -526,7 +517,7 @@
           <dimension name="XSVU" xvalue="9"/>
           <dimension name="XSVL" xvalue="8"/>
           <dimension name="XSVF" xvalue="7"/>
-          <dimension name="YSVU" xvalue="178"/>
+          <dimension name="YSVU" xvalue="170"/>
           <dimension name="YSVL" xvalue="102"/>
           <dimension name="YSVF" xvalue="105"/>
           <dimension name="XUCS" xvalue="172"/>
@@ -570,7 +561,6 @@
           <dimension name="XTLR" xvalue="212"/>
           <dimension name="XTLD" xvalue="188"/>
           <dimension name="XTFI" xvalue="184"/>
-          <dimension name="XTAB" xvalue="465"/>
           <dimension name="YOUC" xvalue="14"/>
           <dimension name="YOLC" xvalue="8"/>
           <dimension name="YOFI" xvalue="7"/>
@@ -588,7 +578,7 @@
           <dimension name="XSVU" xvalue="6"/>
           <dimension name="XSVL" xvalue="6"/>
           <dimension name="XSVF" xvalue="4"/>
-          <dimension name="YSVU" xvalue="171"/>
+          <dimension name="YSVU" xvalue="162"/>
           <dimension name="YSVL" xvalue="96"/>
           <dimension name="YSVF" xvalue="98"/>
           <dimension name="XUCS" xvalue="78"/>
@@ -630,7 +620,6 @@
           <dimension name="XTLR" xvalue="340"/>
           <dimension name="XTLD" xvalue="236"/>
           <dimension name="XTFI" xvalue="202"/>
-          <dimension name="XTAB" xvalue="500"/>
           <dimension name="YOUC" xvalue="91"/>
           <dimension name="YOLC" xvalue="88"/>
           <dimension name="YOFI" xvalue="88"/>
@@ -648,7 +637,7 @@
           <dimension name="XSVU" xvalue="80"/>
           <dimension name="XSVL" xvalue="76"/>
           <dimension name="XSVF" xvalue="80"/>
-          <dimension name="YSVU" xvalue="231"/>
+          <dimension name="YSVU" xvalue="149"/>
           <dimension name="YSVL" xvalue="78"/>
           <dimension name="YSVF" xvalue="140"/>
           <dimension name="XUCS" xvalue="145"/>
@@ -691,7 +680,6 @@
           <dimension name="XTLR" xvalue="534"/>
           <dimension name="XTLD" xvalue="401"/>
           <dimension name="XTFI" xvalue="391"/>
-          <dimension name="XTAB" xvalue="750"/>
           <dimension name="YOUC" xvalue="91"/>
           <dimension name="YOLC" xvalue="88"/>
           <dimension name="YOFI" xvalue="92"/>
@@ -709,7 +697,7 @@
           <dimension name="XSVU" xvalue="90"/>
           <dimension name="XSVL" xvalue="82"/>
           <dimension name="XSVF" xvalue="80"/>
-          <dimension name="YSVU" xvalue="231"/>
+          <dimension name="YSVU" xvalue="149"/>
           <dimension name="YSVL" xvalue="78"/>
           <dimension name="YSVF" xvalue="135"/>
           <dimension name="XUCS" xvalue="189"/>
@@ -752,7 +740,6 @@
           <dimension name="XTLR" xvalue="171"/>
           <dimension name="XTLD" xvalue="140"/>
           <dimension name="XTFI" xvalue="166"/>
-          <dimension name="XTAB" xvalue="448"/>
           <dimension name="YOUC" xvalue="89"/>
           <dimension name="YOLC" xvalue="72"/>
           <dimension name="YOFI" xvalue="78"/>
@@ -770,7 +757,7 @@
           <dimension name="XSVU" xvalue="80"/>
           <dimension name="XSVL" xvalue="77"/>
           <dimension name="XSVF" xvalue="71"/>
-          <dimension name="YSVU" xvalue="221"/>
+          <dimension name="YSVU" xvalue="146"/>
           <dimension name="YSVL" xvalue="84"/>
           <dimension name="YSVF" xvalue="125"/>
           <dimension name="XUCS" xvalue="97"/>
@@ -813,7 +800,6 @@
           <dimension name="XTLR" xvalue="434"/>
           <dimension name="XTLD" xvalue="301"/>
           <dimension name="XTFI" xvalue="318"/>
-          <dimension name="XTAB" xvalue="500"/>
           <dimension name="YOUC" xvalue="56"/>
           <dimension name="YOLC" xvalue="60"/>
           <dimension name="YOFI" xvalue="54"/>
@@ -831,7 +817,7 @@
           <dimension name="XSVU" xvalue="47"/>
           <dimension name="XSVL" xvalue="49"/>
           <dimension name="XSVF" xvalue="43"/>
-          <dimension name="YSVU" xvalue="198"/>
+          <dimension name="YSVU" xvalue="150"/>
           <dimension name="YSVL" xvalue="96"/>
           <dimension name="YSVF" xvalue="158"/>
           <dimension name="XUCS" xvalue="158"/>
@@ -874,7 +860,6 @@
           <dimension name="XTLR" xvalue="206"/>
           <dimension name="XTLD" xvalue="197"/>
           <dimension name="XTFI" xvalue="208"/>
-          <dimension name="XTAB" xvalue="712"/>
           <dimension name="YOUC" xvalue="106"/>
           <dimension name="YOLC" xvalue="104"/>
           <dimension name="YOFI" xvalue="100"/>
@@ -892,7 +877,7 @@
           <dimension name="XSVU" xvalue="98"/>
           <dimension name="XSVL" xvalue="100"/>
           <dimension name="XSVF" xvalue="78"/>
-          <dimension name="YSVU" xvalue="229"/>
+          <dimension name="YSVU" xvalue="127"/>
           <dimension name="YSVL" xvalue="68"/>
           <dimension name="YSVF" xvalue="120"/>
           <dimension name="XUCS" xvalue="110"/>
@@ -936,7 +921,6 @@
           <dimension name="XTLR" xvalue="410"/>
           <dimension name="XTLD" xvalue="386"/>
           <dimension name="XTFI" xvalue="308"/>
-          <dimension name="XTAB" xvalue="948"/>
           <dimension name="YOUC" xvalue="106"/>
           <dimension name="YOLC" xvalue="109"/>
           <dimension name="YOFI" xvalue="100"/>
@@ -954,7 +938,7 @@
           <dimension name="XSVU" xvalue="108"/>
           <dimension name="XSVL" xvalue="122"/>
           <dimension name="XSVF" xvalue="118"/>
-          <dimension name="YSVU" xvalue="229"/>
+          <dimension name="YSVU" xvalue="132"/>
           <dimension name="YSVL" xvalue="78"/>
           <dimension name="YSVF" xvalue="80"/>
           <dimension name="XUCS" xvalue="154"/>
@@ -998,7 +982,6 @@
           <dimension name="XTLR" xvalue="48"/>
           <dimension name="XTLD" xvalue="116"/>
           <dimension name="XTFI" xvalue="64"/>
-          <dimension name="XTAB" xvalue="644"/>
           <dimension name="YOUC" xvalue="104"/>
           <dimension name="YOLC" xvalue="108"/>
           <dimension name="YOFI" xvalue="104"/>
@@ -1016,7 +999,7 @@
           <dimension name="XSVU" xvalue="98"/>
           <dimension name="XSVL" xvalue="146"/>
           <dimension name="XSVF" xvalue="75"/>
-          <dimension name="YSVU" xvalue="219"/>
+          <dimension name="YSVU" xvalue="127"/>
           <dimension name="YSVL" xvalue="74"/>
           <dimension name="YSVF" xvalue="72"/>
           <dimension name="XUCS" xvalue="64"/>
@@ -1060,7 +1043,6 @@
           <dimension name="XTLR" xvalue="622"/>
           <dimension name="XTLD" xvalue="485"/>
           <dimension name="XTFI" xvalue="545"/>
-          <dimension name="XTAB" xvalue="775"/>
           <dimension name="YOUC" xvalue="54"/>
           <dimension name="YOLC" xvalue="58"/>
           <dimension name="YOFI" xvalue="56"/>
@@ -1078,7 +1060,7 @@
           <dimension name="XSVU" xvalue="47"/>
           <dimension name="XSVL" xvalue="45"/>
           <dimension name="XSVF" xvalue="43"/>
-          <dimension name="YSVU" xvalue="198"/>
+          <dimension name="YSVU" xvalue="148"/>
           <dimension name="YSVL" xvalue="100"/>
           <dimension name="YSVF" xvalue="142"/>
           <dimension name="XUCS" xvalue="202"/>
@@ -1122,7 +1104,6 @@
           <dimension name="XTLR" xvalue="266"/>
           <dimension name="XTLD" xvalue="206"/>
           <dimension name="XTFI" xvalue="250"/>
-          <dimension name="XTAB" xvalue="432"/>
           <dimension name="YOUC" xvalue="54"/>
           <dimension name="YOLC" xvalue="60"/>
           <dimension name="YOFI" xvalue="57"/>
@@ -1140,7 +1121,7 @@
           <dimension name="XSVU" xvalue="42"/>
           <dimension name="XSVL" xvalue="41"/>
           <dimension name="XSVF" xvalue="40"/>
-          <dimension name="YSVU" xvalue="188"/>
+          <dimension name="YSVU" xvalue="140"/>
           <dimension name="YSVL" xvalue="81"/>
           <dimension name="YSVF" xvalue="102"/>
           <dimension name="XUCS" xvalue="110"/>
@@ -1182,7 +1163,6 @@
           <dimension name="XTLR" xvalue="531"/>
           <dimension name="XTLD" xvalue="412"/>
           <dimension name="XTFI" xvalue="518"/>
-          <dimension name="XTAB" xvalue="750"/>
           <dimension name="YOUC" xvalue="66"/>
           <dimension name="YOLC" xvalue="58"/>
           <dimension name="YOFI" xvalue="62"/>
@@ -1200,7 +1180,7 @@
           <dimension name="XSVU" xvalue="65"/>
           <dimension name="XSVL" xvalue="60"/>
           <dimension name="XSVF" xvalue="61"/>
-          <dimension name="YSVU" xvalue="224"/>
+          <dimension name="YSVU" xvalue="165"/>
           <dimension name="YSVL" xvalue="70"/>
           <dimension name="YSVF" xvalue="112"/>
           <dimension name="XUCS" xvalue="189"/>
@@ -1242,7 +1222,6 @@
           <dimension name="XTLR" xvalue="168"/>
           <dimension name="XTLD" xvalue="147"/>
           <dimension name="XTFI" xvalue="213"/>
-          <dimension name="XTAB" xvalue="430"/>
           <dimension name="YOUC" xvalue="64"/>
           <dimension name="YOLC" xvalue="57"/>
           <dimension name="YOFI" xvalue="58"/>
@@ -1260,7 +1239,7 @@
           <dimension name="XSVU" xvalue="55"/>
           <dimension name="XSVL" xvalue="56"/>
           <dimension name="XSVF" xvalue="58"/>
-          <dimension name="YSVU" xvalue="214"/>
+          <dimension name="YSVU" xvalue="155"/>
           <dimension name="YSVL" xvalue="66"/>
           <dimension name="YSVF" xvalue="102"/>
           <dimension name="XUCS" xvalue="97"/>
@@ -1302,7 +1281,6 @@
           <dimension name="XTLR" xvalue="431"/>
           <dimension name="XTLD" xvalue="312"/>
           <dimension name="XTFI" xvalue="363"/>
-          <dimension name="XTAB" xvalue="500"/>
           <dimension name="YOUC" xvalue="31"/>
           <dimension name="YOLC" xvalue="30"/>
           <dimension name="YOFI" xvalue="28"/>
@@ -1320,7 +1298,7 @@
           <dimension name="XSVU" xvalue="27"/>
           <dimension name="XSVL" xvalue="28"/>
           <dimension name="XSVF" xvalue="24"/>
-          <dimension name="YSVU" xvalue="192"/>
+          <dimension name="YSVU" xvalue="163"/>
           <dimension name="YSVL" xvalue="88"/>
           <dimension name="YSVF" xvalue="138"/>
           <dimension name="XUCS" xvalue="158"/>
@@ -1362,7 +1340,6 @@
           <dimension name="XTLR" xvalue="204"/>
           <dimension name="XTLD" xvalue="208"/>
           <dimension name="XTFI" xvalue="176"/>
-          <dimension name="XTAB" xvalue="712"/>
           <dimension name="YOUC" xvalue="81"/>
           <dimension name="YOLC" xvalue="79"/>
           <dimension name="YOFI" xvalue="68"/>
@@ -1380,7 +1357,7 @@
           <dimension name="XSVU" xvalue="73"/>
           <dimension name="XSVL" xvalue="78"/>
           <dimension name="XSVF" xvalue="60"/>
-          <dimension name="YSVU" xvalue="222"/>
+          <dimension name="YSVU" xvalue="143"/>
           <dimension name="YSVL" xvalue="60"/>
           <dimension name="YSVF" xvalue="97"/>
           <dimension name="XUCS" xvalue="110"/>
@@ -1423,7 +1400,6 @@
           <dimension name="XTLR" xvalue="398"/>
           <dimension name="XTLD" xvalue="388"/>
           <dimension name="XTFI" xvalue="364"/>
-          <dimension name="XTAB" xvalue="962"/>
           <dimension name="YOUC" xvalue="81"/>
           <dimension name="YOLC" xvalue="78"/>
           <dimension name="YOFI" xvalue="74"/>
@@ -1441,7 +1417,7 @@
           <dimension name="XSVU" xvalue="83"/>
           <dimension name="XSVL" xvalue="85"/>
           <dimension name="XSVF" xvalue="60"/>
-          <dimension name="YSVU" xvalue="222"/>
+          <dimension name="YSVU" xvalue="143"/>
           <dimension name="YSVL" xvalue="60"/>
           <dimension name="YSVF" xvalue="92"/>
           <dimension name="XUCS" xvalue="154"/>
@@ -1484,7 +1460,6 @@
           <dimension name="XTLR" xvalue="68"/>
           <dimension name="XTLD" xvalue="112"/>
           <dimension name="XTFI" xvalue="70"/>
-          <dimension name="XTAB" xvalue="642"/>
           <dimension name="YOUC" xvalue="79"/>
           <dimension name="YOLC" xvalue="78"/>
           <dimension name="YOFI" xvalue="70"/>
@@ -1502,7 +1477,7 @@
           <dimension name="XSVU" xvalue="78"/>
           <dimension name="XSVL" xvalue="100"/>
           <dimension name="XSVF" xvalue="82"/>
-          <dimension name="YSVU" xvalue="212"/>
+          <dimension name="YSVU" xvalue="143"/>
           <dimension name="YSVL" xvalue="70"/>
           <dimension name="YSVF" xvalue="70"/>
           <dimension name="XUCS" xvalue="39"/>
@@ -1545,7 +1520,6 @@
           <dimension name="XTLR" xvalue="625"/>
           <dimension name="XTLD" xvalue="498"/>
           <dimension name="XTFI" xvalue="600"/>
-          <dimension name="XTAB" xvalue="782"/>
           <dimension name="YOUC" xvalue="31"/>
           <dimension name="YOLC" xvalue="34"/>
           <dimension name="YOFI" xvalue="33"/>
@@ -1563,7 +1537,7 @@
           <dimension name="XSVU" xvalue="32"/>
           <dimension name="XSVL" xvalue="29"/>
           <dimension name="XSVF" xvalue="24"/>
-          <dimension name="YSVU" xvalue="192"/>
+          <dimension name="YSVU" xvalue="163"/>
           <dimension name="YSVL" xvalue="88"/>
           <dimension name="YSVF" xvalue="132"/>
           <dimension name="XUCS" xvalue="202"/>
@@ -1606,7 +1580,6 @@
           <dimension name="XTLR" xvalue="260"/>
           <dimension name="XTLD" xvalue="218"/>
           <dimension name="XTFI" xvalue="247"/>
-          <dimension name="XTAB" xvalue="430"/>
           <dimension name="YOUC" xvalue="29"/>
           <dimension name="YOLC" xvalue="29"/>
           <dimension name="YOFI" xvalue="30"/>
@@ -1624,7 +1597,7 @@
           <dimension name="XSVU" xvalue="27"/>
           <dimension name="XSVL" xvalue="29"/>
           <dimension name="XSVF" xvalue="21"/>
-          <dimension name="YSVU" xvalue="182"/>
+          <dimension name="YSVU" xvalue="156"/>
           <dimension name="YSVL" xvalue="88"/>
           <dimension name="YSVF" xvalue="124"/>
           <dimension name="XUCS" xvalue="110"/>
@@ -1666,7 +1639,6 @@
           <dimension name="XTLR" xvalue="337"/>
           <dimension name="XTLD" xvalue="248"/>
           <dimension name="XTFI" xvalue="329"/>
-          <dimension name="XTAB" xvalue="500"/>
           <dimension name="YOUC" xvalue="66"/>
           <dimension name="YOLC" xvalue="58"/>
           <dimension name="YOFI" xvalue="56"/>
@@ -1684,7 +1656,7 @@
           <dimension name="XSVU" xvalue="55"/>
           <dimension name="XSVL" xvalue="54"/>
           <dimension name="XSVF" xvalue="61"/>
-          <dimension name="YSVU" xvalue="224"/>
+          <dimension name="YSVU" xvalue="165"/>
           <dimension name="YSVL" xvalue="70"/>
           <dimension name="YSVF" xvalue="117"/>
           <dimension name="XUCS" xvalue="145"/>
@@ -1737,11 +1709,11 @@
           <dimension name="XSHU" xvalue="104"/>
           <dimension name="YSHU" xvalue="50"/>
           <dimension name="XSVU" xvalue="55"/>
-          <dimension name="YSVU" xvalue="224"/>
+          <dimension name="YSVU" xvalue="165"/>
           <dimension name="XSHL" xvalue="74"/>
           <dimension name="YSHL" xvalue="40"/>
           <dimension name="XSVL" xvalue="54"/>
-          <dimension name="YSVL" xvalue="140"/>
+          <dimension name="YSVL" xvalue="70"/>
           <dimension name="XSHF" xvalue="129"/>
           <dimension name="YSHF" xvalue="47"/>
           <dimension name="XSVF" xvalue="61"/>
@@ -1762,7 +1734,6 @@
           <dimension name="XLCR" xvalue="-13"/>
           <dimension name="XLCD" xvalue="-8"/>
           <dimension name="XFIR" xvalue="0"/>
-          <dimension name="XTAB" xvalue="500"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="144"/>
           <dimension name="BARS" xvalue="0"/>
@@ -1801,11 +1772,11 @@
           <dimension name="XSHU" xvalue="104"/>
           <dimension name="YSHU" xvalue="50"/>
           <dimension name="XSVU" xvalue="55"/>
-          <dimension name="YSVU" xvalue="224"/>
+          <dimension name="YSVU" xvalue="165"/>
           <dimension name="XSHL" xvalue="74"/>
           <dimension name="YSHL" xvalue="40"/>
           <dimension name="XSVL" xvalue="54"/>
-          <dimension name="YSVL" xvalue="140"/>
+          <dimension name="YSVL" xvalue="70"/>
           <dimension name="XSHF" xvalue="129"/>
           <dimension name="YSHF" xvalue="47"/>
           <dimension name="XSVF" xvalue="61"/>
@@ -1826,7 +1797,6 @@
           <dimension name="XLCR" xvalue="98"/>
           <dimension name="XLCD" xvalue="122"/>
           <dimension name="XFIR" xvalue="97"/>
-          <dimension name="XTAB" xvalue="500"/>
           <dimension name="WDSP" xvalue="320"/>
           <dimension name="XDOT" xvalue="144"/>
           <dimension name="BARS" xvalue="0"/>
@@ -1866,11 +1836,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -1891,7 +1861,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -1927,11 +1896,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -1952,7 +1921,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -1988,11 +1956,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2013,7 +1981,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2049,11 +2016,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2074,7 +2041,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2110,11 +2076,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2135,7 +2101,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2171,11 +2136,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2196,7 +2161,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2232,11 +2196,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2257,7 +2221,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2293,11 +2256,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2318,7 +2281,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2354,11 +2316,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2379,7 +2341,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2415,11 +2376,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2440,7 +2401,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2476,11 +2436,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2501,7 +2461,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2537,11 +2496,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2562,7 +2521,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2598,11 +2556,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2623,7 +2581,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2659,11 +2616,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2684,7 +2641,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2720,11 +2676,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2745,7 +2701,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2781,11 +2736,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2806,7 +2761,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2842,11 +2796,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2867,7 +2821,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2903,11 +2856,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2928,7 +2881,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -2940,7 +2892,7 @@
         <dimension name="YQFI" xvalue="144"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_XTUR60.ufo" familyname="AmstelvarA2 Roman" stylename="XTUR60">
+    <source filename="AmstelvarA2-Roman_XTUR58.ufo" familyname="AmstelvarA2 Roman" stylename="XTUR58">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -2950,7 +2902,7 @@
         <dimension name="YOLC" xvalue="58"/>
         <dimension name="YOFI" xvalue="56"/>
         <dimension name="XTUC" xvalue="400"/>
-        <dimension name="XTUR" xvalue="60"/>
+        <dimension name="XTUR" xvalue="58"/>
         <dimension name="XTUD" xvalue="410"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
@@ -2964,11 +2916,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -2989,7 +2941,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3025,11 +2976,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3050,7 +3001,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3086,11 +3036,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3111,7 +3061,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3147,11 +3096,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3172,7 +3121,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3208,11 +3156,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3233,7 +3181,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3269,11 +3216,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3294,7 +3241,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3330,11 +3276,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3355,7 +3301,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3391,11 +3336,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3416,7 +3361,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3452,11 +3396,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3477,7 +3421,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3513,11 +3456,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3538,7 +3481,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3574,11 +3516,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3599,7 +3541,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3635,11 +3576,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3660,7 +3601,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3696,11 +3636,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3721,7 +3661,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3757,11 +3696,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3782,7 +3721,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3818,11 +3756,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3843,7 +3781,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3879,11 +3816,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3904,7 +3841,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -3940,11 +3876,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -3965,7 +3901,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4001,11 +3936,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4026,7 +3961,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4062,11 +3996,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4087,7 +4021,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4123,11 +4056,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4148,7 +4081,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4184,11 +4116,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4209,7 +4141,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4245,11 +4176,11 @@
         <dimension name="XSHU" xvalue="0"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4270,7 +4201,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4306,11 +4236,11 @@
         <dimension name="XSHU" xvalue="154"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4331,7 +4261,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4367,11 +4296,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="0"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4392,7 +4321,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4428,11 +4356,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="150"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4453,7 +4381,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4489,11 +4416,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="0"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4514,7 +4441,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4550,11 +4476,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="130"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4575,7 +4501,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4587,7 +4512,7 @@
         <dimension name="YQFI" xvalue="144"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YSVU59.ufo" familyname="AmstelvarA2 Roman" stylename="YSVU59">
+    <source filename="AmstelvarA2-Roman_YSVU216.ufo" familyname="AmstelvarA2 Roman" stylename="YSVU216">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -4611,11 +4536,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="59"/>
+        <dimension name="YSVU" xvalue="216"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4636,7 +4561,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4648,7 +4572,7 @@
         <dimension name="YQFI" xvalue="144"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YSVU274.ufo" familyname="AmstelvarA2 Roman" stylename="YSVU274">
+    <source filename="AmstelvarA2-Roman_YSVU0.ufo" familyname="AmstelvarA2 Roman" stylename="YSVU0">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -4672,11 +4596,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="274"/>
+        <dimension name="YSVU" xvalue="0"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4697,7 +4621,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4733,11 +4656,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="124"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4758,7 +4681,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4794,11 +4716,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="0"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4819,7 +4741,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4855,11 +4776,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="0"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4880,7 +4801,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4916,11 +4836,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="140"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -4941,7 +4861,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -4977,11 +4896,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="146"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5002,7 +4921,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5038,11 +4956,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="0"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5063,7 +4981,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5075,7 +4992,7 @@
         <dimension name="YQFI" xvalue="144"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YSVL224.ufo" familyname="AmstelvarA2 Roman" stylename="YSVL224">
+    <source filename="AmstelvarA2-Roman_YSVL155.ufo" familyname="AmstelvarA2 Roman" stylename="YSVL155">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -5099,11 +5016,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="224"/>
+        <dimension name="YSVL" xvalue="155"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5124,7 +5041,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5136,7 +5052,7 @@
         <dimension name="YQFI" xvalue="144"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YSVL110.ufo" familyname="AmstelvarA2 Roman" stylename="YSVL110">
+    <source filename="AmstelvarA2-Roman_YSVL40.ufo" familyname="AmstelvarA2 Roman" stylename="YSVL40">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -5160,11 +5076,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="110"/>
+        <dimension name="YSVL" xvalue="40"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5185,7 +5101,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5221,11 +5136,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="0"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5246,7 +5161,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5282,11 +5196,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="239"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5307,7 +5221,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5343,11 +5256,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="0"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5368,7 +5281,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5404,11 +5316,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="147"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5429,7 +5341,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5465,11 +5376,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="0"/>
@@ -5490,7 +5401,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5526,11 +5436,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="131"/>
@@ -5551,7 +5461,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5587,11 +5496,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5612,7 +5521,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5648,11 +5556,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5673,7 +5581,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5709,11 +5616,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5734,7 +5641,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5770,11 +5676,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5795,7 +5701,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5831,11 +5736,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5856,7 +5761,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5892,11 +5796,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5917,7 +5821,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -5953,11 +5856,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -5978,7 +5881,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6014,11 +5916,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6039,7 +5941,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6075,11 +5976,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6100,7 +6001,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6136,11 +6036,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6161,7 +6061,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6197,11 +6096,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6222,7 +6121,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6258,11 +6156,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6283,7 +6181,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6319,11 +6216,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6344,7 +6241,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6380,11 +6276,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6405,7 +6301,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6441,11 +6336,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6466,7 +6361,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6502,11 +6396,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6527,7 +6421,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6563,11 +6456,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6588,7 +6481,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6624,11 +6516,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6649,7 +6541,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6685,11 +6576,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6710,7 +6601,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6746,11 +6636,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6771,7 +6661,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6807,11 +6696,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6832,7 +6721,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6868,11 +6756,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6893,7 +6781,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6929,11 +6816,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -6954,7 +6841,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -6990,11 +6876,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7015,7 +6901,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7051,11 +6936,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7076,7 +6961,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7112,11 +6996,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7137,7 +7021,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7173,11 +7056,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7198,7 +7081,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7234,11 +7116,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7259,7 +7141,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7295,11 +7176,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7320,7 +7201,6 @@
         <dimension name="XLCR" xvalue="98"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7356,11 +7236,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7381,7 +7261,6 @@
         <dimension name="XLCR" xvalue="-13"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7417,11 +7296,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7442,7 +7321,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="122"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7478,11 +7356,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7503,7 +7381,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="-8"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7539,11 +7416,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7564,7 +7441,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="97"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7600,11 +7476,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7625,129 +7501,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="0"/>
-        <dimension name="XTAB" xvalue="500"/>
-        <dimension name="WDSP" xvalue="320"/>
-        <dimension name="XDOT" xvalue="144"/>
-        <dimension name="BARS" xvalue="0"/>
-        <dimension name="XQUC" xvalue="136"/>
-        <dimension name="YQUC" xvalue="141"/>
-        <dimension name="XQLC" xvalue="82"/>
-        <dimension name="YQLC" xvalue="90"/>
-        <dimension name="XQFI" xvalue="80"/>
-        <dimension name="YQFI" xvalue="144"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_XTAB322.ufo" familyname="AmstelvarA2 Roman" stylename="XTAB322">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XOUC" xvalue="90"/>
-        <dimension name="XOLC" xvalue="85"/>
-        <dimension name="XOFI" xvalue="88"/>
-        <dimension name="YOUC" xvalue="66"/>
-        <dimension name="YOLC" xvalue="58"/>
-        <dimension name="YOFI" xvalue="56"/>
-        <dimension name="XTUC" xvalue="400"/>
-        <dimension name="XTUR" xvalue="561"/>
-        <dimension name="XTUD" xvalue="410"/>
-        <dimension name="XTLC" xvalue="243"/>
-        <dimension name="XTLR" xvalue="337"/>
-        <dimension name="XTLD" xvalue="248"/>
-        <dimension name="XTFI" xvalue="329"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-        <dimension name="XSHU" xvalue="104"/>
-        <dimension name="YSHU" xvalue="50"/>
-        <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
-        <dimension name="XSHL" xvalue="74"/>
-        <dimension name="YSHL" xvalue="40"/>
-        <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
-        <dimension name="XSHF" xvalue="129"/>
-        <dimension name="YSHF" xvalue="47"/>
-        <dimension name="XSVF" xvalue="61"/>
-        <dimension name="YSVF" xvalue="117"/>
-        <dimension name="XVAU" xvalue="18"/>
-        <dimension name="YHAU" xvalue="18"/>
-        <dimension name="XVAL" xvalue="17"/>
-        <dimension name="YHAL" xvalue="18"/>
-        <dimension name="XVAF" xvalue="18"/>
-        <dimension name="YHAF" xvalue="18"/>
-        <dimension name="XTTW" xvalue="5"/>
-        <dimension name="YTTL" xvalue="57"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="145"/>
-        <dimension name="XUCR" xvalue="40"/>
-        <dimension name="XUCD" xvalue="69"/>
-        <dimension name="XLCS" xvalue="112"/>
-        <dimension name="XLCR" xvalue="32"/>
-        <dimension name="XLCD" xvalue="54"/>
-        <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="322"/>
-        <dimension name="WDSP" xvalue="320"/>
-        <dimension name="XDOT" xvalue="144"/>
-        <dimension name="BARS" xvalue="0"/>
-        <dimension name="XQUC" xvalue="136"/>
-        <dimension name="YQUC" xvalue="141"/>
-        <dimension name="XQLC" xvalue="82"/>
-        <dimension name="YQLC" xvalue="90"/>
-        <dimension name="XQFI" xvalue="80"/>
-        <dimension name="YQFI" xvalue="144"/>
-      </location>
-    </source>
-    <source filename="AmstelvarA2-Roman_XTAB920.ufo" familyname="AmstelvarA2 Roman" stylename="XTAB920">
-      <location>
-        <dimension name="GRAD" xvalue="0"/>
-        <dimension name="XOUC" xvalue="90"/>
-        <dimension name="XOLC" xvalue="85"/>
-        <dimension name="XOFI" xvalue="88"/>
-        <dimension name="YOUC" xvalue="66"/>
-        <dimension name="YOLC" xvalue="58"/>
-        <dimension name="YOFI" xvalue="56"/>
-        <dimension name="XTUC" xvalue="400"/>
-        <dimension name="XTUR" xvalue="561"/>
-        <dimension name="XTUD" xvalue="410"/>
-        <dimension name="XTLC" xvalue="243"/>
-        <dimension name="XTLR" xvalue="337"/>
-        <dimension name="XTLD" xvalue="248"/>
-        <dimension name="XTFI" xvalue="329"/>
-        <dimension name="YTUC" xvalue="750"/>
-        <dimension name="YTLC" xvalue="511"/>
-        <dimension name="YTAS" xvalue="767"/>
-        <dimension name="YTDE" xvalue="-240"/>
-        <dimension name="YTFI" xvalue="771"/>
-        <dimension name="XSHU" xvalue="104"/>
-        <dimension name="YSHU" xvalue="50"/>
-        <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
-        <dimension name="XSHL" xvalue="74"/>
-        <dimension name="YSHL" xvalue="40"/>
-        <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
-        <dimension name="XSHF" xvalue="129"/>
-        <dimension name="YSHF" xvalue="47"/>
-        <dimension name="XSVF" xvalue="61"/>
-        <dimension name="YSVF" xvalue="117"/>
-        <dimension name="XVAU" xvalue="18"/>
-        <dimension name="YHAU" xvalue="18"/>
-        <dimension name="XVAL" xvalue="17"/>
-        <dimension name="YHAL" xvalue="18"/>
-        <dimension name="XVAF" xvalue="18"/>
-        <dimension name="YHAF" xvalue="18"/>
-        <dimension name="XTTW" xvalue="5"/>
-        <dimension name="YTTL" xvalue="57"/>
-        <dimension name="YTOS" xvalue="10"/>
-        <dimension name="XUCS" xvalue="145"/>
-        <dimension name="XUCR" xvalue="40"/>
-        <dimension name="XUCD" xvalue="69"/>
-        <dimension name="XLCS" xvalue="112"/>
-        <dimension name="XLCR" xvalue="32"/>
-        <dimension name="XLCD" xvalue="54"/>
-        <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="920"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7783,11 +7536,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7808,7 +7561,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="0"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7844,11 +7596,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7869,7 +7621,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="1000"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7905,11 +7656,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7930,7 +7681,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="23"/>
         <dimension name="BARS" xvalue="0"/>
@@ -7966,11 +7716,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -7991,7 +7741,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="274"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8027,11 +7776,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8052,7 +7801,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="683"/>
@@ -8088,11 +7836,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8113,7 +7861,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8149,11 +7896,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8174,7 +7921,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8186,7 +7932,7 @@
         <dimension name="YQFI" xvalue="144"/>
       </location>
     </source>
-    <source filename="AmstelvarA2-Roman_YQUC122.ufo" familyname="AmstelvarA2 Roman" stylename="YQUC122">
+    <source filename="AmstelvarA2-Roman_YQUC92.ufo" familyname="AmstelvarA2 Roman" stylename="YQUC92">
       <location>
         <dimension name="GRAD" xvalue="0"/>
         <dimension name="XOUC" xvalue="90"/>
@@ -8210,11 +7956,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8235,12 +7981,11 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
         <dimension name="XQUC" xvalue="136"/>
-        <dimension name="YQUC" xvalue="122"/>
+        <dimension name="YQUC" xvalue="92"/>
         <dimension name="XQLC" xvalue="82"/>
         <dimension name="YQLC" xvalue="90"/>
         <dimension name="XQFI" xvalue="80"/>
@@ -8271,11 +8016,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8296,7 +8041,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8332,11 +8076,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8357,7 +8101,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8393,11 +8136,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8418,7 +8161,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8454,11 +8196,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8479,7 +8221,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8515,11 +8256,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8540,7 +8281,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8576,11 +8316,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8601,7 +8341,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8637,11 +8376,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8662,7 +8401,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8698,11 +8436,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8723,7 +8461,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8759,11 +8496,11 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
-        <dimension name="YSVL" xvalue="140"/>
+        <dimension name="YSVL" xvalue="70"/>
         <dimension name="XSHF" xvalue="129"/>
         <dimension name="YSHF" xvalue="47"/>
         <dimension name="XSVF" xvalue="61"/>
@@ -8784,7 +8521,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8822,7 +8558,7 @@
         <dimension name="XSHU" xvalue="82"/>
         <dimension name="YSHU" xvalue="12"/>
         <dimension name="XSVU" xvalue="14"/>
-        <dimension name="YSVU" xvalue="168"/>
+        <dimension name="YSVU" xvalue="153"/>
         <dimension name="XSHL" xvalue="61"/>
         <dimension name="YSHL" xvalue="10"/>
         <dimension name="XSVL" xvalue="14"/>
@@ -8847,7 +8583,6 @@
         <dimension name="XLCR" xvalue="24"/>
         <dimension name="XLCD" xvalue="34"/>
         <dimension name="XFIR" xvalue="28"/>
-        <dimension name="XTAB" xvalue="535"/>
         <dimension name="WDSP" xvalue="267"/>
         <dimension name="XDOT" xvalue="116"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8883,7 +8618,7 @@
         <dimension name="XSHU" xvalue="102"/>
         <dimension name="YSHU" xvalue="12"/>
         <dimension name="XSVU" xvalue="24"/>
-        <dimension name="YSVU" xvalue="168"/>
+        <dimension name="YSVU" xvalue="153"/>
         <dimension name="XSHL" xvalue="86"/>
         <dimension name="YSHL" xvalue="12"/>
         <dimension name="XSVL" xvalue="20"/>
@@ -8908,7 +8643,6 @@
         <dimension name="XLCR" xvalue="37"/>
         <dimension name="XLCD" xvalue="68"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="785"/>
         <dimension name="WDSP" xvalue="267"/>
         <dimension name="XDOT" xvalue="116"/>
         <dimension name="BARS" xvalue="0"/>
@@ -8944,7 +8678,7 @@
         <dimension name="XSHU" xvalue="58"/>
         <dimension name="YSHU" xvalue="10"/>
         <dimension name="XSVU" xvalue="14"/>
-        <dimension name="YSVU" xvalue="158"/>
+        <dimension name="YSVU" xvalue="143"/>
         <dimension name="XSHL" xvalue="37"/>
         <dimension name="YSHL" xvalue="10"/>
         <dimension name="XSVL" xvalue="15"/>
@@ -8969,7 +8703,6 @@
         <dimension name="XLCR" xvalue="17"/>
         <dimension name="XLCD" xvalue="19"/>
         <dimension name="XFIR" xvalue="24"/>
-        <dimension name="XTAB" xvalue="465"/>
         <dimension name="WDSP" xvalue="100"/>
         <dimension name="XDOT" xvalue="95"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9005,7 +8738,7 @@
         <dimension name="XSHU" xvalue="92"/>
         <dimension name="YSHU" xvalue="9"/>
         <dimension name="XSVU" xvalue="6"/>
-        <dimension name="YSVU" xvalue="161"/>
+        <dimension name="YSVU" xvalue="152"/>
         <dimension name="XSHL" xvalue="71"/>
         <dimension name="YSHL" xvalue="6"/>
         <dimension name="XSVL" xvalue="11"/>
@@ -9030,7 +8763,6 @@
         <dimension name="XLCR" xvalue="26"/>
         <dimension name="XLCD" xvalue="58"/>
         <dimension name="XFIR" xvalue="32"/>
-        <dimension name="XTAB" xvalue="550"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="XDOT" xvalue="64"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9066,7 +8798,7 @@
         <dimension name="XSHU" xvalue="68"/>
         <dimension name="YSHU" xvalue="28"/>
         <dimension name="XSVU" xvalue="32"/>
-        <dimension name="YSVU" xvalue="166"/>
+        <dimension name="YSVU" xvalue="131"/>
         <dimension name="XSHL" xvalue="61"/>
         <dimension name="YSHL" xvalue="30"/>
         <dimension name="XSVL" xvalue="38"/>
@@ -9091,7 +8823,6 @@
         <dimension name="XLCR" xvalue="18"/>
         <dimension name="XLCD" xvalue="48"/>
         <dimension name="XFIR" xvalue="20"/>
-        <dimension name="XTAB" xvalue="746"/>
         <dimension name="WDSP" xvalue="198"/>
         <dimension name="XDOT" xvalue="218"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9127,7 +8858,7 @@
         <dimension name="XSHU" xvalue="88"/>
         <dimension name="YSHU" xvalue="28"/>
         <dimension name="XSVU" xvalue="36"/>
-        <dimension name="YSVU" xvalue="156"/>
+        <dimension name="YSVU" xvalue="120"/>
         <dimension name="XSHL" xvalue="86"/>
         <dimension name="YSHL" xvalue="32"/>
         <dimension name="XSVL" xvalue="44"/>
@@ -9152,7 +8883,6 @@
         <dimension name="XLCR" xvalue="31"/>
         <dimension name="XLCD" xvalue="35"/>
         <dimension name="XFIR" xvalue="30"/>
-        <dimension name="XTAB" xvalue="996"/>
         <dimension name="WDSP" xvalue="225"/>
         <dimension name="XDOT" xvalue="218"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9188,7 +8918,7 @@
         <dimension name="XSHU" xvalue="32"/>
         <dimension name="YSHU" xvalue="26"/>
         <dimension name="XSVU" xvalue="26"/>
-        <dimension name="YSVU" xvalue="210"/>
+        <dimension name="YSVU" xvalue="180"/>
         <dimension name="XSHL" xvalue="24"/>
         <dimension name="YSHL" xvalue="26"/>
         <dimension name="XSVL" xvalue="34"/>
@@ -9213,7 +8943,6 @@
         <dimension name="XLCR" xvalue="11"/>
         <dimension name="XLCD" xvalue="28"/>
         <dimension name="XFIR" xvalue="15"/>
-        <dimension name="XTAB" xvalue="509"/>
         <dimension name="WDSP" xvalue="156"/>
         <dimension name="XDOT" xvalue="196"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9249,7 +8978,7 @@
         <dimension name="XSHU" xvalue="114"/>
         <dimension name="YSHU" xvalue="9"/>
         <dimension name="XSVU" xvalue="9"/>
-        <dimension name="YSVU" xvalue="178"/>
+        <dimension name="YSVU" xvalue="170"/>
         <dimension name="XSHL" xvalue="98"/>
         <dimension name="YSHL" xvalue="8"/>
         <dimension name="XSVL" xvalue="8"/>
@@ -9274,7 +9003,6 @@
         <dimension name="XLCR" xvalue="39"/>
         <dimension name="XLCD" xvalue="91"/>
         <dimension name="XFIR" xvalue="41"/>
-        <dimension name="XTAB" xvalue="723"/>
         <dimension name="WDSP" xvalue="278"/>
         <dimension name="XDOT" xvalue="64"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9310,7 +9038,7 @@
         <dimension name="XSHU" xvalue="68"/>
         <dimension name="YSHU" xvalue="7"/>
         <dimension name="XSVU" xvalue="6"/>
-        <dimension name="YSVU" xvalue="171"/>
+        <dimension name="YSVU" xvalue="162"/>
         <dimension name="XSHL" xvalue="46"/>
         <dimension name="YSHL" xvalue="6"/>
         <dimension name="XSVL" xvalue="6"/>
@@ -9335,7 +9063,6 @@
         <dimension name="XLCR" xvalue="19"/>
         <dimension name="XLCD" xvalue="42"/>
         <dimension name="XFIR" xvalue="25"/>
-        <dimension name="XTAB" xvalue="465"/>
         <dimension name="WDSP" xvalue="122"/>
         <dimension name="XDOT" xvalue="58"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9371,7 +9098,7 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="75"/>
         <dimension name="XSVU" xvalue="80"/>
-        <dimension name="YSVU" xvalue="231"/>
+        <dimension name="YSVU" xvalue="149"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="68"/>
         <dimension name="XSVL" xvalue="76"/>
@@ -9396,7 +9123,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="61"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="162"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9432,7 +9158,7 @@
         <dimension name="XSHU" xvalue="124"/>
         <dimension name="YSHU" xvalue="75"/>
         <dimension name="XSVU" xvalue="90"/>
-        <dimension name="YSVU" xvalue="231"/>
+        <dimension name="YSVU" xvalue="149"/>
         <dimension name="XSHL" xvalue="99"/>
         <dimension name="YSHL" xvalue="70"/>
         <dimension name="XSVL" xvalue="82"/>
@@ -9457,7 +9183,6 @@
         <dimension name="XLCR" xvalue="45"/>
         <dimension name="XLCD" xvalue="94"/>
         <dimension name="XFIR" xvalue="46"/>
-        <dimension name="XTAB" xvalue="750"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="162"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9493,7 +9218,7 @@
         <dimension name="XSHU" xvalue="74"/>
         <dimension name="YSHU" xvalue="73"/>
         <dimension name="XSVU" xvalue="80"/>
-        <dimension name="YSVU" xvalue="221"/>
+        <dimension name="YSVU" xvalue="146"/>
         <dimension name="XSHL" xvalue="50"/>
         <dimension name="YSHL" xvalue="68"/>
         <dimension name="XSVL" xvalue="77"/>
@@ -9518,7 +9243,6 @@
         <dimension name="XLCR" xvalue="28"/>
         <dimension name="XLCD" xvalue="46"/>
         <dimension name="XFIR" xvalue="34"/>
-        <dimension name="XTAB" xvalue="448"/>
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="XDOT" xvalue="140"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9554,7 +9278,7 @@
         <dimension name="XSHU" xvalue="114"/>
         <dimension name="YSHU" xvalue="49"/>
         <dimension name="XSVU" xvalue="47"/>
-        <dimension name="YSVU" xvalue="198"/>
+        <dimension name="YSVU" xvalue="150"/>
         <dimension name="XSHL" xvalue="84"/>
         <dimension name="YSHL" xvalue="48"/>
         <dimension name="XSVL" xvalue="49"/>
@@ -9579,7 +9303,6 @@
         <dimension name="XLCR" xvalue="34"/>
         <dimension name="XLCD" xvalue="74"/>
         <dimension name="XFIR" xvalue="38"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="XDOT" xvalue="109"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9615,7 +9338,7 @@
         <dimension name="XSHU" xvalue="89"/>
         <dimension name="YSHU" xvalue="90"/>
         <dimension name="XSVU" xvalue="98"/>
-        <dimension name="YSVU" xvalue="229"/>
+        <dimension name="YSVU" xvalue="127"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="88"/>
         <dimension name="XSVL" xvalue="100"/>
@@ -9640,7 +9363,6 @@
         <dimension name="XLCR" xvalue="26"/>
         <dimension name="XLCD" xvalue="74"/>
         <dimension name="XFIR" xvalue="30"/>
-        <dimension name="XTAB" xvalue="712"/>
         <dimension name="WDSP" xvalue="250"/>
         <dimension name="XDOT" xvalue="264"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9676,7 +9398,7 @@
         <dimension name="XSHU" xvalue="109"/>
         <dimension name="YSHU" xvalue="90"/>
         <dimension name="XSVU" xvalue="108"/>
-        <dimension name="YSVU" xvalue="229"/>
+        <dimension name="YSVU" xvalue="132"/>
         <dimension name="XSHL" xvalue="99"/>
         <dimension name="YSHL" xvalue="90"/>
         <dimension name="XSVL" xvalue="122"/>
@@ -9701,7 +9423,6 @@
         <dimension name="XLCR" xvalue="37"/>
         <dimension name="XLCD" xvalue="93"/>
         <dimension name="XFIR" xvalue="40"/>
-        <dimension name="XTAB" xvalue="948"/>
         <dimension name="WDSP" xvalue="310"/>
         <dimension name="XDOT" xvalue="264"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9737,7 +9458,7 @@
         <dimension name="XSHU" xvalue="56"/>
         <dimension name="YSHU" xvalue="88"/>
         <dimension name="XSVU" xvalue="98"/>
-        <dimension name="YSVU" xvalue="219"/>
+        <dimension name="YSVU" xvalue="127"/>
         <dimension name="XSHL" xvalue="50"/>
         <dimension name="YSHL" xvalue="88"/>
         <dimension name="XSVL" xvalue="146"/>
@@ -9762,7 +9483,6 @@
         <dimension name="XLCR" xvalue="19"/>
         <dimension name="XLCD" xvalue="36"/>
         <dimension name="XFIR" xvalue="22"/>
-        <dimension name="XTAB" xvalue="644"/>
         <dimension name="WDSP" xvalue="240"/>
         <dimension name="XDOT" xvalue="242"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9798,7 +9518,7 @@
         <dimension name="XSHU" xvalue="134"/>
         <dimension name="YSHU" xvalue="49"/>
         <dimension name="XSVU" xvalue="47"/>
-        <dimension name="YSVU" xvalue="198"/>
+        <dimension name="YSVU" xvalue="148"/>
         <dimension name="XSHL" xvalue="109"/>
         <dimension name="YSHL" xvalue="50"/>
         <dimension name="XSVL" xvalue="45"/>
@@ -9823,7 +9543,6 @@
         <dimension name="XLCR" xvalue="47"/>
         <dimension name="XLCD" xvalue="108"/>
         <dimension name="XFIR" xvalue="49"/>
-        <dimension name="XTAB" xvalue="775"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="XDOT" xvalue="120"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9859,7 +9578,7 @@
         <dimension name="XSHU" xvalue="89"/>
         <dimension name="YSHU" xvalue="47"/>
         <dimension name="XSVU" xvalue="42"/>
-        <dimension name="YSVU" xvalue="188"/>
+        <dimension name="YSVU" xvalue="140"/>
         <dimension name="XSHL" xvalue="60"/>
         <dimension name="YSHL" xvalue="48"/>
         <dimension name="XSVL" xvalue="41"/>
@@ -9884,7 +9603,6 @@
         <dimension name="XLCR" xvalue="27"/>
         <dimension name="XLCD" xvalue="59"/>
         <dimension name="XFIR" xvalue="33"/>
-        <dimension name="XTAB" xvalue="432"/>
         <dimension name="WDSP" xvalue="160"/>
         <dimension name="XDOT" xvalue="104"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9920,7 +9638,7 @@
         <dimension name="XSHU" xvalue="124"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="65"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="99"/>
         <dimension name="YSHL" xvalue="42"/>
         <dimension name="XSVL" xvalue="60"/>
@@ -9945,7 +9663,6 @@
         <dimension name="XLCR" xvalue="45"/>
         <dimension name="XLCD" xvalue="88"/>
         <dimension name="XFIR" xvalue="46"/>
-        <dimension name="XTAB" xvalue="750"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
@@ -9981,7 +9698,7 @@
         <dimension name="XSHU" xvalue="79"/>
         <dimension name="YSHU" xvalue="48"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="214"/>
+        <dimension name="YSVU" xvalue="155"/>
         <dimension name="XSHL" xvalue="50"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="56"/>
@@ -10006,7 +9723,6 @@
         <dimension name="XLCR" xvalue="25"/>
         <dimension name="XLCD" xvalue="39"/>
         <dimension name="XFIR" xvalue="31"/>
-        <dimension name="XTAB" xvalue="430"/>
         <dimension name="WDSP" xvalue="152"/>
         <dimension name="XDOT" xvalue="122"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10042,7 +9758,7 @@
         <dimension name="XSHU" xvalue="114"/>
         <dimension name="YSHU" xvalue="24"/>
         <dimension name="XSVU" xvalue="27"/>
-        <dimension name="YSVU" xvalue="192"/>
+        <dimension name="YSVU" xvalue="163"/>
         <dimension name="XSHL" xvalue="84"/>
         <dimension name="YSHL" xvalue="20"/>
         <dimension name="XSVL" xvalue="28"/>
@@ -10067,7 +9783,6 @@
         <dimension name="XLCR" xvalue="34"/>
         <dimension name="XLCD" xvalue="67"/>
         <dimension name="XFIR" xvalue="39"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="XDOT" xvalue="91"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10103,7 +9818,7 @@
         <dimension name="XSHU" xvalue="89"/>
         <dimension name="YSHU" xvalue="65"/>
         <dimension name="XSVU" xvalue="73"/>
-        <dimension name="YSVU" xvalue="222"/>
+        <dimension name="YSVU" xvalue="143"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="60"/>
         <dimension name="XSVL" xvalue="78"/>
@@ -10128,7 +9843,6 @@
         <dimension name="XLCR" xvalue="27"/>
         <dimension name="XLCD" xvalue="68"/>
         <dimension name="XFIR" xvalue="30"/>
-        <dimension name="XTAB" xvalue="712"/>
         <dimension name="WDSP" xvalue="250"/>
         <dimension name="XDOT" xvalue="246"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10164,7 +9878,7 @@
         <dimension name="XSHU" xvalue="109"/>
         <dimension name="YSHU" xvalue="65"/>
         <dimension name="XSVU" xvalue="83"/>
-        <dimension name="YSVU" xvalue="222"/>
+        <dimension name="YSVU" xvalue="143"/>
         <dimension name="XSHL" xvalue="99"/>
         <dimension name="YSHL" xvalue="62"/>
         <dimension name="XSVL" xvalue="85"/>
@@ -10189,7 +9903,6 @@
         <dimension name="XLCR" xvalue="39"/>
         <dimension name="XLCD" xvalue="101"/>
         <dimension name="XFIR" xvalue="40"/>
-        <dimension name="XTAB" xvalue="962"/>
         <dimension name="WDSP" xvalue="250"/>
         <dimension name="XDOT" xvalue="246"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10225,7 +9938,7 @@
         <dimension name="XSHU" xvalue="32"/>
         <dimension name="YSHU" xvalue="63"/>
         <dimension name="XSVU" xvalue="78"/>
-        <dimension name="YSVU" xvalue="212"/>
+        <dimension name="YSVU" xvalue="143"/>
         <dimension name="XSHL" xvalue="25"/>
         <dimension name="YSHL" xvalue="60"/>
         <dimension name="XSVL" xvalue="100"/>
@@ -10250,7 +9963,6 @@
         <dimension name="XLCR" xvalue="18"/>
         <dimension name="XLCD" xvalue="38"/>
         <dimension name="XFIR" xvalue="23"/>
-        <dimension name="XTAB" xvalue="642"/>
         <dimension name="WDSP" xvalue="150"/>
         <dimension name="XDOT" xvalue="224"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10286,7 +9998,7 @@
         <dimension name="XSHU" xvalue="134"/>
         <dimension name="YSHU" xvalue="24"/>
         <dimension name="XSVU" xvalue="32"/>
-        <dimension name="YSVU" xvalue="192"/>
+        <dimension name="YSVU" xvalue="163"/>
         <dimension name="XSHL" xvalue="110"/>
         <dimension name="YSHL" xvalue="22"/>
         <dimension name="XSVL" xvalue="29"/>
@@ -10311,7 +10023,6 @@
         <dimension name="XLCR" xvalue="47"/>
         <dimension name="XLCD" xvalue="110"/>
         <dimension name="XFIR" xvalue="50"/>
-        <dimension name="XTAB" xvalue="782"/>
         <dimension name="WDSP" xvalue="256"/>
         <dimension name="XDOT" xvalue="91"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10347,7 +10058,7 @@
         <dimension name="XSHU" xvalue="89"/>
         <dimension name="YSHU" xvalue="22"/>
         <dimension name="XSVU" xvalue="27"/>
-        <dimension name="YSVU" xvalue="182"/>
+        <dimension name="YSVU" xvalue="156"/>
         <dimension name="XSHL" xvalue="60"/>
         <dimension name="YSHL" xvalue="20"/>
         <dimension name="XSVL" xvalue="29"/>
@@ -10372,7 +10083,6 @@
         <dimension name="XLCR" xvalue="27"/>
         <dimension name="XLCD" xvalue="48"/>
         <dimension name="XFIR" xvalue="33"/>
-        <dimension name="XTAB" xvalue="430"/>
         <dimension name="WDSP" xvalue="105"/>
         <dimension name="XDOT" xvalue="70"/>
         <dimension name="BARS" xvalue="0"/>
@@ -10408,7 +10118,7 @@
         <dimension name="XSHU" xvalue="104"/>
         <dimension name="YSHU" xvalue="50"/>
         <dimension name="XSVU" xvalue="55"/>
-        <dimension name="YSVU" xvalue="224"/>
+        <dimension name="YSVU" xvalue="165"/>
         <dimension name="XSHL" xvalue="74"/>
         <dimension name="YSHL" xvalue="40"/>
         <dimension name="XSVL" xvalue="54"/>
@@ -10433,7 +10143,6 @@
         <dimension name="XLCR" xvalue="32"/>
         <dimension name="XLCD" xvalue="54"/>
         <dimension name="XFIR" xvalue="37"/>
-        <dimension name="XTAB" xvalue="500"/>
         <dimension name="WDSP" xvalue="320"/>
         <dimension name="XDOT" xvalue="144"/>
         <dimension name="BARS" xvalue="0"/>
