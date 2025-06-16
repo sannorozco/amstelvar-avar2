@@ -659,19 +659,19 @@
     },
     "XTUA": {
       "direction": "x",
-      "glyph 1": "acutecomb.case",
-      "point 1": "5",
-      "glyph 2": "acutecomb.case",
-      "point 2": "0",
+      "glyph 1": "circumflexcomb.case",
+      "point 1": "7",
+      "glyph 2": "circumflexcomb.case",
+      "point 2": "5",
       "parent": "",
       "description": "Uppercase accent width"
     },
     "XTLA": {
       "direction": "x",
-      "glyph 1": "acutecomb",
-      "point 1": "5",
-      "glyph 2": "acutecomb",
-      "point 2": "0",
+      "glyph 1": "circumflexcomb",
+      "point 1": "7",
+      "glyph 2": "circumflexcomb",
+      "point 2": "5",
       "parent": "",
       "description": "Lowercase accent width"
     },
@@ -2653,10 +2653,6 @@
         "name": "XQUC",
         "direction": "x"
       },
-      "19 20": {
-        "name": "XQUC",
-        "direction": "x"
-      },
       "23 24": {
         "name": "YQUC",
         "direction": "y"
@@ -2907,15 +2903,7 @@
         "name": "XQUC",
         "direction": "x"
       },
-      "29 28": {
-        "name": "XQUC",
-        "direction": "x"
-      },
       "6 7": {
-        "name": "XQUC",
-        "direction": "x"
-      },
-      "5 6": {
         "name": "XQUC",
         "direction": "x"
       },
@@ -5430,11 +5418,43 @@
         "direction": "y"
       },
       "O 0": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "C 17": {
-        "name": "YTOS",
+        "name": "YTUO",
+        "direction": "y"
+      },
+      "43 42": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "42 41": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "36 37": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "36 47": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "45 44": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "39 40": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "46 45": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "38 39": {
+        "name": "YQUC",
         "direction": "y"
       }
     },
@@ -5888,6 +5908,38 @@
       },
       "35 34": {
         "name": "YSHU",
+        "direction": "y"
+      },
+      "42 41": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "36 37": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "8 7": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "12 13": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "39 40": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "38 39": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "10 9": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "11 10": {
+        "name": "YQUC",
         "direction": "y"
       }
     },
@@ -10230,11 +10282,11 @@
         "direction": "y"
       },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "O 23": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "38 37": {
@@ -10298,10 +10350,6 @@
       "O 9": {
         "name": "YTOS",
         "direction": "y"
-      },
-      "28 27": {
-        "name": "XQUC",
-        "direction": "x"
       },
       "27 26": {
         "name": "XQUC",
@@ -10836,11 +10884,11 @@
         "name": "XSVU",
         "direction": "x"
       },
-      "9 8": {
+      "9 11": {
         "name": "YSVU",
         "direction": "y"
       },
-      "35 34": {
+      "35 37": {
         "name": "YSVU",
         "direction": "y"
       },
@@ -10848,12 +10896,36 @@
         "name": "XVAU",
         "direction": "x"
       },
+      "37 36": {
+        "name": "XVAU",
+        "direction": "x"
+      },
+      "11 10": {
+        "name": "XVAU",
+        "direction": "x"
+      },
       "C 3": {
-        "name": "YTOS",
+        "name": "YTUO",
         "direction": "y"
       },
       "O 27": {
-        "name": "YTOS",
+        "name": "YTUO",
+        "direction": "y"
+      },
+      "15 14": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "19 20": {
+        "name": "XQUC",
+        "direction": "x"
+      },
+      "17 16": {
+        "name": "YQUC",
+        "direction": "y"
+      },
+      "37 17": {
+        "name": "YQUC",
         "direction": "y"
       }
     },
@@ -15859,16 +15931,7 @@
         "direction": "y"
       }
     },
-    "ha-stroke": {
-      "0 5": {
-        "name": "_new",
-        "direction": ""
-      },
-      "4 5": {
-        "name": "_new",
-        "direction": ""
-      }
-    },
+    "ha-stroke": {},
     "divide": {},
     "Hbar": {},
     "engn": {
@@ -16017,7 +16080,12 @@
       }
     },
     "brevebelowcomb.case": {},
-    "circumflexcomb.case": {},
+    "circumflexcomb.case": {
+      "7 5": {
+        "name": "XTUA",
+        "direction": "x"
+      }
+    },
     "hookabovecomb.case": {},
     "breveinvertedcomb.case": {},
     "macroncomb.case": {},
@@ -16664,6 +16732,33 @@
     "Uhorndotbelow": {},
     "Beta": {},
     "Uacute": {},
-    "anoteleia": {}
+    "anoteleia": {},
+    "Ve": {},
+    "Ohornacute": {},
+    "Uinvertedbreve": {},
+    "Scommaaccent": {},
+    "Ymacron": {},
+    "Uhungarumlautcyr": {},
+    "Upsilontonos": {},
+    "increment": {},
+    "Adieresiscyr": {},
+    "Eacute": {},
+    "Jcircumflex": {},
+    "tilde.case": {},
+    "acute.case": {},
+    "Ecircumflexacute": {},
+    "Em": {},
+    "i.bgr": {},
+    "hornu": {},
+    "En": {},
+    "Wacute": {},
+    "tilde": {},
+    "circumflex": {},
+    "breveinvertedcomb-stack": {},
+    "ucircumflex": {},
+    "yamacron": {},
+    "dotaccent-stack": {},
+    "dotaccent": {},
+    "grave-stack": {}
   }
 }

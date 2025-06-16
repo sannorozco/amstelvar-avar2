@@ -56,7 +56,6 @@ def ttf2ttx(ttfPath):
     tt.close()
 
 
-
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
 # 1. get a list of all combining accents
