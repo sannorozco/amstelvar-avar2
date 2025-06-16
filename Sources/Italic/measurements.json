@@ -641,19 +641,19 @@
     },
     "XTUA": {
       "direction": "x",
-      "glyph 1": "acutecomb.case",
-      "point 1": "0",
-      "glyph 2": "acutecomb.case",
-      "point 2": "7",
+      "glyph 1": "circumflexcomb.case",
+      "point 1": "7",
+      "glyph 2": "circumflexcomb.case",
+      "point 2": "5",
       "parent": "",
       "description": "Uppercase accent width"
     },
     "XTLA": {
       "direction": "x",
-      "glyph 1": "acutecomb",
-      "point 1": "5",
-      "glyph 2": "acutecomb",
-      "point 2": "0",
+      "glyph 1": "circumflexcomb",
+      "point 1": "7",
+      "glyph 2": "circumflexcomb",
+      "point 2": "5",
       "parent": "",
       "description": "Lowercase accent width"
     },
@@ -12749,6 +12749,10 @@
     "umacron": {},
     "yhookabove": {},
     "obreve": {},
-    "figuredash": {}
+    "figuredash": {},
+    "dblgravecomb-stack.case": {},
+    "gbreve": {},
+    "hyphentwo": {},
+    "odblgrave": {}
   }
 }

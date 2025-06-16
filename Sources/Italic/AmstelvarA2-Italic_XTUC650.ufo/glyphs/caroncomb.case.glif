@@ -6,16 +6,22 @@
     <contour>
       <point x="133.0" y="1646.0" type="qcurve" smooth="yes"/>
       <point x="99.0" y="1646.0"/>
-      <point x="62" y="1686"/>
-      <point x="29" y="1719" type="qcurve" smooth="yes"/>
-      <point x="-213" y="1962" type="line"/>
-      <point x="-132" y="2035" type="line"/>
+      <point x="64.0" y="1679.0"/>
+      <point x="39.0" y="1719.0" type="qcurve" smooth="yes"/>
+      <point x="-113.0" y="1962.0" type="line"/>
+      <point x="-32.0" y="2035.0" type="line"/>
       <point x="158.0" y="1820.0" type="line"/>
-      <point x="538" y="2035" type="line"/>
-      <point x="613" y="1962" type="line"/>
-      <point x="269" y="1719" type="line" smooth="yes"/>
-      <point x="211" y="1678"/>
+      <point x="438.0" y="2035.0" type="line"/>
+      <point x="513.0" y="1962.0" type="line"/>
+      <point x="259.0" y="1719.0" type="line" smooth="yes"/>
+      <point x="207.0" y="1670.0"/>
       <point x="167.0" y="1646.0"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.65,1,0.35</string>
+    </dict>
+  </lib>
 </glyph>
