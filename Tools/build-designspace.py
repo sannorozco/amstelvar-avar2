@@ -166,7 +166,7 @@ class AmstelvarA2DesignSpaceBuilder:
         'YTEQ' : 'YQUC',
     }
 
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split() # XTAB
+    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTUA XTLC XTLR XTLD XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split() # XTAB
     parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [
@@ -735,7 +735,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][1]
+    subFamilyName = ['Roman', 'Italic'][0]
 
     start = time.time()
 

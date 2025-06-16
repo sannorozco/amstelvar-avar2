@@ -659,10 +659,10 @@
     },
     "XTUA": {
       "direction": "x",
-      "glyph 1": "acutecomb.case",
-      "point 1": "5",
-      "glyph 2": "acutecomb.case",
-      "point 2": "0",
+      "glyph 1": "circumflexcomb.case",
+      "point 1": "7",
+      "glyph 2": "circumflexcomb.case",
+      "point 2": "5",
       "parent": "",
       "description": "Uppercase accent width"
     },
@@ -15931,16 +15931,7 @@
         "direction": "y"
       }
     },
-    "ha-stroke": {
-      "0 5": {
-        "name": "_new",
-        "direction": ""
-      },
-      "4 5": {
-        "name": "_new",
-        "direction": ""
-      }
-    },
+    "ha-stroke": {},
     "divide": {},
     "Hbar": {},
     "engn": {
@@ -16089,7 +16080,12 @@
       }
     },
     "brevebelowcomb.case": {},
-    "circumflexcomb.case": {},
+    "circumflexcomb.case": {
+      "7 5": {
+        "name": "XTUA",
+        "direction": "x"
+      }
+    },
     "hookabovecomb.case": {},
     "breveinvertedcomb.case": {},
     "macroncomb.case": {},
@@ -16740,6 +16736,21 @@
     "Ve": {},
     "Ohornacute": {},
     "Uinvertedbreve": {},
-    "Scommaaccent": {}
+    "Scommaaccent": {},
+    "Ymacron": {},
+    "Uhungarumlautcyr": {},
+    "Upsilontonos": {},
+    "increment": {},
+    "Adieresiscyr": {},
+    "Eacute": {},
+    "Jcircumflex": {},
+    "tilde.case": {},
+    "acute.case": {},
+    "Ecircumflexacute": {},
+    "Em": {},
+    "i.bgr": {},
+    "hornu": {},
+    "En": {},
+    "Wacute": {}
   }
 }

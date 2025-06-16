@@ -15,6 +15,7 @@
     <axis tag="XTUC" name="XTUC" minimum="72" maximum="668" default="400"/>
     <axis tag="XTUR" name="XTUR" minimum="58" maximum="902" default="561"/>
     <axis tag="XTUD" name="XTUD" minimum="76" maximum="686" default="410"/>
+    <axis tag="XTUA" name="XTUA" minimum="228" maximum="401" default="258"/>
     <axis tag="XTLC" name="XTLC" minimum="42" maximum="500" default="243"/>
     <axis tag="XTLR" name="XTLR" minimum="46" maximum="625" default="337"/>
     <axis tag="XTLD" name="XTLD" minimum="84" maximum="501" default="248"/>
@@ -119,6 +120,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="251"/>
         </output>
       </mapping>
       <mapping description="opsz144_wdth125">
@@ -179,6 +181,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="311"/>
         </output>
       </mapping>
       <mapping description="opsz144_wdth50">
@@ -239,6 +242,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="233"/>
         </output>
       </mapping>
       <mapping description="opsz144_wght100">
@@ -299,6 +303,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="10"/>
+          <dimension name="XTUA" xvalue="239"/>
         </output>
       </mapping>
       <mapping description="opsz144_wght1000">
@@ -359,6 +364,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="276"/>
         </output>
       </mapping>
       <mapping description="opsz144_wght1000_wdth125">
@@ -420,6 +426,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="302"/>
         </output>
       </mapping>
       <mapping description="opsz144_wght1000_wdth50">
@@ -481,6 +488,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="257"/>
         </output>
       </mapping>
       <mapping description="opsz144_wght100_wdth125">
@@ -542,6 +550,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="288"/>
         </output>
       </mapping>
       <mapping description="opsz144_wght100_wdth50">
@@ -603,6 +612,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="16"/>
+          <dimension name="XTUA" xvalue="191"/>
         </output>
       </mapping>
       <mapping description="opsz8">
@@ -662,6 +672,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="252"/>
         </output>
       </mapping>
       <mapping description="opsz8_wdth125">
@@ -722,6 +733,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="318"/>
         </output>
       </mapping>
       <mapping description="opsz8_wdth50">
@@ -782,6 +794,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="234"/>
         </output>
       </mapping>
       <mapping description="opsz8_wght100">
@@ -842,6 +855,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="235"/>
         </output>
       </mapping>
       <mapping description="opsz8_wght1000">
@@ -902,6 +916,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="274"/>
         </output>
       </mapping>
       <mapping description="opsz8_wght1000_wdth125">
@@ -963,6 +978,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="381"/>
         </output>
       </mapping>
       <mapping description="opsz8_wght1000_wdth50">
@@ -1024,6 +1040,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="269"/>
         </output>
       </mapping>
       <mapping description="opsz8_wght100_wdth125">
@@ -1085,6 +1102,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="377"/>
         </output>
       </mapping>
       <mapping description="opsz8_wght100_wdth50">
@@ -1146,6 +1164,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="192"/>
         </output>
       </mapping>
       <mapping description="wdth125">
@@ -1205,6 +1224,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="324"/>
         </output>
       </mapping>
       <mapping description="wdth50">
@@ -1264,6 +1284,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="240"/>
         </output>
       </mapping>
       <mapping description="wght100">
@@ -1323,6 +1344,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="235"/>
         </output>
       </mapping>
       <mapping description="wght1000">
@@ -1382,6 +1404,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="282"/>
         </output>
       </mapping>
       <mapping description="wght1000_wdth125">
@@ -1442,6 +1465,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="352"/>
         </output>
       </mapping>
       <mapping description="wght1000_wdth50">
@@ -1502,6 +1526,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="22"/>
+          <dimension name="XTUA" xvalue="264"/>
         </output>
       </mapping>
       <mapping description="wght100_wdth125">
@@ -1562,6 +1587,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="324"/>
         </output>
       </mapping>
       <mapping description="wght100_wdth50">
@@ -1622,6 +1648,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="14"/>
           <dimension name="YHAF" xvalue="14"/>
+          <dimension name="XTUA" xvalue="217"/>
         </output>
       </mapping>
       <mapping description="wght400">
@@ -1681,6 +1708,7 @@
           <dimension name="YHAU" xvalue="18"/>
           <dimension name="YHAL" xvalue="18"/>
           <dimension name="YHAF" xvalue="18"/>
+          <dimension name="XTUA" xvalue="258"/>
         </output>
       </mapping>
       <mapping description="XTSP-100">
@@ -1697,6 +1725,7 @@
           <dimension name="XTUC" xvalue="400"/>
           <dimension name="XTUR" xvalue="561"/>
           <dimension name="XTUD" xvalue="410"/>
+          <dimension name="XTUA" xvalue="258"/>
           <dimension name="XTLC" xvalue="243"/>
           <dimension name="XTLR" xvalue="337"/>
           <dimension name="XTLD" xvalue="248"/>
@@ -1760,6 +1789,7 @@
           <dimension name="XTUC" xvalue="400"/>
           <dimension name="XTUR" xvalue="561"/>
           <dimension name="XTUD" xvalue="410"/>
+          <dimension name="XTUA" xvalue="258"/>
           <dimension name="XTLC" xvalue="243"/>
           <dimension name="XTLR" xvalue="337"/>
           <dimension name="XTLD" xvalue="248"/>
@@ -1824,6 +1854,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -1884,6 +1915,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -1944,6 +1976,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2004,6 +2037,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2064,6 +2098,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2124,6 +2159,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2184,6 +2220,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2244,6 +2281,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2304,6 +2342,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2364,6 +2403,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2424,6 +2464,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2484,6 +2525,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2544,6 +2586,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2604,6 +2647,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2664,6 +2708,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2724,6 +2769,7 @@
         <dimension name="XTUC" xvalue="72"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2784,6 +2830,7 @@
         <dimension name="XTUC" xvalue="668"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2844,6 +2891,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="902"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2904,6 +2952,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="58"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -2964,6 +3013,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="686"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3024,6 +3074,129 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="76"/>
+        <dimension name="XTUA" xvalue="258"/>
+        <dimension name="XTLC" xvalue="243"/>
+        <dimension name="XTLR" xvalue="337"/>
+        <dimension name="XTLD" xvalue="248"/>
+        <dimension name="XTFI" xvalue="329"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="165"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="54"/>
+        <dimension name="YSVL" xvalue="70"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="117"/>
+        <dimension name="XVAU" xvalue="18"/>
+        <dimension name="YHAU" xvalue="18"/>
+        <dimension name="XVAL" xvalue="17"/>
+        <dimension name="YHAL" xvalue="18"/>
+        <dimension name="XVAF" xvalue="18"/>
+        <dimension name="YHAF" xvalue="18"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="XUCR" xvalue="40"/>
+        <dimension name="XUCD" xvalue="69"/>
+        <dimension name="XLCS" xvalue="112"/>
+        <dimension name="XLCR" xvalue="32"/>
+        <dimension name="XLCD" xvalue="54"/>
+        <dimension name="XFIR" xvalue="37"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
+        <dimension name="BARS" xvalue="0"/>
+        <dimension name="XQUC" xvalue="136"/>
+        <dimension name="YQUC" xvalue="141"/>
+        <dimension name="XQLC" xvalue="82"/>
+        <dimension name="YQLC" xvalue="90"/>
+        <dimension name="XQFI" xvalue="80"/>
+        <dimension name="YQFI" xvalue="144"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUA401.ufo" familyname="AmstelvarA2 Roman" stylename="XTUA401">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="YOUC" xvalue="66"/>
+        <dimension name="YOLC" xvalue="58"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="401"/>
+        <dimension name="XTLC" xvalue="243"/>
+        <dimension name="XTLR" xvalue="337"/>
+        <dimension name="XTLD" xvalue="248"/>
+        <dimension name="XTFI" xvalue="329"/>
+        <dimension name="YTUC" xvalue="750"/>
+        <dimension name="YTLC" xvalue="511"/>
+        <dimension name="YTAS" xvalue="767"/>
+        <dimension name="YTDE" xvalue="-240"/>
+        <dimension name="YTFI" xvalue="771"/>
+        <dimension name="XSHU" xvalue="104"/>
+        <dimension name="YSHU" xvalue="50"/>
+        <dimension name="XSVU" xvalue="55"/>
+        <dimension name="YSVU" xvalue="165"/>
+        <dimension name="XSHL" xvalue="74"/>
+        <dimension name="YSHL" xvalue="40"/>
+        <dimension name="XSVL" xvalue="54"/>
+        <dimension name="YSVL" xvalue="70"/>
+        <dimension name="XSHF" xvalue="129"/>
+        <dimension name="YSHF" xvalue="47"/>
+        <dimension name="XSVF" xvalue="61"/>
+        <dimension name="YSVF" xvalue="117"/>
+        <dimension name="XVAU" xvalue="18"/>
+        <dimension name="YHAU" xvalue="18"/>
+        <dimension name="XVAL" xvalue="17"/>
+        <dimension name="YHAL" xvalue="18"/>
+        <dimension name="XVAF" xvalue="18"/>
+        <dimension name="YHAF" xvalue="18"/>
+        <dimension name="XTTW" xvalue="5"/>
+        <dimension name="YTTL" xvalue="57"/>
+        <dimension name="YTOS" xvalue="10"/>
+        <dimension name="XUCS" xvalue="145"/>
+        <dimension name="XUCR" xvalue="40"/>
+        <dimension name="XUCD" xvalue="69"/>
+        <dimension name="XLCS" xvalue="112"/>
+        <dimension name="XLCR" xvalue="32"/>
+        <dimension name="XLCD" xvalue="54"/>
+        <dimension name="XFIR" xvalue="37"/>
+        <dimension name="WDSP" xvalue="320"/>
+        <dimension name="XDOT" xvalue="144"/>
+        <dimension name="BARS" xvalue="0"/>
+        <dimension name="XQUC" xvalue="136"/>
+        <dimension name="YQUC" xvalue="141"/>
+        <dimension name="XQLC" xvalue="82"/>
+        <dimension name="YQLC" xvalue="90"/>
+        <dimension name="XQFI" xvalue="80"/>
+        <dimension name="YQFI" xvalue="144"/>
+      </location>
+    </source>
+    <source filename="AmstelvarA2-Roman_XTUA228.ufo" familyname="AmstelvarA2 Roman" stylename="XTUA228">
+      <location>
+        <dimension name="GRAD" xvalue="0"/>
+        <dimension name="XOUC" xvalue="90"/>
+        <dimension name="XOLC" xvalue="85"/>
+        <dimension name="XOFI" xvalue="88"/>
+        <dimension name="YOUC" xvalue="66"/>
+        <dimension name="YOLC" xvalue="58"/>
+        <dimension name="YOFI" xvalue="56"/>
+        <dimension name="XTUC" xvalue="400"/>
+        <dimension name="XTUR" xvalue="561"/>
+        <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="228"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3084,6 +3257,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="42"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3144,6 +3318,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="500"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3204,6 +3379,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="46"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3264,6 +3440,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="625"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3324,6 +3501,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="501"/>
@@ -3384,6 +3562,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="84"/>
@@ -3444,6 +3623,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3504,6 +3684,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3564,6 +3745,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3624,6 +3806,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3684,6 +3867,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3744,6 +3928,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3804,6 +3989,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3864,6 +4050,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3924,6 +4111,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -3984,6 +4172,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4044,6 +4233,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4104,6 +4294,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4164,6 +4355,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4224,6 +4416,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4284,6 +4477,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4344,6 +4538,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4404,6 +4599,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4464,6 +4660,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4524,6 +4721,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4584,6 +4782,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4644,6 +4843,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4704,6 +4904,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4764,6 +4965,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4824,6 +5026,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4884,6 +5087,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -4944,6 +5148,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5004,6 +5209,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5064,6 +5270,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5124,6 +5331,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5184,6 +5392,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5244,6 +5453,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5304,6 +5514,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5364,6 +5575,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5424,6 +5636,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5484,6 +5697,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5544,6 +5758,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5604,6 +5819,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5664,6 +5880,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5724,6 +5941,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5784,6 +6002,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5844,6 +6063,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5904,6 +6124,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -5964,6 +6185,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6024,6 +6246,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6084,6 +6307,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6144,6 +6368,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6204,6 +6429,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6264,6 +6490,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6324,6 +6551,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6384,6 +6612,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6444,6 +6673,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6504,6 +6734,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6564,6 +6795,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6624,6 +6856,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6684,6 +6917,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6744,6 +6978,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6804,6 +7039,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6864,6 +7100,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6924,6 +7161,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -6984,6 +7222,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7044,6 +7283,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7104,6 +7344,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7164,6 +7405,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7224,6 +7466,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7284,6 +7527,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7344,6 +7588,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7404,6 +7649,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7464,6 +7710,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7524,6 +7771,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7584,6 +7832,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7644,6 +7893,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7704,6 +7954,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7764,6 +8015,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7824,6 +8076,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7884,6 +8137,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -7944,6 +8198,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8004,6 +8259,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8064,6 +8320,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8124,6 +8381,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8184,6 +8442,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8244,6 +8503,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8304,6 +8564,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8364,6 +8625,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8424,6 +8686,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8484,6 +8747,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>
@@ -8546,6 +8810,7 @@
         <dimension name="XTUC" xvalue="348"/>
         <dimension name="XTUR" xvalue="470"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="251"/>
         <dimension name="XTLC" xvalue="224"/>
         <dimension name="XTLR" xvalue="308"/>
         <dimension name="XTLD" xvalue="254"/>
@@ -8606,6 +8871,7 @@
         <dimension name="XTUC" xvalue="540"/>
         <dimension name="XTUR" xvalue="702"/>
         <dimension name="XTUD" xvalue="600"/>
+        <dimension name="XTUA" xvalue="311"/>
         <dimension name="XTLC" xvalue="414"/>
         <dimension name="XTLR" xvalue="502"/>
         <dimension name="XTLD" xvalue="418"/>
@@ -8666,6 +8932,7 @@
         <dimension name="XTUC" xvalue="168"/>
         <dimension name="XTUR" xvalue="214"/>
         <dimension name="XTUD" xvalue="242"/>
+        <dimension name="XTUA" xvalue="233"/>
         <dimension name="XTLC" xvalue="106"/>
         <dimension name="XTLR" xvalue="140"/>
         <dimension name="XTLD" xvalue="153"/>
@@ -8726,6 +8993,7 @@
         <dimension name="XTUC" xvalue="418"/>
         <dimension name="XTUR" xvalue="571"/>
         <dimension name="XTUD" xvalue="433"/>
+        <dimension name="XTUA" xvalue="239"/>
         <dimension name="XTLC" xvalue="288"/>
         <dimension name="XTLR" xvalue="402"/>
         <dimension name="XTLD" xvalue="290"/>
@@ -8786,6 +9054,7 @@
         <dimension name="XTUC" xvalue="198"/>
         <dimension name="XTUR" xvalue="251"/>
         <dimension name="XTUD" xvalue="306"/>
+        <dimension name="XTUA" xvalue="276"/>
         <dimension name="XTLC" xvalue="151"/>
         <dimension name="XTLR" xvalue="175"/>
         <dimension name="XTLD" xvalue="214"/>
@@ -8846,6 +9115,7 @@
         <dimension name="XTUC" xvalue="390"/>
         <dimension name="XTUR" xvalue="483"/>
         <dimension name="XTUD" xvalue="504"/>
+        <dimension name="XTUA" xvalue="302"/>
         <dimension name="XTLC" xvalue="341"/>
         <dimension name="XTLR" xvalue="369"/>
         <dimension name="XTLD" xvalue="391"/>
@@ -8906,6 +9176,7 @@
         <dimension name="XTUC" xvalue="72"/>
         <dimension name="XTUR" xvalue="66"/>
         <dimension name="XTUD" xvalue="170"/>
+        <dimension name="XTUA" xvalue="257"/>
         <dimension name="XTLC" xvalue="46"/>
         <dimension name="XTLR" xvalue="49"/>
         <dimension name="XTLD" xvalue="104"/>
@@ -8966,6 +9237,7 @@
         <dimension name="XTUC" xvalue="614"/>
         <dimension name="XTUR" xvalue="810"/>
         <dimension name="XTUD" xvalue="632"/>
+        <dimension name="XTUA" xvalue="288"/>
         <dimension name="XTLC" xvalue="486"/>
         <dimension name="XTLR" xvalue="596"/>
         <dimension name="XTLD" xvalue="470"/>
@@ -9026,6 +9298,7 @@
         <dimension name="XTUC" xvalue="238"/>
         <dimension name="XTUR" xvalue="310"/>
         <dimension name="XTUD" xvalue="256"/>
+        <dimension name="XTUA" xvalue="191"/>
         <dimension name="XTLC" xvalue="172"/>
         <dimension name="XTLR" xvalue="212"/>
         <dimension name="XTLD" xvalue="188"/>
@@ -9086,6 +9359,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="388"/>
+        <dimension name="XTUA" xvalue="252"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="340"/>
         <dimension name="XTLD" xvalue="236"/>
@@ -9146,6 +9420,7 @@
         <dimension name="XTUC" xvalue="591"/>
         <dimension name="XTUR" xvalue="793"/>
         <dimension name="XTUD" xvalue="578"/>
+        <dimension name="XTUA" xvalue="318"/>
         <dimension name="XTLC" xvalue="433"/>
         <dimension name="XTLR" xvalue="534"/>
         <dimension name="XTLD" xvalue="401"/>
@@ -9206,6 +9481,7 @@
         <dimension name="XTUC" xvalue="220"/>
         <dimension name="XTUR" xvalue="305"/>
         <dimension name="XTUD" xvalue="236"/>
+        <dimension name="XTUA" xvalue="234"/>
         <dimension name="XTLC" xvalue="128"/>
         <dimension name="XTLR" xvalue="171"/>
         <dimension name="XTLD" xvalue="140"/>
@@ -9266,6 +9542,7 @@
         <dimension name="XTUC" xvalue="470"/>
         <dimension name="XTUR" xvalue="668"/>
         <dimension name="XTUD" xvalue="452"/>
+        <dimension name="XTUA" xvalue="235"/>
         <dimension name="XTLC" xvalue="306"/>
         <dimension name="XTLR" xvalue="434"/>
         <dimension name="XTLD" xvalue="301"/>
@@ -9326,6 +9603,7 @@
         <dimension name="XTUC" xvalue="250"/>
         <dimension name="XTUR" xvalue="342"/>
         <dimension name="XTUD" xvalue="281"/>
+        <dimension name="XTUA" xvalue="274"/>
         <dimension name="XTLC" xvalue="170"/>
         <dimension name="XTLR" xvalue="206"/>
         <dimension name="XTLD" xvalue="197"/>
@@ -9386,6 +9664,7 @@
         <dimension name="XTUC" xvalue="441"/>
         <dimension name="XTUR" xvalue="574"/>
         <dimension name="XTUD" xvalue="499"/>
+        <dimension name="XTUA" xvalue="381"/>
         <dimension name="XTLC" xvalue="360"/>
         <dimension name="XTLR" xvalue="410"/>
         <dimension name="XTLD" xvalue="386"/>
@@ -9446,6 +9725,7 @@
         <dimension name="XTUC" xvalue="74"/>
         <dimension name="XTUR" xvalue="86"/>
         <dimension name="XTUD" xvalue="129"/>
+        <dimension name="XTUA" xvalue="269"/>
         <dimension name="XTLC" xvalue="56"/>
         <dimension name="XTLR" xvalue="48"/>
         <dimension name="XTLD" xvalue="116"/>
@@ -9506,6 +9786,7 @@
         <dimension name="XTUC" xvalue="661"/>
         <dimension name="XTUR" xvalue="900"/>
         <dimension name="XTUD" xvalue="649"/>
+        <dimension name="XTUA" xvalue="377"/>
         <dimension name="XTLC" xvalue="496"/>
         <dimension name="XTLR" xvalue="622"/>
         <dimension name="XTLD" xvalue="485"/>
@@ -9566,6 +9847,7 @@
         <dimension name="XTUC" xvalue="290"/>
         <dimension name="XTUR" xvalue="408"/>
         <dimension name="XTUD" xvalue="326"/>
+        <dimension name="XTUA" xvalue="192"/>
         <dimension name="XTLC" xvalue="188"/>
         <dimension name="XTLR" xvalue="266"/>
         <dimension name="XTLD" xvalue="206"/>
@@ -9626,6 +9908,7 @@
         <dimension name="XTUC" xvalue="591"/>
         <dimension name="XTUR" xvalue="793"/>
         <dimension name="XTUD" xvalue="601"/>
+        <dimension name="XTUA" xvalue="324"/>
         <dimension name="XTLC" xvalue="433"/>
         <dimension name="XTLR" xvalue="531"/>
         <dimension name="XTLD" xvalue="412"/>
@@ -9686,6 +9969,7 @@
         <dimension name="XTUC" xvalue="220"/>
         <dimension name="XTUR" xvalue="305"/>
         <dimension name="XTUD" xvalue="248"/>
+        <dimension name="XTUA" xvalue="240"/>
         <dimension name="XTLC" xvalue="124"/>
         <dimension name="XTLR" xvalue="168"/>
         <dimension name="XTLD" xvalue="147"/>
@@ -9746,6 +10030,7 @@
         <dimension name="XTUC" xvalue="470"/>
         <dimension name="XTUR" xvalue="668"/>
         <dimension name="XTUD" xvalue="477"/>
+        <dimension name="XTUA" xvalue="235"/>
         <dimension name="XTLC" xvalue="306"/>
         <dimension name="XTLR" xvalue="431"/>
         <dimension name="XTLD" xvalue="312"/>
@@ -9806,6 +10091,7 @@
         <dimension name="XTUC" xvalue="250"/>
         <dimension name="XTUR" xvalue="342"/>
         <dimension name="XTUD" xvalue="304"/>
+        <dimension name="XTUA" xvalue="282"/>
         <dimension name="XTLC" xvalue="170"/>
         <dimension name="XTLR" xvalue="204"/>
         <dimension name="XTLD" xvalue="208"/>
@@ -9866,6 +10152,7 @@
         <dimension name="XTUC" xvalue="441"/>
         <dimension name="XTUR" xvalue="574"/>
         <dimension name="XTUD" xvalue="494"/>
+        <dimension name="XTUA" xvalue="352"/>
         <dimension name="XTLC" xvalue="360"/>
         <dimension name="XTLR" xvalue="398"/>
         <dimension name="XTLD" xvalue="388"/>
@@ -9926,6 +10213,7 @@
         <dimension name="XTUC" xvalue="75"/>
         <dimension name="XTUR" xvalue="86"/>
         <dimension name="XTUD" xvalue="118"/>
+        <dimension name="XTUA" xvalue="264"/>
         <dimension name="XTLC" xvalue="80"/>
         <dimension name="XTLR" xvalue="68"/>
         <dimension name="XTLD" xvalue="112"/>
@@ -9986,6 +10274,7 @@
         <dimension name="XTUC" xvalue="661"/>
         <dimension name="XTUR" xvalue="900"/>
         <dimension name="XTUD" xvalue="678"/>
+        <dimension name="XTUA" xvalue="324"/>
         <dimension name="XTLC" xvalue="498"/>
         <dimension name="XTLR" xvalue="625"/>
         <dimension name="XTLD" xvalue="498"/>
@@ -10046,6 +10335,7 @@
         <dimension name="XTUC" xvalue="290"/>
         <dimension name="XTUR" xvalue="412"/>
         <dimension name="XTUD" xvalue="342"/>
+        <dimension name="XTUA" xvalue="217"/>
         <dimension name="XTLC" xvalue="188"/>
         <dimension name="XTLR" xvalue="260"/>
         <dimension name="XTLD" xvalue="218"/>
@@ -10106,6 +10396,7 @@
         <dimension name="XTUC" xvalue="400"/>
         <dimension name="XTUR" xvalue="561"/>
         <dimension name="XTUD" xvalue="410"/>
+        <dimension name="XTUA" xvalue="258"/>
         <dimension name="XTLC" xvalue="243"/>
         <dimension name="XTLR" xvalue="337"/>
         <dimension name="XTLD" xvalue="248"/>

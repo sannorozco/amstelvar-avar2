@@ -12,8 +12,8 @@ from xTools4.modules.validation import assignValidationGroup
 # --------
 
 familyName     = 'AmstelvarA2'
-subFamilyName  = ['Roman', 'Italic'][1]
-glyphNames     = ['cent']
+subFamilyName  = ['Roman', 'Italic'][0]
+glyphNames     = ['Ef']
 newDefaultName = 'wght400'
 oldDefaultName = 'WDSP0'
 preflight      = False
@@ -22,27 +22,38 @@ preflight      = False
 # functions
 # ---------
 
-def updateGlyphsFromDefault(font, oldDefault, newDefault, glyphNames):
-    name = os.path.splitext(os.path.split(font.path)[-1])[0].split('_')[-1]
-    print(familyName, subFamilyName, name)
+def updateGlyphsFromDefault(currentFont, oldDefaultFont, newDefaultFont, glyphNames):
+    name = os.path.splitext(os.path.split(currentFont.path)[-1])[0].split('_')[-1]
     fontChanged = False
     for glyphName in glyphNames:
-        if glyphName not in oldDefault or glyphName not in font or glyphName not in newDefault:
+        if glyphName not in oldDefaultFont or glyphName not in currentFont or glyphName not in newDefaultFont:
             continue
-        g1 = oldDefault[glyphName]
-        g2 = font[glyphName]
-        g3 = newDefault[glyphName]
-        validationGroup = assignValidationGroup(g1, g2)
-        validationGroupDefaults = assignValidationGroup(g1, g3)
-        if validationGroup == 'contoursEqual' and validationGroupDefaults != 'contoursEqual':
-            print(f'\tupdating /{glyphName} from {newDefaultName}...')
-            font.insertGlyph(g3, name=glyphName)
+
+        print(familyName, subFamilyName, name)
+
+        oldDefaultGlyph = oldDefaultFont[glyphName]
+        currentGlyph    = currentFont[glyphName]
+        newDefaultGlyph = newDefaultFont[glyphName]
+
+        validationGroupOldNew = assignValidationGroup(oldDefaultGlyph, newDefaultGlyph)
+        if validationGroupOldNew == 'contoursEqual':
+            print(familyName, subFamilyName, name)
+            print(f'old default /{glyphName} is equal to new default, skipping...')
+            continue
+
+        validationGroupOldCurrent = assignValidationGroup(oldDefaultGlyph, currentGlyph)
+        if validationGroupOldCurrent == 'contoursEqual':
+            # current glyph is equal to old default!
+            print(f'\tupdating /{glyphName} from default...')
+            font.insertGlyph(newDefaultGlyph, name=glyphName)
             if not fontChanged:
                 fontChanged = True
+
     if fontChanged and not preflight:
         print('\tsaving font...')
         font.save()
         font.close()
+
     print()
 
 # ---------------------------
@@ -68,5 +79,3 @@ for ufoPath in sorted(ufoPaths):
     updateGlyphsFromDefault(font, oldDefault, newDefault, glyphNames)
 
 updateGlyphsFromDefault(oldDefault, oldDefault, newDefault, glyphNames)
-
-
