@@ -20,6 +20,7 @@ from xTools4.modules.linkPoints2 import readMeasurements
 from xTools4.modules.sys import timer
 
 
+### DEPRECATED!
 def makeParentAxis(parentName, parametricAxes, defaultName):
     r'''
     Calculate a parent axis to control several parametric axes, 
@@ -165,8 +166,8 @@ class AmstelvarA2DesignSpaceBuilder:
         'XTEQ' : 'XQUC',
         'YTEQ' : 'YQUC',
     }
-
-    parametricAxesRoman  = 'XOUC XOLC XOFI YOUC YOLC YOFI XTUC XTUR XTUD XTUA XTLC XTLR XTLD XTLA XTFI YTUC YTLC YTAS YTDE YTFI XSHU YSHU XSVU YSVU XSHL YSHL XSVL YSVL XSHF YSHF XSVF YSVF XVAU YHAU XVAL YHAL XVAF YHAF XTTW YTTL YTOS XUCS XUCR XUCD XLCS XLCR XLCD XFIR WDSP XDOT BARS XQUC YQUC XQLC YQLC XQFI YQFI'.split() # XTAB
+                                      # UPPERCASE                                                                               # LOWERCASE                                                                                         # FIGURES                                                        # VARIETY
+    parametricAxesRoman  = 'WDSP GRAD XOUC YOUC XTUC XTUR XTUD XTUA YTUC XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD XOLC YOLC XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC XOFI YOFI XTFI YTFI XSHF YSHF XSVF YSVF XVAF YHAF XQFI YQFI XFIR XDOT YTOS XTTW YTTL BARS'.split()
     parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [
@@ -273,19 +274,12 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def addParametricAxes(self):
 
-        # add custom parametric axes
-        a = AxisDescriptor()
-        a.name    = 'GRAD'
-        a.tag     = 'GRAD'
-        a.minimum = -300
-        a.maximum = 500
-        a.default = 0
-        self.designspace.addAxis(a)
-
-        # add parametric axes
         for name in self.parametricAxes:
             # get default value
-            defaultValue = permille(self.measurementsDefault.values[name], self.unitsPerEm)
+            if name == 'GRAD':
+                defaultValue = 0
+            else:
+                defaultValue = permille(self.measurementsDefault.values[name], self.unitsPerEm)
             # get min/max values from file names
             values = []
             for ufo in self.parametricSources:
@@ -310,27 +304,7 @@ class AmstelvarA2DesignSpaceBuilder:
             a.minimum = minValue
             a.maximum = maxValue
             a.default = defaultValue
-
             self.designspace.addAxis(a)
-
-        # add custom BARS axis
-        # a = AxisDescriptor()
-        # a.name    = 'BARS'
-        # a.tag     = 'BARS'
-        # a.minimum = 0
-        # a.maximum = 100
-        # a.default = 100
-        # self.designspace.addAxis(a)
-
-        # # custom YTEQ axis
-        # if self.subFamilyName == 'Roman':
-        #     a = AxisDescriptor()
-        #     a.name    = 'YTEQ'
-        #     a.tag     = 'YTEQ'
-        #     a.minimum = 0
-        #     a.maximum = 100
-        #     a.default = 0
-        #     self.designspace.addAxis(a)
 
     def addDefaultSource(self):
         src = SourceDescriptor()
@@ -341,20 +315,6 @@ class AmstelvarA2DesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
-
-        # add custom parametric sources
-        axis = 'GRAD'
-        for value in [-300, 500]:
-            src = SourceDescriptor()
-            src.path       = os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}_{axis}{value}.ufo')
-            src.familyName = f'{self.familyName} {self.subFamilyName}'
-            src.styleName  = f'{axis}{value}'
-            L = self.defaultLocation.copy()
-            L[axis] = value
-            src.location = L
-            self.designspace.addSource(src)
-
-        # add parametric sources
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
                 if name in ufo:
@@ -370,7 +330,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def addInstances(self):
         for styleName in self.blendedSources.keys():
-            # add only opsz-wght-wdth as instances
+            # only add opsz/wght/wdth as instances
             if not ('opsz' in styleName or 'wght' in styleName or 'wdth' in styleName):
                 continue
             # if styleName == 'wght400':
@@ -430,26 +390,6 @@ class AmstelvarA2DesignSpaceBuilder:
             values.sort()
             blendsDict['sources']['XTSP-100'][axisName] = values[0]
             blendsDict['sources']['XTSP100'][axisName] = values[1]
-
-        # -------------
-        # add XTRA axis
-        # -------------
-
-        # XTUC_default = permille(self.measurementsDefault.values['XTUC'], self.unitsPerEm)
-        # XTUC_values = []
-        # for ufo in self.parametricSources:
-        #     if 'XTUC' in ufo:
-        #         value = int(os.path.splitext(os.path.split(ufo)[-1])[0].split('_')[-1][4:])
-        #         XTUC_values.append(value)
-        # XTUC_values.sort()
-        # XTUC_min, XTUC_max = XTUC_values
-
-        # blendsDict['axes']['XTRA'] = {
-        #     "name"    : "XTRA",
-        #     "default" : XTUC_default,
-        #     "minimum" : XTUC_min,
-        #     "maximum" : XTUC_max,
-        # }
 
         # -----------------------
         # add blended PARENT axes
@@ -735,7 +675,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][1]
+    subFamilyName = ['Roman', 'Italic'][0]
 
     start = time.time()
 

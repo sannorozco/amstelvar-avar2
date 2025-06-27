@@ -33,15 +33,15 @@
       <point x="313" y="512" type="line"/>
       <point x="323" y="98" type="line"/>
       <point x="369" y="57"/>
-      <point x="507" y="-1"/>
-      <point x="603" y="-1" type="qcurve" smooth="yes"/>
-      <point x="727" y="-1"/>
+      <point x="507" y="10"/>
+      <point x="593" y="10" type="qcurve" smooth="yes"/>
+      <point x="727" y="10"/>
       <point x="894" y="268"/>
       <point x="894" y="520" type="qcurve" smooth="yes"/>
       <point x="894" y="752"/>
-      <point x="740" y="1008"/>
-      <point x="626" y="1008" type="qcurve" smooth="yes"/>
-      <point x="537" y="1008"/>
+      <point x="740" y="998"/>
+      <point x="611" y="998" type="qcurve" smooth="yes"/>
+      <point x="537" y="998"/>
       <point x="377" y="918"/>
       <point x="323" y="850" type="qcurve"/>
     </contour>
@@ -128,6 +128,8 @@
           <string>XLCR</string>
         </dict>
       </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/fontbureau/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_YOLC4.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>
