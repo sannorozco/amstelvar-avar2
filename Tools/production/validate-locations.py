@@ -18,10 +18,13 @@ doc.read(designspacePath)
 if _sources:
     locations = []
     for src in doc.sources:
-        if src not in locations:
+        if src.location not in locations:
             locations.append(src.location)
         else:
-            print(src.name, src.location)
+            print(src.styleName)
+            print(src.location)
+            print()
+print()
 
 # validate instances
 if _instances:
