@@ -13,6 +13,7 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 from defcon import Font
 from ufo2ft import compileVariableTTF
+from mojo.smartSet import readSmartSets
 import ufoProcessor # upgrade to UFOOperator?
 from extractor import extractUFO
 from xTools4.modules.measurements import FontMeasurements, permille
@@ -122,6 +123,45 @@ def makeParentAxis(parentName, parametricAxes, defaultName):
                 maps[axisName] = int(axisValue)
 
     return parentAxis, mappings
+
+
+def getCombingingAccents(smartSetsPath):
+    smartSets = readSmartSets(smartSetsPath, useAsDefault=False, font=None)
+    combiningAccents = []
+    for smartGroup in smartSets:
+        if not smartGroup.groups:
+            continue
+        for smartSet in smartGroup.groups:
+            if 'accents comb' in smartSet.name:
+                combiningAccents += smartSet.glyphNames
+    return set(combiningAccents)
+
+def findGlyphsWithUnderscoreAnchors(font):
+    underscoreGlyphs = []
+    for g in font:
+        for a in g.anchors:
+            if a.name.startswith('_'):
+                underscoreGlyphs.append(g.name)
+    return set(underscoreGlyphs)
+
+def ttx2ttf(ttxPath):
+    ttfPath = ttxPath.replace('.ttx', '.ttf')
+    if os.path.exists(ttfPath):
+        os.remove(ttfPath)
+    tt = TTFont()
+    tt.verbose = False
+    tt.importXML(ttxPath)
+    tt.save(ttfPath)
+    tt.close()
+
+def ttf2ttx(ttfPath):
+    ttxPath = ttfPath.replace('.ttf', '.ttx')
+    if os.path.exists(ttxPath):
+        os.remove(ttxPath)
+    tt = TTFont(ttfPath)
+    tt.verbose = False
+    tt.saveXML(ttxPath)
+    tt.close()
 
 
 class AmstelvarA2DesignSpaceBuilder:
@@ -499,9 +539,10 @@ class AmstelvarA2DesignSpaceBuilder:
     def save(self):
         if not self.designspace:
             return
-        print(f'saving...', end=' ')
+        print(f'saving designspace...', end=' ')
         self.designspace.write(self.designspacePath)
         print(os.path.exists(self.designspacePath))
+        print()
 
     def build(self):
         print(f'building {os.path.split(self.designspacePath)[-1]}...')
@@ -536,7 +577,7 @@ class AmstelvarA2DesignSpaceBuilder:
             f.save()
             f.close()
 
-    def buildVariableFont(self, subset=None, setVersionInfo=True, debug=False):
+    def buildVariableFont(self, subset=None, setVersionInfo=True, debug=False, fixGDEF=False):
 
         print(f'generating variable font for {self.designspaceName}...')
 
@@ -548,9 +589,30 @@ class AmstelvarA2DesignSpaceBuilder:
                 print(f'\t\tloading {src.familyName} {src.styleName}...')
             src.font = Font(src.path)
 
-        ###
-        ### REWRITE VARIABLE FONT GENERATION HERE
-        ###
+        # generate variable font with fontmake
+
+        if 'PYTHONHOME' in os.environ:
+           del os.environ['PYTHONHOME']
+
+        print(f"\tbuilding avar2 font... ", end='')
+
+        ttfPath = os.path.join(self.varFontsFolder, f'AmstelvarA2-{self.subFamilyName}_avar2.ttf')
+        cmd  = ['/opt/homebrew/bin/fontmake']
+        cmd += ['-m', self.designspacePath]
+        cmd += ['-o', 'variable']
+        cmd += ['--output-path', ttfPath]
+        cmd += ['--feature-writer', 'None']
+        cmd += ['--no-generate-GDEF']
+        cmd += ['--keep-direction']
+        cmd += ['--verbose WARNING']
+        cmd  = ' '.join(cmd)
+
+        with subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as p:
+            for line in p.stdout.readlines():
+                print(line,)
+            retval = p.wait()
+
+        print(f'{os.path.exists(ttfPath)}')
 
         # subset ascii variable font with pyftsubset
         if subset:
@@ -562,31 +624,53 @@ class AmstelvarA2DesignSpaceBuilder:
             subsetter.subset(font)
             font.save(self.varFontPath)
 
-        # set version info in the font's unique name
-        if setVersionInfo:
-            print('\tsetting version info...')
+        if setVersionInfo or fixGDEF:
+
             # convert ttf to ttx
+            ttf2ttx(self.varFontPath)
+
+            # load XML from ttx
             ttxPath = self.varFontPath.replace('.ttf', '.ttx')
-            tt = TTFont(self.varFontPath)
-            tt.verbose = False
-            tt.saveXML(ttxPath)
-            tt.close()
-            # make unique name with timestamp
-            timestamp = time.strftime("%Y%m%d%H%M", time.localtime())
-            uniqueName = f'{self.familyName} {self.subFamilyName} {timestamp}'
-            # add version info to unique name -- nameID 3
             tree = parse(ttxPath)
             root = tree.getroot()
-            for child in root.find('name'):
-                if child.attrib['nameID'] == '3':
-                    child.text = uniqueName
+
+            # set version info in the font's unique name
+            if setVersionInfo:
+                print('\tsetting version info...')
+                # make unique name with timestamp
+                timestamp = time.strftime("%Y%m%d%H%M", time.localtime())
+                uniqueName = f'{self.familyName} {self.subFamilyName} {timestamp}'
+                # add version info to unique name -- nameID 3
+                for child in root.find('name'):
+                    if child.attrib['nameID'] == '3':
+                        child.text = uniqueName
+
+            # fix buggy class in GDEF table
+            if fixGDEF:
+                defaultFont = OpenFont(self.defaultUFO, showInterface=False)
+                # 1. get a list of all combining accents
+                smartSetsPath = os.path.join(self.sourcesFolder, f'AmstelvarA2-{self.subFamilyName}.roboFontSets')
+                combiningAccents = getCombingingAccents(smartSetsPath)
+                # 2. get a list of all glyphs with anchors starting with underscore
+                underscoreGlyphs = findGlyphsWithUnderscoreAnchors(defaultFont)
+                # subtract (1) from (2) to get a list of glyphs to fix
+                glyphsToFix = list(underscoreGlyphs.difference(combiningAccents))
+
+                print('\tfixing bug in GDEF table...')
+                for child in root.find('GDEF'):
+                    if child.tag == 'GlyphClassDef':
+                        for g in child.iter('ClassDef'):
+                            glyphName = g.get('glyph')
+                            if glyphName in glyphsToFix:
+                                # change GDEF class from 3 to 1
+                                g.set('class', '1')
+
+            # save XML to ttx
             tree.write(ttxPath)
+
             # convert ttx back to ttf
-            tt = TTFont()
-            tt.verbose = False
-            tt.importXML(ttxPath)
-            tt.save(self.varFontPath)
-            tt.close()
+            ttx2ttf(ttxPath)
+
             # clear ttx file
             os.remove(ttxPath)
 
@@ -679,13 +763,12 @@ if __name__ == '__main__':
 
     start = time.time()
 
-    D2 = AmstelvarA2DesignSpaceBuilder(subFamilyName)
-    D2.build()
-    D2.save()
-    # D2.buildVariableFont(subset=None, setVersionInfo=True, debug=False)
-    # D2.buildInstancesVariableFont(clear=True, ufo=True)
-    # D2.printAxes()
+    D = AmstelvarA2DesignSpaceBuilder(subFamilyName)
+    D.build()
+    D.save()
+    D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=True, debug=False)
+    # # D.buildInstancesVariableFont(clear=True, ufo=True)
+    # # D.printAxes()
 
     end = time.time()
-
     timer(start, end)
