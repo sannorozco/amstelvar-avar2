@@ -149,6 +149,13 @@ def findGlyphsWithUnderscoreAnchors(font):
                 underscoreGlyphs.append(g.name)
     return set(underscoreGlyphs)
 
+### UPDATE 15/07/2025:
+### the fix above solves the problem only in the GDEF table;
+### the font still contains buggy `mark` and `mkmk` features!
+### TO-DO: try alternative fix using pyftsubset:
+### http://fonttools.readthedocs.io/en/latest/subset/index.html
+### fonttools subset AmstelvarA2-Roman.ttf –layout-features-='mark','mkmk'
+
 
 
 class AmstelvarA2DesignSpaceBuilder:
