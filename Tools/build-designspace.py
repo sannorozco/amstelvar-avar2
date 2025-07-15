@@ -1,6 +1,8 @@
 from importlib import reload
 import xTools4.modules.sys
 reload(xTools4.modules.sys)
+import xTools4.modules.ttx
+reload(xTools4.modules.ttx)
 import xTools4.modules.measurements
 reload(xTools4.modules.measurements)
 
@@ -19,9 +21,11 @@ from extractor import extractUFO
 from xTools4.modules.measurements import FontMeasurements, permille
 from xTools4.modules.linkPoints2 import readMeasurements
 from xTools4.modules.sys import timer
+from xTools4.modules.ttx import ttf2ttx, ttx2ttf
 
 
 ### DEPRECATED!
+### copy implementation from RobotoDelta
 def makeParentAxis(parentName, parametricAxes, defaultName):
     r'''
     Calculate a parent axis to control several parametric axes, 
@@ -124,7 +128,8 @@ def makeParentAxis(parentName, parametricAxes, defaultName):
 
     return parentAxis, mappings
 
-
+### USED BY GDEF-FIX
+### http://github.com/googlefonts/fontmake/issues/1148
 def getCombingingAccents(smartSetsPath):
     smartSets = readSmartSets(smartSetsPath, useAsDefault=False, font=None)
     combiningAccents = []
@@ -144,24 +149,6 @@ def findGlyphsWithUnderscoreAnchors(font):
                 underscoreGlyphs.append(g.name)
     return set(underscoreGlyphs)
 
-def ttx2ttf(ttxPath):
-    ttfPath = ttxPath.replace('.ttx', '.ttf')
-    if os.path.exists(ttfPath):
-        os.remove(ttfPath)
-    tt = TTFont()
-    tt.verbose = False
-    tt.importXML(ttxPath)
-    tt.save(ttfPath)
-    tt.close()
-
-def ttf2ttx(ttfPath):
-    ttxPath = ttfPath.replace('.ttf', '.ttx')
-    if os.path.exists(ttxPath):
-        os.remove(ttxPath)
-    tt = TTFont(ttfPath)
-    tt.verbose = False
-    tt.saveXML(ttxPath)
-    tt.close()
 
 
 class AmstelvarA2DesignSpaceBuilder:
@@ -215,6 +202,8 @@ class AmstelvarA2DesignSpaceBuilder:
         'XLCS', 'XLCR', 'XLCD',
         'XFIR', # 'XFIS', 
     ]
+
+    verbose = True
 
     def __init__(self, subFamilyName='Roman'):
         self.subFamilyName = subFamilyName
@@ -314,7 +303,11 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def addParametricAxes(self):
 
+        if self.verbose:
+            print('\tadding parametric axes...')
+
         for name in self.parametricAxes:
+
             # get default value
             if name == 'GRAD':
                 defaultValue = 0
@@ -347,6 +340,9 @@ class AmstelvarA2DesignSpaceBuilder:
             self.designspace.addAxis(a)
 
     def addDefaultSource(self):
+        if self.verbose:
+            print('\tadding default source...')
+
         src = SourceDescriptor()
         src.path       = self.defaultUFO
         src.familyName = f'{self.familyName} {self.subFamilyName}'
@@ -355,6 +351,9 @@ class AmstelvarA2DesignSpaceBuilder:
         self.designspace.addSource(src)
 
     def addParametricSources(self):
+        if self.verbose:
+            print('\tadding parametric sources...')
+
         for name in self.parametricAxes:
             for ufo in self.parametricSources:
                 if name in ufo:
@@ -369,12 +368,13 @@ class AmstelvarA2DesignSpaceBuilder:
                     self.designspace.addSource(src)
 
     def addInstances(self):
+        if self.verbose:
+            print('\tadding instances...')
+
         for styleName in self.blendedSources.keys():
-            # only add opsz/wght/wdth as instances
+            # add only opsz/wght/wdth as instances
             if not ('opsz' in styleName or 'wght' in styleName or 'wdth' in styleName):
                 continue
-            # if styleName == 'wght400':
-            #     continue
 
             L = self.defaultLocation.copy()
             for axis, value in self.blendedSources[styleName].items():
@@ -390,6 +390,9 @@ class AmstelvarA2DesignSpaceBuilder:
             self.designspace.addInstance(I)
 
     def addBlendedAxes(self):
+        if self.verbose:
+            print('\tadding blended axes...')
+
         for tag in self.blendedAxes.keys():
             a = AxisDescriptor()
             a.name    = self.blendedAxes[tag]['name']
@@ -481,6 +484,9 @@ class AmstelvarA2DesignSpaceBuilder:
         # save AmstelvarA2 blends
         # -----------------------
 
+        if self.verbose:
+            print('\tbuilding blends file...')
+
         with open(self.blendsPath, 'w', encoding='utf-8') as f:
             json.dump(blendsDict, f, indent=2)
 
@@ -511,6 +517,9 @@ class AmstelvarA2DesignSpaceBuilder:
         blendedAxes    = self.blendedAxes
         blendedSources = self.blendedSources
 
+        if self.verbose:
+            print('\tadding mappings...')
+
         for styleName in blendedSources.keys():
             m = AxisMappingDescriptor()
 
@@ -539,13 +548,17 @@ class AmstelvarA2DesignSpaceBuilder:
     def save(self):
         if not self.designspace:
             return
-        print(f'saving designspace...', end=' ')
+        if self.verbose:
+            print(f'\tsaving designspace...', end=' ')
         self.designspace.write(self.designspacePath)
-        print(os.path.exists(self.designspacePath))
-        print()
+        if self.verbose:
+            print(os.path.exists(self.designspacePath))
+            print()
 
     def build(self):
-        print(f'building {os.path.split(self.designspacePath)[-1]}...')
+        if self.verbose:
+            print(f'building {os.path.split(self.designspacePath)[-1]}...')
+
         self.buildBlendsFile()
         # self.patchBlendsFile()
         self.designspace = DesignSpaceDocument()
@@ -555,6 +568,8 @@ class AmstelvarA2DesignSpaceBuilder:
         self.addDefaultSource()
         self.addParametricSources()
         self.addInstances()
+        self.save()
+
 
     def buildInstances(self, clear=True):
 
@@ -741,17 +756,21 @@ class AmstelvarA2DesignSpaceBuilder:
 
     def printAxes(self):
 
+        print()
+
         measurements = {}
         for d in self.measurementsDefault.definitions:
             measurements[d[0]] = d[7]
 
-        print('### Parent parametric axes\n')
-        for n, axis in enumerate(self.parentAxesRoman):
-            print(f'{n+1}. `{axis}` {measurements[axis]}')
+        # print('### Parent parametric axes\n')
+        # for n, axis in enumerate(self.parentAxesRoman):
+        #     print(f'{n+1}. `{axis}` {measurements[axis]}')
 
         print('\n### Parametric axes\n')
         for n, axis in enumerate(self.parametricAxesRoman):
             print(f'{n+1}. `{axis}` {measurements[axis]}')
+
+        print()
 
 # -----
 # build
@@ -765,10 +784,9 @@ if __name__ == '__main__':
 
     D = AmstelvarA2DesignSpaceBuilder(subFamilyName)
     D.build()
-    D.save()
     D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=True, debug=False)
-    # # D.buildInstancesVariableFont(clear=True, ufo=True)
-    # # D.printAxes()
+    # D.buildInstancesVariableFont(clear=True, ufo=True)
+    # D.printAxes()
 
     end = time.time()
     timer(start, end)

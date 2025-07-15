@@ -438,7 +438,7 @@
       "point 1": "-1",
       "glyph 2": "O",
       "point 2": "0",
-      "parent": "",
+      "parent": "XUCS",
       "description": "X sidebearing uppercase rounds"
     },
     "XUCD": {
@@ -446,8 +446,8 @@
       "glyph 1": "V",
       "point 1": "-1",
       "glyph 2": "V",
-      "point 2": 21,
-      "parent": "",
+      "point 2": "0",
+      "parent": "XUCS",
       "description": "X sidebearing uppercase diagonals"
     },
     "XLCS": {
@@ -465,7 +465,7 @@
       "point 1": "-1",
       "glyph 2": "o",
       "point 2": "0",
-      "parent": "",
+      "parent": "XLCS",
       "description": "X sidebearing lowercase rounds"
     },
     "XLCD": {
@@ -473,8 +473,8 @@
       "glyph 1": "v",
       "point 1": "-1",
       "glyph 2": "v",
-      "point 2": 21,
-      "parent": "",
+      "point 2": "0",
+      "parent": "XLCS",
       "description": "X sidebearing lowercase diagonals"
     },
     "XFIR": {
@@ -3124,6 +3124,14 @@
       "8 9": {
         "name": "YTTL",
         "direction": "a"
+      },
+      "-1 0": {
+        "name": "XUCD",
+        "direction": "x"
+      },
+      "15 99": {
+        "name": "XUCD",
+        "direction": "x"
       }
     },
     "W": {
@@ -4586,68 +4594,7 @@
         "direction": "y"
       }
     },
-    "r": {
-      "2 21": {
-        "name": "XOLC",
-        "direction": "x"
-      },
-      "16 12": {
-        "name": "YOLC",
-        "direction": "y"
-      },
-      "21 15": {
-        "name": "XTLC",
-        "direction": "x"
-      },
-      "0 7": {
-        "name": "YTLC",
-        "direction": "y"
-      },
-      "1 2": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "21 22": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "5 4": {
-        "name": "XSHL",
-        "direction": "x"
-      },
-      "0 1": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "23 22": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "5 6": {
-        "name": "YSHL",
-        "direction": "y"
-      },
-      "15 14": {
-        "name": "XSVL",
-        "direction": "x"
-      },
-      "14 16": {
-        "name": "YSVL",
-        "direction": "y"
-      },
-      "16 15": {
-        "name": "XVAL",
-        "direction": "x"
-      },
-      "-1 2": {
-        "name": "XLCS",
-        "direction": "x"
-      },
-      "X 12": {
-        "name": "YTLO",
-        "direction": "y"
-      }
-    },
+    "r": {},
     "s": {
       "15 32": {
         "name": "XOLC",
@@ -4803,13 +4750,13 @@
         "name": "XOLC",
         "direction": "a"
       },
+      "19 18": {
+        "name": "XOLC",
+        "direction": "x"
+      },
       "10 17": {
         "name": "YOLC",
         "direction": "a"
-      },
-      "19 18": {
-        "name": "YOLC",
-        "direction": "x"
       },
       "4 11": {
         "name": "XTLD",
@@ -4851,11 +4798,11 @@
         "name": "YSHL",
         "direction": "y"
       },
-      "-1 21": {
+      "-1 0": {
         "name": "XLCD",
         "direction": "x"
       },
-      "16 99": {
+      "15 99": {
         "name": "XLCD",
         "direction": "x"
       },
