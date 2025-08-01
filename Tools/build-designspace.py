@@ -574,9 +574,8 @@ class AmstelvarA2DesignSpaceBuilder:
         self.addMappings()
         self.addDefaultSource()
         self.addParametricSources()
-        self.addInstances()
+        # self.addInstances()
         self.save()
-
 
     def buildInstances(self, clear=True):
 
@@ -599,7 +598,7 @@ class AmstelvarA2DesignSpaceBuilder:
             f.save()
             f.close()
 
-    def buildVariableFont(self, subset=None, setVersionInfo=True, debug=False, fixGDEF=False):
+    def buildVariableFont(self, subset=None, setVersionInfo=True, debug=False, fixGDEF=False, removeMarkFeature=False):
 
         print(f'generating variable font for {self.designspaceName}...')
 
@@ -618,11 +617,10 @@ class AmstelvarA2DesignSpaceBuilder:
 
         print(f"\tbuilding avar2 font... ", end='')
 
-        ttfPath = os.path.join(self.varFontsFolder, f'AmstelvarA2-{self.subFamilyName}_avar2.ttf')
         cmd  = ['/opt/homebrew/bin/fontmake']
         cmd += ['-m', self.designspacePath]
         cmd += ['-o', 'variable']
-        cmd += ['--output-path', ttfPath]
+        cmd += ['--output-path', self.varFontPath]
         cmd += ['--feature-writer', 'None']
         cmd += ['--no-generate-GDEF']
         cmd += ['--keep-direction']
@@ -634,7 +632,7 @@ class AmstelvarA2DesignSpaceBuilder:
                 print(line,)
             retval = p.wait()
 
-        print(f'{os.path.exists(ttfPath)}')
+        print(f'{os.path.exists(self.varFontPath)}')
 
         # subset ascii variable font with pyftsubset
         if subset:
@@ -695,6 +693,20 @@ class AmstelvarA2DesignSpaceBuilder:
 
             # clear ttx file
             os.remove(ttxPath)
+
+        # remove buggy `mark` feature
+        if removeMarkFeature: ### NOT WORKING YET
+            print("\tremoving buggy 'mark' feature...")
+
+            cmd  = ['/opt/homebrew/bin/fonttools']
+            cmd += ['subset', self.varFontPath, "glyphs='*'"]
+            cmd += ["--layout-features-='mark','mkmk'"]
+            cmd  = ' '.join(cmd)
+
+            with subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as p:
+                for line in p.stdout.readlines():
+                    print(line,)
+                retval = p.wait()
 
         print('...done.\n')
 
@@ -785,13 +797,13 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][0]
+    subFamilyName = ['Roman', 'Italic'][1]
 
     start = time.time()
 
     D = AmstelvarA2DesignSpaceBuilder(subFamilyName)
     D.build()
-    D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=True, debug=False)
+    D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=True, removeMarkFeature=False, debug=False)
     # D.buildInstancesVariableFont(clear=True, ufo=True)
     # D.printAxes()
 
