@@ -574,9 +574,8 @@ class AmstelvarA2DesignSpaceBuilder:
         self.addMappings()
         self.addDefaultSource()
         self.addParametricSources()
-        self.addInstances()
+        # self.addInstances()
         self.save()
-
 
     def buildInstances(self, clear=True):
 
@@ -798,7 +797,7 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][0]
+    subFamilyName = ['Roman', 'Italic'][1]
 
     start = time.time()
 
