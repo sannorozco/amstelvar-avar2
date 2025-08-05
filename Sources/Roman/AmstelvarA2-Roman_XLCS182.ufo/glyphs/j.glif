@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="j" format="2">
-  <advance width="830"/>
+  <advance width="695"/>
   <unicode hex="006A"/>
   <outline>
     <component base="jdotless"/>
-    <component base="idot" xOffset="417"/>
+    <component base="idot" xOffset="417.0"/>
   </outline>
   <lib>
     <dict>
@@ -81,6 +81,8 @@
           <string>XLCS</string>
         </dict>
       </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/fontbureau/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_XLCS182.ufo/glyphs</string>
       <key>public.markColor</key>
       <string>1,0.3,0,0.35</string>
     </dict>
