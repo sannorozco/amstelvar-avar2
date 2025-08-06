@@ -2,8 +2,8 @@
 <glyph name="m" format="2">
   <advance width="2951"/>
   <unicode hex="006D"/>
-  <anchor x="1484" y="0" name="bottom"/>
-  <anchor x="1484" y="1000" name="top"/>
+  <anchor x="1475.5" y="0" name="bottom"/>
+  <anchor x="1475.5" y="1000" name="top"/>
   <outline>
     <contour>
       <point x="76" y="0" type="line"/>
@@ -15,14 +15,14 @@
       <point x="76" y="966" type="line"/>
       <point x="337" y="1000" type="line"/>
       <point x="372" y="973" type="line"/>
-      <point x="397" y="854" type="line"/>
-      <point x="503" y="929"/>
-      <point x="836" y="1021"/>
+      <point x="397" y="808" type="line"/>
+      <point x="509" y="897"/>
+      <point x="836" y="1022"/>
       <point x="1010" y="1021" type="qcurve" smooth="yes"/>
-      <point x="1228" y="1021"/>
-      <point x="1441" y="925"/>
-      <point x="1506" y="840" type="qcurve"/>
-      <point x="1662" y="917"/>
+      <point x="1281" y="1019"/>
+      <point x="1520" y="900"/>
+      <point x="1551" y="820" type="qcurve"/>
+      <point x="1669" y="898"/>
       <point x="2007" y="1021"/>
       <point x="2194" y="1021" type="qcurve" smooth="yes"/>
       <point x="2464" y="1021"/>
@@ -43,10 +43,10 @@
       <point x="2357" y="877"/>
       <point x="2174" y="877" type="qcurve" smooth="yes"/>
       <point x="1985" y="877"/>
-      <point x="1663" y="802"/>
-      <point x="1566" y="731" type="qcurve"/>
-      <point x="1561" y="676"/>
-      <point x="1560" y="544"/>
+      <point x="1676" y="761"/>
+      <point x="1566" y="681" type="qcurve"/>
+      <point x="1562" y="639"/>
+      <point x="1560" y="540"/>
       <point x="1560" y="527" type="qcurve" smooth="yes"/>
       <point x="1566" y="115" type="line"/>
       <point x="1715" y="80" type="line"/>
@@ -60,8 +60,8 @@
       <point x="1165" y="877"/>
       <point x="991" y="877" type="qcurve" smooth="yes"/>
       <point x="810" y="877"/>
-      <point x="494" y="795"/>
-      <point x="396" y="725" type="qcurve"/>
+      <point x="500" y="751"/>
+      <point x="396" y="675" type="qcurve"/>
       <point x="395" y="527" type="line"/>
       <point x="397" y="115" type="line"/>
       <point x="531" y="80" type="line"/>
@@ -241,6 +241,8 @@
           <string>XLCS</string>
         </dict>
       </dict>
+      <key>com.hipertipo.tempEdit.glyphSetPath</key>
+      <string>/Users/gferreira/hipertipo/fonts/fontbureau/amstelvar-avar2/Sources/Roman/AmstelvarA2-Roman_XTLC500.ufo/glyphs</string>
     </dict>
   </lib>
 </glyph>
