@@ -5,18 +5,49 @@ import xTools4.modules.accents
 reload(xTools4.modules.accents)
 
 import os, glob
+from mojo.smartSet import readSmartSets
 from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
 from xTools4.modules.accents import buildAccentedGlyphs
 
-familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][0]
-baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
-sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
-glyphConstructionPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
+def getComponentGlyphNamesForSmartSets(smartSetNames, smartSetsPath, defaultPath):
+    smartSets = readSmartSets(smartSetsPath, useAsDefault=False, font=None)
+    f = OpenFont(defaultPath, showInterface=False)
+    glyphNames = []
+    for smartGroup in smartSets:
+        if not smartGroup.groups:
+            continue
+        for smartSet in smartGroup.groups:
+            if smartSet.name in smartSetNames:
+                for glyphName in smartSet.glyphNames:
+                    if glyphName not in f:
+                        continue
+                    g = f[glyphName]
+                    if len(g.components):
+                        glyphNames.append(glyphName)
+    return glyphNames
+
+
+familyName        = 'AmstelvarA2'
+subFamilyName     = ['Roman', 'Italic'][0]
+baseFolder        = os.path.dirname(os.path.dirname(os.getcwd()))
+sourcesFolder     = os.path.join(baseFolder, 'Sources', subFamilyName)
+defaultPath       = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_wght400.ufo')
+constructionsPath = os.path.join(baseFolder, 'Sources', subFamilyName, f'{familyName}-{subFamilyName}.glyphConstruction')
+smartSetsPath     = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}.roboFontSets')
 
 # settings
 
-glyphNames = [ 'ellipsis' ]
+smartSetNames = [
+    'uppercase latin',
+    # 'uppercase greek',
+    # 'uppercase cyrillic',
+    # 'uppercase digraphs',
+    'lowercase latin',
+    # 'lowercase greek',
+    # 'lowercase cyrillic',
+    # 'lowercase digraphs',
+]
+glyphNames = getComponentGlyphNamesForSmartSets(smartSetNames, smartSetsPath, defaultPath) # [ 'ellipsis' ]
 dstFonts   = []
 preflight  = False
 verbose    = True
@@ -26,7 +57,7 @@ verbose    = True
 ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
 # get constructions
-with open(glyphConstructionPath, 'r') as f:
+with open(constructionsPath, 'r') as f:
     glyphConstructions = f.read()
 
 for ufoPath in ufoPaths:
