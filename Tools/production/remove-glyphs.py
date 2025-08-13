@@ -8,16 +8,16 @@ baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 ufoPaths      = glob.glob(f'{sourcesFolder}/*.ufo')
 
-glyphNames = ['periodcentered.loclCAT.case', 'hook-stack.case']
+glyphNames = ['hornu']
 dstFonts   = []
-preflight  = True
+preflight  = False
 
 for ufoPath in ufoPaths:
     name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
     if name in dstFonts or not dstFonts:
 
         f = OpenFont(ufoPath, showInterface=False)
-        glyphOrder = f.glyphOrder
+        glyphOrder = list(f.glyphOrder)
         templateGlyphOrder = f.templateGlyphOrder
 
         print(f'removing glyphs in {os.path.split(ufoPath)[-1]}...')
