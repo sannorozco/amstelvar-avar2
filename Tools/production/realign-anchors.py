@@ -16,6 +16,7 @@ anchorNames = [
     # 'center',
     'bottom',
 ]
+tempEditModeKey = 'com.hipertipo.tempEdit.mode'
 
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
@@ -24,8 +25,15 @@ f = CurrentFont()
 glyphNames = getGlyphs2(f)
 
 for glyphName in glyphNames:
-    defaultGlyph = defaultFont[glyphName]
     glyph = f[glyphName]
+
+    if glyph.lib.get(tempEditModeKey) == 'glyphs':
+        defaultGlyphName = glyphName[:glyphName.rfind('.')]
+    else:
+        defaultGlyphName = glyphName
+        
+    defaultGlyph = defaultFont[glyphName]
+    
     print(f'realigning anchors in {glyphName}...')
     glyph.prepareUndo('realigning anchors')
     for i, a in enumerate(glyph.anchors):
