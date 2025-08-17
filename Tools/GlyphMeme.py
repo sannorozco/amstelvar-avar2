@@ -1,3 +1,7 @@
+from importlib import reload
+import xTools4.modules.measurements
+reload(xTools4.modules.measurements)
+
 import os
 import ezui
 from mojo.UI import GetFile
@@ -6,7 +10,7 @@ from mojo.smartSet import readSmartSets
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.ufoLib.glifLib import GlyphSet
 from xTools4.modules.linkPoints2 import readMeasurements
-from xTools4.modules.measurements import FontMeasurements
+from xTools4.modules.measurements import FontMeasurements, GlyphMeasurements
 from xTools4.dialogs.variable.old.TempEdit import setupNewFont, splitall
 
 familyName          = 'AmstelvarA2'
@@ -18,9 +22,10 @@ defaultPath         = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}
 designspacePath     = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_avar2.designspace')
 smartSetsPath       = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}.roboFontSets')
 
-glyphSetPathKey     = 'com.hipertipo.tempEdit.glyphSetPath'
-tempEditModeKey     = 'com.hipertipo.tempEdit.mode'
-fontMeasurementsKey = 'com.xTools4.measurements.font'
+glyphSetPathKey        = 'com.xTools4.tempEdit.glyphSetPath'
+tempEditModeKey        = 'com.xTools4.tempEdit.mode'
+fontMeasurementsKey    = 'com.xTools4.measurements.font'
+defaultMeasurementsKey = 'com.xTools4.measurements.default'
 
 
 class GlyphMeme(ezui.WindowController):
@@ -124,11 +129,13 @@ class GlyphMeme(ezui.WindowController):
         glyphName = self.w.getItem("glyphSelector").getItem()
         selectedMeasurements = self.w.getItem("glyphMeme").getSelectedItems()
 
+        # create temp font
         tmpFont = NewFont(familyName='tempEdit')
         setupNewFont(tmpFont)
         tmpFont.info.familyName = f'{familyName} {subFamilyName}'
         tmpFont.info.styleName  = glyphName
 
+        # get parametric sources for current glyph
         sources = []
         for src in self.designspace.sources:
             for measurementName in selectedMeasurements:
@@ -147,30 +154,46 @@ class GlyphMeme(ezui.WindowController):
                     value = getattr(srcFont.info, attr)
                     setattr(tmpFont.info, attr, value)
 
+            # make temp glyph name
             glyphsFolder = os.path.join(ufoPath, 'glyphs')
             ufoName = splitall(glyphsFolder)[-2]
             glyphNameExtension = os.path.splitext(sourceFile)[0].split('_')[-1]
-
             tmpGlyphName = f'{glyphName}.{glyphNameExtension}'
 
-            srcGlyph = srcFont[glyphName]
-
+            # import source glyph into temp font
             print(f'\timporting {glyphName} from {ufoName}...')
-
+            srcGlyph = srcFont[glyphName]
             tmpFont.newGlyph(tmpGlyphName)
             tmpFont[tmpGlyphName].appendGlyph(srcGlyph)
             tmpFont[tmpGlyphName].width = srcGlyph.width
             tmpFont[tmpGlyphName].unicodes = srcGlyph.unicodes
             tmpFont.changed()
 
-            tmpFont[tmpGlyphName].lib[glyphSetPathKey] = glyphsFolder
-            tmpFont[tmpGlyphName].lib[tempEditModeKey] = 'glyphs'
+            # store the import mode in the font lib
+            tmpFont.lib[tempEditModeKey] = 'glyphs'
 
-            # store font measurements in glyph lib
-            M = FontMeasurements()
-            M.read(measurementsPath)
-            M.measure(srcFont)
-            tmpFont[tmpGlyphName].lib[fontMeasurementsKey] = M.values
+            # get default font measurements
+            FM = FontMeasurements()
+            FM.read(measurementsPath)
+            FM.measure(self.defaultFont)
+
+            # get default glyph measurements
+            GM = GlyphMeasurements(self.defaultFont, glyphName)
+            GM.read(measurementsPath)
+            GM.measure()
+
+            # store default measurements in the font lib
+            tmpFont.lib[defaultMeasurementsKey] = {
+                'font'  : FM.values,
+                'glyph' : GM.values,
+            }
+
+            # store path to glyphset in the glyph lib
+            tmpFont[tmpGlyphName].lib[glyphSetPathKey] = glyphsFolder
+
+            # store current font measurements in glyph lib
+            FM.measure(srcFont)
+            tmpFont[tmpGlyphName].lib[fontMeasurementsKey] = FM.values
 
         print('\n...done!\n')
 

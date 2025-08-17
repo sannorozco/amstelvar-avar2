@@ -28,11 +28,12 @@ for glyphName in glyphNames:
     glyph = f[glyphName]
 
     if glyph.lib.get(tempEditModeKey) == 'glyphs':
+        print(glyph.lib.get(tempEditModeKey))
         defaultGlyphName = glyphName[:glyphName.rfind('.')]
     else:
         defaultGlyphName = glyphName
         
-    defaultGlyph = defaultFont[glyphName]
+    defaultGlyph = defaultFont[defaultGlyphName]
     
     print(f'realigning anchors in {glyphName}...')
     glyph.prepareUndo('realigning anchors')
