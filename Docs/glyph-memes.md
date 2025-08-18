@@ -49,6 +49,6 @@ This first implementation of the tool is custom-made for the AmstelvarA2 sources
 
 The [GlyphValidator] and [Measurement] tools in the latest xTools4 have been patched to make them compatible with temporary fonts created by GlyphMeme.
 
-[AmstelvarA2 repository]: #
-[GlyphValidator]: #
-[Measurement]: #
+[AmstelvarA2 repository]: http://github.com/gferreira2/amstelvar-avar2
+[GlyphValidator]: http://gferreira.github.io/xTools4/reference/tools/variable/glyph-validator/
+[Measurement]: http://gferreira.github.io/xTools4/reference/tools/variable/measurements/
