@@ -49,7 +49,9 @@ Notes
 -----
 
 - There is a single builder for both Roman and Italic designspaces.
-- There are different flavors of builder, written with object inheritance. Only the avar2 builder is currently in use. 
+- There have been different flavors of builder, written with object inheritance. Only the avar2 builder is currently in use. 
+
+<!--
 
 ### Adding parent parametric axes
 
@@ -75,3 +77,5 @@ Notes
        - use scale value and default delta to map between axes
 
    \* ignoring special ‘match range’ axes
+
+-->
