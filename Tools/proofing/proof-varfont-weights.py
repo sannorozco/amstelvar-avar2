@@ -11,7 +11,7 @@ assert os.path.exists(pdfsFolder)
 subFamilyName = ['Roman', 'Italic'][0]
 fontPath = os.path.join(fontsFolder, f'AmstelvarA2-{subFamilyName}_avar2.ttf')
 
-glyphset  = ['C'] # list('''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~-'"^`''')
+glyphset  = list('''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~-'"^`''')
 
 fs = 36
 p  = 30, 10, 10, 10
@@ -19,13 +19,13 @@ p  = 30, 10, 10, 10
 stepsX = 12
 stepsY = 8
 
-wghts = range(100, 1001, 100)
+wghts = range(100, 1001, 100) # [100, 400, 1000]
 wdths = [50, 100, 150]
 opszs = [8, 14, 144]
 
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-savePDF = False
+savePDF = True
 
 proofName = f'varfont-weights_{subFamilyName}.pdf'
 pdfPath   = os.path.join(pdfsFolder, proofName)
@@ -72,7 +72,7 @@ for opsz in opszs:
                     with DB.savedState():
                         pos = x + stepX / 2, y + stepX * 0.33
                         DB.stroke(None)
-                        DB.fill(0, 0.1)
+                        DB.fill(0, 0, 0, 0.1)
                         for wght in wghts:
                             _variations['wght'] = wght
                             DB.fontVariations(**_variations)

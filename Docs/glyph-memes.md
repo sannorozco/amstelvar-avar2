@@ -22,11 +22,11 @@ This first implementation of the tool is custom-made for the AmstelvarA2 sources
 
 ### Required data files
 
-| data format        | what it is used for                                               |
-|--------------------|-------------------------------------------------------------------|
-| designspace        | finding individual font sources                                   |
-| smarts sets        | selecting a glyph for editing                                     |
-| measurements       | finding which parameters participate in the variations of a glyph |
+| data format  | what it is used for                                               |
+|--------------|-------------------------------------------------------------------|
+| designspace  | finding individual font sources                                   |
+| smarts sets  | selecting a glyph for editing                                     |
+| measurements | finding which parameters participate in the variations of a glyph |
 
 ### Step-by-step
 
@@ -43,7 +43,6 @@ This first implementation of the tool is custom-made for the AmstelvarA2 sources
 5. Multiple glyphs can be opened this way, with one temporary font for each.
 
 6. Edit glyphs as needed, and then use the “save” button to export the selected glyphs back to their UFOs. 
-
 
 ### Usage with other tools
 
