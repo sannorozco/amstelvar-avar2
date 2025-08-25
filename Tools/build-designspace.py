@@ -617,7 +617,8 @@ class AmstelvarA2DesignSpaceBuilder:
 
         print(f"\tbuilding avar2 font... ", end='')
 
-        cmd  = ['/opt/homebrew/bin/fontmake']
+        # cmd  = ['/opt/homebrew/bin/fontmake']
+        cmd  = ['/Library/Frameworks/Python.framework/Versions/3.11/bin/fontmake']
         cmd += ['-m', self.designspacePath]
         cmd += ['-o', 'variable']
         cmd += ['--output-path', self.varFontPath]
@@ -797,13 +798,13 @@ class AmstelvarA2DesignSpaceBuilder:
 
 if __name__ == '__main__':
 
-    subFamilyName = ['Roman', 'Italic'][0]
+    subFamilyName = ['Roman', 'Italic'][1]
 
     start = time.time()
 
     D = AmstelvarA2DesignSpaceBuilder(subFamilyName)
     D.build()
-    D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=True, removeMarkFeature=False, debug=False)
+    D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=False, removeMarkFeature=False, debug=False)
     # D.buildInstancesVariableFont(clear=True, ufo=True)
     # D.printAxes()
 
