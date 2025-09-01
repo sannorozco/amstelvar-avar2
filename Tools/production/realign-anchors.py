@@ -16,7 +16,7 @@ anchorNames = [
     # 'center',
     'bottom',
 ]
-tempEditModeKey = 'com.hipertipo.tempEdit.mode'
+tempEditModeKey = 'com.xTools4.tempEdit.mode'
 
 defaultFont = OpenFont(defaultPath, showInterface=False)
 
@@ -25,10 +25,10 @@ f = CurrentFont()
 glyphNames = getGlyphs2(f)
 
 for glyphName in glyphNames:
+
     glyph = f[glyphName]
 
-    if glyph.lib.get(tempEditModeKey) == 'glyphs':
-        print(glyph.lib.get(tempEditModeKey))
+    if f.lib.get(tempEditModeKey) == 'glyphs':
         defaultGlyphName = glyphName[:glyphName.rfind('.')]
     else:
         defaultGlyphName = glyphName
