@@ -1,22 +1,22 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="acutecomb" format="2">
-  <unicode hex="0301"/>
-  <anchor x="0.0" y="1000" name="_top"/>
-  <anchor x="0.0" y="1524.0" name="top"/>
-  <outline>
-    <contour>
-      <point x="235" y="1446" type="qcurve" smooth="yes"/>
-      <point x="235" y="1397"/>
-      <point x="172" y="1346"/>
-      <point x="136" y="1328" type="qcurve" smooth="yes"/>
-      <point x="-154" y="1186" type="line"/>
-      <point x="-160" y="1193" type="line"/>
-      <point x="10" y="1422" type="line" smooth="yes"/>
-      <point x="40" y="1463"/>
-      <point x="103" y="1524"/>
-      <point x="140" y="1524" type="qcurve" smooth="yes"/>
-      <point x="179" y="1524"/>
-      <point x="235" y="1481"/>
-    </contour>
-  </outline>
+	<unicode hex="0301"/>
+	<outline>
+		<contour>
+			<point x="235" y="1446" type="qcurve" smooth="yes"/>
+			<point x="235" y="1397"/>
+			<point x="172" y="1346"/>
+			<point x="136" y="1328" type="qcurve" smooth="yes"/>
+			<point x="-154" y="1186" type="line"/>
+			<point x="-160" y="1193" type="line"/>
+			<point x="10" y="1422" type="line" smooth="yes"/>
+			<point x="40" y="1463"/>
+			<point x="103" y="1524"/>
+			<point x="140" y="1524" type="qcurve" smooth="yes"/>
+			<point x="179" y="1524"/>
+			<point x="235" y="1481"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="0" y="1000"/>
+	<anchor name="top" x="0" y="1524"/>
 </glyph>
