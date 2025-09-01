@@ -7,7 +7,18 @@ from mojo.roboFont import RGlyph, CurrentGlyph
 from ufoProcessor.ufoOperator import UFOOperator
 from mutatorMath.objects.location import Location
 
-tempEditModeKey = 'com.xTools4.tempEdit.mode'
+
+baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
+familyName       = 'AmstelvarA2'
+subfamilyName    = ['Roman', 'Italic'][0]
+sourcesFolder    = os.path.join(baseFolder, 'Sources', subfamilyName)
+designspacePath  = os.path.join(sourcesFolder, 'AmstelvarA2-Roman_avar2.designspace')
+blendsPath       = os.path.join(sourcesFolder, 'blends.json')
+baseFolderOld    = os.path.join(os.path.dirname(baseFolder), 'amstelvar')
+familyNameOld    = 'Amstelvar'
+sourcesFolderOld = os.path.join(baseFolderOld, subfamilyName)
+tempEditModeKey  = 'com.xTools4.tempEdit.mode'
+
 
 def instantiateGlyph(operator, glyphName, location):
     glyphMutator, uni = operator.getGlyphMutator(glyphName)
@@ -34,15 +45,6 @@ def getShortStyleName(opsz, wght, wdth):
         styleNameParts.append(f'wght{wght}')
     return '_'.join(styleNameParts)
 
-baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
-familyName       = 'AmstelvarA2'
-subfamilyName    = ['Roman', 'Italic'][0]
-sourcesFolder    = os.path.join(baseFolder, 'Sources', subfamilyName)
-designspacePath  = os.path.join(sourcesFolder, 'AmstelvarA2-Roman_avar2.designspace')
-blendsPath       = os.path.join(sourcesFolder, 'blends.json')
-baseFolderOld    = os.path.join(os.path.dirname(baseFolder), 'amstelvar')
-familyNameOld    = 'Amstelvar'
-sourcesFolderOld = os.path.join(baseFolderOld, subfamilyName)
 
 class BlendsPreview:
 
@@ -68,10 +70,6 @@ class BlendsPreview:
 
     def __init__(self):
 
-        self.operator = UFOOperator()
-        self.operator.read(designspacePath)
-        self.operator.loadFonts()
-
         with open(blendsPath, 'r', encoding='utf-8') as f:
             blendsData = json.load(f)
         self.blends = blendsData['sources']
@@ -95,17 +93,17 @@ class BlendsPreview:
         self.w.compare = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'compare',
-            callback=self.updatePreviewCallback,
+            # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
         x += self.buttonWidth
         self.w.margins = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'margins',
-            callback=self.updatePreviewCallback,
+            # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
-        self.updatePreview()
+        self._updatePreview()
 
         self.w.getNSWindow().setTitlebarAppearsTransparent_(True)
         self.w.open()
@@ -119,9 +117,17 @@ class BlendsPreview:
         return self.w.margins.get()
 
     def updatePreviewCallback(self, sender):
-        self.updatePreview()
+        self._updatePreview()
 
-    def updatePreview(self):
+    def _updatePreview(self):
+
+        # self.operator.loadFonts(reload=True)
+        # self.operator.updateFonts(self, fontObjects)
+        # self.operator.changed()
+
+        self.operator = UFOOperator()
+        self.operator.read(designspacePath)
+        self.operator.loadFonts()
 
         g = CurrentGlyph()
         if g is not None:
@@ -149,7 +155,9 @@ class BlendsPreview:
             self.w.canvas.setPDFDocument(pdfData)
             return
 
-        # draw header
+        # self.operator.glyphChanged(self.glyphName)
+
+        # draw page header
         with DB.savedState():
             DB.translate(20, DB.height()-20)
             if self.compare:
