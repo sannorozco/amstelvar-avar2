@@ -1,10 +1,10 @@
-# menuTitle: copy groups from default to all other sources
+# menuTitle: batch normalize all sources
 
 import os, glob
 from mojo.UI import getDefault, setDefault, preferencesChanged
 
 familyName    = 'AmstelvarA2'
-subFamilyName = ['Roman', 'Italic'][1]
+subFamilyName = ['Roman', 'Italic'][0]
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
 normalizeMode = 1
