@@ -121,10 +121,6 @@ class BlendsPreview:
 
     def _updatePreview(self):
 
-        # self.operator.loadFonts(reload=True)
-        # self.operator.updateFonts(self, fontObjects)
-        # self.operator.changed()
-
         self.operator = UFOOperator()
         self.operator.read(designspacePath)
         self.operator.loadFonts()
@@ -154,8 +150,6 @@ class BlendsPreview:
             pdfData = DB.pdfImage()
             self.w.canvas.setPDFDocument(pdfData)
             return
-
-        # self.operator.glyphChanged(self.glyphName)
 
         # draw page header
         with DB.savedState():
