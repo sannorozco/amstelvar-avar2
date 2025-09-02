@@ -1,14 +1,14 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yu.bgr-stroke" format="2">
-  <advance width="1358"/>
-  <anchor x="195" y="505" name="_yu_dash"/>
-  <anchor x="392" y="498" name="yu_dash"/>
-  <outline>
-    <contour>
-      <point x="204" y="554" type="line"/>
-      <point x="405" y="562" type="line"/>
-      <point x="385" y="460" type="line"/>
-      <point x="184" y="448" type="line"/>
-    </contour>
-  </outline>
+	<advance width="1358"/>
+	<outline>
+		<contour>
+			<point x="204" y="554" type="line"/>
+			<point x="405" y="562" type="line"/>
+			<point x="385" y="460" type="line"/>
+			<point x="184" y="448" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_yu_dash" x="195" y="505"/>
+	<anchor name="yu_dash" x="392" y="498"/>
 </glyph>

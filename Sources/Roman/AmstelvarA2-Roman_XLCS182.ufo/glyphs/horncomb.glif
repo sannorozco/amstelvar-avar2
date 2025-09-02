@@ -1,31 +1,31 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="horncomb" format="2">
-  <advance width="1572"/>
-  <unicode hex="031B"/>
-  <anchor x="128" y="1000" name="_topright"/>
-  <anchor x="127" y="1256" name="topright"/>
-  <outline>
-    <contour>
-      <point x="127" y="1000" type="line"/>
-      <point x="140" y="1000"/>
-      <point x="170" y="1000"/>
-      <point x="203" y="1000" type="qcurve" smooth="yes"/>
-      <point x="269" y="1000"/>
-      <point x="326" y="1033"/>
-      <point x="326" y="1085" type="qcurve" smooth="yes"/>
-      <point x="326" y="1120"/>
-      <point x="314" y="1208"/>
-      <point x="304" y="1256" type="qcurve"/>
-      <point x="412" y="1256" type="line"/>
-      <point x="436" y="1206"/>
-      <point x="463" y="1106"/>
-      <point x="463" y="1063" type="qcurve" smooth="yes"/>
-      <point x="463" y="973"/>
-      <point x="354" y="874"/>
-      <point x="253" y="874" type="qcurve" smooth="yes"/>
-      <point x="214" y="874"/>
-      <point x="153" y="883"/>
-      <point x="127" y="889" type="qcurve"/>
-    </contour>
-  </outline>
+	<unicode hex="031B"/>
+	<advance width="1572"/>
+	<outline>
+		<contour>
+			<point x="127" y="1000" type="line"/>
+			<point x="140" y="1000"/>
+			<point x="170" y="1000"/>
+			<point x="203" y="1000" type="qcurve" smooth="yes"/>
+			<point x="269" y="1000"/>
+			<point x="326" y="1033"/>
+			<point x="326" y="1085" type="qcurve" smooth="yes"/>
+			<point x="326" y="1120"/>
+			<point x="314" y="1208"/>
+			<point x="304" y="1256" type="qcurve"/>
+			<point x="412" y="1256" type="line"/>
+			<point x="436" y="1206"/>
+			<point x="463" y="1106"/>
+			<point x="463" y="1063" type="qcurve" smooth="yes"/>
+			<point x="463" y="973"/>
+			<point x="354" y="874"/>
+			<point x="253" y="874" type="qcurve" smooth="yes"/>
+			<point x="214" y="874"/>
+			<point x="153" y="883"/>
+			<point x="127" y="889" type="qcurve"/>
+		</contour>
+	</outline>
+	<anchor name="_topright" x="128" y="1000"/>
+	<anchor name="topright" x="127" y="1256"/>
 </glyph>

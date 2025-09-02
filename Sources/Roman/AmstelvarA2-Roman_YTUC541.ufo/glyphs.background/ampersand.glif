@@ -1,13 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ampersand" format="2">
-  <advance width="500"/>
-  <unicode hex="0026"/>
-  <anchor x="832.0" y="0" name="bottom"/>
-  <anchor x="832.0" y="750.0" name="center"/>
-  <anchor x="1064" y="0" name="ogonek"/>
-  <anchor x="832.0" y="1500" name="top"/>
-  <anchor x="1028" y="1500" name="topright"/>
-  <anchor x="140.0" y="1500" name="tonos"/>
-  <outline>
-  </outline>
+	<unicode hex="0026"/>
+	<advance width="500"/>
+	<anchor name="bottom" x="832" y="0"/>
+	<anchor name="center" x="832" y="750"/>
+	<anchor name="ogonek" x="1064" y="0"/>
+	<anchor name="top" x="832" y="1500"/>
+	<anchor name="topright" x="1028" y="1500"/>
+	<anchor name="tonos" x="140" y="1500"/>
 </glyph>

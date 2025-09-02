@@ -1,12 +1,12 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Iotatonos" format="2">
-  <advance width="1303"/>
-  <unicode hex="038A"/>
-  <note>
+	<unicode hex="038A"/>
+	<advance width="1303"/>
+	<outline>
+		<component base="I" xOffset="523"/>
+		<component base="tonoscomb.case" xOffset="523"/>
+	</outline>
+	<note>
 10,I
 </note>
-  <outline>
-    <component base="I" xOffset="523"/>
-    <component base="tonoscomb.case" xOffset="523"/>
-  </outline>
 </glyph>

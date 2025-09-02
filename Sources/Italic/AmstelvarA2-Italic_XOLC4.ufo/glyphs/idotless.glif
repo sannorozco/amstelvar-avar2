@@ -1,28 +1,28 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="idotless" format="2">
-  <advance width="456"/>
-  <unicode hex="0131"/>
-  <anchor x="68" y="0" name="bottom"/>
-  <anchor x="261" y="1000" name="top"/>
-  <anchor x="163" y="0" name="ogonek"/>
-  <anchor x="164" y="498" name="yu_dash"/>
-  <anchor x="456" y="0" name="liga"/>
-  <outline>
-    <contour>
-      <point x="54" y="-21" type="line"/>
-      <point x="48" y="-16" type="line"/>
-      <point x="164" y="527" type="line"/>
-      <point x="221" y="820" type="line"/>
-      <point x="50" y="818" type="line"/>
-      <point x="52" y="915" type="line"/>
-      <point x="256" y="1000" type="line" identifier="pJCzNSwxfC"/>
-      <point x="263" y="1000" type="line" identifier="k9mUsYmy15"/>
-      <point x="263" y="1000" type="line"/>
-      <point x="223" y="789" type="line"/>
-      <point x="167" y="527" type="line"/>
-      <point x="90" y="140" type="line"/>
-      <point x="306" y="164" type="line"/>
-      <point x="306" y="76" type="line"/>
-    </contour>
-  </outline>
+	<unicode hex="0131"/>
+	<advance width="456"/>
+	<outline>
+		<contour>
+			<point x="54" y="-21" type="line"/>
+			<point x="48" y="-16" type="line"/>
+			<point x="164" y="527" type="line"/>
+			<point x="221" y="820" type="line"/>
+			<point x="50" y="818" type="line"/>
+			<point x="52" y="915" type="line"/>
+			<point x="256" y="1000" type="line" identifier="pJCzNSwxfC"/>
+			<point x="263" y="1000" type="line" identifier="k9mUsYmy15"/>
+			<point x="263" y="1000" type="line"/>
+			<point x="223" y="789" type="line"/>
+			<point x="167" y="527" type="line"/>
+			<point x="90" y="140" type="line"/>
+			<point x="306" y="164" type="line"/>
+			<point x="306" y="76" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="bottom" x="68" y="0"/>
+	<anchor name="top" x="261" y="1000"/>
+	<anchor name="ogonek" x="163" y="0"/>
+	<anchor name="yu_dash" x="164" y="498"/>
+	<anchor name="liga" x="456" y="0"/>
 </glyph>

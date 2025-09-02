@@ -1,13 +1,13 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ocircumflexgrave" format="2">
-  <advance width="575"/>
-  <unicode hex="1ED3"/>
-  <note>
+	<unicode hex="1ED3"/>
+	<advance width="575"/>
+	<outline>
+		<component base="o"/>
+		<component base="circumflexcomb-stack" xOffset="212" yOffset="-53"/>
+		<component base="gravecomb-stack" xOffset="631" yOffset="215"/>
+	</outline>
+	<note>
 @topleft
 </note>
-  <outline>
-    <component base="o"/>
-    <component base="circumflexcomb-stack" xOffset="212" yOffset="-53"/>
-    <component base="gravecomb-stack" xOffset="631" yOffset="215"/>
-  </outline>
 </glyph>

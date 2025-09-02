@@ -1,25 +1,25 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yu-i" format="2">
-  <advance width="626"/>
-  <anchor x="311" y="500" name="yu_dash"/>
-  <anchor x="312" y="500" name="yeru_i"/>
-  <anchor x="97" y="0" name="_yeru_i"/>
-  <outline>
-    <contour>
-      <point x="343" y="498" type="line"/>
-      <point x="345" y="75" type="line"/>
-      <point x="516" y="40" type="line"/>
-      <point x="516" y="0" type="line"/>
-      <point x="97" y="0" type="line"/>
-      <point x="97" y="40" type="line"/>
-      <point x="272" y="75" type="line"/>
-      <point x="275" y="498" type="line"/>
-      <point x="272" y="925" type="line"/>
-      <point x="97" y="960" type="line"/>
-      <point x="97" y="1000" type="line"/>
-      <point x="516" y="1000" type="line"/>
-      <point x="516" y="960" type="line"/>
-      <point x="345" y="925" type="line"/>
-    </contour>
-  </outline>
+	<advance width="626"/>
+	<outline>
+		<contour>
+			<point x="343" y="498" type="line"/>
+			<point x="345" y="75" type="line"/>
+			<point x="516" y="40" type="line"/>
+			<point x="516" y="0" type="line"/>
+			<point x="97" y="0" type="line"/>
+			<point x="97" y="40" type="line"/>
+			<point x="272" y="75" type="line"/>
+			<point x="275" y="498" type="line"/>
+			<point x="272" y="925" type="line"/>
+			<point x="97" y="960" type="line"/>
+			<point x="97" y="1000" type="line"/>
+			<point x="516" y="1000" type="line"/>
+			<point x="516" y="960" type="line"/>
+			<point x="345" y="925" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="yu_dash" x="311" y="500"/>
+	<anchor name="yeru_i" x="312" y="500"/>
+	<anchor name="_yeru_i" x="97" y="0"/>
 </glyph>
