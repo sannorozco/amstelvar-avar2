@@ -1,6 +1,7 @@
 # menuTitle: cleanup unnecessary data from all sources
 
 import os, glob
+from ufonormalizer import normalizeUFO
 
 familyName    = 'AmstelvarA2'
 subFamilyName = ['Roman', 'Italic'][0]
@@ -16,6 +17,7 @@ clearGlyphLibs = True
 clearMarks     = True
 clearLayers    = True
 preflight      = False
+verbose        = False
 
 ignoreFontLibs = [
     'com.typemytype.robofont.italicSlantOffset',
@@ -26,6 +28,8 @@ ignoreLayers = [
     'foreground',
     'background',
 ]
+
+normalize = True
 
 #---------------
 # batch cleanup 
@@ -46,7 +50,8 @@ for ufoPath in ufoPaths:
     f = OpenFont(ufoPath, showInterface=False)
 
     if clearLayers:
-        # print(f'\t\tcleaning up font layers...')
+        if verbose:
+            print(f'\t\tcleaning up font layers...')
         for layer in f.layers:
             if layer.name == 'public.default':
                 layer.name = 'foreground'
@@ -57,7 +62,8 @@ for ufoPath in ufoPaths:
                 f.removeLayer(layerName)
 
     if clearFontLibs:
-        # print(f'\t\tcleaning up font libs...')
+        if verbose:
+            print(f'\t\tcleaning up font libs...')
         for k in f.lib.keys():
             if k.startswith('public.') or k in ignoreFontLibs:
                  continue
@@ -66,7 +72,8 @@ for ufoPath in ufoPaths:
             del f.lib[k]
 
     if clearGlyphLibs:
-        # print(f'\t\tcleaning up glyph libs...')
+        if verbose:
+            print(f'\t\tcleaning up glyph libs...')
         for g in f:
             for k in g.lib.keys():
                 if k not in glyphLibKeys:
@@ -74,19 +81,24 @@ for ufoPath in ufoPaths:
                 del g.lib[k]
 
     if clearMarks:
-        # print(f'\t\tcleaning up mark colors...')
+        if verbose:
+            print(f'\t\tcleaning up mark colors...')
         for g in f:
             g.markColor = None
 
-    # done!
-    # print()
     if not preflight:
+        if verbose:
+            print(f'\t\tsaving UFO source...')
         f.save()
     f.close()
+    
+    if normalize:
+        print(f'\tnormalizing {os.path.split(ufoPath)[-1]}...')
+        normalizeUFO(ufoPath, onlyModified=False, writeModTimes=False)
+
+    print()
 
 print('...done!\n')
-
-print()
 
 if clearFontLibs:
     print('deleted font libs:')
