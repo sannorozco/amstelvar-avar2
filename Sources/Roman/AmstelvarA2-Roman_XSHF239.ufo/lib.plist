@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>org.unifiedfontobject.normalizer.modTimes</key>
+		<string>version: 0.6.2
+1756816430.9 fontinfo.plist
+1756816430.9 groups.plist
+1756806909.5 kerning.plist
+1756825503.7 layercontents.plist
+1756816430.9 metainfo.plist</string>
 		<key>public.glyphOrder</key>
 		<array>
 			<string>space</string>
@@ -1030,6 +1037,9 @@
 			<string>periodcentered-loclCAT.case</string>
 			<string>threequartersemdash</string>
 			<string>figuredash</string>
+			<string>Oslash.rvrn</string>
+			<string>oslash.rvrn</string>
+			<string>kai-tail</string>
 		</array>
 	</dict>
 </plist>
