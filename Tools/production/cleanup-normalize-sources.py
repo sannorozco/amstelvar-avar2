@@ -1,4 +1,4 @@
-# menuTitle: cleanup unnecessary data from all sources
+# menuTitle: cleanup unnecessary data & normalize all sources
 
 import os, glob
 from ufonormalizer import normalizeUFO
