@@ -19,12 +19,12 @@ _wdth = [ 50, 100, 150 ]
 _wght = [ 100, 400, 1000 ]
 _opsz = [ 8, 14, 144 ]
 
-fontStyles = ['Italic', 'Roman'][1:]
+fontStyles = ['Italic', 'Roman'] #[1:]
 fontsNew = { 'Roman'  : fontRoman, 'Italic' : fontItalic }
 fontsOld = { 'Roman'  : fontRoman_old, 'Italic' : fontItalic_old }
 
 compare = True
-savePDF = False
+savePDF = True
 
 fs = 56
 
