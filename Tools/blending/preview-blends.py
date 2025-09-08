@@ -103,6 +103,13 @@ class BlendsPreview:
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
+        x += self.buttonWidth
+        self.w.wireframe = CheckBox(
+            (x, y, self.buttonWidth, self.lineHeight),
+            'wireframe',
+            # callback=self.updatePreviewCallback,
+            sizeStyle='small')
+
         self._updatePreview()
 
         self.w.getNSWindow().setTitlebarAppearsTransparent_(True)
@@ -115,6 +122,10 @@ class BlendsPreview:
     @property
     def margins(self):
         return self.w.margins.get()
+
+    @property
+    def wireframe(self):
+        return self.w.wireframe.get()
 
     def updatePreviewCallback(self, sender):
         self._updatePreview()
@@ -164,6 +175,8 @@ class BlendsPreview:
 
         DB.translate(x, y)
 
+        r = 10
+
         for i, opsz in enumerate(self.opszs):
             for j, wght in enumerate(reversed(self.wghts)):
                 for k, wdth in enumerate(self.wdths):
@@ -182,9 +195,29 @@ class BlendsPreview:
                     DB.scale(self.glyphScale)
 
                     # draw glyph AmstelvarA2
+
+
                     if self.compare:
                         DB.fill(*self.color2)
-                    drawGlyph(g2)
+
+                    if self.wireframe:
+                        with DB.savedState():
+                            DB.fill(None)
+                            DB.strokeWidth(2)
+                            if self.compare:
+                                DB.stroke(*self.color2)
+                            else:
+                                DB.stroke(0)
+                            drawGlyph(g2)
+                            # DB.fill(1)
+                            # DB.strokeWidth(1)
+                        for c in g2.contours:
+                            for p in c.points:
+                                DB.oval(p.x-r, p.y-r, r*2, r*2)
+
+                    else:
+                        drawGlyph(g2)
+
                     if self.margins:
                         yBottom = g.font.info.descender
                         yTop    = g.font.info.unitsPerEm - abs(yBottom)
@@ -193,7 +226,7 @@ class BlendsPreview:
                                 DB.stroke(*self.color2)
                             else:
                                 DB.stroke(0.5)
-                            DB.strokeWidth(0.5 / self.glyphScale)
+                            DB.strokeWidth(1)
                             DB.line((0, yBottom), (0, yTop))
                             DB.line((g2.width, yBottom), (g2.width, yTop))
 
@@ -203,11 +236,29 @@ class BlendsPreview:
                         assert os.path.exists(ufoPathOld)
                         f = OpenFont(ufoPathOld, showInterface=False)
                         g1 = f[self.glyphName]
+
                         DB.fill(*self.color1)
-                        drawGlyph(g1)
+                        if self.wireframe:
+                            with DB.savedState():
+                                DB.fill(None)
+                                DB.strokeWidth(2)
+                                if self.compare:
+                                    DB.stroke(*self.color1)
+                                else:
+                                    DB.stroke(0)
+                                drawGlyph(g1)
+                                # DB.fill(1)
+                                # DB.strokeWidth(1)
+                            for c in g1.contours:
+                                for p in c.points:
+                                    DB.oval(p.x-r, p.y-r, r*2, r*2)
+
+                        else:
+                            drawGlyph(g1)
+
                         if self.margins:
                             DB.stroke(*self.color1)
-                            DB.strokeWidth(0.5 / self.glyphScale)
+                            DB.strokeWidth(1)
                             DB.line((0, yBottom), (0, yTop))
                             DB.line((g1.width, yBottom), (g1.width, yTop))
 
