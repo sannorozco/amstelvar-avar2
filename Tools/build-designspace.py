@@ -513,11 +513,12 @@ class AmstelvarA2DesignSpaceBuilder:
                 print(f'{key1} not in blends dict')
                 continue
             for key2, value2 in value1.items():
-                blendsDict[key1][key2] = value2
+                for k, v in value2.items():
+                    blendsDict[key1][key2][k] = v
 
-        # # save patched blends data
-        # with open(self.blendsPath, 'w', encoding='utf-8') as f:
-        #     json.dump(blendsDict, f, indent=2)
+        # save patched blends data
+        with open(self.blendsPath, 'w', encoding='utf-8') as f:
+            json.dump(blendsDict, f, indent=2)
 
     def addMappings(self):
 
@@ -562,12 +563,13 @@ class AmstelvarA2DesignSpaceBuilder:
             print(os.path.exists(self.designspacePath))
             print()
 
-    def build(self):
+    def build(self, patchBlends=True):
         if self.verbose:
             print(f'building {os.path.split(self.designspacePath)[-1]}...')
 
         self.buildBlendsFile()
-        # self.patchBlendsFile()
+        if patchBlends:
+            self.patchBlendsFile()
         self.designspace = DesignSpaceDocument()
         self.addBlendedAxes()
         self.addParametricAxes()
@@ -803,8 +805,8 @@ if __name__ == '__main__':
     start = time.time()
 
     D = AmstelvarA2DesignSpaceBuilder(subFamilyName)
-    # D.build()
-    D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=False, removeMarkFeature=False, debug=False)
+    D.build(patchBlends=False)
+    # D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=False, removeMarkFeature=False, debug=False)
     # D.buildInstancesVariableFont(clear=True, ufo=True)
     # D.printAxes()
 
