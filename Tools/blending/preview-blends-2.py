@@ -8,18 +8,26 @@ from mojo.roboFont import RGlyph, CurrentGlyph, OpenWindow, OpenFont
 from ufoProcessor.ufoOperator import UFOOperator
 from mutatorMath.objects.location import Location
 
-
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 familyName       = 'AmstelvarA2'
-subfamilyName    = ['Roman', 'Italic'][0]
-sourcesFolder    = os.path.join(baseFolder, 'Sources', subfamilyName)
+subFamilyName    = ['Roman', 'Italic'][0]
+sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
 designspacePath  = os.path.join(sourcesFolder, 'AmstelvarA2-Roman_avar2.designspace')
 blendsPath       = os.path.join(sourcesFolder, 'blends.json')
 baseFolderOld    = os.path.join(os.path.dirname(baseFolder), 'amstelvar')
 familyNameOld    = 'Amstelvar'
-sourcesFolderOld = os.path.join(baseFolderOld, subfamilyName)
+sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
+# proofing mode:
+# 0=batch, 1=dialog
+mode = 1
+
+# batch settings
+glyphNames  = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+glyphNames += list('abcdefghijklmnopqrstuvwxyz')
+glyphNames += ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+compare     = True
 
 def instantiateGlyph(operator, glyphName, location):
     glyphMutator, uni = operator.getGlyphMutator(glyphName)
@@ -52,8 +60,7 @@ class BlendsPreview:
     margin      = 40
     glyphScale  = 0.045
     cellSize    = 2000
-
-    captionSize = 7
+    labelsSize  = 5
     color1      = 1, 0, 1
     color2      = 0, 1, 1
 
@@ -73,7 +80,7 @@ class BlendsPreview:
         # initiate drawing
         DB.newDrawing()
 
-    def draw(self, glyphName, compare=False, wireframe=False, margins=False):
+    def draw(self, glyphName, compare=False, wireframe=False, margins=False, labels=False):
 
         cellWidth  = self.cellSize * self.glyphScale * 1.5
         cellHeight = self.cellSize * self.glyphScale
@@ -121,6 +128,16 @@ class BlendsPreview:
 
                     DB.save()
                     DB.translate(k * cellWidth, j * cellHeight)
+
+                    # draw location name
+                    if labels:
+                        with DB.savedState():
+                            DB.rotate(90)
+                            DB.fill(0.5)
+                            DB.font('Menlo')
+                            DB.fontSize(self.labelsSize)
+                            DB.text(_styleName.replace('_', ' '), (0, 10))
+
                     DB.scale(self.glyphScale)
 
                     # draw glyph AmstelvarA2
@@ -158,7 +175,7 @@ class BlendsPreview:
 
                     # draw glyph Amstelvar
                     if compare:
-                        ufoPathOld = os.path.join(sourcesFolderOld, f'{familyNameOld}-{subfamilyName}_{styleName}.ufo')
+                        ufoPathOld = os.path.join(sourcesFolderOld, f'{familyNameOld}-{subFamilyName}_{styleName}.ufo')
                         assert os.path.exists(ufoPathOld)
                         f = OpenFont(ufoPathOld, showInterface=False)
                         g1 = f[glyphName]
@@ -242,6 +259,13 @@ class BlendsPreviewDialog:
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
+        x += self.buttonWidth
+        self.w.labels = CheckBox(
+            (x, y, self.buttonWidth, self.lineHeight),
+            'labels',
+            # callback=self.updatePreviewCallback,
+            sizeStyle='small')
+
         self._updatePreview()
 
         self.w.getNSWindow().setTitlebarAppearsTransparent_(True)
@@ -259,6 +283,10 @@ class BlendsPreviewDialog:
     def wireframe(self):
         return self.w.wireframe.get()
 
+    @property
+    def labels(self):
+        return self.w.labels.get()
+
     def updatePreviewCallback(self, sender):
         self._updatePreview()
 
@@ -274,22 +302,22 @@ class BlendsPreviewDialog:
             glyphName = None
 
         B = BlendsPreview()
-        B.draw(glyphName, compare=self.compare, wireframe=self.wireframe, margins=self.margins)
+        B.draw(glyphName, compare=self.compare, wireframe=self.wireframe, margins=self.margins, labels=self.labels)
 
         pdfData = DB.pdfImage()
         self.w.canvas.setPDFDocument(pdfData)
 
 
-
 if __name__ == '__main__':
 
-    # glyphNames  = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-    # glyphNames += list('abcdefghijklmnopqrstuvwxyz')
-    # glyphNames += ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    if mode:
+        OpenWindow(BlendsPreviewDialog)
 
-    # B = BlendsPreview()
-    # for glyphName in glyphNames:
-    #     B.draw(glyphName, compare=True)
-    # B.save('test-avar-ZZZ.pdf')
-
-    OpenWindow(BlendsPreviewDialog)
+    else:
+        pdfPath = os.path.join(baseFolder, 'Proofs', 'PDF', f'blending-preview_{subFamilyName}.pdf')
+        if compare:
+            pdfPath = pdfPath.replace('.pdf', '_compare.pdf')
+        B = BlendsPreview()
+        for glyphName in glyphNames:
+            B.draw(glyphName, compare=compare, margins=compare)
+        B.save(pdfPath)
