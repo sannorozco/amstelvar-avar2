@@ -7,7 +7,7 @@ fontsFolder   = os.path.join(baseFolder, 'Fonts')
 print(fontsFolder)
 
 font1_name    = 'Amstelvar'
-font1_Roman   = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz] (3).ttf')
+font1_Roman   = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
 font1_Italic  = os.path.join(proofsFolder, 'Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
 font1_label   = 'AmstelvarA2 avar2'
 
