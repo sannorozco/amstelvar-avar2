@@ -7,6 +7,7 @@ from defcon.objects.font import Font
 from mojo.roboFont import RGlyph, CurrentGlyph, OpenWindow, OpenFont
 from ufoProcessor.ufoOperator import UFOOperator
 from mutatorMath.objects.location import Location
+from xTools4.modules.encoding import char2psname
 
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 familyName       = 'AmstelvarA2'
@@ -19,15 +20,18 @@ familyNameOld    = 'Amstelvar'
 sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
-# proofing mode:
-# 0=batch, 1=dialog
-mode = 1
+# proofing mode: 0=batch, 1=dialog
+mode = 0
 
-# batch settings
-glyphNames  = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-glyphNames += list('abcdefghijklmnopqrstuvwxyz')
-glyphNames += ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-compare     = True
+# batch settings:
+
+ASCII = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~- '"^`'''
+
+glyphNames = [char2psname(char) for char in ASCII]
+compare    = False
+margins    = False
+wireframe  = False
+savePDF    = True
 
 def instantiateGlyph(operator, glyphName, location):
     glyphMutator, uni = operator.getGlyphMutator(glyphName)
@@ -98,14 +102,20 @@ class BlendsPreview:
 
         # draw page header
         with DB.savedState():
-            DB.translate(20, DB.height()-20)
+            m = 20
+            DB.translate(0, DB.height()-m)
             if compare:
                 DB.fill(*self.color2)
-            DB.text('AmstelvarA2', (0, 0))
+            DB.text('AmstelvarA2', (m, 0))
             if compare:
-                DB.translate(DB.textSize('AmstelvarA2 ')[0], 0)
-                DB.fill(*self.color1)
-                DB.text('Amstelvar', (0, 0))
+                with DB.savedState():
+                    DB.translate(DB.textSize('AmstelvarA2 ')[0]+m, 0)
+                    DB.fill(*self.color1)
+                    DB.text('Amstelvar', (0, 0))
+                    DB.fill(*self.color2)
+            DB.fill(0)
+            DB.text(glyphName, (DB.width()/2, 0), align='center')
+            DB.text(subFamilyName, (DB.width()-m, 0), align='right')
 
         DB.translate(x, y)
 
@@ -319,5 +329,6 @@ if __name__ == '__main__':
             pdfPath = pdfPath.replace('.pdf', '_compare.pdf')
         B = BlendsPreview()
         for glyphName in glyphNames:
-            B.draw(glyphName, compare=compare, margins=compare)
-        B.save(pdfPath)
+            B.draw(glyphName, compare=compare, margins=margins, wireframe=wireframe)
+        if savePDF:
+            B.save(pdfPath)

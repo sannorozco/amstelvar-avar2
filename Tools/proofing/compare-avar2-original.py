@@ -4,17 +4,13 @@ proofsFolder  = os.path.dirname(os.getcwd())
 baseFolder    = os.path.dirname(proofsFolder)
 fontsFolder   = os.path.join(baseFolder, 'Fonts')
 
-print(fontsFolder)
-
 font1_name    = 'Amstelvar'
 font1_Roman   = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
-font1_Italic  = os.path.join(proofsFolder, 'Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
-font1_label   = 'AmstelvarA2 avar2'
+font1_Italic  = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
 
 font2_name    = 'AmstelvarA2'
 font2_Roman   = os.path.join(fontsFolder, 'AmstelvarA2-Roman_avar2.ttf')
 font2_Italic  = os.path.join(fontsFolder, 'AmstelvarA2-Italic_avar2.ttf')
-font2_label   = 'Amstelvar original'
 
 ASCII  = '''\
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -56,7 +52,7 @@ for opsz in [8, 14, 144]:
             T1.fontVariations(**variations)
             T1.append(ASCII, align='center')
 
-            # HACK TO MAKE AVAR2 FONT WORK
+            # HACK TO MAKE AVAR2 FONT WORK <-- check if this is still needed!
             font(font2)
             _variations = fontVariations()
             for k, v in variations.items():
@@ -88,4 +84,3 @@ for opsz in [8, 14, 144]:
 
 if savePDF:
     saveImage(pdfPath)
-
