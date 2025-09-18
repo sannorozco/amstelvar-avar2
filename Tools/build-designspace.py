@@ -163,7 +163,7 @@ class AmstelvarA2DesignSpaceBuilder:
     Builds the AmstelvarA2 designspace from:
 
     - UFO sources
-    - blends.json
+    - blends.json (Amstelvar1)
     - measurements.json
 
     Build steps:
@@ -177,8 +177,6 @@ class AmstelvarA2DesignSpaceBuilder:
     - add parametric sources
     - add instances
 
-    see also: recipe.md
-
     '''
     familyName  = 'AmstelvarA2'
     defaultName = 'wght400'
@@ -186,6 +184,15 @@ class AmstelvarA2DesignSpaceBuilder:
     parentAxesBuild  = False
     parentAxesRoman  = 'XOPQ YOPQ XTRA XSHA YSHA XSVA YSVA XVAA YHAA'.split() # XTEQ YTEQ
     parentAxesItalic = parentAxesRoman
+
+    opszMapping = [
+        # input, output
+        (   8.0,   8.0 ),
+        (  14.0,  14.0 ),
+        (  36.0,  64.0 ),
+        (  84.0, 123.0 ),
+        ( 144.0, 144.0 ),
+    ]
 
     parentAxesDefaults = {
         'XOPQ' : 'XOUC',
@@ -200,7 +207,7 @@ class AmstelvarA2DesignSpaceBuilder:
         'XTEQ' : 'XQUC',
         'YTEQ' : 'YQUC',
     }
-                                      # UPPERCASE                                                                               # LOWERCASE                                                                                         # FIGURES                                                        # VARIETY
+                                      # UPPERCASE                                                                               # LOWERCASE                                                                                         # FIGURES                                                        # MISC.
     parametricAxesRoman  = 'WDSP GRAD XOUC YOUC XTUC XTUR XTUD XTUA YTUC XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD XOLC YOLC XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC XOFI YOFI XTFI YTFI XSHF YSHF XSVF YSVF XVAF YHAF XQFI YQFI XFIR XDOT YTOS XTTW YTTL BARS'.split()
     parametricAxesItalic = parametricAxesRoman
 
@@ -407,6 +414,8 @@ class AmstelvarA2DesignSpaceBuilder:
             a.minimum = self.blendedAxes[tag]['minimum']
             a.maximum = self.blendedAxes[tag]['maximum']
             a.default = self.blendedAxes[tag]['default']
+            if tag == 'opsz':
+                a.map = self.opszMapping
             self.designspace.addAxis(a)
 
     def buildBlendsFile(self):
@@ -805,7 +814,7 @@ if __name__ == '__main__':
     start = time.time()
 
     D = AmstelvarA2DesignSpaceBuilder(subFamilyName)
-    # D.build(patchBlends=True)
+    D.build(patchBlends=True)
     D.buildVariableFont(subset=None, setVersionInfo=True, fixGDEF=False, removeMarkFeature=False, debug=False)
     # D.buildInstancesVariableFont(clear=True, ufo=True)
     # D.printAxes()
