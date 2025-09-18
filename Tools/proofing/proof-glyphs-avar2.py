@@ -12,8 +12,8 @@ assert os.path.exists(pdfsFolder)
 assert os.path.exists(fontRoman)
 assert os.path.exists(fontItalic)
 
-fontRoman_old  = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz] (3).ttf')
-fontItalic_old = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz] (1).ttf')
+fontRoman_old  = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
+fontItalic_old = os.path.join(fontsFolder, 'legacy', 'Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf')
 
 _wdth = [ 50, 100, 150 ]
 _wght = [ 100, 400, 1000 ]

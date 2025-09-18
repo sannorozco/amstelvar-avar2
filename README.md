@@ -1,7 +1,7 @@
 AmstelvarA2
 ===========
 
-Alpha version of Amstelvar with avar2 data. (work in progress) 
+Alpha version of Amstelvar with avar2 data. (work in progress)
 
 
 Folder structure
@@ -172,7 +172,7 @@ Variation axes in AmstelvarA2
 ### Parametric axes
 
 1. `WDSP` Word space width
-2. `GRAD` 
+2. `GRAD`
 3. `XOUC` X stem uppercase
 4. `YOUC` Y stem uppercase
 5. `XTUC` X transparent uppercase
@@ -228,4 +228,4 @@ Variation axes in AmstelvarA2
 55. `YTOS` General y overshoot
 56. `XTTW` Trap width
 57. `YTTL` Trap length
-58. `BARS` 
+58. `BARS`
