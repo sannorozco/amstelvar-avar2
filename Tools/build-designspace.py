@@ -128,34 +128,6 @@ def makeParentAxis(parentName, parametricAxes, defaultName):
 
     return parentAxis, mappings
 
-### USED BY GDEF-FIX
-### http://github.com/googlefonts/fontmake/issues/1148
-def getCombingingAccents(smartSetsPath):
-    smartSets = readSmartSets(smartSetsPath, useAsDefault=False, font=None)
-    combiningAccents = []
-    for smartGroup in smartSets:
-        if not smartGroup.groups:
-            continue
-        for smartSet in smartGroup.groups:
-            if 'accents comb' in smartSet.name:
-                combiningAccents += smartSet.glyphNames
-    return set(combiningAccents)
-
-def findGlyphsWithUnderscoreAnchors(font):
-    underscoreGlyphs = []
-    for g in font:
-        for a in g.anchors:
-            if a.name.startswith('_'):
-                underscoreGlyphs.append(g.name)
-    return set(underscoreGlyphs)
-
-### UPDATE 15/07/2025:
-### the fix above solves the problem only in the GDEF table;
-### the font still contains buggy `mark` and `mkmk` features!
-### TO-DO: try alternative fix using pyftsubset:
-### http://fonttools.readthedocs.io/en/latest/subset/index.html
-### fonttools subset AmstelvarA2-Roman.ttf –layout-features-='mark','mkmk'
-
 
 
 class AmstelvarA2DesignSpaceBuilder:
@@ -207,8 +179,14 @@ class AmstelvarA2DesignSpaceBuilder:
         'XTEQ' : 'XQUC',
         'YTEQ' : 'YQUC',
     }
-                                      # UPPERCASE                                                                               # LOWERCASE                                                                                         # FIGURES                                                        # MISC.
-    parametricAxesRoman  = 'WDSP GRAD XOUC YOUC XTUC XTUR XTUD XTUA YTUC XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD XOLC YOLC XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC XOFI YOFI XTFI YTFI XSHF YSHF XSVF YSVF XVAF YHAF XQFI YQFI XFIR XDOT YTOS XTTW YTTL BARS'.split()
+
+    parametricAxesRoman  = 'WDSP GRAD'
+                            # XOPQ    # XTRA              # YTRA         # serifs                      # EQ      # XTSP
+    parametricAxesRoman += 'XOUC YOUC XTUC XTUR XTUD XTUA YTUC           XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD' # UPPERCASE
+    parametricAxesRoman += 'XOLC YOLC XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC' # LOWERCASE
+    parametricAxesRoman += 'XOFI YOFI XTFI                YTFI           XSHF YSHF XSVF YSVF XVAF YHAF XFIR           XQFI YQFI' # FIGURES
+    parametricAxesRoman += 'XDOT YTOS XTTW YTTL BARS'
+    parametricAxesRoman  = parametricAxesRoman.split()
     parametricAxesItalic = parametricAxesRoman
 
     spacingAxes = [

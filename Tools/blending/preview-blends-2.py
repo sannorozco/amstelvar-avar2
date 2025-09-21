@@ -21,7 +21,7 @@ sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
 # proofing mode: 0=batch, 1=dialog
-mode = 0
+mode = 1
 
 # batch settings:
 
@@ -301,15 +301,23 @@ class BlendsPreviewDialog:
         self._updatePreview()
 
     def _updatePreview(self):
+        font = CurrentFont()
+        if font is None:
+            return
 
-        g = CurrentGlyph()
-        if g is not None:
-            if g.font.lib.get(tempEditModeKey) == 'glyphs':
-                glyphName = g.name[:g.name.rfind('.')]
+        glyph = CurrentGlyph()
+        if glyph is not None:
+            if font.lib.get(tempEditModeKey) == 'glyphs':
+                glyphName = glyph.name[:glyph.name.rfind('.')]
             else:
-                glyphName = g.name
+                glyphName = glyph.name
         else:
-            glyphName = None
+            if len(font.selectedGlyphs):
+                glyphName = font.selectedGlyphs[0].name
+                if font.lib.get(tempEditModeKey) == 'glyphs':
+                    glyphName = glyphName[:glyphName.rfind('.')]
+            else:
+                glyphName = None
 
         B = BlendsPreview()
         B.draw(glyphName, compare=self.compare, wireframe=self.wireframe, margins=self.margins, labels=self.labels)
