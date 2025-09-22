@@ -21,7 +21,7 @@ sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
 # proofing mode: 0=batch, 1=dialog
-mode = 1
+mode = 0
 
 # batch settings:
 
