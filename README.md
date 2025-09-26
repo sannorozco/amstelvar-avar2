@@ -172,60 +172,65 @@ Variation axes in AmstelvarA2
 ### Parametric axes
 
 1. `WDSP` Word space width
-2. `GRAD`
+2. `GRAD` Grades
 3. `XOUC` X stem uppercase
 4. `YOUC` Y stem uppercase
-5. `XTUC` X transparent uppercase
-6. `XTUR` X transparent uppercase rounds
-7. `XTUD` X transparent uppercase diagonals
-8. `XTUA` Uppercase accent width
-9. `YTUC` Y transparent uppercase
-10. `XSHU` X horizontal serif uppercase
-11. `YSHU` Y horizontal serif uppercase
-12. `XSVU` X vertical serif uppercase
-13. `YSVU` Y vertical serif uppercase
-14. `XVAU` Uppercase vertical serif angle
-15. `YHAU` Uppercase horizontal serif angle
-16. `XQUC` X internal curvature uppercase
-17. `YQUC` Y internal curvature uppercase
-18. `XUCS` X sidebearing uppercase straights
-19. `XUCR` X sidebearing uppercase rounds
-20. `XUCD` X sidebearing uppercase diagonals
-21. `XOLC` X stem lowercase
-22. `YOLC` Y stem lowercase
-23. `XTLC` X transparent lowercase
-24. `XTLR` X transparent lowercase rounds
-25. `XTLD` X transparent lowercase diagonals
-26. `XTLA` Lowercase accent width
-27. `YTLC` Y transparent lowercase
-28. `YTAS` Y transparent ascender
-29. `YTDE` Y transparent descender
-30. `XSHL` X horizontal serif lowercase
-31. `YSHL` Y horizontal serif lowercase
-32. `XSVL` X vertical serif lowercase
-33. `YSVL` Y vertical serif lowercase
-34. `XVAL` Lowercase vertical serif angle
-35. `YHAL` Lowercase horizontal serif angle
-36. `XLCS` X sidebearing lowercase straights
-37. `XLCR` X sidebearing lowercase rounds
-38. `XLCD` X sidebearing lowercase diagonals
-39. `XQLC` X internal curvature lowercase
-40. `YQLC` Y internal curvature lowercase
-41. `XOFI` X stem figures
-42. `YOFI` Y stem figures
-43. `XTFI` X transparent figures
-44. `YTFI` Y transparent figures
-45. `XSHF` X horizontal serif figures
-46. `YSHF` Y horizontal serif figures
-47. `XSVF` X vertical serif figures
-48. `YSVF` Y vertical serif figures
-49. `XVAF` Figures vertical serif angle
-50. `YHAF` Figures horizontal serif angle
-51. `XQFI` X internal curvature figures
-52. `YQFI` Y internal curvature figures
-53. `XFIR` X sidebearing figure 0
-54. `XDOT` Dot width
-55. `YTOS` General y overshoot
-56. `XTTW` Trap width
-57. `YTTL` Trap length
-58. `BARS`
+5. `XOUA` Uppercase accents main weight
+6. `YOUA` Uppercase accents secondary weight
+7. `XTUC` X transparent uppercase
+8. `XTUR` X transparent uppercase rounds
+9. `XTUD` X transparent uppercase diagonals
+10. `XTUA` Uppercase accent width
+11. `YTUC` Y transparent uppercase
+12. `YTJD` None
+13. `XSHU` X horizontal serif uppercase
+14. `YSHU` Y horizontal serif uppercase
+15. `XSVU` X vertical serif uppercase
+16. `YSVU` Y vertical serif uppercase
+17. `XVAU` Uppercase vertical serif angle
+18. `YHAU` Uppercase horizontal serif angle
+19. `XQUC` X internal curvature uppercase
+20. `YQUC` Y internal curvature uppercase
+21. `XUCS` X sidebearing uppercase straights
+22. `XUCR` X sidebearing uppercase rounds
+23. `XUCD` X sidebearing uppercase diagonals
+24. `XOLC` X stem lowercase
+25. `YOLC` Y stem lowercase
+26. `XOLA` Lowercase accents main weight
+27. `YOLA` Lowercase accents secondary weight
+28. `XTLC` X transparent lowercase
+29. `XTLR` X transparent lowercase rounds
+30. `XTLD` X transparent lowercase diagonals
+31. `XTLA` Lowercase accent width
+32. `YTLC` Y transparent lowercase
+33. `YTAS` Y transparent ascender
+34. `YTDE` Y transparent descender
+35. `XSHL` X horizontal serif lowercase
+36. `YSHL` Y horizontal serif lowercase
+37. `XSVL` X vertical serif lowercase
+38. `YSVL` Y vertical serif lowercase
+39. `XVAL` Lowercase vertical serif angle
+40. `YHAL` Lowercase horizontal serif angle
+41. `XLCS` X sidebearing lowercase straights
+42. `XLCR` X sidebearing lowercase rounds
+43. `XLCD` X sidebearing lowercase diagonals
+44. `XQLC` X internal curvature lowercase
+45. `YQLC` Y internal curvature lowercase
+46. `XOFI` X stem figures
+47. `YOFI` Y stem figures
+48. `XTFI` X transparent figures
+49. `YTFI` Y transparent figures
+50. `XSHF` X horizontal serif figures
+51. `YSHF` Y horizontal serif figures
+52. `XSVF` X vertical serif figures
+53. `YSVF` Y vertical serif figures
+54. `XVAF` Figures vertical serif angle
+55. `YHAF` Figures horizontal serif angle
+56. `XFIR` X sidebearing figure 0
+57. `XQFI` X internal curvature figures
+58. `YQFI` Y internal curvature figures
+59. `XDOT` Dot width
+60. `YTOS` Lowercase overshoot
+61. `XTTW` Trap width
+62. `YTTL` Trap length
+63. `BARS`
