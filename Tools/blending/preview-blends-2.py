@@ -28,8 +28,8 @@ mode = 0
 ASCII = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~- '"^`'''
 
 glyphNames = [char2psname(char) for char in ASCII]
-compare    = False
-margins    = False
+compare    = True
+margins    = True
 wireframe  = False
 savePDF    = True
 
@@ -339,4 +339,6 @@ if __name__ == '__main__':
         for glyphName in glyphNames:
             B.draw(glyphName, compare=compare, margins=margins, wireframe=wireframe)
         if savePDF:
+            print(f'saving {pdfPath}...', end=' ')
             B.save(pdfPath)
+            print(f'done!\n')

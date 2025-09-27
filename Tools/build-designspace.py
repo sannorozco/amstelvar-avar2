@@ -181,10 +181,11 @@ class AmstelvarA2DesignSpaceBuilder:
     }
 
     parametricAxesRoman  = 'WDSP GRAD '
-                            # XOPQ    # XTRA              # YTRA         # serifs                      # EQ      # XTSP
-    parametricAxesRoman += 'XOUC YOUC XTUC XTUR XTUD XTUA YTUC YTJD      XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD ' # UPPERCASE
-    parametricAxesRoman += 'XOLC YOLC XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC ' # LOWERCASE
-    parametricAxesRoman += 'XOFI YOFI XTFI                YTFI           XSHF YSHF XSVF YSVF XVAF YHAF XFIR           XQFI YQFI ' # FIGURES
+                            # XOPQ              # XTRA              # YTRA         # serifs                      # EQ      # XTSP
+    parametricAxesRoman += 'XOUC YOUC XOUA YOUA XTUC XTUR XTUD XTUA YTUC YTJD      XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD ' # uppercase
+    parametricAxesRoman += 'XOLC YOLC XOLA YOLA XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC ' # lowercase
+    parametricAxesRoman += 'XOFI YOFI           XTFI                YTFI           XSHF YSHF XSVF YSVF XVAF YHAF XFIR           XQFI YQFI ' # figures
+
     parametricAxesRoman += 'XDOT YTOS XTTW YTTL BARS'
     parametricAxesRoman  = parametricAxesRoman.split()
     parametricAxesItalic = parametricAxesRoman
