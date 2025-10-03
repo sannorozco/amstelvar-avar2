@@ -4,11 +4,11 @@ import os, glob
 
 familyName    = 'AmstelvarA2'
 subFamilyName = ['Roman', 'Italic'][1]
-sourceName    = 'wght400'
+defaultName    = 'wght400'
 baseFolder    = os.path.dirname(os.path.dirname(os.getcwd()))
 sourcesFolder = os.path.join(baseFolder, 'Sources', subFamilyName)
-sourcePath    = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{sourceName}.ufo')
-assert os.path.exists(sourcePath)
+defaultPath   = os.path.join(sourcesFolder, f'{familyName}-{subFamilyName}_{defaultName}.ufo')
+assert os.path.exists(defaultPath)
 
 # options
 
@@ -18,11 +18,12 @@ preflight  = False
 
 # batch copy glyphs
 
-sourceFont = OpenFont(sourcePath, showInterface=False)
-ufoPaths   = glob.glob(f'{sourcesFolder}/*.ufo')
+defaultFont = OpenFont(defaultPath, showInterface=False)
+
+ufoPaths = glob.glob(f'{sourcesFolder}/*.ufo')
 
 for ufoPath in ufoPaths:
-    if ufoPath == sourcePath:
+    if ufoPath == defaultPath:
         continue
 
     name = os.path.splitext(os.path.split(ufoPath)[-1])[0].split('_')[-1]
@@ -32,12 +33,12 @@ for ufoPath in ufoPaths:
 
         print(f'copying glyphs to {os.path.split(ufoPath)[-1]}...')
         for glyphName in glyphNames:
-            if glyphName not in sourceFont:
+            if glyphName not in defaultFont:
                 print(f'\tERROR: {glyphName} not in source font')
                 continue
             print(f'\tcopying {glyphName}...')
             if not preflight:
-                dstFont.insertGlyph(sourceFont[glyphName], name=glyphName)
+                dstFont.insertGlyph(defaultFont[glyphName], name=glyphName)
 
         if not preflight:
             print(f'\tsaving font...')
