@@ -9,7 +9,7 @@ from mojo.smartSet import readSmartSets
 from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
 from xTools4.modules.accents import buildAccentedGlyphs
 
-def getComponentGlyphNamesForSmartSets(smartSetNames, smartSetsPath, defaultPath):
+def getComponentGlyphNamesFromSmartSets(smartSetNames, smartSetsPath, defaultPath):
     smartSets = readSmartSets(smartSetsPath, useAsDefault=False, font=None)
     f = OpenFont(defaultPath, showInterface=False)
     glyphNames = []
@@ -47,7 +47,7 @@ smartSetNames = [
     # 'lowercase cyrillic',
     # 'lowercase digraphs',
 ]
-glyphNames = getComponentGlyphNamesForSmartSets(smartSetNames, smartSetsPath, defaultPath) # [ 'ellipsis' ]
+glyphNames = getComponentGlyphNamesFromSmartSets(smartSetNames, smartSetsPath, defaultPath) # [ 'ellipsis' ]
 dstFonts   = []
 preflight  = False
 verbose    = True

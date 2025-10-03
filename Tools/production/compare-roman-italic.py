@@ -40,7 +40,7 @@ if compareComponents:
             romanComponents  = [c.baseGlyph for c in romanFont[glyphName].components]
             if romanComponents != italicComponents:
                 print(f'\t{glyphName}:')
-                print(f'\t\titalic: {" ".join(italicComponents)}')
-                print(f'\t\troman: {" ".join(romanComponents)}')
+                print(f'\t\titalic : {" ".join(italicComponents)}')
+                print(f'\t\t roman : {" ".join(romanComponents)}')
                 print()
     
