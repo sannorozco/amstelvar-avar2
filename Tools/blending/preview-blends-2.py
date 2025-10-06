@@ -279,6 +279,7 @@ class BlendsPreviewDialog:
         self._updatePreview()
 
         self.w.getNSWindow().setTitlebarAppearsTransparent_(True)
+        self.w.workspaceWindowIdentifier = "BlendsPreview"
         self.w.open()
 
     @property
