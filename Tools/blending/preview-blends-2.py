@@ -30,6 +30,8 @@ ASCII = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@
 glyphNames = [char2psname(char) for char in ASCII]
 compare    = True
 margins    = True
+levels     = True
+labels     = True
 wireframe  = False
 savePDF    = True
 
@@ -58,6 +60,13 @@ def getShortStyleName(opsz, wght, wdth):
         styleNameParts.append(f'wght{wght}')
     return '_'.join(styleNameParts)
 
+def getVarDistance(sourceLocation, defaultLocation):
+    n = 1
+    for k in sourceLocation.keys():
+        if sourceLocation[k] != defaultLocation[k]:
+            n += 1
+    return n
+
 
 class BlendsPreview:
 
@@ -65,12 +74,28 @@ class BlendsPreview:
     glyphScale  = 0.045
     cellSize    = 2000
     labelsSize  = 5
-    color1      = 1, 0, 1
-    color2      = 0, 1, 1
+
+    compare   = False
+    wireframe = False
+    margins   = False
+    labels    = False
+    levels    = False
 
     opszs = [8, 14, 144]
     wghts = [100, 400, 1000]
     wdths = [50, 100, 125]
+
+    compareColors = [
+        (1, 0, 1), # Amstelvar
+        (0, 1, 1), # AmstelvarA2
+    ]
+
+    levelsColors = [
+        (0.0, 0.5, 1.0), # monovar
+        (1.0, 0.0, 0.5), # duovars
+        (0.0, 1.0, 0.5), # trivars
+        (1.0, 0.5, 0.0), # quadvars
+    ]
 
     def __init__(self):
         # load blends data
@@ -84,7 +109,71 @@ class BlendsPreview:
         # initiate drawing
         DB.newDrawing()
 
-    def draw(self, glyphName, compare=False, wireframe=False, margins=False, labels=False):
+    def getColors(self, level=0):
+        colors = {
+            'fillHeader2'    : (0,),
+            'fill2'          : (0,),
+            'stroke2'        : None,
+            'points2'        : None,
+            'strokeMargins2' : (0,),
+        }
+        if self.wireframe:
+            colors['fill2']   = None
+            colors['stroke2'] = 0,
+            colors['points2'] = 0,
+
+        levelColor = self.levelsColors[level]
+
+        if self.compare and not self.levels:
+            colors['fillHeader2']    = self.compareColors[1]
+            colors['fill2']          = self.compareColors[1]
+            colors['strokeMargins2'] = self.compareColors[1]
+
+            colors['fillHeader1']    = self.compareColors[0]
+            colors['fill1']          = self.compareColors[0]
+            colors['strokeMargins1'] = self.compareColors[0]
+            colors['stroke1']        = None
+            colors['points1']        = None
+
+            if self.wireframe:
+                colors['fill2']   = None
+                colors['stroke2'] = self.compareColors[1]
+                colors['points2'] = self.compareColors[1]
+                colors['fill1']   = None
+                colors['stroke1'] = self.compareColors[0]
+                colors['points1'] = self.compareColors[0]
+
+        elif not self.compare and self.levels:
+            colors['fill2']          = levelColor
+            colors['strokeMargins2'] = levelColor
+
+            if self.wireframe:
+                colors['fill2']   = None
+                colors['stroke2'] = levelColor
+                colors['points2'] = levelColor
+
+        elif self.compare and self.levels:
+            colors['fill2']          = levelColor
+            colors['strokeMargins2'] = levelColor
+
+            colors['fillHeader1']    = 0.8,
+            colors['fill1']          = 0.9,
+            colors['stroke1']        = None # 0.8,
+            colors['points1']        = None
+            colors['strokeMargins1'] = 0.8,
+
+            if self.wireframe:
+                colors['fill1']   = None
+                colors['stroke1'] = 0.7,
+                colors['points1'] = 0.7,
+
+                colors['fill2']   = None
+                colors['stroke2'] = levelColor
+                colors['points2'] = levelColor
+
+        return colors
+
+    def draw(self, glyphName):
 
         cellWidth  = self.cellSize * self.glyphScale * 1.5
         cellHeight = self.cellSize * self.glyphScale
@@ -100,20 +189,22 @@ class BlendsPreview:
         if glyphName is None:
             return
 
+        colors = self.getColors()
+
         # draw page header
         with DB.savedState():
             m = 20
             DB.translate(0, DB.height()-m)
-            if compare:
-                DB.fill(*self.color2)
+            DB.fill(*colors['fillHeader2'])
             DB.text('AmstelvarA2', (m, 0))
-            if compare:
-                with DB.savedState():
-                    DB.translate(DB.textSize('AmstelvarA2 ')[0]+m, 0)
-                    DB.fill(*self.color1)
-                    DB.text('Amstelvar', (0, 0))
-                    DB.fill(*self.color2)
-            DB.fill(0)
+            if self.compare:
+                DB.save()
+                DB.translate(DB.textSize('AmstelvarA2 ')[0] + m, 0)
+                DB.fill(*colors['fillHeader1'])
+                DB.text('Amstelvar', (0, 0))
+                DB.restore()
+
+            DB.fill(0,)
             DB.text(glyphName, (DB.width()/2, 0), align='center')
             DB.text(subFamilyName, (DB.width()-m, 0), align='right')
 
@@ -128,22 +219,27 @@ class BlendsPreview:
                 for k, wdth in enumerate(self.wdths):
                     _styleName = f'opsz{opsz}_wght{wght}_wdth{wdth}'
                     styleName  = getShortStyleName(opsz, wght, wdth)
-                    
+
                     assert styleName in self.blends
                     location = self.blends[styleName]
+
                     g2 = instantiateGlyph(self.operator, glyphName, location)
 
                     if not g2:
                         continue
 
+                    # get var distance
+                    n = 0 if styleName == 'wght400' else len(styleName.split('_'))
+                    colors = self.getColors(n)
+
                     DB.save()
                     DB.translate(k * cellWidth, j * cellHeight)
 
                     # draw location name
-                    if labels:
+                    if self.labels:
                         with DB.savedState():
                             DB.rotate(90)
-                            DB.fill(0.5)
+                            DB.fill(0)
                             DB.font('Menlo')
                             DB.fontSize(self.labelsSize)
                             DB.text(_styleName.replace('_', ' '), (0, 10))
@@ -151,65 +247,76 @@ class BlendsPreview:
                     DB.scale(self.glyphScale)
 
                     # draw glyph AmstelvarA2
+                    if self.wireframe:
+                        DB.strokeWidth(2)
 
-                    if compare:
-                        DB.fill(*self.color2)
+                    fill2   = colors['fill2']
+                    stroke2 = colors['stroke2']
+                    points2 = colors['points2']
 
-                    if wireframe:
-                        with DB.savedState():
-                            DB.fill(None)
-                            DB.strokeWidth(2)
-                            if compare:
-                                DB.stroke(*self.color2)
-                            else:
-                                DB.stroke(0)
-                            drawGlyph(g2)
+                    if fill2 is not None:
+                        DB.fill(*fill2)
+                    else:
+                        DB.fill(fill2)
+
+                    if stroke2 is not None:
+                        DB.stroke(*stroke2)
+                    else:
+                        DB.stroke(stroke2)
+
+                    drawGlyph(g2)
+
+                    if self.wireframe and points2 is not None:
+                        DB.fill(*points2)
+                        DB.stroke(None)
                         for c in g2.contours:
                             for p in c.points:
                                 DB.oval(p.x-r, p.y-r, r*2, r*2)
 
-                    else:
-                        drawGlyph(g2)
-
-                    if margins:
+                    if self.margins:
                         yBottom = font.info.descender
                         yTop    = font.info.unitsPerEm - abs(yBottom)
-                        with DB.savedState():
-                            if compare:
-                                DB.stroke(*self.color2)
-                            else:
-                                DB.stroke(0.5)
-                            DB.strokeWidth(1)
-                            DB.line((0, yBottom), (0, yTop))
-                            DB.line((g2.width, yBottom), (g2.width, yTop))
+                        DB.strokeWidth(1)
+                        DB.stroke(*colors['strokeMargins2'])
+                        DB.line((0, yBottom), (0, yTop))
+                        DB.line((g2.width, yBottom), (g2.width, yTop))
 
                     # draw glyph Amstelvar
-                    if compare:
+                    if self.compare:
                         ufoPathOld = os.path.join(sourcesFolderOld, f'{familyNameOld}-{subFamilyName}_{styleName}.ufo')
                         assert os.path.exists(ufoPathOld)
                         f = OpenFont(ufoPathOld, showInterface=False)
                         g1 = f[glyphName]
 
-                        DB.fill(*self.color1)
-                        if wireframe:
-                            with DB.savedState():
-                                DB.fill(None)
-                                DB.strokeWidth(2)
-                                if compare:
-                                    DB.stroke(*self.color1)
-                                else:
-                                    DB.stroke(0)
-                                drawGlyph(g1)
+                        if self.wireframe:
+                            DB.strokeWidth(2)
+
+                        fill1   = colors['fill1']
+                        stroke1 = colors['stroke1']
+                        points1 = colors['points1']
+
+                        if fill1 is not None:
+                            DB.fill(*fill1)
+                        else:
+                            DB.fill(fill1)
+
+                        if stroke1 is not None:
+                            DB.stroke(*stroke1)
+                        else:
+                            DB.stroke(stroke1)
+
+                        drawGlyph(g1)
+
+                        if self.wireframe and points1 is not None:
+                            DB.stroke(None)
+                            DB.fill(*points1)
                             for c in g1.contours:
                                 for p in c.points:
                                     DB.oval(p.x-r, p.y-r, r*2, r*2)
 
-                        else:
-                            drawGlyph(g1)
-
-                        if margins:
-                            DB.stroke(*self.color1)
+                        if self.margins:
                             DB.strokeWidth(1)
+                            DB.stroke(*colors['strokeMargins1'])
                             DB.line((0, yBottom), (0, yTop))
                             DB.line((g1.width, yBottom), (g1.width, yTop))
 
@@ -229,7 +336,7 @@ class BlendsPreviewDialog:
     padding     = 10
     lineHeight  = 22
     verbose     = True
-    buttonWidth = 80
+    buttonWidth = 75
 
     def __init__(self):
 
@@ -265,7 +372,7 @@ class BlendsPreviewDialog:
         x += self.buttonWidth
         self.w.wireframe = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
-            'wireframe',
+            'points',
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
@@ -276,9 +383,17 @@ class BlendsPreviewDialog:
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
+        x += self.buttonWidth
+        self.w.levels = CheckBox(
+            (x, y, self.buttonWidth, self.lineHeight),
+            'levels',
+            # callback=self.updatePreviewCallback,
+            sizeStyle='small')
+
         self._updatePreview()
 
         self.w.getNSWindow().setTitlebarAppearsTransparent_(True)
+        self.w.workspaceWindowIdentifier = "BlendsPreview"
         self.w.open()
 
     @property
@@ -296,6 +411,10 @@ class BlendsPreviewDialog:
     @property
     def labels(self):
         return self.w.labels.get()
+
+    @property
+    def levels(self):
+        return self.w.levels.get()
 
     def updatePreviewCallback(self, sender):
         self._updatePreview()
@@ -320,7 +439,12 @@ class BlendsPreviewDialog:
                 glyphName = None
 
         B = BlendsPreview()
-        B.draw(glyphName, compare=self.compare, wireframe=self.wireframe, margins=self.margins, labels=self.labels)
+        B.compare   = self.compare
+        B.wireframe = self.wireframe
+        B.margins   = self.margins
+        B.labels    = self.labels
+        B.levels    = self.levels
+        B.draw(glyphName)
 
         pdfData = DB.pdfImage()
         self.w.canvas.setPDFDocument(pdfData)
@@ -333,11 +457,15 @@ if __name__ == '__main__':
 
     else:
         pdfPath = os.path.join(baseFolder, 'Proofs', 'PDF', f'blending-preview_{subFamilyName}.pdf')
-        if compare:
-            pdfPath = pdfPath.replace('.pdf', '_compare.pdf')
         B = BlendsPreview()
+        B.compare   = compare
+        B.margins   = margins
+        B.wireframe = wireframe
+        B.levels    = levels
+        B.labels    = labels
+
         for glyphName in glyphNames:
-            B.draw(glyphName, compare=compare, margins=margins, wireframe=wireframe)
+            B.draw(glyphName)
         if savePDF:
             print(f'saving {pdfPath}...', end=' ')
             B.save(pdfPath)
