@@ -375,6 +375,7 @@
 					<string>horizontalbarH</string>
 					<string>hornU</string>
 					<string>Engtail</string>
+					<string>Yu-dash.case</string>
 				</array>
 				<key>smartSetName</key>
 				<string>uppercase parts</string>
@@ -474,6 +475,8 @@
 					<string>macronbelowcomb.case</string>
 					<string>tonoscomb.case</string>
 					<string>breve.cyrcomb.case</string>
+					<string>Yi-dieresiscomb.case</string>
+					<string>caroncomb-alt.case</string>
 				</array>
 				<key>smartSetName</key>
 				<string>uppercase accents comb</string>
@@ -504,8 +507,8 @@
 					<string>brevebelow.case</string>
 					<string>macronbelow.case</string>
 					<string>breve.cyr.case</string>
-					<string>periodcentered.loclCAT.case</string>
 					<string>tonos.case</string>
+					<string>periodcentered-loclCAT.case</string>
 				</array>
 				<key>smartSetName</key>
 				<string>uppercase accents spacing</string>
@@ -1425,8 +1428,6 @@
 					<string>jdotless</string>
 					<string>jcircumflex</string>
 					<string>jacute.loclNLD</string>
-					<string>f_f_ij</string>
-					<string>f_ij</string>
 					<string>wgrave</string>
 					<string>wacute</string>
 					<string>wdieresis</string>
@@ -1596,6 +1597,18 @@
 			<dict>
 				<key>glyphNames</key>
 				<array>
+					<string>f_f</string>
+					<string>fi</string>
+					<string>fl</string>
+					<string>f_f_i</string>
+					<string>f_f_l</string>
+				</array>
+				<key>smartSetName</key>
+				<string>lowercase ligatures</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
 					<string>dzcaron</string>
 					<string>lj</string>
 					<string>nj</string>
@@ -1620,7 +1633,7 @@
 					<string>obarcyr-stroke</string>
 					<string>engtail</string>
 					<string>yu-i</string>
-					<string>yu-l.bgr</string>
+					<string>idot</string>
 				</array>
 				<key>smartSetName</key>
 				<string>lowercase parts</string>
@@ -1741,119 +1754,7 @@
 			<dict>
 				<key>glyphNames</key>
 				<array>
-					<string>asterisk</string>
-					<string>ordfeminine</string>
-					<string>degree</string>
-					<string>ordmasculine</string>
-					<string>trademark</string>
-				</array>
-				<key>smartSetName</key>
-				<string>raised symbols</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>period</string>
-					<string>exclam</string>
-					<string>comma</string>
-					<string>colon</string>
-					<string>semicolon</string>
-					<string>questiondown</string>
-					<string>question</string>
-					<string>exclamdown</string>
-					<string>ellipsis</string>
-					<string>periodcentered</string>
-				</array>
-				<key>smartSetName</key>
-				<string>punctuation</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>quotesingle</string>
-					<string>quotedbl</string>
-					<string>quoteleft</string>
-					<string>quoteright</string>
-					<string>quotesinglbase</string>
-					<string>quotedblleft</string>
-					<string>quotedblright</string>
-					<string>quotedblbase</string>
-				</array>
-				<key>smartSetName</key>
-				<string>quotes</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>hyphen</string>
-					<string>endash</string>
-					<string>emdash</string>
-					<string>underscore</string>
-				</array>
-				<key>smartSetName</key>
-				<string>dashes</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>asterisk</string>
-					<string>section</string>
-					<string>dagger</string>
-					<string>daggerdbl</string>
-				</array>
-				<key>smartSetName</key>
-				<string>reference</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>parenleft</string>
-					<string>parenright</string>
-					<string>bracketleft</string>
-					<string>bracketright</string>
-					<string>braceleft</string>
-					<string>braceright</string>
-				</array>
-				<key>smartSetName</key>
-				<string>parentheticals</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>guilsinglleft</string>
-					<string>guilsinglright</string>
-					<string>guillemotleft</string>
-					<string>guillemotright</string>
-				</array>
-				<key>smartSetName</key>
-				<string>guillemets</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
-					<string>slash</string>
-					<string>backslash</string>
-					<string>bar</string>
-					<string>brokenbar</string>
-				</array>
-				<key>smartSetName</key>
-				<string>slashes</string>
-			</dict>
-			<dict>
-				<key>glyphNames</key>
-				<array>
 					<string>n</string>
-					<string>exclam</string>
-					<string>quotedbl</string>
-					<string>quotesingle</string>
-					<string>asterisk</string>
-					<string>comma</string>
-					<string>hyphen</string>
-					<string>period</string>
-					<string>colon</string>
-					<string>semicolon</string>
-					<string>question</string>
-					<string>underscore</string>
 					<string>f</string>
 					<string>h</string>
 					<string>i</string>
@@ -1864,16 +1765,6 @@
 					<string>s</string>
 					<string>t</string>
 					<string>u</string>
-					<string>exclamdown</string>
-					<string>section</string>
-					<string>ordfeminine</string>
-					<string>guillemotleft</string>
-					<string>degree</string>
-					<string>mu</string>
-					<string>periodcentered</string>
-					<string>ordmasculine</string>
-					<string>guillemotright</string>
-					<string>questiondown</string>
 					<string>germandbls</string>
 					<string>igrave</string>
 					<string>iacute</string>
@@ -1884,25 +1775,11 @@
 					<string>uacute</string>
 					<string>ucircumflex</string>
 					<string>udieresis</string>
-					<string>quoteleft</string>
-					<string>quoteright</string>
 					<string>f_f</string>
 					<string>fi</string>
 					<string>fl</string>
 					<string>f_f_i</string>
 					<string>f_f_l</string>
-					<string>ellipsis</string>
-					<string>quotesinglbase</string>
-					<string>quotedblleft</string>
-					<string>quotedblright</string>
-					<string>quotedblbase</string>
-					<string>guilsinglleft</string>
-					<string>guilsinglright</string>
-					<string>endash</string>
-					<string>emdash</string>
-					<string>dagger</string>
-					<string>daggerdbl</string>
-					<string>trademark</string>
 					<string>hcircumflex</string>
 					<string>hbar</string>
 					<string>itilde</string>
@@ -2026,8 +1903,6 @@
 					<string>engn</string>
 					<string>ha-stroke</string>
 					<string>ustraight-stroke</string>
-					<string>alpha</string>
-					<string>alphatonos</string>
 					<string>beta</string>
 					<string>epsilon</string>
 					<string>epsilontonos</string>
@@ -2045,11 +1920,8 @@
 					<string>upsilondieresis</string>
 					<string>upsilontonos</string>
 					<string>psi</string>
-					<string>omega</string>
-					<string>omegatonos</string>
 					<string>cy-descendercomb</string>
 					<string>yu-i</string>
-					<string>yu-l.bgr</string>
 					<string>Lj</string>
 					<string>Nj</string>
 					<string>a</string>
@@ -2086,7 +1958,6 @@
 					<string>de.locl</string>
 					<string>yu.bgr-stroke</string>
 					<string>i.bgr</string>
-					<string>hornu</string>
 					<string>amacroncyr</string>
 				</array>
 				<key>smartSetName</key>
@@ -2201,6 +2072,10 @@
 					<string>gdotaccent</string>
 					<string>gcommaaccent</string>
 					<string>gcaron</string>
+					<string>alpha</string>
+					<string>alphatonos</string>
+					<string>omega</string>
+					<string>omegatonos</string>
 				</array>
 				<key>smartSetName</key>
 				<string>XTLR</string>
@@ -2363,18 +2238,6 @@
 				<key>glyphNames</key>
 				<array>
 					<string>n</string>
-					<string>exclam</string>
-					<string>quotedbl</string>
-					<string>quotesingle</string>
-					<string>asterisk</string>
-					<string>comma</string>
-					<string>hyphen</string>
-					<string>period</string>
-					<string>colon</string>
-					<string>semicolon</string>
-					<string>question</string>
-					<string>underscore</string>
-					<string>grave</string>
 					<string>f</string>
 					<string>h</string>
 					<string>i</string>
@@ -2386,20 +2249,6 @@
 					<string>t</string>
 					<string>u</string>
 					<string>z</string>
-					<string>exclamdown</string>
-					<string>section</string>
-					<string>dieresis</string>
-					<string>ordfeminine</string>
-					<string>guillemotleft</string>
-					<string>macron</string>
-					<string>degree</string>
-					<string>acute</string>
-					<string>mu</string>
-					<string>periodcentered</string>
-					<string>cedilla</string>
-					<string>ordmasculine</string>
-					<string>guillemotright</string>
-					<string>questiondown</string>
 					<string>germandbls</string>
 					<string>igrave</string>
 					<string>iacute</string>
@@ -2410,95 +2259,11 @@
 					<string>uacute</string>
 					<string>ucircumflex</string>
 					<string>udieresis</string>
-					<string>circumflex</string>
-					<string>caron</string>
-					<string>breve</string>
-					<string>dotaccent</string>
-					<string>ring</string>
-					<string>ogonek</string>
-					<string>tilde</string>
-					<string>hungarumlaut</string>
-					<string>quoteleft</string>
-					<string>quoteright</string>
 					<string>f_f</string>
 					<string>fi</string>
 					<string>fl</string>
 					<string>f_f_i</string>
 					<string>f_f_l</string>
-					<string>ellipsis</string>
-					<string>quotesinglbase</string>
-					<string>quotedblleft</string>
-					<string>quotedblright</string>
-					<string>quotedblbase</string>
-					<string>guilsinglleft</string>
-					<string>guilsinglright</string>
-					<string>endash</string>
-					<string>emdash</string>
-					<string>dagger</string>
-					<string>daggerdbl</string>
-					<string>trademark</string>
-					<string>hookabove</string>
-					<string>breveinverted</string>
-					<string>dblgrave</string>
-					<string>horn</string>
-					<string>dotbelow</string>
-					<string>dieresisbelow</string>
-					<string>commaaccent</string>
-					<string>brevebelow</string>
-					<string>macronbelow</string>
-					<string>commaaccentturned</string>
-					<string>firsttonechinese</string>
-					<string>gravecomb</string>
-					<string>acutecomb</string>
-					<string>circumflexcomb</string>
-					<string>tildecomb</string>
-					<string>macroncomb</string>
-					<string>brevecomb</string>
-					<string>dotaccentcomb</string>
-					<string>dieresiscomb</string>
-					<string>hookabovecomb</string>
-					<string>ringcomb</string>
-					<string>hungarumlautcomb</string>
-					<string>caroncomb</string>
-					<string>breveinvertedcomb</string>
-					<string>dblgravecomb</string>
-					<string>horncomb</string>
-					<string>dotbelowcomb</string>
-					<string>dieresisbelowcomb</string>
-					<string>commaaccentcomb</string>
-					<string>cedillacomb</string>
-					<string>ogonekcomb</string>
-					<string>brevebelowcomb</string>
-					<string>macronbelowcomb</string>
-					<string>commaaccentturnedcomb</string>
-					<string>gravecomb-stack</string>
-					<string>acutecomb-stack</string>
-					<string>circumflexcomb-stack</string>
-					<string>tildecomb-stack</string>
-					<string>macroncomb-stack</string>
-					<string>brevecomb-stack</string>
-					<string>dotaccentcomb-stack</string>
-					<string>dieresiscomb-stack</string>
-					<string>hookabovecomb-stack</string>
-					<string>ringcomb-stack</string>
-					<string>hungarumlautcomb-stack</string>
-					<string>caroncomb-stack</string>
-					<string>breveinvertedcomb-stack</string>
-					<string>dblgravecomb-stack</string>
-					<string>grave-stack</string>
-					<string>acute-stack</string>
-					<string>circumflex-stack</string>
-					<string>tilde-stack</string>
-					<string>macron-stack</string>
-					<string>breve-stack</string>
-					<string>dotaccent-stack</string>
-					<string>dieresis-stack</string>
-					<string>hookabove-stack</string>
-					<string>ring-stack</string>
-					<string>hungarumlaut-stack</string>
-					<string>caron-stack</string>
-					<string>breveinverted-stack</string>
-					<string>dblgrave-stack</string>
 					<string>hcircumflex</string>
 					<string>hbar</string>
 					<string>itilde</string>
@@ -2536,7 +2301,6 @@
 					<string>zdotaccent</string>
 					<string>zcaron</string>
 					<string>uhorn</string>
-					<string>Dzcaron</string>
 					<string>idotless</string>
 					<string>jdotless</string>
 					<string>ijacute</string>
@@ -2563,16 +2327,6 @@
 					<string>uhornhookabove</string>
 					<string>uhorntilde</string>
 					<string>uhorndotbelow</string>
-					<string>caroncomb.alt</string>
-					<string>periodcentered.loclCAT</string>
-					<string>diagonalbarl</string>
-					<string>diagonalbaro</string>
-					<string>engtail</string>
-					<string>horizontalbarlc</string>
-					<string>tonos</string>
-					<string>dieresistonos</string>
-					<string>tonoscomb</string>
-					<string>dieresistonoscomb</string>
 					<string>ve</string>
 					<string>ghe</string>
 					<string>gje</string>
@@ -2631,16 +2385,6 @@
 					<string>pe.locl</string>
 					<string>te.locl</string>
 					<string>yamacron</string>
-					<string>breve.cyr</string>
-					<string>yi-dieresis</string>
-					<string>breve.cyrcomb</string>
-					<string>yi-dieresiscomb</string>
-					<string>engn</string>
-					<string>ha-stroke</string>
-					<string>ustraight-stroke</string>
-					<string>yu.bgr-stroke</string>
-					<string>alpha</string>
-					<string>alphatonos</string>
 					<string>beta</string>
 					<string>epsilon</string>
 					<string>epsilontonos</string>
@@ -2659,12 +2403,6 @@
 					<string>upsilondieresis</string>
 					<string>upsilontonos</string>
 					<string>psi</string>
-					<string>omega</string>
-					<string>omegatonos</string>
-					<string>obarcyr-stroke</string>
-					<string>cy-descendercomb</string>
-					<string>yu-i</string>
-					<string>yu-l.bgr</string>
 					<string>b</string>
 					<string>k</string>
 					<string>p</string>
@@ -2713,6 +2451,8 @@
 					<string>amacroncyr</string>
 					<string>el</string>
 					<string>lje</string>
+					<string>omega</string>
+					<string>omegatonos</string>
 				</array>
 				<key>smartSetName</key>
 				<string>XLCS left margin</string>
@@ -2721,18 +2461,6 @@
 				<key>glyphNames</key>
 				<array>
 					<string>n</string>
-					<string>exclam</string>
-					<string>quotedbl</string>
-					<string>quotesingle</string>
-					<string>asterisk</string>
-					<string>comma</string>
-					<string>hyphen</string>
-					<string>period</string>
-					<string>colon</string>
-					<string>semicolon</string>
-					<string>question</string>
-					<string>underscore</string>
-					<string>grave</string>
 					<string>a</string>
 					<string>c</string>
 					<string>d</string>
@@ -2750,20 +2478,6 @@
 					<string>t</string>
 					<string>u</string>
 					<string>z</string>
-					<string>exclamdown</string>
-					<string>section</string>
-					<string>dieresis</string>
-					<string>ordfeminine</string>
-					<string>guillemotleft</string>
-					<string>macron</string>
-					<string>degree</string>
-					<string>acute</string>
-					<string>mu</string>
-					<string>periodcentered</string>
-					<string>cedilla</string>
-					<string>ordmasculine</string>
-					<string>guillemotright</string>
-					<string>questiondown</string>
 					<string>germandbls</string>
 					<string>agrave</string>
 					<string>aacute</string>
@@ -2787,95 +2501,11 @@
 					<string>uacute</string>
 					<string>ucircumflex</string>
 					<string>udieresis</string>
-					<string>circumflex</string>
-					<string>caron</string>
-					<string>breve</string>
-					<string>dotaccent</string>
-					<string>ring</string>
-					<string>ogonek</string>
-					<string>tilde</string>
-					<string>hungarumlaut</string>
-					<string>quoteleft</string>
-					<string>quoteright</string>
 					<string>f_f</string>
 					<string>fi</string>
 					<string>fl</string>
 					<string>f_f_i</string>
 					<string>f_f_l</string>
-					<string>ellipsis</string>
-					<string>quotesinglbase</string>
-					<string>quotedblleft</string>
-					<string>quotedblright</string>
-					<string>quotedblbase</string>
-					<string>guilsinglleft</string>
-					<string>guilsinglright</string>
-					<string>endash</string>
-					<string>emdash</string>
-					<string>dagger</string>
-					<string>daggerdbl</string>
-					<string>trademark</string>
-					<string>hookabove</string>
-					<string>breveinverted</string>
-					<string>dblgrave</string>
-					<string>horn</string>
-					<string>dotbelow</string>
-					<string>dieresisbelow</string>
-					<string>commaaccent</string>
-					<string>brevebelow</string>
-					<string>macronbelow</string>
-					<string>commaaccentturned</string>
-					<string>firsttonechinese</string>
-					<string>gravecomb</string>
-					<string>acutecomb</string>
-					<string>circumflexcomb</string>
-					<string>tildecomb</string>
-					<string>macroncomb</string>
-					<string>brevecomb</string>
-					<string>dotaccentcomb</string>
-					<string>dieresiscomb</string>
-					<string>hookabovecomb</string>
-					<string>ringcomb</string>
-					<string>hungarumlautcomb</string>
-					<string>caroncomb</string>
-					<string>breveinvertedcomb</string>
-					<string>dblgravecomb</string>
-					<string>horncomb</string>
-					<string>dotbelowcomb</string>
-					<string>dieresisbelowcomb</string>
-					<string>commaaccentcomb</string>
-					<string>cedillacomb</string>
-					<string>ogonekcomb</string>
-					<string>brevebelowcomb</string>
-					<string>macronbelowcomb</string>
-					<string>commaaccentturnedcomb</string>
-					<string>gravecomb-stack</string>
-					<string>acutecomb-stack</string>
-					<string>circumflexcomb-stack</string>
-					<string>tildecomb-stack</string>
-					<string>macroncomb-stack</string>
-					<string>brevecomb-stack</string>
-					<string>dotaccentcomb-stack</string>
-					<string>dieresiscomb-stack</string>
-					<string>hookabovecomb-stack</string>
-					<string>ringcomb-stack</string>
-					<string>hungarumlautcomb-stack</string>
-					<string>caroncomb-stack</string>
-					<string>breveinvertedcomb-stack</string>
-					<string>dblgravecomb-stack</string>
-					<string>grave-stack</string>
-					<string>acute-stack</string>
-					<string>circumflex-stack</string>
-					<string>tilde-stack</string>
-					<string>macron-stack</string>
-					<string>breve-stack</string>
-					<string>dotaccent-stack</string>
-					<string>dieresis-stack</string>
-					<string>hookabove-stack</string>
-					<string>ring-stack</string>
-					<string>hungarumlaut-stack</string>
-					<string>caron-stack</string>
-					<string>breveinverted-stack</string>
-					<string>dblgrave-stack</string>
 					<string>amacron</string>
 					<string>abreve</string>
 					<string>aogonek</string>
@@ -2985,16 +2615,6 @@
 					<string>uhornhookabove</string>
 					<string>uhorntilde</string>
 					<string>uhorndotbelow</string>
-					<string>caroncomb.alt</string>
-					<string>periodcentered.loclCAT</string>
-					<string>diagonalbarl</string>
-					<string>diagonalbaro</string>
-					<string>engtail</string>
-					<string>horizontalbarlc</string>
-					<string>tonos</string>
-					<string>dieresistonos</string>
-					<string>tonoscomb</string>
-					<string>dieresistonoscomb</string>
 					<string>acyr</string>
 					<string>abrevecyr</string>
 					<string>adieresiscyr</string>
@@ -3059,14 +2679,7 @@
 					<string>pe.locl</string>
 					<string>te.locl</string>
 					<string>yamacron</string>
-					<string>breve.cyr</string>
-					<string>yi-dieresis</string>
-					<string>breve.cyrcomb</string>
-					<string>yi-dieresiscomb</string>
 					<string>engn</string>
-					<string>ha-stroke</string>
-					<string>ustraight-stroke</string>
-					<string>yu.bgr-stroke</string>
 					<string>alpha</string>
 					<string>alphatonos</string>
 					<string>beta</string>
@@ -3090,10 +2703,7 @@
 					<string>psi</string>
 					<string>omega</string>
 					<string>omegatonos</string>
-					<string>obarcyr-stroke</string>
-					<string>cy-descendercomb</string>
 					<string>yu-i</string>
-					<string>yu-l.bgr</string>
 					<string>aringacute</string>
 					<string>es</string>
 					<string>esdescendercyr</string>
@@ -3194,6 +2804,8 @@
 					<string>finalsigma</string>
 					<string>sigma</string>
 					<string>phi</string>
+					<string>alpha</string>
+					<string>alphatonos</string>
 				</array>
 				<key>smartSetName</key>
 				<string>XLCR left margin</string>
@@ -3495,12 +3107,7 @@
 					<string>liraTurkish</string>
 					<string>manat</string>
 					<string>ruble</string>
-					<string>coloncurrency</string>
 					<string>Euro</string>
-					<string>uni20AD</string>
-					<string>uni20B1</string>
-					<string>uni20B2</string>
-					<string>uni20B5</string>
 					<string>hryvnia</string>
 					<string>tenge</string>
 					<string>florin</string>
@@ -3517,6 +3124,162 @@
 		</array>
 		<key>smartSetName</key>
 		<string>figures</string>
+	</dict>
+	<dict>
+		<key>group</key>
+		<array>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>numbersign</string>
+					<string>ampersand</string>
+					<string>at</string>
+					<string>asciicircum</string>
+					<string>copyright</string>
+					<string>registered</string>
+					<string>paragraph</string>
+					<string>.notdef</string>
+					<string>numero</string>
+					<string>commercialMinusSign</string>
+					<string>bullet</string>
+					<string>micro</string>
+					<string>ohm</string>
+				</array>
+				<key>smartSetName</key>
+				<string>symbols</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>asterisk</string>
+					<string>ordfeminine</string>
+					<string>degree</string>
+					<string>ordmasculine</string>
+					<string>trademark</string>
+				</array>
+				<key>smartSetName</key>
+				<string>raised symbols</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>slash</string>
+					<string>backslash</string>
+					<string>bar</string>
+					<string>brokenbar</string>
+					<string>fraction</string>
+					<string>divisionslash</string>
+				</array>
+				<key>smartSetName</key>
+				<string>slashes</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>period</string>
+					<string>exclam</string>
+					<string>comma</string>
+					<string>colon</string>
+					<string>semicolon</string>
+					<string>questiondown</string>
+					<string>question</string>
+					<string>exclamdown</string>
+					<string>ellipsis</string>
+					<string>periodcentered</string>
+					<string>gr:question</string>
+					<string>anoteleia</string>
+				</array>
+				<key>smartSetName</key>
+				<string>punctuation</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>quotesingle</string>
+					<string>quotedbl</string>
+					<string>quoteleft</string>
+					<string>quoteright</string>
+					<string>quotesinglbase</string>
+					<string>quotedblleft</string>
+					<string>quotedblright</string>
+					<string>quotedblbase</string>
+					<string>primemod</string>
+					<string>doubleprimemod</string>
+					<string>apostrophemod</string>
+					<string>minute</string>
+					<string>second</string>
+					<string>numeralsign</string>
+					<string>lownumeralsign</string>
+				</array>
+				<key>smartSetName</key>
+				<string>quotes</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>hyphen</string>
+					<string>endash</string>
+					<string>emdash</string>
+					<string>underscore</string>
+					<string>hyphentwo</string>
+					<string>softhyphen</string>
+					<string>threequartersemdash</string>
+					<string>figuredash</string>
+				</array>
+				<key>smartSetName</key>
+				<string>dashes</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>asterisk</string>
+					<string>section</string>
+					<string>dagger</string>
+					<string>daggerdbl</string>
+				</array>
+				<key>smartSetName</key>
+				<string>reference</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>parenleft</string>
+					<string>parenright</string>
+					<string>bracketleft</string>
+					<string>bracketright</string>
+					<string>braceleft</string>
+					<string>braceright</string>
+					<string>leftanglebracket</string>
+					<string>rightanglebracket</string>
+				</array>
+				<key>smartSetName</key>
+				<string>parentheticals</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>guilsinglleft</string>
+					<string>guilsinglright</string>
+					<string>guillemotleft</string>
+					<string>guillemotright</string>
+				</array>
+				<key>smartSetName</key>
+				<string>guillemets</string>
+			</dict>
+			<dict>
+				<key>glyphNames</key>
+				<array>
+					<string>space</string>
+					<string>.null</string>
+					<string>CR</string>
+					<string>nbspace</string>
+				</array>
+				<key>smartSetName</key>
+				<string>empty</string>
+			</dict>
+		</array>
+		<key>smartSetName</key>
+		<string>etcetera</string>
 	</dict>
 	<dict>
 		<key>group</key>
