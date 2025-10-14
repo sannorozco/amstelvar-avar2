@@ -1,7 +1,7 @@
 import os, json
 import drawBot as DB
 from drawBot.ui.drawView import DrawView
-from vanilla import Window, Button, CheckBox
+from vanilla import Window, Button, CheckBox, TextBox, Slider
 from defcon.objects.glyph import Glyph
 from defcon.objects.font import Font
 from mojo.roboFont import RGlyph, CurrentGlyph, OpenWindow, OpenFont
@@ -30,7 +30,7 @@ ASCII = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@
 glyphNames = [char2psname(char) for char in ASCII]
 compare    = True
 margins    = True
-levels     = True
+levels     = False
 labels     = True
 wireframe  = False
 savePDF    = True
@@ -75,11 +75,12 @@ class BlendsPreview:
     cellSize    = 2000
     labelsSize  = 5
 
-    compare   = False
-    wireframe = False
-    margins   = False
-    labels    = False
-    levels    = False
+    compare     = False
+    wireframe   = False
+    margins     = False
+    labels      = False
+    levels      = False
+    levelsShow  = 1
 
     opszs = [8, 14, 144]
     wghts = [100, 400, 1000]
@@ -230,6 +231,10 @@ class BlendsPreview:
 
                     # get var distance
                     n = 0 if styleName == 'wght400' else len(styleName.split('_'))
+
+                    if n >= self.levelsShow:
+                        continue
+
                     colors = self.getColors(n)
 
                     DB.save()
@@ -390,6 +395,24 @@ class BlendsPreviewDialog:
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
+        x += self.buttonWidth
+        self.w.levelsShowLabel = TextBox(
+            (x, y+4, self.buttonWidth, self.lineHeight),
+            'show levels',
+            # callback=self.updatePreviewCallback,
+            sizeStyle='small')
+
+        x += self.buttonWidth
+        self.w.levelsShow = Slider(
+            (x, y, self.buttonWidth, self.lineHeight),
+            minValue=1,
+            maxValue=4,
+            value=4,
+            tickMarkCount=4,
+            stopOnTickMarks=True,
+            # callback=self.updatePreviewCallback,
+            sizeStyle='small')
+
         self._updatePreview()
 
         self.w.getNSWindow().setTitlebarAppearsTransparent_(True)
@@ -414,7 +437,11 @@ class BlendsPreviewDialog:
 
     @property
     def levels(self):
-        return self.w.levels.get()
+        return int(self.w.levels.get())
+
+    @property
+    def levelsShow(self):
+        return self.w.levelsShow.get()
 
     def updatePreviewCallback(self, sender):
         self._updatePreview()
@@ -439,11 +466,12 @@ class BlendsPreviewDialog:
                 glyphName = None
 
         B = BlendsPreview()
-        B.compare   = self.compare
-        B.wireframe = self.wireframe
-        B.margins   = self.margins
-        B.labels    = self.labels
-        B.levels    = self.levels
+        B.compare    = self.compare
+        B.wireframe  = self.wireframe
+        B.margins    = self.margins
+        B.labels     = self.labels
+        B.levels     = self.levels
+        B.levelsShow = self.levelsShow
         B.draw(glyphName)
 
         pdfData = DB.pdfImage()
@@ -458,11 +486,12 @@ if __name__ == '__main__':
     else:
         pdfPath = os.path.join(baseFolder, 'Proofs', 'PDF', f'blending-preview_{subFamilyName}.pdf')
         B = BlendsPreview()
-        B.compare   = compare
-        B.margins   = margins
-        B.wireframe = wireframe
-        B.levels    = levels
-        B.labels    = labels
+        B.compare    = compare
+        B.margins    = margins
+        B.wireframe  = wireframe
+        B.levels     = levels
+        B.levelsShow = levelsShow
+        B.labels     = labels
 
         for glyphName in glyphNames:
             B.draw(glyphName)
