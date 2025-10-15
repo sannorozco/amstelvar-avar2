@@ -21,17 +21,21 @@ sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
 # proofing mode: 0=batch, 1=dialog
-mode = 1
+mode = 0
 
 # batch settings:
 
 ASCII = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~- '"^`'''
+capsGreek = 'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩϏ'
 
-glyphNames = [char2psname(char) for char in ASCII]
+# TO-DO: use smart sets for glyph selection!
+
+glyphNames = [char2psname(char) for char in ASCII + capsGreek]
 compare    = True
 margins    = True
-levels     = False
 labels     = True
+levels     = False
+levelsShow = 2
 wireframe  = False
 savePDF    = True
 
@@ -175,6 +179,8 @@ class BlendsPreview:
         return colors
 
     def draw(self, glyphName):
+
+        # TO-DO: skip glyphs which are made of components
 
         cellWidth  = self.cellSize * self.glyphScale * 1.5
         cellHeight = self.cellSize * self.glyphScale
@@ -495,6 +501,7 @@ if __name__ == '__main__':
 
         for glyphName in glyphNames:
             B.draw(glyphName)
+
         if savePDF:
             print(f'saving {pdfPath}...', end=' ')
             B.save(pdfPath)
