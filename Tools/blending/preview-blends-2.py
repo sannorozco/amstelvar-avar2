@@ -21,7 +21,7 @@ sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
 # proofing mode: 0=batch, 1=dialog
-mode = 0
+mode = 1
 
 # batch settings:
 
@@ -370,6 +370,7 @@ class BlendsPreviewDialog:
         self.w.compare = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'compare',
+            value=True,
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
@@ -377,6 +378,7 @@ class BlendsPreviewDialog:
         self.w.margins = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'margins',
+            value=True,
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
@@ -384,6 +386,7 @@ class BlendsPreviewDialog:
         self.w.wireframe = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'points',
+            value=False,
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
@@ -391,6 +394,7 @@ class BlendsPreviewDialog:
         self.w.labels = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'labels',
+            value=False,
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
@@ -398,12 +402,13 @@ class BlendsPreviewDialog:
         self.w.levels = CheckBox(
             (x, y, self.buttonWidth, self.lineHeight),
             'levels',
+            value=False,
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
 
         x += self.buttonWidth
         self.w.levelsShowLabel = TextBox(
-            (x, y+4, self.buttonWidth, self.lineHeight),
+            (x, y + 4, self.buttonWidth, self.lineHeight),
             'show levels',
             # callback=self.updatePreviewCallback,
             sizeStyle='small')
@@ -413,7 +418,7 @@ class BlendsPreviewDialog:
             (x, y, self.buttonWidth, self.lineHeight),
             minValue=1,
             maxValue=4,
-            value=4,
+            value=2,
             tickMarkCount=4,
             stopOnTickMarks=True,
             # callback=self.updatePreviewCallback,
