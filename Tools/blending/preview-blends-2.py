@@ -5,15 +5,18 @@ from vanilla import Window, Button, CheckBox, TextBox, Slider
 from defcon.objects.glyph import Glyph
 from defcon.objects.font import Font
 from mojo.roboFont import RGlyph, CurrentGlyph, OpenWindow, OpenFont
+from mojo.smartSet import readSmartSets
 from ufoProcessor.ufoOperator import UFOOperator
 from mutatorMath.objects.location import Location
-from xTools4.modules.encoding import char2psname
+from xTools4.modules.groups import importGroupsFromSmartSets
 
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 familyName       = 'AmstelvarA2'
 subFamilyName    = ['Roman', 'Italic'][0]
 sourcesFolder    = os.path.join(baseFolder, 'Sources', subFamilyName)
-designspacePath  = os.path.join(sourcesFolder, 'AmstelvarA2-Roman_avar2.designspace')
+designspacePath  = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}_avar2.designspace')
+smartsetsPath    = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}.roboFontSets')
+defaultPath      = os.path.join(sourcesFolder, f'AmstelvarA2-{subFamilyName}_wght400.ufo')
 blendsPath       = os.path.join(sourcesFolder, 'blends.json')
 baseFolderOld    = os.path.join(os.path.dirname(baseFolder), 'amstelvar')
 familyNameOld    = 'Amstelvar'
@@ -23,14 +26,10 @@ tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 # proofing mode: 0=batch, 1=dialog
 mode = 0
 
-# batch settings:
+#----------------
+# batch settings
+#----------------
 
-ASCII = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?@#$%&*{|}[\\](/)_<=>+~- '"^`'''
-capsGreek = 'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩϏ'
-
-# TO-DO: use smart sets for glyph selection!
-
-glyphNames = [char2psname(char) for char in ASCII + capsGreek]
 compare    = True
 margins    = True
 labels     = True
@@ -38,6 +37,43 @@ levels     = False
 levelsShow = 2
 wireframe  = False
 savePDF    = True
+
+glyphGroups = importGroupsFromSmartSets(smartsetsPath)
+# print(glyphGroups.keys())
+
+groupNames = [
+    'uppercase latin',
+    'uppercase greek',
+    'uppercase cyrillic',
+    # 'lowercase latin',
+    # 'lowercase greek',
+    # 'lowercase cyrillic',
+]
+
+# remove glyphs made out of components
+defaultFont = OpenFont(defaultPath, showInterface=False)
+glyphNames = []
+for groupName in groupNames:
+    for glyphName in glyphGroups[groupName]:
+        if glyphName not in defaultFont:
+            continue
+        g = defaultFont[glyphName]
+        if not len(g.components):
+            glyphNames.append(glyphName)
+
+#-----------
+# functions
+#-----------
+
+def importGroupsFromSmartSets(smartsetsPath):
+    smartSets = readSmartSets(smartsetsPath, useAsDefault=False, font=None)
+    glyphGroups = {}
+    for smartGroup in smartSets:
+        if not smartGroup.groups:
+            continue
+        for smartSet in smartGroup.groups:
+            glyphGroups[smartSet.name] = smartSet.glyphNames
+    return glyphGroups
 
 def instantiateGlyph(operator, glyphName, location):
     glyphMutator, uni = operator.getGlyphMutator(glyphName)
@@ -71,6 +107,9 @@ def getVarDistance(sourceLocation, defaultLocation):
             n += 1
     return n
 
+#---------
+# objects
+#---------
 
 class BlendsPreview:
 
@@ -179,8 +218,6 @@ class BlendsPreview:
         return colors
 
     def draw(self, glyphName):
-
-        # TO-DO: skip glyphs which are made of components
 
         cellWidth  = self.cellSize * self.glyphScale * 1.5
         cellHeight = self.cellSize * self.glyphScale
@@ -338,7 +375,6 @@ class BlendsPreview:
     def save(self, pdfPath):
         DB.saveImage(pdfPath)
 
-
 class BlendsPreviewDialog:
 
     title       = 'BlendsPreview'
@@ -487,6 +523,7 @@ class BlendsPreviewDialog:
 
         pdfData = DB.pdfImage()
         self.w.canvas.setPDFDocument(pdfData)
+
 
 
 if __name__ == '__main__':
