@@ -8,7 +8,6 @@ from mojo.roboFont import RGlyph, CurrentGlyph, OpenWindow, OpenFont
 from mojo.smartSet import readSmartSets
 from ufoProcessor.ufoOperator import UFOOperator
 from mutatorMath.objects.location import Location
-from xTools4.modules.groups import importGroupsFromSmartSets
 
 baseFolder       = os.path.dirname(os.path.dirname(os.getcwd()))
 familyName       = 'AmstelvarA2'
@@ -24,42 +23,7 @@ sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
 # proofing mode: 0=batch, 1=dialog
-mode = 0
-
-#----------------
-# batch settings
-#----------------
-
-compare    = True
-margins    = True
-labels     = True
-levels     = False
-levelsShow = 2
-wireframe  = False
-savePDF    = True
-
-glyphGroups = importGroupsFromSmartSets(smartsetsPath)
-# print(glyphGroups.keys())
-
-groupNames = [
-    'uppercase latin',
-    'uppercase greek',
-    'uppercase cyrillic',
-    # 'lowercase latin',
-    # 'lowercase greek',
-    # 'lowercase cyrillic',
-]
-
-# remove glyphs made out of components
-defaultFont = OpenFont(defaultPath, showInterface=False)
-glyphNames = []
-for groupName in groupNames:
-    for glyphName in glyphGroups[groupName]:
-        if glyphName not in defaultFont:
-            continue
-        g = defaultFont[glyphName]
-        if not len(g.components):
-            glyphNames.append(glyphName)
+mode = 1
 
 #-----------
 # functions
@@ -106,6 +70,41 @@ def getVarDistance(sourceLocation, defaultLocation):
         if sourceLocation[k] != defaultLocation[k]:
             n += 1
     return n
+
+#----------------
+# batch settings
+#----------------
+
+compare    = True
+margins    = True
+labels     = True
+levels     = False
+levelsShow = 2
+wireframe  = False
+savePDF    = True
+
+glyphGroups = importGroupsFromSmartSets(smartsetsPath)
+# print(glyphGroups.keys())
+
+groupNames = [
+    'uppercase latin',
+    'uppercase greek',
+    'uppercase cyrillic',
+    # 'lowercase latin',
+    # 'lowercase greek',
+    # 'lowercase cyrillic',
+]
+
+# remove glyphs made out of components
+defaultFont = OpenFont(defaultPath, showInterface=False)
+glyphNames = []
+for groupName in groupNames:
+    for glyphName in glyphGroups[groupName]:
+        if glyphName not in defaultFont:
+            continue
+        g = defaultFont[glyphName]
+        if not len(g.components):
+            glyphNames.append(glyphName)
 
 #---------
 # objects
