@@ -22,9 +22,6 @@ familyNameOld    = 'Amstelvar'
 sourcesFolderOld = os.path.join(baseFolderOld, subFamilyName)
 tempEditModeKey  = 'com.xTools4.tempEdit.mode'
 
-# proofing mode: 0=batch, 1=dialog
-mode = 1
-
 #-----------
 # functions
 #-----------
@@ -71,9 +68,12 @@ def getVarDistance(sourceLocation, defaultLocation):
             n += 1
     return n
 
-#----------------
-# batch settings
-#----------------
+#----------
+# settings
+#----------
+
+# proofing mode: 0=batch, 1=dialog
+mode = 0
 
 compare    = True
 margins    = True
