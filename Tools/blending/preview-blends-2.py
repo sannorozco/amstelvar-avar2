@@ -73,7 +73,7 @@ def getVarDistance(sourceLocation, defaultLocation):
 #----------
 
 # proofing mode: 0=batch, 1=dialog
-mode = 0
+mode = 1
 
 compare    = True
 margins    = True
