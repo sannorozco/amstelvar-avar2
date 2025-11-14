@@ -40,7 +40,7 @@ groupNames = [
     'uppercase latin',
     'uppercase greek',
     'uppercase cyrillic',
-    # 'lowercase latin',
+    'lowercase latin',
     # 'lowercase greek',
     # 'lowercase cyrillic',
 ]
@@ -72,7 +72,7 @@ B.compareFontPath = compareFontPath
 B.axesList   = axesList
 B.compare    = True
 B.margins    = True
-B.labels     = True
+B.labels     = False
 B.levels     = False
 B.levelsShow = 2
 B.wireframe  = False
