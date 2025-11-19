@@ -952,6 +952,10 @@
         "name": "YOFI",
         "direction": "y"
       },
+      "5 4": {
+        "name": "XTFI",
+        "direction": "x"
+      },
       "0 7": {
         "name": "YTFI",
         "direction": "y"
@@ -1001,6 +1005,10 @@
       "0 27": {
         "name": "XOFI",
         "direction": "y"
+      },
+      "4 23": {
+        "name": "XOFI",
+        "direction": "a"
       },
       "1 26": {
         "name": "YOFI",
@@ -1079,6 +1087,14 @@
       "B 39": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "36 99": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "-1 0": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "four": {
@@ -1121,6 +1137,22 @@
       "C 1": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "16 99": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "-1 17": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "14 10": {
+        "name": "XTFI",
+        "direction": "x"
+      },
+      "5 16": {
+        "name": "XTFI",
+        "direction": "x"
       }
     },
     "five": {
@@ -1144,11 +1176,19 @@
         "name": "YOFI",
         "direction": "a"
       },
+      "1 7": {
+        "name": "XTFI",
+        "direction": "x"
+      },
       "26 14": {
         "name": "YTFI",
         "direction": "y"
       },
       "23 99": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "-1 0": {
         "name": "XFIR",
         "direction": "x"
       },
@@ -1275,6 +1315,14 @@
       "B 6": {
         "name": "YTOS",
         "direction": "y"
+      },
+      "-1 0": {
+        "name": "XFIR",
+        "direction": "x"
+      },
+      "3 99": {
+        "name": "XFIR",
+        "direction": "x"
       }
     },
     "eight": {
