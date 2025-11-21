@@ -183,8 +183,8 @@ class AmstelvarA2DesignSpaceBuilder:
     parametricAxesRoman  = 'WDSP GRAD '
                             # XOPQ              # XTRA              # YTRA         # serifs                      # EQ      # XTSP
     parametricAxesRoman += 'XOUC YOUC XOUA YOUA XTUC XTUR XTUD XTUA YTUC YTJD      XSHU YSHU XSVU YSVU XVAU YHAU XQUC YQUC XUCS XUCR XUCD ' # uppercase
-    parametricAxesRoman += 'XOLC YOLC XOLA YOLA XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XLCS XLCR XLCD XQLC YQLC ' # lowercase
-    parametricAxesRoman += 'XOFI YOFI           XTFI                YTFI           XSHF YSHF XSVF YSVF XVAF YHAF XFIR           XQFI YQFI ' # figures
+    parametricAxesRoman += 'XOLC YOLC XOLA YOLA XTLC XTLR XTLD XTLA YTLC YTAS YTDE XSHL YSHL XSVL YSVL XVAL YHAL XQLC YQLC XLCS XLCR XLCD ' # lowercase
+    parametricAxesRoman += 'XOFI YOFI           XTFI                YTFI           XSHF YSHF XSVF YSVF XVAF YHAF XQFI YQFI XFIR           ' # figures
 
     parametricAxesRoman += 'XDOT YTOS XTTW YTTL BARS'
     parametricAxesRoman  = parametricAxesRoman.split()
@@ -291,6 +291,14 @@ class AmstelvarA2DesignSpaceBuilder:
             return self.parametricAxesItalic
         else:
             return self.parametricAxesRoman
+
+    @property
+    def smartSetsPath(self):
+        return os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}.roboFontSets')
+
+    @property
+    def glyphConstructionsPath(self):
+        return os.path.join(self.sourcesFolder, f'{self.familyName}-{self.subFamilyName}.glyphConstruction')
 
     # methods
 
@@ -546,6 +554,11 @@ class AmstelvarA2DesignSpaceBuilder:
             return
         if self.verbose:
             print(f'\tsaving designspace...', end=' ')
+
+        self.designspace.lib['com.xTools4.xProject.smartSetsPath']          = os.path.split(self.smartSetsPath)[-1]
+        self.designspace.lib['com.xTools4.xProject.measurementsPath']       = os.path.split(self.measurementsPath)[-1]
+        self.designspace.lib['com.xTools4.xProject.glyphConstructionsPath'] = os.path.split(self.glyphConstructionsPath)[-1]
+
         self.designspace.write(self.designspacePath)
         if self.verbose:
             print(os.path.exists(self.designspacePath))
@@ -660,8 +673,7 @@ class AmstelvarA2DesignSpaceBuilder:
             if fixGDEF:
                 defaultFont = OpenFont(self.defaultUFO, showInterface=False)
                 # 1. get a list of all combining accents
-                smartSetsPath = os.path.join(self.sourcesFolder, f'AmstelvarA2-{self.subFamilyName}.roboFontSets')
-                combiningAccents = getCombingingAccents(smartSetsPath)
+                combiningAccents = getCombingingAccents(self.smartSetsPath)
                 # 2. get a list of all glyphs with anchors starting with underscore
                 underscoreGlyphs = findGlyphsWithUnderscoreAnchors(defaultFont)
                 # subtract (1) from (2) to get a list of glyphs to fix
